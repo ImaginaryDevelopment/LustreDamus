@@ -1,3 +1,4 @@
+import gleam/dict.{type Dict}
 import gleam/http/response.{type Response}
 import gleam/int
 import gleam/list
@@ -10,6 +11,11 @@ import lustre/element/html
 import lustre/event
 import markdown_table.{type Table}
 import rsvp
+import table_sort.{
+  type Direction, type EmptyPlacement, type SortKind, type SortSpec,
+  type TextPlacement, Asc, Desc, EmptiesFirst, EmptiesLast, SortNumeric,
+  SortText, TextAfterNumbers, TextBeforeNumbers,
+}
 
 pub type Page {
   PastePage
@@ -23,6 +29,7 @@ pub type Model {
     filter: String,
     loading: Bool,
     error: Option(String),
+    sorts: Dict(String, SortSpec),
   )
 }
 
@@ -31,6 +38,12 @@ pub type Msg {
   UserChosePalworldMounts
   UserUpdatedMarkdown(String)
   UserUpdatedFilter(String)
+  UserClickedColumn(String, Int)
+  UserSetSortKind(String, SortKind)
+  UserSetDirection(String, Direction)
+  UserSetEmptyPlacement(String, EmptyPlacement)
+  UserSetTextPlacement(String, TextPlacement)
+  UserClearSort(String)
   SampleLoaded(Result(String, String))
 }
 
@@ -48,6 +61,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       filter: "",
       loading: False,
       error: None,
+      sorts: dict.new(),
     ),
     effect.none(),
   )
@@ -67,16 +81,55 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         filter: "",
         loading: True,
         error: None,
+        sorts: dict.new(),
       ),
       load_sample("./samples/palworld/Mounts.md"),
     )
 
     UserUpdatedMarkdown(markdown) -> #(
-      Model(..model, markdown:, error: None),
+      Model(..model, markdown:, error: None, sorts: dict.new()),
       effect.none(),
     )
 
     UserUpdatedFilter(filter) -> #(Model(..model, filter:), effect.none())
+
+    UserClickedColumn(table_id, column) -> #(
+      Model(..model, sorts: update_column_sort(model, table_id, column)),
+      effect.none(),
+    )
+
+    UserSetSortKind(table_id, kind) -> #(
+      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
+        table_sort.SortSpec(..spec, kind:, direction: Asc)
+      })),
+      effect.none(),
+    )
+
+    UserSetDirection(table_id, direction) -> #(
+      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
+        table_sort.SortSpec(..spec, direction:)
+      })),
+      effect.none(),
+    )
+
+    UserSetEmptyPlacement(table_id, empties) -> #(
+      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
+        table_sort.SortSpec(..spec, empties:)
+      })),
+      effect.none(),
+    )
+
+    UserSetTextPlacement(table_id, texts) -> #(
+      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
+        table_sort.SortSpec(..spec, texts:)
+      })),
+      effect.none(),
+    )
+
+    UserClearSort(table_id) -> #(
+      Model(..model, sorts: dict.delete(model.sorts, table_id)),
+      effect.none(),
+    )
 
     SampleLoaded(Ok(markdown)) -> #(
       Model(..model, markdown:, loading: False, error: None),
@@ -90,10 +143,57 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
   }
 }
 
+fn update_column_sort(
+  model: Model,
+  table_id: String,
+  column: Int,
+) -> Dict(String, SortSpec) {
+  case dict.get(model.sorts, table_id) {
+    Ok(spec) if spec.column == column ->
+      dict.insert(model.sorts, table_id, table_sort.toggle_direction(spec))
+    _ -> {
+      let tables =
+        model.markdown
+        |> markdown_table.extract_tables
+        |> markdown_table.filter_tables(model.filter)
+      let kind = case find_table(tables, table_id) {
+        Ok(table) ->
+          case table_sort.column_looks_numeric(table.rows, column) {
+            True -> SortNumeric
+            False -> SortText
+          }
+        Error(_) -> SortText
+      }
+      dict.insert(model.sorts, table_id, table_sort.default_spec(column, kind))
+    }
+  }
+}
+
+fn update_sort(
+  sorts: Dict(String, SortSpec),
+  table_id: String,
+  alter: fn(SortSpec) -> SortSpec,
+) -> Dict(String, SortSpec) {
+  case dict.get(sorts, table_id) {
+    Ok(spec) -> dict.insert(sorts, table_id, alter(spec))
+    Error(_) -> sorts
+  }
+}
+
+fn find_table(tables: List(Table), table_id: String) -> Result(Table, Nil) {
+  list.find(tables, fn(table) { table_id_for(table) == table_id })
+}
+
+fn table_id_for(table: Table) -> String {
+  table.title
+}
+
 fn load_sample(url: String) -> Effect(Msg) {
   rsvp.get(
     url,
-    rsvp.expect_ok_response(fn(result: Result(Response(String), rsvp.Error(String))) {
+    rsvp.expect_ok_response(fn(
+      result: Result(Response(String), rsvp.Error(String)),
+    ) {
       case result {
         Ok(response) -> SampleLoaded(Ok(response.body))
         Error(error) -> SampleLoaded(Error(describe_error(error)))
@@ -119,6 +219,7 @@ fn view(model: Model) -> Element(Msg) {
     model.markdown
     |> markdown_table.extract_tables
     |> markdown_table.filter_tables(model.filter)
+    |> list.map(fn(table) { apply_sort(table, model.sorts) })
 
   html.div([attribute.class("app")], [
     html.header([], [
@@ -129,17 +230,20 @@ fn view(model: Model) -> Element(Msg) {
         ),
       ]),
     ]),
-    html.nav([attribute.class("site-nav"), attribute.attribute("aria-label", "Sections")], [
-      nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
-      html.div([attribute.class("nav-group")], [
-        html.p([attribute.class("nav-label")], [html.text("Palworld")]),
-        nav_button(
-          "Mounts",
-          model.page == PalworldMountsPage,
-          UserChosePalworldMounts,
-        ),
-      ]),
-    ]),
+    html.nav(
+      [attribute.class("site-nav"), attribute.attribute("aria-label", "Sections")],
+      [
+        nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
+        html.div([attribute.class("nav-group")], [
+          html.p([attribute.class("nav-label")], [html.text("Palworld")]),
+          nav_button(
+            "Mounts",
+            model.page == PalworldMountsPage,
+            UserChosePalworldMounts,
+          ),
+        ]),
+      ],
+    ),
     html.main([], case model.page {
       PastePage -> [
         html.label([attribute.for("markdown")], [html.text("Markdown")]),
@@ -166,6 +270,15 @@ fn view(model: Model) -> Element(Msg) {
       ]
     }),
   ])
+}
+
+fn apply_sort(table: Table, sorts: Dict(String, SortSpec)) -> Table {
+  let id = table_id_for(table)
+  case dict.get(sorts, id) {
+    Ok(spec) ->
+      markdown_table.Table(..table, rows: table_sort.sort_rows(table.rows, spec))
+    Error(_) -> table
+  }
 }
 
 fn nav_button(label: String, active: Bool, msg: Msg) -> Element(Msg) {
@@ -201,13 +314,17 @@ fn tables_section(model: Model, tables: List(Table)) -> Element(Msg) {
         case model.error {
           Some(message) ->
             html.p([attribute.class("error")], [html.text(message)])
-          None -> render_tables(tables, model.markdown)
+          None -> render_tables(tables, model.markdown, model.sorts)
         }
     },
   ])
 }
 
-fn render_tables(tables: List(Table), markdown: String) -> Element(Msg) {
+fn render_tables(
+  tables: List(Table),
+  markdown: String,
+  sorts: Dict(String, SortSpec),
+) -> Element(Msg) {
   case tables {
     [] if markdown == "" ->
       html.p([attribute.class("empty")], [
@@ -220,21 +337,56 @@ fn render_tables(tables: List(Table), markdown: String) -> Element(Msg) {
     _ ->
       html.div(
         [attribute.class("tables")],
-        list.map(tables, render_table),
+        list.map(tables, fn(table) { render_table(table, sorts) }),
       )
   }
 }
 
-fn render_table(table: Table) -> Element(Msg) {
+fn render_table(table: Table, sorts: Dict(String, SortSpec)) -> Element(Msg) {
+  let id = table_id_for(table)
+  let active = dict.get(sorts, id)
+
   html.section([attribute.class("md-table")], [
     html.h3([], [html.text(table.title)]),
+    case active {
+      Ok(spec) -> sort_controls(id, spec, table.headers)
+      Error(_) ->
+        html.p([attribute.class("sort-hint")], [
+          html.text("Click a column header to sort. Click again to reverse."),
+        ])
+    },
     html.div([attribute.class("table-wrap")], [
       html.table([], [
         html.thead([], [
           html.tr(
             [],
-            list.map(table.headers, fn(cell) {
-              html.th([], [html.text(cell)])
+            list.index_map(table.headers, fn(cell, index) {
+              let selected = case active {
+                Ok(spec) if spec.column == index -> True
+                _ -> False
+              }
+              let marker = case active {
+                Ok(spec) if spec.column == index ->
+                  case spec.direction {
+                    Asc -> " ↑"
+                    Desc -> " ↓"
+                  }
+                _ -> ""
+              }
+              let class = case selected {
+                True -> "sortable selected"
+                False -> "sortable"
+              }
+              html.th([attribute.class(class)], [
+                html.button(
+                  [
+                    attribute.type_("button"),
+                    attribute.class("sort-header"),
+                    event.on_click(UserClickedColumn(id, index)),
+                  ],
+                  [html.text(cell <> marker)],
+                ),
+              ])
             }),
           ),
         ]),
@@ -250,4 +402,104 @@ fn render_table(table: Table) -> Element(Msg) {
       ]),
     ]),
   ])
+}
+
+fn sort_controls(
+  table_id: String,
+  spec: SortSpec,
+  headers: List(String),
+) -> Element(Msg) {
+  let column_name = case list.drop(headers, spec.column) {
+    [name, ..] -> name
+    [] -> "Column"
+  }
+
+  html.div([attribute.class("sort-controls")], [
+    html.p([attribute.class("sort-active")], [
+      html.text("Sorting by " <> column_name),
+    ]),
+    html.div([attribute.class("sort-group")], [
+      html.span([attribute.class("sort-group-label")], [html.text("Type")]),
+      toggle_btn(
+        "Text",
+        spec.kind == SortText,
+        UserSetSortKind(table_id, SortText),
+      ),
+      toggle_btn(
+        "Numeric",
+        spec.kind == SortNumeric,
+        UserSetSortKind(table_id, SortNumeric),
+      ),
+    ]),
+    html.div([attribute.class("sort-group")], [
+      html.span([attribute.class("sort-group-label")], [html.text("Direction")]),
+      toggle_btn(
+        case spec.kind {
+          SortText -> "A → Z"
+          SortNumeric -> "0 → 9"
+        },
+        spec.direction == Asc,
+        UserSetDirection(table_id, Asc),
+      ),
+      toggle_btn(
+        case spec.kind {
+          SortText -> "Z → A"
+          SortNumeric -> "9 → 0"
+        },
+        spec.direction == Desc,
+        UserSetDirection(table_id, Desc),
+      ),
+    ]),
+    html.div([attribute.class("sort-group")], [
+      html.span([attribute.class("sort-group-label")], [html.text("Empties")]),
+      toggle_btn(
+        "First",
+        spec.empties == EmptiesFirst,
+        UserSetEmptyPlacement(table_id, EmptiesFirst),
+      ),
+      toggle_btn(
+        "Last",
+        spec.empties == EmptiesLast,
+        UserSetEmptyPlacement(table_id, EmptiesLast),
+      ),
+    ]),
+    case spec.kind {
+      SortNumeric ->
+        html.div([attribute.class("sort-group")], [
+          html.span([attribute.class("sort-group-label")], [
+            html.text("Non-numbers"),
+          ]),
+          toggle_btn(
+            "Before numbers",
+            spec.texts == TextBeforeNumbers,
+            UserSetTextPlacement(table_id, TextBeforeNumbers),
+          ),
+          toggle_btn(
+            "After numbers",
+            spec.texts == TextAfterNumbers,
+            UserSetTextPlacement(table_id, TextAfterNumbers),
+          ),
+        ])
+      SortText -> element.none()
+    },
+    html.button(
+      [
+        attribute.type_("button"),
+        attribute.class("sort-clear"),
+        event.on_click(UserClearSort(table_id)),
+      ],
+      [html.text("Clear sort")],
+    ),
+  ])
+}
+
+fn toggle_btn(label: String, active: Bool, msg: Msg) -> Element(Msg) {
+  let class = case active {
+    True -> "sort-option active"
+    False -> "sort-option"
+  }
+  html.button(
+    [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
+    [html.text(label)],
+  )
 }

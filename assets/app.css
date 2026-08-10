@@ -172,6 +172,89 @@ th {
   font-weight: 700;
 }
 
+th.sortable {
+  padding: 0;
+}
+
+button.sort-header {
+  appearance: none;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.45rem 0.65rem;
+  cursor: pointer;
+}
+
+th.selected,
+button.sort-header:hover {
+  background: #ecfeff;
+}
+
+.sort-hint {
+  margin: 0 0 0.6rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sort-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 0.75rem;
+  align-items: center;
+  margin: 0 0 0.75rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--line);
+  background: #f8fafc;
+}
+
+.sort-active {
+  margin: 0;
+  width: 100%;
+  font-weight: 600;
+}
+
+.sort-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.sort-group-label {
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 0.15rem;
+}
+
+.sort-option,
+.sort-clear {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.3rem 0.55rem;
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.sort-option.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--focus);
+  font-weight: 600;
+}
+
+.sort-clear {
+  margin-left: auto;
+}
+
 tbody tr:nth-child(even) {
   background: #fafaf9;
 }
