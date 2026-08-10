@@ -10,6 +10,7 @@ import lustre/element.{type Element}
 import lustre/element/html
 import lustre/event
 import markdown_table.{type Table}
+import pal_index
 import rsvp
 import samples.{type Sample}
 import table_format.{type FormattedCell, type TableFormatter}
@@ -37,6 +38,7 @@ pub type Model {
     loading: Bool,
     error: Option(String),
     sorts: Dict(String, TableSort),
+    pal_elements: Dict(String, String),
   )
 }
 
@@ -53,6 +55,7 @@ pub type Msg {
   UserClearSecondary(String)
   UserClearSort(String)
   SampleLoaded(Result(String, String))
+  PalIndexLoaded(Result(String, String))
 }
 
 pub fn main() -> Nil {
@@ -70,6 +73,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       loading: False,
       error: None,
       sorts: dict.new(),
+      pal_elements: dict.new(),
     ),
     effect.none(),
   )
@@ -90,8 +94,12 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         loading: True,
         error: None,
         sorts: dict.new(),
+        pal_elements: model.pal_elements,
       ),
-      load_sample(samples.url(sample)),
+      effect.batch([
+        load_sample(samples.url(sample)),
+        ensure_pal_index(model.pal_elements),
+      ]),
     )
 
     UserUpdatedMarkdown(markdown) -> #(
@@ -176,6 +184,16 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       Model(..model, loading: False, error: Some(message)),
       effect.none(),
     )
+
+    PalIndexLoaded(Ok(markdown)) -> #(
+      Model(
+        ..model,
+        pal_elements: pal_index.parse_elements_index(markdown),
+      ),
+      effect.none(),
+    )
+
+    PalIndexLoaded(Error(_)) -> #(model, effect.none())
   }
 }
 
@@ -287,6 +305,24 @@ fn load_sample(url: String) -> Effect(Msg) {
   )
 }
 
+fn ensure_pal_index(pal_elements: Dict(String, String)) -> Effect(Msg) {
+  case dict.size(pal_elements) {
+    0 ->
+      rsvp.get(
+        samples.breeding_sheet_url(),
+        rsvp.expect_ok_response(fn(
+          result: Result(Response(String), rsvp.Error(String)),
+        ) {
+          case result {
+            Ok(response) -> PalIndexLoaded(Ok(response.body))
+            Error(error) -> PalIndexLoaded(Error(describe_error(error)))
+          }
+        }),
+      )
+    _ -> effect.none()
+  }
+}
+
 fn describe_error(error: rsvp.Error(String)) -> String {
   case error {
     rsvp.BadUrl(url) -> "Bad sample URL: " <> url
@@ -300,7 +336,7 @@ fn describe_error(error: rsvp.Error(String)) -> String {
 }
 
 fn view(model: Model) -> Element(Msg) {
-  let formatter = page_formatter(model.page)
+  let formatter = page_formatter(model.page, model.pal_elements)
   let tables =
     model.markdown
     |> markdown_table.extract_tables
@@ -366,9 +402,12 @@ fn view(model: Model) -> Element(Msg) {
   ])
 }
 
-fn page_formatter(page: Page) -> TableFormatter {
+fn page_formatter(
+  page: Page,
+  pal_elements: Dict(String, String),
+) -> TableFormatter {
   case page {
-    SamplePage(sample) -> samples.table_formatter(sample)
+    SamplePage(sample) -> samples.table_formatter(sample, pal_elements)
     PastePage -> table_format.plain()
   }
 }

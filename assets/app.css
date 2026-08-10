@@ -290,6 +290,12 @@ td.cell-approx {
   color: #0f766e;
 }
 
+td.cell-pal {
+  cursor: help;
+  text-decoration: underline dotted #a8a29e;
+  text-underline-offset: 0.18em;
+}
+
 .error {
   margin: 0;
   color: var(--danger);
