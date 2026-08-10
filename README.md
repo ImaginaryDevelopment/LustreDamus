@@ -9,7 +9,7 @@ LustreDamus turns Markdown table source into a readable table view. The app is c
 It supports two ways of getting content in:
 
 1. **Paste-in** — visitors open the SPA, paste Markdown that contains tables, and see them rendered in the browser.
-2. **Palworld samples** — use the **Palworld → Mounts** nav link to load `samples/palworld/Mounts.md` shipped with the site.
+2. **Palworld samples** — use the **Palworld** nav links (Mounts, Mining Pals, Breeding Sheet, Damage Conversion, Skill Fruits) to load Markdown from `assets/samples/palworld/` shipped with the site.
 
 Tables are extracted from mixed Markdown (prose around tables is ignored for now) and can be filtered with the search box.
 
@@ -38,7 +38,7 @@ gleam run -m lustre/dev build --minify
 python scripts/prepare_pages_dist.py
 ```
 
-`samples/Mounts.md` is the canonical sample; the prepare script copies it to `assets/samples/palworld/` and `dist/samples/palworld/` for the SPA to fetch.
+Palworld Markdown lives in `assets/samples/palworld/` and is copied into `dist/` by the Lustre build.
 
 ## GitHub Pages
 

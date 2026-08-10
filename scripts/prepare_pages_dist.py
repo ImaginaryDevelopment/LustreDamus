@@ -1,26 +1,13 @@
 #!/usr/bin/env python3
-"""Prepare dist/ for GitHub Pages: sync samples, fix asset URLs, add .nojekyll."""
+"""Prepare dist/ for GitHub Pages: fix asset URLs and add .nojekyll."""
 
 from __future__ import annotations
 
-import shutil
 from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-ASSETS_SAMPLE = ROOT / "assets" / "samples" / "palworld" / "Mounts.md"
-SOURCE_SAMPLE = ROOT / "samples" / "Mounts.md"
-
-
-def sync_sample() -> None:
-    if not SOURCE_SAMPLE.exists():
-        raise SystemExit(f"Missing sample source: {SOURCE_SAMPLE}")
-    ASSETS_SAMPLE.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(SOURCE_SAMPLE, ASSETS_SAMPLE)
-    dist_sample = DIST / "samples" / "palworld" / "Mounts.md"
-    dist_sample.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(SOURCE_SAMPLE, dist_sample)
 
 
 def fix_index_paths() -> None:
@@ -36,7 +23,6 @@ def fix_index_paths() -> None:
 def main() -> None:
     if not DIST.exists():
         raise SystemExit("dist/ missing — run `gleam run -m lustre/dev build` first")
-    sync_sample()
     fix_index_paths()
 
 

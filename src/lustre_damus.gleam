@@ -11,6 +11,7 @@ import lustre/element/html
 import lustre/event
 import markdown_table.{type Table}
 import rsvp
+import samples.{type Sample}
 import table_sort.{
   type Direction, type EmptyPlacement, type SortKind, type SortSpec,
   type TextPlacement, Asc, Desc, EmptiesFirst, EmptiesLast, SortNumeric,
@@ -19,7 +20,7 @@ import table_sort.{
 
 pub type Page {
   PastePage
-  PalworldMountsPage
+  SamplePage(Sample)
 }
 
 pub type Model {
@@ -35,7 +36,7 @@ pub type Model {
 
 pub type Msg {
   UserChosePaste
-  UserChosePalworldMounts
+  UserChoseSample(Sample)
   UserUpdatedMarkdown(String)
   UserUpdatedFilter(String)
   UserClickedColumn(String, Int)
@@ -74,16 +75,16 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       effect.none(),
     )
 
-    UserChosePalworldMounts -> #(
+    UserChoseSample(sample) -> #(
       Model(
-        page: PalworldMountsPage,
+        page: SamplePage(sample),
         markdown: "",
         filter: "",
         loading: True,
         error: None,
         sorts: dict.new(),
       ),
-      load_sample("./samples/palworld/Mounts.md"),
+      load_sample(samples.url(sample)),
     )
 
     UserUpdatedMarkdown(markdown) -> #(
@@ -99,30 +100,42 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     )
 
     UserSetSortKind(table_id, kind) -> #(
-      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
-        table_sort.SortSpec(..spec, kind:, direction: Asc)
-      })),
+      Model(
+        ..model,
+        sorts: update_sort(model.sorts, table_id, fn(spec) {
+          table_sort.SortSpec(..spec, kind:, direction: Asc)
+        }),
+      ),
       effect.none(),
     )
 
     UserSetDirection(table_id, direction) -> #(
-      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
-        table_sort.SortSpec(..spec, direction:)
-      })),
+      Model(
+        ..model,
+        sorts: update_sort(model.sorts, table_id, fn(spec) {
+          table_sort.SortSpec(..spec, direction:)
+        }),
+      ),
       effect.none(),
     )
 
     UserSetEmptyPlacement(table_id, empties) -> #(
-      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
-        table_sort.SortSpec(..spec, empties:)
-      })),
+      Model(
+        ..model,
+        sorts: update_sort(model.sorts, table_id, fn(spec) {
+          table_sort.SortSpec(..spec, empties:)
+        }),
+      ),
       effect.none(),
     )
 
     UserSetTextPlacement(table_id, texts) -> #(
-      Model(..model, sorts: update_sort(model.sorts, table_id, fn(spec) {
-        table_sort.SortSpec(..spec, texts:)
-      })),
+      Model(
+        ..model,
+        sorts: update_sort(model.sorts, table_id, fn(spec) {
+          table_sort.SortSpec(..spec, texts:)
+        }),
+      ),
       effect.none(),
     )
 
@@ -231,15 +244,23 @@ fn view(model: Model) -> Element(Msg) {
       ]),
     ]),
     html.nav(
-      [attribute.class("site-nav"), attribute.attribute("aria-label", "Sections")],
+      [
+        attribute.class("site-nav"),
+        attribute.attribute("aria-label", "Sections"),
+      ],
       [
         nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
         html.div([attribute.class("nav-group")], [
           html.p([attribute.class("nav-label")], [html.text("Palworld")]),
-          nav_button(
-            "Mounts",
-            model.page == PalworldMountsPage,
-            UserChosePalworldMounts,
+          html.div(
+            [attribute.class("nav-links")],
+            list.map(samples.all(), fn(sample) {
+              nav_button(
+                sample.label,
+                is_sample_page(model.page, sample),
+                UserChoseSample(sample),
+              )
+            }),
           ),
         ]),
       ],
@@ -261,9 +282,9 @@ fn view(model: Model) -> Element(Msg) {
         filter_controls(model),
         tables_section(model, tables),
       ]
-      PalworldMountsPage -> [
+      SamplePage(sample) -> [
         html.p([attribute.class("sample-meta")], [
-          html.text("Sample: Palworld mounts (speed, stamina & saddles)."),
+          html.text("Sample: " <> sample.label <> " — " <> sample.blurb),
         ]),
         filter_controls(model),
         tables_section(model, tables),
@@ -272,11 +293,21 @@ fn view(model: Model) -> Element(Msg) {
   ])
 }
 
+fn is_sample_page(page: Page, sample: Sample) -> Bool {
+  case page {
+    SamplePage(current) -> current.id == sample.id
+    PastePage -> False
+  }
+}
+
 fn apply_sort(table: Table, sorts: Dict(String, SortSpec)) -> Table {
   let id = table_id_for(table)
   case dict.get(sorts, id) {
     Ok(spec) ->
-      markdown_table.Table(..table, rows: table_sort.sort_rows(table.rows, spec))
+      markdown_table.Table(
+        ..table,
+        rows: table_sort.sort_rows(table.rows, spec),
+      )
     Error(_) -> table
   }
 }
