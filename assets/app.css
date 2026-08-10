@@ -1,12 +1,14 @@
 :root {
   color-scheme: light;
-  --bg: #f6f1e8;
+  --bg: #f3efe6;
   --ink: #1c1917;
   --muted: #57534e;
   --panel: #fffdf8;
   --line: #d6d3d1;
   --accent: #0f766e;
+  --accent-soft: #ccfbf1;
   --focus: #115e59;
+  --danger: #9f1239;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
 }
 
@@ -25,11 +27,11 @@ body {
 }
 
 .app {
-  width: min(920px, calc(100% - 2rem));
+  width: min(1100px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 2.5rem 0 3rem;
+  padding: 2rem 0 3rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 header h1 {
@@ -39,9 +41,47 @@ header h1 {
 }
 
 header p,
-.empty {
+.empty,
+.sample-meta,
+.nav-label {
   margin: 0;
   color: var(--muted);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: end;
+}
+
+.nav-group {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.nav-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+.nav-link {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--ink);
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nav-link.active {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--focus);
+  font-weight: 600;
 }
 
 main {
@@ -57,6 +97,7 @@ label {
 }
 
 textarea,
+.filter-row input,
 .preview {
   width: 100%;
   border: 1px solid var(--line);
@@ -69,9 +110,21 @@ textarea {
   font: 0.95rem/1.45 ui-monospace, "Cascadia Code", Consolas, monospace;
 }
 
-textarea:focus {
+textarea:focus,
+.filter-row input:focus,
+.nav-link:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 1px;
+}
+
+.filter-row {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.filter-row input {
+  padding: 0.65rem 0.8rem;
+  font: inherit;
 }
 
 .preview {
@@ -83,12 +136,47 @@ textarea:focus {
   font-size: 1.1rem;
 }
 
-pre {
-  margin: 0;
-  overflow: auto;
+.tables {
+  display: grid;
+  gap: 1.5rem;
 }
 
-code {
-  font: 0.95rem/1.45 ui-monospace, "Cascadia Code", Consolas, monospace;
-  white-space: pre-wrap;
+.md-table h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+}
+
+.table-wrap {
+  overflow: auto;
+  border: 1px solid var(--line);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  padding: 0.45rem 0.65rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background: #fafaf9;
+}
+
+.error {
+  margin: 0;
+  color: var(--danger);
 }

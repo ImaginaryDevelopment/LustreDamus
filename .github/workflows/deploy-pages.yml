@@ -36,6 +36,11 @@ jobs:
       - name: Install dependencies
         run: gleam deps download
 
+      - name: Sync Palworld sample into assets
+        run: |
+          mkdir -p assets/samples/palworld
+          cp samples/Mounts.md assets/samples/palworld/Mounts.md
+
       - name: Build static SPA
         run: gleam run -m lustre/dev build --minify
 

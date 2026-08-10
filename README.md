@@ -8,10 +8,10 @@ LustreDamus turns Markdown table source into a readable table view. The app is c
 
 It supports two ways of getting content in:
 
-1. **Local / bundled Markdown** — load tables from a Markdown file included with the deploy (useful when developing locally or shipping a known document with the site).
-2. **Paste-in** — visitors open the GitHub Pages SPA, paste Markdown that contains tables, and see them rendered in the browser.
+1. **Paste-in** — visitors open the SPA, paste Markdown that contains tables, and see them rendered in the browser.
+2. **Palworld samples** — use the **Palworld → Mounts** nav link to load `samples/palworld/Mounts.md` shipped with the site.
 
-The goal is a small, focused static tool: parse Markdown tables, show them clearly, and ship as a single-page app anyone can open from GitHub Pages or run locally.
+Tables are extracted from mixed Markdown (prose around tables is ignored for now) and can be filtered with the search box.
 
 ## Setup
 
@@ -38,7 +38,7 @@ gleam run -m lustre/dev build --minify
 python scripts/prepare_pages_dist.py
 ```
 
-Output lands in `dist/` (`index.html`, JS bundle, and assets). The prepare script rewrites Lustre’s root-absolute `/lustre_damus.js` to a relative path so the app works under `https://<user>.github.io/LustreDamus/`.
+`samples/Mounts.md` is the canonical sample; the prepare script copies it to `assets/samples/palworld/` and `dist/samples/palworld/` for the SPA to fetch.
 
 ## GitHub Pages
 
