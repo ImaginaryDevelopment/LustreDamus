@@ -206,12 +206,22 @@ button.sort-header:hover {
   font-size: 0.9rem;
 }
 
+.sort-panels {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 0.75rem;
+}
+
+.sort-secondary-wrap {
+  display: grid;
+  gap: 0.45rem;
+}
+
 .sort-controls {
   display: flex;
   flex-wrap: wrap;
   gap: 0.55rem 0.75rem;
   align-items: center;
-  margin: 0 0 0.75rem;
   padding: 0.7rem 0.8rem;
   border: 1px solid var(--line);
   background: #f8fafc;
@@ -257,8 +267,14 @@ button.sort-header:hover {
   font-weight: 600;
 }
 
-.sort-clear {
-  margin-left: auto;
+th.selected.primary,
+th.selected.primary .sort-header:hover {
+  background: #ecfeff;
+}
+
+th.selected.secondary,
+th.selected.secondary .sort-header:hover {
+  background: #fef3c7;
 }
 
 tbody tr:nth-child(even) {

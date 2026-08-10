@@ -1,3 +1,4 @@
+import gleam/option.{Some}
 import gleeunit
 import markdown_table
 import table_sort.{
@@ -91,13 +92,13 @@ pub fn numeric_sort_numbers_then_text_then_empty_test() {
   let sorted =
     table_sort.sort_rows(
       rows,
-      table_sort.SortSpec(
+      table_sort.single(table_sort.SortSpec(
         column: 0,
         kind: SortNumeric,
         direction: Asc,
         empties: EmptiesLast,
         texts: TextAfterNumbers,
-      ),
+      )),
     )
 
   assert sorted
@@ -118,13 +119,13 @@ pub fn numeric_sort_desc_and_empties_first_test() {
   let sorted =
     table_sort.sort_rows(
       rows,
-      table_sort.SortSpec(
+      table_sort.single(table_sort.SortSpec(
         column: 0,
         kind: SortNumeric,
         direction: Desc,
         empties: EmptiesFirst,
         texts: TextAfterNumbers,
-      ),
+      )),
     )
 
   assert sorted == [["—"], ["~76"], ["6"], ["Raid only"]]
@@ -136,13 +137,13 @@ pub fn text_before_numbers_placement_test() {
   let sorted =
     table_sort.sort_rows(
       rows,
-      table_sort.SortSpec(
+      table_sort.single(table_sort.SortSpec(
         column: 0,
         kind: SortNumeric,
         direction: Asc,
         empties: EmptiesLast,
         texts: TextBeforeNumbers,
-      ),
+      )),
     )
 
   assert sorted == [["Raid only"], ["~76"], ["-"]]
@@ -154,16 +155,54 @@ pub fn text_sort_respects_empties_test() {
   let sorted =
     table_sort.sort_rows(
       rows,
-      table_sort.SortSpec(
+      table_sort.single(table_sort.SortSpec(
         column: 0,
         kind: SortText,
         direction: Asc,
         empties: EmptiesLast,
         texts: TextAfterNumbers,
-      ),
+      )),
     )
 
   assert sorted == [["Jetragon"], ["Nitewing"], ["-"], ["—"]]
+}
+
+pub fn secondary_sort_breaks_primary_ties_test() {
+  let rows = [
+    ["A", "30"],
+    ["B", "10"],
+    ["A", "20"],
+    ["B", "5"],
+  ]
+
+  let sorted =
+    table_sort.sort_rows(
+      rows,
+      table_sort.TableSort(
+        primary: table_sort.SortSpec(
+          column: 0,
+          kind: SortText,
+          direction: Asc,
+          empties: EmptiesLast,
+          texts: TextAfterNumbers,
+        ),
+        secondary: Some(table_sort.SortSpec(
+          column: 1,
+          kind: SortNumeric,
+          direction: Asc,
+          empties: EmptiesLast,
+          texts: TextAfterNumbers,
+        )),
+      ),
+    )
+
+  assert sorted
+    == [
+      ["A", "20"],
+      ["A", "30"],
+      ["B", "5"],
+      ["B", "10"],
+    ]
 }
 
 fn list_length(items: List(a)) -> Int {

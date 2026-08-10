@@ -1,6 +1,7 @@
 import gleam/float
 import gleam/int
 import gleam/list
+import gleam/option.{type Option, None, Some}
 import gleam/order.{type Order}
 import gleam/string
 
@@ -35,6 +36,10 @@ pub type SortSpec {
   )
 }
 
+pub type TableSort {
+  TableSort(primary: SortSpec, secondary: Option(SortSpec))
+}
+
 pub type CellClass {
   EmptyCell
   NumberCell(Float)
@@ -49,6 +54,10 @@ pub fn default_spec(column: Int, kind: SortKind) -> SortSpec {
     empties: EmptiesLast,
     texts: TextAfterNumbers,
   )
+}
+
+pub fn single(primary: SortSpec) -> TableSort {
+  TableSort(primary:, secondary: None)
 }
 
 pub fn is_empty_cell(value: String) -> Bool {
@@ -70,20 +79,30 @@ pub fn classify_cell(value: String) -> CellClass {
   }
 }
 
-/// Sort rows by a column. Short rows are treated as empty in missing cells.
+/// Sort rows by primary column, then optional secondary, with a stable tie-break.
 pub fn sort_rows(
   rows: List(List(String)),
-  spec: SortSpec,
+  table_sort: TableSort,
 ) -> List(List(String)) {
   list.sort(rows, fn(left, right) {
-    compare_cells(cell_at(left, spec.column), cell_at(right, spec.column), spec)
+    case compare_by_spec(left, right, table_sort.primary) {
+      order.Eq ->
+        case table_sort.secondary {
+          Some(secondary) ->
+            case compare_by_spec(left, right, secondary) {
+              order.Eq -> stable_tie_break(left, right, table_sort.primary.column)
+              other -> other
+            }
+          None -> stable_tie_break(left, right, table_sort.primary.column)
+        }
+      other -> other
+    }
   })
 }
 
 pub fn column_looks_numeric(rows: List(List(String)), column: Int) -> Bool {
   let values = list.map(rows, fn(row) { cell_at(row, column) })
-  let non_empty =
-    list.filter(values, fn(value) { !is_empty_cell(value) })
+  let non_empty = list.filter(values, fn(value) { !is_empty_cell(value) })
   case non_empty {
     [] -> False
     _ -> {
@@ -107,6 +126,14 @@ pub fn toggle_direction(spec: SortSpec) -> SortSpec {
   SortSpec(..spec, direction:)
 }
 
+fn compare_by_spec(
+  left: List(String),
+  right: List(String),
+  spec: SortSpec,
+) -> Order {
+  compare_cells(cell_at(left, spec.column), cell_at(right, spec.column), spec)
+}
+
 fn compare_cells(left: String, right: String, spec: SortSpec) -> Order {
   case spec.kind {
     SortText -> compare_text(left, right, spec)
@@ -123,9 +150,10 @@ fn compare_text(left: String, right: String, spec: SortSpec) -> Order {
     False, True -> order.negate(empty_order(spec.empties))
     False, False -> {
       let base =
-        string.compare(string.lowercase(string.trim(left)), string.lowercase(
-          string.trim(right),
-        ))
+        string.compare(
+          string.lowercase(string.trim(left)),
+          string.lowercase(string.trim(right)),
+        )
       apply_direction(base, spec.direction)
     }
   }
@@ -140,40 +168,29 @@ fn compare_numeric(left: String, right: String, spec: SortSpec) -> Order {
     order.Eq ->
       case left_class, right_class {
         NumberCell(a), NumberCell(b) ->
-          tie_break(
-            apply_direction(float.compare(a, b), spec.direction),
-            left,
-            right,
-          )
+          apply_direction(float.compare(a, b), spec.direction)
         TextCell(a), TextCell(b) ->
-          tie_break(
-            apply_direction(string.compare(a, b), spec.direction),
-            left,
-            right,
-          )
-        _, _ -> string.compare(left, right)
+          apply_direction(string.compare(a, b), spec.direction)
+        _, _ -> order.Eq
       }
     other -> other
   }
 }
 
-fn tie_break(primary: Order, left: String, right: String) -> Order {
-  case primary {
-    order.Eq -> string.compare(left, right)
-    _ -> primary
-  }
+fn stable_tie_break(
+  left: List(String),
+  right: List(String),
+  column: Int,
+) -> Order {
+  string.compare(cell_at(left, column), cell_at(right, column))
 }
 
 fn bucket_rank(class: CellClass, spec: SortSpec) -> Int {
   let buckets = case spec.texts, spec.empties {
     TextAfterNumbers, EmptiesLast -> [0, 1, 2]
-    // number, text, empty
     TextBeforeNumbers, EmptiesLast -> [1, 0, 2]
-    // text, number, empty
     TextAfterNumbers, EmptiesFirst -> [1, 2, 0]
-    // empty, number, text
     TextBeforeNumbers, EmptiesFirst -> [2, 1, 0]
-    // empty, text, number
   }
   let assert [number_rank, text_rank, empty_rank] = buckets
   case class {

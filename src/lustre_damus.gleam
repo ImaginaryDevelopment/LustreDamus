@@ -14,13 +14,18 @@ import rsvp
 import samples.{type Sample}
 import table_sort.{
   type Direction, type EmptyPlacement, type SortKind, type SortSpec,
-  type TextPlacement, Asc, Desc, EmptiesFirst, EmptiesLast, SortNumeric,
-  SortText, TextAfterNumbers, TextBeforeNumbers,
+  type TableSort, type TextPlacement, Asc, Desc, EmptiesFirst, EmptiesLast,
+  SortNumeric, SortText, TextAfterNumbers, TextBeforeNumbers,
 }
 
 pub type Page {
   PastePage
   SamplePage(Sample)
+}
+
+pub type SortSlot {
+  Primary
+  Secondary
 }
 
 pub type Model {
@@ -30,7 +35,7 @@ pub type Model {
     filter: String,
     loading: Bool,
     error: Option(String),
-    sorts: Dict(String, SortSpec),
+    sorts: Dict(String, TableSort),
   )
 }
 
@@ -40,10 +45,11 @@ pub type Msg {
   UserUpdatedMarkdown(String)
   UserUpdatedFilter(String)
   UserClickedColumn(String, Int)
-  UserSetSortKind(String, SortKind)
-  UserSetDirection(String, Direction)
-  UserSetEmptyPlacement(String, EmptyPlacement)
-  UserSetTextPlacement(String, TextPlacement)
+  UserSetSortKind(String, SortSlot, SortKind)
+  UserSetDirection(String, SortSlot, Direction)
+  UserSetEmptyPlacement(String, SortSlot, EmptyPlacement)
+  UserSetTextPlacement(String, SortSlot, TextPlacement)
+  UserClearSecondary(String)
   UserClearSort(String)
   SampleLoaded(Result(String, String))
 }
@@ -99,42 +105,58 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       effect.none(),
     )
 
-    UserSetSortKind(table_id, kind) -> #(
+    UserSetSortKind(table_id, slot, kind) -> #(
       Model(
         ..model,
-        sorts: update_sort(model.sorts, table_id, fn(spec) {
+        sorts: update_slot(model.sorts, table_id, slot, fn(spec) {
           table_sort.SortSpec(..spec, kind:, direction: Asc)
         }),
       ),
       effect.none(),
     )
 
-    UserSetDirection(table_id, direction) -> #(
+    UserSetDirection(table_id, slot, direction) -> #(
       Model(
         ..model,
-        sorts: update_sort(model.sorts, table_id, fn(spec) {
+        sorts: update_slot(model.sorts, table_id, slot, fn(spec) {
           table_sort.SortSpec(..spec, direction:)
         }),
       ),
       effect.none(),
     )
 
-    UserSetEmptyPlacement(table_id, empties) -> #(
+    UserSetEmptyPlacement(table_id, slot, empties) -> #(
       Model(
         ..model,
-        sorts: update_sort(model.sorts, table_id, fn(spec) {
+        sorts: update_slot(model.sorts, table_id, slot, fn(spec) {
           table_sort.SortSpec(..spec, empties:)
         }),
       ),
       effect.none(),
     )
 
-    UserSetTextPlacement(table_id, texts) -> #(
+    UserSetTextPlacement(table_id, slot, texts) -> #(
       Model(
         ..model,
-        sorts: update_sort(model.sorts, table_id, fn(spec) {
+        sorts: update_slot(model.sorts, table_id, slot, fn(spec) {
           table_sort.SortSpec(..spec, texts:)
         }),
+      ),
+      effect.none(),
+    )
+
+    UserClearSecondary(table_id) -> #(
+      Model(
+        ..model,
+        sorts: case dict.get(model.sorts, table_id) {
+          Ok(table_sort.TableSort(primary:, secondary: _)) ->
+            dict.insert(
+              model.sorts,
+              table_id,
+              table_sort.TableSort(primary:, secondary: None),
+            )
+          Error(_) -> model.sorts
+        },
       ),
       effect.none(),
     )
@@ -160,35 +182,84 @@ fn update_column_sort(
   model: Model,
   table_id: String,
   column: Int,
-) -> Dict(String, SortSpec) {
+) -> Dict(String, TableSort) {
+  let kind = inferred_kind(model, table_id, column)
   case dict.get(model.sorts, table_id) {
-    Ok(spec) if spec.column == column ->
-      dict.insert(model.sorts, table_id, table_sort.toggle_direction(spec))
-    _ -> {
-      let tables =
-        model.markdown
-        |> markdown_table.extract_tables
-        |> markdown_table.filter_tables(model.filter)
-      let kind = case find_table(tables, table_id) {
-        Ok(table) ->
-          case table_sort.column_looks_numeric(table.rows, column) {
-            True -> SortNumeric
-            False -> SortText
-          }
-        Error(_) -> SortText
-      }
-      dict.insert(model.sorts, table_id, table_sort.default_spec(column, kind))
-    }
+    Ok(table_sort.TableSort(primary:, secondary:)) if primary.column == column ->
+      dict.insert(
+        model.sorts,
+        table_id,
+        table_sort.TableSort(
+          primary: table_sort.toggle_direction(primary),
+          secondary:,
+        ),
+      )
+
+    Ok(table_sort.TableSort(primary:, secondary: Some(secondary))) if secondary.column
+      == column ->
+      dict.insert(
+        model.sorts,
+        table_id,
+        table_sort.TableSort(
+          primary:,
+          secondary: Some(table_sort.toggle_direction(secondary)),
+        ),
+      )
+
+    Ok(table_sort.TableSort(primary:, secondary: _)) ->
+      dict.insert(
+        model.sorts,
+        table_id,
+        table_sort.TableSort(
+          primary:,
+          secondary: Some(table_sort.default_spec(column, kind)),
+        ),
+      )
+
+    Error(_) ->
+      dict.insert(
+        model.sorts,
+        table_id,
+        table_sort.single(table_sort.default_spec(column, kind)),
+      )
   }
 }
 
-fn update_sort(
-  sorts: Dict(String, SortSpec),
+fn inferred_kind(model: Model, table_id: String, column: Int) -> SortKind {
+  let tables =
+    model.markdown
+    |> markdown_table.extract_tables
+    |> markdown_table.filter_tables(model.filter)
+  case find_table(tables, table_id) {
+    Ok(table) ->
+      case table_sort.column_looks_numeric(table.rows, column) {
+        True -> SortNumeric
+        False -> SortText
+      }
+    Error(_) -> SortText
+  }
+}
+
+fn update_slot(
+  sorts: Dict(String, TableSort),
   table_id: String,
+  slot: SortSlot,
   alter: fn(SortSpec) -> SortSpec,
-) -> Dict(String, SortSpec) {
+) -> Dict(String, TableSort) {
   case dict.get(sorts, table_id) {
-    Ok(spec) -> dict.insert(sorts, table_id, alter(spec))
+    Ok(table_sort.TableSort(primary:, secondary:)) -> {
+      let updated = case slot {
+        Primary ->
+          table_sort.TableSort(primary: alter(primary), secondary:)
+        Secondary ->
+          case secondary {
+            Some(spec) ->
+              table_sort.TableSort(primary:, secondary: Some(alter(spec)))
+            None -> table_sort.TableSort(primary:, secondary:)
+          }
+      }
+      dict.insert(sorts, table_id, updated)
+    }
     Error(_) -> sorts
   }
 }
@@ -300,13 +371,13 @@ fn is_sample_page(page: Page, sample: Sample) -> Bool {
   }
 }
 
-fn apply_sort(table: Table, sorts: Dict(String, SortSpec)) -> Table {
+fn apply_sort(table: Table, sorts: Dict(String, TableSort)) -> Table {
   let id = table_id_for(table)
   case dict.get(sorts, id) {
-    Ok(spec) ->
+    Ok(sort) ->
       markdown_table.Table(
         ..table,
-        rows: table_sort.sort_rows(table.rows, spec),
+        rows: table_sort.sort_rows(table.rows, sort),
       )
     Error(_) -> table
   }
@@ -354,7 +425,7 @@ fn tables_section(model: Model, tables: List(Table)) -> Element(Msg) {
 fn render_tables(
   tables: List(Table),
   markdown: String,
-  sorts: Dict(String, SortSpec),
+  sorts: Dict(String, TableSort),
 ) -> Element(Msg) {
   case tables {
     [] if markdown == "" ->
@@ -373,17 +444,19 @@ fn render_tables(
   }
 }
 
-fn render_table(table: Table, sorts: Dict(String, SortSpec)) -> Element(Msg) {
+fn render_table(table: Table, sorts: Dict(String, TableSort)) -> Element(Msg) {
   let id = table_id_for(table)
   let active = dict.get(sorts, id)
 
   html.section([attribute.class("md-table")], [
     html.h3([], [html.text(table.title)]),
     case active {
-      Ok(spec) -> sort_controls(id, spec, table.headers)
+      Ok(sort) -> sort_controls(id, sort, table.headers)
       Error(_) ->
         html.p([attribute.class("sort-hint")], [
-          html.text("Click a column header to sort. Click again to reverse."),
+          html.text(
+            "Click a column to sort. Click another column to add a secondary sort.",
+          ),
         ])
     },
     html.div([attribute.class("table-wrap")], [
@@ -392,21 +465,18 @@ fn render_table(table: Table, sorts: Dict(String, SortSpec)) -> Element(Msg) {
           html.tr(
             [],
             list.index_map(table.headers, fn(cell, index) {
-              let selected = case active {
-                Ok(spec) if spec.column == index -> True
-                _ -> False
+              let role = column_role(active, index)
+              let marker = case role {
+                Some(#(Primary, Asc)) -> " ↑1"
+                Some(#(Primary, Desc)) -> " ↓1"
+                Some(#(Secondary, Asc)) -> " ↑2"
+                Some(#(Secondary, Desc)) -> " ↓2"
+                None -> ""
               }
-              let marker = case active {
-                Ok(spec) if spec.column == index ->
-                  case spec.direction {
-                    Asc -> " ↑"
-                    Desc -> " ↓"
-                  }
-                _ -> ""
-              }
-              let class = case selected {
-                True -> "sortable selected"
-                False -> "sortable"
+              let class = case role {
+                Some(#(Primary, _)) -> "sortable selected primary"
+                Some(#(Secondary, _)) -> "sortable selected secondary"
+                None -> "sortable"
               }
               html.th([attribute.class(class)], [
                 html.button(
@@ -435,8 +505,58 @@ fn render_table(table: Table, sorts: Dict(String, SortSpec)) -> Element(Msg) {
   ])
 }
 
+fn column_role(
+  active: Result(TableSort, Nil),
+  index: Int,
+) -> Option(#(SortSlot, Direction)) {
+  case active {
+    Ok(table_sort.TableSort(primary:, secondary: _)) if primary.column == index ->
+      Some(#(Primary, primary.direction))
+    Ok(table_sort.TableSort(primary: _, secondary: Some(secondary))) if secondary.column
+      == index -> Some(#(Secondary, secondary.direction))
+    _ -> None
+  }
+}
+
 fn sort_controls(
   table_id: String,
+  sort: TableSort,
+  headers: List(String),
+) -> Element(Msg) {
+  html.div([attribute.class("sort-panels")], [
+    sort_panel(table_id, Primary, sort.primary, headers),
+    case sort.secondary {
+      Some(secondary) ->
+        html.div([attribute.class("sort-secondary-wrap")], [
+          sort_panel(table_id, Secondary, secondary, headers),
+          html.button(
+            [
+              attribute.type_("button"),
+              attribute.class("sort-clear"),
+              event.on_click(UserClearSecondary(table_id)),
+            ],
+            [html.text("Clear secondary")],
+          ),
+        ])
+      None ->
+        html.p([attribute.class("sort-hint")], [
+          html.text("Click another column header to add a secondary sort."),
+        ])
+    },
+    html.button(
+      [
+        attribute.type_("button"),
+        attribute.class("sort-clear"),
+        event.on_click(UserClearSort(table_id)),
+      ],
+      [html.text("Clear all sorts")],
+    ),
+  ])
+}
+
+fn sort_panel(
+  table_id: String,
+  slot: SortSlot,
   spec: SortSpec,
   headers: List(String),
 ) -> Element(Msg) {
@@ -444,22 +564,24 @@ fn sort_controls(
     [name, ..] -> name
     [] -> "Column"
   }
+  let title = case slot {
+    Primary -> "Primary: " <> column_name
+    Secondary -> "Secondary: " <> column_name
+  }
 
   html.div([attribute.class("sort-controls")], [
-    html.p([attribute.class("sort-active")], [
-      html.text("Sorting by " <> column_name),
-    ]),
+    html.p([attribute.class("sort-active")], [html.text(title)]),
     html.div([attribute.class("sort-group")], [
       html.span([attribute.class("sort-group-label")], [html.text("Type")]),
       toggle_btn(
         "Text",
         spec.kind == SortText,
-        UserSetSortKind(table_id, SortText),
+        UserSetSortKind(table_id, slot, SortText),
       ),
       toggle_btn(
         "Numeric",
         spec.kind == SortNumeric,
-        UserSetSortKind(table_id, SortNumeric),
+        UserSetSortKind(table_id, slot, SortNumeric),
       ),
     ]),
     html.div([attribute.class("sort-group")], [
@@ -470,7 +592,7 @@ fn sort_controls(
           SortNumeric -> "0 → 9"
         },
         spec.direction == Asc,
-        UserSetDirection(table_id, Asc),
+        UserSetDirection(table_id, slot, Asc),
       ),
       toggle_btn(
         case spec.kind {
@@ -478,7 +600,7 @@ fn sort_controls(
           SortNumeric -> "9 → 0"
         },
         spec.direction == Desc,
-        UserSetDirection(table_id, Desc),
+        UserSetDirection(table_id, slot, Desc),
       ),
     ]),
     html.div([attribute.class("sort-group")], [
@@ -486,12 +608,12 @@ fn sort_controls(
       toggle_btn(
         "First",
         spec.empties == EmptiesFirst,
-        UserSetEmptyPlacement(table_id, EmptiesFirst),
+        UserSetEmptyPlacement(table_id, slot, EmptiesFirst),
       ),
       toggle_btn(
         "Last",
         spec.empties == EmptiesLast,
-        UserSetEmptyPlacement(table_id, EmptiesLast),
+        UserSetEmptyPlacement(table_id, slot, EmptiesLast),
       ),
     ]),
     case spec.kind {
@@ -503,24 +625,16 @@ fn sort_controls(
           toggle_btn(
             "Before numbers",
             spec.texts == TextBeforeNumbers,
-            UserSetTextPlacement(table_id, TextBeforeNumbers),
+            UserSetTextPlacement(table_id, slot, TextBeforeNumbers),
           ),
           toggle_btn(
             "After numbers",
             spec.texts == TextAfterNumbers,
-            UserSetTextPlacement(table_id, TextAfterNumbers),
+            UserSetTextPlacement(table_id, slot, TextAfterNumbers),
           ),
         ])
       SortText -> element.none()
     },
-    html.button(
-      [
-        attribute.type_("button"),
-        attribute.class("sort-clear"),
-        event.on_click(UserClearSort(table_id)),
-      ],
-      [html.text("Clear sort")],
-    ),
   ])
 }
 
