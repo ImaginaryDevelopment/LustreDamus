@@ -12,6 +12,7 @@ import lustre/event
 import markdown_table.{type Table}
 import rsvp
 import samples.{type Sample}
+import table_format.{type FormattedCell, type TableFormatter}
 import table_sort.{
   type Direction, type EmptyPlacement, type SortKind, type SortSpec,
   type TableSort, type TextPlacement, Asc, Desc, EmptiesFirst, EmptiesLast,
@@ -299,6 +300,7 @@ fn describe_error(error: rsvp.Error(String)) -> String {
 }
 
 fn view(model: Model) -> Element(Msg) {
+  let formatter = page_formatter(model.page)
   let tables =
     model.markdown
     |> markdown_table.extract_tables
@@ -351,17 +353,24 @@ fn view(model: Model) -> Element(Msg) {
           model.markdown,
         ),
         filter_controls(model),
-        tables_section(model, tables),
+        tables_section(model, tables, formatter),
       ]
       SamplePage(sample) -> [
         html.p([attribute.class("sample-meta")], [
           html.text("Sample: " <> sample.label <> " — " <> sample.blurb),
         ]),
         filter_controls(model),
-        tables_section(model, tables),
+        tables_section(model, tables, formatter),
       ]
     }),
   ])
+}
+
+fn page_formatter(page: Page) -> TableFormatter {
+  case page {
+    SamplePage(sample) -> samples.table_formatter(sample)
+    PastePage -> table_format.plain()
+  }
 }
 
 fn is_sample_page(page: Page, sample: Sample) -> Bool {
@@ -407,7 +416,11 @@ fn filter_controls(model: Model) -> Element(Msg) {
   ])
 }
 
-fn tables_section(model: Model, tables: List(Table)) -> Element(Msg) {
+fn tables_section(
+  model: Model,
+  tables: List(Table),
+  formatter: TableFormatter,
+) -> Element(Msg) {
   html.section([attribute.class("preview")], [
     html.h2([], [html.text("Tables")]),
     case model.loading {
@@ -416,7 +429,7 @@ fn tables_section(model: Model, tables: List(Table)) -> Element(Msg) {
         case model.error {
           Some(message) ->
             html.p([attribute.class("error")], [html.text(message)])
-          None -> render_tables(tables, model.markdown, model.sorts)
+          None -> render_tables(tables, model.markdown, model.sorts, formatter)
         }
     },
   ])
@@ -426,6 +439,7 @@ fn render_tables(
   tables: List(Table),
   markdown: String,
   sorts: Dict(String, TableSort),
+  formatter: TableFormatter,
 ) -> Element(Msg) {
   case tables {
     [] if markdown == "" ->
@@ -439,12 +453,16 @@ fn render_tables(
     _ ->
       html.div(
         [attribute.class("tables")],
-        list.map(tables, fn(table) { render_table(table, sorts) }),
+        list.map(tables, fn(table) { render_table(table, sorts, formatter) }),
       )
   }
 }
 
-fn render_table(table: Table, sorts: Dict(String, TableSort)) -> Element(Msg) {
+fn render_table(
+  table: Table,
+  sorts: Dict(String, TableSort),
+  formatter: TableFormatter,
+) -> Element(Msg) {
   let id = table_id_for(table)
   let active = dict.get(sorts, id)
 
@@ -493,16 +511,39 @@ fn render_table(table: Table, sorts: Dict(String, TableSort)) -> Element(Msg) {
         ]),
         html.tbody(
           [],
-          list.map(table.rows, fn(row) {
+          list.index_map(table.rows, fn(row, row_index) {
             html.tr(
               [],
-              list.map(row, fn(cell) { html.td([], [html.text(cell)]) }),
+              list.index_map(table.headers, fn(_header, column) {
+                let ctx =
+                  table_format.make_context(
+                    table.title,
+                    table.headers,
+                    column,
+                    row_index,
+                    row,
+                  )
+                let formatted = table_format.format_cell(formatter, ctx)
+                render_td(formatted)
+              }),
             )
           }),
         ),
       ]),
     ]),
   ])
+}
+
+fn render_td(formatted: FormattedCell) -> Element(Msg) {
+  let class_attr = case formatted.class_name {
+    "" -> []
+    class_name -> [attribute.class(class_name)]
+  }
+  let title_attr = case formatted.title {
+    Some(title) -> [attribute.title(title)]
+    None -> []
+  }
+  html.td(list.append(class_attr, title_attr), [html.text(formatted.text)])
 }
 
 fn column_role(

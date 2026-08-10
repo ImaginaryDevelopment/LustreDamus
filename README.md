@@ -38,7 +38,13 @@ gleam run -m lustre/dev build --minify
 python scripts/prepare_pages_dist.py
 ```
 
-Palworld Markdown lives in `assets/samples/palworld/` and is copied into `dist/` by the Lustre build.
+## Table formatting
+
+Cell display is pluggable via `table_format.TableFormatter` (render-time only; sort/filter still use raw Markdown values).
+
+- Default: `table_format.plain()`
+- Stack helpers with `decorate` / `decorate_all`
+- Per-sample: `samples.table_formatter(sample)` in `src/samples.gleam`
 
 ## GitHub Pages
 

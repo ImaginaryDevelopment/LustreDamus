@@ -1,3 +1,5 @@
+import table_format.{type TableFormatter}
+
 /// Palworld Markdown samples shipped with the static site.
 pub type Sample {
   Sample(id: String, label: String, file: String, blurb: String)
@@ -44,6 +46,23 @@ pub fn url(sample: Sample) -> String {
 
 pub fn find(id: String) -> Result(Sample, Nil) {
   find_loop(all(), id)
+}
+
+/// Per-sample table formatting plug-in. Defaults to shared Palworld styling.
+pub fn table_formatter(sample: Sample) -> TableFormatter {
+  case sample.id {
+    // Hook for sample-specific formatters later, e.g.:
+    // "breeding-sheet" -> breeding_sheet_formatter()
+    _ -> palworld_default()
+  }
+}
+
+fn palworld_default() -> TableFormatter {
+  table_format.plain()
+  |> table_format.decorate_all([
+    table_format.style_empty_cells,
+    table_format.style_approximate_numbers,
+  ])
 }
 
 fn find_loop(samples: List(Sample), id: String) -> Result(Sample, Nil) {

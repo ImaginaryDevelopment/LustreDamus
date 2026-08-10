@@ -281,6 +281,15 @@ tbody tr:nth-child(even) {
   background: #fafaf9;
 }
 
+td.cell-empty {
+  color: #a8a29e;
+  font-style: italic;
+}
+
+td.cell-approx {
+  color: #0f766e;
+}
+
 .error {
   margin: 0;
   color: var(--danger);
