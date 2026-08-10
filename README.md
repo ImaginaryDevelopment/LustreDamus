@@ -15,7 +15,9 @@ The goal is a small, focused static tool: parse Markdown tables, show them clear
 
 ## Setup
 
-Requires [Gleam](https://gleam.run/getting-started/installing/) (and Erlang/OTP, which Gleam depends on).
+Requires [Gleam](https://gleam.run/getting-started/installing/), Erlang/OTP on `PATH`, and [rebar3](https://rebar3.org/docs/getting-started/) (needed by `lustre_dev_tools`).
+
+On Windows after `winget install -e --id Gleam.Gleam`, add `C:\Program Files\Erlang OTP\bin` to your user `PATH`, then install rebar3 per its docs (`rebar3` escript + `rebar3.cmd` wrapper).
 
 ```sh
 gleam deps download
