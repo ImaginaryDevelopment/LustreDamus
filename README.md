@@ -35,6 +35,18 @@ This starts the Lustre dev server with live reload. Open the URL it prints (usua
 
 ```sh
 gleam run -m lustre/dev build --minify
+python scripts/prepare_pages_dist.py
 ```
 
-Output lands in `dist/` (`index.html`, JS bundle, and assets). Deploy that folder to GitHub Pages or any static host.
+Output lands in `dist/` (`index.html`, JS bundle, and assets). The prepare script rewrites Lustre’s root-absolute `/lustre_damus.js` to a relative path so the app works under `https://<user>.github.io/LustreDamus/`.
+
+## GitHub Pages
+
+Deploy is automated by [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) on pushes to `master`.
+
+1. Push these changes to `master`.
+2. In the repo on GitHub: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+3. After the workflow succeeds, the site is at:
+   `https://ImaginaryDevelopment.github.io/LustreDamus/`
+
+You can also run the workflow manually from the **Actions** tab (`workflow_dispatch`).
