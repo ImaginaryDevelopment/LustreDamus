@@ -75,6 +75,13 @@ pub fn everquest() -> List(Sample) {
       blurb: "Old Sebilis unique drops (2.50× XP).",
     ),
     Sample(
+      id: "trakanons-teeth",
+      label: "Trak",
+      folder: "everquest",
+      file: "Trakanons-Teeth.md",
+      blurb: "Trakanon's Teeth forager, hunter, and trash drops.",
+    ),
+    Sample(
       id: "befallen",
       label: "Befallen",
       folder: "everquest",
