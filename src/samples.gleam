@@ -14,6 +14,10 @@ pub type Sample {
   )
 }
 
+pub type SampleGroup {
+  SampleGroup(id: String, label: String, samples: List(Sample))
+}
+
 pub fn palworld() -> List(Sample) {
   [
     Sample(
@@ -63,6 +67,55 @@ pub fn everquest() -> List(Sample) {
       file: "Zone-XP-Modifiers.md",
       blurb: "Classic zone experience multipliers by shortname.",
     ),
+    Sample(
+      id: "sebilis",
+      label: "Sebilis",
+      folder: "everquest",
+      file: "Sebilis.md",
+      blurb: "Old Sebilis unique drops (2.50× XP).",
+    ),
+    Sample(
+      id: "befallen",
+      label: "Befallen",
+      folder: "everquest",
+      file: "Befallen.md",
+      blurb: "Befallen unique drops (2.13× XP).",
+    ),
+    Sample(
+      id: "crushbone",
+      label: "Crushbone",
+      folder: "everquest",
+      file: "Crushbone.md",
+      blurb: "Crushbone unique drops (2.13× XP).",
+    ),
+    Sample(
+      id: "upper-guk",
+      label: "Upper Guk",
+      folder: "everquest",
+      file: "Upper-Guk.md",
+      blurb: "Upper Guk unique drops (2.00× XP).",
+    ),
+    Sample(
+      id: "high-keep",
+      label: "High Keep",
+      folder: "everquest",
+      file: "High-Keep.md",
+      blurb: "High Keep unique drops (2.00× XP).",
+    ),
+    Sample(
+      id: "kurns-tower",
+      label: "Kurn's Tower",
+      folder: "everquest",
+      file: "Kurns-Tower.md",
+      blurb: "Kurn's Tower unique drops (2.00× XP).",
+    ),
+  ]
+}
+
+pub fn groups() -> List(SampleGroup) {
+  [
+    SampleGroup(id: "everquest", label: "EverQuest", samples: everquest()),
+    SampleGroup(id: "palworld", label: "Palworld", samples: palworld()),
   ]
 }
 
@@ -78,8 +131,12 @@ pub fn is_palworld(sample: Sample) -> Bool {
   sample.folder == "palworld"
 }
 
+pub fn group_contains(group: SampleGroup, sample: Sample) -> Bool {
+  list.any(group.samples, fn(member) { member.id == sample.id })
+}
+
 pub fn find(id: String) -> Result(Sample, Nil) {
-  find_loop(list.append(palworld(), everquest()), id)
+  find_loop(list.flatten(list.map(groups(), fn(group) { group.samples })), id)
 }
 
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal

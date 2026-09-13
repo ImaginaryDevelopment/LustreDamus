@@ -362,8 +362,9 @@ fn view(model: Model) -> Element(Msg) {
       ],
       [
         nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
-        sample_nav_group("EverQuest", samples.everquest(), model.page),
-        sample_nav_group("Palworld", samples.palworld(), model.page),
+        ..list.map(samples.groups(), fn(group) {
+          sample_nav_bucket(group, model.page)
+        }),
       ],
     ),
     html.main([], case model.page {
@@ -423,23 +424,32 @@ fn apply_sort(table: Table, sorts: Dict(String, TableSort)) -> Table {
   }
 }
 
-fn sample_nav_group(
-  label: String,
-  group_samples: List(Sample),
-  page: Page,
-) -> Element(Msg) {
+fn sample_nav_bucket(group: samples.SampleGroup, page: Page) -> Element(Msg) {
+  let open = case page {
+    SamplePage(sample) -> samples.group_contains(group, sample)
+    PastePage -> False
+  }
+  let parent_msg = case group.samples {
+    [first, ..] -> UserChoseSample(first)
+    [] -> UserChosePaste
+  }
+
   html.div([attribute.class("nav-group")], [
-    html.p([attribute.class("nav-label")], [html.text(label)]),
-    html.div(
-      [attribute.class("nav-links")],
-      list.map(group_samples, fn(sample) {
-        nav_button(
-          sample.label,
-          is_sample_page(page, sample),
-          UserChoseSample(sample),
+    nav_button(group.label, open, parent_msg),
+    case open {
+      False -> element.none()
+      True ->
+        html.div(
+          [attribute.class("nav-links nav-children")],
+          list.map(group.samples, fn(sample) {
+            nav_button(
+              sample.label,
+              is_sample_page(page, sample),
+              UserChoseSample(sample),
+            )
+          }),
         )
-      }),
-    ),
+    },
   ])
 }
 
