@@ -98,7 +98,10 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       ),
       effect.batch([
         load_sample(samples.url(sample)),
-        ensure_pal_index(model.pal_elements),
+        case samples.is_palworld(sample) {
+          True -> ensure_pal_index(model.pal_elements)
+          False -> effect.none()
+        },
       ]),
     )
 
@@ -359,19 +362,8 @@ fn view(model: Model) -> Element(Msg) {
       ],
       [
         nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
-        html.div([attribute.class("nav-group")], [
-          html.p([attribute.class("nav-label")], [html.text("Palworld")]),
-          html.div(
-            [attribute.class("nav-links")],
-            list.map(samples.all(), fn(sample) {
-              nav_button(
-                sample.label,
-                is_sample_page(model.page, sample),
-                UserChoseSample(sample),
-              )
-            }),
-          ),
-        ]),
+        sample_nav_group("EverQuest", samples.everquest(), model.page),
+        sample_nav_group("Palworld", samples.palworld(), model.page),
       ],
     ),
     html.main([], case model.page {
@@ -431,6 +423,26 @@ fn apply_sort(table: Table, sorts: Dict(String, TableSort)) -> Table {
   }
 }
 
+fn sample_nav_group(
+  label: String,
+  group_samples: List(Sample),
+  page: Page,
+) -> Element(Msg) {
+  html.div([attribute.class("nav-group")], [
+    html.p([attribute.class("nav-label")], [html.text(label)]),
+    html.div(
+      [attribute.class("nav-links")],
+      list.map(group_samples, fn(sample) {
+        nav_button(
+          sample.label,
+          is_sample_page(page, sample),
+          UserChoseSample(sample),
+        )
+      }),
+    ),
+  ])
+}
+
 fn nav_button(label: String, active: Bool, msg: Msg) -> Element(Msg) {
   let class = case active {
     True -> "nav-link active"
@@ -483,7 +495,7 @@ fn render_tables(
   case tables {
     [] if markdown == "" ->
       html.p([attribute.class("empty")], [
-        html.text("Paste Markdown or open a Palworld sample to see tables."),
+        html.text("Paste Markdown or open a sample to see tables."),
       ])
     [] ->
       html.p([attribute.class("empty")], [
