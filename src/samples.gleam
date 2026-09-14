@@ -179,6 +179,48 @@ pub fn everquest() -> List(Sample) {
       file: "Runnyeye.md",
       blurb: "Clan Runnyeye unique drops (1.33× XP).",
     ),
+    Sample(
+      id: "mistmoore",
+      label: "Mistmoore",
+      folder: "everquest",
+      file: "Mistmoore.md",
+      blurb: "Castle Mistmoore unique drops (1.20× XP).",
+    ),
+    Sample(
+      id: "permafrost",
+      label: "Permafrost",
+      folder: "everquest",
+      file: "Permafrost.md",
+      blurb: "Permafrost Keep unique drops (1.20× XP).",
+    ),
+    Sample(
+      id: "karnors-castle",
+      label: "Karnor's Castle",
+      folder: "everquest",
+      file: "Karnors-Castle.md",
+      blurb: "Karnor's Castle unique drops (1.13× XP).",
+    ),
+    Sample(
+      id: "lower-guk",
+      label: "Lower Guk",
+      folder: "everquest",
+      file: "Lower-Guk.md",
+      blurb: "Lower Guk unique drops (1.06× XP).",
+    ),
+    Sample(
+      id: "nagafens-lair",
+      label: "Nagafen's Lair",
+      folder: "everquest",
+      file: "Nagafens-Lair.md",
+      blurb: "Nagafen's Lair unique drops (1.06× XP).",
+    ),
+    Sample(
+      id: "city-of-mist",
+      label: "City of Mist",
+      folder: "everquest",
+      file: "City-of-Mist.md",
+      blurb: "City of Mist unique drops (0.85× XP).",
+    ),
   ]
 }
 
