@@ -22,6 +22,7 @@ Sort the **Mob lookup** table by **Mob** when something is up. Filter also match
 | Kaiaren | Quest | human monk | Monk epic | LEAVE unless Celestial Fists. True form aggroes after book turn-in |
 | Keeper Lasnik | Forager | wizard | Lasnik's Staff (2H Blunt) | MNK/WIZ, INT +5, Mana +15 |
 | Klok Denris | Forager | warrior | Korzanz Kit'ioukl (Head) | SHD only, STR +3 DEX +2 AGI +3 |
+| Lativ | Quest | spectral warrior | Lativ's Remains | KILL for Cabilis Claw of the Spiritual Elder. Ruins ~2695, 815 |
 | Sigra | Hunter | large lion | Silken Cat-fur Girdle (Waist) | ALL classes, STR +9 DEX +13 |
 | Silvermane | Hunter | sabertooth | Sabertooth Amulet (Neck) | SHM only, STA +5 INT +5, See Invisible |
 | Squire Glik | Hunter | squire | Gleaming Short Sword (1H Slashing) | WAR PAL RNG SHD BRD ROG, CHA +5 |
@@ -71,6 +72,7 @@ Sort the **Mob lookup** table by **Mob** when something is up. Filter also match
 | Monk epic (Celestial Fists) | Kaiaren | LEAVE unless doing the epic. True form aggroes after book turn-in |
 | Whistling Fists | Crusader Vragor | LEAVE. Stupendous Tome + Crusader's Coffin; spawns Zhaoku |
 | Hampton's Soul | a human skeleton | LEAVE. Wizard Brain Bite; hand Hampton bottle. Friendly |
+| Lativ's Remains | Lativ | KILL. Cabilis Claw of the Spiritual Elder (#6). Ruins ~2695, 815 |
 
 ## Regular Mobs
 
