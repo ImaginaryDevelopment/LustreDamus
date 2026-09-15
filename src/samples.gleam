@@ -241,6 +241,13 @@ fn everquest_kunark() -> List(Sample) {
       blurb: "Old Sebilis unique drops (2.50× XP).",
     ),
     Sample(
+      id: "veeshans-peak",
+      label: "Veeshan's Peak",
+      folder: "everquest",
+      file: "Veeshans-Peak.md",
+      blurb: "Veeshan's Peak raid unique drops.",
+    ),
+    Sample(
       id: "trakanons-teeth",
       label: "Trak",
       folder: "everquest",
@@ -295,6 +302,20 @@ fn everquest_kunark() -> List(Sample) {
       folder: "everquest",
       file: "Skyfire.md",
       blurb: "Skyfire Mountains unique drops (1.06× XP).",
+    ),
+    Sample(
+      id: "temple-of-droga",
+      label: "Temple of Droga",
+      folder: "everquest",
+      file: "Temple-of-Droga.md",
+      blurb: "Temple of Droga unique drops (0.95× XP).",
+    ),
+    Sample(
+      id: "mines-of-nurga",
+      label: "Mines of Nurga",
+      folder: "everquest",
+      file: "Mines-of-Nurga.md",
+      blurb: "Mines of Nurga unique drops (0.95× XP).",
     ),
     Sample(
       id: "city-of-mist",

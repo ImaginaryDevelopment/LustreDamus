@@ -164,13 +164,30 @@ textarea:focus,
   font-size: 1.05rem;
 }
 
+.column-toggles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin: 0 0 0.6rem;
+}
+
+.column-toggles label {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+}
+
 .table-wrap {
   overflow: auto;
   border: 1px solid var(--line);
 }
 
 table {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   border-collapse: collapse;
   font-size: 0.92rem;
 }
@@ -181,6 +198,38 @@ td {
   border-bottom: 1px solid var(--line);
   text-align: left;
   white-space: nowrap;
+}
+
+th.col-shortname,
+td.col-shortname,
+th.col-levels,
+td.col-levels,
+th.col-xp,
+td.col-xp {
+  width: 1%;
+}
+
+th.col-levels,
+td.col-levels,
+th.col-xp,
+td.col-xp {
+  text-align: right;
+}
+
+th.col-levels .sort-header,
+th.col-xp .sort-header {
+  text-align: right;
+}
+
+th.col-zone,
+td.col-zone {
+  white-space: normal;
+  max-width: 11rem;
+}
+
+th.col-shortnames,
+td.col-shortnames {
+  white-space: normal;
 }
 
 th {

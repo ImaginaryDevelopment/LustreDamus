@@ -3,6 +3,7 @@ import gleam/http/response.{type Response}
 import gleam/int
 import gleam/list
 import gleam/option.{type Option, None, Some}
+import gleam/string
 import lustre
 import lustre/attribute
 import lustre/effect.{type Effect}
@@ -38,6 +39,7 @@ pub type Model {
     loading: Bool,
     error: Option(String),
     sorts: Dict(String, TableSort),
+    optional_columns: Dict(String, Dict(String, Bool)),
     pal_elements: Dict(String, String),
   )
 }
@@ -54,6 +56,7 @@ pub type Msg {
   UserSetTextPlacement(String, SortSlot, TextPlacement)
   UserClearSecondary(String)
   UserClearSort(String)
+  UserToggledOptionalColumn(String, String, Bool)
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
 }
@@ -73,6 +76,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       loading: False,
       error: None,
       sorts: dict.new(),
+      optional_columns: dict.new(),
       pal_elements: dict.new(),
     ),
     effect.none(),
@@ -94,6 +98,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         loading: True,
         error: None,
         sorts: dict.new(),
+        optional_columns: dict.new(),
         pal_elements: model.pal_elements,
       ),
       effect.batch([
@@ -106,7 +111,13 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     )
 
     UserUpdatedMarkdown(markdown) -> #(
-      Model(..model, markdown:, error: None, sorts: dict.new()),
+      Model(
+        ..model,
+        markdown:,
+        error: None,
+        sorts: dict.new(),
+        optional_columns: dict.new(),
+      ),
       effect.none(),
     )
 
@@ -172,6 +183,19 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
 
     UserClearSort(table_id) -> #(
       Model(..model, sorts: dict.delete(model.sorts, table_id)),
+      effect.none(),
+    )
+
+    UserToggledOptionalColumn(table_id, header, shown) -> #(
+      Model(
+        ..model,
+        optional_columns: set_optional_column(
+          model.optional_columns,
+          table_id,
+          header,
+          shown,
+        ),
+      ),
       effect.none(),
     )
 
@@ -502,7 +526,14 @@ fn tables_section(
         case model.error {
           Some(message) ->
             html.p([attribute.class("error")], [html.text(message)])
-          None -> render_tables(tables, model.markdown, model.sorts, formatter)
+          None ->
+            render_tables(
+              tables,
+              model.markdown,
+              model.sorts,
+              model.optional_columns,
+              formatter,
+            )
         }
     },
   ])
@@ -512,6 +543,7 @@ fn render_tables(
   tables: List(Table),
   markdown: String,
   sorts: Dict(String, TableSort),
+  optional_columns: Dict(String, Dict(String, Bool)),
   formatter: TableFormatter,
 ) -> Element(Msg) {
   case tables {
@@ -526,7 +558,9 @@ fn render_tables(
     _ ->
       html.div(
         [attribute.class("tables")],
-        list.map(tables, fn(table) { render_table(table, sorts, formatter) }),
+        list.map(tables, fn(table) {
+          render_table(table, sorts, optional_columns, formatter)
+        }),
       )
   }
 }
@@ -534,10 +568,13 @@ fn render_tables(
 fn render_table(
   table: Table,
   sorts: Dict(String, TableSort),
+  optional_columns: Dict(String, Dict(String, Bool)),
   formatter: TableFormatter,
 ) -> Element(Msg) {
   let id = table_id_for(table)
   let active = dict.get(sorts, id)
+  let optional_headers =
+    list.filter(table.headers, is_optional_header)
 
   html.section([attribute.class("md-table")], [
     html.h3([], [html.text(table.title)]),
@@ -550,36 +587,13 @@ fn render_table(
           ),
         ])
     },
+    optional_column_toggles(id, optional_headers, optional_columns),
     html.div([attribute.class("table-wrap")], [
       html.table([], [
         html.thead([], [
           html.tr(
             [],
-            list.index_map(table.headers, fn(cell, index) {
-              let role = column_role(active, index)
-              let marker = case role {
-                Some(#(Primary, Asc)) -> " ↑1"
-                Some(#(Primary, Desc)) -> " ↓1"
-                Some(#(Secondary, Asc)) -> " ↑2"
-                Some(#(Secondary, Desc)) -> " ↓2"
-                None -> ""
-              }
-              let class = case role {
-                Some(#(Primary, _)) -> "sortable selected primary"
-                Some(#(Secondary, _)) -> "sortable selected secondary"
-                None -> "sortable"
-              }
-              html.th([attribute.class(class)], [
-                html.button(
-                  [
-                    attribute.type_("button"),
-                    attribute.class("sort-header"),
-                    event.on_click(UserClickedColumn(id, index)),
-                  ],
-                  [html.text(cell <> marker)],
-                ),
-              ])
-            }),
+            visible_header_cells(table.headers, id, optional_columns, active),
           ),
         ]),
         html.tbody(
@@ -587,18 +601,14 @@ fn render_table(
           list.index_map(table.rows, fn(row, row_index) {
             html.tr(
               [],
-              list.index_map(table.headers, fn(_header, column) {
-                let ctx =
-                  table_format.make_context(
-                    table.title,
-                    table.headers,
-                    column,
-                    row_index,
-                    row,
-                  )
-                let formatted = table_format.format_cell(formatter, ctx)
-                render_td(formatted)
-              }),
+              visible_body_cells(
+                table,
+                row,
+                row_index,
+                id,
+                optional_columns,
+                formatter,
+              ),
             )
           }),
         ),
@@ -607,16 +617,169 @@ fn render_table(
   ])
 }
 
-fn render_td(formatted: FormattedCell) -> Element(Msg) {
-  let class_attr = case formatted.class_name {
+fn visible_header_cells(
+  headers: List(String),
+  table_id: String,
+  optional_columns: Dict(String, Dict(String, Bool)),
+  active: Result(TableSort, Nil),
+) -> List(Element(Msg)) {
+  headers
+  |> list.index_map(fn(cell, index) { #(cell, index) })
+  |> list.filter_map(fn(pair) {
+    let #(cell, index) = pair
+    case column_is_shown(optional_columns, table_id, cell) {
+      False -> Error(Nil)
+      True -> {
+        let role = column_role(active, index)
+        let marker = case role {
+          Some(#(Primary, Asc)) -> " ↑1"
+          Some(#(Primary, Desc)) -> " ↓1"
+          Some(#(Secondary, Asc)) -> " ↑2"
+          Some(#(Secondary, Desc)) -> " ↓2"
+          None -> ""
+        }
+        let class = case role {
+          Some(#(Primary, _)) -> "sortable selected primary"
+          Some(#(Secondary, _)) -> "sortable selected secondary"
+          None -> "sortable"
+        }
+        Ok(
+          html.th([attribute.class(join_class(class, column_class(cell)))], [
+            html.button(
+              [
+                attribute.type_("button"),
+                attribute.class("sort-header"),
+                event.on_click(UserClickedColumn(table_id, index)),
+              ],
+              [html.text(cell <> marker)],
+            ),
+          ]),
+        )
+      }
+    }
+  })
+}
+
+fn visible_body_cells(
+  table: Table,
+  row: List(String),
+  row_index: Int,
+  table_id: String,
+  optional_columns: Dict(String, Dict(String, Bool)),
+  formatter: TableFormatter,
+) -> List(Element(Msg)) {
+  table.headers
+  |> list.index_map(fn(header, column) { #(header, column) })
+  |> list.filter_map(fn(pair) {
+    let #(header, column) = pair
+    case column_is_shown(optional_columns, table_id, header) {
+      False -> Error(Nil)
+      True -> {
+        let ctx =
+          table_format.make_context(
+            table.title,
+            table.headers,
+            column,
+            row_index,
+            row,
+          )
+        let formatted = table_format.format_cell(formatter, ctx)
+        Ok(render_td(formatted, column_class(header)))
+      }
+    }
+  })
+}
+
+fn optional_column_toggles(
+  table_id: String,
+  headers: List(String),
+  optional_columns: Dict(String, Dict(String, Bool)),
+) -> Element(Msg) {
+  case headers {
+    [] -> html.text("")
+    _ ->
+      html.div(
+        [attribute.class("column-toggles")],
+        list.map(headers, fn(header) {
+          let shown = column_is_shown(optional_columns, table_id, header)
+          html.label([], [
+            html.input([
+              attribute.type_("checkbox"),
+              attribute.checked(shown),
+              event.on_check(fn(checked) {
+                UserToggledOptionalColumn(table_id, header, checked)
+              }),
+            ]),
+            html.text(" Show " <> header),
+          ])
+        }),
+      )
+  }
+}
+
+fn is_optional_header(header: String) -> Bool {
+  header == "Wing" || header == "Loc"
+}
+
+fn column_is_shown(
+  optional_columns: Dict(String, Dict(String, Bool)),
+  table_id: String,
+  header: String,
+) -> Bool {
+  case is_optional_header(header) {
+    False -> True
+    True ->
+      case dict.get(optional_columns, table_id) {
+        Ok(columns) ->
+          case dict.get(columns, header) {
+            Ok(True) -> True
+            Ok(False) -> False
+            Error(_) -> False
+          }
+        Error(_) -> False
+      }
+  }
+}
+
+fn set_optional_column(
+  optional_columns: Dict(String, Dict(String, Bool)),
+  table_id: String,
+  header: String,
+  shown: Bool,
+) -> Dict(String, Dict(String, Bool)) {
+  let columns = case dict.get(optional_columns, table_id) {
+    Ok(existing) -> existing
+    Error(_) -> dict.new()
+  }
+  dict.insert(
+    optional_columns,
+    table_id,
+    dict.insert(columns, header, shown),
+  )
+}
+
+fn render_td(formatted: FormattedCell, extra_class: String) -> Element(Msg) {
+  let class_name = join_class(formatted.class_name, extra_class)
+  let class_attr = case class_name {
     "" -> []
-    class_name -> [attribute.class(class_name)]
+    _ -> [attribute.class(class_name)]
   }
   let title_attr = case formatted.title {
     Some(title) -> [attribute.title(title)]
     None -> []
   }
   html.td(list.append(class_attr, title_attr), [html.text(formatted.text)])
+}
+
+fn column_class(header: String) -> String {
+  "col-" <> string.replace(string.lowercase(header), " ", "-")
+}
+
+fn join_class(existing: String, next: String) -> String {
+  case existing {
+    "" -> next
+    _ -> existing <> " " <> next
+  }
 }
 
 fn column_role(
