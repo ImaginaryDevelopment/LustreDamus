@@ -3,6 +3,7 @@ import gleam/http/response.{type Response}
 import gleam/int
 import gleam/list
 import gleam/option.{type Option, None, Some}
+import gleam/order
 import gleam/string
 import lustre
 import lustre/attribute
@@ -40,6 +41,7 @@ pub type Model {
     error: Option(String),
     sorts: Dict(String, TableSort),
     optional_columns: Dict(String, Dict(String, Bool)),
+    value_filters: Dict(String, Dict(String, Dict(String, Bool))),
     pal_elements: Dict(String, String),
   )
 }
@@ -57,6 +59,7 @@ pub type Msg {
   UserClearSecondary(String)
   UserClearSort(String)
   UserToggledOptionalColumn(String, String, Bool)
+  UserToggledValueFilter(String, String, String, Bool)
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
 }
@@ -77,6 +80,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       error: None,
       sorts: dict.new(),
       optional_columns: dict.new(),
+      value_filters: dict.new(),
       pal_elements: dict.new(),
     ),
     effect.none(),
@@ -99,6 +103,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         error: None,
         sorts: dict.new(),
         optional_columns: dict.new(),
+        value_filters: dict.new(),
         pal_elements: model.pal_elements,
       ),
       effect.batch([
@@ -117,6 +122,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         error: None,
         sorts: dict.new(),
         optional_columns: dict.new(),
+        value_filters: dict.new(),
       ),
       effect.none(),
     )
@@ -193,6 +199,20 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           model.optional_columns,
           table_id,
           header,
+          shown,
+        ),
+      ),
+      effect.none(),
+    )
+
+    UserToggledValueFilter(table_id, header, value, shown) -> #(
+      Model(
+        ..model,
+        value_filters: set_value_filter(
+          model.value_filters,
+          table_id,
+          header,
+          value,
           shown,
         ),
       ),
@@ -532,6 +552,7 @@ fn tables_section(
               model.markdown,
               model.sorts,
               model.optional_columns,
+              model.value_filters,
               formatter,
             )
         }
@@ -544,6 +565,7 @@ fn render_tables(
   markdown: String,
   sorts: Dict(String, TableSort),
   optional_columns: Dict(String, Dict(String, Bool)),
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
   formatter: TableFormatter,
 ) -> Element(Msg) {
   case tables {
@@ -559,7 +581,13 @@ fn render_tables(
       html.div(
         [attribute.class("tables")],
         list.map(tables, fn(table) {
-          render_table(table, sorts, optional_columns, formatter)
+          render_table(
+            table,
+            sorts,
+            optional_columns,
+            value_filters,
+            formatter,
+          )
         }),
       )
   }
@@ -569,12 +597,14 @@ fn render_table(
   table: Table,
   sorts: Dict(String, TableSort),
   optional_columns: Dict(String, Dict(String, Bool)),
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
   formatter: TableFormatter,
 ) -> Element(Msg) {
   let id = table_id_for(table)
   let active = dict.get(sorts, id)
   let optional_headers =
     list.filter(table.headers, is_optional_header)
+  let rows = filter_rows_by_values(table, id, value_filters)
 
   html.section([attribute.class("md-table")], [
     html.h3([], [html.text(table.title)]),
@@ -587,6 +617,7 @@ fn render_table(
           ),
         ])
     },
+    value_filter_toggles(id, table, value_filters),
     optional_column_toggles(id, optional_headers, optional_columns),
     html.div([attribute.class("table-wrap")], [
       html.table([], [
@@ -598,7 +629,7 @@ fn render_table(
         ]),
         html.tbody(
           [],
-          list.index_map(table.rows, fn(row, row_index) {
+          list.index_map(rows, fn(row, row_index) {
             html.tr(
               [],
               visible_body_cells(
@@ -756,6 +787,184 @@ fn set_optional_column(
     table_id,
     dict.insert(columns, header, shown),
   )
+}
+
+fn is_filter_header(header: String) -> Bool {
+  header == "Expansion"
+}
+
+fn value_filter_toggles(
+  table_id: String,
+  table: Table,
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+) -> Element(Msg) {
+  let groups =
+    table.headers
+    |> list.filter(is_filter_header)
+    |> list.filter_map(fn(header) {
+      case unique_column_values(table, header) {
+        [] -> Error(Nil)
+        values -> Ok(#(header, values))
+      }
+    })
+
+  case groups {
+    [] -> html.text("")
+    _ ->
+      html.div(
+        [attribute.class("column-toggles")],
+        list.flat_map(groups, fn(group) {
+          let #(header, values) = group
+          [
+            html.span([attribute.class("sort-group-label")], [
+              html.text(header),
+            ]),
+            ..list.map(values, fn(value) {
+              let shown =
+                value_is_shown(value_filters, table_id, header, value)
+              html.label([], [
+                html.input([
+                  attribute.type_("checkbox"),
+                  attribute.checked(shown),
+                  event.on_check(fn(checked) {
+                    UserToggledValueFilter(table_id, header, value, checked)
+                  }),
+                ]),
+                html.text(value),
+              ])
+            })
+          ]
+        }),
+      )
+  }
+}
+
+fn unique_column_values(table: Table, header: String) -> List(String) {
+  case column_index(table.headers, header) {
+    Error(_) -> []
+    Ok(index) ->
+      table.rows
+      |> list.filter_map(fn(row) {
+        case cell_at(row, index) {
+          "" -> Error(Nil)
+          value -> Ok(value)
+        }
+      })
+      |> unique_strings
+      |> list.sort(compare_filter_values)
+  }
+}
+
+fn unique_strings(values: List(String)) -> List(String) {
+  list.fold(values, [], fn(acc, value) {
+    case list.contains(acc, value) {
+      True -> acc
+      False -> list.append(acc, [value])
+    }
+  })
+}
+
+fn compare_filter_values(a: String, b: String) -> order.Order {
+  case int.compare(filter_value_rank(a), filter_value_rank(b)) {
+    order.Eq -> string.compare(a, b)
+    other -> other
+  }
+}
+
+fn filter_value_rank(value: String) -> Int {
+  case value {
+    "Classic" -> 0
+    "Kunark" -> 1
+    "Velious" -> 2
+    _ -> 10
+  }
+}
+
+fn filter_rows_by_values(
+  table: Table,
+  table_id: String,
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+) -> List(List(String)) {
+  list.filter(table.rows, fn(row) {
+    list.index_fold(table.headers, True, fn(keep, header, index) {
+      case keep && is_filter_header(header) {
+        False -> keep
+        True ->
+          value_is_shown(
+            value_filters,
+            table_id,
+            header,
+            cell_at(row, index),
+          )
+      }
+    })
+  })
+}
+
+fn value_is_shown(
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+  table_id: String,
+  header: String,
+  value: String,
+) -> Bool {
+  case dict.get(value_filters, table_id) {
+    Error(_) -> True
+    Ok(headers) ->
+      case dict.get(headers, header) {
+        Error(_) -> True
+        Ok(values) ->
+          case dict.get(values, value) {
+            Ok(False) -> False
+            Ok(True) -> True
+            Error(_) -> True
+          }
+      }
+  }
+}
+
+fn set_value_filter(
+  value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+  table_id: String,
+  header: String,
+  value: String,
+  shown: Bool,
+) -> Dict(String, Dict(String, Dict(String, Bool))) {
+  let headers = case dict.get(value_filters, table_id) {
+    Ok(existing) -> existing
+    Error(_) -> dict.new()
+  }
+  let values = case dict.get(headers, header) {
+    Ok(existing) -> existing
+    Error(_) -> dict.new()
+  }
+  dict.insert(
+    value_filters,
+    table_id,
+    dict.insert(headers, header, dict.insert(values, value, shown)),
+  )
+}
+
+fn column_index(headers: List(String), wanted: String) -> Result(Int, Nil) {
+  column_index_loop(headers, wanted, 0)
+}
+
+fn column_index_loop(
+  headers: List(String),
+  wanted: String,
+  index: Int,
+) -> Result(Int, Nil) {
+  case headers {
+    [] -> Error(Nil)
+    [header, ..] if header == wanted -> Ok(index)
+    [_, ..rest] -> column_index_loop(rest, wanted, index + 1)
+  }
+}
+
+fn cell_at(row: List(String), column: Int) -> String {
+  case list.drop(row, column) {
+    [cell, ..] -> cell
+    [] -> ""
+  }
 }
 
 fn render_td(formatted: FormattedCell, extra_class: String) -> Element(Msg) {

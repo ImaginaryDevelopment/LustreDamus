@@ -2,69 +2,71 @@
 
 Classic / Luclin-era **zone experience modifiers** (shortname → multiplier). Values are relative to a **1.00×** baseline; zones not listed here are typically unmodified.
 
-**Levels** are estimated hunting ranges (typical trash through named), not city-guard levels. Starting cities are newbie yards (~1–10). Temple of Solusek Ro is a quest hub, not a hunt zone.
+**Levels** are estimated hunting ranges (typical trash through named), not city-guard levels. Starting cities are newbie yards (~1–10).
+
+**soltemple** is Classic **Temple of Solusek Ro** in Lavastorm (walk-in on the north side). It is **not** Solusek's Eye (**soldunga**, Sol A) or Nagafen's Lair (**soldungb**, Sol B). Quest hub only — merchants and class quest NPCs, no hunt camps. Travel menus often omit it.
 
 ---
 
 ## By zone
 
-| Shortname | Levels | XP | Zone |
-| --- | ---: | ---: | --- |
-| akanon* | 1–10 | 1.33× | Ak'Anon* |
-| airplane* | 46–60 | 1.13× | Plane of Sky* |
-| befallen | 7–25 | 2.13× | Befallen |
-| blackburrow | 4–15 | 1.33× | Blackburrow |
-| cabeast* | 1–10 | 1.33× | East Cabilis* |
-| cabwest* | 1–10 | 1.33× | West Cabilis* |
-| cazicthule | 19–45 | 1.13× | Lost Temple of Cazic-Thule |
-| charasis | 50–60 | 1.13× | Howling Stones (Charasis) |
-| chardok | 50–60 | 1.50× | Chardok |
-| citymist | 40–55 | 0.85× | The City of Mist |
-| crushbone* | 5–20 | 2.13× | Crushbone* |
-| dalnir | 25–40 | 1.13× | Crypt of Dalnir |
-| droga* | 30–40 | 0.95× | Temple of Droga* |
-| erudnext* | 1–10 | 1.33× | Erudin* |
-| erudnint* | 1–15 | 1.33× | Erudin Palace* |
-| fearplane | 50–60 | 1.13× | Plane of Fear |
-| felwithea* | 1–10 | 1.33× | Northern Felwithe* |
-| felwitheb* | 1–10 | 1.33× | Southern Felwithe* |
-| freportn* | 1–10 | 1.33× | North Freeport* |
-| grobb* | 1–10 | 1.33× | Grobb* |
-| gukbottom | 30–50 | 1.06× | Lower Guk |
-| guktop | 4–25 | 2.00× | Upper Guk |
-| halas* | 1–10 | 1.33× | Halas* |
-| hateplaneb | 48–60 | 1.13× | Plane of Hate |
-| highkeep* | 20–40 | 2.00× | High Keep* |
-| highpass* | 9–22 | 1.06× | Highpass Hold* |
-| hole | 40–60 | 1.33× | The Hole |
-| kaesora | 30–45 | 1.46× | Kaesora |
-| kaladima* | 1–10 | 1.33× | South Kaladim* |
-| kaladimb* | 1–10 | 1.33× | North Kaladim* |
-| karnor | 40–55 | 1.13× | Karnor's Castle |
-| kedge | 32–50 | 1.33× | Kedge Keep |
-| kerraridge* | 15–25 | 1.20× | Kerra Isle* |
-| kurn | 10–25 | 2.00× | Kurn's Tower |
-| lakeofillomen* | 1–35 | 0.80× | Lake of Ill Omen* |
-| lavastorm | 10–30 | 0.75× | Lavastorm Mountains |
-| mistmoore | 20–45 | 1.20× | Castle Mistmoore |
-| najena* | 8–35 | 1.73× | Najena* |
-| neriaka* | 1–10 | 1.33× | Neriak Foreign Quarter* |
-| neriakb* | 1–10 | 1.33× | Neriak Commons* |
-| neriakc* | 1–15 | 1.33× | Neriak Third Gate* |
-| nurga* | 30–40 | 0.95× | Mines of Nurga* |
-| oggok* | 1–10 | 1.33× | Oggok* |
-| oot* | 9–35 | 1.13× | Ocean of Tears* |
-| paw | 20–40 | 0.90× | Splitpaw Lair |
-| permafrost | 15–50 | 1.20× | Permafrost Keep |
-| qrg* | 1–10 | 1.33× | Surefall Glade* |
-| rivervale* | 1–10 | 1.33× | Rivervale* |
-| runnyeye | 7–30 | 1.33× | Clan Runnyeye |
-| sebilis | 48–60 | 2.50× | Old Sebilis |
-| skyfire | 45–60 | 1.06× | Skyfire Mountains |
-| soldunga* | 20–40 | 1.73× | Solusek's Eye* |
-| soldungb | 35–55 | 1.06× | Nagafen's Lair |
-| soltemple* | — | 1.33× | Temple of Solusek Ro* |
-| unrest | 10–35 | 1.73× | Estate of Unrest |
+| Shortname | Expansion | Levels | XP | Zone |
+| --- | --- | ---: | ---: | --- |
+| akanon* | Classic | 1–10 | 1.33× | Ak'Anon* |
+| airplane* | Classic | 46–60 | 1.13× | Plane of Sky* |
+| befallen | Classic | 7–25 | 2.13× | Befallen |
+| blackburrow | Classic | 4–15 | 1.33× | Blackburrow |
+| cabeast* | Kunark | 1–10 | 1.33× | East Cabilis* |
+| cabwest* | Kunark | 1–10 | 1.33× | West Cabilis* |
+| cazicthule | Classic | 19–45 | 1.13× | Lost Temple of Cazic-Thule |
+| charasis | Kunark | 50–60 | 1.13× | Howling Stones (Charasis) |
+| chardok | Kunark | 50–60 | 1.50× | Chardok |
+| citymist | Kunark | 40–55 | 0.85× | The City of Mist |
+| crushbone* | Classic | 5–20 | 2.13× | Crushbone* |
+| dalnir | Kunark | 25–40 | 1.13× | Crypt of Dalnir |
+| droga* | Kunark | 30–40 | 0.95× | Temple of Droga* |
+| erudnext* | Classic | 1–10 | 1.33× | Erudin* |
+| erudnint* | Classic | 1–15 | 1.33× | Erudin Palace* |
+| fearplane | Classic | 50–60 | 1.13× | Plane of Fear |
+| felwithea* | Classic | 1–10 | 1.33× | Northern Felwithe* |
+| felwitheb* | Classic | 1–10 | 1.33× | Southern Felwithe* |
+| freportn* | Classic | 1–10 | 1.33× | North Freeport* |
+| grobb* | Classic | 1–10 | 1.33× | Grobb* |
+| gukbottom | Classic | 30–50 | 1.06× | Lower Guk |
+| guktop | Classic | 4–25 | 2.00× | Upper Guk |
+| halas* | Classic | 1–10 | 1.33× | Halas* |
+| hateplaneb | Classic | 48–60 | 1.13× | Plane of Hate |
+| highkeep* | Classic | 20–40 | 2.00× | High Keep* |
+| highpass* | Classic | 9–22 | 1.06× | Highpass Hold* |
+| hole | Classic | 40–60 | 1.33× | The Hole |
+| kaesora | Kunark | 30–45 | 1.46× | Kaesora |
+| kaladima* | Classic | 1–10 | 1.33× | South Kaladim* |
+| kaladimb* | Classic | 1–10 | 1.33× | North Kaladim* |
+| karnor | Kunark | 40–55 | 1.13× | Karnor's Castle |
+| kedge | Classic | 32–50 | 1.33× | Kedge Keep |
+| kerraridge* | Classic | 15–25 | 1.20× | Kerra Isle* |
+| kurn | Kunark | 10–25 | 2.00× | Kurn's Tower |
+| lakeofillomen* | Kunark | 1–35 | 0.80× | Lake of Ill Omen* |
+| lavastorm | Classic | 10–30 | 0.75× | Lavastorm Mountains |
+| mistmoore | Classic | 20–45 | 1.20× | Castle Mistmoore |
+| najena* | Classic | 8–35 | 1.73× | Najena* |
+| neriaka* | Classic | 1–10 | 1.33× | Neriak Foreign Quarter* |
+| neriakb* | Classic | 1–10 | 1.33× | Neriak Commons* |
+| neriakc* | Classic | 1–15 | 1.33× | Neriak Third Gate* |
+| nurga* | Kunark | 30–40 | 0.95× | Mines of Nurga* |
+| oggok* | Classic | 1–10 | 1.33× | Oggok* |
+| oot* | Classic | 9–35 | 1.13× | Ocean of Tears* |
+| paw | Classic | 20–40 | 0.90× | Splitpaw Lair |
+| permafrost | Classic | 15–50 | 1.20× | Permafrost Keep |
+| qrg* | Classic | 1–10 | 1.33× | Surefall Glade* |
+| rivervale* | Classic | 1–10 | 1.33× | Rivervale* |
+| runnyeye | Classic | 7–30 | 1.33× | Clan Runnyeye |
+| sebilis | Kunark | 48–60 | 2.50× | Old Sebilis |
+| skyfire | Kunark | 45–60 | 1.06× | Skyfire Mountains |
+| soldunga* | Classic | 20–40 | 1.73× | Solusek's Eye* |
+| soldungb | Classic | 35–55 | 1.06× | Nagafen's Lair |
+| soltemple* | Classic | hub | 1.33× | Temple of Solusek Ro* |
+| unrest | Classic | 10–35 | 1.73× | Estate of Unrest |
 
 \* Auto-level systems that attack anything near your level can hit **friendly NPCs** here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga.
 
