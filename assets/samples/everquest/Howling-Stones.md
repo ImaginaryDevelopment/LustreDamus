@@ -2,6 +2,32 @@
 
 ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella** is **2-group**. **Gandan Tailfist** is a monk quest NPC at the bottom of the entrance drop — leave him.
 
+Sort the **Named spawn** table by **Mob** when tracking. **Skeletal Procurator** is the west-wing last-room boss — he is not at zone-in. PH is often **a sepulcher skeleton**.
+
+## Named spawn
+
+| Mob | Wing | Loc | PH / notes |
+| --- | --- | --- | --- |
+| Gandan Tailfist | Entrance | ~287, -26, -176 | LEAVE. After the drop. Whistling Fists |
+| Bile Sentinel | North | ~239, 138; 387, 80 | Also called **Sentient Bile**. ~25% vs crypt golem / crypt wurm / pulsating bile |
+| the Crypt Keeper | North | ~549, 112 | ~34%. Sigil of the Calendar → west wing |
+| the Crypt Wurm | North | ~239, 138 | Shares north named spots |
+| the Golem Master | North / west | ~7, 565; -12, 147 | ~20% |
+| the Spectre Sepulcher | North / west | ~157, 189; 157, 279 | ~50% |
+| Skeletal Procurator | West last room | ~-90, 675 | ~25–50%. PH **a sepulcher skeleton** (sometimes a bottomless devourer). Needs **Skull-engraved Coin** (ground spawn west, past trap) after Crypt Keeper's sigil. SK, summons, sees invis. Drops south-wing key |
+| Embalming Fluid | South | various named spots | |
+| the Crypt Feaster | South | south named spots | |
+| the Skeleton Sepulcher | South | various | Tall skeleton |
+| the Spectre Spiritualist | South | various named spots | Highest south named |
+| a Howling Spectre | East | various | |
+| the Crypt Excavator | East | east named spots | |
+| Reanimated Plaguebone | East | east named spots | |
+| Mortiferous Protector | East | ~294, -524 | PH mortiferous golem. Sees invis |
+| the Undertaker Lord | East | east last rooms | ~56. Highest HS named |
+| Drusella Sathir | East last | ~279, -534 | **2-group** |
+
+## Unique loot
+
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Sigil of the Calendar | the Crypt Keeper | 50 | West-wing key. Color Skew, 1 charge. NO RENT |
