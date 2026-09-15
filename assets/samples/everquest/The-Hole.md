@@ -1,24 +1,24 @@
 # The Hole — unique loot
 
-ZEM **1.33×**. Hunt range **40–60**. Elemental city plus undead towers; Master Yael is at the bottom of the pit. **Caradon** is a jail quest NPC.
+ZEM **1.33×**. Hunt range **40–60**. Elemental city plus undead towers. No AAs: **Master Yael** is **RAID**; Nortlav is in the Yael pit (**RAID** to reach). Tower nameds are **2-group**. **Caradon** is a jail quest NPC.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Earthshaker (2H Slashing) | Master Yael | 56 | WAR PAL RNG SHD, 37/70, Earthquake proc. Raid |
-| Serpent's Tooth (Piercing) | Master Yael | 56 | Fast piercing. Raid |
-| Idol of the Underking | Master Yael | 56 | Clicky / lore idol. Raid |
-| Loam Encrusted Robe (Chest) | Master Yael | 56 | INT casters, loam set chest. Raid |
-| Brell's Girdle (Waist) | Master Yael | 56 | Melee / hybrid waist. Raid |
-| Withered Leather Tunic (Chest) | Dartain the Lost | 50–55 | Leather chest, withered set |
-| Imbued Shield of Paineel (Secondary) | Dartain the Lost | 50–55 | Real shield (Bash). WAR PAL SHD line |
-| Tome of Miragul | Dartain the Lost | 50–55 | Wizard / lore quest book |
-| Red Dragon Scales | Nortlav the Scalekeeper | 52 | Tradeskill / quest component |
-| Rusted Throneblade (1H Slashing) | Nortlav the Scalekeeper | 52 | 1HS, SK / warrior line |
-| Withered Leather Skullcap (Head) | Commander Yarik | 53 | Leather cap, withered set |
-| Engraved Ring (Finger) | High Scale Kirn | 53 | ALL, HP / AC ring |
+| Earthshaker (2H Slashing) | Master Yael | 56 | **RAID.** WAR PAL RNG SHD, 37/70 (0.53), Earthquake proc |
+| Serpent's Tooth (Piercing) | Master Yael | 56 | **RAID.** Fast piercing |
+| Idol of the Underking | Master Yael | 56 | **RAID.** Clicky / lore idol |
+| Loam Encrusted Robe (Chest) | Master Yael | 56 | **RAID.** INT casters, loam set chest |
+| Brell's Girdle (Waist) | Master Yael | 56 | **RAID.** Melee / hybrid waist |
+| Withered Leather Tunic (Chest) | Dartain the Lost | 50–55 | **2-group.** Leather chest, withered set |
+| Imbued Shield of Paineel (Secondary) | Dartain the Lost | 50–55 | **2-group.** Real shield (Bash). WAR PAL SHD line |
+| Tome of Miragul | Dartain the Lost | 50–55 | **2-group.** Wizard / lore quest book |
+| Red Dragon Scales | Nortlav the Scalekeeper | 52 | **RAID (Yael pit).** Tradeskill / quest component |
+| Rusted Throneblade (1H Slashing) | Nortlav the Scalekeeper | 52 | **RAID (Yael pit).** 1HS, SK / warrior line |
+| Withered Leather Skullcap (Head) | Commander Yarik | 53 | **2-group.** Leather cap, withered set |
+| Engraved Ring (Finger) | High Scale Kirn | 53 | **2-group.** ALL, HP / AC ring |
 | Loam Encrusted Cloak (Back) | Stonesoul the Unmoving | 44–46 | INT casters, loam set back |
-| Tainted Darksteel Sword (1H Slashing) | Keeper of the Tombs | 55 | SK tainted darksteel |
-| Soulbound Hammer (1H Blunt) | Jaeil the Insane | 55 | 1HB, cleric / shaman line |
+| Tainted Darksteel Sword (1H Slashing) | Keeper of the Tombs | 55 | **2-group.** SK tainted darksteel |
+| Soulbound Hammer (1H Blunt) | Jaeil the Insane | 55 | **2-group.** 1HB, cleric / shaman line |
 | Imbued Granite Spauldors (Shoulders) | a rock golem | 42–50 | Plate / hybrid shoulders |
 | Bow of the Underfoot (Range) | a rock golem | 42–50 | Ranger / warrior bow |
 | Mudman Enforcer (1H Blunt) | a rock golem | 42–50 | 1HB, melee |

@@ -1,6 +1,6 @@
 # Trakanon's Teeth — unique loot
 
-Outdoor Kunark zone. Nameds spawn on the froglok **forager** and **hunter** cycles. Kunzar and Nathsar medallions are Old Sebilis key pieces.
+Outdoor Kunark zone. Nameds spawn on the froglok **forager** and **hunter** cycles. Kunzar and Nathsar medallions are Old Sebilis key pieces. No AAs: outdoor nameds are a **group** (no raid targets on these cycles).
 
 Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter also matches any cell. Cycle tables list **every** named on that cycle, including **SKIP**. **Quest** rows are hand-in NPCs — leave them.
 
@@ -43,7 +43,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Throkkok | Hunter | froglok ghoul | research / spells | SKIP. No unique gear |
 | Thruke | Forager | froglok ranger | 50+ Kunark spells | SKIP. No unique gear |
 | Titail Sinok | Forager | skeleton monk | Meditative Blanket (Shoulders) | ALL classes, AC 10 STR +2 WIS +3 INT +3 AGI +2 |
-| Trakanasaurus Rex | Hunter | large dino | Trakasaur's Tooth (1H Piercing) | ROG only, 10/20 |
+| Trakanasaurus Rex | Hunter | large dino | Trakasaur's Tooth (1H Piercing) | ROG only, 10/20 (0.50) |
 | Vessel Fryn | Hunter | shaman | none | SKIP. Undead shaman, no pet |
 | a froglok forager | Regular | froglok | Medallion of the Kunzar (Neck) | Quest item — Old Sebilis key |
 | a froglok hunter | Regular | froglok | Medallion of the Nathsar (Neck) | Quest item — Old Sebilis key |
@@ -97,7 +97,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Silken Cat-fur Girdle (Waist) | Sigra (large lion) | ALL classes, STR +9 DEX +13 |
 | SKIP | Stonebeak (cockatrice) | 50+ Kunark spells. Same idea as Dragontail |
 | SKIP | Throkkok (froglok ghoul) | Research / spells |
-| Trakasaur's Tooth (1H Piercing) | Trakanasaurus Rex (large dino) | ROG only, 10/20 |
+| Trakasaur's Tooth (1H Piercing) | Trakanasaurus Rex (large dino) | ROG only, 10/20 (0.50) |
 | SKIP | Vessel Fryn (shaman) | Undead shaman, no pet. No unique gear |
 
 ## Quest NPCs

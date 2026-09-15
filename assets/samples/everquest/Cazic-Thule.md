@@ -1,6 +1,6 @@
 # Lost Temple of Cazic-Thule — unique loot
 
-ZEM **1.13×**. Hunt range **19–45**. Classic lizard temple. Ravenscale is rogue; Rubicite is the older plate table.
+ZEM **1.13×**. Hunt range **19–45**. Classic lizard temple. No AAs: **group** (Avatar of Fear is not Plane of Fear Cazic). Ravenscale is rogue; Rubicite is the older plate table.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

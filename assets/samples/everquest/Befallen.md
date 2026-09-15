@@ -10,9 +10,9 @@ Tied with Crushbone for the next-highest ZEM (**2.13×**). Hunt range **7–25**
 | Antiqued Silver Band (Finger) | a shadowknight (human, female) | 16–18 | ALL, AC 2 |
 | Smoked Glass Key | a shadowknight (ogre) | 18–22 | Floor-3 door key. Always |
 | Barbed Armplates (Arms) | a shadowknight (ogre) | 18–22 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 7 DEX +2. Rare |
-| Bone Bladed Claymore (2H Slashing) | a shadowknight (troll) | 20–24 | WAR PAL RNG SHD, 17/45, AGI −8 |
+| Bone Bladed Claymore (2H Slashing) | a shadowknight (troll) | 20–24 | WAR PAL RNG SHD, 17/45 (0.38), AGI −8 |
 | Barbed Legplates (Legs) | a shadowknight (dark elf, female) | 20–24 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 8 AGI +2. Rare |
-| Dagger of Marnek (Piercing) | The Thaumaturgist | 18–19 | NEC, 3/30, INT +3 Mana +15 |
+| Dagger of Marnek (Piercing) | The Thaumaturgist | 18–19 | NEC, 3/30 (0.10), INT +3 Mana +15 |
 | Thaumaturgist's Robe (Chest) | The Thaumaturgist | 18–19 | NEC WIZ MAG ENC, AC 5 AGI +3 |
 | Gossamer Robe (Chest) | The Thaumaturgist | 18–19 | Cloth caster robe |
 | Blackened Wand | Priest Amiaz | 16–20 | Casters, STA +1 SV MAGIC +5 |
