@@ -5,17 +5,16 @@ import table_format.{type TableFormatter}
 
 /// Markdown samples shipped with the static site.
 pub type Sample {
-  Sample(
-    id: String,
-    label: String,
-    folder: String,
-    file: String,
-    blurb: String,
-  )
+  Sample(id: String, label: String, folder: String, file: String, blurb: String)
 }
 
 pub type SampleGroup {
-  SampleGroup(id: String, label: String, samples: List(Sample))
+  SampleGroup(
+    id: String,
+    label: String,
+    samples: List(Sample),
+    buckets: List(SampleGroup),
+  )
 }
 
 pub fn palworld() -> List(Sample) {
@@ -59,28 +58,49 @@ pub fn palworld() -> List(Sample) {
 }
 
 pub fn everquest() -> List(Sample) {
+  group_samples(everquest_group())
+}
+
+fn everquest_group() -> SampleGroup {
+  SampleGroup(
+    id: "everquest",
+    label: "EverQuest",
+    samples: [zone_xp_sample()],
+    buckets: [
+      SampleGroup(
+        id: "eq-classic",
+        label: "Classic",
+        samples: everquest_classic(),
+        buckets: [],
+      ),
+      SampleGroup(
+        id: "eq-kunark",
+        label: "Kunark",
+        samples: everquest_kunark(),
+        buckets: [],
+      ),
+      SampleGroup(
+        id: "eq-velious",
+        label: "Velious",
+        samples: everquest_velious(),
+        buckets: [],
+      ),
+    ],
+  )
+}
+
+fn zone_xp_sample() -> Sample {
+  Sample(
+    id: "zone-xp-modifiers",
+    label: "Zone XP",
+    folder: "everquest",
+    file: "Zone-XP-Modifiers.md",
+    blurb: "Classic zone experience multipliers by shortname.",
+  )
+}
+
+fn everquest_classic() -> List(Sample) {
   [
-    Sample(
-      id: "zone-xp-modifiers",
-      label: "Zone XP",
-      folder: "everquest",
-      file: "Zone-XP-Modifiers.md",
-      blurb: "Classic zone experience multipliers by shortname.",
-    ),
-    Sample(
-      id: "sebilis",
-      label: "Sebilis",
-      folder: "everquest",
-      file: "Sebilis.md",
-      blurb: "Old Sebilis unique drops (2.50× XP).",
-    ),
-    Sample(
-      id: "trakanons-teeth",
-      label: "Trak",
-      folder: "everquest",
-      file: "Trakanons-Teeth.md",
-      blurb: "Trakanon's Teeth forager, hunter, and trash drops.",
-    ),
     Sample(
       id: "befallen",
       label: "Befallen",
@@ -110,13 +130,6 @@ pub fn everquest() -> List(Sample) {
       blurb: "High Keep unique drops (2.00× XP).",
     ),
     Sample(
-      id: "kurns-tower",
-      label: "Kurn's Tower",
-      folder: "everquest",
-      file: "Kurns-Tower.md",
-      blurb: "Kurn's Tower unique drops (2.00× XP).",
-    ),
-    Sample(
       id: "najena",
       label: "Najena",
       folder: "everquest",
@@ -136,20 +149,6 @@ pub fn everquest() -> List(Sample) {
       folder: "everquest",
       file: "Unrest.md",
       blurb: "Estate of Unrest unique drops (1.73× XP).",
-    ),
-    Sample(
-      id: "chardok",
-      label: "Chardok",
-      folder: "everquest",
-      file: "Chardok.md",
-      blurb: "Chardok unique drops (1.50× XP).",
-    ),
-    Sample(
-      id: "kaesora",
-      label: "Kaesora",
-      folder: "everquest",
-      file: "Kaesora.md",
-      blurb: "Kaesora unique drops (1.46× XP).",
     ),
     Sample(
       id: "blackburrow",
@@ -194,11 +193,11 @@ pub fn everquest() -> List(Sample) {
       blurb: "Permafrost Keep unique drops (1.20× XP).",
     ),
     Sample(
-      id: "karnors-castle",
-      label: "Karnor's Castle",
+      id: "cazic-thule",
+      label: "Cazic-Thule",
       folder: "everquest",
-      file: "Karnors-Castle.md",
-      blurb: "Karnor's Castle unique drops (1.13× XP).",
+      file: "Cazic-Thule.md",
+      blurb: "Lost Temple of Cazic-Thule unique drops (1.13× XP).",
     ),
     Sample(
       id: "lower-guk",
@@ -215,6 +214,81 @@ pub fn everquest() -> List(Sample) {
       blurb: "Nagafen's Lair unique drops (1.06× XP).",
     ),
     Sample(
+      id: "splitpaw",
+      label: "Splitpaw",
+      folder: "everquest",
+      file: "Splitpaw.md",
+      blurb: "Splitpaw Lair unique drops (0.90× XP).",
+    ),
+  ]
+}
+
+fn everquest_kunark() -> List(Sample) {
+  [
+    Sample(
+      id: "sebilis",
+      label: "Sebilis",
+      folder: "everquest",
+      file: "Sebilis.md",
+      blurb: "Old Sebilis unique drops (2.50× XP).",
+    ),
+    Sample(
+      id: "trakanons-teeth",
+      label: "Trak",
+      folder: "everquest",
+      file: "Trakanons-Teeth.md",
+      blurb: "Trakanon's Teeth forager, hunter, and trash drops.",
+    ),
+    Sample(
+      id: "kurns-tower",
+      label: "Kurn's Tower",
+      folder: "everquest",
+      file: "Kurns-Tower.md",
+      blurb: "Kurn's Tower unique drops (2.00× XP).",
+    ),
+    Sample(
+      id: "chardok",
+      label: "Chardok",
+      folder: "everquest",
+      file: "Chardok.md",
+      blurb: "Chardok unique drops (1.50× XP).",
+    ),
+    Sample(
+      id: "kaesora",
+      label: "Kaesora",
+      folder: "everquest",
+      file: "Kaesora.md",
+      blurb: "Kaesora unique drops (1.46× XP).",
+    ),
+    Sample(
+      id: "karnors-castle",
+      label: "Karnor's Castle",
+      folder: "everquest",
+      file: "Karnors-Castle.md",
+      blurb: "Karnor's Castle unique drops (1.13× XP).",
+    ),
+    Sample(
+      id: "howling-stones",
+      label: "Howling Stones",
+      folder: "everquest",
+      file: "Howling-Stones.md",
+      blurb: "Howling Stones unique drops (1.13× XP).",
+    ),
+    Sample(
+      id: "dalnir",
+      label: "Dalnir",
+      folder: "everquest",
+      file: "Dalnir.md",
+      blurb: "Crypt of Dalnir unique drops (1.13× XP).",
+    ),
+    Sample(
+      id: "skyfire",
+      label: "Skyfire",
+      folder: "everquest",
+      file: "Skyfire.md",
+      blurb: "Skyfire Mountains unique drops (1.06× XP).",
+    ),
+    Sample(
       id: "city-of-mist",
       label: "City of Mist",
       folder: "everquest",
@@ -224,10 +298,41 @@ pub fn everquest() -> List(Sample) {
   ]
 }
 
+fn everquest_velious() -> List(Sample) {
+  [
+    Sample(
+      id: "tower-of-frozen-shadow",
+      label: "Frozen Shadow",
+      folder: "everquest",
+      file: "Tower-of-Frozen-Shadow.md",
+      blurb: "Tower of Frozen Shadow unique drops (Velious).",
+    ),
+    Sample(
+      id: "crystal-caverns",
+      label: "Crystal Caverns",
+      folder: "everquest",
+      file: "Crystal-Caverns.md",
+      blurb: "Crystal Caverns unique drops (Velious).",
+    ),
+    Sample(
+      id: "velketors-labyrinth",
+      label: "Velketor's",
+      folder: "everquest",
+      file: "Velketors-Labyrinth.md",
+      blurb: "Velketor's Labyrinth unique drops (Velious).",
+    ),
+  ]
+}
+
 pub fn groups() -> List(SampleGroup) {
   [
-    SampleGroup(id: "everquest", label: "EverQuest", samples: everquest()),
-    SampleGroup(id: "palworld", label: "Palworld", samples: palworld()),
+    everquest_group(),
+    SampleGroup(
+      id: "palworld",
+      label: "Palworld",
+      samples: palworld(),
+      buckets: [],
+    ),
   ]
 }
 
@@ -244,11 +349,18 @@ pub fn is_palworld(sample: Sample) -> Bool {
 }
 
 pub fn group_contains(group: SampleGroup, sample: Sample) -> Bool {
-  list.any(group.samples, fn(member) { member.id == sample.id })
+  list.any(group_samples(group), fn(member) { member.id == sample.id })
+}
+
+pub fn group_samples(group: SampleGroup) -> List(Sample) {
+  list.append(
+    group.samples,
+    list.flatten(list.map(group.buckets, group_samples)),
+  )
 }
 
 pub fn find(id: String) -> Result(Sample, Nil) {
-  find_loop(list.flatten(list.map(groups(), fn(group) { group.samples })), id)
+  find_loop(list.flatten(list.map(groups(), group_samples)), id)
 }
 
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal
@@ -276,7 +388,7 @@ fn palworld_default() -> TableFormatter {
 fn find_loop(samples: List(Sample), id: String) -> Result(Sample, Nil) {
   case samples {
     [] -> Error(Nil)
-    [sample, .._rest] if sample.id == id -> Ok(sample)
+    [sample, ..] if sample.id == id -> Ok(sample)
     [_, ..rest] -> find_loop(rest, id)
   }
 }

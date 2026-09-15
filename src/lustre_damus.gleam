@@ -158,18 +158,15 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     )
 
     UserClearSecondary(table_id) -> #(
-      Model(
-        ..model,
-        sorts: case dict.get(model.sorts, table_id) {
-          Ok(table_sort.TableSort(primary:, secondary: _)) ->
-            dict.insert(
-              model.sorts,
-              table_id,
-              table_sort.TableSort(primary:, secondary: None),
-            )
-          Error(_) -> model.sorts
-        },
-      ),
+      Model(..model, sorts: case dict.get(model.sorts, table_id) {
+        Ok(table_sort.TableSort(primary:, secondary: _)) ->
+          dict.insert(
+            model.sorts,
+            table_id,
+            table_sort.TableSort(primary:, secondary: None),
+          )
+        Error(_) -> model.sorts
+      }),
       effect.none(),
     )
 
@@ -189,10 +186,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     )
 
     PalIndexLoaded(Ok(markdown)) -> #(
-      Model(
-        ..model,
-        pal_elements: pal_index.parse_elements_index(markdown),
-      ),
+      Model(..model, pal_elements: pal_index.parse_elements_index(markdown)),
       effect.none(),
     )
 
@@ -217,8 +211,9 @@ fn update_column_sort(
         ),
       )
 
-    Ok(table_sort.TableSort(primary:, secondary: Some(secondary))) if secondary.column
-      == column ->
+    Ok(table_sort.TableSort(primary:, secondary: Some(secondary)))
+      if secondary.column == column
+    ->
       dict.insert(
         model.sorts,
         table_id,
@@ -271,8 +266,7 @@ fn update_slot(
   case dict.get(sorts, table_id) {
     Ok(table_sort.TableSort(primary:, secondary:)) -> {
       let updated = case slot {
-        Primary ->
-          table_sort.TableSort(primary: alter(primary), secondary:)
+        Primary -> table_sort.TableSort(primary: alter(primary), secondary:)
         Secondary ->
           case secondary {
             Some(spec) ->
@@ -297,14 +291,14 @@ fn table_id_for(table: Table) -> String {
 fn load_sample(url: String) -> Effect(Msg) {
   rsvp.get(
     url,
-    rsvp.expect_ok_response(fn(
-      result: Result(Response(String), rsvp.Error(String)),
-    ) {
-      case result {
-        Ok(response) -> SampleLoaded(Ok(response.body))
-        Error(error) -> SampleLoaded(Error(describe_error(error)))
-      }
-    }),
+    rsvp.expect_ok_response(
+      fn(result: Result(Response(String), rsvp.Error(String))) {
+        case result {
+          Ok(response) -> SampleLoaded(Ok(response.body))
+          Error(error) -> SampleLoaded(Error(describe_error(error)))
+        }
+      },
+    ),
   )
 }
 
@@ -313,14 +307,14 @@ fn ensure_pal_index(pal_elements: Dict(String, String)) -> Effect(Msg) {
     0 ->
       rsvp.get(
         samples.breeding_sheet_url(),
-        rsvp.expect_ok_response(fn(
-          result: Result(Response(String), rsvp.Error(String)),
-        ) {
-          case result {
-            Ok(response) -> PalIndexLoaded(Ok(response.body))
-            Error(error) -> PalIndexLoaded(Error(describe_error(error)))
-          }
-        }),
+        rsvp.expect_ok_response(
+          fn(result: Result(Response(String), rsvp.Error(String))) {
+            case result {
+              Ok(response) -> PalIndexLoaded(Ok(response.body))
+              Error(error) -> PalIndexLoaded(Error(describe_error(error)))
+            }
+          },
+        ),
       )
     _ -> effect.none()
   }
@@ -364,7 +358,7 @@ fn view(model: Model) -> Element(Msg) {
         nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
         ..list.map(samples.groups(), fn(group) {
           sample_nav_bucket(group, model.page)
-        }),
+        })
       ],
     ),
     html.main([], case model.page {
@@ -429,7 +423,7 @@ fn sample_nav_bucket(group: samples.SampleGroup, page: Page) -> Element(Msg) {
     SamplePage(sample) -> samples.group_contains(group, sample)
     PastePage -> False
   }
-  let parent_msg = case group.samples {
+  let parent_msg = case samples.group_samples(group) {
     [first, ..] -> UserChoseSample(first)
     [] -> UserChosePaste
   }
@@ -440,17 +434,35 @@ fn sample_nav_bucket(group: samples.SampleGroup, page: Page) -> Element(Msg) {
       False -> element.none()
       True ->
         html.div(
-          [attribute.class("nav-links nav-children")],
-          list.map(group.samples, fn(sample) {
-            nav_button(
-              sample.label,
-              is_sample_page(page, sample),
-              UserChoseSample(sample),
-            )
-          }),
+          [attribute.class("nav-children")],
+          nav_bucket_children(group, page),
         )
     },
   ])
+}
+
+fn nav_bucket_children(
+  group: samples.SampleGroup,
+  page: Page,
+) -> List(Element(Msg)) {
+  let sample_links = case group.samples {
+    [] -> element.none()
+    direct ->
+      html.div(
+        [attribute.class("nav-links")],
+        list.map(direct, fn(sample) {
+          nav_button(
+            sample.label,
+            is_sample_page(page, sample),
+            UserChoseSample(sample),
+          )
+        }),
+      )
+  }
+  [
+    sample_links,
+    ..list.map(group.buckets, fn(bucket) { sample_nav_bucket(bucket, page) })
+  ]
 }
 
 fn nav_button(label: String, active: Bool, msg: Msg) -> Element(Msg) {
@@ -612,10 +624,12 @@ fn column_role(
   index: Int,
 ) -> Option(#(SortSlot, Direction)) {
   case active {
-    Ok(table_sort.TableSort(primary:, secondary: _)) if primary.column == index ->
-      Some(#(Primary, primary.direction))
-    Ok(table_sort.TableSort(primary: _, secondary: Some(secondary))) if secondary.column
-      == index -> Some(#(Secondary, secondary.direction))
+    Ok(table_sort.TableSort(primary:, secondary: _))
+      if primary.column == index
+    -> Some(#(Primary, primary.direction))
+    Ok(table_sort.TableSort(primary: _, secondary: Some(secondary)))
+      if secondary.column == index
+    -> Some(#(Secondary, secondary.direction))
     _ -> None
   }
 }

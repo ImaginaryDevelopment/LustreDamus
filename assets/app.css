@@ -67,9 +67,15 @@ header p,
 }
 
 .nav-children {
+  display: grid;
+  gap: 0.45rem;
   padding-left: 0.5rem;
   margin-left: 0.15rem;
   border-left: 2px solid var(--line);
+}
+
+.nav-children .nav-group {
+  min-width: 0;
 }
 
 .nav-label {
