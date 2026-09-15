@@ -2,27 +2,27 @@
 
 ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). Each wing has a boss in the last room. **Gandan Tailfist** is a monk quest NPC at the bottom of the entrance drop — leave him.
 
-| Item | Mob | Mob levels |
-| --- | --- | ---: |
-| Sigil of the Calendar | the Crypt Keeper | 50 |
-| Siren Scale Robe | the Crypt Keeper | 50 |
-| Fayguard Parrying Dagger | the Crypt Keeper | 50 |
-| Kylong Chestplate | Skeletal Procurator | 52 |
-| Mask of Obtenebration | Skeletal Procurator | 52 |
-| Rapier of Oriin | Skeletal Procurator | 52 |
-| Necklace of Superiority | Drusella Sathir | 55 |
-| Rod of Oblations | Drusella Sathir | 55 |
-| Runed Morning Star | Drusella Sathir | 55 |
-| Kylong Gauntlets | the Undertaker Lord | 52–55 |
-| Enshrouded Veil | Embalming Fluid | 52 |
-| Fingerbone Hoop | Embalming Fluid | 52 |
-| Hand of the Reaper | Embalming Fluid | 52 |
-| Mask of Wurms | the Crypt Wurm | 50–54 |
-| Mucilaginous Girdle | Bile Sentinel | 48 |
-| Stein of Tears | Bile Sentinel | 48 |
-| Melodious Truncheon | Bile Sentinel | 48 |
-| Acid Etched War Sword | Bile Sentinel | 48 |
-| Kylong Boots | the Golem Master | 50 |
+| Item | Mob | Mob levels | Notes |
+| --- | --- | ---: | --- |
+| Sigil of the Calendar | the Crypt Keeper | 50 | West-wing key. Color Skew, 1 charge. NO RENT |
+| Siren Scale Robe (Chest) | the Crypt Keeper | 50 | ENC, AC 10 INT +10 SV COLD/MAGIC +10 |
+| Fayguard Parrying Dagger (Piercing) | the Crypt Keeper | 50 | RNG, 9/17, AC 10, Word of Pain proc. NO DROP |
+| Kylong Chestplate (Chest) | Skeletal Procurator | 52 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 22 STR +5 DEX −2 WIS +3. No BAR TRL OGR. NO DROP |
+| Mask of Obtenebration (Face) | Skeletal Procurator | 52 | BRD ROG, AC 6 CHA +8 AGI +6, Illusion: Erudite |
+| Rapier of Oriin (Piercing) | Skeletal Procurator | 52 | ROG, 12/25, STR/STA/AGI +5 |
+| Necklace of Superiority (Neck) | Drusella Sathir | 55 | ALL, AC 5, all stats +5, HP/Mana +10, all resists +5 |
+| Rod of Oblations (1H Blunt) | Drusella Sathir | 55 | CLR DRU SHM NEC WIZ MAG ENC, 6/27, Mana +60 SV FIRE/COLD +10 |
+| Runed Morning Star (1H Blunt) | Drusella Sathir | 55 | Non-INT casters, 12/26, STR +7 STA +3 CHA +4 WIS +6 AGI +8 SV MAGIC +6 |
+| Kylong Gauntlets (Hands) | the Undertaker Lord | 52–55 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 WIS/AGI +4 SV DISEASE/MAGIC +2. No BAR TRL OGR |
+| Enshrouded Veil (Face) | Embalming Fluid | 52 | ALL, AC 7 WIS/INT +2 HP/Mana +30 SV FIRE +10 |
+| Fingerbone Hoop (Ear) | Embalming Fluid | 52 | ALL, AC 2 STR/STA/INT +5 CHA −10, See Invisible, mixed resists |
+| Hand of the Reaper (Secondary) | Embalming Fluid | 52 | NEC, AC 5 CHA −30 INT +15 Mana +20 SV MAGIC +10 |
+| Mask of Wurms (Face) | the Crypt Wurm | 50–54 | ALL, AC 5 STR/AGI +4 HP +10 Mana +20 |
+| Mucilaginous Girdle (Waist) | Bile Sentinel | 48 | ALL, AC 7 WIS +6 HP +10 |
+| Stein of Tears (Primary/Secondary) | Bile Sentinel | 48 | ALL, STA/CHA/WIS/INT +5 Mana +25 |
+| Melodious Truncheon (1H Blunt) | Bile Sentinel | 48 | BRD, 11/23, Melodious Befuddlement proc |
+| Acid Etched War Sword (1H Slashing) | Bile Sentinel | 48 | WAR PAL RNG SHD BRD ROG, 8/24, Ykesha proc |
+| Kylong Boots (Feet) | the Golem Master | 50 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 SV COLD/MAGIC +5. No BAR TRL OGR |
 
 ## Quest items
 

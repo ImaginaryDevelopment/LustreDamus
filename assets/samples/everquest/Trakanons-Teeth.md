@@ -2,7 +2,7 @@
 
 Outdoor Kunark zone. Nameds spawn on the froglok **forager** and **hunter** cycles. Kunzar and Nathsar medallions are Old Sebilis key pieces.
 
-Sort the **Mob lookup** table by **Mob** when something is up. Filter also matches any cell (mob, drop, class). **Quest** rows are hand-in NPCs — leave them. **SKIP** nameds have no unique gear.
+Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter also matches any cell. Cycle tables list **every** named on that cycle, including **SKIP**. **Quest** rows are hand-in NPCs — leave them.
 
 ## Mob lookup
 
@@ -61,28 +61,44 @@ Sort the **Mob lookup** table by **Mob** when something is up. Filter also match
 
 | Item | Mob | Notes |
 | --- | --- | --- |
-| Lasnik's Staff (2H Blunt) | Keeper Lasnik (wizard) | MNK/WIZ, INT +5, Mana +15 |
-| Ceremonial Iksar Chestplate | Crusader Zoglic (SK) | Medium, WAR CLR PAL RNG SHD BRD ROG SHM |
-| Grim Pauldrons | Dreadlord Fanrik (SK) | Medium, WAR CLR PAL SHD, STR +10 |
-| Hangman's Noose (Head/Waist) | Hangman (plant) | ALL classes, Haste +17% |
-| Ghostly Robes | Champion Thenrin (warrior) | Cloth, NEC WIZ MAG ENC, INT +6 |
-| Iksar Hide Mask (Face) | Harbinger Dronik (wizard) | BRD/ROG, CHA +13, Illusion: Iksar |
-| Korzanz Kit'ioukl (Head) | Klok Denris (warrior) | SHD only, STR +3 DEX +2 AGI +3 |
 | Trakanasaur Hide Tunic + Leggings | Bloodeye (dino) | Medium, WAR SHD SHM, BAR TRL OGR |
-| Meditative Blanket (Shoulders) | Titail Sinok (skeleton monk) | ALL classes, AC 10 STR +2 WIS +3 INT +3 AGI +2 |
 | Knobbed Warclub (1H Blunt) | Champion Arlek | All non-casters, WIS +3 |
-| Gleaming Short Sword (1H Slashing) | Squire Glik | WAR PAL RNG SHD BRD ROG, CHA +5 |
+| Ghostly Robes | Champion Thenrin (warrior) | Cloth, NEC WIZ MAG ENC, INT +6 |
+| SKIP | Commander Sils | Spectral Iksar ~45. No unique gear |
+| Ceremonial Iksar Chestplate | Crusader Zoglic (SK) | Medium, WAR CLR PAL RNG SHD BRD ROG SHM |
+| SKIP | Dragontail (cockatrice) | 50+ Kunark spells. Petrify |
+| Grim Pauldrons | Dreadlord Fanrik (SK) | Medium, WAR CLR PAL SHD, STR +10 |
+| SKIP | Flayhte (froglok) | Froglok Meat only |
+| Hangman's Noose (Head/Waist) | Hangman (plant) | ALL classes, Haste +17% |
+| Iksar Hide Mask (Face) | Harbinger Dronik (wizard) | BRD/ROG, CHA +13, Illusion: Iksar |
+| Lasnik's Staff (2H Blunt) | Keeper Lasnik (wizard) | MNK/WIZ, INT +5, Mana +15 |
+| Korzanz Kit'ioukl (Head) | Klok Denris (warrior) | SHD only, STR +3 DEX +2 AGI +3 |
+| SKIP | Knight Dragol | Also hunter. 50+ Kunark spells |
 | Sabertooth Amulet (Neck) | Silvermane | SHM only, STA +5 INT +5, See Invisible |
+| Gleaming Short Sword (1H Slashing) | Squire Glik | WAR PAL RNG SHD BRD ROG, CHA +5 |
+| SKIP | Thruke (froglok ranger) | 50+ Kunark spells |
+| Meditative Blanket (Shoulders) | Titail Sinok (skeleton monk) | ALL classes, AC 10 STR +2 WIS +3 INT +3 AGI +2 |
 
 ## Named Mobs — Hunter Cycle
 
 | Item | Mob | Notes |
 | --- | --- | --- |
-| Silken Cat-fur Girdle (Waist) | Sigra (large lion) | ALL classes, STR +9 DEX +13 |
-| Trakasaur's Tooth (1H Piercing) | Trakanasaurus Rex (large dino) | ROG only, 10/20 |
-| Ropy Tendril (1H Slashing) | Ebon Lotus (mantrap) | WAR PAL RNG SHD BRD ROG, Stun |
+| SKIP | Doom (SK) | ~55. Harm Touch, summons. 50+ Kunark spells |
 | Grim Pauldrons | Dreadlord Dekir (SK specter) | Medium, WAR CLR PAL SHD, STR +10 |
+| Ropy Tendril (1H Slashing) | Ebon Lotus (mantrap) | WAR PAL RNG SHD BRD ROG, Stun |
 | Ghostly Robes | Ffroaak (froglok wizard) | Same robes as Thenrin |
+| SKIP | Harbinger Josk (necro) | Words of Obligation / research |
+| SKIP | Hierophant Ixyl (shaman) | Gems / spells / research |
+| SKIP | Keeper Sepsis (necro) | 50+ Kunark spells. Sees invis |
+| SKIP | Knight Dragol | Also forager. 50+ Kunark spells |
+| SKIP | Master Fasliw (monk) | Spectral Iksar ~45. Sees invis. 50+ Kunark spells |
+| SKIP | Oracle Froskil (shaman) | Wolf pet. 50+ Kunark spells |
+| SKIP | Partisan Yinlen | Spectral Iksar ~45. 50+ Kunark spells |
+| Silken Cat-fur Girdle (Waist) | Sigra (large lion) | ALL classes, STR +9 DEX +13 |
+| SKIP | Stonebeak (cockatrice) | 50+ Kunark spells. Same idea as Dragontail |
+| SKIP | Throkkok (froglok ghoul) | Research / spells |
+| Trakasaur's Tooth (1H Piercing) | Trakanasaurus Rex (large dino) | ROG only, 10/20 |
+| SKIP | Vessel Fryn (shaman) | Undead shaman, no pet. No unique gear |
 
 ## Quest NPCs
 

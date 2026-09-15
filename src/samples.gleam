@@ -85,6 +85,14 @@ fn everquest_group() -> SampleGroup {
         samples: everquest_velious(),
         buckets: [],
       ),
+      SampleGroup(id: "eq-by-class", label: "byClass", samples: [], buckets: [
+        SampleGroup(
+          id: "eq-warrior",
+          label: "Warrior",
+          samples: everquest_warrior(),
+          buckets: [],
+        ),
+      ]),
     ],
   )
 }
@@ -320,6 +328,18 @@ fn everquest_velious() -> List(Sample) {
       folder: "everquest",
       file: "Velketors-Labyrinth.md",
       blurb: "Velketor's Labyrinth unique drops (Velious).",
+    ),
+  ]
+}
+
+fn everquest_warrior() -> List(Sample) {
+  [
+    Sample(
+      id: "warrior-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Warrior-Chests.md",
+      blurb: "Groupable warrior chests (Classic / Kunark / Velious).",
     ),
   ]
 }
