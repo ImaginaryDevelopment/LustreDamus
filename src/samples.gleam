@@ -65,7 +65,7 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [zone_xp_sample()],
+    samples: [zone_xp_sample(), quest_gear_sample()],
     buckets: [
       SampleGroup(
         id: "eq-classic",
@@ -94,6 +94,16 @@ fn everquest_group() -> SampleGroup {
         ),
       ]),
     ],
+  )
+}
+
+fn quest_gear_sample() -> Sample {
+  Sample(
+    id: "quest-gear",
+    label: "Quest Gear",
+    folder: "everquest",
+    file: "Quest-Gear.md",
+    blurb: "Turn-in armor and loot to save for gear (Classic / Kunark / Velious).",
   )
 }
 
