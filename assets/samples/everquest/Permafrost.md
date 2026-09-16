@@ -15,6 +15,6 @@ ZEM **1.20×**. Hunt range **15–50**. Goblin king rooms mid-zone; ice giants a
 | Staff of Forbidden Rites (2H Blunt) | Lady Vox | 55 | **RAID.** CLR PAL DRU SHM, 25/50 (0.50) |
 | Warhammer of Divine Grace (2H Blunt) | Lady Vox | 55 | **RAID.** CLR, 18/39 (0.46) |
 | Dragon Bone Bracelet (Wrist) | Lady Vox | 55 | **RAID.** Wrist AC / HP |
-| Crystalline Spear (Piercing) | Lady Vox | 55 | **RAID.** Piercing spear |
+| Crystalline Spear (Piercing) | Lady Vox | 55 | **RAID.** 13/30 (0.43) |
 | White Dragon Scales | Lady Vox | 55 | **RAID.** Tradeskill / quest component |
 | White Dragon Tooth | Lady Vox | 55 | **RAID.** Clicky / tradeskill |

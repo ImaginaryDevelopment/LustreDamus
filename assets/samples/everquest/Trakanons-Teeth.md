@@ -9,7 +9,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Mob | Cycle | Type | Drops | Notes |
 | --- | --- | --- | --- | --- |
 | Bloodeye | Forager | dino | Trakanasaur Hide Tunic + Leggings | Medium, WAR SHD SHM, BAR TRL OGR |
-| Champion Arlek | Forager | warrior | Knobbed Warclub (1H Blunt) | All non-casters, WIS +3 |
+| Champion Arlek | Forager | warrior | Knobbed Warclub (1H Blunt) | All non-casters, 8/24 (0.33), WIS +3 |
 | Champion Thenrin | Forager | warrior | Ghostly Robes | Cloth, NEC WIZ MAG ENC, INT +6 |
 | Commander Sils | Forager | warrior | none | SKIP. Spectral Iksar ~45 |
 | Crusader Vragor | Quest | spectral warrior | Whistling Fists | LEAVE. Stupendous Tome + Crusader's Coffin; spawns Zhaoku |
@@ -18,7 +18,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Dragontail | Forager | cockatrice | 50+ Kunark spells | SKIP. No unique gear. Petrify / spells |
 | Dreadlord Dekir | Hunter | SK specter | Grim Pauldrons | Same as Fanrik. Medium, WAR CLR PAL SHD, STR +10 |
 | Dreadlord Fanrik | Forager | SK | Grim Pauldrons | Medium, WAR CLR PAL SHD, STR +10 |
-| Ebon Lotus | Hunter | mantrap | Ropy Tendril (1H Slashing) | WAR PAL RNG SHD BRD ROG, Stun |
+| Ebon Lotus | Hunter | mantrap | Ropy Tendril (1H Slashing) | WAR PAL RNG SHD BRD ROG, 7/28 (0.25), Stun at 40 |
 | Emperor Ganak | Quest | spectral wizard | Trakanon Idol | LEAVE. Kunzar + Nathsar medallions → Old Sebilis key |
 | Ffroaak | Hunter | froglok wizard | Ghostly Robes | Same robes as Thenrin. Nukes |
 | Flayhte | Forager | froglok | Froglok Meat | SKIP. No unique gear |
@@ -27,7 +27,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Harbinger Josk | Hunter | necro | Words of Obligation | SKIP unless necro research. Spectral Iksar ~48 |
 | Hierophant Ixyl | Hunter | shaman | gems / spells / research | SKIP. Skeleton shaman ~48 |
 | Kaiaren | Quest | human monk | Monk epic | LEAVE unless Celestial Fists. True form aggroes after book turn-in |
-| Keeper Lasnik | Forager | wizard | Lasnik's Staff (2H Blunt) | MNK/WIZ, INT +5, Mana +15 |
+| Keeper Lasnik | Forager | wizard | Lasnik's Staff (2H Blunt) | MNK/WIZ, 12/40 (0.30), INT +5 Mana +15 |
 | Keeper Sepsis | Hunter | necro | 50+ Kunark spells | SKIP. Spectral Iksar ~45. Sees invis |
 | Klok Denris | Forager | warrior | Korzanz Kit'ioukl (Head) | SHD only, STR +3 DEX +2 AGI +3 |
 | Knight Dragol | Both | warrior | 50+ Kunark spells | SKIP. Skeleton ~45. No unique gear |
@@ -38,7 +38,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Partisan Yinlen | Hunter | warrior | 50+ Kunark spells | SKIP. Spectral Iksar ~45 |
 | Sigra | Hunter | large lion | Silken Cat-fur Girdle (Waist) | ALL classes, STR +9 DEX +13 |
 | Silvermane | Forager | sabertooth | Sabertooth Amulet (Neck) | SHM only, STA +5 INT +5, See Invisible |
-| Squire Glik | Forager | squire | Gleaming Short Sword (1H Slashing) | WAR PAL RNG SHD BRD ROG, CHA +5 |
+| Squire Glik | Forager | squire | Gleaming Short Sword (1H Slashing) | WAR PAL RNG SHD BRD ROG, 10/29 (0.34), CHA +5 |
 | Stonebeak | Hunter | cockatrice | 50+ Kunark spells | SKIP. Same idea as Dragontail |
 | Throkkok | Hunter | froglok ghoul | research / spells | SKIP. No unique gear |
 | Thruke | Forager | froglok ranger | 50+ Kunark spells | SKIP. No unique gear |
@@ -62,7 +62,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Item | Mob | Notes |
 | --- | --- | --- |
 | Trakanasaur Hide Tunic + Leggings | Bloodeye (dino) | Medium, WAR SHD SHM, BAR TRL OGR |
-| Knobbed Warclub (1H Blunt) | Champion Arlek | All non-casters, WIS +3 |
+| Knobbed Warclub (1H Blunt) | Champion Arlek | All non-casters, 8/24 (0.33), WIS +3 |
 | Ghostly Robes | Champion Thenrin (warrior) | Cloth, NEC WIZ MAG ENC, INT +6 |
 | SKIP | Commander Sils | Spectral Iksar ~45. No unique gear |
 | Ceremonial Iksar Chestplate | Crusader Zoglic (SK) | Medium, WAR CLR PAL RNG SHD BRD ROG SHM |
@@ -71,11 +71,11 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | SKIP | Flayhte (froglok) | Froglok Meat only |
 | Hangman's Noose (Head/Waist) | Hangman (plant) | ALL classes, Haste +17% |
 | Iksar Hide Mask (Face) | Harbinger Dronik (wizard) | BRD/ROG, CHA +13, Illusion: Iksar |
-| Lasnik's Staff (2H Blunt) | Keeper Lasnik (wizard) | MNK/WIZ, INT +5, Mana +15 |
+| Lasnik's Staff (2H Blunt) | Keeper Lasnik (wizard) | MNK/WIZ, 12/40 (0.30), INT +5 Mana +15 |
 | Korzanz Kit'ioukl (Head) | Klok Denris (warrior) | SHD only, STR +3 DEX +2 AGI +3 |
 | SKIP | Knight Dragol | Also hunter. 50+ Kunark spells |
 | Sabertooth Amulet (Neck) | Silvermane | SHM only, STA +5 INT +5, See Invisible |
-| Gleaming Short Sword (1H Slashing) | Squire Glik | WAR PAL RNG SHD BRD ROG, CHA +5 |
+| Gleaming Short Sword (1H Slashing) | Squire Glik | WAR PAL RNG SHD BRD ROG, 10/29 (0.34), CHA +5 |
 | SKIP | Thruke (froglok ranger) | 50+ Kunark spells |
 | Meditative Blanket (Shoulders) | Titail Sinok (skeleton monk) | ALL classes, AC 10 STR +2 WIS +3 INT +3 AGI +2 |
 
@@ -85,7 +85,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | --- | --- | --- |
 | SKIP | Doom (SK) | ~55. Harm Touch, summons. 50+ Kunark spells |
 | Grim Pauldrons | Dreadlord Dekir (SK specter) | Medium, WAR CLR PAL SHD, STR +10 |
-| Ropy Tendril (1H Slashing) | Ebon Lotus (mantrap) | WAR PAL RNG SHD BRD ROG, Stun |
+| Ropy Tendril (1H Slashing) | Ebon Lotus (mantrap) | WAR PAL RNG SHD BRD ROG, 7/28 (0.25), Stun at 40 |
 | Ghostly Robes | Ffroaak (froglok wizard) | Same robes as Thenrin |
 | SKIP | Harbinger Josk (necro) | Words of Obligation / research |
 | SKIP | Hierophant Ixyl (shaman) | Gems / spells / research |

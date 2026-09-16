@@ -16,5 +16,5 @@ ZEM **1.13×**. Hunt range **19–45**. Classic lizard temple. No AAs: **group**
 | Lizardscale Mantle (Shoulders) | Tae Ew Diviner | 28 | Shoulders, lizardscale |
 | Ravenscale Coif (Head) | a stone golem | 29–31 | ROG ravenscale head |
 | Ravenscale Gloves (Hands) | a steel golem | 35–37 | ROG ravenscale hands |
-| Silver Wand | a silvered guard | 25–27 | Caster wand |
+| Silver Wand (1H Blunt) | a silvered guard | 25–27 | ENC, 5/25 (0.20). NO DROP. Weeping Wand / Incandescent Wand |
 | Ring of Evoluoy (Finger) | an alligator | 20–30 | ALL, HP / AC ring |
