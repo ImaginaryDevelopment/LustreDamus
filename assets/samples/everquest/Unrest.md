@@ -14,7 +14,7 @@ ZEM **1.73×**. Hunt range **10–35**. Yard and first floor, then fireplace / b
 | Festering Cloak (Back) | a festering hag | 25–30 | Back AC / resists |
 | Jagged Band (Finger) | Garanel Rucksif | 35 | ALL, STR ring |
 | Dwarven Work Boots (Feet) | Garanel Rucksif | 35 | Dwarf / melee boots |
-| Pugius (Piercing) | lesser blade fiend | 16–20 | Fast piercing |
-| Gladius (1H Slashing) | lesser blade fiend | 16–20 | Short 1HS |
-| Tentacle Whip (1H Slashing) | a tentacle terror | 28–32 | Whip, melee / hybrid |
+| Pugius (Piercing) | lesser blade fiend | 16–20 | 5/21 (0.24) |
+| Gladius (1H Slashing) | lesser blade fiend | 16–20 | WAR PAL RNG SHD BRD ROG, 7/29 (0.24) |
+| Tentacle Whip (1H Slashing) | a tentacle terror | 28–32 | WAR PAL RNG SHD BRD ROG, 4/25 (0.16), Lifetap |
 | Tarnished Bronze Key | a priest of najena | 30–35 | Unrest door / quest key |

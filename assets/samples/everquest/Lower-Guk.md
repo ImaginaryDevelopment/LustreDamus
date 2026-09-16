@@ -10,9 +10,9 @@ ZEM **1.06×**. Hunt range **30–50**. Live side (king) vs dead side (ghoul lor
 | Thick Banded Belt (Waist) | a ghoul supplier | 38–42 | WAR PAL RNG SHD MNK BRD ROG, STR +9 STA +9 |
 | Short Sword of the Ykesha (1H Slashing) | The Ghoul Lord | 47 | WAR PAL RNG SHD BRD ROG, 8/24 (0.33), Ykesha stun proc |
 | Skull-shaped Barbute (Head) | The Ghoul Lord | 47 | WAR PAL SHD, plate helm |
-| Dark Reaver (2H Slashing) | a ghoul cavalier | 37 | WAR PAL RNG SHD, 2HS |
-| Executioner's Axe (2H Slashing) | a ghoul executioner | 35 | WAR PAL RNG SHD, 2HS |
-| Mithril Two-Handed Sword (2H Slashing) | the froglok king | 47 | WAR PAL RNG SHD, mithril 2HS |
+| Dark Reaver (2H Slashing) | a ghoul cavalier | 37 | SHD, 20/42 (0.48), Steal Strength |
+| Executioner's Axe (2H Slashing) | a ghoul executioner | 35 | WAR, 25/50 (0.50), haste |
+| Mithril Two-Handed Sword (2H Slashing) | the froglok king | 47 | WAR PAL SHD, 21/40 (0.53), haste 31% |
 | Crown of the Froglok Kings (Head) | the froglok king | 47 | Head AC / CHA |
 | Platinum Tiara (Head) | a froglok tactician | 45–47 | Head jewelry AC |
 | Mithril-Runed Tunic (Chest) | a froglok crusader | 42–45 | Medium chest, melee / hybrid |
