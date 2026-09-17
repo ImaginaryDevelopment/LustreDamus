@@ -9,7 +9,15 @@ Classic / Kunark / Velious. Field drops and molds that become **worn gear**. Not
 | Item | Expansion | Turns into | Who | Notes |
 | --- | --- | --- | --- | --- |
 | Cracked Paineel Shield | Classic | (nothing) | The Hole | Fashion only. AC 2. Not Dread Forged, not Imbued Shield of Paineel |
-| Imbued Shield of Paineel | Classic | (wear it) | Dartain the Lost (The Hole) | Drop, not a turn-in. AC 22 STR +4, Enduring Breath. WAR CLR PAL SHD BRD |
+| Imbued Shield of Paineel | Classic | (wear it) | Dartain the Lost (The Hole) | Group drop, not a turn-in. AC 22 STR +4, Enduring Breath. WAR CLR PAL SHD BRD |
+| Tome of Miragul | Classic | (wear it) | Dartain the Lost | Wearable book. **Not** a turn-in |
+| Engraved Ring | Classic | **SHM epic** | High Scale Kirn (The Hole) | NO DROP. Identify: Promise Ring of Neh`Ashiir. CHA +5 |
+| Tainted Darksteel Sword | Classic | **PAL epic** | Keeper of the Tombs (The Hole) | NO DROP |
+| Soulbound Hammer | Classic | **RNG epic** | Jaeil the Insane (The Hole) | NO DROP. Spawn with Shiny Tin Bowl |
+| Dirt of Underfoot | Classic | **MAG epic** | Slixin Klex (The Hole) | NO DROP. **Not** Soil of Underfoot / Holy Dirt of Brell |
+| Essence of a Ghost | Classic | **ENC epic** | Ghost of Kindle (The Hole) | NO DROP. Then Polzin Mrid in this zone |
+| Cell Key; Heart of Kyrenna; Blood of Kyrenna; Head of Glohnor | Classic | **SK epic** (Innoruuk's Curse) | mimic / Kyrenna / mummy (The Hole) | All NO DROP. Caradon is LEAVE. Dusty Tome off ratman guard is optional |
+| Living Heart of a Brell Minion; Holy Dirt of Brell; Ruined Sword Hilt; Gold lined heretic cloak | Classic | (nothing) | Hole golems / revenants / wanderers | Look like quest items. **No P99 quest.** Vendor jewels/pebbles. Bank NO DROP souvenirs if you want |
 | Brain of the Ishva Mal; Griffon Eye; Ice Giant Toes; Powder of Reanimation | Classic | **Dread Forged Shield** | Nivold Predd → Avatar of Dread (Paineel) | CLR HUM ERU. AC 17 STR +5 CHA +10 WIS +5 Mana +20 SV MAGIC +10. Ishva Mal = Splitpaw; powder = Khrix Abomination (Unrest); ice giant toes = Permafrost. Ice giant toes also MAG **Stein of Ulissa** |
 | Mundane Shield | Classic | Dread Forged Shield | Avatar of Dread (Paineel) | Created mid-quest. Hand it immediately |
 | Decayed armor (helm, visor, L/R bracer, boot, gauntlet, legplate, vambrace, chainmail, breastplate) | Classic | **Darkforge** (non-IKS SK plate) | **an undead knight** (Temple of Solusek Ro) | **Cazic-Thule** lizard crusaders / ritualist. Not Befallen. Left knight: helm / BP / vambraces / bracers. Right: gauntlets / greaves / boots. Each slot = two decayed + one extra |
@@ -21,7 +29,7 @@ Classic / Kunark / Velious. Field drops and molds that become **worn gear**. Not
 | Qeynos Kite Shield | Classic | Darkforge Vambraces | undead knight (left) | Qeynos guards. + L/R decayed vambrace |
 | Corflunk's Head; Zarchoomi's Head | Classic | **Bloodforge** (random piece) | Byzar Bloodforge (S Kaladim) | Butcherblock ogres (goblin WIZ / SHM PHs). **Both** heads. DWF WAR CLR PAL. Helm is the prize (STR +5 SV all) |
 | White Dragon Scales / Hide | Classic | **White Dragonscale Cloak** | Karam Dragonforge (Rathe) | Lady Vox **RAID**. Also need JC wedding ring + black sapphire platinum necklace. AC 10 WIS/INT +9 Mana +75 SV COLD +25 |
-| Red Dragon Scales | Classic | **Red Dragonscale Armor** (chest) | Karam Dragonforge (Rathe) | Nortlav in The Hole (Yael room) or Nagafen **RAID**. + Vial of Swirling Smoke + 1000pp. WAR PAL RNG SHD BRD ROG, not IKS. See Warrior Chests |
+| Red Dragon Scales | Classic | **Red Dragonscale Armor** (chest) | Karam Dragonforge (Rathe) | **Nortlav** (The Hole, Yael pit — **group**) or Nagafen **RAID**. + Vial of Swirling Smoke + 1000pp. WAR PAL RNG SHD BRD ROG, not IKS. See Warrior Chests |
 | Lambent Stone | Classic | **Lambent** gems → BRD armor | Cryssia / Walthin (soltemple) | Hill / ice / sand giants, griffons. Combine stone + 2 gems: fire opal (Ostorm), star ruby (Genni), sapphire (Gardern), ruby (Vilissia). Indifferent Sol Ro or they eat it |
 | Gypsy Lute; Basalt Carapace | Classic | Lambent Breastplate | Cryssia | Mistmoore gypsy musician; Lower Guk basalt gargoyle. + Lambent Ruby |
 | Mudwater Rune; Opoline Helm | Classic | Lambent Helm | Cryssia | CT zealot/fanatic; Oasis / Lake Rathe deepwater goblin. + Lambent Star Ruby |
@@ -114,6 +122,6 @@ Classic / Kunark / Velious. Field drops and molds that become **worn gear**. Not
 | Thurgadin | Velious | Corroded + 3 gems | Best groupable 60 armor | Need Coldain |
 | Kael | Velious | Ancient Tarnished + 3 gems | Raid 60 armor | ToV west raid |
 | Skyshrine | Velious | Unadorned + 3 gems | Raid 60 armor | ToV east raid |
-| Red / White dragonscale | Classic | Scales + JC / pp | Chest or cloak | Vox / Nagafen raid or Hole Nortlav for red |
+| Red / White dragonscale | Classic | Scales + JC / pp | Chest or cloak | Vox / Nagafen raid; Hole **Nortlav** is a group for red |
 
 Epic pieces that are also hunt loot (Greenmist, Whistling Fists, WIZ singed scroll off Overking) stay on the zone sheets. This list is **save in the bank** gear components.

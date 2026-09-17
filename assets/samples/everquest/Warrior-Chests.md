@@ -8,7 +8,7 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | --- | --- | --- | --- | ---: | --- |
 | Champion's Breastplate | AC 47 STR +14 DEX +7 STA +10 AGI +5 HP +90 Invigorate | Kael veterans / arena / storm giants (Corroded Breastplate) + 3 Flawless Diamonds | Kael Drakkel; gems in Velketor's / SG / DN | NO DROP | Thurgadin warrior armor NPC. Kindly Coldain. Stout 60 group; SK puller helps on veterans |
 | Berserker's Breastplate | AC 47 STR +14 DEX +5 STA +10 AGI +7 HP +90 Invigorate | Feral Amalgams; Spirit Flux Wolves | Plane of Growth | NO DROP | Not Tunare. Group camp if you can enter PoGrowth |
-| Red Dragonscale Armor | AC 21 STR +20 SV FIRE +10 SV MAGIC +10 | Nortlav the Scalekeeper (Red Dragon Scales) | The Hole (Yael room) | tradeable | Karam Dragonforge (Rathe) + Vial of Swirling Smoke + 1000pp. VS-style lifetap tank. WAR PAL RNG SHD BRD ROG, not Iksar |
+| Red Dragonscale Armor | AC 21 STR +20 SV FIRE +10 SV MAGIC +10 | Nortlav the Scalekeeper (Red Dragon Scales) | The Hole (Yael pit — group) | tradeable | Karam Dragonforge (Rathe) + Vial of Swirling Smoke + 1000pp. VS-style lifetap tank. WAR PAL RNG SHD BRD ROG, not Iksar |
 | Kylong Chestplate | AC 22 STR +5 DEX -2 WIS +3 wt 0.8 | Skeletal Procurator | Howling Stones (west last room ~-90, 675) | NO DROP | Not BAR TRL OGR. PH a sepulcher skeleton. Not at zone-in |
 | Jarsath Scale Chestplate | AC 20 DEX +5 HP +10 | Skeletal Berserker | Karnor's Castle (courtyard) | NO DROP | ~48. Not DWF TRL OGR HFL GNM |
 | Nathsar Breastplate | AC 18 STR +6 WIS +6 AGI +6 SV FIRE +5 SV DISEASE +5 | Loremaster Piza`tak | Chardok (library) | lore | ~58. Late-2001 Chardok revamp. Skip if your server never got it |
