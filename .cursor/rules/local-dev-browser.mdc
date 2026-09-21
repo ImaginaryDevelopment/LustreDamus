@@ -1,0 +1,26 @@
+---
+description: Start Lustre locally and open Cursor Simple Browser without PATH/port thrash
+alwaysApply: true
+---
+
+# Local Gleam app in Cursor
+
+When asked to run the app so it can be viewed in the IDE:
+
+1. **Reuse first.** `netstat -ano | findstr ":1234"` — if `127.0.0.1:1234` is LISTENING, do not start another `gleam run`. That fails with `Eaddrinuse`.
+2. **PATH before start.** Agent shells often lack Erlang. Prepend, then start:
+
+```powershell
+$env:PATH = "C:\Program Files\Erlang OTP\bin;" + $env:PATH
+gleam run -m lustre/dev start
+```
+
+`escript` not found = skipped this prepend. Do not hunt for `rebar3` unless start still fails after `escript` works.
+
+3. **Open Simple Browser** (this session usually has **no** in-chat browser MCP / `cursor-ide-browser`; skip searching for it):
+
+```powershell
+cursor -r "vscode://vscode.simple-browser/show?url=http%3A%2F%2Flocalhost%3A1234"
+```
+
+URL is **http://localhost:1234**. WebFetch cannot hit localhost.

@@ -92,6 +92,36 @@ fn everquest_group() -> SampleGroup {
           samples: everquest_warrior(),
           buckets: [],
         ),
+        SampleGroup(
+          id: "eq-cleric",
+          label: "Cleric",
+          samples: everquest_cleric(),
+          buckets: [],
+        ),
+        SampleGroup(
+          id: "eq-druid",
+          label: "Druid",
+          samples: everquest_druid(),
+          buckets: [],
+        ),
+        SampleGroup(
+          id: "eq-monk",
+          label: "Monk",
+          samples: everquest_monk(),
+          buckets: [],
+        ),
+        SampleGroup(
+          id: "eq-shaman",
+          label: "Shaman",
+          samples: everquest_shaman(),
+          buckets: [],
+        ),
+        SampleGroup(
+          id: "eq-wizard",
+          label: "Wizard",
+          samples: everquest_wizard(),
+          buckets: [],
+        ),
       ]),
     ],
   )
@@ -371,6 +401,66 @@ fn everquest_warrior() -> List(Sample) {
       folder: "everquest",
       file: "Warrior-Chests.md",
       blurb: "Groupable warrior chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_cleric() -> List(Sample) {
+  [
+    Sample(
+      id: "cleric-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Cleric-Chests.md",
+      blurb: "Groupable cleric chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_druid() -> List(Sample) {
+  [
+    Sample(
+      id: "druid-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Druid-Chests.md",
+      blurb: "Groupable druid chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_monk() -> List(Sample) {
+  [
+    Sample(
+      id: "monk-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Monk-Chests.md",
+      blurb: "Groupable monk chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_shaman() -> List(Sample) {
+  [
+    Sample(
+      id: "shaman-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Shaman-Chests.md",
+      blurb: "Groupable shaman chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_wizard() -> List(Sample) {
+  [
+    Sample(
+      id: "wizard-chests",
+      label: "Chests",
+      folder: "everquest",
+      file: "Wizard-Chests.md",
+      blurb: "Groupable wizard chests (Classic / Kunark / Velious).",
     ),
   ]
 }
