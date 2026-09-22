@@ -390,6 +390,20 @@ fn everquest_velious() -> List(Sample) {
       file: "Velketors-Labyrinth.md",
       blurb: "Velketor's Labyrinth unique drops (Velious).",
     ),
+    Sample(
+      id: "plane-of-growth",
+      label: "PoGrowth",
+      folder: "everquest",
+      file: "Plane-of-Growth.md",
+      blurb: "Plane of Growth nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    Sample(
+      id: "plane-of-mischief",
+      label: "PoMischief",
+      folder: "everquest",
+      file: "Plane-of-Mischief.md",
+      blurb: "Plane of Mischief nameds, unique loot, and quest NPCs (Velious).",
+    ),
   ]
 }
 
