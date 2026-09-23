@@ -36,6 +36,7 @@ Sort the **Mob lookup** or a cycle table by **Mob** when something is up. Filter
 | Oracle Froskil | Hunter | shaman | 50+ Kunark spells | SKIP. Skeleton shaman, wolf pet. Does not summon |
 | Pained Soul | Other | spectral warrior | Piece of a medallion | Veeshan's Peak key piece. Rare near Sebilis (~-1834, -4368) |
 | Partisan Yinlen | Hunter | warrior | 50+ Kunark spells | SKIP. Spectral Iksar ~45 |
+| a rogue marauder | Other | warrior | **Rogue Marauder's Head** | Quest. Static ~49 (−2040, 1545), ~2h. IKS NEC **Demi-Lich Skullcap** → Glosk (after Ixpacan) |
 | Sigra | Hunter | large lion | Silken Cat-fur Girdle (Waist) | ALL classes, STR +9 DEX +13 |
 | Silvermane | Forager | sabertooth | Sabertooth Amulet (Neck) | SHM only, STA +5 INT +5, See Invisible |
 | Squire Glik | Forager | squire | Gleaming Short Sword (1H Slashing) | WAR PAL RNG SHD BRD ROG, 10/29 (0.34), CHA +5 |
