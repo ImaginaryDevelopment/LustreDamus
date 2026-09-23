@@ -43,12 +43,16 @@ pub type Model {
     optional_columns: Dict(String, Dict(String, Bool)),
     value_filters: Dict(String, Dict(String, Dict(String, Bool))),
     pal_elements: Dict(String, String),
+    zone_search: String,
+    zone_search_open: Bool,
   )
 }
 
 pub type Msg {
   UserChosePaste
   UserChoseSample(Sample)
+  UserOpenedZoneSearch
+  UserUpdatedZoneSearch(String)
   UserUpdatedMarkdown(String)
   UserUpdatedFilter(String)
   UserClickedColumn(String, Int)
@@ -82,6 +86,8 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       optional_columns: dict.new(),
       value_filters: dict.new(),
       pal_elements: dict.new(),
+      zone_search: "",
+      zone_search_open: False,
     ),
     effect.none(),
   )
@@ -90,7 +96,13 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
 fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
   case msg {
     UserChosePaste -> #(
-      Model(..model, page: PastePage, error: None, loading: False),
+      Model(
+        ..model,
+        page: PastePage,
+        error: None,
+        loading: False,
+        zone_search_open: False,
+      ),
       effect.none(),
     )
 
@@ -105,6 +117,8 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         optional_columns: dict.new(),
         value_filters: dict.new(),
         pal_elements: model.pal_elements,
+        zone_search: model.zone_search,
+        zone_search_open: model.zone_search_open,
       ),
       effect.batch([
         load_sample(samples.url(sample)),
@@ -113,6 +127,16 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           False -> effect.none()
         },
       ]),
+    )
+
+    UserOpenedZoneSearch -> #(
+      Model(..model, zone_search_open: True),
+      effect.none(),
+    )
+
+    UserUpdatedZoneSearch(zone_search) -> #(
+      Model(..model, zone_search: zone_search, zone_search_open: True),
+      effect.none(),
     )
 
     UserUpdatedMarkdown(markdown) -> #(
@@ -401,7 +425,7 @@ fn view(model: Model) -> Element(Msg) {
       [
         nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
         ..list.map(samples.groups(), fn(group) {
-          sample_nav_bucket(group, model.page)
+          sample_nav_bucket(group, model)
         })
       ],
     ),
@@ -462,32 +486,95 @@ fn apply_sort(table: Table, sorts: Dict(String, TableSort)) -> Table {
   }
 }
 
-fn sample_nav_bucket(group: samples.SampleGroup, page: Page) -> Element(Msg) {
-  let open = case page {
+fn sample_nav_bucket(group: samples.SampleGroup, model: Model) -> Element(Msg) {
+  case samples.is_all_nav(group) {
+    True -> zone_all_nav(model)
+    False -> sample_nav_bucket_regular(group, model)
+  }
+}
+
+fn sample_nav_bucket_regular(
+  group: samples.SampleGroup,
+  model: Model,
+) -> Element(Msg) {
+  let open = case model.page {
     SamplePage(sample) -> samples.group_contains(group, sample)
     PastePage -> False
   }
-  let parent_msg = case samples.group_samples(group) {
-    [first, ..] -> UserChoseSample(first)
-    [] -> UserChosePaste
+  let parent = case samples.group_samples(group) {
+    [first, ..] -> nav_button(group.label, open, UserChoseSample(first))
+    [] ->
+      html.span([attribute.class("nav-label")], [html.text(group.label)])
   }
 
   html.div([attribute.class("nav-group")], [
-    nav_button(group.label, open, parent_msg),
+    parent,
     case open {
       False -> element.none()
       True ->
         html.div(
           [attribute.class("nav-children")],
-          nav_bucket_children(group, page),
+          nav_bucket_children(group, model),
         )
     },
   ])
 }
 
+fn zone_all_nav(model: Model) -> Element(Msg) {
+  let open = model.zone_search_open
+  html.div([attribute.class("nav-group nav-zone-all")], [
+    nav_button("All", open, UserOpenedZoneSearch),
+    case open {
+      False -> element.none()
+      True ->
+        html.div([attribute.class("nav-children")], [
+          html.label(
+            [attribute.for("zone-search"), attribute.class("nav-label")],
+            [html.text("Find zone")],
+          ),
+          html.input([
+            attribute.id("zone-search"),
+            attribute.type_("search"),
+            attribute.class("nav-zone-search"),
+            attribute.placeholder("Type 2+ letters…"),
+            attribute.value(model.zone_search),
+            attribute.attribute("autocomplete", "off"),
+            event.on_input(UserUpdatedZoneSearch),
+          ]),
+          zone_search_results(model),
+        ])
+    },
+  ])
+}
+
+fn zone_search_results(model: Model) -> Element(Msg) {
+  let query = string.trim(model.zone_search)
+  case string.length(query) < 2 {
+    True -> element.none()
+    False ->
+      case samples.search_zones(query) {
+        [] ->
+          html.p([attribute.class("nav-zone-empty")], [
+            html.text("No zones match."),
+          ])
+        matches ->
+          html.div(
+            [attribute.class("nav-links")],
+            list.map(matches, fn(sample) {
+              nav_button(
+                sample.label,
+                is_sample_page(model.page, sample),
+                UserChoseSample(sample),
+              )
+            }),
+          )
+      }
+  }
+}
+
 fn nav_bucket_children(
   group: samples.SampleGroup,
-  page: Page,
+  model: Model,
 ) -> List(Element(Msg)) {
   let sample_links = case group.samples {
     [] -> element.none()
@@ -497,7 +584,7 @@ fn nav_bucket_children(
         list.map(direct, fn(sample) {
           nav_button(
             sample.label,
-            is_sample_page(page, sample),
+            is_sample_page(model.page, sample),
             UserChoseSample(sample),
           )
         }),
@@ -505,7 +592,12 @@ fn nav_bucket_children(
   }
   [
     sample_links,
-    ..list.map(group.buckets, fn(bucket) { sample_nav_bucket(bucket, page) })
+    ..list.filter_map(group.buckets, fn(bucket) {
+      case samples.is_all_nav(bucket) || samples.group_samples(bucket) != [] {
+        True -> Ok(sample_nav_bucket(bucket, model))
+        False -> Error(Nil)
+      }
+    })
   ]
 }
 

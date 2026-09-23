@@ -78,6 +78,25 @@ header p,
   min-width: 0;
 }
 
+.nav-zone-all {
+  min-width: 12rem;
+}
+
+.nav-zone-search {
+  width: 100%;
+  max-width: 16rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: inherit;
+}
+
+.nav-zone-empty {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .nav-label {
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -130,6 +149,7 @@ textarea {
 
 textarea:focus,
 .filter-row input:focus,
+.nav-zone-search:focus,
 .nav-link:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 1px;
