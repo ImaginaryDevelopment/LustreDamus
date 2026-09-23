@@ -416,6 +416,13 @@ fn everquest_warrior() -> List(Sample) {
       file: "Warrior-Chests.md",
       blurb: "Groupable warrior chests (Classic / Kunark / Velious).",
     ),
+    Sample(
+      id: "warrior-boots",
+      label: "Boots",
+      folder: "everquest",
+      file: "Warrior-Boots.md",
+      blurb: "Groupable warrior boots (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -451,6 +458,13 @@ fn everquest_monk() -> List(Sample) {
       folder: "everquest",
       file: "Monk-Chests.md",
       blurb: "Groupable monk chests (Classic / Kunark / Velious).",
+    ),
+    Sample(
+      id: "monk-boots",
+      label: "Boots",
+      folder: "everquest",
+      file: "Monk-Boots.md",
+      blurb: "Groupable monk boots (Classic / Kunark / Velious).",
     ),
   ]
 }
