@@ -423,9 +423,14 @@ fn view(model: Model) -> Element(Msg) {
         attribute.attribute("aria-label", "Sections"),
       ],
       [
-        nav_button("Paste Markdown", model.page == PastePage, UserChosePaste),
+        nav_button(
+          "Paste Markdown",
+          model.page == PastePage,
+          "nav-root",
+          UserChosePaste,
+        ),
         ..list.map(samples.groups(), fn(group) {
-          sample_nav_bucket(group, model)
+          sample_nav_bucket(group, model, 0)
         })
       ],
     ),
@@ -486,71 +491,90 @@ fn apply_sort(table: Table, sorts: Dict(String, TableSort)) -> Table {
   }
 }
 
-fn sample_nav_bucket(group: samples.SampleGroup, model: Model) -> Element(Msg) {
+fn sample_nav_bucket(
+  group: samples.SampleGroup,
+  model: Model,
+  depth: Int,
+) -> Element(Msg) {
   case samples.is_all_nav(group) {
-    True -> zone_all_nav(model)
-    False -> sample_nav_bucket_regular(group, model)
+    True -> zone_all_button(model)
+    False -> sample_nav_bucket_regular(group, model, depth)
   }
 }
 
 fn sample_nav_bucket_regular(
   group: samples.SampleGroup,
   model: Model,
+  depth: Int,
 ) -> Element(Msg) {
   let open = case model.page {
     SamplePage(sample) -> samples.group_contains(group, sample)
     PastePage -> False
   }
-  let parent = case samples.group_samples(group) {
-    [first, ..] -> nav_button(group.label, open, UserChoseSample(first))
-    [] ->
-      html.span([attribute.class("nav-label")], [html.text(group.label)])
+  let branch_class = case depth {
+    0 -> "nav-root"
+    1 -> "nav-branch"
+    _ -> "nav-subbranch"
+  }
+  let group_class = case depth {
+    0 -> "nav-group nav-group-root"
+    _ -> "nav-group"
   }
 
-  html.div([attribute.class("nav-group")], [
+  // Only the game root mounts an inline panel. Expansion / type rows emit
+  // their open detail through the parent so sibling triggers stay on one line.
+  let show_children = open && depth == 0
+  let parent = case samples.group_samples(group) {
+    [first, ..] ->
+      nav_button(group.label, open, branch_class, UserChoseSample(first))
+    [] ->
+      html.span([attribute.class("nav-section-label")], [html.text(group.label)])
+  }
+
+  html.div([attribute.class(group_class)], [
     parent,
-    case open {
+    case show_children {
       False -> element.none()
       True ->
         html.div(
           [attribute.class("nav-children")],
-          nav_bucket_children(group, model),
+          nav_bucket_children(group, model, depth),
         )
     },
   ])
 }
 
-fn zone_all_nav(model: Model) -> Element(Msg) {
-  let open = model.zone_search_open
-  html.div([attribute.class("nav-group nav-zone-all")], [
-    nav_button("All", open, UserOpenedZoneSearch),
-    case open {
-      False -> element.none()
-      True ->
-        html.div([attribute.class("nav-children")], [
-          html.label(
-            [attribute.for("zone-search"), attribute.class("nav-label")],
-            [html.text("Find zone")],
-          ),
-          html.input([
-            attribute.id("zone-search"),
-            attribute.type_("search"),
-            attribute.class("nav-zone-search"),
-            attribute.placeholder("Type 2+ letters…"),
-            attribute.value(model.zone_search),
-            attribute.attribute("autocomplete", "off"),
-            event.on_input(UserUpdatedZoneSearch),
-          ]),
-          zone_search_results(model),
-        ])
-    },
-  ])
+fn zone_all_button(model: Model) -> Element(Msg) {
+  nav_button("All", model.zone_search_open, "nav-branch", UserOpenedZoneSearch)
+}
+
+fn zone_all_panel(model: Model) -> Element(Msg) {
+  case model.zone_search_open {
+    False -> element.none()
+    True ->
+      html.div([attribute.class("nav-detail nav-detail-search")], [
+        html.input([
+          attribute.id("zone-search"),
+          attribute.type_("search"),
+          attribute.class("nav-zone-search"),
+          attribute.placeholder("Zone short or long name…"),
+          attribute.value(model.zone_search),
+          attribute.attribute("autocomplete", "off"),
+          attribute.attribute("aria-label", "Find zone"),
+          event.on_input(UserUpdatedZoneSearch),
+        ]),
+        zone_search_results(model),
+      ])
+  }
 }
 
 fn zone_search_results(model: Model) -> Element(Msg) {
   let query = string.trim(model.zone_search)
   case string.length(query) < 2 {
-    True -> element.none()
+    True ->
+      html.p([attribute.class("nav-zone-hint")], [
+        html.text("Type 2+ letters"),
+      ])
     False ->
       case samples.search_zones(query) {
         [] ->
@@ -564,6 +588,7 @@ fn zone_search_results(model: Model) -> Element(Msg) {
               nav_button(
                 sample.label,
                 is_sample_page(model.page, sample),
+                "nav-leaf",
                 UserChoseSample(sample),
               )
             }),
@@ -573,6 +598,18 @@ fn zone_search_results(model: Model) -> Element(Msg) {
 }
 
 fn nav_bucket_children(
+  group: samples.SampleGroup,
+  model: Model,
+  depth: Int,
+) -> List(Element(Msg)) {
+  case depth {
+    0 -> root_nav_children(group, model)
+    1 -> expansion_nav_children(group, model)
+    _ -> leaf_nav_children(group, model)
+  }
+}
+
+fn root_nav_children(
   group: samples.SampleGroup,
   model: Model,
 ) -> List(Element(Msg)) {
@@ -585,26 +622,119 @@ fn nav_bucket_children(
           nav_button(
             sample.label,
             is_sample_page(model.page, sample),
+            "nav-leaf",
             UserChoseSample(sample),
           )
         }),
       )
   }
-  [
-    sample_links,
-    ..list.filter_map(group.buckets, fn(bucket) {
+  let branch_buttons =
+    list.filter_map(group.buckets, fn(bucket) {
       case samples.is_all_nav(bucket) || samples.group_samples(bucket) != [] {
-        True -> Ok(sample_nav_bucket(bucket, model))
+        True -> Ok(sample_nav_bucket(bucket, model, 1))
         False -> Error(Nil)
       }
     })
+  let detail = case model.zone_search_open {
+    True -> zone_all_panel(model)
+    False ->
+      case open_child_bucket(group, model) {
+        Ok(bucket) ->
+          html.div(
+            [attribute.class("nav-detail")],
+            expansion_nav_children(bucket, model),
+          )
+        Error(Nil) -> element.none()
+      }
+  }
+  [sample_links, ..list.append(branch_buttons, [detail])]
+}
+
+fn expansion_nav_children(
+  group: samples.SampleGroup,
+  model: Model,
+) -> List(Element(Msg)) {
+  let type_buttons =
+    list.filter_map(group.buckets, fn(bucket) {
+      case samples.group_samples(bucket) {
+        [] -> Error(Nil)
+        _ -> Ok(sample_nav_bucket(bucket, model, 2))
+      }
+    })
+  let zones = case open_child_bucket(group, model) {
+    Ok(bucket) ->
+      html.div(
+        [attribute.class("nav-links nav-zone-links")],
+        list.map(bucket.samples, fn(sample) {
+          nav_button(
+            sample.label,
+            is_sample_page(model.page, sample),
+            "nav-leaf",
+            UserChoseSample(sample),
+          )
+        }),
+      )
+    Error(Nil) ->
+      case group.samples {
+        [] -> element.none()
+        direct ->
+          html.div(
+            [attribute.class("nav-links nav-zone-links")],
+            list.map(direct, fn(sample) {
+              nav_button(
+                sample.label,
+                is_sample_page(model.page, sample),
+                "nav-leaf",
+                UserChoseSample(sample),
+              )
+            }),
+          )
+      }
+  }
+  list.append(type_buttons, [zones])
+}
+
+fn leaf_nav_children(
+  group: samples.SampleGroup,
+  model: Model,
+) -> List(Element(Msg)) {
+  [
+    html.div(
+      [attribute.class("nav-links")],
+      list.map(group.samples, fn(sample) {
+        nav_button(
+          sample.label,
+          is_sample_page(model.page, sample),
+          "nav-leaf",
+          UserChoseSample(sample),
+        )
+      }),
+    ),
   ]
 }
 
-fn nav_button(label: String, active: Bool, msg: Msg) -> Element(Msg) {
+fn open_child_bucket(
+  group: samples.SampleGroup,
+  model: Model,
+) -> Result(samples.SampleGroup, Nil) {
+  case model.page {
+    PastePage -> Error(Nil)
+    SamplePage(sample) ->
+      list.find(group.buckets, fn(bucket) {
+        samples.group_contains(bucket, sample)
+      })
+  }
+}
+
+fn nav_button(
+  label: String,
+  active: Bool,
+  kind: String,
+  msg: Msg,
+) -> Element(Msg) {
   let class = case active {
-    True -> "nav-link active"
-    False -> "nav-link"
+    True -> "nav-link " <> kind <> " active"
+    False -> "nav-link " <> kind
   }
   html.button(
     [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
