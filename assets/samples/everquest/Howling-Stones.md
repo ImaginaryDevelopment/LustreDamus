@@ -1,30 +1,31 @@
 # Howling Stones — unique loot
 
-ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella** is **2-group**. **Gandan Tailfist** is a monk quest NPC at the bottom of the entrance drop — leave him.
+ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella** is **2-group**. Wing nameds share PH spots in that wing; each wing’s last-room boss only spawns there.
 
-Sort the **Named spawn** table by **Mob** when tracking. **Skeletal Procurator** is the west-wing last-room boss — he is not at zone-in. PH is often **a sepulcher skeleton**.
+Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs — do not kill. **Skeletal Procurator** is the west-wing last-room boss — not at zone-in. PH is often **a sepulcher skeleton**.
 
 ## Named spawn
 
-| Mob | Wing | Loc | PH / notes |
-| --- | --- | --- | --- |
-| Gandan Tailfist | Entrance | ~287, -26, -176 | LEAVE. After the drop. Whistling Fists |
-| Bile Sentinel | North | ~239, 138; 387, 80 | Also called **Sentient Bile**. ~25% vs crypt golem / crypt wurm / pulsating bile |
-| the Crypt Keeper | North | ~549, 112 | ~34%. Sigil of the Calendar → west wing |
-| the Crypt Wurm | North | ~239, 138 | Shares north named spots |
-| the Golem Master | North / west | ~7, 565; -12, 147 | ~20% |
-| the Spectre Sepulcher | North / west | ~157, 189; 157, 279 | ~50% |
-| Skeletal Procurator | West last room | ~-90, 675 | ~25–50%. PH **a sepulcher skeleton** (sometimes a bottomless devourer). Needs **Skull-engraved Coin** (ground spawn west, past trap) after Crypt Keeper's sigil. SK, summons, sees invis. Drops south-wing key |
-| Embalming Fluid | South | various named spots | |
-| the Crypt Feaster | South | south named spots | |
-| the Skeleton Sepulcher | South | various | Tall skeleton |
-| the Spectre Spiritualist | South | various named spots | Highest south named |
-| a Howling Spectre | East | various | |
-| the Crypt Excavator | East | east named spots | |
-| Reanimated Plaguebone | East | east named spots | |
-| Mortiferous Protector | East | ~294, -524 | PH mortiferous golem. Sees invis |
-| the Undertaker Lord | East | east last rooms | ~56. Highest HS named |
-| Drusella Sathir | East last | ~279, -534 | **2-group** |
+| Mob | Class | Wing | Loc | PH / notes |
+| --- | --- | --- | --- | --- |
+| a Crypt Spectre | SK | South | south named spots | ~50. Lifetap proc even without Blood Point. Sash of the Dragonborn |
+| a Howling Spectre | WAR | East | east named spots | ~54 / ~50% |
+| Bile Sentinel | WAR | North | ~239, 138; 387, 80 | Aka **Sentient Bile** / **a bile sentient**. ~25% vs crypt golem / crypt wurm / pulsating bile. Slowable, no summon |
+| Drusella Sathir | NEC | East last | ~279, -534 | **2-group.** East boss |
+| Embalming Fluid | WAR | South | south named spots | ~52. Any south named spot. Face: **Enshrouded Veil** |
+| Gandan Tailfist | MNK | Entrance | ~287, -26, -176 | LEAVE. After the drop. Whistling Fists |
+| Mortiferous Protector | WAR | East | ~294, -524 | ~55. PH mortiferous golem. Sees invis |
+| Reanimated Plaguebone | WAR | East | east named spots | ~54. Any east named spot |
+| Skeletal Procurator | SK | West last | ~-90, 675 | ~52 / ~25–50%. PH **a sepulcher skeleton** (sometimes bottomless devourer). Needs **Skull-engraved Coin** (ground west, past trap) after Crypt Keeper’s sigil. Summons, sees invis. South-wing key. Face: **Mask of Obtenebration** (BRD/ROG) |
+| the Crypt Excavator | WAR | East | east named spots | ~54 |
+| the Crypt Feaster | WAR | South | south named spots | ~52 |
+| the Crypt Keeper | NEC | North | ~549, 112 | ~50 / ~34%. North boss. Pet. Sigil of the Calendar → west wing |
+| the Crypt Wurm | WAR | North | ~239, 138; 387, 80 | Aka **a crypt wurm**. Same north spots as Bile Sentinel (~25%). Face: **Mask of Wurms** |
+| the Golem Master | WAR | North / west | ~7, 565; -12, 147 | ~50 / ~20% |
+| the Skeleton Sepulcher | WAR | South | south named spots | ~50. Tall skeleton — helm vs mace is visible |
+| the Spectre Sepulcher | WAR | North / west | ~157, 189; 157, 279 | ~50 / ~50%. Slowable, no summon. Club when he has Adamantite Club |
+| the Spectre Spiritualist | WAR | South | south named spots | ~54. Highest south named |
+| the Undertaker Lord | SK | East | east last rooms | ~56. Highest HS named. East last-room boss before Drusella |
 
 ## Unique loot
 
@@ -36,19 +37,43 @@ Sort the **Named spawn** table by **Mob** when tracking. **Skeletal Procurator**
 | Kylong Chestplate (Chest) | Skeletal Procurator | 52 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 22 STR +5 DEX −2 WIS +3. No BAR TRL OGR. NO DROP |
 | Mask of Obtenebration (Face) | Skeletal Procurator | 52 | BRD ROG, AC 6 CHA +8 AGI +6, Illusion: Erudite |
 | Rapier of Oriin (Piercing) | Skeletal Procurator | 52 | ROG, 12/25 (0.48), STR/STA/AGI +5 |
+| Broken Sacrificial Dagger | Skeletal Procurator | 52 | South-wing key. DMF click, 1 charge. NO RENT |
 | Necklace of Superiority (Neck) | Drusella Sathir | 55 | **2-group.** ALL, AC 5, all stats +5, HP/Mana +10, all resists +5 |
 | Rod of Oblations (1H Blunt) | Drusella Sathir | 55 | **2-group.** CLR DRU SHM NEC WIZ MAG ENC, 6/27 (0.22), Mana +60 SV FIRE/COLD +10 |
 | Runed Morning Star (1H Blunt) | Drusella Sathir | 55 | **2-group.** Non-INT casters, 12/26 (0.46), STR +7 STA +3 CHA +4 WIS +6 AGI +8 SV MAGIC +6 |
-| Kylong Gauntlets (Hands) | the Undertaker Lord | 52–55 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 WIS/AGI +4 SV DISEASE/MAGIC +2. No BAR TRL OGR |
+| Kylong Gauntlets (Hands) | the Undertaker Lord | 56 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 WIS/AGI +4 SV DISEASE/MAGIC +2. No BAR TRL OGR |
+| Thorny Blackjack (1H Blunt) | the Undertaker Lord | 56 | WAR PAL RNG SHD MNK BRD ROG, 11/24 (0.46) |
 | Enshrouded Veil (Face) | Embalming Fluid | 52 | ALL, AC 7 WIS/INT +2 HP/Mana +30 SV FIRE +10 |
 | Fingerbone Hoop (Ear) | Embalming Fluid | 52 | ALL, AC 2 STR/STA/INT +5 CHA −10, See Invisible, mixed resists |
 | Hand of the Reaper (Secondary) | Embalming Fluid | 52 | NEC, AC 5 CHA −30 INT +15 Mana +20 SV MAGIC +10 |
-| Mask of Wurms (Face) | the Crypt Wurm | 50–54 | ALL, AC 5 STR/AGI +4 HP +10 Mana +20 |
+| Mask of Wurms (Face) | the Crypt Wurm | 48–50 | ALL, AC 5 STR/AGI +4 HP +10 Mana +20 |
+| Ebonwood Cudgel (1H Blunt) | the Crypt Wurm | 48–50 | Non-INT casters, 8/24 (0.33), STR/DEX +5 |
 | Mucilaginous Girdle (Waist) | Bile Sentinel | 48 | ALL, AC 7 WIS +6 HP +10 |
 | Stein of Tears (Primary/Secondary) | Bile Sentinel | 48 | ALL, STA/CHA/WIS/INT +5 Mana +25 |
 | Melodious Truncheon (1H Blunt) | Bile Sentinel | 48 | BRD, 11/23 (0.48), Melodious Befuddlement proc |
 | Acid Etched War Sword (1H Slashing) | Bile Sentinel | 48 | WAR PAL RNG SHD BRD ROG, 8/24 (0.33), Ykesha proc |
 | Kylong Boots (Feet) | the Golem Master | 50 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 SV COLD/MAGIC +5. No BAR TRL OGR |
+| Scorpikis Claw Impaler (Piercing) | the Golem Master | 50 | WAR SHD BRD ROG, 8/25 (0.32), STR +4 SV POISON +10, Poison proc |
+| Kylong Arm Guards (Arms) | the Spectre Sepulcher | 50 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 DEX +3 SV FIRE +6 SV POISON +2. No BAR TRL OGR |
+| Adamantite Club (1H Blunt) | the Spectre Sepulcher | 50 | MNK, 15/25 (0.60), Stunning Blow proc |
+| Blood Point (Piercing) | the Crypt Feaster; a Crypt Spectre | 50–52 | WAR ROG, 10/21 (0.48), STR +5 CHA −5 SV DISEASE/POISON +10, Siphon proc |
+| Steel Hilted Flint Dagger (Piercing) | the Crypt Feaster | 52 | RNG, 4/28 (0.14), Conflagration proc |
+| Sash of the Dragonborn (Waist) | a Crypt Spectre | 50 | ALL, AC 2 Haste +24% |
+| Golden Bracer (Wrist) | a Crypt Spectre | 50 | ALL except IKS, AC 5 STR/INT +7 |
+| Jagged Long Sword (1H Slashing) | a Crypt Spectre | 50 | WAR, 16/30 (0.53) |
+| Kylong War Helm (Head) | the Skeleton Sepulcher | 50 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 HP/Mana +20 SV MAGIC +7 SV POISON +4. No BAR TRL OGR |
+| Guardians Mace (1H Blunt) | the Skeleton Sepulcher | 50 | PAL BRD, 14/24 (0.58), Guard proc |
+| Kylong Wrist Guards (Wrist) | the Spectre Spiritualist | 54 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 9 STR/CHA +4. No BAR TRL OGR |
+| Kylong Greaves (Legs) | the Spectre Spiritualist | 54 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 16 STR +4. No BAR TRL OGR |
+| Sarnak Hide Girdle (Waist) | the Crypt Excavator | 54 | ALL, AC 9 STR/DEX/WIS +4 |
+| Helot Skull Helm (Head) | the Crypt Excavator | 54 | NEC WIZ MAG ENC, AC 6 CHA −15 INT +7 Mana +25 SV MAGIC +5, Serpent Sight |
+| Adamantite Armband (Arms) | a Howling Spectre | 54 | ALL, AC 3 STR/WIS +3 |
+| Obtenebrate Short Sword (1H Slashing) | a Howling Spectre | 54 | ROG, 11/24 (0.46), Dooming Darkness proc |
+| Rod of Faith (1H Blunt) | a Howling Spectre | 54 | PAL, 24/32 (0.75), DEX/CHA +5 |
+| Elder Spiritist's Boots (Feet) | Mortiferous Protector | 55 | DRU, AC 8 Levitate click. HUM ELF HEF HFL |
+| Gem Inlaid Band (Finger) | Reanimated Plaguebone | 54 | ALL, AC 2 STR +3 Mana +10 |
+| Kunzar Hex Amulet (Neck) | Reanimated Plaguebone | 54 | WAR PAL RNG SHD, AC 8, Strength of the Kunzar click ×5 |
+| Gravebinder (2H Slashing) | Reanimated Plaguebone | 54 | SHD, 31/48 (0.65), STR +7 STA +8, Hungry Earth. HUM ERU DEF TRL OGR GNM IKS |
 
 ## Quest items
 
@@ -60,6 +85,8 @@ Sort the **Named spawn** table by **Mob** when tracking. **Skeletal Procurator**
 | Glowing Iksar Skull | a helot skeleton; a sepulcher skeleton; an undertaker skeleton | **Iksar shaman skull #7**. Need four in Granix's ornate skull case |
 | Mandala sketch | east wing table (~140, -510) | **Spirit of Garzicor**. Ground spawn, not a drop |
 | Flayed Skin Tome; Satchel of Flayed Skin | Gandan Tailfist | **Whistling Fists**. Hail / shackle hand-in — do not kill him |
+| Tallow-marked Candle | a bottomless feaster / devourer (zone-in) | North-wing key (or rogue pick) |
+| Coin Depicting Innoruuk | ground spawn south (~−470, 249) | East-wing key |
 
 ## Quest NPCs
 
