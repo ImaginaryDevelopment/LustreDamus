@@ -1,0 +1,51 @@
+---
+description: Confirm IdleQuest EQ spawn/loot from brynnb/idlequest-content before trusting P99 wiki alone
+globs: assets/samples/everquest/**
+alwaysApply: false
+---
+
+# IdleQuest content lookup (spawn / loot truth)
+
+When the user is on **IdleQuest** (or asks to confirm a named / drop against server data), prefer [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) over P99 wiki alone. Wiki is still useful for lore and classic intent; **loot table rows in that repo are what the browser game uses**.
+
+## How to check (no full clone required every time)
+
+Sparse-clone the tables you need into a temp dir:
+
+```powershell
+$tmp = Join-Path $env:TEMP "idlequest-content-lookup"
+git clone --depth 1 --filter=blob:none --sparse https://github.com/brynnb/idlequest-content.git $tmp
+Set-Location $tmp
+git sparse-checkout set data/npc_types data/items data/spawn2 data/spawnentry data/spawngroup data/loottable data/loottable_entries data/lootdrop data/lootdrop_entries data/zone
+```
+
+Data is hex-sharded `*.ndjson` (one JSON object per line). Names use underscores (`Skeletal_Procurator`); `#` prefixes are common for nameds.
+
+## Join path (from their README)
+
+```
+zone.short_name -> spawn2.zone
+spawn2.spawngroupID -> spawnentry.spawngroupID
+spawnentry.npcID -> npc_types.id
+npc_types.loottable_id -> loottable_entries.loottable_id
+loottable_entries.lootdrop_id -> lootdrop_entries.lootdrop_id
+lootdrop_entries.item_id -> items.id
+```
+
+Howling Stones short name: **`charasis`**.
+
+## Practical grep order
+
+1. **Item** — `Select-String data/items/*.ndjson -Pattern '"Name":"Mask of Obtenebration"'` → note `id`, stats (`ac`, `aagi`, `classes`, …).
+2. **Who drops it** — `'"item_id":<id>,'` in `data/lootdrop_entries/` → `lootdrop_id` + `chance`.
+3. **Which loot tables** — that `lootdrop_id` in `data/loottable_entries/` → `loottable_id`.
+4. **Which NPCs** — `'"loottable_id":<id>,'` in `data/npc_types/` → `name`, `level`, `id`.
+5. **Where they spawn** — `'"npcID":<id>,'` in `data/spawnentry/` → `spawngroupID` / `chance`; then that group in `data/spawn2/` filtered to `zone == "charasis"` for `y,x,z` (EQ often listed as y, x).
+
+## Known IdleQuest ≠ P99 wiki gotcha
+
+- **Enshrouded Veil**: P99 attributes to Embalming Fluid. IdleQuest puts Fingerbone Hoop / Hand of the Reaper on `#Embalming_Fluid`, and Veil as a **tiny % on multiple HS trash loottables** (sepulcher / helot / mortiferous golem / bottomless devourer / pulsating bile, etc.).
+- **Mask of Obtenebration**: IdleQuest `#Skeletal_Procurator` west last room (~−90, 675) — confirmed.
+- **Mask of Wurms**: IdleQuest `a_crypt_wurm` on north spots with Bile Sentinel (~239, 138 / 387, 80) — confirmed.
+
+When documenting LustreDamus EverQuest samples for IdleQuest players, note server divergences in the zone intro or the Notes cell rather than silently following wiki-only attributions.

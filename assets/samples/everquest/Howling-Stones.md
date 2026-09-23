@@ -2,6 +2,8 @@
 
 ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella** is **2-group**. Wing nameds share PH spots in that wing; each wing’s last-room boss only spawns there.
 
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`charasis`). Confirmed there: **#Skeletal_Procurator** (~−90, 675) drops **Mask of Obtenebration**; **a_crypt_wurm** (north ~239, 138 / 387, 80) drops **Mask of Wurms**; **#Embalming_Fluid** drops Fingerbone Hoop / Hand of the Reaper — **not** Enshrouded Veil (Veil is a tiny % on HS trash loottables on that server).
+
 Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs — do not kill. **Skeletal Procurator** is the west-wing last-room boss — not at zone-in. PH is often **a sepulcher skeleton**.
 
 ## Named spawn
@@ -12,7 +14,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs —
 | a Howling Spectre | WAR | East | east named spots | ~54 / ~50% |
 | Bile Sentinel | WAR | North | ~239, 138; 387, 80 | Aka **Sentient Bile** / **a bile sentient**. ~25% vs crypt golem / crypt wurm / pulsating bile. Slowable, no summon |
 | Drusella Sathir | NEC | East last | ~279, -534 | **2-group.** East boss |
-| Embalming Fluid | WAR | South | south named spots | ~52. Any south named spot. Face: **Enshrouded Veil** |
+| Embalming Fluid | WAR | South | south named spots; IdleQuest fixed ~−550, 151 | ~52. Fingerbone Hoop / Hand of the Reaper. **Enshrouded Veil** is P99-named attribution; on IdleQuest it is HS trash rare (not this NPC) |
 | Gandan Tailfist | MNK | Entrance | ~287, -26, -176 | LEAVE. After the drop. Whistling Fists |
 | Mortiferous Protector | WAR | East | ~294, -524 | ~55. PH mortiferous golem. Sees invis |
 | Reanimated Plaguebone | WAR | East | east named spots | ~54. Any east named spot |
@@ -43,7 +45,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs —
 | Runed Morning Star (1H Blunt) | Drusella Sathir | 55 | **2-group.** Non-INT casters, 12/26 (0.46), STR +7 STA +3 CHA +4 WIS +6 AGI +8 SV MAGIC +6 |
 | Kylong Gauntlets (Hands) | the Undertaker Lord | 56 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 12 WIS/AGI +4 SV DISEASE/MAGIC +2. No BAR TRL OGR |
 | Thorny Blackjack (1H Blunt) | the Undertaker Lord | 56 | WAR PAL RNG SHD MNK BRD ROG, 11/24 (0.46) |
-| Enshrouded Veil (Face) | Embalming Fluid | 52 | ALL, AC 7 WIS/INT +2 HP/Mana +30 SV FIRE +10 |
+| Enshrouded Veil (Face) | Embalming Fluid (P99); HS trash (IdleQuest) | 45–54 | ALL, AC 7 WIS/INT +2 HP/Mana +30 SV FIRE +10. IdleQuest: not on Embalming Fluid — rare on sepulcher/helot/mortiferous/bottomless/pulsating-bile tables |
 | Fingerbone Hoop (Ear) | Embalming Fluid | 52 | ALL, AC 2 STR/STA/INT +5 CHA −10, See Invisible, mixed resists |
 | Hand of the Reaper (Secondary) | Embalming Fluid | 52 | NEC, AC 5 CHA −30 INT +15 Mana +20 SV MAGIC +10 |
 | Mask of Wurms (Face) | the Crypt Wurm | 48–50 | ALL, AC 5 STR/AGI +4 HP +10 Mana +20 |
