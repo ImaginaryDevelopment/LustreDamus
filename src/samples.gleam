@@ -476,6 +476,14 @@ fn velious_solo() -> List(Sample) {
 fn velious_dungeon() -> List(Sample) {
   [
     zone(
+      "dragon-necropolis",
+      "Dragon Necropolis",
+      "necropolis",
+      "Dragon Necropolis",
+      "Dragon-Necropolis.md",
+      "Dragon Necropolis nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "tower-of-frozen-shadow",
       "Frozen Shadow",
       "frozenshadow",
