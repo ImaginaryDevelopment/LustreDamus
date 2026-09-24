@@ -484,6 +484,14 @@ fn velious_dungeon() -> List(Sample) {
       "Dragon Necropolis nameds, unique loot, and quest NPCs (Velious).",
     ),
     zone(
+      "sirens-grotto",
+      "Siren's Grotto",
+      "sirens",
+      "Siren's Grotto",
+      "Sirens-Grotto.md",
+      "Siren's Grotto nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "tower-of-frozen-shadow",
       "Frozen Shadow",
       "frozenshadow",
