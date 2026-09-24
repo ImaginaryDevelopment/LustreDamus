@@ -455,6 +455,22 @@ fn velious_solo() -> List(Sample) {
       "Crystal Caverns unique drops (Velious).",
     ),
     zone(
+      "eastern-wastes",
+      "Eastern Wastes",
+      "eastwastes",
+      "Eastern Wastes",
+      "Eastern-Wastes.md",
+      "Eastern Wastes nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
+      "western-wastes",
+      "Western Wastes",
+      "westwastes",
+      "Western Wastes",
+      "Western-Wastes.md",
+      "Western Wastes nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "plane-of-growth",
       "PoGrowth",
       "growthplane",
