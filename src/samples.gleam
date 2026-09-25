@@ -447,6 +447,14 @@ fn velious_towns() -> List(Sample) {
 fn velious_solo() -> List(Sample) {
   [
     zone(
+      "cobalt-scar",
+      "Cobalt Scar",
+      "cobaltscar",
+      "Cobalt Scar",
+      "Cobalt-Scar.md",
+      "Cobalt Scar nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "crystal-caverns",
       "Crystal Caverns",
       "crystal",
