@@ -74,7 +74,7 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [zone_xp_sample(), quest_gear_sample()],
+    samples: [zone_xp_sample(), quest_gear_sample(), velious_factions_sample()],
     buckets: [
       SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
       expansion_bucket("eq-classic", "Classic", classic_towns(), classic_solo(), classic_dungeon()),
@@ -159,6 +159,16 @@ fn quest_gear_sample() -> Sample {
     "everquest",
     "Quest-Gear.md",
     "Turn-in armor and loot to save for gear (Classic / Kunark / Velious).",
+  )
+}
+
+fn velious_factions_sample() -> Sample {
+  sheet(
+    "velious-factions",
+    "Velious Factions",
+    "everquest",
+    "Velious-Factions.md",
+    "Coldain, Claws of Veeshan, and Frost Giant faction choices.",
   )
 }
 
