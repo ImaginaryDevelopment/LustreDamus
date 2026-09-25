@@ -112,6 +112,12 @@ fn everquest_group() -> SampleGroup {
           buckets: [],
         ),
         SampleGroup(
+          id: "eq-ranger",
+          label: "Ranger",
+          samples: everquest_ranger(),
+          buckets: [],
+        ),
+        SampleGroup(
           id: "eq-shaman",
           label: "Shaman",
           samples: everquest_shaman(),
@@ -619,6 +625,18 @@ fn everquest_monk() -> List(Sample) {
       "everquest",
       "Monk-Boots.md",
       "Groupable monk boots (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_ranger() -> List(Sample) {
+  [
+    sheet(
+      "ranger-bows",
+      "Bows",
+      "everquest",
+      "Ranger-Bows.md",
+      "Groupable ranger bows (Classic / Kunark / Velious).",
     ),
   ]
 }
