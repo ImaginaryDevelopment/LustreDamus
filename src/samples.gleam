@@ -248,7 +248,7 @@ fn classic_solo() -> List(Sample) {
       "cazicthule",
       "Lost Temple of Cazic-Thule",
       "Cazic-Thule.md",
-      "Lost Temple of Cazic-Thule unique drops (1.13× XP).",
+      "Cazic-Thule nameds, unique loot, and quest NPCs (Accursed Temple / IdleQuest).",
     ),
     zone(
       "splitpaw",
@@ -441,7 +441,24 @@ fn kunark_dungeon() -> List(Sample) {
 }
 
 fn velious_towns() -> List(Sample) {
-  []
+  [
+    zone(
+      "kael-drakkel",
+      "Kael",
+      "kael",
+      "Kael Drakkel",
+      "Kael-Drakkel.md",
+      "Kael Drakkel nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
+      "skyshrine",
+      "Skyshrine",
+      "skyshrine",
+      "Skyshrine",
+      "Skyshrine.md",
+      "Skyshrine nameds, unique loot, and quest NPCs (Velious).",
+    ),
+  ]
 }
 
 fn velious_solo() -> List(Sample) {
