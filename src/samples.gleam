@@ -371,6 +371,30 @@ fn classic_dungeon() -> List(Sample) {
       "Nagafens-Lair.md",
       "Nagafen's Lair unique drops (1.06× XP).",
     ),
+    zone(
+      "plane-of-fear",
+      "Plane of Fear",
+      "fearplane",
+      "Plane of Fear",
+      "Plane-of-Fear.md",
+      "Plane of Fear nameds and unique loot (1.13× XP).",
+    ),
+    zone(
+      "plane-of-hate",
+      "Plane of Hate",
+      "hateplaneb",
+      "Plane of Hate",
+      "Plane-of-Hate.md",
+      "Plane of Hate nameds and unique loot (1.13× XP).",
+    ),
+    zone(
+      "plane-of-sky",
+      "Plane of Sky",
+      "airplane",
+      "Plane of Sky",
+      "Plane-of-Sky.md",
+      "Plane of Sky islands, keys, and unique loot (1.13× XP).",
+    ),
   ]
 }
 
