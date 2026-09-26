@@ -363,6 +363,26 @@ td.col-shortnames {
   white-space: normal;
 }
 
+/* Long prose columns — wrap instead of stretching the table off-screen */
+th.col-notes,
+td.col-notes,
+th.col-how-to-tell,
+td.col-how-to-tell,
+th.col-faction-if-you-kill-them,
+td.col-faction-if-you-kill-them,
+th.col-mob,
+td.col-mob,
+th.col-kind,
+td.col-kind,
+th.col-why,
+td.col-why,
+th.col-where,
+td.col-where {
+  white-space: normal;
+  max-width: 28rem;
+  overflow-wrap: anywhere;
+}
+
 th {
   position: sticky;
   top: 0;
