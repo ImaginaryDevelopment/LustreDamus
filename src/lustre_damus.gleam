@@ -453,7 +453,7 @@ fn view(model: Model) -> Element(Msg) {
       ]
       SamplePage(sample) -> [
         html.p([attribute.class("sample-meta")], [
-          html.text("Sample: " <> sample.label <> " — " <> sample.blurb),
+          html.text(samples.meta_line(sample)),
         ]),
         filter_controls(model),
         tables_section(model, tables, formatter),

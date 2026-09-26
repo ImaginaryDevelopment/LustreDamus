@@ -12,10 +12,10 @@ Auto-level and AE will happily eat these. Levels from TAKP / zone data.
 
 ### Merchants, bank, trainers
 
-| Mob | Level | Where / notes |
+| Mob | Level | Where |
 | --- | ---: | --- |
 | Dealer Shonta | 20 | Gambling / brewing supplies (upper) |
-| Bank Clerk Jaylin | 25 | Bank. **SoulFire** path |
+| Bank Clerk Jaylin | 25 | Bank. SoulFire path |
 | Treasurer Lynn | 30 | Bank / lottery quest |
 | Baker Jena | 40 | Kitchen — baking supplies, oven, brew barrel |
 | Merchant Dominik | 40 | Basement vendor (#8–9) |
@@ -31,14 +31,14 @@ Auto-level and AE will happily eat these. Levels from TAKP / zone data.
 
 ### Captains, bosses, quest NPCs
 
-| Mob | Level | Why leave |
+| Mob | Level | Why |
 | --- | ---: | --- |
-| Princess Lenia | 18–22 | Prison NEC with pet. Not aggressive. **Not** Lenya |
+| Princess Lenia | 18–22 | Prison NEC with pet. Not aggressive. Not Lenya |
 | Osargen | 22 | Basement human — skip unless you mean it |
 | Lislia Goldtune | 25 | Mail bard (#11). League of Antonican Bards; can block evil entry |
-| Princess Lenya | 25 | 4th floor with Tyrana. **Thex Dagger** |
+| Princess Lenya | 25 | 4th floor with Tyrana. Thex Dagger |
 | Tearon Bleanix | 30 | Locked room / skeleton quest path |
-| Captain Bosec | 34 | Goblin-ear turn-in. Guard faction. Hits like **38–39** |
+| Captain Bosec | 34 | Goblin-ear turn-in. Guard faction. Hits like 38–39 |
 | Mistress Anna | 35 | 4th floor secret rooms |
 | Lady McCabe | 37 | Keep resident — McCabe faction |
 | Aeris Greymalkyn | 37 | Human named — faction careful |
@@ -60,7 +60,7 @@ Auto-level and AE will happily eat these. Levels from TAKP / zone data.
 | a maid | 9–11 | Roof / 3rd fluff |
 | Lozani | 30 | Gnome in keep |
 | a noble | 38–42 | Upper halls ROG. Backstab / flees; flattens Pickclaw groups |
-| Isabella Cellus | 38–42 | 2nd-floor WAR patrol. **Knights of Truth** (Iksar KOS) — not Highpass Guards |
+| Isabella Cellus | 38–42 | 2nd-floor WAR patrol. Knights of Truth (Iksar KOS) — not Highpass Guards |
 
 ### Highpass Guards (leave if you need the faction)
 
@@ -76,12 +76,15 @@ Human **Guard \<Name\>**, fine steel short sword. Kill = **Highpass Guards** + m
 
 | Kind | How to tell | Levels | Notes |
 | --- | --- | --- | --- |
-| Pickclaw goblins | Goblin model. **a Pickclaw …** / **a pickclaw …**, **a crazed goblin**, **a goblin thief**. Basement 1, 5, 6 | Lookout / spiritist / cabalist **20–25**; guard **25**; visionary **25–26**; thief **23–26**; warrior **28–33**; seer **29–31**; raider **31–33** | Safe for Highpass. **Left Goblin Ear** → Captain Bosec |
-| a prisoner | Human beggar in basement cells. Aggros out; guards will **not** help | 8–12 | Nuisance, not XP |
+| Pickclaw lookout / spiritist / cabalist | Goblin model, basement rooms 1 / early | 20–25 | Ear turn-in → Bosec |
+| Pickclaw guard / visionary | Goblin model, mid basement | 25–26 | Ear turn-in → Bosec |
+| Pickclaw thief / crazed goblin | Goblin model | 23–26 | Ear / junk loot |
+| Pickclaw warrior / seer / raider | Goblin model, deep basement (5–6) | 28–33 | Ear turn-in → Bosec |
+| a prisoner | Human beggar in basement cells. Aggros out; guards will not help | 8–12 | Nuisance, not XP |
 | Tyrana Slil | Dark elf NEC, 4th floor secret rooms | 31–32 | Clawed Knuckle-Ring |
-| Dyrna Nlith | Dark elf NEC, basement torture with **Flayer Hopkins** (WAR **25**) | 38–42 | Clawed Knuckle-Ring |
+| Dyrna Nlith | Dark elf NEC, basement torture with Flayer Hopkins (WAR 25) | 38–42 | Clawed Knuckle-Ring |
 | Purchin Oddsbot | Human WIZ | 33–35 | Head quest. Not a merchant |
-| Xentil Herkanon | Half-elf ROG + Grex / Lartin (**11**) | 12 | Head quest |
+| Xentil Herkanon | Half-elf ROG + Grex / Lartin (11) | 12 | Head quest |
 
 ## Unique drops
 

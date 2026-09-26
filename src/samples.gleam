@@ -890,6 +890,95 @@ pub fn is_zone(sample: Sample) -> Bool {
   sample.shortname != ""
 }
 
+/// Zone XP chart hunt band for this sample's shortname, if listed.
+pub fn hunt_levels(sample: Sample) -> String {
+  case sample.shortname {
+    "" -> ""
+    short ->
+      case dict.get(zone_xp_hunt_levels(), short) {
+        Ok(levels) -> levels
+        Error(_) -> ""
+      }
+  }
+}
+
+/// Top-of-page meta line: label, Zone XP hunt band when known, then blurb.
+pub fn meta_line(sample: Sample) -> String {
+  case hunt_levels(sample) {
+    "" -> "Sample: " <> sample.label <> " — " <> sample.blurb
+    "hub" ->
+      "Sample: " <> sample.label <> " — Quest hub. " <> sample.blurb
+    levels ->
+      "Sample: "
+      <> sample.label
+      <> " — Hunt "
+      <> levels
+      <> ". "
+      <> sample.blurb
+  }
+}
+
+/// Shortname → hunt levels from Zone-XP-Modifiers.md (asterisks stripped).
+fn zone_xp_hunt_levels() -> Dict(String, String) {
+  dict.from_list([
+    #("akanon", "1–10"),
+    #("airplane", "46–60"),
+    #("befallen", "7–25"),
+    #("blackburrow", "4–15"),
+    #("cabeast", "1–10"),
+    #("cabwest", "1–10"),
+    #("cazicthule", "19–45"),
+    #("charasis", "50–60"),
+    #("chardok", "50–60"),
+    #("citymist", "40–55"),
+    #("crushbone", "5–20"),
+    #("dalnir", "25–40"),
+    #("droga", "30–40"),
+    #("erudnext", "1–10"),
+    #("erudnint", "1–15"),
+    #("fearplane", "50–60"),
+    #("felwithea", "1–10"),
+    #("felwitheb", "1–10"),
+    #("freportn", "1–10"),
+    #("grobb", "1–10"),
+    #("gukbottom", "30–50"),
+    #("guktop", "4–25"),
+    #("halas", "1–10"),
+    #("hateplaneb", "48–60"),
+    #("highkeep", "20–40"),
+    #("highpass", "9–22"),
+    #("hole", "40–60"),
+    #("kaesora", "30–45"),
+    #("kaladima", "1–10"),
+    #("kaladimb", "1–10"),
+    #("karnor", "40–55"),
+    #("kedge", "32–50"),
+    #("kerraridge", "15–25"),
+    #("kurn", "10–25"),
+    #("lakeofillomen", "1–35"),
+    #("lavastorm", "10–30"),
+    #("mistmoore", "20–45"),
+    #("najena", "8–35"),
+    #("neriaka", "1–10"),
+    #("neriakb", "1–10"),
+    #("neriakc", "1–15"),
+    #("nurga", "30–40"),
+    #("oggok", "1–10"),
+    #("oot", "9–35"),
+    #("paw", "20–40"),
+    #("permafrost", "15–50"),
+    #("qrg", "1–10"),
+    #("rivervale", "1–10"),
+    #("runnyeye", "7–30"),
+    #("sebilis", "48–60"),
+    #("skyfire", "45–60"),
+    #("soldunga", "20–40"),
+    #("soldungb", "35–55"),
+    #("soltemple", "hub"),
+    #("unrest", "10–35"),
+  ])
+}
+
 pub fn is_all_nav(group: SampleGroup) -> Bool {
   group.id == "eq-all"
 }

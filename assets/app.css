@@ -333,8 +333,6 @@ th.col-shortname,
 td.col-shortname,
 th.col-expansion,
 td.col-expansion,
-th.col-levels,
-td.col-levels,
 th.col-xp,
 td.col-xp {
   width: 1%;
@@ -352,6 +350,14 @@ th.col-xp .sort-header {
   text-align: right;
 }
 
+/* Compact XP-sheet levels stay tight; long level lists wrap */
+th.col-levels,
+td.col-levels {
+  white-space: normal;
+  max-width: 12rem;
+  width: 1%;
+}
+
 th.col-zone,
 td.col-zone {
   white-space: normal;
@@ -363,7 +369,7 @@ td.col-shortnames {
   white-space: normal;
 }
 
-/* Long prose columns — wrap instead of stretching the table off-screen */
+/* Long prose columns — wrap at words, never squeeze to 1-char width */
 th.col-notes,
 td.col-notes,
 th.col-how-to-tell,
@@ -377,10 +383,13 @@ td.col-kind,
 th.col-why,
 td.col-why,
 th.col-where,
-td.col-where {
+td.col-where,
+th.col-examples,
+td.col-examples {
   white-space: normal;
-  max-width: 28rem;
-  overflow-wrap: anywhere;
+  min-width: 9rem;
+  max-width: 24rem;
+  overflow-wrap: break-word;
 }
 
 th {
