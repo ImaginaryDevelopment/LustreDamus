@@ -2,7 +2,7 @@
 
 Velious dungeon (**~1.47×** on era servers). Hunt range **25–45**. Ry`Gorr orcs up top, Froststone Coldain in the middle, stalag terrors / spiders / geonids below. No AAs: everything here is a **group** (Queen Dracnia / Burdael included). **Froststone dwarves have no loot** — leave them (Citizens of Froststone).
 
-**Queen Dracnia** — IdleQuest **10%** on her spawn (sg 13745 @ −951, −592, −535; ~640s). PH **a crystal webmaster** (50%). `#a_crystal_purifier` is on the same table at 0% (disabled).
+**Queen Dracnia** — IdleQuest **10%** on her spawn (sg 13745 @ −951, −592, −535). **Respawn ~11 min** (640s, no variance). PH **a crystal webmaster** (50%). `#a_crystal_purifier` is on the same table at 0% (disabled).
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
