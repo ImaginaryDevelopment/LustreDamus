@@ -580,6 +580,14 @@ fn velious_solo() -> List(Sample) {
       "Eastern Wastes nameds, unique loot, and quest NPCs (Velious).",
     ),
     zone(
+      "great-divide",
+      "Great Divide",
+      "greatdivide",
+      "The Great Divide",
+      "Great-Divide.md",
+      "Great Divide nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "western-wastes",
       "Western Wastes",
       "westwastes",
@@ -623,6 +631,14 @@ fn velious_dungeon() -> List(Sample) {
       "Siren's Grotto",
       "Sirens-Grotto.md",
       "Siren's Grotto nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
+      "temple-of-veeshan",
+      "Temple of Veeshan",
+      "templeveeshan",
+      "The Temple of Veeshan",
+      "Temple-of-Veeshan.md",
+      "Temple of Veeshan RAID halls, molds, and dragon uniques (Velious).",
     ),
     zone(
       "tower-of-frozen-shadow",
