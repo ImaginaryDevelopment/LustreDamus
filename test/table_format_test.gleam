@@ -1,4 +1,5 @@
 import gleam/option.{None, Some}
+import gleam/string
 import gleeunit
 import table_format
 
@@ -37,6 +38,25 @@ pub fn decorate_stacks_empty_and_approx_styles_test() {
   let approx = table_format.format_cell(formatter, approx_ctx)
   assert approx.class_name == "cell-approx"
   assert approx.title == Some("Approximate value")
+}
+
+pub fn trailing_asterisk_sets_title_tooltip_test() {
+  let note = "Friendly NPC caution"
+  let formatter =
+    table_format.plain()
+    |> table_format.with_trailing_asterisk_tooltip(note)
+
+  let starred =
+    table_format.make_context("By zone", ["Shortname"], 0, 0, ["akanon*"])
+  let starred_cell = table_format.format_cell(formatter, starred)
+  assert starred_cell.title == Some(note)
+  assert string.contains(starred_cell.class_name, "cell-note")
+
+  let plain =
+    table_format.make_context("By zone", ["Shortname"], 0, 0, ["befallen"])
+  let plain_cell = table_format.format_cell(formatter, plain)
+  assert plain_cell.title == None
+  assert plain_cell.class_name == ""
 }
 
 pub fn custom_formatter_can_rewrite_display_text_test() {

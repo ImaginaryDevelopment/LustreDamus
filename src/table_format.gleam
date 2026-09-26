@@ -136,6 +136,27 @@ pub fn style_approximate_numbers(
   }
 }
 
+/// Native `title` tooltip on cells whose display text ends with `*`.
+pub fn with_trailing_asterisk_tooltip(
+  formatter: TableFormatter,
+  note: String,
+) -> TableFormatter {
+  decorate(formatter, fn(ctx, cell) {
+    case string.ends_with(string.trim(ctx.value), "*") {
+      True ->
+        FormattedCell(
+          ..cell,
+          class_name: append_class(cell.class_name, "cell-note"),
+          title: case cell.title {
+            Some(_) -> cell.title
+            None -> Some(note)
+          },
+        )
+      False -> cell
+    }
+  })
+}
+
 fn append_class(existing: String, next: String) -> String {
   case existing {
     "" -> next

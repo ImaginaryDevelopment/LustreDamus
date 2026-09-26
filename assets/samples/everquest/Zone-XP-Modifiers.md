@@ -68,7 +68,7 @@ Classic / Luclin-era **zone experience modifiers** (shortname → multiplier). V
 | soltemple* | Classic | hub | 1.33× | Temple of Solusek Ro* |
 | unrest | Classic | 10–35 | 1.73× | Estate of Unrest |
 
-\* Auto-level systems that attack anything near your level can hit **friendly NPCs** here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga.
+\* In the app, hover any `*` cell for this note (tables only are rendered). Auto-level systems that attack anything near your level can hit **friendly NPCs** here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga.
 
 ---
 

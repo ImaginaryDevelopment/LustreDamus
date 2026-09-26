@@ -482,7 +482,8 @@ td.cell-approx {
   color: #0f766e;
 }
 
-td.cell-pal {
+td.cell-pal,
+td.cell-note {
   cursor: help;
   text-decoration: underline dotted #a8a29e;
   text-underline-offset: 0.18em;

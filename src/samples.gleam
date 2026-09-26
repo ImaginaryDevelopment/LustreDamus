@@ -931,8 +931,12 @@ pub fn find(id: String) -> Result(Sample, Nil) {
   find_loop(list.flatten(list.map(groups(), group_samples)), id)
 }
 
+/// Zone XP `*` = auto-level / auto-attack can hit friendlies in that zone.
+const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
+
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal
-/// name tooltips when an index is available.
+/// name tooltips when an index is available. Zone XP marks `*` cells with a
+/// friendly-NPC caution tooltip (prose footnotes are not rendered — only tables).
 pub fn table_formatter(
   sample: Sample,
   elements: Dict(String, String),
@@ -941,7 +945,13 @@ pub fn table_formatter(
     True ->
       palworld_default()
       |> pal_index.with_pal_element_tooltips(elements)
-    False -> table_format.plain()
+    False ->
+      case sample.id {
+        "zone-xp-modifiers" ->
+          table_format.plain()
+          |> table_format.with_trailing_asterisk_tooltip(zone_xp_asterisk_note)
+        _ -> table_format.plain()
+      }
   }
 }
 
