@@ -405,12 +405,28 @@ fn kunark_towns() -> List(Sample) {
 fn kunark_solo() -> List(Sample) {
   [
     zone(
+      "burning-woods",
+      "Burning Woods",
+      "burningwood",
+      "The Burning Wood",
+      "Burning-Woods.md",
+      "Burning Woods nameds, unique loot, and quest NPCs (Kunark).",
+    ),
+    zone(
       "dreadlands",
       "Dreadlands",
       "dreadlands",
       "Dreadlands",
       "Dreadlands.md",
       "Dreadlands nameds, unique loot, and quest NPCs (Kunark).",
+    ),
+    zone(
+      "emerald-jungle",
+      "Emerald Jungle",
+      "emeraldjungle",
+      "The Emerald Jungle",
+      "Emerald-Jungle.md",
+      "Emerald Jungle nameds, unique loot, and quest NPCs (Kunark).",
     ),
     zone(
       "frontier-mountains",
