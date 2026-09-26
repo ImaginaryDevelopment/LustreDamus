@@ -588,6 +588,22 @@ fn velious_solo() -> List(Sample) {
       "Great Divide nameds, unique loot, and quest NPCs (Velious).",
     ),
     zone(
+      "iceclad-ocean",
+      "Iceclad Ocean",
+      "iceclad",
+      "Iceclad Ocean",
+      "Iceclad-Ocean.md",
+      "Iceclad Ocean nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
+      "wakening-land",
+      "Wakening Land",
+      "wakening",
+      "The Wakening Land",
+      "Wakening-Land.md",
+      "Wakening Land nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
       "western-wastes",
       "Western Wastes",
       "westwastes",
