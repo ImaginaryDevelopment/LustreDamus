@@ -345,6 +345,22 @@ fn kunark_towns() -> List(Sample) {
 fn kunark_solo() -> List(Sample) {
   [
     zone(
+      "dreadlands",
+      "Dreadlands",
+      "dreadlands",
+      "Dreadlands",
+      "Dreadlands.md",
+      "Dreadlands nameds, unique loot, and quest NPCs (Kunark).",
+    ),
+    zone(
+      "frontier-mountains",
+      "Frontier Mtns",
+      "frontiermtns",
+      "Frontier Mountains",
+      "Frontier-Mountains.md",
+      "Frontier Mountains nameds, unique loot, and quest NPCs (Kunark).",
+    ),
+    zone(
       "trakanons-teeth",
       "Trak",
       "trakanon",

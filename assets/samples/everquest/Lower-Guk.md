@@ -2,10 +2,12 @@
 
 ZEM **1.06×**. Hunt range **30–50**. Live side (king) vs dead side (ghoul lord). Assassin / supplier and Frenzy / Arch Magus are the busiest camps. No AAs: **group** camps (Ghoul Lord / froglok king included).
 
+**the ghoul arch magus** — IdleQuest **50%** combined (two 25% entries) on sg 7415 @ −832, 1184. PH **a kor ghoul wizard** / **a jin ghoul wizard** (25% each). **Respawn 29 min** (1740s, no variance).
+
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Flowing Black Silk Sash (Waist) | a frenzied ghoul | 40–45 | ALL, haste +21%. Classic melee haste belt |
-| Shining Metallic Robe (Chest) | a ghoul arch magus | 41–43 | NEC WIZ MAG ENC, AC 10 INT +9 |
+| Shining Metallic Robe (Chest) | the ghoul arch magus | 41–45 | NEC WIZ MAG ENC, AC 10 INT +9 |
 | Mask of Deception (Face) | a ghoul assassin | 38–42 | ROG, Illusion: Dark Elf |
 | Thick Banded Belt (Waist) | a ghoul supplier | 38–42 | WAR PAL RNG SHD MNK BRD ROG, STR +9 STA +9 |
 | Short Sword of the Ykesha (1H Slashing) | The Ghoul Lord | 47 | WAR PAL RNG SHD BRD ROG, 8/24 (0.33), Ykesha stun proc |
