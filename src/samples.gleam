@@ -74,15 +74,19 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [
-      zone_xp_sample(),
-      quest_gear_sample(),
-      velious_factions_sample(),
-      party_dps_estimates_sample(),
-      raid_xp_sample(),
-    ],
+    samples: [quest_gear_sample(), velious_factions_sample()],
     buckets: [
       SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
+      SampleGroup(
+        id: "eq-xp",
+        label: "XP",
+        samples: [
+          zone_xp_sample(),
+          raid_xp_sample(),
+          party_dps_estimates_sample(),
+        ],
+        buckets: [],
+      ),
       expansion_bucket("eq-classic", "Classic", classic_towns(), classic_solo(), classic_dungeon()),
       expansion_bucket("eq-kunark", "Kunark", kunark_towns(), kunark_solo(), kunark_dungeon()),
       expansion_bucket(
