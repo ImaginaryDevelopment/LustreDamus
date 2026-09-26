@@ -16,7 +16,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs —
 | Drusella Sathir | NEC | East last | ~279, -534 | **2-group.** East boss |
 | Embalming Fluid | WAR | South | IdleQuest ~−550, 151 | ~52. Fingerbone Hoop / Hand of the Reaper. Veil is trash-rare on IdleQuest |
 | Gandan Tailfist | MNK | Entrance | ~287, -26, -176 | LEAVE. After the drop. Whistling Fists |
-| Howling Spectre | SK | East | east named spots | ~54. IdleQuest `#Howling_Spectre` (not “a …”) |
+| Howling Spectre | SK | East | east named spots | ~54. IdleQuest `#Howling_Spectre` — **0%** on four east PH tables (disabled). Loot table still exists |
 | Mortiferous Protector | WAR | East | ~294, -524 | ~55. PH a mortiferous golem. Sees invis |
 | Reanimated Plaguebone | WAR | East | east named spots | ~54 |
 | Sentient Bile | WAR | North | north named spots | ~50. Separate IdleQuest NPC from Bile Sentinel |
@@ -41,7 +41,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs —
 | Fayguard Parrying Dagger (Piercing) | The Crypt Keeper | 50 | RNG, 9/17 (0.53), AC 10, Word of Pain proc. NO DROP |
 | Kylong Chestplate (Chest) | Skeletal Procurator | 52 | WAR CLR PAL RNG SHD BRD ROG SHM, AC 22 STR +5 DEX −2 WIS +3. No BAR TRL OGR. NO DROP |
 | Mask of Obtenebration (Face) | Skeletal Procurator | 52 | BRD ROG, AC 6 CHA +8 AGI +6, Illusion: Erudite |
-| Rapier of Oriin (Piercing) | Skeletal Procurator | 52 | ROG, 12/25 (0.48), STR/STA/AGI +5 |
+| Rapier of Oriin (Piercing) | #Howling_Spectre | 54 | ROG, 12/25 (0.48), STR/STA/AGI +5. IdleQuest **50%** on Spectre table — but Spectre spawn is **0%** (unavailable). Not on Procurator |
 | Broken Sacrificial Dagger | Skeletal Procurator | 52 | South-wing key. DMF click, 1 charge. NO RENT |
 | Necklace of Superiority (Neck) | Drusella Sathir | 55 | **2-group.** ALL, AC 5, all stats +5, HP/Mana +10, all resists +5 |
 | Rod of Oblations (1H Blunt) | Drusella Sathir | 55 | **2-group.** CLR DRU SHM NEC WIZ MAG ENC, 6/27 (0.22), Mana +60 SV FIRE/COLD +10 |

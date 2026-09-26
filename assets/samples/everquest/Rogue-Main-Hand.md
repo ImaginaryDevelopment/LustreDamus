@@ -11,7 +11,6 @@ Sort by **Item** or **DMG**. Filter also matches zone / camp.
 | Item | DMG / delay | Mob | Zone | Drop | Notes |
 | --- | --- | --- | --- | ---: | --- |
 | Blood Point | 10/21 (0.48), STR +5 CHA −5 | Crypt Feaster; Crypt Spectre; crypt spectre; bile / wurm tables | Howling Stones | NO DROP | Strong mid Kunark MH. Siphon proc |
-| Rapier of Oriin | 12/25 (0.48), STR/STA/AGI +5 | Skeletal Procurator; Howling Spectre | Howling Stones | NO DROP | ROG. Higher raw dmg than Blood Point |
 | Locustlure | 8/17 (0.47) | skeletal scryer | Karnor's Castle | NO DROP | Fast delay; solid Karnor camp piercer |
 | Crystalline Spider Fang | 10/22 (0.45), STR +3 SV POISON +10 | Crystal Fang | Velketor's Labyrinth | NO DROP | Velium Shards proc. 50-ish group |
 | Dirk of the Traitor | 9/22 (0.41), STR/DEX/AGI +4 | Rodrick Tardok | Eastern Wastes | tradeable | Always. Easy outdoor named — also Coldain ring step |
@@ -52,5 +51,6 @@ Sort by **Item** or **DMG**. Filter also matches zone / camp.
 | Serpent's Tooth | Master Yael **RAID** (The Hole) |
 | Primal / Priceless Velium Spear | Sleeper / high raid tables |
 | Edge of the Nightwalker; Jagged Blade of Mourning; Obtenebrate Short Sword | **1H Slashing** — fine OH / non-BS, not this piercing MH sheet |
+| Rapier of Oriin | IdleQuest: only on **#Howling_Spectre** (50%), but Spectre spawn chance is **0%** in `charasis` — unavailable. Procurator does **not** drop it |
 | Kelorek`Dar Spine Razor | Cobalt Scar water dragon — raid-tier / long respawn |
 | Trident of the Seven Seas | Phinigel **RAID** |
