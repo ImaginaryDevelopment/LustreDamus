@@ -200,7 +200,7 @@ fn party_dps_estimates_sample() -> Sample {
     "Party DPS",
     "everquest",
     "Party-DPS-Estimates.md",
-    "4-box rogue and wizard pack burn estimates (Classic / Kunark / Velious).",
+    "Party / raid burn estimates: melee, casters, mixed comps, DoT fight length (Classic / Kunark / Velious).",
   )
 }
 
