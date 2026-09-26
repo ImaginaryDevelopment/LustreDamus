@@ -118,6 +118,12 @@ fn everquest_group() -> SampleGroup {
           buckets: [],
         ),
         SampleGroup(
+          id: "eq-rogue",
+          label: "Rogue",
+          samples: everquest_rogue(),
+          buckets: [],
+        ),
+        SampleGroup(
           id: "eq-shaman",
           label: "Shaman",
           samples: everquest_shaman(),
@@ -653,6 +659,18 @@ fn everquest_ranger() -> List(Sample) {
       "everquest",
       "Ranger-Bows.md",
       "Groupable ranger bows (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_rogue() -> List(Sample) {
+  [
+    sheet(
+      "rogue-main-hand",
+      "Main Hand",
+      "everquest",
+      "Rogue-Main-Hand.md",
+      "Groupable rogue piercing main hands (Classic / Kunark / Velious).",
     ),
   ]
 }
