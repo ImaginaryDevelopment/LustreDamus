@@ -74,7 +74,13 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [zone_xp_sample(), quest_gear_sample(), velious_factions_sample()],
+    samples: [
+      zone_xp_sample(),
+      quest_gear_sample(),
+      velious_factions_sample(),
+      party_dps_estimates_sample(),
+      raid_xp_sample(),
+    ],
     buckets: [
       SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
       expansion_bucket("eq-classic", "Classic", classic_towns(), classic_solo(), classic_dungeon()),
@@ -181,6 +187,26 @@ fn velious_factions_sample() -> Sample {
     "everquest",
     "Velious-Factions.md",
     "Coldain, Claws of Veeshan, and Frost Giant faction choices.",
+  )
+}
+
+fn party_dps_estimates_sample() -> Sample {
+  sheet(
+    "party-dps-estimates",
+    "Party DPS",
+    "everquest",
+    "Party-DPS-Estimates.md",
+    "4-box rogue and wizard pack burn estimates (Classic / Kunark / Velious).",
+  )
+}
+
+fn raid_xp_sample() -> Sample {
+  sheet(
+    "raid-xp",
+    "Raid XP",
+    "everquest",
+    "Raid-XP.md",
+    "Per-kill XP in a raid vs a party (tiny raid of 6 and raid of 10).",
   )
 }
 
