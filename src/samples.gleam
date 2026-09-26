@@ -605,6 +605,13 @@ fn everquest_warrior() -> List(Sample) {
       "Warrior-Boots.md",
       "Groupable warrior boots (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "warrior-earrings",
+      "Earrings",
+      "everquest",
+      "Warrior-Earrings.md",
+      "Groupable warrior earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -617,6 +624,13 @@ fn everquest_cleric() -> List(Sample) {
       "Cleric-Chests.md",
       "Groupable cleric chests (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "cleric-earrings",
+      "Earrings",
+      "everquest",
+      "Cleric-Earrings.md",
+      "Groupable cleric earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -628,6 +642,13 @@ fn everquest_druid() -> List(Sample) {
       "everquest",
       "Druid-Chests.md",
       "Groupable druid chests (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "druid-earrings",
+      "Earrings",
+      "everquest",
+      "Druid-Earrings.md",
+      "Groupable druid earrings (Classic / Kunark / Velious).",
     ),
   ]
 }
@@ -648,6 +669,13 @@ fn everquest_monk() -> List(Sample) {
       "Monk-Boots.md",
       "Groupable monk boots (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "monk-earrings",
+      "Earrings",
+      "everquest",
+      "Monk-Earrings.md",
+      "Groupable monk earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -659,6 +687,13 @@ fn everquest_ranger() -> List(Sample) {
       "everquest",
       "Ranger-Bows.md",
       "Groupable ranger bows (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "ranger-earrings",
+      "Earrings",
+      "everquest",
+      "Ranger-Earrings.md",
+      "Groupable ranger earrings (Classic / Kunark / Velious).",
     ),
   ]
 }
@@ -672,6 +707,13 @@ fn everquest_rogue() -> List(Sample) {
       "Rogue-Main-Hand.md",
       "Groupable rogue piercing main hands (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "rogue-earrings",
+      "Earrings",
+      "everquest",
+      "Rogue-Earrings.md",
+      "Groupable rogue earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -684,6 +726,13 @@ fn everquest_shaman() -> List(Sample) {
       "Shaman-Chests.md",
       "Groupable shaman chests (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "shaman-earrings",
+      "Earrings",
+      "everquest",
+      "Shaman-Earrings.md",
+      "Groupable shaman earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -695,6 +744,13 @@ fn everquest_wizard() -> List(Sample) {
       "everquest",
       "Wizard-Chests.md",
       "Groupable wizard chests (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "wizard-earrings",
+      "Earrings",
+      "everquest",
+      "Wizard-Earrings.md",
+      "Groupable wizard earrings (Classic / Kunark / Velious).",
     ),
   ]
 }
