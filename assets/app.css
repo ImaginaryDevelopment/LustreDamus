@@ -187,12 +187,6 @@ header p,
   background: color-mix(in srgb, var(--line) 65%, transparent);
 }
 
-.nav-link:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-  background: transparent;
-}
-
 .nav-link.nav-root {
   padding: 0.28rem 0.6rem;
   font-size: 0.88rem;

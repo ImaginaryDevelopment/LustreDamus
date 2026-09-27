@@ -1170,6 +1170,10 @@ fn zone_friendly_shortnames() -> List(String) {
   ]
 }
 
+pub fn is_everquest_nav(group: SampleGroup) -> Bool {
+  group.id == "everquest"
+}
+
 pub fn is_all_nav(group: SampleGroup) -> Bool {
   group.id == "eq-all"
 }

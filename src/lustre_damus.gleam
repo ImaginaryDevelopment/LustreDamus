@@ -536,7 +536,11 @@ fn sample_nav_bucket(
 ) -> Element(Msg) {
   case samples.is_all_nav(group) {
     True -> zone_all_button(model)
-    False -> sample_nav_bucket_regular(group, model, depth)
+    False ->
+      case samples.is_by_class_nav(group) {
+        True -> by_class_nav_bucket(group, model, depth)
+        False -> sample_nav_bucket_regular(group, model, depth)
+      }
   }
 }
 
@@ -545,8 +549,11 @@ fn sample_nav_bucket_regular(
   model: Model,
   depth: Int,
 ) -> Element(Msg) {
+  // zone-index is not in the EverQuest tree; keep the root open while All is on.
   let open = case model.page {
-    SamplePage(sample) -> samples.group_contains(group, sample)
+    SamplePage(sample) ->
+      samples.group_contains(group, sample)
+      || { model.zone_search_open && samples.is_everquest_nav(group) }
     PastePage -> False
   }
   let branch_class = case depth {
@@ -582,11 +589,29 @@ fn sample_nav_bucket_regular(
   ])
 }
 
+/// All replaces the detail panel (hiding byClass children); hide byClass too.
+fn by_class_nav_bucket(
+  group: samples.SampleGroup,
+  model: Model,
+  depth: Int,
+) -> Element(Msg) {
+  case model.zone_search_open {
+    True -> element.none()
+    False -> sample_nav_bucket_regular(group, model, depth)
+  }
+}
+
 fn zone_all_button(model: Model) -> Element(Msg) {
+  // Hide All while byClass is open (All also hides byClass's detail panel).
   case by_class_is_open(model) {
-    True -> nav_button_disabled("All", "nav-branch", "Unavailable while byClass is open")
+    True -> element.none()
     False ->
-      nav_button("All", model.zone_search_open, "nav-branch", UserOpenedZoneSearch)
+      nav_button(
+        "All",
+        model.zone_search_open,
+        "nav-branch",
+        UserOpenedZoneSearch,
+      )
   }
 }
 
@@ -798,23 +823,6 @@ fn nav_button(
   }
   html.button(
     [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
-    [html.text(label)],
-  )
-}
-
-fn nav_button_disabled(
-  label: String,
-  kind: String,
-  title: String,
-) -> Element(Msg) {
-  html.button(
-    [
-      attribute.type_("button"),
-      attribute.class("nav-link " <> kind),
-      attribute.disabled(True),
-      attribute.title(title),
-      attribute.attribute("aria-disabled", "true"),
-    ],
     [html.text(label)],
   )
 }
