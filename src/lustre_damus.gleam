@@ -52,6 +52,7 @@ pub type Msg {
   UserChosePaste
   UserChoseSample(Sample)
   UserOpenedZoneSearch
+  UserClosedZoneSearch
   UserUpdatedZoneSearch(String)
   UserUpdatedMarkdown(String)
   UserUpdatedFilter(String)
@@ -118,7 +119,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         value_filters: dict.new(),
         pal_elements: model.pal_elements,
         zone_search: model.zone_search,
-        zone_search_open: model.zone_search_open,
+        zone_search_open: False,
       ),
       effect.batch([
         load_sample(samples.url(sample)),
@@ -129,13 +130,46 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       ]),
     )
 
-    UserOpenedZoneSearch -> #(
-      Model(..model, zone_search_open: True),
+    UserOpenedZoneSearch ->
+      case by_class_is_open(model) {
+        True -> #(model, effect.none())
+        False ->
+          case model.zone_search_open {
+            True -> #(Model(..model, zone_search_open: False), effect.none())
+            False -> {
+              let sample = samples.zone_index_sample()
+              #(
+                Model(
+                  page: SamplePage(sample),
+                  markdown: samples.zone_index_markdown(),
+                  filter: "",
+                  loading: False,
+                  error: None,
+                  sorts: dict.new(),
+                  optional_columns: dict.new(),
+                  value_filters: dict.new(),
+                  pal_elements: model.pal_elements,
+                  zone_search: "",
+                  zone_search_open: True,
+                ),
+                effect.none(),
+              )
+            }
+          }
+      }
+
+    UserClosedZoneSearch -> #(
+      Model(..model, zone_search_open: False),
       effect.none(),
     )
 
     UserUpdatedZoneSearch(zone_search) -> #(
-      Model(..model, zone_search: zone_search, zone_search_open: True),
+      Model(
+        ..model,
+        zone_search: zone_search,
+        zone_search_open: True,
+        filter: zone_search,
+      ),
       effect.none(),
     )
 
@@ -453,7 +487,11 @@ fn view(model: Model) -> Element(Msg) {
       ]
       SamplePage(sample) -> [
         html.p([attribute.class("sample-meta")], [
-          html.text(samples.meta_line(sample)),
+          html.text(case model.zone_search_open && sample.id == "zone-index" {
+            True ->
+              "All zones — levels, XP, and * for friendly/faction caution. Type above to filter, or pick a zone."
+            False -> samples.meta_line(sample)
+          }),
         ]),
         filter_controls(model),
         tables_section(model, tables, formatter),
@@ -545,7 +583,18 @@ fn sample_nav_bucket_regular(
 }
 
 fn zone_all_button(model: Model) -> Element(Msg) {
-  nav_button("All", model.zone_search_open, "nav-branch", UserOpenedZoneSearch)
+  case by_class_is_open(model) {
+    True -> nav_button_disabled("All", "nav-branch", "Unavailable while byClass is open")
+    False ->
+      nav_button("All", model.zone_search_open, "nav-branch", UserOpenedZoneSearch)
+  }
+}
+
+fn by_class_is_open(model: Model) -> Bool {
+  case model.page {
+    PastePage -> False
+    SamplePage(sample) -> samples.is_by_class_sample(sample)
+  }
 }
 
 fn zone_all_panel(model: Model) -> Element(Msg) {
@@ -553,15 +602,26 @@ fn zone_all_panel(model: Model) -> Element(Msg) {
     False -> element.none()
     True ->
       html.div([attribute.class("nav-detail nav-detail-search")], [
-        html.input([
-          attribute.id("zone-search"),
-          attribute.type_("search"),
-          attribute.class("nav-zone-search"),
-          attribute.placeholder("Zone short or long name…"),
-          attribute.value(model.zone_search),
-          attribute.attribute("autocomplete", "off"),
-          attribute.attribute("aria-label", "Find zone"),
-          event.on_input(UserUpdatedZoneSearch),
+        html.div([attribute.class("nav-zone-search-row")], [
+          html.input([
+            attribute.id("zone-search"),
+            attribute.type_("search"),
+            attribute.class("nav-zone-search"),
+            attribute.placeholder("Zone short or long name…"),
+            attribute.value(model.zone_search),
+            attribute.attribute("autocomplete", "off"),
+            attribute.attribute("aria-label", "Find zone"),
+            event.on_input(UserUpdatedZoneSearch),
+          ]),
+          html.button(
+            [
+              attribute.type_("button"),
+              attribute.class("nav-zone-search-back"),
+              attribute.attribute("aria-label", "Back to zone lists"),
+              event.on_click(UserClosedZoneSearch),
+            ],
+            [html.text("Lists")],
+          ),
         ]),
         zone_search_results(model),
       ])
@@ -573,7 +633,7 @@ fn zone_search_results(model: Model) -> Element(Msg) {
   case string.length(query) < 2 {
     True ->
       html.p([attribute.class("nav-zone-hint")], [
-        html.text("Type 2+ letters"),
+        html.text("Type 2+ letters · Lists or All to browse"),
       ])
     False ->
       case samples.search_zones(query) {
@@ -738,6 +798,23 @@ fn nav_button(
   }
   html.button(
     [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
+    [html.text(label)],
+  )
+}
+
+fn nav_button_disabled(
+  label: String,
+  kind: String,
+  title: String,
+) -> Element(Msg) {
+  html.button(
+    [
+      attribute.type_("button"),
+      attribute.class("nav-link " <> kind),
+      attribute.disabled(True),
+      attribute.title(title),
+      attribute.attribute("aria-disabled", "true"),
+    ],
     [html.text(label)],
   )
 }

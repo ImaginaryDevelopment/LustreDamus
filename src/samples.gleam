@@ -224,6 +224,69 @@ fn zone_xp_sample() -> Sample {
   )
 }
 
+/// Synthetic sample shown when EverQuest → All is open (no on-disk file).
+pub fn zone_index_sample() -> Sample {
+  sheet(
+    "zone-index",
+    "All zones",
+    "everquest",
+    "Zone-Index.md",
+    "All sheeted zones with hunt levels, XP modifier, and friendly-NPC caution (*).",
+  )
+}
+
+/// Markdown for the All-zones index table (generated from registered zone samples).
+pub fn zone_index_markdown() -> String {
+  let header =
+    "# All zones\n\nHunt levels, XP modifier (`—` if unknown), and `*` when auto-level can hit friendlies / faction NPCs. Hover any `*` cell for the caution note.\n\n## By zone\n\n| Zone | Shortname | Levels | XP |\n| --- | --- | ---: | ---: |\n"
+  let rows =
+    everquest_zones()
+    |> list.sort(fn(a, b) {
+      string.compare(string.lowercase(a.label), string.lowercase(b.label))
+    })
+    |> list.map(zone_index_row)
+    |> string.join("")
+  header <> rows
+}
+
+fn zone_index_row(sample: Sample) -> String {
+  let star = case zone_has_friendly_caution(sample.shortname) {
+    True -> "*"
+    False -> ""
+  }
+  let levels = case hunt_levels(sample) {
+    "" -> "—"
+    band -> band
+  }
+  let xp = case zone_xp_modifier(sample.shortname) {
+    "" -> "—"
+    mult -> mult
+  }
+  "| "
+  <> sample.label
+  <> star
+  <> " | "
+  <> sample.shortname
+  <> star
+  <> " | "
+  <> levels
+  <> " | "
+  <> xp
+  <> " |\n"
+}
+
+/// XP multiplier string like `1.13×`, or empty when unknown.
+pub fn zone_xp_modifier(shortname: String) -> String {
+  case dict.get(zone_xp_multipliers(), shortname) {
+    Ok(xp) -> xp
+    Error(_) -> ""
+  }
+}
+
+pub fn zone_has_friendly_caution(shortname: String) -> Bool {
+  list.contains(zone_friendly_shortnames(), shortname)
+}
+
 fn classic_towns() -> List(Sample) {
   []
 }
@@ -979,69 +1042,148 @@ pub fn meta_line(sample: Sample) -> String {
   }
 }
 
-/// Shortname → hunt levels from Zone-XP-Modifiers.md (asterisks stripped).
+/// Shortname → hunt levels from Zone XP sheets / zone blurbs (asterisks stripped).
 fn zone_xp_hunt_levels() -> Dict(String, String) {
   dict.from_list([
-    #("akanon", "1–10"),
     #("airplane", "46–60"),
     #("befallen", "7–25"),
     #("blackburrow", "4–15"),
-    #("cabeast", "1–10"),
-    #("cabwest", "1–10"),
+    #("burningwood", "35–50+"),
     #("cazicthule", "19–45"),
     #("charasis", "50–60"),
     #("chardok", "50–60"),
     #("citymist", "40–55"),
+    #("cobaltscar", "35–50+"),
     #("crushbone", "5–20"),
+    #("crystal", "25–45"),
     #("dalnir", "25–40"),
+    #("dreadlands", "25–45+"),
     #("droga", "30–40"),
-    #("erudnext", "1–10"),
-    #("erudnint", "1–15"),
+    #("eastwastes", "30–45"),
+    #("emeraldjungle", "30–50+"),
     #("fearplane", "50–60"),
-    #("felwithea", "1–10"),
-    #("felwitheb", "1–10"),
-    #("freportn", "1–10"),
-    #("grobb", "1–10"),
+    #("frozenshadow", "30–50"),
+    #("frontiermtns", "20–40+"),
+    #("greatdivide", "30–50"),
+    #("growthplane", "55+"),
     #("gukbottom", "30–50"),
     #("guktop", "4–25"),
-    #("halas", "1–10"),
     #("hateplaneb", "48–60"),
     #("highkeep", "20–40"),
     #("highpass", "9–22"),
     #("hole", "40–60"),
+    #("iceclad", "25–40+"),
+    #("kael", "40–60+"),
     #("kaesora", "30–45"),
-    #("kaladima", "1–10"),
-    #("kaladimb", "1–10"),
     #("karnor", "40–55"),
     #("kedge", "32–50"),
-    #("kerraridge", "15–25"),
     #("kurn", "10–25"),
-    #("lakeofillomen", "1–35"),
-    #("lavastorm", "10–30"),
+    #("mischiefplane", "50+"),
     #("mistmoore", "20–45"),
     #("najena", "8–35"),
-    #("neriaka", "1–10"),
-    #("neriakb", "1–10"),
-    #("neriakc", "1–15"),
+    #("necropolis", "45–60+"),
     #("nurga", "30–40"),
-    #("oggok", "1–10"),
-    #("oot", "9–35"),
     #("paw", "20–40"),
     #("permafrost", "15–50"),
-    #("qrg", "1–10"),
-    #("rivervale", "1–10"),
     #("runnyeye", "7–30"),
     #("sebilis", "48–60"),
+    #("sirens", "45–60+"),
     #("skyfire", "45–60"),
+    #("skyshrine", "35–60+"),
     #("soldunga", "20–40"),
     #("soldungb", "35–55"),
-    #("soltemple", "hub"),
+    #("templeveeshan", "60+"),
+    #("trakanon", "40–60+"),
     #("unrest", "10–35"),
+    #("veeshan", "60+"),
+    #("velketor", "40–60"),
+    #("wakening", "40–55+"),
+    #("westwastes", "50–60+"),
   ])
+}
+
+fn zone_xp_multipliers() -> Dict(String, String) {
+  dict.from_list([
+    #("airplane", "1.13×"),
+    #("befallen", "2.13×"),
+    #("blackburrow", "1.33×"),
+    #("burningwood", "0.83×"),
+    #("cazicthule", "1.13×"),
+    #("charasis", "1.13×"),
+    #("chardok", "1.50×"),
+    #("citymist", "0.85×"),
+    #("cobaltscar", "1.00×"),
+    #("crushbone", "2.13×"),
+    #("crystal", "1.47×"),
+    #("dalnir", "1.13×"),
+    #("dreadlands", "1.00×"),
+    #("droga", "0.95×"),
+    #("eastwastes", "1.00×"),
+    #("emeraldjungle", "0.83×"),
+    #("fearplane", "1.13×"),
+    #("frozenshadow", "1.00×"),
+    #("frontiermtns", "1.00×"),
+    #("greatdivide", "1.00×"),
+    #("growthplane", "1.20×"),
+    #("gukbottom", "1.06×"),
+    #("guktop", "2.00×"),
+    #("hateplaneb", "1.13×"),
+    #("highkeep", "2.00×"),
+    #("highpass", "1.06×"),
+    #("hole", "1.33×"),
+    #("iceclad", "1.00×"),
+    #("kael", "1.13×"),
+    #("kaesora", "1.46×"),
+    #("karnor", "1.13×"),
+    #("kedge", "1.33×"),
+    #("kurn", "2.00×"),
+    #("mischiefplane", "1.40×"),
+    #("mistmoore", "1.20×"),
+    #("najena", "1.73×"),
+    #("necropolis", "1.50×"),
+    #("nurga", "0.95×"),
+    #("paw", "0.90×"),
+    #("permafrost", "1.20×"),
+    #("runnyeye", "1.33×"),
+    #("sebilis", "2.50×"),
+    #("sirens", "0.85×"),
+    #("skyfire", "1.06×"),
+    #("skyshrine", "1.13×"),
+    #("soldunga", "1.73×"),
+    #("soldungb", "1.06×"),
+    #("templeveeshan", "1.00×"),
+    #("trakanon", "1.00×"),
+    #("unrest", "1.73×"),
+    #("veeshan", "1.00×"),
+    #("velketor", "1.00×"),
+    #("wakening", "1.00×"),
+    #("westwastes", "1.06×"),
+  ])
+}
+
+/// Shortnames where auto-level can hit friendlies / faction NPCs (Zone XP `*`).
+fn zone_friendly_shortnames() -> List(String) {
+  [
+    "airplane", "cobaltscar", "crushbone", "crystal", "droga", "growthplane",
+    "highkeep", "highpass", "kerraridge", "lakeofillomen", "najena", "nurga",
+    "oot", "soldunga", "soltemple",
+  ]
 }
 
 pub fn is_all_nav(group: SampleGroup) -> Bool {
   group.id == "eq-all"
+}
+
+pub fn is_by_class_nav(group: SampleGroup) -> Bool {
+  group.id == "eq-by-class"
+}
+
+/// True when the sample lives under EverQuest → byClass (class gear sheets).
+pub fn is_by_class_sample(sample: Sample) -> Bool {
+  case list.find(everquest_group().buckets, is_by_class_nav) {
+    Ok(by_class) -> group_contains(by_class, sample)
+    Error(_) -> False
+  }
 }
 
 /// EverQuest hunt / town zone samples (excludes Zone XP, quest gear, byClass).
@@ -1082,7 +1224,7 @@ pub fn find(id: String) -> Result(Sample, Nil) {
 }
 
 /// Zone XP `*` = auto-level / auto-attack can hit friendlies in that zone.
-const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
+const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost, Cobalt Scar Othmir, Plane of Growth Tunareans, Crystal Caverns Froststone); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
 
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal
 /// name tooltips when an index is available. Zone XP marks `*` cells with a
@@ -1097,7 +1239,7 @@ pub fn table_formatter(
       |> pal_index.with_pal_element_tooltips(elements)
     False ->
       case sample.id {
-        "zone-xp-modifiers" ->
+        "zone-xp-modifiers" | "zone-index" ->
           table_format.plain()
           |> table_format.with_trailing_asterisk_tooltip(zone_xp_asterisk_note)
         _ -> table_format.plain()
