@@ -824,6 +824,27 @@ fn everquest_rogue() -> List(Sample) {
       "Rogue-Earrings.md",
       "Groupable rogue earrings (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "rogue-face",
+      "Face",
+      "everquest",
+      "Rogue-Face.md",
+      "Groupable rogue face items (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "rogue-legs",
+      "Legs",
+      "everquest",
+      "Rogue-Legs.md",
+      "Groupable rogue legs (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "rogue-feet",
+      "Feet",
+      "everquest",
+      "Rogue-Feet.md",
+      "Groupable rogue feet (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
