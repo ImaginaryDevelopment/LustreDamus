@@ -263,6 +263,14 @@ fn classic_solo() -> List(Sample) {
       "High Keep unique drops (2.00× XP).",
     ),
     zone(
+      "highpass-hold",
+      "Highpass Hold",
+      "highpass",
+      "Highpass Hold",
+      "Highpass-Hold.md",
+      "Highpass Hold nameds and Anson McBale spawn (1.06× XP).",
+    ),
+    zone(
       "najena",
       "Najena",
       "najena",
