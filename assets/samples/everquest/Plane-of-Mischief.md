@@ -2,40 +2,42 @@
 
 Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest → **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
 
-Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs. Almost all "unique" gear comes from the **Deck of Spontaneous Generation** (cards → Ferjeneror), not raw drops. **Blam Stick** is the notable direct drop.
+Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs. Almost all "unique" gear comes from the **Deck of Spontaneous Generation** (cards → Ferjeneror), not raw drops. **Blam Stick** is the notable direct drop. HP from IdleQuest (`mischiefplane`).
 
 ## Named spawn
 
-| Mob | Class | Loc | PH / notes |
-| --- | --- | --- | --- |
-| A False Treasure Chest | ENC | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
-| Bit | WIZ | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
-| Bob the Painter | ROG | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth → class armor combine |
-| Bozer the Bear | WAR | 100% @ 126, −25, 118 | West wing. Named bear |
-| Bristlebane Puppet | WAR | Theater ~606, 173 | Strongest puppet. Indifferent until aggro. Thrones |
-| Chuckles | WAR | ~61, −178 | Picture behind him → Hedge Maze path |
-| Chuckles the Great | WAR | Theater stage ~557, 151 | Puppet theater stage |
-| Dinner | WAR | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
-| Dop Dop | WAR | Forest mushrooms | Named shrooms; drop squires |
-| Dupple | ROG | 100% @ 149, −312 | Halfling named |
-| Erollisi Puppet | WAR | Theater ~625, 157 | Indifferent until aggro. Thrones |
-| Ferjeneror | WIZ | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
-| Geb | WAR | Puppet audience | Kill at ~7AM game time to spawn puppets; else audience despawns |
-| Innoruuk Puppet | WAR | Theater ~625, 147 | KOS. Thrones |
-| Lithiniath (Black) | ENC | B&W room ~20% @ −88, 395; 509, −847 | 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
-| Lithiniath (White) | ENC | Same room | Spawn by giving Horn to White Stallion |
-| Mizer | WIZ | Dining chandelier ~235, 75 | Perma-rooted KOS nuke with Bit |
-| Peachy D`Vicci | CLR | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money → random Gift Box (dolls) |
-| Plupple | ROG | 100% @ 44, −478 | Halfling named |
-| Posie the Librarian | ENC | Library 100% @ 197, −1015 | LEAVE. Library Card → Book of Mischief |
-| Rallos Puppet | WAR | Theater ~625, 168 | KOS. Thrones |
-| Snitch | ROG | 100% @ 178, −442 | Halfling named |
-| Solusek Puppet | WAR | Theater ~627, 184 | KOS. Thrones |
-| Stitch | ROG | 100% @ 19, −343 | Halfling named |
-| Treasure Chest | ENC | Forest west ~−237, 557 | KOS mimic + halflings |
-| Tribunal Puppet | WAR | Theater ~625, 132 | Three per cycle. Weakest puppets. Thrones |
-| Tunare Puppet | WAR | Theater ~606, 151 | KOS. Thrones |
-| a White Stallion | WAR | B&W room white side | LEAVE. Turn in Lithiniaths Horn → white Lithiniath |
+IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing Eye ~709k**, **#the Mischievous Jester ~200k** — classic throne room stays empty; treat as DB leftovers unless your server enables them. Real camp boss is **Lithiniath ~36k**.
+
+| Mob | Class | HP | Loc | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Lithiniath (Black) | ENC | ~36k | B&W room ~20% @ −88, 395; 509, −847 | 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
+| Ferjeneror | WIZ | ~29k | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
+| A False Treasure Chest | ENC | ~14–20k | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
+| Bit | WIZ | ~14k | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
+| Mizer | WIZ | ~14k | Dining chandelier ~235, 75 | Perma-rooted KOS nuke with Bit |
+| Chuckles | WAR | ~14k | ~61, −178 | Picture behind him → Hedge Maze path |
+| Chuckles the Great | WAR | ~14k | Theater stage ~557, 151 | Puppet theater stage |
+| Posie the Librarian | ENC | ~14k | Library 100% @ 197, −1015 | LEAVE. Library Card → Book of Mischief |
+| Geb | WAR | ~14k | Puppet audience | Kill at ~7AM game time to spawn puppets; else audience despawns |
+| Bristlebane Puppet | WAR | ~13k | Theater ~606, 173 | Strongest puppet. Indifferent until aggro. Thrones |
+| Bozer the Bear | WAR | ~12k | 100% @ 126, −25, 118 | West wing. Named bear |
+| Treasure Chest | ENC | ~10k | Forest west ~−237, 557 | KOS mimic + halflings |
+| Bob the Painter | ROG | ~8k | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth → class armor combine |
+| Dupple | ROG | ~8k | 100% @ 149, −312 | Halfling named |
+| Plupple | ROG | ~8k | 100% @ 44, −478 | Halfling named |
+| Snitch | ROG | ~8k | 100% @ 178, −442 | Halfling named |
+| Stitch | ROG | ~8k | 100% @ 19, −343 | Halfling named |
+| Peachy D`Vicci | CLR | ~7k | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money → random Gift Box (dolls) |
+| Erollisi Puppet | WAR | ~6k | Theater ~625, 157 | Indifferent until aggro. Thrones |
+| Innoruuk Puppet | WAR | ~6k | Theater ~625, 147 | KOS. Thrones |
+| Rallos Puppet | WAR | ~6k | Theater ~625, 168 | KOS. Thrones |
+| Solusek Puppet | WAR | ~6k | Theater ~627, 184 | KOS. Thrones |
+| Tunare Puppet | WAR | ~6k | Theater ~606, 151 | KOS. Thrones |
+| Tribunal Puppet | WAR | ~6k | Theater ~625, 132 | Three per cycle. Weakest puppets. Thrones |
+| a White Stallion | WAR | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn → white Lithiniath |
+| Dop Dop | WAR | ~3k | Forest mushrooms | Named shrooms; drop squires |
+| Dinner | WAR | ~11 | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
+| Lithiniath (White) | ENC | — | Same room | Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
 
 ## Unique loot
 
