@@ -57,6 +57,36 @@ pub fn trailing_asterisk_sets_title_tooltip_test() {
   let plain_cell = table_format.format_cell(formatter, plain)
   assert plain_cell.title == None
   assert plain_cell.class_name == ""
+
+  let bold_raid =
+    table_format.make_context("Named", ["Notes"], 0, 0, ["**RAID.**"])
+  let bold_cell = table_format.format_cell(formatter, bold_raid)
+  assert bold_cell.title == None
+}
+
+pub fn parse_markdown_emphasis_bold_pairs_test() {
+  assert table_format.parse_markdown_emphasis("plain")
+    == [table_format.PlainText("plain")]
+
+  assert table_format.parse_markdown_emphasis("**RAID.**")
+    == [table_format.BoldText("RAID.")]
+
+  assert table_format.parse_markdown_emphasis("**50%** / **215s**")
+    == [
+      table_format.BoldText("50%"),
+      table_format.PlainText(" / "),
+      table_format.BoldText("215s"),
+    ]
+
+  assert table_format.parse_markdown_emphasis("leave **open")
+    == [table_format.PlainText("leave **open")]
+
+  assert table_format.parse_markdown_emphasis("use __underscores__ too")
+    == [
+      table_format.PlainText("use "),
+      table_format.BoldText("underscores"),
+      table_format.PlainText(" too"),
+    ]
 }
 
 pub fn custom_formatter_can_rewrite_display_text_test() {

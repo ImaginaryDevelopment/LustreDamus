@@ -329,6 +329,12 @@ td {
   white-space: nowrap;
 }
 
+td strong,
+.md-table h3 strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
 th.col-shortname,
 td.col-shortname,
 th.col-expansion,

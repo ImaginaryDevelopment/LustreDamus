@@ -829,7 +829,7 @@ fn render_table(
   let rows = filter_rows_by_values(table, id, value_filters)
 
   html.section([attribute.class("md-table")], [
-    html.h3([], [html.text(table.title)]),
+    html.h3([], render_inline_text(table.title)),
     case active {
       Ok(sort) -> sort_controls(id, sort, table.headers)
       Error(_) ->
@@ -1199,7 +1199,21 @@ fn render_td(formatted: FormattedCell, extra_class: String) -> Element(Msg) {
     Some(title) -> [attribute.title(title)]
     None -> []
   }
-  html.td(list.append(class_attr, title_attr), [html.text(formatted.text)])
+  html.td(list.append(class_attr, title_attr), render_inline_text(formatted.text))
+}
+
+fn render_inline_text(text: String) -> List(Element(Msg)) {
+  case table_format.parse_markdown_emphasis(text) {
+    [] -> [html.text("")]
+    segments ->
+      list.map(segments, fn(segment) {
+        case segment {
+          table_format.PlainText(value) -> html.text(value)
+          table_format.BoldText(value) ->
+            html.strong([], [html.text(value)])
+        }
+      })
+  }
 }
 
 fn column_class(header: String) -> String {

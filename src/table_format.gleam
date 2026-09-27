@@ -21,6 +21,12 @@ pub type FormattedCell {
   FormattedCell(text: String, class_name: String, title: Option(String))
 }
 
+/// Inline markdown emphasis segments for cell / title rendering.
+pub type TextSegment {
+  PlainText(String)
+  BoldText(String)
+}
+
 pub type CellFormatter =
   fn(FormatContext) -> FormattedCell
 
@@ -137,12 +143,18 @@ pub fn style_approximate_numbers(
 }
 
 /// Native `title` tooltip on cells whose display text ends with `*`.
+/// Ignores `**bold**` markers so emphasis like `**RAID.**` is not treated as a note.
 pub fn with_trailing_asterisk_tooltip(
   formatter: TableFormatter,
   note: String,
 ) -> TableFormatter {
   decorate(formatter, fn(ctx, cell) {
-    case string.ends_with(string.trim(ctx.value), "*") {
+    let stripped =
+      ctx.value
+      |> string.replace("**", "")
+      |> string.replace("__", "")
+      |> string.trim
+    case string.ends_with(stripped, "*") {
       True ->
         FormattedCell(
           ..cell,
@@ -161,5 +173,47 @@ fn append_class(existing: String, next: String) -> String {
   case existing {
     "" -> next
     _ -> existing <> " " <> next
+  }
+}
+
+/// Parse `**bold**` (and `__bold__`) into plain/bold segments for HTML render.
+/// Unclosed markers stay literal. Sort / filter still use the raw cell string.
+pub fn parse_markdown_emphasis(text: String) -> List(TextSegment) {
+  parse_paired_marker("**", text, [])
+  |> list.flat_map(fn(segment) {
+    case segment {
+      BoldText(inner) -> [BoldText(inner)]
+      PlainText(plain) -> parse_paired_marker("__", plain, [])
+    }
+  })
+  |> list.filter(is_non_empty_segment)
+}
+
+fn parse_paired_marker(
+  marker: String,
+  text: String,
+  acc: List(TextSegment),
+) -> List(TextSegment) {
+  case string.split_once(text, marker) {
+    Error(_) -> list.reverse([PlainText(text), ..acc])
+    Ok(#(before, after)) ->
+      case string.split_once(after, marker) {
+        Error(_) ->
+          list.reverse([PlainText(before <> marker <> after), ..acc])
+        Ok(#(mid, rest)) ->
+          parse_paired_marker(marker, rest, [
+            BoldText(mid),
+            PlainText(before),
+            ..acc
+          ])
+      }
+  }
+}
+
+fn is_non_empty_segment(segment: TextSegment) -> Bool {
+  case segment {
+    PlainText("") -> False
+    BoldText("") -> False
+    _ -> True
   }
 }
