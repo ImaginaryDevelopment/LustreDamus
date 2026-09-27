@@ -4,33 +4,34 @@ Classic plane. ZEM **1.13×**. Hunt **48–60**. Access via temple / wizard port
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content). This sample set uses shortname **`hateplaneb`** (Zone XP). IdleQuest also ships a `hateplane` spawn set — notable loot below is from the active IdleQuest Hate tables. Skip joke NPCs (`ShowEQ Users Are Lame`, etc.) and **0%** rows.
 
-Sort **Named spawn** by **Mob**.
+Sort **Named spawn** by **Mob**. HP from IdleQuest (`hateplane` classic nameds). `hateplaneb` mirrors many as `#` rows at ~same HP.
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Innoruuk | WIZ | Temple | ~55–70 band. **RAID.** God. Huge unique pool + Shattered Emerald |
-| Maestro of Rancor | BRD | Hate | ~53. **RAID.** Hand of the Maestro / Six Note Blade / Evensong |
-| Hand of the Maestro | WAR | Hate | ~51. Always **Hand of the Maestro** item |
-| Avatar of Abhorrence | ROG | Hate | ~58. **RAID.** Vexthorne / Eye of Innoruuk / Woven Shadow |
-| Grandmaster R`Tal | MNK | Hate | ~58 / ~50%. **RAID.** Rakusha Cloak / Sunderfury / Indicolite / Slowstone |
-| High Priest M`kari | CLR | Hate | ~58 / ~50%. **RAID.** Ethereal Mist set |
-| Master of Spite | SHM | Hate | ~58. **RAID.** Gardash / Rune Etched / Spitestone |
-| Mistress of Scorn | WAR | Hate | ~58. **RAID.** Imbrued plate / Dawnchaser / Martune Rapier |
-| Lord of Loathing | WIZ | Hate | ~55. **RAID.** Wand of Conflagration / Eye of Innoruuk |
-| Corrupter of Life | WIZ | Hate | ~60. **RAID.** Wand of Souls / Wand of Conflagration |
-| Magi P`Tasa | MAG | Hate | ~56. Apothic set / elemental mastery staves |
-| thought destroyer | BRD | Hate | ~55. **RAID.** Imbrued / Martune Rapier |
-| an ashenbone drake | NEC | Trash | ~51. Ashenbone weapons / shield |
-| an ire ghast | SHD | Trash | ~50. Trueheart Shield / Darkmetal sprinkler |
-| an abhorrent | ROG | Trash | ~49. Woven Shadow set |
-| a scorn banshee | BRD | Trash | ~50. Imbrued plate / Martune Rapier |
-| a spite golem | SHM | Trash | ~51. Rune Etched / Scaled Hierophant / Spitestone |
-| a kiraikuei | MNK | Trash | ~50. Indicolite / Legionnaire Scale / Slowstone Amber |
-| a forsaken revenant | MAG/ENC | Trash | ~49–51. Apothic / Insidious / elemental staves |
-| a revultant rat | WAR | Trash | ~49. Revultant Whip / Darkwar Mask |
-| Cleric of Innoruuk | CLR | Trash | ~49. Ethereal Mist set |
+| Mob | Class | HP | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Innoruuk | WIZ | ~32k | Temple | ~55. **RAID.** God. Huge unique pool + Shattered Emerald |
+| Magi P`Tasa | MAG | ~30k | Hate | ~56. Apothic set / elemental mastery staves |
+| Avatar of Abhorrence | ROG | ~29k | Hate | ~58. **RAID.** Vexthorne / Eye of Innoruuk / Woven Shadow |
+| Grandmaster R`Tal | MNK | ~29k | Hate | ~58 / ~50%. **RAID.** Rakusha Cloak / Sunderfury / Indicolite / Slowstone |
+| High Priest M`kari | CLR | ~29k | Hate | ~58 / ~50%. **RAID.** Ethereal Mist set |
+| Master of Spite | SHM | ~29k | Hate | ~58. **RAID.** Gardash / Rune Etched / Spitestone |
+| Mistress of Scorn | WAR | ~29k | Hate | ~58. **RAID.** Imbrued plate / Dawnchaser / Martune Rapier |
+| The Deathrot Knight | WAR | ~29k | Hate | ~65. IdleQuest `#` row |
+| Corrupter of Life | WIZ | ~21k | Hate | ~60. **RAID.** Wand of Souls / Wand of Conflagration |
+| Maestro of Rancor | BRD | ~16k | Hate | ~53. **RAID.** Hand of the Maestro / Six Note Blade / Evensong |
+| thought destroyer | BRD | ~14k | Hate | ~55. **RAID.** Imbrued / Martune Rapier |
+| Hand of the Maestro | WAR | ~11k | Hate | ~51. Always **Hand of the Maestro** item |
+| Lord of Loathing | WIZ | ~9k | Hate | ~55. **RAID.** Wand of Conflagration / Eye of Innoruuk |
+| an ashenbone drake | NEC | Trash | Hate | ~51. Ashenbone weapons / shield |
+| an ire ghast | SHD | Trash | Hate | ~50. Trueheart Shield / Darkmetal sprinkler |
+| an abhorrent | ROG | Trash | Hate | ~49. Woven Shadow set |
+| a scorn banshee | BRD | Trash | Hate | ~50. Imbrued plate / Martune Rapier |
+| a spite golem | SHM | Trash | Hate | ~51. Rune Etched / Scaled Hierophant / Spitestone |
+| a kiraikuei | MNK | Trash | Hate | ~50. Indicolite / Legionnaire Scale / Slowstone Amber |
+| a forsaken revenant | MAG/ENC | Trash | Hate | ~49–51. Apothic / Insidious / elemental staves |
+| a revultant rat | WAR | Trash | Hate | ~49. Revultant Whip / Darkwar Mask |
+| Cleric of Innoruuk | CLR | Trash | Hate | ~49. Ethereal Mist set |
 
 ## Unique loot
 

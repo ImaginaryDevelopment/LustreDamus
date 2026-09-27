@@ -10,10 +10,10 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Froststone dwarves (junk cloth / ve
 
 ### RAID
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Velketor the Sorcerer | WIZ | Top / tower | ~66 / 100% / **259200s (72h)**. Full raid table + spell book |
-| Lord Doljonijiarnimorinar | MNK | Labyrinth | ~65 / 100% / **86400s (24h)**. Efreeti / ice set; namesake weapon |
+| Mob | Class | HP | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Velketor the Sorcerer | WIZ | ~202k | Top / tower | ~66 / 100% / **259200s (72h)**. Full raid table + spell book |
+| Lord Doljonijiarnimorinar | MNK | ~147k | Labyrinth | ~65 / 100% / **86400s (24h)**. Efreeti / ice set; namesake weapon |
 
 ### Spider / crystal nameds (group)
 
