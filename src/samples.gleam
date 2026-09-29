@@ -622,6 +622,14 @@ fn kunark_dungeon() -> List(Sample) {
 fn velious_towns() -> List(Sample) {
   [
     zone(
+      "icewell-keep",
+      "Icewell",
+      "thurgadinb",
+      "Icewell Keep",
+      "Icewell-Keep.md",
+      "Icewell Keep nameds, Dain RAID loot, and Coldain faction warnings (Velious).",
+    ),
+    zone(
       "kael-drakkel",
       "Kael",
       "kael",
@@ -636,6 +644,14 @@ fn velious_towns() -> List(Sample) {
       "Skyshrine",
       "Skyshrine.md",
       "Skyshrine nameds, unique loot, and quest NPCs (Velious).",
+    ),
+    zone(
+      "thurgadin",
+      "Thurgadin",
+      "thurgadina",
+      "Thurgadin",
+      "Thurgadin.md",
+      "Thurgadin Coldain hub, armor turn-ins, and faction warnings (Velious).",
     ),
   ]
 }
@@ -1093,6 +1109,8 @@ fn zone_xp_hunt_levels() -> Dict(String, String) {
     #("soldunga", "20–40"),
     #("soldungb", "35–55"),
     #("templeveeshan", "60+"),
+    #("thurgadina", "30–45"),
+    #("thurgadinb", "45–60+"),
     #("trakanon", "40–60+"),
     #("unrest", "10–35"),
     #("veeshan", "60+"),
@@ -1166,7 +1184,7 @@ fn zone_friendly_shortnames() -> List(String) {
   [
     "airplane", "cobaltscar", "crushbone", "crystal", "droga", "growthplane",
     "highkeep", "highpass", "kerraridge", "lakeofillomen", "najena", "nurga",
-    "oot", "soldunga", "soltemple",
+    "oot", "soldunga", "soltemple", "thurgadina", "thurgadinb",
   ]
 }
 
@@ -1228,7 +1246,7 @@ pub fn find(id: String) -> Result(Sample, Nil) {
 }
 
 /// Zone XP `*` = auto-level / auto-attack can hit friendlies in that zone.
-const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost, Cobalt Scar Othmir, Plane of Growth Tunareans, Crystal Caverns Froststone); gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
+const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost, Cobalt Scar Othmir, Plane of Growth Tunareans, Crystal Caverns Froststone); Thurgadin / Icewell Coldain; gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
 
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal
 /// name tooltips when an index is available. Zone XP marks `*` cells with a

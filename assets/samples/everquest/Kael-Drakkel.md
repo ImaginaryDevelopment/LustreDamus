@@ -4,7 +4,11 @@ Velious giant city (`kael`). ZEM **1.13×**. Hunt **40–60+**. Connects **Easte
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`kael`). Mob names match IdleQuest display (`King_Tormax` → **King Tormax**). Skip Watchman / Adjutant / Sentinel / `#Guard` trash — only notables below.
 
-Sort **Nameds** by **Mob** when tracking. **Do** = whether to kill on sight (LEAVE = quest / armor NPC).
+Sort **Nameds** by **Mob** when tracking. **Do** column:
+- **KILL** — fine to kill for loot
+- **FACTION** — good loot, but hits a faction most players keep (Kromzek / quest NPC)
+- **LEAVE** — quest / armor hub with nothing worth the kill
+- **RAID** — formed raid
 
 ## Nameds
 
@@ -13,7 +17,7 @@ Sort **Nameds** by **Mob** when tracking. **Do** = whether to kill on sight (LEA
 | Armor of Zek | KILL | WAR | Arena / Zek | ~55. Corroded / Thunder Runed / bear cloaks |
 | Bjoskhua Blackfist | KILL | WIZ | City | ~48–49. Flayed Coldain-Skin Leggings / Mask of Malediction |
 | Bjrakor the Cold | KILL | WAR | City | ~55. Bladesman weapons / Gladiator's Chain Leggings |
-| Captain Bvellos | LEAVE | PAL | City | ~53. **Mask of War** turn-in (Wurmscale Scroll). Also Glowing Black Sword if killing |
+| Captain Bvellos | FACTION | PAL | City | ~53. **Mask of War** turn-in (Wurmscale Scroll). Also Glowing Black Sword if killing |
 | Captain Mc`Hersh | KILL | ROG | City | ~40. **Captain Mc`Hershs Brooch** |
 | Clrakk Blackfist | KILL | WAR | City | ~43–44. Dark Spear of Venom |
 | Derakor the Vindicator | RAID | WAR | Near throne | ~70 / **~180k HP**. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
@@ -42,7 +46,7 @@ Sort **Nameds** by **Mob** when tracking. **Do** = whether to kill on sight (LEA
 | Vkaak | KILL | WAR | City | ~63. Giant Militia Longsword |
 | Vkjor | KILL | ENC | City | ~50–54. Silver Steel Gauntlets |
 | Vorken Iceshard | KILL | CLR | Iceshard Keep | ~47. **Vambraces of Avoidance** / Dragonhide Belt |
-| Wenglawks Kkeak | LEAVE | ROG | City | ~43. Spy / Cobalt Scar key paths. Bracer of Midnight if killing |
+| Wenglawks Kkeak | FACTION | ROG | City | ~43. Spy / Cobalt Scar key paths. Bracer of Midnight if killing |
 | Yetarr | KILL | MNK | Living Dragons | ~57. **Coldain Skin** Gloves / Boots |
 | Kael class-armor NPCs | LEAVE | — | Armor halls | **Ancient Tarnished** hub (Ally Kromzek). Pieces from ToV west RAID — Barlek Stonefist, Bygloirn Omorden, Dagron Stonecutter, Grand Armsmith Korin, Jaglorm Ygorr, Kelenek Bluadfeth, Kragek Thunderforge, Mjeldor Felstorm, Nerik Wolfsoul, Regbor Vallgerthon, Stoem Lekbar, Vylleam Vyaeltor, Yeeldan Spiritcaller, Bjarorm Mjlorn, Gragek Mjlorkigar, Weyrevar Bluehammer, etc. |
 
@@ -130,8 +134,8 @@ Notable uniques only — skip Storm Giant Meat / toes / generic helmets unless q
 
 | NPC | Do | Notes |
 | --- | --- | --- |
-| Captain Bvellos | LEAVE | **Mask of War** — turn in Wurmscale Scroll (from Dragon Necropolis) |
+| Captain Bvellos | FACTION | **Mask of War** — turn in Wurmscale Scroll (from Dragon Necropolis). Has sword loot if you accept the hit |
 | Kael class-armor NPCs (armor halls) | LEAVE | Ancient Tarnished Kael armor. Ally Kromzek. Pieces from ToV west RAID |
-| Wenglawks Kkeak | LEAVE | Spy / Cobalt Scar key paths — kill only for Bracer of Midnight |
+| Wenglawks Kkeak | FACTION | Spy / Cobalt Scar key — Bracer of Midnight if you accept the hit |
 | King Tormax | RAID / LEAVE | Raid for loot and head turn-ins; otherwise leave |
 | Gkrean; Semkak (+ High Priests of Tallon/Vallon) | KILL or LEAVE | Kill for idols — leave if mid-quest dialogue |
