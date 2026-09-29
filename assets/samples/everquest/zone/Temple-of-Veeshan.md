@@ -62,7 +62,7 @@ Sort **Named spawn** by **Mob**.
 | Unadorned Breastplate / Greaves / Vambraces / Gauntlets / Boots / Helmet / Bracer | East drakes, racnars, wyverns, ancient guardians | **Skyshrine** class armor molds. Ally CoV |
 | Unadorned Chain / Leather pieces | East / Halls of Testing trash | Skyshrine chain / leather |
 
-See [Quest Gear](Quest-Gear.md), [Kael Drakkel](Kael-Drakkel.md), [Skyshrine](Skyshrine.md).
+See [Quest Gear](../Quest-Gear.md), [Kael Drakkel](Kael-Drakkel.md), [Skyshrine](Skyshrine.md).
 
 ### Notable RAID dragon uniques (sample)
 
