@@ -16,7 +16,7 @@ Sort **Nameds** by **Mob** when tracking. **Do** = whether to kill on sight (LEA
 | Captain Bvellos | LEAVE | PAL | City | ~53. **Mask of War** turn-in (Wurmscale Scroll). Also Glowing Black Sword if killing |
 | Captain Mc`Hersh | KILL | ROG | City | ~40. **Captain Mc`Hershs Brooch** |
 | Clrakk Blackfist | KILL | WAR | City | ~43–44. Dark Spear of Venom |
-| Derakor the Vindicator | RAID | WAR | Near throne | ~70. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
+| Derakor the Vindicator | RAID | WAR | Near throne | ~70 / **~180k HP**. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
 | Dlammaz Stormslayer | KILL | WAR | City | ~62. **Cloak of the Maelstrom** |
 | Drendar Blackblade | KILL | WAR | High named | ~66. IdleQuest custom table (Ceremonial sword / Kromzek head) |
 | Fjokar Frozenshard | KILL | ROG | City | ~60. **Eyepatch of the Shadows** / Frozen Shard |
@@ -26,7 +26,7 @@ Sort **Nameds** by **Mob** when tracking. **Do** = whether to kill on sight (LEA
 | Kael Militia Captain | KILL | PAL | Militia | ~49. **Militia Captain Tunic** |
 | Kallis Stormcaller | KILL | WAR | City | ~58. Always **Kallis' Head** |
 | Keldor Dek`Torek | KILL | WIZ | City | ~65. Always **Orb of the Infinite Void** |
-| King Tormax | RAID | WAR | Throne | ~70. Always **King Tormax's Head** + Kromzek crown set |
+| King Tormax | RAID | WAR | Throne | ~70 / **~452k HP**. Always **King Tormax's Head** + Kromzek crown set |
 | Klaggan Iceshard | KILL | WAR | Iceshard Keep | ~45–46. **Greaves of Avoidance** |
 | Klraggek the Slayer | KILL | WAR | High named | ~66. Same IdleQuest loot table as Drendar |
 | Korakaz | KILL | WAR | City | ~51–53. Bladesman's Axe / Sword |
