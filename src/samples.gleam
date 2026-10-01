@@ -524,6 +524,14 @@ fn kunark_solo() -> List(Sample) {
       "Emerald Jungle nameds, unique loot, and quest NPCs (Kunark).",
     ),
     zone(
+      "field-of-bone",
+      "Field of Bone",
+      "fieldofbone",
+      "The Field of Bone",
+      "Field-of-Bone.md",
+      "Field of Bone nameds and Cabilis outdoor uniques (1.00× XP).",
+    ),
+    zone(
       "frontier-mountains",
       "Frontier Mtns",
       "frontiermtns",
@@ -532,12 +540,36 @@ fn kunark_solo() -> List(Sample) {
       "Frontier Mountains nameds, unique loot, and quest NPCs (Kunark).",
     ),
     zone(
+      "lake-of-ill-omen",
+      "Lake of Ill Omen",
+      "lakeofillomen",
+      "Lake of Ill Omen",
+      "Lake-of-Ill-Omen.md",
+      "Lake of Ill Omen sarnak / goblin / bloodgill camps and outpost caution (1.00× XP).",
+    ),
+    zone(
+      "overthere",
+      "Overthere",
+      "overthere",
+      "The Overthere",
+      "Overthere.md",
+      "Overthere sarnak / cockatrice / scorpikis camps and dark-elf outpost caution (1.00× XP).",
+    ),
+    zone(
       "trakanons-teeth",
       "Trak",
       "trakanon",
       "Trakanon's Teeth",
       "Trakanons-Teeth.md",
       "Trakanon's Teeth forager, hunter, and trash drops.",
+    ),
+    zone(
+      "warsliks-woods",
+      "Warsliks",
+      "warslikswood",
+      "Warsliks Woods",
+      "Warsliks-Woods.md",
+      "Warsliks Woods goblin / forest giant camps (1.00× XP).",
     ),
     zone(
       "kurns-tower",
@@ -1103,6 +1135,7 @@ fn zone_xp_hunt_levels() -> Dict(String, String) {
     #("eastwastes", "30–45"),
     #("emeraldjungle", "30–50+"),
     #("fearplane", "50–60"),
+    #("fieldofbone", "1–25"),
     #("frozenshadow", "30–50"),
     #("frontiermtns", "20–40+"),
     #("greatdivide", "30–50"),
@@ -1119,6 +1152,7 @@ fn zone_xp_hunt_levels() -> Dict(String, String) {
     #("karnor", "40–55"),
     #("kedge", "32–50"),
     #("kurn", "10–25"),
+    #("lakeofillomen", "10–40"),
     #("lavastorm", "10–30"),
     #("mischiefplane", "50+"),
     #("mistmoore", "20–45"),
@@ -1126,6 +1160,7 @@ fn zone_xp_hunt_levels() -> Dict(String, String) {
     #("necropolis", "45–60+"),
     #("nurga", "30–40"),
     #("oot", "9–35"),
+    #("overthere", "15–45"),
     #("paw", "20–40"),
     #("permafrost", "15–50"),
     #("runnyeye", "7–30"),
@@ -1143,6 +1178,7 @@ fn zone_xp_hunt_levels() -> Dict(String, String) {
     #("veeshan", "60+"),
     #("velketor", "40–60"),
     #("wakening", "40–55+"),
+    #("warslikswood", "10–35"),
     #("westwastes", "50–60+"),
   ])
 }
@@ -1167,6 +1203,7 @@ fn zone_xp_multipliers() -> Dict(String, String) {
     #("eastwastes", "1.00×"),
     #("emeraldjungle", "0.83×"),
     #("fearplane", "1.13×"),
+    #("fieldofbone", "1.00×"),
     #("frozenshadow", "1.00×"),
     #("frontiermtns", "1.00×"),
     #("greatdivide", "1.00×"),
@@ -1183,6 +1220,7 @@ fn zone_xp_multipliers() -> Dict(String, String) {
     #("karnor", "1.13×"),
     #("kedge", "1.33×"),
     #("kurn", "2.00×"),
+    #("lakeofillomen", "1.00×"),
     #("lavastorm", "0.75×"),
     #("mischiefplane", "1.40×"),
     #("mistmoore", "1.20×"),
@@ -1190,6 +1228,7 @@ fn zone_xp_multipliers() -> Dict(String, String) {
     #("necropolis", "1.50×"),
     #("nurga", "0.95×"),
     #("oot", "1.13×"),
+    #("overthere", "1.00×"),
     #("paw", "0.90×"),
     #("permafrost", "1.20×"),
     #("runnyeye", "1.33×"),
@@ -1205,6 +1244,7 @@ fn zone_xp_multipliers() -> Dict(String, String) {
     #("veeshan", "1.00×"),
     #("velketor", "1.00×"),
     #("wakening", "1.00×"),
+    #("warslikswood", "1.00×"),
     #("westwastes", "1.06×"),
   ])
 }
@@ -1214,7 +1254,7 @@ fn zone_friendly_shortnames() -> List(String) {
   [
     "airplane", "cobaltscar", "crushbone", "crystal", "droga", "growthplane",
     "highkeep", "highpass", "kerraridge", "lakeofillomen", "najena", "nurga",
-    "oot", "soldunga", "soltemple", "thurgadina", "thurgadinb",
+    "oot", "overthere", "soldunga", "soltemple", "thurgadina", "thurgadinb",
   ]
 }
 
@@ -1276,7 +1316,7 @@ pub fn find(id: String) -> Result(Sample, Nil) {
 }
 
 /// Zone XP `*` = auto-level / auto-attack can hit friendlies in that zone.
-const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost, Cobalt Scar Othmir, Plane of Growth Tunareans, Crystal Caverns Froststone); Thurgadin / Icewell Coldain; gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
+const zone_xp_asterisk_note: String = "Auto-level systems that attack anything near your level can hit friendly NPCs here: city merchants, guards, and trainers; quest givers (Plane of Sky islands, Najena captives, Solusek Ro temple); mixed outdoor camps (Highpass Hold, High Keep, Kerra Isle, Ocean of Tears Sister Isle, Lake of Ill Omen outpost, Overthere dark-elf outpost, Cobalt Scar Othmir, Plane of Growth Tunareans, Crystal Caverns Froststone); Thurgadin / Icewell Coldain; gnome miners in Solusek's Eye; or faction slaves in Crushbone, Droga, and Nurga."
 
 /// Per-sample table formatting. Palworld uses breeding-sheet elements for Pal
 /// name tooltips when an index is available. Zone XP marks `*` cells with a
