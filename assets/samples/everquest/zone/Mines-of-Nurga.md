@@ -4,33 +4,39 @@ ZEM **0.95×**. Hunt range **30–40** (classic trash tops around **37**; **Trun
 
 **a sleeping ogre** is the monk-epic spawn NPC — sneak the hand-in; he has a huge aggro radius. **an iksar slave** / **a burynai slave** are quest/faction — do not farm them for XP if you care about **Legion of Cabilis**.
 
-## Named spawn
+Sort **Nameds** by **Mob**. **Do** column:
+- **KILL** — fine to kill for loot
+- **LEAVE** — sleeping ogre until epic hand-in
+- **FACTION** — slaves; killing tanks Legion of Cabilis
+- **RAID** — 2-group (Trunt)
 
-| Mob | Loc | PH / notes |
-| --- | --- | --- |
-| Overseer Dlubish | ~−1550, −550 | Goblin caverns room 3. CLR ~29, sees invis. Always **Dai Nozok skull canopic** |
-| a sleeping ogre | ~−1498, −68; −1380, 245 | LEAVE until epic. WAR ~30. Hand **Breath of Gwan** while indifferent (sneak from behind) → **Trunt** |
-| Trunt | −1380, 250 | **2-group.** Triggered ogre WAR 59. Immune magic/fire/cold/poison, Fist of Earth AE. Always **Trunt's Head**. Breath of Gwan is **not** from this zone (**Gwan**, Lake of Ill Omen) |
-| a burynai cenobite | burynai caves | CLR 32–36. Gi / belt |
-| a burynai slave | slave pits ~25% | 33–35. **Eye of RokGus** (rare). Also gi / belt. Faction |
-| an iksar slave | slave pits | 23–26. **Iksar Blood**. Cabilis faction. Shackle of Steel NPC is the **Droga jail** version |
+## Nameds
+
+| Mob | Do | Class | Loc | Notes |
+| --- | --- | --- | --- | --- |
+| Overseer Dlubish | KILL | CLR | ~−1550, −550 | Goblin caverns room 3. ~29, sees invis. Always **Dai Nozok skull canopic** |
+| a sleeping ogre | LEAVE | WAR | ~−1498, −68; −1380, 245 | Until epic. ~30. Hand **Breath of Gwan** while indifferent (sneak from behind) → **Trunt** |
+| Trunt | RAID | WAR | −1380, 250 | **2-group.** Triggered ogre ~59. Immune magic/fire/cold/poison, Fist of Earth AE. Always **Trunt's Head**. Breath of Gwan is **not** from this zone (**Gwan**, Lake of Ill Omen) |
+| a burynai cenobite | KILL | CLR | burynai caves | ~32–36. Gi / belt |
+| a burynai slave | FACTION | WAR | slave pits ~25% | ~33–35. **Eye of RokGus** (rare). Also gi / belt |
+| an iksar slave | FACTION | WAR | slave pits | ~23–26. **Iksar Blood**. Shackle of Steel NPC is the **Droga jail** version |
 
 ## Unique loot
 
-| Item | Mob | Mob levels | Notes |
-| --- | --- | ---: | --- |
-| Dai Nozok skull canopic | Overseer Dlubish | 29 | Always. **Iksar shaman skull #5** (Iron Cudgel of the Channeler). LORE NO DROP |
-| Trunt's Head | Trunt | 59 | **2-group.** Always. **Whistling Fists** (monk epic). MAGIC LORE NO DROP, wt 20 |
-| Eye of RokGus | a burynai slave | 33–35 | Rare. **Sorcerer Skullcap** (IKS NEC #7) gem — also always from **Chief RokGus** in Droga. LORE NO DROP |
-| Iksar Blood | an iksar slave | 23–26 | MAGIC, tiny. Leave slaves if Cabilis faction |
-| Burynai Legion Gi (Chest) | a burynai slave; a burynai cenobite | 32–36 | CLR, HUM ERU HIE DEF, AC 14 DEX +2 HP +15 Mana +25 |
-| Mountain Death Belt (Waist) | a burynai slave; a burynai cenobite | 32–36 | WAR CLR PAL ROG, DWF HFL GNM, AC 8 HP +25, Skin like Rock click ×5 |
-| Drogan Obsidian Dagger (Piercing) | goblin trash | 29–33 | WAR, 5/25 (0.20), Obsidian Shatter proc |
-| Warpainted Spear (Piercing) | goblin trash | 29–33 | SHM, 6/24 (0.25), WIS/AGI +2, range/primary |
-| Whistling Dagger (Piercing) | goblin trash | 29–33 | BRD, 6/25 (0.24), AC 1 |
-| Choker of Majdd (Neck) | goblin named / soothsayer (also Droga) | 31–35 | ALL, AC 4 INT +5, See Invisible (worn) |
-| Ring of the Rockchanters (Finger) | a goblin rockchanter | 29–31 | ALL, AC 4 STA +3 WIS +3 |
-| Ring of the Stonechanters (Finger) | a goblin stonechanter | 31–33 | ALL, AC 4 STR +3 WIS +3 |
+| Item | Dropper | Classes | Stats / notes |
+| --- | --- | --- | --- |
+| Dai Nozok skull canopic | Overseer Dlubish | — | Always. **Iksar shaman skull #5** (Iron Cudgel of the Channeler). LORE NO DROP |
+| Trunt's Head | Trunt | — | **2-group.** Always. **Whistling Fists** (monk epic). MAGIC LORE NO DROP, wt 20 |
+| Eye of RokGus | a burynai slave | — | Rare. **Sorcerer Skullcap** (IKS NEC #7) gem — also always from **Chief RokGus** in Droga. LORE NO DROP |
+| Iksar Blood | an iksar slave | — | MAGIC, tiny. Leave slaves if Cabilis faction |
+| Burynai Legion Gi (Chest) | a burynai slave; a burynai cenobite | CLR | HUM ERU HIE DEF, AC 14 DEX +2 HP +15 Mana +25 |
+| Mountain Death Belt (Waist) | a burynai slave; a burynai cenobite | WAR CLR PAL ROG | DWF HFL GNM, AC 8 HP +25, Skin like Rock click ×5 |
+| Drogan Obsidian Dagger (Piercing) | goblin trash | WAR | 5/25 (0.20), Obsidian Shatter proc |
+| Warpainted Spear (Piercing) | goblin trash | SHM | 6/24 (0.25), WIS/AGI +2, range/primary |
+| Whistling Dagger (Piercing) | goblin trash | BRD | 6/25 (0.24), AC 1 |
+| Choker of Majdd (Neck) | goblin named / soothsayer (also Droga) | ALL | AC 4 INT +5, See Invisible (worn) |
+| Ring of the Rockchanters (Finger) | a goblin rockchanter | ALL | AC 4 STA +3 WIS +3 |
+| Ring of the Stonechanters (Finger) | a goblin stonechanter | ALL | AC 4 STR +3 WIS +3 |
 
 ## Quest items
 

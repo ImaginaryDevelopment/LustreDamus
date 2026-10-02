@@ -910,7 +910,9 @@ fn render_table(
   let id = table_id_for(table)
   let active = dict.get(sorts, id)
   let optional_headers =
-    list.filter(table.headers, is_optional_header)
+    list.filter(table.headers, fn(header) {
+      is_optional_header(table.headers, header)
+    })
   let rows = filter_rows_by_values(table, id, value_filters)
 
   html.section([attribute.class("md-table")], [
@@ -925,13 +927,18 @@ fn render_table(
         ])
     },
     value_filter_toggles(id, table, value_filters),
-    optional_column_toggles(id, optional_headers, optional_columns),
+    optional_column_toggles(id, table.headers, optional_headers, optional_columns),
     html.div([attribute.class("table-wrap")], [
       html.table([], [
         html.thead([], [
           html.tr(
             [],
-            visible_header_cells(table.headers, id, optional_columns, active),
+            visible_header_cells(
+              table.headers,
+              id,
+              optional_columns,
+              active,
+            ),
           ),
         ]),
         html.tbody(
@@ -965,7 +972,7 @@ fn visible_header_cells(
   |> list.index_map(fn(cell, index) { #(cell, index) })
   |> list.filter_map(fn(pair) {
     let #(cell, index) = pair
-    case column_is_shown(optional_columns, table_id, cell) {
+    case column_is_shown(headers, optional_columns, table_id, cell) {
       False -> Error(Nil)
       True -> {
         let role = column_role(active, index)
@@ -1010,7 +1017,7 @@ fn visible_body_cells(
   |> list.index_map(fn(header, column) { #(header, column) })
   |> list.filter_map(fn(pair) {
     let #(header, column) = pair
-    case column_is_shown(optional_columns, table_id, header) {
+    case column_is_shown(table.headers, optional_columns, table_id, header) {
       False -> Error(Nil)
       True -> {
         let ctx =
@@ -1030,16 +1037,18 @@ fn visible_body_cells(
 
 fn optional_column_toggles(
   table_id: String,
-  headers: List(String),
+  all_headers: List(String),
+  optional_headers: List(String),
   optional_columns: Dict(String, Dict(String, Bool)),
 ) -> Element(Msg) {
-  case headers {
+  case optional_headers {
     [] -> html.text("")
     _ ->
       html.div(
         [attribute.class("column-toggles")],
-        list.map(headers, fn(header) {
-          let shown = column_is_shown(optional_columns, table_id, header)
+        list.map(optional_headers, fn(header) {
+          let shown =
+            column_is_shown(all_headers, optional_columns, table_id, header)
           html.label([], [
             html.input([
               attribute.type_("checkbox"),
@@ -1055,16 +1064,23 @@ fn optional_column_toggles(
   }
 }
 
-fn is_optional_header(header: String) -> Bool {
-  header == "Wing" || header == "Loc"
+/// Columns hidden by default with a "Show …" toggle.
+/// Mob `Class` only — not loot `Classes`, and not Party DPS `Class` (no Mob col).
+fn is_optional_header(headers: List(String), header: String) -> Bool {
+  case header {
+    "Wing" | "Loc" -> True
+    "Class" -> list.contains(headers, "Mob")
+    _ -> False
+  }
 }
 
 fn column_is_shown(
+  headers: List(String),
   optional_columns: Dict(String, Dict(String, Bool)),
   table_id: String,
   header: String,
 ) -> Bool {
-  case is_optional_header(header) {
+  case is_optional_header(headers, header) {
     False -> True
     True ->
       case dict.get(optional_columns, table_id) {
