@@ -1,8 +1,8 @@
 # Plane of Mischief — unique loot
 
-Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest → **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
+Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest â†’ **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
 
-Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs. Almost all "unique" gear comes from the **Deck of Spontaneous Generation** (cards → Ferjeneror), not raw drops. **Blam Stick** is the notable direct drop. HP from IdleQuest (`mischiefplane`).
+Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs. Almost all "unique" gear comes from the **Deck of Spontaneous Generation** (cards â†’ Ferjeneror), not raw drops. **Blam Stick** is the notable direct drop. HP from IdleQuest (`mischiefplane`).
 
 ## Named spawn
 
@@ -10,34 +10,34 @@ IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing
 
 | Mob | Class | HP | Loc | PH / notes |
 | --- | --- | ---: | --- | --- |
-| Lithiniath (Black) | ENC | ~36k | B&W room ~20% @ −88, 395; 509, −847 | 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
+| Lithiniath (Black) | ENC | ~36k | B&W room ~20% @ −88, 395; 509, −847 | IdleQuest **0%**. 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
 | Ferjeneror | WIZ | ~29k | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
 | A False Treasure Chest | ENC | ~14–20k | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
 | Bit | WIZ | ~14k | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
 | Mizer | WIZ | ~14k | Dining chandelier ~235, 75 | Perma-rooted KOS nuke with Bit |
-| Chuckles | WAR | ~14k | ~61, −178 | Picture behind him → Hedge Maze path |
+| Chuckles | WAR | ~14k | ~61, −178 | Picture behind him â†’ Hedge Maze path |
 | Chuckles the Great | WAR | ~14k | Theater stage ~557, 151 | Puppet theater stage |
-| Posie the Librarian | ENC | ~14k | Library 100% @ 197, −1015 | LEAVE. Library Card → Book of Mischief |
+| Posie the Librarian | ENC | ~14k | Library 100% @ 197, −1015 | LEAVE. Library Card â†’ Book of Mischief |
 | Geb | WAR | ~14k | Puppet audience | Kill at ~7AM game time to spawn puppets; else audience despawns |
 | Bristlebane Puppet | WAR | ~13k | Theater ~606, 173 | Strongest puppet. Indifferent until aggro. Thrones |
 | Bozer the Bear | WAR | ~12k | 100% @ 126, −25, 118 | West wing. Named bear |
 | Treasure Chest | ENC | ~10k | Forest west ~−237, 557 | KOS mimic + halflings |
-| Bob the Painter | ROG | ~8k | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth → class armor combine |
+| Bob the Painter | ROG | ~8k | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth â†’ class armor combine |
 | Dupple | ROG | ~8k | 100% @ 149, −312 | Halfling named |
 | Plupple | ROG | ~8k | 100% @ 44, −478 | Halfling named |
 | Snitch | ROG | ~8k | 100% @ 178, −442 | Halfling named |
 | Stitch | ROG | ~8k | 100% @ 19, −343 | Halfling named |
-| Peachy D`Vicci | CLR | ~7k | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money → random Gift Box (dolls) |
+| Peachy D`Vicci | CLR | ~7k | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money â†’ random Gift Box (dolls) |
 | Erollisi Puppet | WAR | ~6k | Theater ~625, 157 | Indifferent until aggro. Thrones |
 | Innoruuk Puppet | WAR | ~6k | Theater ~625, 147 | KOS. Thrones |
 | Rallos Puppet | WAR | ~6k | Theater ~625, 168 | KOS. Thrones |
 | Solusek Puppet | WAR | ~6k | Theater ~627, 184 | KOS. Thrones |
 | Tunare Puppet | WAR | ~6k | Theater ~606, 151 | KOS. Thrones |
 | Tribunal Puppet | WAR | ~6k | Theater ~625, 132 | Three per cycle. Weakest puppets. Thrones |
-| a White Stallion | WAR | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn → white Lithiniath |
+| a White Stallion | WAR | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn â†’ white Lithiniath |
 | Dop Dop | WAR | ~3k | Forest mushrooms | Named shrooms; drop squires |
 | Dinner | WAR | ~11 | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
-| Lithiniath (White) | ENC | — | Same room | Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
+| Lithiniath (White) | ENC | — | Same room | IdleQuest **0%**. Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
 
 ## Unique loot
 
@@ -46,10 +46,10 @@ IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Blam Stick (1H Blunt) | chest-room halflings | 50–56 | ALL except INT casters, 30/40 (0.75), wt 0. Fireball animation proc. Farm: aggro chest, FD/blur, leave chest up |
-| Lithiniaths Horn | Lithiniath (Black) | 64 | Always. Turn in to White Stallion → white Lithiniath |
+| Lithiniaths Horn | Lithiniath (Black) | 64 | Always. Turn in to White Stallion â†’ white Lithiniath |
 | Black / Blue / Red / White Crown | Lithiniath; chessboard; chest mimics | 51–64 | Ultra rare. Deck combines for Armor of Distraction |
 | Jester | Lithiniath (Black) | 64 | Ultra rare (~5%) |
-| Funny Money | various PoM | 50+ | 2× to Peachy → Gift Box |
+| Funny Money | various PoM | 50+ | 2× to Peachy â†’ Gift Box |
 | Black / Blue / Red / White Squire | Dop Dop; Bob; various | 39–55 | Deck / armor combines |
 | Black / Blue / Red / White Throne | puppets; chest room | 51–55 | Deck combines (most Distraction pieces need two thrones) |
 | Black / Blue / Red / White Knight | various | 50+ | Deck combines |
@@ -89,12 +89,12 @@ Combine cards / thrones / crowns / knights / squires in the Deck (from Ferjenero
 
 | Item | Mob | Quest |
 | --- | --- | --- |
-| King Cod Card; Black/Blue/Red/White Cod Card | Dinner; moat fishing | Hand to **Ferjeneror** → Deck of Spontaneous Generation |
-| Funny Money ×2 | various | **Peachy D`Vicci** → random colored Gift Box → doll |
-| Words of Wealth | — | **Bob the Painter** → Empty Pot of Gold (2-slot) |
-| Armor of Distraction piece + class doll | Deck; Gift Box | Combine in Empty Pot of Gold → that class's PoM armor piece |
-| Library Card | — | **Posie the Librarian** → Book of Mischief |
-| Lithiniaths Horn | Lithiniath (Black) | White Stallion → white Lithiniath |
+| King Cod Card; Black/Blue/Red/White Cod Card | Dinner; moat fishing | Hand to **Ferjeneror** â†’ Deck of Spontaneous Generation |
+| Funny Money ×2 | various | **Peachy D`Vicci** â†’ random colored Gift Box â†’ doll |
+| Words of Wealth | — | **Bob the Painter** â†’ Empty Pot of Gold (2-slot) |
+| Armor of Distraction piece + class doll | Deck; Gift Box | Combine in Empty Pot of Gold â†’ that class's PoM armor piece |
+| Library Card | — | **Posie the Librarian** â†’ Book of Mischief |
+| Lithiniaths Horn | Lithiniath (Black) | White Stallion â†’ white Lithiniath |
 
 ## Quest NPCs
 

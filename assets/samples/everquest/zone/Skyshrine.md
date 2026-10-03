@@ -28,14 +28,14 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are armor / Cobalt
 | Lawyla | WAR | High named | ~65. **Brightwood Spear** / Wyvern Hide Tunic |
 | Lignark | WAR | High named | ~62. City named pool |
 | Lord Yelinak | WAR | Throne | ~70. **RAID.** Always **Yelinak's Head** + **Yelinak's Talisman** |
-| Marech of the Shrine | CLR | Shrine | ~55. `#Marech_of_the_Shrine`. Dragonscaled Gauntlets / Drakespine Belt |
+| Marech of the Shrine | CLR | Shrine | IdleQuest **0%**. ~55. `#Marech_of_the_Shrine`. Dragonscaled Gauntlets / Drakespine Belt |
 | Oglard | WAR | High named | ~65. `#Oglard` / Oglard. Jar`Nal Long Sword / Joined Ethereal Cape / Ice Spear |
 | Placlis | WAR | High named | ~65. City named pool (same as Talnifs) |
 | Quadrix Velic | WAR | High named | ~60. City named pool (same as Zaldin Fe`Dhar) |
-| Ralgyn | WAR | City | ~60. `#Ralgyn`. City named pool. LEAVE for **Ralgyn's Promise** (chipped fang from DN Vilefang) |
+| Ralgyn | WAR | City | IdleQuest **0%**. ~60. `#Ralgyn`. City named pool. LEAVE for **Ralgyn's Promise** (chipped fang from DN Vilefang) |
 | Sentry Kale | WAR | Gate / CS | ~37–39. LEAVE for Cobalt Scar key path (Drake Fang). Kill = Sentry armor set |
 | Sentry Rotiart | WAR | Gate | ~43. Focused Ethereal Rapier |
-| Supreme Laochsmith Psorin | WAR | Armor halls | ~59. LEAVE for **Laoch** weapons. Kill = Ductile Loam only |
+| Supreme Laochsmith Psorin | WAR | Armor halls | IdleQuest **0%**. ~59. LEAVE for **Laoch** weapons. Kill = Ductile Loam only |
 | Susarrak the Crusader | WAR | Crusaders | ~70. Same table as Charayan |
 | Talnifs | WAR | High named | ~65. Same pool as Placlis |
 | Zaldin Fe`Dhar | CLR | High named | ~60. Same pool as Quadrix Velic |

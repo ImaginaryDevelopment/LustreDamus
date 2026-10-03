@@ -2,7 +2,7 @@
 
 Velious outdoor dragonland (`westwastes`). ZEM **1.06×**. Hunt **50–60+**. Approaches to **Temple of Veeshan**, **Dragon Necropolis**, and **Siren's Grotto**. Named dragons roam / nest; many see invis, summon, and AE. Wildlife nameds (Tantor, Icehackle, Tsiraka) fill camps between. No AAs: mid dragons are strong groups; **Harla Dar**, **Klandicar**, **Sontalak**, **Melalafen** are **RAID**-tier.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`westwastes`). Mob names match IdleQuest display (`Harla_Dar` → **Harla Dar**). Skip trap / placeholder NPCs.
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`westwastes`). Mob names match IdleQuest display (`Harla_Dar` â†’ **Harla Dar**). Skip trap / placeholder NPCs.
 
 Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 
@@ -10,15 +10,15 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 
 | Mob | Class | Area | PH / notes |
 | --- | --- | --- | --- |
-| a banished efreeti | WAR | Outdoor | ~65. Always **Banished Efreeti Heart** |
-| Amcilla | WAR | Dragon | ~53. Talisman + **Dragonleg Breeches** |
+| a banished efreeti | WAR | Outdoor | IdleQuest **0%**. ~65. Always **Banished Efreeti Heart** |
+| Amcilla | WAR | Dragon | IdleQuest **0%**. ~53. Talisman + **Dragonleg Breeches** |
 | Atpaev | WAR | Dragon | ~51. Talisman + **Dragonskin Mask** |
 | Ayillish | WAR | Dragon pit | ~57. Talisman + **Dragonhorn Bracers**. Easier pit pull |
 | Bratavar | WAR | Dragon | ~53. Talisman + **Dragonwing Mantle** |
 | Breezeboot Swordrattler | ROG | Shipwreck | ~61. LEAVE. Pirate ship / gnome camp |
 | Bronif Snowchipper | ROG | Outdoor | ~56 |
-| Bufa (via Nintal) | — | — | IdleQuest **Nintal** drops **Bufa's Talisman** |
-| Cargalia | SHM | Dragon | ~57. Talisman + **Dragonhorn Boots** |
+| Bufa (via Nintal) | — | — | IdleQuest **0%**. IdleQuest **Nintal** drops **Bufa's Talisman** |
+| Cargalia | SHM | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonhorn Boots** |
 | Chief Engineer Tocs | ROG | Outdoor | ~55. LEAVE / gnome engineer path |
 | Crial | WAR | Dragon | ~54. Talisman + **Dragonhorn Bracers**. Fire breath |
 | Derasinal | CLR | Dragon | ~57. **Derasinel's Talisman** (IdleQuest spelling) + Bracers |
@@ -33,7 +33,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 | Harla Dar | ENC | Dragon | ~66. **RAID.** Always talisman + Al`Tarlkal first half. Belt table; rare First Brood |
 | Hechaeva | WAR | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
 | Honvar | WAR | Dragon | ~52. Talisman + **Dragonwing Cloak** |
-| Icehackle | WAR | Wildlife | ~61. **Icehackle's Pelt** |
+| Icehackle | WAR | Wildlife | IdleQuest **0%**. ~61. **Icehackle's Pelt** |
 | Ionat | WAR | Dragon pit | ~56. Talisman + **Dragonleg Breeches** |
 | Jen Sapara | CLR | Dragon | ~62. Strong AE. Talisman + **Dragonskull Helm** |
 | Jerigozia | WAR | Dragon | ~58. Always **Bloody Claw of Jerigozia** |
@@ -45,34 +45,34 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 | Makil Rargon | WIZ | Outdoor | ~50 |
 | Mazi | WAR | Dragon | ~54. Talisman + **Dragonleg Breeches** |
 | Melalafen | WAR | Dragon | ~65. **RAID.** Red Dragon Scales / Tooth |
-| Mraaka | WAR | Dragon | ~66. High dragon; sparse IdleQuest unique table |
+| Mraaka | WAR | Dragon | IdleQuest **0%**. ~66. High dragon; sparse IdleQuest unique table |
 | Myga | WAR | Dragon | ~52. Talisman + **Dragonhorn Boots**. Always **Dragon Blood** |
 | Neordla | WAR | Dragon | ~57. Talisman + **Dragonspine Vambraces** |
-| Nintal | WAR | Dragon | ~54. **Bufa's Talisman** + Mantle / Breeches / Heads |
+| Nintal | WAR | Dragon | IdleQuest **0%**. ~54. **Bufa's Talisman** + Mantle / Breeches / Heads |
 | Onava | WAR | Dragon | ~54. Talisman + **Dragonwing Mantle** |
 | Pantrilla | WAR | Dragon | ~53. Talisman + **Dragonwing Cloak** |
 | Quoza | WAR | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
 | Rontar O`Karn | BST | Outdoor | ~55 |
 | Sadeem Oujva | WIZ | Outdoor | ~55 |
-| Scout Charisa | ENC | Near Sirens / south | ~55. LEAVE. **Aid the Dar Brood** / Leuz path |
+| Scout Charisa | ENC | Near Sirens / south | IdleQuest **0%**. ~55. LEAVE. **Aid the Dar Brood** / Leuz path |
 | Shardwing Courier | WAR | Outdoor | ~50 |
 | Sir Elmonious Falmont | PAL | Outdoor | ~70. IdleQuest high named |
 | Sontalak | WAR | ToV gate | ~70. **RAID.** First brood. Guards Temple of Veeshan. Always talisman |
-| Strong Horn | WAR | Wildlife | ~65 |
-| Tantor | WAR | Wildlife | ~66. **Tantor's Tusk** |
+| Strong Horn | WAR | Wildlife | IdleQuest **0%**. ~65 |
+| Tantor | WAR | Wildlife | IdleQuest **0%**. ~66. **Tantor's Tusk** |
 | Tranala | WAR | Dragon | ~66 |
-| Travala | WAR | Dragon | ~66 |
-| Tsiraka | RNG | Wildlife | ~66. Always **Tsiraka's Claws** |
+| Travala | WAR | Dragon | IdleQuest **0%**. ~66 |
+| Tsiraka | RNG | Wildlife | IdleQuest **0%**. ~66. Always **Tsiraka's Claws** |
 | Uiliak | WAR | Dragon | ~53. Talisman + **Dragonhide Gauntlets** |
 | Veredenia | WIZ | Dragon | ~55. Always **Bloody Claw of Veredenia** |
 | Vitaela | WAR | Dragon | ~53. Talisman + **Dragonhorn Boots** |
-| Von | CLR | Dragon | ~57. Talisman + **Dragonspine Vambraces** |
+| Von | CLR | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonspine Vambraces** |
 | Vraptin | WAR | Dragon | ~53. Talisman + **Dragonskin Mask** |
 | Yeldema | WAR | Nest | ~52. Talisman + **Dragonhorn Boots**. Easier nest dragon |
 
 ## Unique loot
 
-Dragon armor is five tiers (**Worked → Reinforced → Heavy → Peerless → Matchless**). Same slot/classes; AC and stats climb. Plate-style set: WAR CLR PAL RNG SHD BRD ROG SHM. Skip listing every tier row — camp the dragon for the piece you want.
+Dragon armor is five tiers (**Worked â†’ Reinforced â†’ Heavy â†’ Peerless â†’ Matchless**). Same slot/classes; AC and stats climb. Plate-style set: WAR CLR PAL RNG SHD BRD ROG SHM. Skip listing every tier row — camp the dragon for the piece you want.
 
 ### Dragon armor by piece
 

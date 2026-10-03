@@ -42,6 +42,8 @@ pub type Model {
     sorts: Dict(String, TableSort),
     optional_columns: Dict(String, Dict(String, Bool)),
     value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+    /// When True, hide table rows marked IdleQuest **0%** spawn chance.
+    hide_zero_spawn: Bool,
     pal_elements: Dict(String, String),
     zone_search: String,
     zone_search_open: Bool,
@@ -65,6 +67,7 @@ pub type Msg {
   UserClearSort(String)
   UserToggledOptionalColumn(String, String, Bool)
   UserToggledValueFilter(String, String, String, Bool)
+  UserToggledHideZeroSpawn(Bool)
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
 }
@@ -86,6 +89,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       sorts: dict.new(),
       optional_columns: dict.new(),
       value_filters: dict.new(),
+      hide_zero_spawn: False,
       pal_elements: dict.new(),
       zone_search: "",
       zone_search_open: False,
@@ -117,6 +121,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         sorts: dict.new(),
         optional_columns: dict.new(),
         value_filters: dict.new(),
+        hide_zero_spawn: False,
         pal_elements: model.pal_elements,
         zone_search: model.zone_search,
         zone_search_open: False,
@@ -148,6 +153,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   sorts: dict.new(),
                   optional_columns: dict.new(),
                   value_filters: dict.new(),
+                  hide_zero_spawn: False,
                   pal_elements: model.pal_elements,
                   zone_search: "",
                   zone_search_open: True,
@@ -274,6 +280,11 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           shown,
         ),
       ),
+      effect.none(),
+    )
+
+    UserToggledHideZeroSpawn(hide_zero_spawn) -> #(
+      Model(..model, hide_zero_spawn:),
       effect.none(),
     )
 
@@ -860,6 +871,7 @@ fn tables_section(
               model.sorts,
               model.optional_columns,
               model.value_filters,
+              model.hide_zero_spawn,
               formatter,
             )
         }
@@ -873,6 +885,7 @@ fn render_tables(
   sorts: Dict(String, TableSort),
   optional_columns: Dict(String, Dict(String, Bool)),
   value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+  hide_zero_spawn: Bool,
   formatter: TableFormatter,
 ) -> Element(Msg) {
   case tables {
@@ -884,20 +897,44 @@ fn render_tables(
       html.p([attribute.class("empty")], [
         html.text("No tables matched this Markdown (or filter)."),
       ])
-    _ ->
-      html.div(
-        [attribute.class("tables")],
-        list.map(tables, fn(table) {
+    _ -> {
+      let has_zero =
+        list.any(tables, fn(table) {
+          list.any(table.rows, row_marked_zero_spawn)
+        })
+      html.div([attribute.class("tables")], [
+        case has_zero {
+          False -> element.none()
+          True ->
+            html.div([attribute.class("column-toggles")], [
+              html.label([], [
+                html.input([
+                  attribute.type_("checkbox"),
+                  attribute.checked(hide_zero_spawn),
+                  event.on_check(UserToggledHideZeroSpawn),
+                ]),
+                html.text(" Hide 0% spawn"),
+              ]),
+            ])
+        },
+        ..list.map(tables, fn(table) {
           render_table(
             table,
             sorts,
             optional_columns,
             value_filters,
+            hide_zero_spawn,
             formatter,
           )
-        }),
-      )
+        })
+      ])
+    }
   }
+}
+
+/// Sheets mark IdleQuest static spawn chance 0 with **0%** (usually in Notes).
+fn row_marked_zero_spawn(row: List(String)) -> Bool {
+  list.any(row, fn(cell) { string.contains(cell, "**0%**") })
 }
 
 fn render_table(
@@ -905,6 +942,7 @@ fn render_table(
   sorts: Dict(String, TableSort),
   optional_columns: Dict(String, Dict(String, Bool)),
   value_filters: Dict(String, Dict(String, Dict(String, Bool))),
+  hide_zero_spawn: Bool,
   formatter: TableFormatter,
 ) -> Element(Msg) {
   let id = table_id_for(table)
@@ -913,7 +951,14 @@ fn render_table(
     list.filter(table.headers, fn(header) {
       is_optional_header(table.headers, header)
     })
-  let rows = filter_rows_by_values(table, id, value_filters)
+  let rows =
+    filter_rows_by_values(table, id, value_filters)
+    |> list.filter(fn(row) {
+      case hide_zero_spawn && row_marked_zero_spawn(row) {
+        True -> False
+        False -> True
+      }
+    })
 
   html.section([attribute.class("md-table")], [
     html.h3([], render_inline_text(table.title)),

@@ -15,8 +15,8 @@ Big targets by HP: Tunare **~530k**, Guardian of Tunare **~310k**, Ail **~215k**
 
 | Mob | Do | Class | Area | Notes |
 | --- | --- | --- | --- | --- |
-| a gleaming sphere of light | LEAVE | — | Plane | HE enchanter Ancient Tomes → Wreath of Nature |
-| a mosscovered treant | KILL | — | Plane | Killable trash **and** HE mag Lost Tome → Chord of Vines |
+| a gleaming sphere of light | LEAVE | — | Plane | HE enchanter Ancient Tomes â†’ Wreath of Nature |
+| a mosscovered treant | KILL | — | Plane | Killable trash **and** HE mag Lost Tome â†’ Chord of Vines |
 | a mumbling totem man | LEAVE | — | Near Ancient Totem | Helper for Ancient Totem quest |
 | Ail the Elder | KILL | DRU | ~10% @ 2057, 422 | ~60 / **~215k HP**. Hardest treant. AE silence, summons feral amalgams. Chest-heavy |
 | Ancient Totem | LEAVE | RNG | 100% @ −1535, −202 | ~60 / ~41k HP. Easy mini — leave for HE wizard Scrolls (or kill after) |
@@ -34,7 +34,7 @@ Big targets by HP: Tunare **~530k**, Guardian of Tunare **~310k**, Ail **~215k**
 | Rumbleroot | KILL | DRU | ~16% @ 719, −3395 | ~60 / **~193k HP**. 10-min AE DoT — leave a buff slot to Annul. Chest-heavy |
 | Sarik the Fang | KILL | WAR | ~25% @ 249, 838 | ~55 / ~32k HP. Arms dropper |
 | Treah Greenroot | KILL | DRU | ~25% @ −1071, −791 | ~60 / **~191k HP**. Summons sylvan protectors. Chest-heavy |
-| Tunare | RAID | DRU | Tree 1524, −1633, 203 → field 1600, −235 | ~70 / **~530k HP**. Aggro despawns tree form; fight permarooted in field. Flurry, root, knockback |
+| Tunare | RAID | DRU | Tree 1524, −1633, 203 â†’ field 1600, −235 | IdleQuest **0%**. ~70 / **~530k HP**. Aggro despawns tree form; fight permarooted in field. Flurry, root, knockback |
 | Tunarean Earthmelder | LEAVE | DRU | ~50% @ −447, −2484 | ~60 / ~33k HP. Gloves of Earthcrafting / Helm of the Tracker |
 | Undogo Digolo | KILL | RNG | ~34% @ −599, −2162 | ~65 / ~38k HP. Totem. Legs / spells |
 

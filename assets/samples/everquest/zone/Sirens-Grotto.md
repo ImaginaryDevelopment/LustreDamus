@@ -1,8 +1,8 @@
 # Siren's Grotto — unique loot
 
-Velious underwater dungeon (`sirens`). ZEM **0.85×**. Hunt **45–60+**. Connects **Western Wastes** ↔ **Cobalt Scar**. Cold / wet: Enduring Breath + invis help; seahorses and icy servants **see invis**. Sirens are CLR / ENC — dispel, snare, high MR. No AAs: nameds are group; Dark Temple / epic placeholders can need a strong 55–60 group.
+Velious underwater dungeon (`sirens`). ZEM **0.85×**. Hunt **45–60+**. Connects **Western Wastes** â†” **Cobalt Scar**. Cold / wet: Enduring Breath + invis help; seahorses and icy servants **see invis**. Sirens are CLR / ENC — dispel, snare, high MR. No AAs: nameds are group; Dark Temple / epic placeholders can need a strong 55–60 group.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sirens`). Names below match IdleQuest display (`#Fellspine` → still **Fellspine** on the non-hash row; `#Mistress_of_the_Darkwater` → **#Mistress of the Darkwater**). Hash (`#`) rows are **0%** on the spawn table — they do not appear as normal camp trash; camp the listed **PH** until the named pops (or use whatever script/PH the emu uses).
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sirens`). Names below match IdleQuest display (`#Fellspine` â†’ still **Fellspine** on the non-hash row; `#Mistress_of_the_Darkwater` â†’ **#Mistress of the Darkwater**). Hash (`#`) rows are **0%** on the spawn table — they do not appear as normal camp trash; camp the listed **PH** until the named pops (or use whatever script/PH the emu uses).
 
 **Camp trash you actually see** (positive chance): `a siren enticer` / `enchantress` / `priestess` / `templar` / `beguiler` / `myrmidon`; also trash `a siren seductress` / `sorceress` (ENC ~50 — **not** the `#` unique-loot rows); `an enthralled bulthar` / `molkor` / `ulthork`; walrus / manatee / sea elephant servants; `a coldspine seahorse`; icy / watery servants; neriads. Do not expect `#a siren coercer`, `#temptress`, `#deadly siren`, etc. on the PH list — those only sit as 0% entries on those camps.
 
@@ -25,22 +25,22 @@ Sort **Nameds** by **Mob**. **Do** column: **KILL** for all nameds here (epic ha
 
 | Mob | Do | Class | Area | PH (what the camp list shows) | Notes |
 | --- | --- | --- | --- | --- | --- |
-| #a siren coercer | KILL | ENC | Siren temples | **a siren enchantress**; **a siren enticer** (~51–53) | ~55. Lute / Kelpmaidens / Gloomwater / Seacaller |
-| #a siren seductress | KILL | WAR | Siren temples | **a siren enticer**; **a siren enchantress** (~51–53) | ~55. Hair Earring / Locket / Bowl. Not the trash ENC seductress |
-| #a siren temptress | KILL | WAR | Siren temples | **a siren enchantress**; **a siren enticer** (~52–53) | ~55. Vyledorinajirnak / Siren Skin Sleeves / Kelp Robe |
-| #a siren sorceress | KILL | ENC | Siren temples | **a siren templar**; **a siren beguiler** (~55) | ~53. **Platinum Dragon Scale** |
-| #a deadly siren | KILL | CLR | Dark Temple | **a siren templar** / **beguiler**; shares camp with alluring | ~61. Spells / gems |
-| #Helsia Mindreaver | KILL | CLR | Siren temples | **a siren seductress** (trash ENC) / **enticer** camps | ~61. Bowl + Kelpmaidens **or** Hair Earring + Locket |
-| #Elna Kelpweaver | KILL | CLR | Siren temples | **a siren seductress** / **enticer** | ~59. Hair Earring / Locket / Bowl |
-| #Mistress Latazura | KILL | ENC | Dark Temple | Own placeholder / long timer (~86400s / script) | ~61–66. Seacaller / Lute / Kelpmaidens / Gloomwater |
-| #High Priestess Sercema | KILL | CLR | Dark Temple | Own placeholder (~86400s) | ~61. Spells / gems — distinct from **Priestess Sercema** |
-| #Mistress of the Darkwater | KILL | ENC | Dark Temple | Own placeholder (~93744s) | ~66. **Shard of Pure Ice** |
-| #Faleniel of Darkwater | KILL | WAR | Dark Temple | Own placeholder (~7200s) | ~70. IdleQuest post-classic named |
-| #shimmering sea spirit | KILL | WAR | Water / tunnels | **a watery servant**; **an icy servant** | ~52. Drums / Wavecrasher / Shield of the Tsunami |
-| #Ulth the Enraged | KILL | WAR | Ulthork dens | **an enthralled bulthar** (often ~80% PH) | ~50. Behemoth Fangs / Hide / Walrus Fang Belt |
-| #a rampaging ulthork | KILL | WAR | Ulthork dens | **an enthralled bulthar** | ~55. **Netted Kelp** set |
-| #an enthralled ulthork | KILL | WAR | Ulthork dens | **an enthralled bulthar** / molkor / walrus mix | ~55 named table. Trash **an enthralled ulthork** also exists at ~47 |
-| #a massive manatee | KILL | WAR | Walrus dens | **a massive walrus**; servant manatee / walrus | ~55 |
+| #a siren coercer | KILL | ENC | Siren temples | **a siren enchantress**; **a siren enticer** (~51–53) | IdleQuest **0%**. ~55. Lute / Kelpmaidens / Gloomwater / Seacaller |
+| #a siren seductress | KILL | WAR | Siren temples | **a siren enticer**; **a siren enchantress** (~51–53) | IdleQuest **0%**. ~55. Hair Earring / Locket / Bowl. Not the trash ENC seductress |
+| #a siren temptress | KILL | WAR | Siren temples | **a siren enchantress**; **a siren enticer** (~52–53) | IdleQuest **0%**. ~55. Vyledorinajirnak / Siren Skin Sleeves / Kelp Robe |
+| #a siren sorceress | KILL | ENC | Siren temples | **a siren templar**; **a siren beguiler** (~55) | IdleQuest **0%**. ~53. **Platinum Dragon Scale** |
+| #a deadly siren | KILL | CLR | Dark Temple | **a siren templar** / **beguiler**; shares camp with alluring | IdleQuest **0%**. ~61. Spells / gems |
+| #Helsia Mindreaver | KILL | CLR | Siren temples | **a siren seductress** (trash ENC) / **enticer** camps | IdleQuest **0%**. ~61. Bowl + Kelpmaidens **or** Hair Earring + Locket |
+| #Elna Kelpweaver | KILL | CLR | Siren temples | **a siren seductress** / **enticer** | IdleQuest **0%**. ~59. Hair Earring / Locket / Bowl |
+| #Mistress Latazura | KILL | ENC | Dark Temple | Own placeholder / long timer (~86400s / script) | IdleQuest **0%**. ~61–66. Seacaller / Lute / Kelpmaidens / Gloomwater |
+| #High Priestess Sercema | KILL | CLR | Dark Temple | Own placeholder (~86400s) | IdleQuest **0%**. ~61. Spells / gems — distinct from **Priestess Sercema** |
+| #Mistress of the Darkwater | KILL | ENC | Dark Temple | Own placeholder (~93744s) | IdleQuest **0%**. ~66. **Shard of Pure Ice** |
+| #Faleniel of Darkwater | KILL | WAR | Dark Temple | Own placeholder (~7200s) | IdleQuest **0%**. ~70. IdleQuest post-classic named |
+| #shimmering sea spirit | KILL | WAR | Water / tunnels | **a watery servant**; **an icy servant** | IdleQuest **0%**. ~52. Drums / Wavecrasher / Shield of the Tsunami |
+| #Ulth the Enraged | KILL | WAR | Ulthork dens | **an enthralled bulthar** (often ~80% PH) | IdleQuest **0%**. ~50. Behemoth Fangs / Hide / Walrus Fang Belt |
+| #a rampaging ulthork | KILL | WAR | Ulthork dens | **an enthralled bulthar** | IdleQuest **0%**. ~55. **Netted Kelp** set |
+| #an enthralled ulthork | KILL | WAR | Ulthork dens | **an enthralled bulthar** / molkor / walrus mix | IdleQuest **0%**. ~55 named table. Trash **an enthralled ulthork** also exists at ~47 |
+| #a massive manatee | KILL | WAR | Walrus dens | **a massive walrus**; servant manatee / walrus | IdleQuest **0%**. ~55 |
 
 ## Unique loot
 

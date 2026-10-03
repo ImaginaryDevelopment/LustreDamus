@@ -2,7 +2,7 @@
 
 Velious crypt (`necropolis`). ZEM **1.50×**. Hunt **45–60+**. Enter from **Western Wastes** clickable tower ~−2800, 380. Succor ~−100, 2000 (zone out). Traps everywhere (root / fear / DD / swarming beetles / **a dragon construct**). Most trash does **not** see invis — traps and constructs do the camping. Paebala ("good" rats) vs Chetari (Zlandicar's) war underground. No AAs: Queen / Vilefang / Chetari nameds are group; **Vaniki** and **Zlandicar** are **RAID**-tier.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`necropolis`). Mob names below match IdleQuest display names (`#Queen_Raltaas` → **Queen Raltaas**, `a_Paebala_Spirit_Talker` → **a Paebala Spirit Talker**).
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`necropolis`). Mob names below match IdleQuest display names (`#Queen_Raltaas` â†’ **Queen Raltaas**, `a_Paebala_Spirit_Talker` â†’ **a Paebala Spirit Talker**).
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot
@@ -14,18 +14,18 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Mob | Do | Class | Loc | Notes |
 | --- | --- | --- | --- | --- |
 | a Paebala Spirit Talker | KILL | SHM | Paebala tunnels | ~51–58. Spirit Talker set. IdleQuest also **Slani Veekilaleeki** on same loot |
-| Chetari Courier | KILL | WAR | ~25% @ 608, −1325 | ~48. **Wurmscale Scroll** → Mask of War |
-| Dominator Yisaki | KILL | WAR | 253, −369, −215 | ~60. Scroll of Knowledge (PoG Visage of Life). Flayed gloves |
+| Chetari Courier | KILL | WAR | ~25% @ 608, −1325 | ~48. **Wurmscale Scroll** â†’ Mask of War |
+| Dominator Yisaki | KILL | WAR | 253, −369, −215 | IdleQuest **0%**. ~60. Scroll of Knowledge (PoG Visage of Life). Flayed gloves |
 | Dralliw`tar | KILL | WAR | 100% @ 475, 750 | ~59. Paebala side |
-| Dustbinder Grakina | KILL | NEC | ~34% @ −201, −1015 | ~60. Spells; shares Chetari caster loot (Wardstaff table) |
-| Garzicor's Corpse | KILL | WAR | 1523, 1109 | Triggered. Death → **Garzicor's Wraith**. Spirit of Garzicor |
+| Dustbinder Grakina | KILL | NEC | ~34% @ −201, −1015 | IdleQuest **0%**. ~60. Spells; shares Chetari caster loot (Wardstaff table) |
+| Garzicor's Corpse | KILL | WAR | 1523, 1109 | Triggered. Death â†’ **Garzicor's Wraith**. Spirit of Garzicor |
 | Garzicor's Wraith | KILL | WAR | 1523, 1109 | Final Garzicor step. Spawns from Corpse |
 | Jaled Dar`s shade | LEAVE | CLR | 1587, −119 | Sleeper's Key. Needs Jaled Dar Tomb Key (or rogue pick). Stun trap on steps |
 | Neb | LEAVE | WAR | 100% @ 504, 751 | LEAVE for Zlandicar key path; kill for Neb key path. Quad / flurry |
 | Pierre | KILL | ROG | ~10% @ 348, 578 | ~60. Paebala rebel PH tier |
-| Queen Raltaas | KILL | WAR | ~25% @ 836, −1540; 775, −456; 1005, 235 | ~66. Timed cycle / can despawn. Spawns hatchlings on death. Face: **Queen's Carapace** |
+| Queen Raltaas | KILL | WAR | ~25% @ 836, −1540; 775, −456; 1005, 235 | IdleQuest **0%**. ~66. Timed cycle / can despawn. Spawns hatchlings on death. Face: **Queen's Carapace** |
 | Seeker Bulava | KILL | NEC | 957, −168, −255 | ~60. Scroll of Enlightenment; Chetari Wardstaff |
-| Vaniki | RAID | NEC | 50% @ five Chetari spots | ~66. 122h cycle; unique; invisible-man PH. Willsapper. Heart → Neb key |
+| Vaniki | RAID | NEC | 50% @ five Chetari spots | ~66. 122h cycle; unique; invisible-man PH. Willsapper. Heart â†’ Neb key |
 | Vilefang | KILL | WAR | 100% @ −315, −1257 | ~60. 1-day. Blind + poison. Infestation / Poison Etched Wristband |
 | Warmaster Utvara | KILL | WAR | 100% @ 588, −708 | ~60. Scroll of Insight; Chetari Bonecrafted Shield |
 | Zlandicar | RAID | NEC | 50% @ −269, −291 | ~70. LEAVE for Neb key path; kill for loot / Zlandicar key path. Does not see invis |
@@ -85,21 +85,21 @@ Notable uniques only — skip common Aged / Balanced / Hammered Velium weapons a
 
 | Item | Mob | Quest |
 | --- | --- | --- |
-| Vaniki's Heart; Zlandicar's Heart | Vaniki; Zlandicar | **Key to Jaled Dar's Lair (Neb)** → Jaled Dar's Tomb Key + Neb's Warbone |
-| Neb's head | Neb | **Key to Jaled Dar's Lair (Zlandicar)** → Jaled Dar's Tomb Key |
+| Vaniki's Heart; Zlandicar's Heart | Vaniki; Zlandicar | **Key to Jaled Dar's Lair (Neb)** â†’ Jaled Dar's Tomb Key + Neb's Warbone |
+| Neb's head | Neb | **Key to Jaled Dar's Lair (Zlandicar)** â†’ Jaled Dar's Tomb Key |
 | Zlandicar's Talisman (or other First Brood talisman) | Zlandicar (or WW / ToV dragons) | **Key to Sleeper's Tomb** — hand to **Jaled Dar`s shade** |
 | Wurmscale Scroll | Chetari Courier | **Mask of War** — Captain Bvellos (Kael) |
 | Scroll of Knowledge / Insight / Enlightenment / Power | Yisaki / Utvara / Bulava / Vaniki | **Scrolls of the Ancient Totem** (PoG) |
 | A chipped fang | Vilefang | **Ralgyn's Promise** |
-| Dragonwing Skin; Dragonbone Dust | ground spawn / Garzicor trigger | **Spirit of Garzicor** — combine in urn; later wake Corpse → Wraith |
+| Dragonwing Skin; Dragonbone Dust | ground spawn / Garzicor trigger | **Spirit of Garzicor** — combine in urn; later wake Corpse â†’ Wraith |
 
 ## Quest NPCs
 
 | Item | Mob | Notes |
 | --- | --- | --- |
-| Jaled Dar's Tomb Key / Neb's Warbone | Neb | LEAVE unless doing Zlandicar key path. Paebala tunnels 504, 751. Hail → help → turn in both hearts |
+| Jaled Dar's Tomb Key / Neb's Warbone | Neb | LEAVE unless doing Zlandicar key path. Paebala tunnels 504, 751. Hail â†’ help â†’ turn in both hearts |
 | Jaled Dar's Tomb Key | Zlandicar | LEAVE unless killing for loot / Neb key. Lair −269, −291. Apprehensive+ or sneak; turn in Neb's head |
 | Sleeper's Key | Jaled Dar`s shade | LEAVE. Crypt 1587, −119. Need tomb key or 210+ pick. Levitate for steps; stun trap in front |
-| Assembled Naginata / Garzicor | Garzicor's Corpse; Garzicor's Wraith | Trigger phrase at 1523, 1109. Corpse → Wraith. Do not train constructs to zone-in |
+| Assembled Naginata / Garzicor | Garzicor's Corpse; Garzicor's Wraith | Trigger phrase at 1523, 1109. Corpse â†’ Wraith. Do not train constructs to zone-in |
 | Mask of War | Chetari Courier | Kill for Wurmscale Scroll — turn-in is in Kael, not here |
 | Scrolls of the Ancient Totem | Dominator Yisaki; Warmaster Utvara; Seeker Bulava; Vaniki | Scroll drops here; quest continues in Plane of Growth |

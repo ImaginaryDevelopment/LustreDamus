@@ -12,7 +12,7 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 | Mob | Do | Class | Area | Notes |
 | --- | --- | --- | --- | --- |
-| an angry chef | KILL | WAR | Mid floors | ~34. **Crystallized Shadow Tunic** |
+| an angry chef | KILL | WAR | Mid floors | IdleQuest **0%**. ~34. **Crystallized Shadow Tunic** |
 | Angry Librarian | KILL | WAR | 3rd floor | ~33. Always **Three Toothed Key** |
 | Cara Omica | KILL | WAR | 5th floor | ~42. Magnetic Dirk / Sorcerous Bowl; always **Small rusty key** |
 | Enraged Shadowbeast | KILL | WAR | 4th floor | ~35–40. Always **Frosty key** |
@@ -28,7 +28,7 @@ Sort **Nameds** by **Mob**. **Do** column:
 | --- | --- | --- | --- |
 | Tserrina's Robe (Chest) | Tserrina Syl'Tor | NEC WIZ MAG ENC | **2-group.** AC 8 CHA +3 INT +6 HP +10 Mana +50 SV COLD +5 SV MAGIC +10. NO DROP |
 | Tserrina's Staff (2H Blunt) | Tserrina Syl'Tor | NEC WIZ MAG ENC | **2-group.** 12/52 (0.23), DEX +5 CHA +6 INT +10 HP +15 Mana +55, Specter Lifetap. NO DROP |
-| Tserrina's Key | Tserrina Syl'Tor | — | **2-group.** 1st-floor mirror → 7th-floor mirror room. NO DROP |
+| Tserrina's Key | Tserrina Syl'Tor | — | **2-group.** 1st-floor mirror â†’ 7th-floor mirror room. NO DROP |
 | Abram's Axe of the Stoic (2H Slashing) | Incoherent Spirit | WAR PAL RNG SHD | 30/48 (0.62), AC 5 STA +15, Invigor. HUM BAR DWF TRL OGR HFL GNM |
 | Talisman of Vhal Sera (Neck) | Vhal'Sera | BRD SHM NEC WIZ MAG ENC | AC 2 CHA +4 WIS/INT +3. No BAR DWF TRL OGR HFL. NO DROP |
 | Large metal key | Vhal'Sera | — | 7th-floor key; also unlocks mirror-room exit. NO DROP |

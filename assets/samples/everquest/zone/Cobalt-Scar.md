@@ -2,7 +2,7 @@
 
 Velious outdoor (`cobaltscar`). ZEM **1.00×**. Hunt **35–50+**. Coast / cliffs between **Siren's Grotto**, **Wakening Land**, and open sea. **Othmir** beach camps (friendly — LEAVE pups / quest NPCs), **cobalt drakes** and **wyverns** on the cliffs, water dragon **Kelorek`Dar** in the scar. Othmir hate wolf form. No AAs: nameds are group; **Kelorek`Dar** is a strong 60+ / small-raid water dragon (long respawn).
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`cobaltscar`). Mob names match IdleQuest display (`Kelorek\`Dar` → **Kelorek`Dar**, `#Yvolcarn` → **Yvolcarn**).
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`cobaltscar`). Mob names match IdleQuest display (`Kelorek\`Dar` â†’ **Kelorek`Dar**, `#Yvolcarn` â†’ **Yvolcarn**).
 
 Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are Othmir quest / merchant NPCs.
 
@@ -10,9 +10,9 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are Othmir quest /
 
 | Mob | Class | Area | PH / notes |
 | --- | --- | --- | --- |
-| a bulthar herdleader | WAR | Beach / bulthar | ~52. **Bulthar Trunk** for Chief Kalan quest |
+| a bulthar herdleader | WAR | Beach / bulthar | IdleQuest **0%**. ~52. **Bulthar Trunk** for Chief Kalan quest |
 | a haunted seachest | WAR | Shore | ~40. Mimic. **Section of a Draconic Tome**; **100' of Waterproofed Rope** |
-| Azureake | WAR | Drake cliffs | ~50. Unique PH among **a cobalt drake**. Cobalt Drake Hide |
+| Azureake | WAR | Drake cliffs | IdleQuest **0%**. ~50. Unique PH among **a cobalt drake**. Cobalt Drake Hide |
 | Bloogy Shellcracker | — | Othmir camp | ~35–37. LEAVE. **Saucy Salted Seadragon Steak** |
 | Blumblum Swigwater | — | Othmir camp | ~34. LEAVE. Merchant / brew path |
 | Bungre Crawcrusher | RNG | Othmir camp | ~45. LEAVE for **Lodizal Shell Shield**; also Crustacean Shell table |
@@ -22,7 +22,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are Othmir quest /
 | Kelorek`Dar | WAR | Water / SG approach | ~65. **RAID-tier.** Long respawn. Orb / Cloak / Typhoon / Spine Razor / Scales |
 | Qarrgy Scallopgobbler | RNG | Othmir camp | ~47–48. LEAVE for **Kelorek's Scales** / Emerald Dragonscale / Crustacean quests; also Shell BP table |
 | Yoppa Greenthumb | WAR | Outdoor | ~65. IdleQuest named |
-| Yvolcarn | WAR | Wyvern cliffs | ~52. PH among wyverns. Hates wolf form. **Drixie Remains**; Arctic Wyvern Hide |
+| Yvolcarn | WAR | Wyvern cliffs | IdleQuest **0%**. ~52. PH among wyverns. Hates wolf form. **Drixie Remains**; Arctic Wyvern Hide |
 
 ## Unique loot
 
@@ -36,7 +36,7 @@ Notable uniques only — skip generic gems / Velium junk unless quest-tied.
 | Cloak of Crystalline Waters (Back) | Kelorek`Dar | 65 | ALL, AC 10 DEX/AGI +9 Mana +50 Haste +36%. NO DROP |
 | Bioluminescent Orb (Primary/Secondary) | Kelorek`Dar | 65 | ALL, STR +8 INT +10, Blinding Luminance click. NO DROP |
 | Kelorek`Dar Spine Razor (Piercing) | Kelorek`Dar | 65 | ROG, 9/20 (0.45). No ERU HIE TRL OGR IKS. NO DROP |
-| Sea Dragon Scales | Kelorek`Dar | 65 | **Kelorek's Scales** → Sea Dragonscale Bracer (Qarrgy). NO DROP |
+| Sea Dragon Scales | Kelorek`Dar | 65 | **Kelorek's Scales** â†’ Sea Dragonscale Bracer (Qarrgy). NO DROP |
 | Sea Dragon Meat | Kelorek`Dar | 65 | Cooking / **Saucy Salted Seadragon Steak** |
 
 ### Named / camp uniques
@@ -53,7 +53,7 @@ Notable uniques only — skip generic gems / Velium junk unless quest-tied.
 | Crustacean Shell Boots (Feet) | Othmir; Bungre; Qarrgy | 42–48 | Same classes, AC 10 STR +6 DEX −2 STA +12 CHA −5. NO DROP |
 | Crustacean Shell Bracers (Wrist) | Othmir; Bungre; Qarrgy | 42–48 | Same classes, AC 9 STR +5 STA +4 CHA −5. NO DROP |
 | Crustacean Shell Shield (Secondary) | Othmir; Bungre; Qarrgy | 42–48 | WAR CLR PAL RNG SHD DRU BRD ROG SHM, AC 17 STR +4 STA +10 CHA −7. NO DROP |
-| Bulthar Trunk | a bulthar herdleader; a bulthar | 44–52 | **Bulthar Trunks** → Chief Kalan |
+| Bulthar Trunk | a bulthar herdleader; a bulthar | 44–52 | **Bulthar Trunks** â†’ Chief Kalan |
 | Drixie Remains | Yvolcarn | 52 | Quest / lore. Tradeable |
 | Seal of Cedrick | Cedrick | 65 | IdleQuest. Tradeable |
 | Section of a Draconic Tome | a haunted seachest | 40 | Quest reagent. Tradeable |
@@ -66,12 +66,12 @@ Notable uniques only — skip generic gems / Velium junk unless quest-tied.
 
 | Item | Mob | Quest |
 | --- | --- | --- |
-| Bulthar Trunk (herdleader / trash) | a bulthar herdleader; a bulthar | **Bulthar Trunks** — Chief Kalan → Runed Othmir Spear / gems |
-| Sea Dragon Scales | Kelorek`Dar | **Kelorek's Scales** — Qarrgy → Sea Dragonscale Bracer |
-| Sea Dragon Meat | Kelorek`Dar | **Saucy Salted Seadragon Steak** — Bloogy Shellcracker → Othmir Prexus Totem |
+| Bulthar Trunk (herdleader / trash) | a bulthar herdleader; a bulthar | **Bulthar Trunks** — Chief Kalan â†’ Runed Othmir Spear / gems |
+| Sea Dragon Scales | Kelorek`Dar | **Kelorek's Scales** — Qarrgy â†’ Sea Dragonscale Bracer |
+| Sea Dragon Meat | Kelorek`Dar | **Saucy Salted Seadragon Steak** — Bloogy Shellcracker â†’ Othmir Prexus Totem |
 | Lodizal Shell (Iceclad) | — | **Lodizal Shell Shield** — turn in to **Bungre Crawcrusher** |
-| Emerald Dragon Scales (Wakening / Wuoshi) | — | **Emerald Dragonscale Quest** — Qarrgy → Emerald Dragonscale Tunic |
-| Ulthork Tusks | — | **Ulthork Tusks Quest** — Chief Kalan → gem lottery |
+| Emerald Dragon Scales (Wakening / Wuoshi) | — | **Emerald Dragonscale Quest** — Qarrgy â†’ Emerald Dragonscale Tunic |
+| Ulthork Tusks | — | **Ulthork Tusks Quest** — Chief Kalan â†’ gem lottery |
 | Section of a Draconic Tome | a haunted seachest | Draconic tome combines |
 
 ## Quest NPCs

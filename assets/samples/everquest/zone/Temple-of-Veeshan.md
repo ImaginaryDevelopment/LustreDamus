@@ -8,8 +8,8 @@ Velious dragon temple (`templeveeshan`). Hunt **60+**. Enter from **Western Wast
 
 | Wing | Armor molds | Faction path |
 | --- | --- | --- |
-| **West** | **Ancient Tarnished** (plate / chain / leather / silk) | Ally **Kromzek** → **Kael** class armor |
-| **East / Halls of Testing** | **Unadorned** (plate / chain / leather / silk) | Ally **Claws of Veeshan** → **Skyshrine** class armor |
+| **West** | **Ancient Tarnished** (plate / chain / leather / silk) | Ally **Kromzek** â†’ **Kael** class armor |
+| **East / Halls of Testing** | **Unadorned** (plate / chain / leather / silk) | Ally **Claws of Veeshan** â†’ **Skyshrine** class armor |
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot (wing trash / lesser nameds; still raid clears)
@@ -21,24 +21,24 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 | Mob | Do | Class | Wing / notes |
 | --- | --- | --- | --- |
-| Aaryonar | RAID | PAL | ~66. Amulet of the Dreadgazer / Hand of the Master / seasons masks |
-| Cekenar | RAID | MNK | ~66. Cekenar's Claw / Blackstar / Frosted Ice Spike |
-| Dozekar the Cursed | RAID | WAR | ~66. Tear set (Black / White / Poison / Flame Kissed / …) |
-| Eashen of the Sky | RAID | WIZ | ~66. Sky ring / bracelet / cloak / Twisted Steel |
-| Gozzrem | RAID | CLR | ~66. Wand of the Black Dragon Eye / Rekeklo's War Sword |
-| Ikatiar the Venom | RAID | ROG | ~66. Ancient Wyvern Hide set / Ikatiar's Stinger |
-| Jorlleag | RAID | SHM | ~66. Sprinkler of the Spirits / Facesmasher |
-| Lady Mirenilla | RAID | WAR | ~66. Mithril Helm / Gauntlets / Boots / Frostwrath |
-| Lady Nevederia | RAID | ENC | ~66. Nevederia's Eyes / Claw / Horn / Girdle of Dark Power |
-| Lendiniara the Keeper | RAID | CLR | ~66. Lendiniara's Talisman / Superiority set |
-| Lord Feshlak | RAID | WAR | ~66. Amulet of the Storm / Chestplate of Fiery Might / Thunderstone |
-| Lord Koi`Doken | RAID | ROG | ~66. Deep Sea set / Siren Song dagger |
-| Lord Kreizenn | RAID | MNK | ~66. Dawncaller / Flame Etched Short Sword / Kreizenn's Flame |
-| Lord Vyemm | RAID | PAL | ~66. Gaudralek / Vyemm's Eyes / Fang / Silver Whip of Rage |
-| Sevalak | RAID | PAL | ~66. Great Spear of Dawn / Shield of Midnight |
-| Telkorenar | RAID | MNK | ~66. True Mithril Breastplate / Lance of Thunder |
-| Zlexak | RAID | ROG | ~66. Dragonspine Rapier / Windraider's Belt |
-| Dagarn the Destroyer | RAID | WAR | ~70. Boots / Bow / Belt of the Destroyer / Dagarn's Tail |
+| Aaryonar | RAID | PAL | IdleQuest **0%**. ~66. Amulet of the Dreadgazer / Hand of the Master / seasons masks |
+| Cekenar | RAID | MNK | IdleQuest **0%**. ~66. Cekenar's Claw / Blackstar / Frosted Ice Spike |
+| Dozekar the Cursed | RAID | WAR | IdleQuest **0%**. ~66. Tear set (Black / White / Poison / Flame Kissed / …) |
+| Eashen of the Sky | RAID | WIZ | IdleQuest **0%**. ~66. Sky ring / bracelet / cloak / Twisted Steel |
+| Gozzrem | RAID | CLR | IdleQuest **0%**. ~66. Wand of the Black Dragon Eye / Rekeklo's War Sword |
+| Ikatiar the Venom | RAID | ROG | IdleQuest **0%**. ~66. Ancient Wyvern Hide set / Ikatiar's Stinger |
+| Jorlleag | RAID | SHM | IdleQuest **0%**. ~66. Sprinkler of the Spirits / Facesmasher |
+| Lady Mirenilla | RAID | WAR | IdleQuest **0%**. ~66. Mithril Helm / Gauntlets / Boots / Frostwrath |
+| Lady Nevederia | RAID | ENC | IdleQuest **0%**. ~66. Nevederia's Eyes / Claw / Horn / Girdle of Dark Power |
+| Lendiniara the Keeper | RAID | CLR | IdleQuest **0%**. ~66. Lendiniara's Talisman / Superiority set |
+| Lord Feshlak | RAID | WAR | IdleQuest **0%**. ~66. Amulet of the Storm / Chestplate of Fiery Might / Thunderstone |
+| Lord Koi`Doken | RAID | ROG | IdleQuest **0%**. ~66. Deep Sea set / Siren Song dagger |
+| Lord Kreizenn | RAID | MNK | IdleQuest **0%**. ~66. Dawncaller / Flame Etched Short Sword / Kreizenn's Flame |
+| Lord Vyemm | RAID | PAL | IdleQuest **0%**. ~66. Gaudralek / Vyemm's Eyes / Fang / Silver Whip of Rage |
+| Sevalak | RAID | PAL | IdleQuest **0%**. ~66. Great Spear of Dawn / Shield of Midnight |
+| Telkorenar | RAID | MNK | IdleQuest **0%**. ~66. True Mithril Breastplate / Lance of Thunder |
+| Zlexak | RAID | ROG | IdleQuest **0%**. ~66. Dragonspine Rapier / Windraider's Belt |
+| Dagarn the Destroyer | RAID | WAR | ~70 / 100%. Boots / Bow / Belt of the Destroyer / Dagarn's Tail |
 
 ### Wing trash / lesser nameds (live spawn %)
 

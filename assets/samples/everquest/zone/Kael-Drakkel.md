@@ -22,17 +22,17 @@ Sort **Nameds** by **Mob** when tracking. **Do** column:
 | Clrakk Blackfist | KILL | WAR | City | ~43–44. Dark Spear of Venom |
 | Derakor the Vindicator | RAID | WAR | Near throne | ~70 / **~180k HP**. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
 | Dlammaz Stormslayer | KILL | WAR | City | ~62. **Cloak of the Maelstrom** |
-| Drendar Blackblade | KILL | WAR | High named | ~66. IdleQuest custom table (Ceremonial sword / Kromzek head) |
+| Drendar Blackblade | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Custom table (Ceremonial sword / Kromzek head) |
 | Fjokar Frozenshard | KILL | ROG | City | ~60. **Eyepatch of the Shadows** / Frozen Shard |
 | Gkrean Prophet of Tallon | KILL | CLR | Prophets | ~58. Always **Idol of Corruption**. Gauntlets of Iron Tactics |
 | Gleed Dragonhunter | KILL | RNG | City | ~52–56. **Bow of the Huntsman** |
-| Irrek Bloodfist | KILL | WAR | High named | ~66. Same IdleQuest loot table as Drendar / Klraggek |
+| Irrek Bloodfist | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar / Klraggek |
 | Kael Militia Captain | KILL | PAL | Militia | ~49. **Militia Captain Tunic** |
 | Kallis Stormcaller | KILL | WAR | City | ~58. Always **Kallis' Head** |
 | Keldor Dek`Torek | KILL | WIZ | City | ~65. Always **Orb of the Infinite Void** |
 | King Tormax | RAID | WAR | Throne | ~70 / **~452k HP**. Always **King Tormax's Head** + Kromzek crown set |
 | Klaggan Iceshard | KILL | WAR | Iceshard Keep | ~45–46. **Greaves of Avoidance** |
-| Klraggek the Slayer | KILL | WAR | High named | ~66. Same IdleQuest loot table as Drendar |
+| Klraggek the Slayer | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar |
 | Korakaz | KILL | WAR | City | ~51–53. Bladesman's Axe / Sword |
 | Kyenka | KILL | SHM | Living Dragons | ~57. **Barbed Dragonscale** Boots / Pauldrons |
 | Noble Helssen | KILL | WIZ | City | ~55. Always **Scale of Hsagra**. Silvery Mask |

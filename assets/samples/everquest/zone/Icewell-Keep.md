@@ -16,7 +16,7 @@ Coldain keep above Thurgadin (`thurgadinb`). Hunt **45–60+**; **Dain Frostreav
 
 | Mob | Do | Class | Area | Notes |
 | --- | --- | --- | --- | --- |
-| Dain Frostreaver IV | RAID | WAR | Throne | ~70 / **~352k HP**. Always **Dain Frostreaver's Head**. Frostreaver set |
+| Dain Frostreaver IV | RAID | WAR | Throne | IdleQuest **0%**. ~70 / **~352k HP**. Always **Dain Frostreaver's Head**. Frostreaver set |
 | Seneschal Aldikar | FACTION | WAR | Keep | ~65 / ~75k HP. **Blade / Shield of the Seneschal** |
 | Chamberlain Krystorf | FACTION | PAL | Keep | ~60 / ~80k HP. **Gown / Staff of the Chamberlain** |
 | Grand Huntsman Darral | FACTION | WAR | Keep | ~49 / ~11k HP. **Boots of the Huntsman**; Head of the Huntsman |
@@ -79,6 +79,6 @@ Coldain keep above Thurgadin (`thurgadinb`). Hunt **45–60+**; **Dain Frostreav
 
 | NPC | Do | Notes |
 | --- | --- | --- |
-| Dain Frostreaver IV | RAID | Raid for loot / head — expect a huge **Coldain** hit |
+| Dain Frostreaver IV | RAID | IdleQuest **0%**. Raid for loot / head — expect a huge **Coldain** hit |
 | Royal Armorer Slade; Loremaster Solstrin | LEAVE | No meaningful unique |
 | Council / royal Coldain | FACTION | Kill only if you are done with Coldain armor forever |

@@ -18,7 +18,7 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Coldain / quest NPCs.
 | shardwurm matriarch | CLR | Shardwurm | ~45. White Scaled / Bracer of Scale / Wurm Tendon Whip |
 | shardwurm broodmother | WAR | Shardwurm | ~50. White Scaled Tunic / fang |
 | Taskmaster Abyott | WAR | Giants | ~62. **RAID**-tier. Head of the Taskmaster / Edge of the Taskmaster |
-| Narandi the Wretched | SHD | Event | ~65. IdleQuest **0%** static — Coldain war / ring path. Lance / Crown / heads |
+| Narandi the Wretched | SHD | Event | ~65. Coldain war / ring event (not a normal PH camp). Lance / Crown / heads |
 | Gorul Longshanks | WAR | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
 | Murdrick Tardok | ROG | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
 | Kromrif Captain / General / Veteran / Warlord | WAR/SHD | Giant keep | ~52–60. Glowing Velium Axe (lower ranks) |
@@ -92,7 +92,7 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Coldain / quest NPCs.
 | Coldain Military Wristguard (Wrist) | Korf Brokenhammer | 55 | |
 | Section of a Draconic Tome | Fergul Frostsky | 40 | Quest |
 | Runebranded Stone Buckler (Secondary) | Gorul Longshanks | 47 | IdleQuest **0%** |
-| Narandi's Lance / Crown / Choker / Eye | Narandi the Wretched | 65 | Coldain war event — **0%** static |
+| Narandi's Lance / Crown / Choker / Eye | Narandi the Wretched | 65 | Coldain war event |
 | Earring of the Frozen Skull (Ear) | Narandi the Wretched | 65 | Event |
 
 ## Quest items

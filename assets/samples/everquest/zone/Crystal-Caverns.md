@@ -15,13 +15,13 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Mob | Do | Class | Area | Notes |
 | --- | --- | --- | --- | --- |
 | Queen Dracnia | KILL | WAR | Spider lair | ~40 / **10%**. PH **a crystal webmaster**. Sceptre / Crystalline Robes / Messenger |
-| #Foreman Smason | KILL | WAR | Ry`Gorr mines | ~33. Foreman's Skull Cap / Frozen Long Sword |
+| #Foreman Smason | KILL | WAR | Ry`Gorr mines | IdleQuest **0%**. ~33. Foreman's Skull Cap / Frozen Long Sword |
 | Foreman Rixact | KILL | WAR | Ry`Gorr mines | ~33–34. Shares Foreman loot |
 | Ghost of Burdael | KILL | SHD | Stalag lair back | ~50. **Onyxbrand**. Spirit of Garzicor spawn (~−190, −250). Despawns ~6 min |
-| #a terror carver | KILL | WAR | Stalag | ~38. Stalagterror Spine Spear |
-| #a life leech | KILL | WAR | Lower | ~38. Blackened Crystalline Robe / Chipped Velium Amulet |
-| #a hollow crystal | KILL | WAR | Crystals | ~38. Froststone Stein / Crystal Fiber |
-| #a gem collector | KILL | WAR | Gems | ~35. Vendor jewelry chips |
+| #a terror carver | KILL | WAR | Stalag | IdleQuest **0%**. ~38. Stalagterror Spine Spear |
+| #a life leech | KILL | WAR | Lower | IdleQuest **0%**. ~38. Blackened Crystalline Robe / Chipped Velium Amulet |
+| #a hollow crystal | KILL | WAR | Crystals | IdleQuest **0%**. ~38. Froststone Stein / Crystal Fiber |
+| #a gem collector | KILL | WAR | Gems | IdleQuest **0%**. ~35. Vendor jewelry chips |
 | Historian Baenek | LEAVE | CLR | Froststone | Worn Coldain Tome. Spirit of Garzicor; despawns ~1h after tome hand-in |
 | Captain Dunstan Coldheart | LEAVE | WAR | Froststone | No loot |
 | Kramble Gemshard | LEAVE | — | Froststone | Banker — anyone can use the bank |

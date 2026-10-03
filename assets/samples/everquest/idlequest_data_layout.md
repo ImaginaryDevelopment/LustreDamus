@@ -105,7 +105,7 @@ Use when building or auditing a zone sheet (`assets/samples/everquest/zone/…`)
 
 3. **Collect NPC ids + spawn chance**  
    For each `spawngroupID`, find `spawnentry` rows. Keep `npcID` and `chance` (0–100).  
-   **`chance == 0`** often means script / PH / disabled on the static table — the NPC may still have a full loot table; camp the PH listed on other entries in the same group.
+   **`chance == 0`** often means script / PH / disabled on the static table — the NPC may still have a full loot table; camp the PH listed on other entries in the same group. On Nameds Notes, write the marker `IdleQuest **0%**` (must include the literal `**0%**` substring). The site shows a **Hide 0% spawn** checkbox that filters any table row containing that marker.
 
 4. **Load NPC rows**
 
@@ -216,7 +216,8 @@ Other sheet-friendly fields: `ac`, `astr`/`asta`/`aagi`/`adex`/`awis`/`aint`/`ac
 
 - **100%** / always — sole or guaranteed entry  
 - **~25%** — PH camp  
-- **0%** — still list if loot matters; note PH / script / disabled static chance  
+- **0%** — still list if loot matters; put `IdleQuest **0%**` in Notes (Hide checkbox), plus PH / script note  
+ 
 
 ---
 
