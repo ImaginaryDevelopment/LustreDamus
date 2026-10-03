@@ -10,7 +10,7 @@ IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing
 
 | Mob | Class | Chance | HP | Loc | PH / notes |
 | --- | --- | ---: | ---: | --- | --- |
-| Lithiniath (Black) | ENC | ? | ~36k | B&W room ~20% @ −88, 395; 509, −847 | IdleQuest **0%**. 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
+| Lithiniath (Black) | ENC | 0% | ~36k | B&W room ~20% @ −88, 395; 509, −847 | IdleQuest **0%**. 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
 | Ferjeneror | WIZ | 100% | ~29k | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
 | A False Treasure Chest | ENC | 100% | ~14–20k | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
 | Bit | WIZ | 100% | ~14k | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
@@ -37,7 +37,7 @@ IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing
 | a White Stallion | WAR | 100% | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn â†’ white Lithiniath |
 | Dop Dop | WAR | 100% | ~3k | Forest mushrooms | Named shrooms; drop squires |
 | Dinner | WAR | ? | ~11 | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
-| Lithiniath (White) | ENC | ? | — | Same room | IdleQuest **0%**. Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
+| Lithiniath (White) | ENC | 0% | — | Same room | IdleQuest **0%**. Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
 
 ### IdleQuest 0% (script / PH)
 

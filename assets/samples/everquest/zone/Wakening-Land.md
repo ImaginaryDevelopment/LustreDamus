@@ -11,7 +11,7 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Tunarean / Aghllsews quest NPCs and
 | Mob | Class | Chance | Area | PH / notes |
 | --- | --- | ---: | --- | --- |
 | Wuoshi | DRU | 100% | Dragon / PoGrowth approach | ~64. **RAID.** Scimitar of the Emerald Dawn / Tanglewood Shield / Skydarkener |
-| Lantaric`Dar | WAR | ? | Outdoor | ~70. IdleQuest **0%** **RAID** |
+| Lantaric`Dar | WAR | 0% | Outdoor | ~70. IdleQuest **0%** **RAID** |
 | Scout Leader Plavo | WAR | 100% | Outdoor | ~70. **RAID** flag |
 | Frostgiant Overseer | WAR | 100% | Giants | ~56. Frostgiant Overseers Head |
 | Priest Bjek / Delar / Grenk | CLR | ? | Giants | ~56. Named heads |
@@ -26,9 +26,9 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Tunarean / Aghllsews quest NPCs and
 | Korzak Stonehammer | WAR | 25% | Giants | ~36–39 / ~25%. QUEST. Laborer pick / gems |
 | Lieutenant Krofer | WAR | 100% | Storm giants | ~47. QUEST flag |
 | Tomekeeper Bjordnessin; Toxonomist Drorjon | WIZ | ? | Giants | ~49. QUEST / lore |
-| Rapticor | WAR | ? | Raptors | ~42. IdleQuest **0%** QUEST — crushed gems / Tigeraptor Hide |
-| Lord Prismwing; Lord Gossimerwind | WAR | ? | Fairies | ~42–44. IdleQuest **0%** QUEST |
-| a storm giant architect / foreman / surveyor | mixed | ? | Giants | ~45. IdleQuest **0%** — blueprints / helm / scope |
+| Rapticor | WAR | 0% | Raptors | ~42. IdleQuest **0%** QUEST — crushed gems / Tigeraptor Hide |
+| Lord Prismwing; Lord Gossimerwind | WAR | 0% | Fairies | ~42–44. IdleQuest **0%** QUEST |
+| a storm giant architect / foreman / surveyor | mixed | 0% | Giants | ~45. IdleQuest **0%** — blueprints / helm / scope |
 | a suit of sentient armor | WAR | 50% | Armor | ~42–46. Full **Sentient** plate + Two-Handed Axe |
 | a geonid / shimmering geonid / geonid shaman | WAR/SHM | ? | Geonid caves | ~44–48. Gems; Block of Living Granite (shaman) |
 | an elder holgresh; a holgresh conjurer / elementalist / raider | MAG/WIZ | ? | Holgresh | ~33–40. Mojo / beads / wing; Gloves of Kromzek Might (raider) |
@@ -58,6 +58,7 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | #Alaurin | WAR | 0% | — |  |
 | #Lord Gossimerwind | WAR | 0% | — |  |
 | #Lord Prismwing | WAR | 0% | — |  |
+| # | WAR | 0% | — |  |
 
 ## Unique loot
 

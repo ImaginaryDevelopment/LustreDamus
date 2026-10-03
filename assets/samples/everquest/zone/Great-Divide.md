@@ -11,16 +11,16 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Coldain / quest NPCs.
 | Mob | Class | Chance | Area | PH / notes |
 | --- | --- | ---: | --- | --- |
 | Bloodmaw | WAR | 100% | Kodiak | ~20. Kodiak Claws / Pelt. Easy outdoor |
-| Yaka Razorhoof | WAR | ? | Tizmak | ~36. IdleQuest **0%** — Gauntlets of Power on table |
-| Icetooth | WAR | ? | Wolves | ~38. IdleQuest **0%** — Icetooth's Claws / Pelt |
-| Shardtooth | WAR | ? | Shardwurm | ~42. IdleQuest **0%** — Shardtooth's Flayed Skin / fang table |
+| Yaka Razorhoof | WAR | 0% | Tizmak | ~36. IdleQuest **0%** — Gauntlets of Power on table |
+| Icetooth | WAR | 0% | Wolves | ~38. IdleQuest **0%** — Icetooth's Claws / Pelt |
+| Shardtooth | WAR | 0% | Shardwurm | ~42. IdleQuest **0%** — Shardtooth's Flayed Skin / fang table |
 | Vluudeen | WAR | 20% | Wurm | ~49 / ~20%. Vluudeen's Tail |
 | shardwurm matriarch | CLR | 100% | Shardwurm | ~45. White Scaled / Bracer of Scale / Wurm Tendon Whip |
 | shardwurm broodmother | WAR | 100% | Shardwurm | ~50. White Scaled Tunic / fang |
 | Taskmaster Abyott | WAR | 100% | Giants | ~62. **RAID**-tier. Head of the Taskmaster / Edge of the Taskmaster |
 | Narandi the Wretched | SHD | 16% | Event | ~65. Coldain war / ring event (not a normal PH camp). Lance / Crown / heads |
-| Gorul Longshanks | WAR | ? | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
-| Murdrick Tardok | ROG | ? | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
+| Gorul Longshanks | WAR | 0% | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
+| Murdrick Tardok | ROG | 0% | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
 | Kromrif Captain / General / Veteran / Warlord | WAR/SHD | ? | Giant keep | ~52–60. Glowing Velium Axe (lower ranks) |
 | Kromrif Priest / High Priest | CLR | ? | Giant keep | ~53–60 |
 | Captain Stonefist | WAR | 100% | Coldain | ~65. Coldain Head drops — faction careful |
@@ -49,6 +49,7 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | #The Fabled Shardtooth | WAR | 0% | — |  |
 | #War God | WAR | 0% | — |  |
 | #War Slave | WAR | 0% | — |  |
+| # | WAR | 0% | — |  |
 
 ## Unique loot
 

@@ -18,7 +18,7 @@ Sort **Named spawn** by **Mob**. **LEAVE** = quest NPCs mid-dialogue.
 | Azdalin | WAR | 5% | Wurms | ~42 / ~5%. QUEST. Dragon Scales / Wurm Scale |
 | Gylton | WAR | 11% | Wurms | ~42 / ~11%. QUEST. Burning Embers; Dragon Scales |
 | Entalon | WAR | 12% | Wurms | ~40–44 / ~11%. QUEST. Wurm Meat |
-| Gorgul Paclock | WAR | ? | Giants | ~49. IdleQuest **0%** — Forest Loop / Tree Weave / giant axes |
+| Gorgul Paclock | WAR | 0% | Giants | ~49. IdleQuest **0%** — Forest Loop / Tree Weave / giant axes |
 | Naxot Deepwater | WAR | 100% | Outdoor | ~25. QUEST. Triumvirate Missionary Robe; Cracked Staff |
 | Atheling Plague | SHM | 100% | Outdoor | ~34. LEAVE / QUEST |
 | Asmodin Jru`dac | WAR | 100% | Outdoor | ~35. LEAVE / QUEST |
@@ -38,6 +38,7 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 
 | Mob | Class | Chance | Area | PH / notes |
 | --- | --- | ---: | --- | --- |
+| # | WAR | 0% | — |  |
 | # | WAR | 0% | — |  |
 
 ## Unique loot

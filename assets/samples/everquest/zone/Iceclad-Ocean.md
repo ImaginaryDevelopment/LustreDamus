@@ -15,9 +15,9 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Snowfang / pirate / boat quest NPCs
 | Garou | SHM | 45% | Wolves | ~38 / ~45%. Fang of the Garou; Wolves Eye Necklace |
 | Giligatabbus Igglebix | SHD | 100% | Outdoor | ~66. Giligatabbus's Head |
 | Graktar Bluehammer | WAR | 100% | Giants | ~33. QUEST flag. Giant / Velium table |
-| pulsating icestorm | WAR | ? | Outdoor | ~34. IdleQuest **0%** — Frosted Gem / Torque / Mantle / Ring / Chill Dagger |
-| Midnight | WAR | ? | Cougars | ~32. IdleQuest **0%** — Bloody Cougar Bone |
-| dire wolf stalker | WAR | ? | Wolves | ~35. IdleQuest **0%** — Iceclad Map piece |
+| pulsating icestorm | WAR | 0% | Outdoor | ~34. IdleQuest **0%** — Frosted Gem / Torque / Mantle / Ring / Chill Dagger |
+| Midnight | WAR | 0% | Cougars | ~32. IdleQuest **0%** — Bloody Cougar Bone |
+| dire wolf stalker | WAR | 0% | Wolves | ~35. IdleQuest **0%** — Iceclad Map piece |
 | a frost giant scout / elite | WAR | ? | Giants | ~30–36. Velium weapons; Woven Frost Giant Beard; Ring of Frost; Kromrif Head |
 | a snow cougar | WAR | 100% | Cats | ~27–31. Cougar Claw Earring; cougarskin |
 | a snow dervish / shadow guardian | MNK | ? | Ice | ~27–34. Ring of Frost; Frozen Mantle; Chill Dagger; Iceball |

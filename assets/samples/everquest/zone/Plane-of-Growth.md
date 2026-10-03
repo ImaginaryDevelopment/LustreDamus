@@ -48,6 +48,7 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | # Tunare | KILL | DRU | 0% | — | ~66. IdleQuest **0%** (script / PH) |
 | #BouncerMan | KILL | WAR | 0% | — | ~50. IdleQuest **0%** (script / PH) |
 | # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 
