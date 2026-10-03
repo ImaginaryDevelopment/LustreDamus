@@ -900,7 +900,9 @@ fn render_tables(
     _ -> {
       let has_zero =
         list.any(tables, fn(table) {
-          list.any(table.rows, row_marked_zero_spawn)
+          list.any(table.rows, fn(row) {
+            row_marked_zero_spawn(table.headers, row)
+          })
         })
       html.div([attribute.class("tables")], [
         case has_zero {
@@ -932,9 +934,17 @@ fn render_tables(
   }
 }
 
-/// Sheets mark IdleQuest static spawn chance 0 with **0%** (usually in Notes).
-fn row_marked_zero_spawn(row: List(String)) -> Bool {
-  list.any(row, fn(cell) { string.contains(cell, "**0%**") })
+/// Zero static spawn: Chance column is 0%/0, or legacy Notes marker **0%**.
+fn row_marked_zero_spawn(headers: List(String), row: List(String)) -> Bool {
+  let from_chance = case column_index(headers, "Chance") {
+    Error(_) -> False
+    Ok(index) -> {
+      let value = string.trim(cell_at(row, index))
+      value == "0%" || value == "0" || string.contains(value, "**0%**")
+    }
+  }
+  from_chance
+  || list.any(row, fn(cell) { string.contains(cell, "**0%**") })
 }
 
 fn render_table(
@@ -954,7 +964,7 @@ fn render_table(
   let rows =
     filter_rows_by_values(table, id, value_filters)
     |> list.filter(fn(row) {
-      case hide_zero_spawn && row_marked_zero_spawn(row) {
+      case hide_zero_spawn && row_marked_zero_spawn(table.headers, row) {
         True -> False
         False -> True
       }

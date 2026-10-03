@@ -14,26 +14,35 @@ Coldain keep above Thurgadin (`thurgadinb`). Hunt **45–60+**; **Dain Frostreav
 
 ## Nameds
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| Dain Frostreaver IV | RAID | WAR | Throne | IdleQuest **0%**. ~70 / **~352k HP**. Always **Dain Frostreaver's Head**. Frostreaver set |
-| Seneschal Aldikar | FACTION | WAR | Keep | ~65 / ~75k HP. **Blade / Shield of the Seneschal** |
-| Chamberlain Krystorf | FACTION | PAL | Keep | ~60 / ~80k HP. **Gown / Staff of the Chamberlain** |
-| Grand Huntsman Darral | FACTION | WAR | Keep | ~49 / ~11k HP. **Boots of the Huntsman**; Head of the Huntsman |
-| Royal Scribe Kaavin | FACTION | CLR | Keep | ~49. **Bindings of the Scribe** / **Amulet of Insight**; head |
-| Councilor Amberfeld / Coldember / Deynekn / Dirkins / Thubins / Wintershade | FACTION | WAR | Council | ~43–47. Shared table — **Ornate Velium Pendant** |
-| Councilor Darkfrost / Glacierbane / Icelok | FACTION | ROG/WAR | Council | ~44–45. Shared council table |
-| Councilor Darakor; Councilor Juliah Lockheart | FACTION | WAR | Council | ~44–47. Shared council table |
-| Councilor Icepike | FACTION | WAR | Council | ~43–46. Council table |
-| Royal Guardsman Braxis / Hauten / Horix / Nial / Raxine / Rhion | FACTION | WAR | Throne | ~57 / ~20k HP. Velium weapons / spells (thin uniques) |
-| Staff Sergeant Bayard | FACTION | WAR | Keep | ~55–57. **Royal Velium Frosted** plate pieces |
-| Watcher Devin / Scots / Sprin | FACTION | WAR | Keep | ~55–57. **Royal Velium Frosted** set pieces |
-| Royal Armorer Slade | LEAVE | WAR | Keep | ~49. Armor NPC — spells only on IdleQuest table |
-| Loremaster Solstrin | LEAVE | CLR | Keep | ~50. Spell scrap — leave |
-| Sentry Ellison; Servant Girl | LEAVE | WAR | Keep | Junk / no notable unique |
-| Frosticube | KILL | WAR | Keep | ~51–55. Crushed gems for Thurgadin armor combines (not Coldain) |
-| Grizznot | KILL | WAR | Keep | ~60. **Cloak of the Cave Bear** / Grizznot's Claws — bear, not Coldain |
-| Glucose | KILL | WAR | Keep | ~57. **Incandescent Bracer** (BRD) |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| Dain Frostreaver IV | RAID | WAR | 0% | Throne | IdleQuest **0%**. ~70 / **~352k HP**. Always **Dain Frostreaver's Head**. Frostreaver set |
+| Seneschal Aldikar | FACTION | WAR | 100% | Keep | ~65 / ~75k HP. **Blade / Shield of the Seneschal** |
+| Chamberlain Krystorf | FACTION | PAL | 100% | Keep | ~60 / ~80k HP. **Gown / Staff of the Chamberlain** |
+| Grand Huntsman Darral | FACTION | WAR | 100% | Keep | ~49 / ~11k HP. **Boots of the Huntsman**; Head of the Huntsman |
+| Royal Scribe Kaavin | FACTION | CLR | 100% | Keep | ~49. **Bindings of the Scribe** / **Amulet of Insight**; head |
+| Councilor Amberfeld / Coldember / Deynekn / Dirkins / Thubins / Wintershade | FACTION | WAR | ? | Council | ~43–47. Shared table — **Ornate Velium Pendant** |
+| Councilor Darkfrost / Glacierbane / Icelok | FACTION | ROG/WAR | ? | Council | ~44–45. Shared council table |
+| Councilor Darakor; Councilor Juliah Lockheart | FACTION | WAR | ? | Council | ~44–47. Shared council table |
+| Councilor Icepike | FACTION | WAR | 50% | Council | ~43–46. Council table |
+| Royal Guardsman Braxis / Hauten / Horix / Nial / Raxine / Rhion | FACTION | WAR | ? | Throne | ~57 / ~20k HP. Velium weapons / spells (thin uniques) |
+| Staff Sergeant Bayard | FACTION | WAR | 50% | Keep | ~55–57. **Royal Velium Frosted** plate pieces |
+| Watcher Devin / Scots / Sprin | FACTION | WAR | ? | Keep | ~55–57. **Royal Velium Frosted** set pieces |
+| Royal Armorer Slade | LEAVE | WAR | 100% | Keep | ~49. Armor NPC — spells only on IdleQuest table |
+| Loremaster Solstrin | LEAVE | CLR | 100% | Keep | ~50. Spell scrap — leave |
+| Sentry Ellison; Servant Girl | LEAVE | WAR | ? | Keep | Junk / no notable unique |
+| Frosticube | KILL | WAR | 100% | Keep | ~51–55. Crushed gems for Thurgadin armor combines (not Coldain) |
+| Grizznot | KILL | WAR | 34% | Keep | ~60. **Cloak of the Cave Bear** / Grizznot's Claws — bear, not Coldain |
+| Glucose | KILL | WAR | 34% | Keep | ~57. **Incandescent Bracer** (BRD) |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| #daytrigger | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
+| #nighttrigger | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 

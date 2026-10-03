@@ -8,27 +8,27 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Spirit Sentinels and scout quest NP
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Severilous | SHM | Dragon / ruins | ~60. **RAID.** Green Dragon Scales / Shield / Cloak of Flames / Blight |
-| Lativ | WAR | Outdoor | ~50. Sacred Figurine |
-| Disease-Ridden Gorilla | WAR | Apes | ~45 / ~10%. Named gorilla |
-| engorged soulsipper | WAR | Outdoor | ~38 / ~20% |
-| tainted gorilla | WAR | Apes | ~41–42. One row IdleQuest **0%** QUEST |
-| Scout Vyrak | WAR | Outdoor | ~15. LEAVE / QUEST |
-| Spirit Sentinel | WAR | Ruins / Totem | ~1. LEAVE. Druid epic / Totem path (two spawns) |
-| greater spurbone | WAR | Skeletons | ~36–40. **Sword of the Mist**; Kunzar Ku'juch; Ruined Scaled |
-| greater charbone | WAR | Skeletons | ~31–32. Iksar Targ / Trooper Shield; Shiny Emerald |
-| spurbone skeleton | WAR | Skeletons | ~31–34. Ruined Scaled set |
-| plaguebone skeleton | WAR | Skeletons | ~33–37. Yeti Fur-Lined Sleeves (IdleQuest table) |
-| an iksar traitor | WAR | Iksar | ~42. **Head of a Traitor** |
-| an Iksar tomb raider | WAR | Ruins | ~35. Lore books (Before Green / Crusade / Venril the Chief) |
-| an Iksar abductor / picaroon / anchoret / anchorite | mixed | Iksar | ~31–39. Camp trash / quest flavor |
-| an angered spirit | WAR | Spirits | ~50. Poisoned Soul |
-| Erollisi bloodthorn | WAR | Plants | ~37–41. Blood Thorn Extract |
-| Erollisi mantrap | WAR | Plants | ~33–35. Mantrap Root |
-| a tottering gorilla / ape; a tatterback ape | WAR | Apes | ~34–41. Camp XP |
-| giant scourgewing mosquito | WAR | Bugs | ~30–34 |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Severilous | SHM | 100% | Dragon / ruins | ~60. **RAID.** Green Dragon Scales / Shield / Cloak of Flames / Blight |
+| Lativ | WAR | 100% | Outdoor | ~50. Sacred Figurine |
+| Disease-Ridden Gorilla | WAR | 10% | Apes | ~45 / ~10%. Named gorilla |
+| engorged soulsipper | WAR | 20% | Outdoor | ~38 / ~20% |
+| tainted gorilla | WAR | 20% | Apes | ~41–42. One row IdleQuest **0%** QUEST |
+| Scout Vyrak | WAR | 100% | Outdoor | ~15. LEAVE / QUEST |
+| Spirit Sentinel | WAR | 100% | Ruins / Totem | ~1. LEAVE. Druid epic / Totem path (two spawns) |
+| greater spurbone | WAR | 100% | Skeletons | ~36–40. **Sword of the Mist**; Kunzar Ku'juch; Ruined Scaled |
+| greater charbone | WAR | 100% | Skeletons | ~31–32. Iksar Targ / Trooper Shield; Shiny Emerald |
+| spurbone skeleton | WAR | 100% | Skeletons | ~31–34. Ruined Scaled set |
+| plaguebone skeleton | WAR | 100% | Skeletons | ~33–37. Yeti Fur-Lined Sleeves (IdleQuest table) |
+| an iksar traitor | WAR | 100% | Iksar | ~42. **Head of a Traitor** |
+| an Iksar tomb raider | WAR | 100% | Ruins | ~35. Lore books (Before Green / Crusade / Venril the Chief) |
+| an Iksar abductor / picaroon / anchoret / anchorite | mixed | ? | Iksar | ~31–39. Camp trash / quest flavor |
+| an angered spirit | WAR | 100% | Spirits | ~50. Poisoned Soul |
+| Erollisi bloodthorn | WAR | 100% | Plants | ~37–41. Blood Thorn Extract |
+| Erollisi mantrap | WAR | 100% | Plants | ~33–35. Mantrap Root |
+| a tottering gorilla / ape; a tatterback ape | WAR | ? | Apes | ~34–41. Camp XP |
+| giant scourgewing mosquito | WAR | 100% | Bugs | ~30–34 |
 
 ## Unique loot
 

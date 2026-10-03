@@ -8,42 +8,56 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Tunarean / Aghllsews quest NPCs and
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Wuoshi | DRU | Dragon / PoGrowth approach | ~64. **RAID.** Scimitar of the Emerald Dawn / Tanglewood Shield / Skydarkener |
-| Lantaric`Dar | WAR | Outdoor | ~70. IdleQuest **0%** **RAID** |
-| Scout Leader Plavo | WAR | Outdoor | ~70. **RAID** flag |
-| Frostgiant Overseer | WAR | Giants | ~56. Frostgiant Overseers Head |
-| Priest Bjek / Delar / Grenk | CLR | Giants | ~56. Named heads |
-| Captain Glarg | WAR | Mercs / giants | ~40 / ~50%. Captain Glargs Brooch |
-| Grand Vizier Poolakacha`tei | WIZ | Holgresh | ~45 / ~25%. Holgresh Grand Vizier Beads |
-| Phenocryst | WAR | Geonids | ~58. QUEST. Block of Living Granite |
-| Lady Gelistial | DRU | Tunarean | ~55. LEAVE / kill for Gelistials Horn |
-| Eysa Florawhisper; Countess Silveana | ENC/DRU | Tunarean | ~46–48. LEAVE. Tunarean quests |
-| Shamus Aghllsews | ROG | Camp | ~60. LEAVE. Quest hub |
-| Rolandal | WAR | Outdoor | ~60. LEAVE / QUEST |
-| Felisiana of Tunare | RNG | Tunarean | ~45. Sifaye Parts |
-| Korzak Stonehammer | WAR | Giants | ~36–39 / ~25%. QUEST. Laborer pick / gems |
-| Lieutenant Krofer | WAR | Storm giants | ~47. QUEST flag |
-| Tomekeeper Bjordnessin; Toxonomist Drorjon | WIZ | Giants | ~49. QUEST / lore |
-| Rapticor | WAR | Raptors | ~42. IdleQuest **0%** QUEST — crushed gems / Tigeraptor Hide |
-| Lord Prismwing; Lord Gossimerwind | WAR | Fairies | ~42–44. IdleQuest **0%** QUEST |
-| a storm giant architect / foreman / surveyor | mixed | Giants | ~45. IdleQuest **0%** — blueprints / helm / scope |
-| a suit of sentient armor | WAR | Armor | ~42–46. Full **Sentient** plate + Two-Handed Axe |
-| a geonid / shimmering geonid / geonid shaman | WAR/SHM | Geonid caves | ~44–48. Gems; Block of Living Granite (shaman) |
-| an elder holgresh; a holgresh conjurer / elementalist / raider | MAG/WIZ | Holgresh | ~33–40. Mojo / beads / wing; Gloves of Kromzek Might (raider) |
-| a sifaye thane / knight / messenger / troubadour / chancellor | RNG | Sifaye | ~35–39. Sifaye Head / Dust / Dart / messenger report |
-| a drixie thane | WAR | Drixie | ~34–36. Fairy Drake Dust |
-| a faun / steward / outcast | ROG | Fauns | ~38–50. Faun Flute / Hoof |
-| a corrupted faun / panther / unicorn | mixed | Corrupted | ~55–60. Corrupted skins (quest) |
-| a tigeraptor / tigesaurous | WAR | Raptors | ~31–40. Tigeraptor Hide; Strong Raptor Gut |
-| a haze panther / panther / mist panther | WAR/MNK | Cats | ~33–60. Haze Panther Skin / Eye |
-| a unicorn | WAR | Unicorns | ~35–46. Unicorn Meat |
-| a frost giant laborer / sentinel / sentry | WAR | Giants | ~36–40. Kromrif Laborer Pick; Woven Frost Giant Beard |
-| a tar goo | WAR | Goo | ~40. Tar goo strands |
-| a wood nymph | ENC | Forest | ~40. Crushed Diamond Dust |
-| human / troll / ogre / barbarian / Teir`Dal mercenary | mixed | Merc camps | ~35–38. Kromzek Mercenary Brooch; Mercenary Assignments |
-| Phillip Aghllsews; Weinna Oakchild | BANK | Camp | ~50. LEAVE. Merchants |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Wuoshi | DRU | 100% | Dragon / PoGrowth approach | ~64. **RAID.** Scimitar of the Emerald Dawn / Tanglewood Shield / Skydarkener |
+| Lantaric`Dar | WAR | ? | Outdoor | ~70. IdleQuest **0%** **RAID** |
+| Scout Leader Plavo | WAR | 100% | Outdoor | ~70. **RAID** flag |
+| Frostgiant Overseer | WAR | 100% | Giants | ~56. Frostgiant Overseers Head |
+| Priest Bjek / Delar / Grenk | CLR | ? | Giants | ~56. Named heads |
+| Captain Glarg | WAR | 50% | Mercs / giants | ~40 / ~50%. Captain Glargs Brooch |
+| Grand Vizier Poolakacha`tei | WIZ | 25% | Holgresh | ~45 / ~25%. Holgresh Grand Vizier Beads |
+| Phenocryst | WAR | 100% | Geonids | ~58. QUEST. Block of Living Granite |
+| Lady Gelistial | DRU | 100% | Tunarean | ~55. LEAVE / kill for Gelistials Horn |
+| Eysa Florawhisper; Countess Silveana | ENC/DRU | ? | Tunarean | ~46–48. LEAVE. Tunarean quests |
+| Shamus Aghllsews | ROG | 100% | Camp | ~60. LEAVE. Quest hub |
+| Rolandal | WAR | 100% | Outdoor | ~60. LEAVE / QUEST |
+| Felisiana of Tunare | RNG | 100% | Tunarean | ~45. Sifaye Parts |
+| Korzak Stonehammer | WAR | 25% | Giants | ~36–39 / ~25%. QUEST. Laborer pick / gems |
+| Lieutenant Krofer | WAR | 100% | Storm giants | ~47. QUEST flag |
+| Tomekeeper Bjordnessin; Toxonomist Drorjon | WIZ | ? | Giants | ~49. QUEST / lore |
+| Rapticor | WAR | ? | Raptors | ~42. IdleQuest **0%** QUEST — crushed gems / Tigeraptor Hide |
+| Lord Prismwing; Lord Gossimerwind | WAR | ? | Fairies | ~42–44. IdleQuest **0%** QUEST |
+| a storm giant architect / foreman / surveyor | mixed | ? | Giants | ~45. IdleQuest **0%** — blueprints / helm / scope |
+| a suit of sentient armor | WAR | 50% | Armor | ~42–46. Full **Sentient** plate + Two-Handed Axe |
+| a geonid / shimmering geonid / geonid shaman | WAR/SHM | ? | Geonid caves | ~44–48. Gems; Block of Living Granite (shaman) |
+| an elder holgresh; a holgresh conjurer / elementalist / raider | MAG/WIZ | ? | Holgresh | ~33–40. Mojo / beads / wing; Gloves of Kromzek Might (raider) |
+| a sifaye thane / knight / messenger / troubadour / chancellor | RNG | ? | Sifaye | ~35–39. Sifaye Head / Dust / Dart / messenger report |
+| a drixie thane | WAR | 100% | Drixie | ~34–36. Fairy Drake Dust |
+| a faun / steward / outcast | ROG | ? | Fauns | ~38–50. Faun Flute / Hoof |
+| a corrupted faun / panther / unicorn | mixed | ? | Corrupted | ~55–60. Corrupted skins (quest) |
+| a tigeraptor / tigesaurous | WAR | ? | Raptors | ~31–40. Tigeraptor Hide; Strong Raptor Gut |
+| a haze panther / panther / mist panther | WAR/MNK | ? | Cats | ~33–60. Haze Panther Skin / Eye |
+| a unicorn | WAR | 100% | Unicorns | ~35–46. Unicorn Meat |
+| a frost giant laborer / sentinel / sentry | WAR | ? | Giants | ~36–40. Kromrif Laborer Pick; Woven Frost Giant Beard |
+| a tar goo | WAR | 100% | Goo | ~40. Tar goo strands |
+| a wood nymph | ENC | 100% | Forest | ~40. Crushed Diamond Dust |
+| human / troll / ogre / barbarian / Teir`Dal mercenary | mixed | ? | Merc camps | ~35–38. Kromzek Mercenary Brooch; Mercenary Assignments |
+| Phillip Aghllsews; Weinna Oakchild | BANK | ? | Camp | ~50. LEAVE. Merchants |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| # | WAR | 0% | — |  |
+| #a storm giant architect | WAR | 0% | — |  |
+| #a storm giant foreman | SHD | 0% | — |  |
+| #a storm giant surveyor | SHD | 0% | — |  |
+| #Alaurin | WAR | 0% | — |  |
+| #Lord Gossimerwind | WAR | 0% | — |  |
+| #Lord Prismwing | WAR | 0% | — |  |
 
 ## Unique loot
 

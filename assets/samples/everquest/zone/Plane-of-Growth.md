@@ -13,30 +13,41 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 Big targets by HP: Tunare **~530k**, Guardian of Tunare **~310k**, Ail **~215k**, Rumbleroot **~193k**, Treah **~191k**, Fayl **~150k**.
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| a gleaming sphere of light | LEAVE | — | Plane | HE enchanter Ancient Tomes â†’ Wreath of Nature |
-| a mosscovered treant | KILL | — | Plane | Killable trash **and** HE mag Lost Tome â†’ Chord of Vines |
-| a mumbling totem man | LEAVE | — | Near Ancient Totem | Helper for Ancient Totem quest |
-| Ail the Elder | KILL | DRU | ~10% @ 2057, 422 | ~60 / **~215k HP**. Hardest treant. AE silence, summons feral amalgams. Chest-heavy |
-| Ancient Totem | LEAVE | RNG | 100% @ −1535, −202 | ~60 / ~41k HP. Easy mini — leave for HE wizard Scrolls (or kill after) |
-| Entrancing water nymph | KILL | ENC | −3774, −333 | ~60 / ~35k HP. Named siren |
-| Farstride Unicorn | KILL | DRU | −627, 3513; −2505, 2022 | ~55 / ~19k HP. Pather. Oakleaf Girdle |
-| Fayl Everstrong | KILL | DRU | ~50% @ 3120, −1541 | ~60 / **~150k HP**. Gates + enrages. Chest-heavy |
-| Galiel Spirithoof | KILL | RNG | ~10% @ −2854, 2156 | ~55 / ~33k HP. Legs dropper |
-| Grahl Strongback | KILL | WAR | ~10% @ 2158, 997 | ~57 / ~34k HP. Arms dropper |
-| Guardian of Takish | LEAVE | WAR | ~50% @ −3508, 1208 | ~70 / ~200k HP. Castle on south wall. HE pal / HE clr quests |
-| Guardian of Tunare | RAID | WAR | Tunare's tree | ~60 / **~310k HP**. Two panthers. Silence + AE DoT. Kill with Tunare |
-| Keeper of the glades | KILL | WAR | 100% @ 1426, −2961 | ~65 / ~45k HP. Calls remaining phase pumas |
-| Ordro | KILL | RNG | 100% @ −1626, −1796 | ~56 / ~26k HP. Brownie. Stonewood Mail |
-| Ordros assistant | KILL | RNG | −1617, −1802 | ~52 / ~20k HP. With Ordro |
-| Prince Thirneg | KILL | RNG | ~25% @ 1491, −1561 | ~65 / ~70k HP. Friendly until attacked. Hail. Flute / mistletoe / wristband / Maple Leaf Mask |
-| Rumbleroot | KILL | DRU | ~16% @ 719, −3395 | ~60 / **~193k HP**. 10-min AE DoT — leave a buff slot to Annul. Chest-heavy |
-| Sarik the Fang | KILL | WAR | ~25% @ 249, 838 | ~55 / ~32k HP. Arms dropper |
-| Treah Greenroot | KILL | DRU | ~25% @ −1071, −791 | ~60 / **~191k HP**. Summons sylvan protectors. Chest-heavy |
-| Tunare | RAID | DRU | Tree 1524, −1633, 203 â†’ field 1600, −235 | IdleQuest **0%**. ~70 / **~530k HP**. Aggro despawns tree form; fight permarooted in field. Flurry, root, knockback |
-| Tunarean Earthmelder | LEAVE | DRU | ~50% @ −447, −2484 | ~60 / ~33k HP. Gloves of Earthcrafting / Helm of the Tracker |
-| Undogo Digolo | KILL | RNG | ~34% @ −599, −2162 | ~65 / ~38k HP. Totem. Legs / spells |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| a gleaming sphere of light | LEAVE | — | 100% | Plane | HE enchanter Ancient Tomes â†’ Wreath of Nature |
+| a mosscovered treant | KILL | — | 100% | Plane | Killable trash **and** HE mag Lost Tome â†’ Chord of Vines |
+| a mumbling totem man | LEAVE | — | 100% | Near Ancient Totem | Helper for Ancient Totem quest |
+| Ail the Elder | KILL | DRU | 100% | ~10% @ 2057, 422 | ~60 / **~215k HP**. Hardest treant. AE silence, summons feral amalgams. Chest-heavy |
+| Ancient Totem | LEAVE | RNG | 100% | 100% @ −1535, −202 | ~60 / ~41k HP. Easy mini — leave for HE wizard Scrolls (or kill after) |
+| Entrancing water nymph | KILL | ENC | 100% | −3774, −333 | ~60 / ~35k HP. Named siren |
+| Farstride Unicorn | KILL | DRU | 100% | −627, 3513; −2505, 2022 | ~55 / ~19k HP. Pather. Oakleaf Girdle |
+| Fayl Everstrong | KILL | DRU | 100% | ~50% @ 3120, −1541 | ~60 / **~150k HP**. Gates + enrages. Chest-heavy |
+| Galiel Spirithoof | KILL | RNG | 100% | ~10% @ −2854, 2156 | ~55 / ~33k HP. Legs dropper |
+| Grahl Strongback | KILL | WAR | 100% | ~10% @ 2158, 997 | ~57 / ~34k HP. Arms dropper |
+| Guardian of Takish | LEAVE | WAR | 100% | ~50% @ −3508, 1208 | ~70 / ~200k HP. Castle on south wall. HE pal / HE clr quests |
+| Guardian of Tunare | RAID | WAR | 100% | Tunare's tree | ~60 / **~310k HP**. Two panthers. Silence + AE DoT. Kill with Tunare |
+| Keeper of the glades | KILL | WAR | 100% | 100% @ 1426, −2961 | ~65 / ~45k HP. Calls remaining phase pumas |
+| Ordro | KILL | RNG | 100% | 100% @ −1626, −1796 | ~56 / ~26k HP. Brownie. Stonewood Mail |
+| Ordros assistant | KILL | RNG | 100% | −1617, −1802 | ~52 / ~20k HP. With Ordro |
+| Prince Thirneg | KILL | RNG | 100% | ~25% @ 1491, −1561 | ~65 / ~70k HP. Friendly until attacked. Hail. Flute / mistletoe / wristband / Maple Leaf Mask |
+| Rumbleroot | KILL | DRU | 100% | ~16% @ 719, −3395 | ~60 / **~193k HP**. 10-min AE DoT — leave a buff slot to Annul. Chest-heavy |
+| Sarik the Fang | KILL | WAR | 100% | ~25% @ 249, 838 | ~55 / ~32k HP. Arms dropper |
+| Treah Greenroot | KILL | DRU | 100% | ~25% @ −1071, −791 | ~60 / **~191k HP**. Summons sylvan protectors. Chest-heavy |
+| Tunare | RAID | DRU | 0% | Tree 1524, −1633, 203 â†’ field 1600, −235 | IdleQuest **0%**. ~70 / **~530k HP**. Aggro despawns tree form; fight permarooted in field. Flurry, root, knockback |
+| Tunarean Earthmelder | LEAVE | DRU | 100% | ~50% @ −447, −2484 | ~60 / ~33k HP. Gloves of Earthcrafting / Helm of the Tracker |
+| Undogo Digolo | KILL | RNG | 100% | ~34% @ −599, −2162 | ~65 / ~38k HP. Totem. Legs / spells |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
+| # Tunare | KILL | DRU | 0% | — | ~66. IdleQuest **0%** (script / PH) |
+| #BouncerMan | KILL | WAR | 0% | — | ~50. IdleQuest **0%** (script / PH) |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 

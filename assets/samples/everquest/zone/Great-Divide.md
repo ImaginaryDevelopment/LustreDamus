@@ -8,34 +8,47 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Coldain / quest NPCs.
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Bloodmaw | WAR | Kodiak | ~20. Kodiak Claws / Pelt. Easy outdoor |
-| Yaka Razorhoof | WAR | Tizmak | ~36. IdleQuest **0%** — Gauntlets of Power on table |
-| Icetooth | WAR | Wolves | ~38. IdleQuest **0%** — Icetooth's Claws / Pelt |
-| Shardtooth | WAR | Shardwurm | ~42. IdleQuest **0%** — Shardtooth's Flayed Skin / fang table |
-| Vluudeen | WAR | Wurm | ~49 / ~20%. Vluudeen's Tail |
-| shardwurm matriarch | CLR | Shardwurm | ~45. White Scaled / Bracer of Scale / Wurm Tendon Whip |
-| shardwurm broodmother | WAR | Shardwurm | ~50. White Scaled Tunic / fang |
-| Taskmaster Abyott | WAR | Giants | ~62. **RAID**-tier. Head of the Taskmaster / Edge of the Taskmaster |
-| Narandi the Wretched | SHD | Event | ~65. Coldain war / ring event (not a normal PH camp). Lance / Crown / heads |
-| Gorul Longshanks | WAR | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
-| Murdrick Tardok | ROG | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
-| Kromrif Captain / General / Veteran / Warlord | WAR/SHD | Giant keep | ~52–60. Glowing Velium Axe (lower ranks) |
-| Kromrif Priest / High Priest | CLR | Giant keep | ~53–60 |
-| Captain Stonefist | WAR | Coldain | ~65. Coldain Head drops — faction careful |
-| Seneschal Aldikar | WAR | Coldain | ~65. **RAID** flag. Coldain leadership |
-| Bekerak Coldbones | WAR | Giants | ~35. QUEST flag — confirm before kill |
-| Relik | WAR | Coldain | ~40. QUEST — Coldain Head |
-| Kardakor | WAR | — | ~60. QUEST |
-| Vores the Hunter | WAR | — | ~60. QUEST |
-| Gavon Morant | WAR | — | ~65. QUEST |
-| a frost giant scout / berserker / elite | WAR | Giants | ~34–43. Drakkel weapons / beard / Kromrif Head |
-| a crystalline shardwurm / guardian / young / elder / ancient | mixed | Shardwurm | ~29–40. White Scaled / fang / stinger |
-| a tizmak warrior / champion / shaman / augur / spiritcaller | mixed | Tizmak | ~25–29. Tizmak armor / Yakman Parts |
-| a feral / savage / ferocious cave kodiak | WAR | Caves | ~30–34. Kodiak Pelt / Hardened Bracer |
-| a drakkel dire wolf | WAR | Wolves | ~29. Furs / Drakkel Icegrinder |
-| a coldain miner / wolfmaster / tracking wolf | WAR | Coldain | ~27–35. Braided Beard / Coldain Head — faction |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Bloodmaw | WAR | 100% | Kodiak | ~20. Kodiak Claws / Pelt. Easy outdoor |
+| Yaka Razorhoof | WAR | ? | Tizmak | ~36. IdleQuest **0%** — Gauntlets of Power on table |
+| Icetooth | WAR | ? | Wolves | ~38. IdleQuest **0%** — Icetooth's Claws / Pelt |
+| Shardtooth | WAR | ? | Shardwurm | ~42. IdleQuest **0%** — Shardtooth's Flayed Skin / fang table |
+| Vluudeen | WAR | 20% | Wurm | ~49 / ~20%. Vluudeen's Tail |
+| shardwurm matriarch | CLR | 100% | Shardwurm | ~45. White Scaled / Bracer of Scale / Wurm Tendon Whip |
+| shardwurm broodmother | WAR | 100% | Shardwurm | ~50. White Scaled Tunic / fang |
+| Taskmaster Abyott | WAR | 100% | Giants | ~62. **RAID**-tier. Head of the Taskmaster / Edge of the Taskmaster |
+| Narandi the Wretched | SHD | 16% | Event | ~65. Coldain war / ring event (not a normal PH camp). Lance / Crown / heads |
+| Gorul Longshanks | WAR | ? | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
+| Murdrick Tardok | ROG | ? | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
+| Kromrif Captain / General / Veteran / Warlord | WAR/SHD | ? | Giant keep | ~52–60. Glowing Velium Axe (lower ranks) |
+| Kromrif Priest / High Priest | CLR | ? | Giant keep | ~53–60 |
+| Captain Stonefist | WAR | 100% | Coldain | ~65. Coldain Head drops — faction careful |
+| Seneschal Aldikar | WAR | 100% | Coldain | ~65. **RAID** flag. Coldain leadership |
+| Bekerak Coldbones | WAR | 100% | Giants | ~35. QUEST flag — confirm before kill |
+| Relik | WAR | 100% | Coldain | ~40. QUEST — Coldain Head |
+| Kardakor | WAR | 100% | — | ~60. QUEST |
+| Vores the Hunter | WAR | 100% | — | ~60. QUEST |
+| Gavon Morant | WAR | 100% | — | ~65. QUEST |
+| a frost giant scout / berserker / elite | WAR | ? | Giants | ~34–43. Drakkel weapons / beard / Kromrif Head |
+| a crystalline shardwurm / guardian / young / elder / ancient | mixed | ? | Shardwurm | ~29–40. White Scaled / fang / stinger |
+| a tizmak warrior / champion / shaman / augur / spiritcaller | mixed | ? | Tizmak | ~25–29. Tizmak armor / Yakman Parts |
+| a feral / savage / ferocious cave kodiak | WAR | ? | Caves | ~30–34. Kodiak Pelt / Hardened Bracer |
+| a drakkel dire wolf | WAR | 100% | Wolves | ~29. Furs / Drakkel Icegrinder |
+| a coldain miner / wolfmaster / tracking wolf | WAR | ? | Coldain | ~27–35. Braided Beard / Coldain Head — faction |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| # | WAR | 0% | — |  |
+| #Drakkel Blood Wolf | WAR | 0% | — |  |
+| #Relaypoint | WAR | 0% | — |  |
+| #The Fabled Shardtooth | WAR | 0% | — |  |
+| #War God | WAR | 0% | — |  |
+| #War Slave | WAR | 0% | — |  |
 
 ## Unique loot
 

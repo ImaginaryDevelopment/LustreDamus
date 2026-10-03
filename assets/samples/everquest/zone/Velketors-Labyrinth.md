@@ -13,52 +13,52 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 ### RAID
 
-| Mob | Do | Class | HP | Area | Notes |
-| --- | --- | --- | ---: | --- | --- |
-| Velketor the Sorcerer | RAID | WIZ | ~202k | Top / tower | ~66 / 100% / **259200s (72h)**. Full raid table + spell book |
-| Lord Doljonijiarnimorinar | RAID | MNK | ~147k | Labyrinth | ~65 / 100% / **86400s (24h)**. Efreeti / ice set; namesake weapon |
+| Mob | Do | Class | Chance | HP | Area | Notes |
+| --- | --- | --- | ---: | ---: | --- | --- |
+| Velketor the Sorcerer | RAID | WIZ | 100% | ~202k | Top / tower | ~66 / 100% / **259200s (72h)**. Full raid table + spell book |
+| Lord Doljonijiarnimorinar | RAID | MNK | 100% | ~147k | Labyrinth | ~65 / 100% / **86400s (24h)**. Efreeti / ice set; namesake weapon |
 
 ### Spider / crystal nameds (group)
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| Crystal Fang | KILL | ROG | Spiders | ~47 / **25%** / 900s. PH blizzard / shard spider / crystalline watcher |
-| Crystal Eyes | KILL | ROG | Watchers | ~47 / **20%** / 900s. PH crystalline watcher 80% |
-| Tijoely | KILL | WAR | Crystal / ice | ~56 / **34%** / 900s. PH crystal guardian / icy watcher |
-| Rijoely | KILL | WAR | Crystal | ~56 / **50%** / 900s. PH crystal guardian 50% |
-| Crystal Guardian | KILL | WAR | Crystal | ~55 / 100% / 900s. Gem table |
-| Icy Guardian | KILL | ROG | Ice | ~52 / 100% / 900s. Gem table |
-| Meljemor | KILL | WAR | Gargoyles | ~56. IdleQuest **0%** — PH crystalline gargoyle. **Crystalline Torque** |
-| Kerdelb | KILL | WAR | Sentinels | ~58. IdleQuest **0%** — PH crystaline sentinel / crystal gargoyle. Gems |
-| Bledrek | KILL | WAR | Sentinels | ~58. IdleQuest **0%** — PH crystal sentinel. Gems |
-| Failed Experiment | KILL | WAR | Lab | ~57. IdleQuest **0%** — PH crystal sentinel. **Blood Runed** swords |
-| Velketor's Experiment | KILL | WAR | Lab | ~57. IdleQuest **0%** — PH sentinel / gargoyle / destroyer. Stein / whip / girdle |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| Crystal Fang | KILL | ROG | 25% | Spiders | ~47 / **25%** / 900s. PH blizzard / shard spider / crystalline watcher |
+| Crystal Eyes | KILL | ROG | 20% | Watchers | ~47 / **20%** / 900s. PH crystalline watcher 80% |
+| Tijoely | KILL | WAR | 34% | Crystal / ice | ~56 / **34%** / 900s. PH crystal guardian / icy watcher |
+| Rijoely | KILL | WAR | 50% | Crystal | ~56 / **50%** / 900s. PH crystal guardian 50% |
+| Crystal Guardian | KILL | WAR | 100% | Crystal | ~55 / 100% / 900s. Gem table |
+| Icy Guardian | KILL | ROG | 100% | Ice | ~52 / 100% / 900s. Gem table |
+| Meljemor | KILL | WAR | 0% | Gargoyles | ~56. IdleQuest **0%** — PH crystalline gargoyle. **Crystalline Torque** |
+| Kerdelb | KILL | WAR | 0% | Sentinels | ~58. IdleQuest **0%** — PH crystaline sentinel / crystal gargoyle. Gems |
+| Bledrek | KILL | WAR | 0% | Sentinels | ~58. IdleQuest **0%** — PH crystal sentinel. Gems |
+| Failed Experiment | KILL | WAR | 0% | Lab | ~57. IdleQuest **0%** — PH crystal sentinel. **Blood Runed** swords |
+| Velketor's Experiment | KILL | WAR | 0% | Lab | ~57. IdleQuest **0%** — PH sentinel / gargoyle / destroyer. Stein / whip / girdle |
 
 ### Icepaw nameds (group)
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| Khelkar Icepaw | KILL | ROG | Kobolds | ~59 / **34%** / 900s. PH Icepaw cleric / prophet. Lute / Iceflame |
-| Jelek Icepaw | KILL | PAL | Kobolds | ~58. IdleQuest **0%** — PH Icepaw Champion. Robe of Melding Auras / Book of Dawn |
-| Gregendek Icepaw | KILL | CLR | Kobolds | ~58. IdleQuest **0%** — PH Icepaw cleric / prophet. Fatecaller / Book of Twilight |
-| Tpos Icepaw | KILL | SHD | Kobolds | ~58. IdleQuest **0%** — PH Icepaw Champion / cleric. Bitter Blade / Shadow Rager / Cold Steel |
-| Kalik Icepaw | KILL | CLR | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold. **Black Ice Sleeves** |
-| Venar Icepaw | KILL | PAL | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold / prophet. **Shimmering Terror Hide Boots** |
-| Marlek Icepaw | KILL | PAL | Kobolds | ~53. IdleQuest **0%** — PH Icepaw prophet / champion. **Shimmering Terror Hide Cloak** |
-| Laryk Icepaw | KILL | SHD | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobolds. **Bow of the Icepaw** |
-| Ular Icepaw | KILL | SHD | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobolds / prophet. Shared Black Ice / Spider Fur |
-| Rowwek Icepaw | KILL | SHD | Kobolds | ~53. IdleQuest **0%** — PH Icepaw champion / kobold. **Kobold Jester's Crown** |
-| Errkak Icepaw | KILL | CLR | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold / prophet / champion. **Black Ice Leggings** |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| Khelkar Icepaw | KILL | ROG | 34% | Kobolds | ~59 / **34%** / 900s. PH Icepaw cleric / prophet. Lute / Iceflame |
+| Jelek Icepaw | KILL | PAL | 0% | Kobolds | ~58. IdleQuest **0%** — PH Icepaw Champion. Robe of Melding Auras / Book of Dawn |
+| Gregendek Icepaw | KILL | CLR | 0% | Kobolds | ~58. IdleQuest **0%** — PH Icepaw cleric / prophet. Fatecaller / Book of Twilight |
+| Tpos Icepaw | KILL | SHD | 0% | Kobolds | ~58. IdleQuest **0%** — PH Icepaw Champion / cleric. Bitter Blade / Shadow Rager / Cold Steel |
+| Kalik Icepaw | KILL | CLR | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold. **Black Ice Sleeves** |
+| Venar Icepaw | KILL | PAL | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold / prophet. **Shimmering Terror Hide Boots** |
+| Marlek Icepaw | KILL | PAL | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw prophet / champion. **Shimmering Terror Hide Cloak** |
+| Laryk Icepaw | KILL | SHD | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobolds. **Bow of the Icepaw** |
+| Ular Icepaw | KILL | SHD | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobolds / prophet. Shared Black Ice / Spider Fur |
+| Rowwek Icepaw | KILL | SHD | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw champion / kobold. **Kobold Jester's Crown** |
+| Errkak Icepaw | KILL | CLR | 0% | Kobolds | ~53. IdleQuest **0%** — PH Icepaw kobold / prophet / champion. **Black Ice Leggings** |
 
 ### Trash camps / LEAVE
 
-| Mob | Do | Class | Notes |
-| --- | --- | --- | --- |
-| a blizzard / shard spider; crystalline watcher / hunter / devourer | KILL | mixed | ~45–48. Silk, Ball of Velium, rare Crystal Chitin pieces (hunter) |
-| a crystal / crystalline gargoyle / sentinel / destroyer / guardian | KILL | WAR | ~52–59. Flawless Diamond / Pristine Emerald feed; Meljemor / Kerdelb / Bledrek / Experiment PHs |
-| an icy watcher; a large crystal shard; a frost spectre | KILL | mixed | ~52–56. Gems |
-| Icepaw kobold / priest / warrior / champion / prophet / cleric; ice paw sorcerer | KILL | mixed | ~46–51. Spider Fur set; sorcerer **Crystal Dragon Eye** |
-| Brumen Firehammer; Bjoron Axefall; Khlem Alestone; Drella Stonegrinder; Dlemin Whiteforge; Bryma Loftaxe; Frekka Alebringer | LEAVE | WAR | ~35. Froststone Coldain — cloth / bread junk |
+| Mob | Do | Class | Chance | Notes |
+| --- | --- | --- | ---: | --- |
+| a blizzard / shard spider; crystalline watcher / hunter / devourer | KILL | mixed | ? | ~45–48. Silk, Ball of Velium, rare Crystal Chitin pieces (hunter) |
+| a crystal / crystalline gargoyle / sentinel / destroyer / guardian | KILL | WAR | ? | ~52–59. Flawless Diamond / Pristine Emerald feed; Meljemor / Kerdelb / Bledrek / Experiment PHs |
+| an icy watcher; a large crystal shard; a frost spectre | KILL | mixed | ? | ~52–56. Gems |
+| Icepaw kobold / priest / warrior / champion / prophet / cleric; ice paw sorcerer | KILL | mixed | ? | ~46–51. Spider Fur set; sorcerer **Crystal Dragon Eye** |
+| Brumen Firehammer; Bjoron Axefall; Khlem Alestone; Drella Stonegrinder; Dlemin Whiteforge; Bryma Loftaxe; Frekka Alebringer | LEAVE | WAR | ? | ~35. Froststone Coldain — cloth / bread junk |
 
 ## Unique loot
 

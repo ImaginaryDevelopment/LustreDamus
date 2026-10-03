@@ -8,30 +8,39 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Snowfang / pirate / boat quest NPCs
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Lodizal | WAR | Ice floes | ~60. **RAID.** Shell / boots / belt / Club of the Ice Ocean / map piece |
-| Stormfeather | WAR | Outdoor | ~34. Stormfeather Talons; Iceclad Map piece |
-| Garou | SHM | Wolves | ~38 / ~45%. Fang of the Garou; Wolves Eye Necklace |
-| Giligatabbus Igglebix | SHD | Outdoor | ~66. Giligatabbus's Head |
-| Graktar Bluehammer | WAR | Giants | ~33. QUEST flag. Giant / Velium table |
-| pulsating icestorm | WAR | Outdoor | ~34. IdleQuest **0%** — Frosted Gem / Torque / Mantle / Ring / Chill Dagger |
-| Midnight | WAR | Cougars | ~32. IdleQuest **0%** — Bloody Cougar Bone |
-| dire wolf stalker | WAR | Wolves | ~35. IdleQuest **0%** — Iceclad Map piece |
-| a frost giant scout / elite | WAR | Giants | ~30–36. Velium weapons; Woven Frost Giant Beard; Ring of Frost; Kromrif Head |
-| a snow cougar | WAR | Cats | ~27–31. Cougar Claw Earring; cougarskin |
-| a snow dervish / shadow guardian | MNK | Ice | ~27–34. Ring of Frost; Frozen Mantle; Chill Dagger; Iceball |
-| Snowfang icehunter / spearguard / fisher | MNK | Snowfang | ~27–33. Otterhide set. Fishers are QUEST — often LEAVE |
-| gnomish pirate / pirate sentry | ROG | Pirate isle | ~26–30. Gnomish Pirate Hat / Rapier / Cloak |
-| Captain Nalot | ROG | Pirates | ~51. LEAVE. Pirate quest hub |
-| Ami; Ratop; Ritap; Nilham the Chef; Novyak the Lookout; Madan Eflik; Joshel the Large | mixed | Pirates / docks | ~26–31. LEAVE. Pirate / boat quest chain |
-| Balix Misteyes; Ergrez Shortpaw; Errgriz; Keref Spiritspear; Grizlin Bloodfang | mixed | Snowfang | ~28–51. LEAVE. Snowfang / otterhide quests |
-| General Bragmur | WAR | Outdoor | ~40. LEAVE / Coldain path |
-| Commander Vjorik | WAR | Outdoor | ~1. LEAVE / script |
-| Adinel Jailbar; Sojan the Sleepless; Xorbinasticalus Zimralicus | BANK | Camps | ~35–40. LEAVE. Merchants / bank |
-| Soulbinder Cubnitskin | WAR | Outdoor | ~65. LEAVE. Soulbinder |
-| Translocator Kurione | WIZ | Boat | ~1. LEAVE. Port NPC |
-| Icebreaker | WAR | Boat | ~60. Boat object / NPC — not a hunt |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Lodizal | WAR | 100% | Ice floes | ~60. **RAID.** Shell / boots / belt / Club of the Ice Ocean / map piece |
+| Stormfeather | WAR | 100% | Outdoor | ~34. Stormfeather Talons; Iceclad Map piece |
+| Garou | SHM | 45% | Wolves | ~38 / ~45%. Fang of the Garou; Wolves Eye Necklace |
+| Giligatabbus Igglebix | SHD | 100% | Outdoor | ~66. Giligatabbus's Head |
+| Graktar Bluehammer | WAR | 100% | Giants | ~33. QUEST flag. Giant / Velium table |
+| pulsating icestorm | WAR | ? | Outdoor | ~34. IdleQuest **0%** — Frosted Gem / Torque / Mantle / Ring / Chill Dagger |
+| Midnight | WAR | ? | Cougars | ~32. IdleQuest **0%** — Bloody Cougar Bone |
+| dire wolf stalker | WAR | ? | Wolves | ~35. IdleQuest **0%** — Iceclad Map piece |
+| a frost giant scout / elite | WAR | ? | Giants | ~30–36. Velium weapons; Woven Frost Giant Beard; Ring of Frost; Kromrif Head |
+| a snow cougar | WAR | 100% | Cats | ~27–31. Cougar Claw Earring; cougarskin |
+| a snow dervish / shadow guardian | MNK | ? | Ice | ~27–34. Ring of Frost; Frozen Mantle; Chill Dagger; Iceball |
+| Snowfang icehunter / spearguard / fisher | MNK | ? | Snowfang | ~27–33. Otterhide set. Fishers are QUEST — often LEAVE |
+| gnomish pirate / pirate sentry | ROG | ? | Pirate isle | ~26–30. Gnomish Pirate Hat / Rapier / Cloak |
+| Captain Nalot | ROG | 100% | Pirates | ~51. LEAVE. Pirate quest hub |
+| Ami; Ratop; Ritap; Nilham the Chef; Novyak the Lookout; Madan Eflik; Joshel the Large | mixed | ? | Pirates / docks | ~26–31. LEAVE. Pirate / boat quest chain |
+| Balix Misteyes; Ergrez Shortpaw; Errgriz; Keref Spiritspear; Grizlin Bloodfang | mixed | ? | Snowfang | ~28–51. LEAVE. Snowfang / otterhide quests |
+| General Bragmur | WAR | 100% | Outdoor | ~40. LEAVE / Coldain path |
+| Commander Vjorik | WAR | 100% | Outdoor | ~1. LEAVE / script |
+| Adinel Jailbar; Sojan the Sleepless; Xorbinasticalus Zimralicus | BANK | ? | Camps | ~35–40. LEAVE. Merchants / bank |
+| Soulbinder Cubnitskin | WAR | 100% | Outdoor | ~65. LEAVE. Soulbinder |
+| Translocator Kurione | WIZ | ? | Boat | ~1. LEAVE. Port NPC |
+| Icebreaker | WAR | 100% | Boat | ~60. Boat object / NPC — not a hunt |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| # # 6 | WAR | 0% | — |  |
+| #Vas Thorel | WAR | 0% | — |  |
 
 ## Unique loot
 

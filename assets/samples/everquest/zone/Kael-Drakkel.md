@@ -12,43 +12,88 @@ Sort **Nameds** by **Mob** when tracking. **Do** column:
 
 ## Nameds
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| Armor of Zek | KILL | WAR | Arena / Zek | ~55. Corroded / Thunder Runed / bear cloaks |
-| Bjoskhua Blackfist | KILL | WIZ | City | ~48–49. Flayed Coldain-Skin Leggings / Mask of Malediction |
-| Bjrakor the Cold | KILL | WAR | City | ~55. Bladesman weapons / Gladiator's Chain Leggings |
-| Captain Bvellos | FACTION | PAL | City | ~53. **Mask of War** turn-in (Wurmscale Scroll). Also Glowing Black Sword if killing |
-| Captain Mc`Hersh | KILL | ROG | City | ~40. **Captain Mc`Hershs Brooch** |
-| Clrakk Blackfist | KILL | WAR | City | ~43–44. Dark Spear of Venom |
-| Derakor the Vindicator | RAID | WAR | Near throne | ~70 / **~180k HP**. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
-| Dlammaz Stormslayer | KILL | WAR | City | ~62. **Cloak of the Maelstrom** |
-| Drendar Blackblade | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Custom table (Ceremonial sword / Kromzek head) |
-| Fjokar Frozenshard | KILL | ROG | City | ~60. **Eyepatch of the Shadows** / Frozen Shard |
-| Gkrean Prophet of Tallon | KILL | CLR | Prophets | ~58. Always **Idol of Corruption**. Gauntlets of Iron Tactics |
-| Gleed Dragonhunter | KILL | RNG | City | ~52–56. **Bow of the Huntsman** |
-| Irrek Bloodfist | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar / Klraggek |
-| Kael Militia Captain | KILL | PAL | Militia | ~49. **Militia Captain Tunic** |
-| Kallis Stormcaller | KILL | WAR | City | ~58. Always **Kallis' Head** |
-| Keldor Dek`Torek | KILL | WIZ | City | ~65. Always **Orb of the Infinite Void** |
-| King Tormax | RAID | WAR | Throne | ~70 / **~452k HP**. Always **King Tormax's Head** + Kromzek crown set |
-| Klaggan Iceshard | KILL | WAR | Iceshard Keep | ~45–46. **Greaves of Avoidance** |
-| Klraggek the Slayer | KILL | WAR | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar |
-| Korakaz | KILL | WAR | City | ~51–53. Bladesman's Axe / Sword |
-| Kyenka | KILL | SHM | Living Dragons | ~57. **Barbed Dragonscale** Boots / Pauldrons |
-| Noble Helssen | KILL | WIZ | City | ~55. Always **Scale of Hsagra**. Silvery Mask |
-| Nojas Blackfist | KILL | SHM | City | ~49–51. **Iceshaper's Staff** |
-| protector of Zek | KILL | WAR | Arena / Zek | ~56. Hammer of Rage / Shield of Battle |
-| Reivaj the Battlerager | KILL | WAR | City | ~50. **Vehement Sword of Reivaj** / Antlered Mask |
-| Semkak Prophet of Vallon | KILL | CLR | Prophets | ~58. **Idol of Disease** / Shield of Battle |
-| Staff Sergeant Drioc | KILL | PAL | City | ~50. Always **Head of Staff Sergeant Drioc**. Dire Wolf-Hide Cloak |
-| storm giant general | KILL | WAR | City | ~52. Glimmering War Axe |
-| Vealok the Angry | KILL | WAR | City | ~55. Bladesman weapons |
-| Vkaak | KILL | WAR | City | ~63. Giant Militia Longsword |
-| Vkjor | KILL | ENC | City | ~50–54. Silver Steel Gauntlets |
-| Vorken Iceshard | KILL | CLR | Iceshard Keep | ~47. **Vambraces of Avoidance** / Dragonhide Belt |
-| Wenglawks Kkeak | FACTION | ROG | City | ~43. Spy / Cobalt Scar key paths. Bracer of Midnight if killing |
-| Yetarr | KILL | MNK | Living Dragons | ~57. **Coldain Skin** Gloves / Boots |
-| Kael class-armor NPCs | LEAVE | — | Armor halls | **Ancient Tarnished** hub (Ally Kromzek). Pieces from ToV west RAID — Barlek Stonefist, Bygloirn Omorden, Dagron Stonecutter, Grand Armsmith Korin, Jaglorm Ygorr, Kelenek Bluadfeth, Kragek Thunderforge, Mjeldor Felstorm, Nerik Wolfsoul, Regbor Vallgerthon, Stoem Lekbar, Vylleam Vyaeltor, Yeeldan Spiritcaller, Bjarorm Mjlorn, Gragek Mjlorkigar, Weyrevar Bluehammer, etc. |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| Armor of Zek | KILL | WAR | 100% | Arena / Zek | ~55. Corroded / Thunder Runed / bear cloaks |
+| Bjoskhua Blackfist | KILL | WIZ | 20% | City | ~48–49. Flayed Coldain-Skin Leggings / Mask of Malediction |
+| Bjrakor the Cold | KILL | WAR | 50% | City | ~55. Bladesman weapons / Gladiator's Chain Leggings |
+| Captain Bvellos | FACTION | PAL | 50% | City | ~53. **Mask of War** turn-in (Wurmscale Scroll). Also Glowing Black Sword if killing |
+| Captain Mc`Hersh | KILL | ROG | 50% | City | ~40. **Captain Mc`Hershs Brooch** |
+| Clrakk Blackfist | KILL | WAR | 20% | City | ~43–44. Dark Spear of Venom |
+| Derakor the Vindicator | RAID | WAR | 100% | Near throne | ~70 / **~180k HP**. Always **Derakor's Head**. Chestplate / Boots of the Vindicator |
+| Dlammaz Stormslayer | KILL | WAR | 20% | City | ~62. **Cloak of the Maelstrom** |
+| Drendar Blackblade | KILL | WAR | 0% | High named | ~66. IdleQuest **0%** (script / PH). Custom table (Ceremonial sword / Kromzek head) |
+| Fjokar Frozenshard | KILL | ROG | 100% | City | ~60. **Eyepatch of the Shadows** / Frozen Shard |
+| Gkrean Prophet of Tallon | KILL | CLR | 50% | Prophets | ~58. Always **Idol of Corruption**. Gauntlets of Iron Tactics |
+| Gleed Dragonhunter | KILL | RNG | 25% | City | ~52–56. **Bow of the Huntsman** |
+| Irrek Bloodfist | KILL | WAR | 0% | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar / Klraggek |
+| Kael Militia Captain | KILL | PAL | 50% | Militia | ~49. **Militia Captain Tunic** |
+| Kallis Stormcaller | KILL | WAR | 100% | City | ~58. Always **Kallis' Head** |
+| Keldor Dek`Torek | KILL | WIZ | 100% | City | ~65. Always **Orb of the Infinite Void** |
+| King Tormax | RAID | WAR | 100% | Throne | ~70 / **~452k HP**. Always **King Tormax's Head** + Kromzek crown set |
+| Klaggan Iceshard | KILL | WAR | 50% | Iceshard Keep | ~45–46. **Greaves of Avoidance** |
+| Klraggek the Slayer | KILL | WAR | 0% | High named | ~66. IdleQuest **0%** (script / PH). Same loot table as Drendar |
+| Korakaz | KILL | WAR | 33% | City | ~51–53. Bladesman's Axe / Sword |
+| Kyenka | KILL | SHM | 50% | Living Dragons | ~57. **Barbed Dragonscale** Boots / Pauldrons |
+| Noble Helssen | KILL | WIZ | 100% | City | ~55. Always **Scale of Hsagra**. Silvery Mask |
+| Nojas Blackfist | KILL | SHM | 20% | City | ~49–51. **Iceshaper's Staff** |
+| protector of Zek | KILL | WAR | 100% | Arena / Zek | ~56. Hammer of Rage / Shield of Battle |
+| Reivaj the Battlerager | KILL | WAR | 34% | City | ~50. **Vehement Sword of Reivaj** / Antlered Mask |
+| Semkak Prophet of Vallon | KILL | CLR | 50% | Prophets | ~58. **Idol of Disease** / Shield of Battle |
+| Staff Sergeant Drioc | KILL | PAL | 100% | City | ~50. Always **Head of Staff Sergeant Drioc**. Dire Wolf-Hide Cloak |
+| storm giant general | KILL | WAR | 40% | City | ~52. Glimmering War Axe |
+| Vealok the Angry | KILL | WAR | 50% | City | ~55. Bladesman weapons |
+| Vkaak | KILL | WAR | 100% | City | ~63. Giant Militia Longsword |
+| Vkjor | KILL | ENC | 34% | City | ~50–54. Silver Steel Gauntlets |
+| Vorken Iceshard | KILL | CLR | 34% | Iceshard Keep | ~47. **Vambraces of Avoidance** / Dragonhide Belt |
+| Wenglawks Kkeak | FACTION | ROG | 100% | City | ~43. Spy / Cobalt Scar key paths. Bracer of Midnight if killing |
+| Yetarr | KILL | MNK | 50% | Living Dragons | ~57. **Coldain Skin** Gloves / Boots |
+| Kael class-armor NPCs | LEAVE | — | ? | Armor halls | **Ancient Tarnished** hub (Ally Kromzek). Pieces from ToV west RAID — Barlek Stonefist, Bygloirn Omorden, Dagron Stonecutter, Grand Armsmith Korin, Jaglorm Ygorr, Kelenek Bluadfeth, Kragek Thunderforge, Mjeldor Felstorm, Nerik Wolfsoul, Regbor Vallgerthon, Stoem Lekbar, Vylleam Vyaeltor, Yeeldan Spiritcaller, Bjarorm Mjlorn, Gragek Mjlorkigar, Weyrevar Bluehammer, etc. |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| #Chanter Bjroern | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Chanter Bonebinder | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Chanter Dethsek | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Chanter Kllejnor | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Chanter Vellnod | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Chanter Windlasher | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Ice Chanter Ijelin | KILL | WIZ | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Icecrafter Blackrock | KILL | SHM | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Icecrafter Iceskull | KILL | SHM | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Icecrafter Leyreon | KILL | SHM | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Icecrafter Sleestael | KILL | SHM | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Icecrafter Yjorn | KILL | SHM | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Iceweaver Beldikan | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Iceweaver Bonethrower | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Iceweaver Cavestrider | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Iceweaver Maldekil | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Iceweaver Pelryen | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Iceweaver Sjeon | KILL | SHM | 0% | — | ~44. IdleQuest **0%** (script / PH) |
+| #Miriku the Chaotic | KILL | WAR | 0% | — | ~65. IdleQuest **0%** (script / PH). High named loot table |
+| #Oracle Bloodstorm | KILL | WIZ | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Oracle Kaeren | KILL | WIZ | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Oracle Remalek | KILL | WIZ | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Oracle Weldom | KILL | WIZ | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Oracle Zardukel | KILL | WIZ | 0% | — | ~46. IdleQuest **0%** (script / PH) |
+| #Stormcaller Crystaleye | KILL | SHM | 0% | — | ~49. IdleQuest **0%** (script / PH) |
+| #Stormcaller Feldramen | KILL | WIZ | 0% | — | ~49. IdleQuest **0%** (script / PH) |
+| #Stormcaller Hedrekaen | KILL | SHM | 0% | — | ~49. IdleQuest **0%** (script / PH) |
+| #Stormcaller Rivenstell | KILL | WIZ | 0% | — | ~49. IdleQuest **0%** (script / PH) |
+| #Velden Dragonbane | KILL | WAR | 0% | — | ~66. IdleQuest **0%** (script / PH). High named loot table |
+| #Veteran Eiyloren | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Hjrek | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Icecaller | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Kltrem | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Mjrlind | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Sjrelt | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Surlren | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Veteran Yllhaydm | KILL | WAR | 0% | — | ~57. IdleQuest **0%**. Corroded / Eroded / Torn Enchanted (Thurgadin) |
+| #Vkjen Thunderslayer | KILL | WAR | 0% | — | ~66. IdleQuest **0%** (script / PH). High named loot table |
 
 ## Unique loot
 

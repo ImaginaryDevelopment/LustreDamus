@@ -12,20 +12,36 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 ## Nameds
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| Queen Dracnia | KILL | WAR | Spider lair | ~40 / **10%**. PH **a crystal webmaster**. Sceptre / Crystalline Robes / Messenger |
-| #Foreman Smason | KILL | WAR | Ry`Gorr mines | IdleQuest **0%**. ~33. Foreman's Skull Cap / Frozen Long Sword |
-| Foreman Rixact | KILL | WAR | Ry`Gorr mines | ~33–34. Shares Foreman loot |
-| Ghost of Burdael | KILL | SHD | Stalag lair back | ~50. **Onyxbrand**. Spirit of Garzicor spawn (~−190, −250). Despawns ~6 min |
-| #a terror carver | KILL | WAR | Stalag | IdleQuest **0%**. ~38. Stalagterror Spine Spear |
-| #a life leech | KILL | WAR | Lower | IdleQuest **0%**. ~38. Blackened Crystalline Robe / Chipped Velium Amulet |
-| #a hollow crystal | KILL | WAR | Crystals | IdleQuest **0%**. ~38. Froststone Stein / Crystal Fiber |
-| #a gem collector | KILL | WAR | Gems | IdleQuest **0%**. ~35. Vendor jewelry chips |
-| Historian Baenek | LEAVE | CLR | Froststone | Worn Coldain Tome. Spirit of Garzicor; despawns ~1h after tome hand-in |
-| Captain Dunstan Coldheart | LEAVE | WAR | Froststone | No loot |
-| Kramble Gemshard | LEAVE | — | Froststone | Banker — anyone can use the bank |
-| Froststone merchants / guards | LEAVE | mixed | Froststone | Gilliad / Grabble Coldheart, Gemshards, Velweavers, Coldmists, Tacy Mistheart, Soren Coldheart, Scout Grandan, Guard Kristen and other Froststone guards. **No loot** |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| Queen Dracnia | KILL | WAR | 10% | Spider lair | ~40 / **10%**. PH **a crystal webmaster**. Sceptre / Crystalline Robes / Messenger |
+| #Foreman Smason | KILL | WAR | 0% | Ry`Gorr mines | IdleQuest **0%**. ~33. Foreman's Skull Cap / Frozen Long Sword |
+| Foreman Rixact | KILL | WAR | 50% | Ry`Gorr mines | ~33–34. Shares Foreman loot |
+| Ghost of Burdael | KILL | SHD | ? | Stalag lair back | ~50. **Onyxbrand**. Spirit of Garzicor spawn (~−190, −250). Despawns ~6 min |
+| #a terror carver | KILL | WAR | 0% | Stalag | IdleQuest **0%**. ~38. Stalagterror Spine Spear |
+| #a life leech | KILL | WAR | 0% | Lower | IdleQuest **0%**. ~38. Blackened Crystalline Robe / Chipped Velium Amulet |
+| #a hollow crystal | KILL | WAR | 0% | Crystals | IdleQuest **0%**. ~38. Froststone Stein / Crystal Fiber |
+| #a gem collector | KILL | WAR | 0% | Gems | IdleQuest **0%**. ~35. Vendor jewelry chips |
+| Historian Baenek | LEAVE | CLR | 100% | Froststone | Worn Coldain Tome. Spirit of Garzicor; despawns ~1h after tome hand-in |
+| Captain Dunstan Coldheart | LEAVE | WAR | 100% | Froststone | No loot |
+| Kramble Gemshard | LEAVE | — | 100% | Froststone | Banker — anyone can use the bank |
+| Froststone merchants / guards | LEAVE | mixed | ? | Froststone | Gilliad / Grabble Coldheart, Gemshards, Velweavers, Coldmists, Tacy Mistheart, Soren Coldheart, Scout Grandan, Guard Kristen and other Froststone guards. **No loot** |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
+| #a crystal lurker | KILL | WAR | 0% | — | ~37. IdleQuest **0%** (script / PH) |
+| #a crystal purifier | KILL | WAR | 0% | — | ~35. IdleQuest **0%** (script / PH) |
+| #a dracnid retainer | KILL | WAR | 0% | — | ~33. IdleQuest **0%** (script / PH) |
+| #a focus gem | KILL | WAR | 0% | — | ~37. IdleQuest **0%** (script / PH) |
+| #a Ry`Gorr herbalist | KILL | SHM | 0% | — | ~30. IdleQuest **0%** (script / PH) |
+| #a Ry`Gorr inspector | KILL | WAR | 0% | — | ~30. IdleQuest **0%** (script / PH) |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
+| # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 

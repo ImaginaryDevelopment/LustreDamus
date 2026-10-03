@@ -19,38 +19,63 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 ### RAID dragons (IdleQuest tables; often scripted)
 
-| Mob | Do | Class | Wing / notes |
-| --- | --- | --- | --- |
-| Aaryonar | RAID | PAL | IdleQuest **0%**. ~66. Amulet of the Dreadgazer / Hand of the Master / seasons masks |
-| Cekenar | RAID | MNK | IdleQuest **0%**. ~66. Cekenar's Claw / Blackstar / Frosted Ice Spike |
-| Dozekar the Cursed | RAID | WAR | IdleQuest **0%**. ~66. Tear set (Black / White / Poison / Flame Kissed / …) |
-| Eashen of the Sky | RAID | WIZ | IdleQuest **0%**. ~66. Sky ring / bracelet / cloak / Twisted Steel |
-| Gozzrem | RAID | CLR | IdleQuest **0%**. ~66. Wand of the Black Dragon Eye / Rekeklo's War Sword |
-| Ikatiar the Venom | RAID | ROG | IdleQuest **0%**. ~66. Ancient Wyvern Hide set / Ikatiar's Stinger |
-| Jorlleag | RAID | SHM | IdleQuest **0%**. ~66. Sprinkler of the Spirits / Facesmasher |
-| Lady Mirenilla | RAID | WAR | IdleQuest **0%**. ~66. Mithril Helm / Gauntlets / Boots / Frostwrath |
-| Lady Nevederia | RAID | ENC | IdleQuest **0%**. ~66. Nevederia's Eyes / Claw / Horn / Girdle of Dark Power |
-| Lendiniara the Keeper | RAID | CLR | IdleQuest **0%**. ~66. Lendiniara's Talisman / Superiority set |
-| Lord Feshlak | RAID | WAR | IdleQuest **0%**. ~66. Amulet of the Storm / Chestplate of Fiery Might / Thunderstone |
-| Lord Koi`Doken | RAID | ROG | IdleQuest **0%**. ~66. Deep Sea set / Siren Song dagger |
-| Lord Kreizenn | RAID | MNK | IdleQuest **0%**. ~66. Dawncaller / Flame Etched Short Sword / Kreizenn's Flame |
-| Lord Vyemm | RAID | PAL | IdleQuest **0%**. ~66. Gaudralek / Vyemm's Eyes / Fang / Silver Whip of Rage |
-| Sevalak | RAID | PAL | IdleQuest **0%**. ~66. Great Spear of Dawn / Shield of Midnight |
-| Telkorenar | RAID | MNK | IdleQuest **0%**. ~66. True Mithril Breastplate / Lance of Thunder |
-| Zlexak | RAID | ROG | IdleQuest **0%**. ~66. Dragonspine Rapier / Windraider's Belt |
-| Dagarn the Destroyer | RAID | WAR | ~70 / 100%. Boots / Bow / Belt of the Destroyer / Dagarn's Tail |
+| Mob | Do | Class | Chance | Wing / notes |
+| --- | --- | --- | ---: | --- |
+| Aaryonar | RAID | PAL | 0% | IdleQuest **0%**. ~66. Amulet of the Dreadgazer / Hand of the Master / seasons masks |
+| Cekenar | RAID | MNK | 0% | IdleQuest **0%**. ~66. Cekenar's Claw / Blackstar / Frosted Ice Spike |
+| Dozekar the Cursed | RAID | WAR | 0% | IdleQuest **0%**. ~66. Tear set (Black / White / Poison / Flame Kissed / …) |
+| Eashen of the Sky | RAID | WIZ | 0% | IdleQuest **0%**. ~66. Sky ring / bracelet / cloak / Twisted Steel |
+| Gozzrem | RAID | CLR | 0% | IdleQuest **0%**. ~66. Wand of the Black Dragon Eye / Rekeklo's War Sword |
+| Ikatiar the Venom | RAID | ROG | 0% | IdleQuest **0%**. ~66. Ancient Wyvern Hide set / Ikatiar's Stinger |
+| Jorlleag | RAID | SHM | 0% | IdleQuest **0%**. ~66. Sprinkler of the Spirits / Facesmasher |
+| Lady Mirenilla | RAID | WAR | 0% | IdleQuest **0%**. ~66. Mithril Helm / Gauntlets / Boots / Frostwrath |
+| Lady Nevederia | RAID | ENC | 0% | IdleQuest **0%**. ~66. Nevederia's Eyes / Claw / Horn / Girdle of Dark Power |
+| Lendiniara the Keeper | RAID | CLR | 0% | IdleQuest **0%**. ~66. Lendiniara's Talisman / Superiority set |
+| Lord Feshlak | RAID | WAR | 0% | IdleQuest **0%**. ~66. Amulet of the Storm / Chestplate of Fiery Might / Thunderstone |
+| Lord Koi`Doken | RAID | ROG | 0% | IdleQuest **0%**. ~66. Deep Sea set / Siren Song dagger |
+| Lord Kreizenn | RAID | MNK | 0% | IdleQuest **0%**. ~66. Dawncaller / Flame Etched Short Sword / Kreizenn's Flame |
+| Lord Vyemm | RAID | PAL | 0% | IdleQuest **0%**. ~66. Gaudralek / Vyemm's Eyes / Fang / Silver Whip of Rage |
+| Sevalak | RAID | PAL | 0% | IdleQuest **0%**. ~66. Great Spear of Dawn / Shield of Midnight |
+| Telkorenar | RAID | MNK | 0% | IdleQuest **0%**. ~66. True Mithril Breastplate / Lance of Thunder |
+| Zlexak | RAID | ROG | 0% | IdleQuest **0%**. ~66. Dragonspine Rapier / Windraider's Belt |
+| Dagarn the Destroyer | RAID | WAR | 100% | ~70 / 100%. Boots / Bow / Belt of the Destroyer / Dagarn's Tail |
 
 ### Wing trash / lesser nameds (live spawn %)
 
-| Mob | Do | Class | Notes |
-| --- | --- | --- | --- |
-| a fiery guardian / temple guardian / watcher / lava dancer | KILL | WAR | West-leaning **Ancient Tarnished** tables |
-| A Lava Defender | KILL | MNK | Ancient Tarnished mix |
-| a fiery drake / malevolent / greater malevolent / racnar / wyvern | KILL | WAR/ROG | **Unadorned** tables (east / testing) |
-| a vehement wyvern / elder crimson / ancient frost guardian | KILL | mixed | Unadorned |
-| a cerulean sky gazer / onyx sky drake / emerald sky defender | KILL | mixed | Ancient Tarnished |
-| Bryrym; Carx`Vean; Gra`Vloren; Hsrek; Kedrak; … | KILL | WAR | Shared fang-necklace / shield pool (~60) |
-| Ajorek the Crimson Fang; Belijor; Nelaarn; Yendilor; … | KILL | WAR | Wing nameds / quest flags — Golden Ember Powder |
+| Mob | Do | Class | Chance | Notes |
+| --- | --- | --- | ---: | --- |
+| a fiery guardian / temple guardian / watcher / lava dancer | KILL | WAR | ? | West-leaning **Ancient Tarnished** tables |
+| A Lava Defender | KILL | MNK | 100% | Ancient Tarnished mix |
+| a fiery drake / malevolent / greater malevolent / racnar / wyvern | KILL | WAR/ROG | ? | **Unadorned** tables (east / testing) |
+| a vehement wyvern / elder crimson / ancient frost guardian | KILL | mixed | ? | Unadorned |
+| a cerulean sky gazer / onyx sky drake / emerald sky defender | KILL | mixed | ? | Ancient Tarnished |
+| Bryrym; Carx`Vean; Gra`Vloren; Hsrek; Kedrak; … | KILL | WAR | ? | Shared fang-necklace / shield pool (~60) |
+| Ajorek the Crimson Fang; Belijor; Nelaarn; Yendilor; … | KILL | WAR | ? | Wing nameds / quest flags — Golden Ember Powder |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Wing / notes |
+| --- | --- | --- | ---: | --- |
+| #A Glowing Orb | KILL | WAR | 0% |  |
+| #Casalen | KILL | WAR | 0% |  |
+| #Cyndor Lightningfang | KILL | CLR | 0% |  |
+| #Essedera | KILL | WAR | 0% |  |
+| #Feshlak ChkOne | KILL | WAR | 0% |  |
+| #Grozzmel | KILL | WAR | 0% |  |
+| #Kalkar of the Maelstrom | KILL | WAR | 0% |  |
+| #Krigara | KILL | WAR | 0% |  |
+| #Lepethida | KILL | WAR | 0% |  |
+| #Malteor Flamecaller | KILL | MNK | 0% |  |
+| #Midayor | KILL | WAR | 0% |  |
+| #Quellod Earthspirit | KILL | ROG | 0% |  |
+| #Tavekalem | KILL | WAR | 0% |  |
+| #Thylex of Veeshan | KILL | WAR | 0% |  |
+| #Vyldin Flamereaver | KILL | MNK | 0% |  |
+| #Ymmeln | KILL | WAR | 0% |  |
+| #Yrrindor Emerald Claw | KILL | ROG | 0% |  |
+| #Zemm | KILL | WAR | 0% |  |
 
 ## Unique loot
 

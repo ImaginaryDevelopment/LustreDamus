@@ -10,17 +10,41 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 ## Nameds
 
-| Mob | Do | Class | Area | Notes |
-| --- | --- | --- | --- | --- |
-| an angry chef | KILL | WAR | Mid floors | IdleQuest **0%**. ~34. **Crystallized Shadow Tunic** |
-| Angry Librarian | KILL | WAR | 3rd floor | ~33. Always **Three Toothed Key** |
-| Cara Omica | KILL | WAR | 5th floor | ~42. Magnetic Dirk / Sorcerous Bowl; always **Small rusty key** |
-| Enraged Shadowbeast | KILL | WAR | 4th floor | ~35–40. Always **Frosty key** |
-| Incoherent Spirit | KILL | WAR | Upper | ~45. **Abram's Axe of the Stoic** |
-| Large Undead Gnoll | KILL | WAR | 2nd floor | ~26–32. Always **Crystal Key** |
-| Nosja | KILL | WAR | Mid floors | ~35–40. **Ceremonial Wedding Sword** |
-| Tserrina Syl'Tor | RAID | NEC | 7th / mirror | ~51. **2-group.** Robe / Staff / Tserrina's Key |
-| Vhal'Sera | KILL | ENC | 7th floor | ~42–45. Talisman; **Large metal key** |
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| an angry chef | KILL | WAR | 0% | Mid floors | IdleQuest **0%**. ~34. **Crystallized Shadow Tunic** |
+| Angry Librarian | KILL | WAR | ? | 3rd floor | ~33. Always **Three Toothed Key** |
+| Cara Omica | KILL | WAR | ? | 5th floor | ~42. Magnetic Dirk / Sorcerous Bowl; always **Small rusty key** |
+| Enraged Shadowbeast | KILL | WAR | ? | 4th floor | ~35–40. Always **Frosty key** |
+| Incoherent Spirit | KILL | WAR | 50% | Upper | ~45. **Abram's Axe of the Stoic** |
+| Large Undead Gnoll | KILL | WAR | ? | 2nd floor | ~26–32. Always **Crystal Key** |
+| Nosja | KILL | WAR | 100% | Mid floors | ~35–40. **Ceremonial Wedding Sword** |
+| Tserrina Syl'Tor | RAID | NEC | ? | 7th / mirror | ~51. **2-group.** Robe / Staff / Tserrina's Key |
+| Vhal'Sera | KILL | ENC | ? | 7th floor | ~42–45. Talisman; **Large metal key** |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Area | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| #a ghostly student | KILL | WIZ | 0% | — | ~26. IdleQuest **0%** (script / PH) |
+| #a shadow beast cook | KILL | WAR | 0% | — | ~34. IdleQuest **0%** (script / PH) |
+| #a shadow beast guard | KILL | WAR | 0% | — | ~37. IdleQuest **0%** (script / PH) |
+| #a shadowbone | KILL | WAR | 0% | — | ~28. IdleQuest **0%** (script / PH) |
+| #a shrouded bat | KILL | WAR | 0% | — | ~41. IdleQuest **0%** (script / PH) |
+| #a skeleton sleeper | KILL | MNK | 0% | — | ~32. IdleQuest **0%** (script / PH) |
+| #Advisor Svartmane | KILL | WAR | 0% | — | ~63. IdleQuest **0%** (script / PH) |
+| #Amontehepna | KILL | CLR | 0% | — | ~42. IdleQuest **0%** (script / PH) |
+| #an ice shade | KILL | NEC | 0% | — | ~36. IdleQuest **0%** (script / PH) |
+| #an undead usher | KILL | MNK | 0% | — | ~33. IdleQuest **0%** (script / PH) |
+| #Eugie | KILL | ROG | 0% | — | ~30. IdleQuest **0%** (script / PH) |
+| #maggot infested flesh | KILL | WAR | 0% | — | ~38. IdleQuest **0%** (script / PH) |
+| #Narmak Berreka | KILL | SHD | 0% | — | ~36. IdleQuest **0%** (script / PH) |
+| #The Head Usher | KILL | SHD | 0% | — | ~39. IdleQuest **0%** (script / PH) |
+| #Voknya | KILL | ROG | 0% | — | ~30. IdleQuest **0%** (script / PH) |
+| #Xalgoti | KILL | MNK | 0% | — | ~30. IdleQuest **0%** (script / PH) |
+| #Zorglim the Dead | KILL | WAR | 0% | — | ~35. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 

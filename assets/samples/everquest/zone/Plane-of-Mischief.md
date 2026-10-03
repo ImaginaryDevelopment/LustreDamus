@@ -8,36 +8,46 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs. Al
 
 IdleQuest also has unused/script raid rows: **#Bristlebane ~1.0M**, **All-Seeing Eye ~709k**, **#the Mischievous Jester ~200k** — classic throne room stays empty; treat as DB leftovers unless your server enables them. Real camp boss is **Lithiniath ~36k**.
 
-| Mob | Class | HP | Loc | PH / notes |
-| --- | --- | ---: | --- | --- |
-| Lithiniath (Black) | ENC | ~36k | B&W room ~20% @ −88, 395; 509, −847 | IdleQuest **0%**. 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
-| Ferjeneror | WIZ | ~29k | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
-| A False Treasure Chest | ENC | ~14–20k | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
-| Bit | WIZ | ~14k | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
-| Mizer | WIZ | ~14k | Dining chandelier ~235, 75 | Perma-rooted KOS nuke with Bit |
-| Chuckles | WAR | ~14k | ~61, −178 | Picture behind him â†’ Hedge Maze path |
-| Chuckles the Great | WAR | ~14k | Theater stage ~557, 151 | Puppet theater stage |
-| Posie the Librarian | ENC | ~14k | Library 100% @ 197, −1015 | LEAVE. Library Card â†’ Book of Mischief |
-| Geb | WAR | ~14k | Puppet audience | Kill at ~7AM game time to spawn puppets; else audience despawns |
-| Bristlebane Puppet | WAR | ~13k | Theater ~606, 173 | Strongest puppet. Indifferent until aggro. Thrones |
-| Bozer the Bear | WAR | ~12k | 100% @ 126, −25, 118 | West wing. Named bear |
-| Treasure Chest | ENC | ~10k | Forest west ~−237, 557 | KOS mimic + halflings |
-| Bob the Painter | ROG | ~8k | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth â†’ class armor combine |
-| Dupple | ROG | ~8k | 100% @ 149, −312 | Halfling named |
-| Plupple | ROG | ~8k | 100% @ 44, −478 | Halfling named |
-| Snitch | ROG | ~8k | 100% @ 178, −442 | Halfling named |
-| Stitch | ROG | ~8k | 100% @ 19, −343 | Halfling named |
-| Peachy D`Vicci | CLR | ~7k | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money â†’ random Gift Box (dolls) |
-| Erollisi Puppet | WAR | ~6k | Theater ~625, 157 | Indifferent until aggro. Thrones |
-| Innoruuk Puppet | WAR | ~6k | Theater ~625, 147 | KOS. Thrones |
-| Rallos Puppet | WAR | ~6k | Theater ~625, 168 | KOS. Thrones |
-| Solusek Puppet | WAR | ~6k | Theater ~627, 184 | KOS. Thrones |
-| Tunare Puppet | WAR | ~6k | Theater ~606, 151 | KOS. Thrones |
-| Tribunal Puppet | WAR | ~6k | Theater ~625, 132 | Three per cycle. Weakest puppets. Thrones |
-| a White Stallion | WAR | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn â†’ white Lithiniath |
-| Dop Dop | WAR | ~3k | Forest mushrooms | Named shrooms; drop squires |
-| Dinner | WAR | ~11 | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
-| Lithiniath (White) | ENC | — | Same room | IdleQuest **0%**. Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
+| Mob | Class | Chance | HP | Loc | PH / notes |
+| --- | --- | ---: | ---: | --- | --- |
+| Lithiniath (Black) | ENC | ? | ~36k | B&W room ~20% @ −88, 395; 509, −847 | IdleQuest **0%**. 3-day respawn. Lithiniaths Horn + rare crowns / Jester |
+| Ferjeneror | WIZ | 100% | ~29k | Hedge maze center | LEAVE. Deck of Spontaneous Generation. Never answer "no" |
+| A False Treasure Chest | ENC | 100% | ~14–20k | Chest Room ~97, −393 and nearby | Mimic. Aggro floods halflings — farm Blam Stick without killing the chest |
+| Bit | WIZ | 100% | ~14k | Dining chandelier ~252, 76 | Perma-rooted KOS nuke. Calm before Dinner |
+| Mizer | WIZ | 100% | ~14k | Dining chandelier ~235, 75 | Perma-rooted KOS nuke with Bit |
+| Chuckles | WAR | 100% | ~14k | ~61, −178 | Picture behind him â†’ Hedge Maze path |
+| Chuckles the Great | WAR | 100% | ~14k | Theater stage ~557, 151 | Puppet theater stage |
+| Posie the Librarian | ENC | 100% | ~14k | Library 100% @ 197, −1015 | LEAVE. Library Card â†’ Book of Mischief |
+| Geb | WAR | 100% | ~14k | Puppet audience | Kill at ~7AM game time to spawn puppets; else audience despawns |
+| Bristlebane Puppet | WAR | 100% | ~13k | Theater ~606, 173 | Strongest puppet. Indifferent until aggro. Thrones |
+| Bozer the Bear | WAR | 100% | ~12k | 100% @ 126, −25, 118 | West wing. Named bear |
+| Treasure Chest | ENC | 100% | ~10k | Forest west ~−237, 557 | KOS mimic + halflings |
+| Bob the Painter | ROG | 100% | ~8k | ~25% @ 15, −450 | LEAVE. Empty Pot of Gold for Words of Wealth â†’ class armor combine |
+| Dupple | ROG | 100% | ~8k | 100% @ 149, −312 | Halfling named |
+| Plupple | ROG | 100% | ~8k | 100% @ 44, −478 | Halfling named |
+| Snitch | ROG | 100% | ~8k | 100% @ 178, −442 | Halfling named |
+| Stitch | ROG | 100% | ~8k | 100% @ 19, −343 | Halfling named |
+| Peachy D`Vicci | CLR | 100% | ~7k | Castle entrance 100% @ −341, −363 | LEAVE. 2× Funny Money â†’ random Gift Box (dolls) |
+| Erollisi Puppet | WAR | 100% | ~6k | Theater ~625, 157 | Indifferent until aggro. Thrones |
+| Innoruuk Puppet | WAR | 100% | ~6k | Theater ~625, 147 | KOS. Thrones |
+| Rallos Puppet | WAR | 100% | ~6k | Theater ~625, 168 | KOS. Thrones |
+| Solusek Puppet | WAR | 100% | ~6k | Theater ~627, 184 | KOS. Thrones |
+| Tunare Puppet | WAR | 100% | ~6k | Theater ~606, 151 | KOS. Thrones |
+| Tribunal Puppet | WAR | 100% | ~6k | Theater ~625, 132 | Three per cycle. Weakest puppets. Thrones |
+| a White Stallion | WAR | 100% | ~4k | B&W room white side | LEAVE. Turn in Lithiniaths Horn â†’ white Lithiniath |
+| Dop Dop | WAR | 100% | ~3k | Forest mushrooms | Named shrooms; drop squires |
+| Dinner | WAR | ? | ~11 | Dining table 100% @ 243, 76 | L1 ogre, KOS, rooted. **King Cod Card**. Watch chandelier wizards |
+| Lithiniath (White) | ENC | ? | — | Same room | IdleQuest **0%**. Spawn by giving Horn to White Stallion (no separate IdleQuest HP row) |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked. Classic throne room stays empty; these are IdleQuest DB leftovers unless your server enables them.
+
+| Mob | Class | Chance | HP | Loc | PH / notes |
+| --- | --- | ---: | ---: | --- | --- |
+| #Bristlebane | ROG | 0% | ~1000k | Throne (unused) | IdleQuest **0%**. Classic empty throne |
+| #the Mischievous Jester | WAR | 0% | ~200k | — | IdleQuest **0%**. Script / unused |
+| #Lithiniath | ENC | 0% | ~36k | B&W room | IdleQuest **0%**. Hash twin of camp Lithiniath |
 
 ## Unique loot
 

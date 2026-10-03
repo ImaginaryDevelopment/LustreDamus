@@ -8,21 +8,21 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are Othmir quest /
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| a bulthar herdleader | WAR | Beach / bulthar | IdleQuest **0%**. ~52. **Bulthar Trunk** for Chief Kalan quest |
-| a haunted seachest | WAR | Shore | ~40. Mimic. **Section of a Draconic Tome**; **100' of Waterproofed Rope** |
-| Azureake | WAR | Drake cliffs | IdleQuest **0%**. ~50. Unique PH among **a cobalt drake**. Cobalt Drake Hide |
-| Bloogy Shellcracker | — | Othmir camp | ~35–37. LEAVE. **Saucy Salted Seadragon Steak** |
-| Blumblum Swigwater | — | Othmir camp | ~34. LEAVE. Merchant / brew path |
-| Bungre Crawcrusher | RNG | Othmir camp | ~45. LEAVE for **Lodizal Shell Shield**; also Crustacean Shell table |
-| Cedrick | WAR | Outdoor | ~65. **Seal of Cedrick** (IdleQuest) |
-| Chief Kalan | SHM | Othmir camp | ~56. LEAVE for **Bulthar Trunks** / Ulthork Tusks; kill for **Othmir Chieftain Spear** |
-| High Priest Margle | WAR | Outdoor | ~65. IdleQuest named (no classic unique table) |
-| Kelorek`Dar | WAR | Water / SG approach | ~65. **RAID-tier.** Long respawn. Orb / Cloak / Typhoon / Spine Razor / Scales |
-| Qarrgy Scallopgobbler | RNG | Othmir camp | ~47–48. LEAVE for **Kelorek's Scales** / Emerald Dragonscale / Crustacean quests; also Shell BP table |
-| Yoppa Greenthumb | WAR | Outdoor | ~65. IdleQuest named |
-| Yvolcarn | WAR | Wyvern cliffs | IdleQuest **0%**. ~52. PH among wyverns. Hates wolf form. **Drixie Remains**; Arctic Wyvern Hide |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| a bulthar herdleader | WAR | ? | Beach / bulthar | IdleQuest **0%**. ~52. **Bulthar Trunk** for Chief Kalan quest |
+| a haunted seachest | WAR | 100% | Shore | ~40. Mimic. **Section of a Draconic Tome**; **100' of Waterproofed Rope** |
+| Azureake | WAR | ? | Drake cliffs | IdleQuest **0%**. ~50. Unique PH among **a cobalt drake**. Cobalt Drake Hide |
+| Bloogy Shellcracker | — | 50% | Othmir camp | ~35–37. LEAVE. **Saucy Salted Seadragon Steak** |
+| Blumblum Swigwater | — | 100% | Othmir camp | ~34. LEAVE. Merchant / brew path |
+| Bungre Crawcrusher | RNG | 100% | Othmir camp | ~45. LEAVE for **Lodizal Shell Shield**; also Crustacean Shell table |
+| Cedrick | WAR | 100% | Outdoor | ~65. **Seal of Cedrick** (IdleQuest) |
+| Chief Kalan | SHM | 100% | Othmir camp | ~56. LEAVE for **Bulthar Trunks** / Ulthork Tusks; kill for **Othmir Chieftain Spear** |
+| High Priest Margle | WAR | 100% | Outdoor | ~65. IdleQuest named (no classic unique table) |
+| Kelorek`Dar | WAR | 100% | Water / SG approach | ~65. **RAID-tier.** Long respawn. Orb / Cloak / Typhoon / Spine Razor / Scales |
+| Qarrgy Scallopgobbler | RNG | 50% | Othmir camp | ~47–48. LEAVE for **Kelorek's Scales** / Emerald Dragonscale / Crustacean quests; also Shell BP table |
+| Yoppa Greenthumb | WAR | 100% | Outdoor | ~65. IdleQuest named |
+| Yvolcarn | WAR | ? | Wyvern cliffs | IdleQuest **0%**. ~52. PH among wyverns. Hates wolf form. **Drixie Remains**; Arctic Wyvern Hide |
 
 ## Unique loot
 

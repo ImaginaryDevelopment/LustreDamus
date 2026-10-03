@@ -11,24 +11,34 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 ## Nameds
 
-| Mob | Do | Class | Loc | Notes |
-| --- | --- | --- | --- | --- |
-| a Paebala Spirit Talker | KILL | SHM | Paebala tunnels | ~51–58. Spirit Talker set. IdleQuest also **Slani Veekilaleeki** on same loot |
-| Chetari Courier | KILL | WAR | ~25% @ 608, −1325 | ~48. **Wurmscale Scroll** â†’ Mask of War |
-| Dominator Yisaki | KILL | WAR | 253, −369, −215 | IdleQuest **0%**. ~60. Scroll of Knowledge (PoG Visage of Life). Flayed gloves |
-| Dralliw`tar | KILL | WAR | 100% @ 475, 750 | ~59. Paebala side |
-| Dustbinder Grakina | KILL | NEC | ~34% @ −201, −1015 | IdleQuest **0%**. ~60. Spells; shares Chetari caster loot (Wardstaff table) |
-| Garzicor's Corpse | KILL | WAR | 1523, 1109 | Triggered. Death â†’ **Garzicor's Wraith**. Spirit of Garzicor |
-| Garzicor's Wraith | KILL | WAR | 1523, 1109 | Final Garzicor step. Spawns from Corpse |
-| Jaled Dar`s shade | LEAVE | CLR | 1587, −119 | Sleeper's Key. Needs Jaled Dar Tomb Key (or rogue pick). Stun trap on steps |
-| Neb | LEAVE | WAR | 100% @ 504, 751 | LEAVE for Zlandicar key path; kill for Neb key path. Quad / flurry |
-| Pierre | KILL | ROG | ~10% @ 348, 578 | ~60. Paebala rebel PH tier |
-| Queen Raltaas | KILL | WAR | ~25% @ 836, −1540; 775, −456; 1005, 235 | IdleQuest **0%**. ~66. Timed cycle / can despawn. Spawns hatchlings on death. Face: **Queen's Carapace** |
-| Seeker Bulava | KILL | NEC | 957, −168, −255 | ~60. Scroll of Enlightenment; Chetari Wardstaff |
-| Vaniki | RAID | NEC | 50% @ five Chetari spots | ~66. 122h cycle; unique; invisible-man PH. Willsapper. Heart â†’ Neb key |
-| Vilefang | KILL | WAR | 100% @ −315, −1257 | ~60. 1-day. Blind + poison. Infestation / Poison Etched Wristband |
-| Warmaster Utvara | KILL | WAR | 100% @ 588, −708 | ~60. Scroll of Insight; Chetari Bonecrafted Shield |
-| Zlandicar | RAID | NEC | 50% @ −269, −291 | ~70. LEAVE for Neb key path; kill for loot / Zlandicar key path. Does not see invis |
+| Mob | Do | Class | Chance | Loc | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| a Paebala Spirit Talker | KILL | SHM | 100% | Paebala tunnels | ~51–58. Spirit Talker set. IdleQuest also **Slani Veekilaleeki** on same loot |
+| Chetari Courier | KILL | WAR | 25% | ~25% @ 608, −1325 | ~48. **Wurmscale Scroll** â†’ Mask of War |
+| Dominator Yisaki | KILL | WAR | 0% | 253, −369, −215 | IdleQuest **0%**. ~60. Scroll of Knowledge (PoG Visage of Life). Flayed gloves |
+| Dralliw`tar | KILL | WAR | 100% | 100% @ 475, 750 | ~59. Paebala side |
+| Dustbinder Grakina | KILL | NEC | 0% | ~34% @ −201, −1015 | IdleQuest **0%**. ~60. Spells; shares Chetari caster loot (Wardstaff table) |
+| Garzicor's Corpse | KILL | WAR | ? | 1523, 1109 | Triggered. Death â†’ **Garzicor's Wraith**. Spirit of Garzicor |
+| Garzicor's Wraith | KILL | WAR | ? | 1523, 1109 | Final Garzicor step. Spawns from Corpse |
+| Jaled Dar`s shade | LEAVE | CLR | 100% | 1587, −119 | Sleeper's Key. Needs Jaled Dar Tomb Key (or rogue pick). Stun trap on steps |
+| Neb | LEAVE | WAR | 100% | 100% @ 504, 751 | LEAVE for Zlandicar key path; kill for Neb key path. Quad / flurry |
+| Pierre | KILL | ROG | 30% | ~10% @ 348, 578 | ~60. Paebala rebel PH tier |
+| Queen Raltaas | KILL | WAR | 0% | ~25% @ 836, −1540; 775, −456; 1005, 235 | IdleQuest **0%**. ~66. Timed cycle / can despawn. Spawns hatchlings on death. Face: **Queen's Carapace** |
+| Seeker Bulava | KILL | NEC | 30% | 957, −168, −255 | ~60. Scroll of Enlightenment; Chetari Wardstaff |
+| Vaniki | RAID | NEC | 10% | 50% @ five Chetari spots | ~66. 122h cycle; unique; invisible-man PH. Willsapper. Heart â†’ Neb key |
+| Vilefang | KILL | WAR | 100% | 100% @ −315, −1257 | ~60. 1-day. Blind + poison. Infestation / Poison Etched Wristband |
+| Warmaster Utvara | KILL | WAR | 30% | 100% @ 588, −708 | ~60. Scroll of Insight; Chetari Bonecrafted Shield |
+| Zlandicar | RAID | NEC | 100% | 50% @ −269, −291 | ~70. LEAVE for Neb key path; kill for loot / Zlandicar key path. Does not see invis |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Do | Class | Chance | Loc | Notes |
+| --- | --- | --- | ---: | --- | --- |
+| #a Chetari Packrat | KILL | NEC | 0% |  | ~62. IdleQuest **0%** (script / PH) |
+| #an Odd Looking Spider | KILL | WAR | 0% |  | ~51. IdleQuest **0%** (script / PH) |
+| #Excavator Quellin | KILL | WAR | 0% |  | ~61. IdleQuest **0%** (script / PH) |
 
 ## Unique loot
 

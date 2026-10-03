@@ -8,29 +8,37 @@ Sort **Named spawn** by **Mob**. **LEAVE** = quest NPCs mid-dialogue.
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| Carpenter Grundo | WAR | Giants | ~47 / ~5%. **Bronzewood Staff** |
-| Gullerback | WAR | Outdoor | ~47 / ~5%. Brass Earring |
-| Nezekezena | WIZ | Wurms | ~51 / ~10%. **Wurm Scale Coat**; Burning Embers |
-| Phurzikon | WIZ | Wurms | ~47 / ~10%. Wurm Scale Coat; Burning Embers |
-| Korasal Klyseer | SHD | Sarnak | ~44 / ~2%. **Runic Carver**; Sarnak Blood |
-| Azdalin | WAR | Wurms | ~42 / ~5%. QUEST. Dragon Scales / Wurm Scale |
-| Gylton | WAR | Wurms | ~42 / ~11%. QUEST. Burning Embers; Dragon Scales |
-| Entalon | WAR | Wurms | ~40–44 / ~11%. QUEST. Wurm Meat |
-| Gorgul Paclock | WAR | Giants | ~49. IdleQuest **0%** — Forest Loop / Tree Weave / giant axes |
-| Naxot Deepwater | WAR | Outdoor | ~25. QUEST. Triumvirate Missionary Robe; Cracked Staff |
-| Atheling Plague | SHM | Outdoor | ~34. LEAVE / QUEST |
-| Asmodin Jru`dac | WAR | Outdoor | ~35. LEAVE / QUEST |
-| Slixin Klex | WAR | Outdoor | ~50. QUEST. Dirt of Underfoot |
-| Telin Darkforest | WAR | Outdoor | ~55. LEAVE. Druid epic / Nature Walker's path |
-| a forest giant arbor / verdant / ancient | WAR | Giant camps | ~34–46. Forest Loop; Giant Lord's / Foreman's Tunic; lumberjack axes |
-| a Sarnak knight / champion / avenger | WAR | Sarnak | ~33–45. Sarnak Blood |
-| a Sarnak enthusiast / extremist / zealot | SHM | Sarnak | ~33–45. Ceremonial weapons; Earring of Station; Tabard |
-| a loyal follower | WAR | Outdoor | ~40. Symbol of Lativ |
-| an ash / ember / cinder hornet | WAR | Hornets | ~33–43. Fire Hornet Wing; Cinder Hornet Pollen |
-| plaguebone / greater plague / greater barbed / greater war boned skeleton | mixed | Skeletons | ~33–46. Polished gear / runes |
-| wurm | WAR | Wurms | ~38–47. Wurm Meat / Scale |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| Carpenter Grundo | WAR | 5% | Giants | ~47 / ~5%. **Bronzewood Staff** |
+| Gullerback | WAR | 5% | Outdoor | ~47 / ~5%. Brass Earring |
+| Nezekezena | WIZ | 10% | Wurms | ~51 / ~10%. **Wurm Scale Coat**; Burning Embers |
+| Phurzikon | WIZ | 10% | Wurms | ~47 / ~10%. Wurm Scale Coat; Burning Embers |
+| Korasal Klyseer | SHD | 2% | Sarnak | ~44 / ~2%. **Runic Carver**; Sarnak Blood |
+| Azdalin | WAR | 5% | Wurms | ~42 / ~5%. QUEST. Dragon Scales / Wurm Scale |
+| Gylton | WAR | 11% | Wurms | ~42 / ~11%. QUEST. Burning Embers; Dragon Scales |
+| Entalon | WAR | 12% | Wurms | ~40–44 / ~11%. QUEST. Wurm Meat |
+| Gorgul Paclock | WAR | ? | Giants | ~49. IdleQuest **0%** — Forest Loop / Tree Weave / giant axes |
+| Naxot Deepwater | WAR | 100% | Outdoor | ~25. QUEST. Triumvirate Missionary Robe; Cracked Staff |
+| Atheling Plague | SHM | 100% | Outdoor | ~34. LEAVE / QUEST |
+| Asmodin Jru`dac | WAR | 100% | Outdoor | ~35. LEAVE / QUEST |
+| Slixin Klex | WAR | 100% | Outdoor | ~50. QUEST. Dirt of Underfoot |
+| Telin Darkforest | WAR | 100% | Outdoor | ~55. LEAVE. Druid epic / Nature Walker's path |
+| a forest giant arbor / verdant / ancient | WAR | ? | Giant camps | ~34–46. Forest Loop; Giant Lord's / Foreman's Tunic; lumberjack axes |
+| a Sarnak knight / champion / avenger | WAR | ? | Sarnak | ~33–45. Sarnak Blood |
+| a Sarnak enthusiast / extremist / zealot | SHM | ? | Sarnak | ~33–45. Ceremonial weapons; Earring of Station; Tabard |
+| a loyal follower | WAR | 100% | Outdoor | ~40. Symbol of Lativ |
+| an ash / ember / cinder hornet | WAR | ? | Hornets | ~33–43. Fire Hornet Wing; Cinder Hornet Pollen |
+| plaguebone / greater plague / greater barbed / greater war boned skeleton | mixed | ? | Skeletons | ~33–46. Polished gear / runes |
+| wurm | WAR | 100% | Wurms | ~38–47. Wurm Meat / Scale |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| # | WAR | 0% | — |  |
 
 ## Unique loot
 

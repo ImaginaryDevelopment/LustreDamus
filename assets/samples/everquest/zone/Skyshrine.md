@@ -8,40 +8,49 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are armor / Cobalt
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| An Elder Shrine Golem | RNG | Shrine | ~62. `#An_Elder_Shrine_Golem`. Crushed / flawed gems |
-| Beeliz Fe`Dhar | WAR | City | ~40. **Lath Drinor** |
-| Charayan the Crusader | WAR | Crusaders | ~70. **RAID**-tier. Shared crusader table with Grendish / Jortreva / Susarrak |
-| Commander Leuz | MAG | Near CS path | ~34–36. LEAVE for **Drake Fang** → Sentry Kale |
-| Count Darchen | WIZ | Counts | ~48. Decisive Boots / Shrewd Cloak of the Kin |
-| Count Grivennor | ROG | Counts | ~48. Shrewd Cloak of the Kin |
-| Count Morin | ROG | Counts | ~48. Kin cap / boots / cloak |
-| Count Taloob | WAR | Counts | ~48. Shrewd Cloak of the Kin (high %) |
-| Eldriaks Fe`Dhar | CLR | City | ~55–58. Coldstone Wreath / Despair Needle / Mystical Laig Staff |
-| Elder Hajnix | MNK | Elders | ~55. City named pool (same as Kajind / Kalur) |
-| Elder Kajind | WAR | Elders | ~55. City named pool |
-| Elder Kalur | CLR | Elders | ~55. City named pool |
-| Grendish the Crusader | WAR | Crusaders | ~70. Same table as Charayan |
-| Jortreva the Crusader | WAR | Crusaders | ~70. Same table as Charayan |
-| Jualicn | WAR | High named | ~65. Bloodshrine Necklace / Mantle of Absorption / Walrusbone Shield |
-| Lawyla | WAR | High named | ~65. **Brightwood Spear** / Wyvern Hide Tunic |
-| Lignark | WAR | High named | ~62. City named pool |
-| Lord Yelinak | WAR | Throne | ~70. **RAID.** Always **Yelinak's Head** + **Yelinak's Talisman** |
-| Marech of the Shrine | CLR | Shrine | IdleQuest **0%**. ~55. `#Marech_of_the_Shrine`. Dragonscaled Gauntlets / Drakespine Belt |
-| Oglard | WAR | High named | ~65. `#Oglard` / Oglard. Jar`Nal Long Sword / Joined Ethereal Cape / Ice Spear |
-| Placlis | WAR | High named | ~65. City named pool (same as Talnifs) |
-| Quadrix Velic | WAR | High named | ~60. City named pool (same as Zaldin Fe`Dhar) |
-| Ralgyn | WAR | City | IdleQuest **0%**. ~60. `#Ralgyn`. City named pool. LEAVE for **Ralgyn's Promise** (chipped fang from DN Vilefang) |
-| Sentry Kale | WAR | Gate / CS | ~37–39. LEAVE for Cobalt Scar key path (Drake Fang). Kill = Sentry armor set |
-| Sentry Rotiart | WAR | Gate | ~43. Focused Ethereal Rapier |
-| Supreme Laochsmith Psorin | WAR | Armor halls | IdleQuest **0%**. ~59. LEAVE for **Laoch** weapons. Kill = Ductile Loam only |
-| Susarrak the Crusader | WAR | Crusaders | ~70. Same table as Charayan |
-| Talnifs | WAR | High named | ~65. Same pool as Placlis |
-| Zaldin Fe`Dhar | CLR | High named | ~60. Same pool as Quadrix Velic |
-| Ziglark Whisperwing | PAL | City | ~27–40. Always **Shrine Key** |
-| (killable Fe`Dhar nameds) | WAR | City | ~45–54. Dalshim, Deoryn, Dygwyn, Dyr, Elyshum, Glydoc, Kalacs, Medry, Morachii, Poalgin, Qalcnic, Riran, Taegria, Tonvan, Vellyn, etc. — **city named pool** |
-| (class armor Fe`Dhar) | — | Armor halls | LEAVE. **Unadorned** Skyshrine armor hub — Abudan, Adwetram, Asteinnon, Crendatha, Elaend, Fardonad, Jendavudd, Komawin, Larquin, Lothieder, Nalelin, Ocoenydd, Onerind, Qynydd, etc. |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| An Elder Shrine Golem | RNG | 100% | Shrine | ~62. `#An_Elder_Shrine_Golem`. Crushed / flawed gems |
+| Beeliz Fe`Dhar | WAR | 100% | City | ~40. **Lath Drinor** |
+| Charayan the Crusader | WAR | 100% | Crusaders | ~70. **RAID**-tier. Shared crusader table with Grendish / Jortreva / Susarrak |
+| Commander Leuz | MAG | 100% | Near CS path | ~34–36. LEAVE for **Drake Fang** → Sentry Kale |
+| Count Darchen | WIZ | 100% | Counts | ~48. Decisive Boots / Shrewd Cloak of the Kin |
+| Count Grivennor | ROG | 100% | Counts | ~48. Shrewd Cloak of the Kin |
+| Count Morin | ROG | 100% | Counts | ~48. Kin cap / boots / cloak |
+| Count Taloob | WAR | 100% | Counts | ~48. Shrewd Cloak of the Kin (high %) |
+| Eldriaks Fe`Dhar | CLR | 100% | City | ~55–58. Coldstone Wreath / Despair Needle / Mystical Laig Staff |
+| Elder Hajnix | MNK | 100% | Elders | ~55. City named pool (same as Kajind / Kalur) |
+| Elder Kajind | WAR | 100% | Elders | ~55. City named pool |
+| Elder Kalur | CLR | 100% | Elders | ~55. City named pool |
+| Grendish the Crusader | WAR | 100% | Crusaders | ~70. Same table as Charayan |
+| Jortreva the Crusader | WAR | 100% | Crusaders | ~70. Same table as Charayan |
+| Jualicn | WAR | 100% | High named | ~65. Bloodshrine Necklace / Mantle of Absorption / Walrusbone Shield |
+| Lawyla | WAR | 100% | High named | ~65. **Brightwood Spear** / Wyvern Hide Tunic |
+| Lignark | WAR | 100% | High named | ~62. City named pool |
+| Lord Yelinak | WAR | 100% | Throne | ~70. **RAID.** Always **Yelinak's Head** + **Yelinak's Talisman** |
+| Marech of the Shrine | CLR | 0% | Shrine | IdleQuest **0%**. ~55. `#Marech_of_the_Shrine`. Dragonscaled Gauntlets / Drakespine Belt |
+| Oglard | WAR | 100% | High named | ~65. `#Oglard` / Oglard. Jar`Nal Long Sword / Joined Ethereal Cape / Ice Spear |
+| Placlis | WAR | 100% | High named | ~65. City named pool (same as Talnifs) |
+| Quadrix Velic | WAR | 100% | High named | ~60. City named pool (same as Zaldin Fe`Dhar) |
+| Ralgyn | WAR | 0% | City | IdleQuest **0%**. ~60. `#Ralgyn`. City named pool. LEAVE for **Ralgyn's Promise** (chipped fang from DN Vilefang) |
+| Sentry Kale | WAR | 100% | Gate / CS | ~37–39. LEAVE for Cobalt Scar key path (Drake Fang). Kill = Sentry armor set |
+| Sentry Rotiart | WAR | 100% | Gate | ~43. Focused Ethereal Rapier |
+| Supreme Laochsmith Psorin | WAR | 0% | Armor halls | IdleQuest **0%**. ~59. LEAVE for **Laoch** weapons. Kill = Ductile Loam only |
+| Susarrak the Crusader | WAR | 100% | Crusaders | ~70. Same table as Charayan |
+| Talnifs | WAR | 100% | High named | ~65. Same pool as Placlis |
+| Zaldin Fe`Dhar | CLR | 100% | High named | ~60. Same pool as Quadrix Velic |
+| Ziglark Whisperwing | PAL | 100% | City | ~27–40. Always **Shrine Key** |
+| (killable Fe`Dhar nameds) | WAR | ? | City | ~45–54. Dalshim, Deoryn, Dygwyn, Dyr, Elyshum, Glydoc, Kalacs, Medry, Morachii, Poalgin, Qalcnic, Riran, Taegria, Tonvan, Vellyn, etc. — **city named pool** |
+| (class armor Fe`Dhar) | — | ? | Armor halls | LEAVE. **Unadorned** Skyshrine armor hub — Abudan, Adwetram, Asteinnon, Crendatha, Elaend, Fardonad, Jendavudd, Komawin, Larquin, Lothieder, Nalelin, Ocoenydd, Onerind, Qynydd, etc. |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| #Kintaru of the Shrine | CLR | 0% | — |  |
+| #Yelinak`s Emissary | WAR | 0% | — |  |
 
 ## Unique loot
 

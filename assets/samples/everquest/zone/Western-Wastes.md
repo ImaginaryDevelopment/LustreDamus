@@ -8,67 +8,76 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 
 ## Named spawn
 
-| Mob | Class | Area | PH / notes |
-| --- | --- | --- | --- |
-| a banished efreeti | WAR | Outdoor | IdleQuest **0%**. ~65. Always **Banished Efreeti Heart** |
-| Amcilla | WAR | Dragon | IdleQuest **0%**. ~53. Talisman + **Dragonleg Breeches** |
-| Atpaev | WAR | Dragon | ~51. Talisman + **Dragonskin Mask** |
-| Ayillish | WAR | Dragon pit | ~57. Talisman + **Dragonhorn Bracers**. Easier pit pull |
-| Bratavar | WAR | Dragon | ~53. Talisman + **Dragonwing Mantle** |
-| Breezeboot Swordrattler | ROG | Shipwreck | ~61. LEAVE. Pirate ship / gnome camp |
-| Bronif Snowchipper | ROG | Outdoor | ~56 |
-| Bufa (via Nintal) | — | — | IdleQuest **0%**. IdleQuest **Nintal** drops **Bufa's Talisman** |
-| Cargalia | SHM | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonhorn Boots** |
-| Chief Engineer Tocs | ROG | Outdoor | ~55. LEAVE / gnome engineer path |
-| Crial | WAR | Dragon | ~54. Talisman + **Dragonhorn Bracers**. Fire breath |
-| Derasinal | CLR | Dragon | ~57. **Derasinel's Talisman** (IdleQuest spelling) + Bracers |
-| Draazak | CLR | Dragon | ~58. Talisman + **Dragonwing Cloak**. Always **Bloody Claw** + **First Half of Vin`Pekir's Tome** |
-| Entariz | PAL | Dragon pit | ~57. Talisman + **Dragonskin Mask**. Near Sontalak |
-| Esorpa of the Ring | WIZ | Dragon | ~53. Talisman. Always **Second Half of Al`Tarlkal's Tome** |
-| Gafala | WAR | Dragon | ~52. Talisman + **Dragonskin Mask** |
-| Gangel | WAR | Dragon | ~51. Talisman + **Dragonhide Gauntlets** |
-| Glati | SHM | Dragon | ~54. Talisman + **Dragonhorn Boots** |
-| Grenth Drakebane | CLR | Outdoor | ~55. **Grenth Drakebane`s Head** |
-| Guardian Kozzalym | WAR | Roamer | ~55. Always **Fusible Velium Ore**. Social assist from zone |
-| Harla Dar | ENC | Dragon | ~66. **RAID.** Always talisman + Al`Tarlkal first half. Belt table; rare First Brood |
-| Hechaeva | WAR | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
-| Honvar | WAR | Dragon | ~52. Talisman + **Dragonwing Cloak** |
-| Icehackle | WAR | Wildlife | IdleQuest **0%**. ~61. **Icehackle's Pelt** |
-| Ionat | WAR | Dragon pit | ~56. Talisman + **Dragonleg Breeches** |
-| Jen Sapara | CLR | Dragon | ~62. Strong AE. Talisman + **Dragonskull Helm** |
-| Jerigozia | WAR | Dragon | ~58. Always **Bloody Claw of Jerigozia** |
-| Julius Oresko | WAR | Outdoor | ~55 |
-| Kar Sapara | WAR | Dragon | ~60. Talisman + **Dragonhide Belt**. Always **Second Half of Vin`Pekir's Tome** |
-| Karkona | WIZ | Dragon | ~57. Talisman + **Dragonwing Mantle** |
-| Klandicar | WAR | Dragon | ~70. **RAID.** First brood. Always talisman; BP / multi-piece armor; rare First Brood |
-| Linbrak | WAR | Dragon | ~53. Talisman + **Dragonskull Helm** |
-| Makil Rargon | WIZ | Outdoor | ~50 |
-| Mazi | WAR | Dragon | ~54. Talisman + **Dragonleg Breeches** |
-| Melalafen | WAR | Dragon | ~65. **RAID.** Red Dragon Scales / Tooth |
-| Mraaka | WAR | Dragon | IdleQuest **0%**. ~66. High dragon; sparse IdleQuest unique table |
-| Myga | WAR | Dragon | ~52. Talisman + **Dragonhorn Boots**. Always **Dragon Blood** |
-| Neordla | WAR | Dragon | ~57. Talisman + **Dragonspine Vambraces** |
-| Nintal | WAR | Dragon | IdleQuest **0%**. ~54. **Bufa's Talisman** + Mantle / Breeches / Heads |
-| Onava | WAR | Dragon | ~54. Talisman + **Dragonwing Mantle** |
-| Pantrilla | WAR | Dragon | ~53. Talisman + **Dragonwing Cloak** |
-| Quoza | WAR | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
-| Rontar O`Karn | BST | Outdoor | ~55 |
-| Sadeem Oujva | WIZ | Outdoor | ~55 |
-| Scout Charisa | ENC | Near Sirens / south | IdleQuest **0%**. ~55. LEAVE. **Aid the Dar Brood** / Leuz path |
-| Shardwing Courier | WAR | Outdoor | ~50 |
-| Sir Elmonious Falmont | PAL | Outdoor | ~70. IdleQuest high named |
-| Sontalak | WAR | ToV gate | ~70. **RAID.** First brood. Guards Temple of Veeshan. Always talisman |
-| Strong Horn | WAR | Wildlife | IdleQuest **0%**. ~65 |
-| Tantor | WAR | Wildlife | IdleQuest **0%**. ~66. **Tantor's Tusk** |
-| Tranala | WAR | Dragon | ~66 |
-| Travala | WAR | Dragon | IdleQuest **0%**. ~66 |
-| Tsiraka | RNG | Wildlife | IdleQuest **0%**. ~66. Always **Tsiraka's Claws** |
-| Uiliak | WAR | Dragon | ~53. Talisman + **Dragonhide Gauntlets** |
-| Veredenia | WIZ | Dragon | ~55. Always **Bloody Claw of Veredenia** |
-| Vitaela | WAR | Dragon | ~53. Talisman + **Dragonhorn Boots** |
-| Von | CLR | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonspine Vambraces** |
-| Vraptin | WAR | Dragon | ~53. Talisman + **Dragonskin Mask** |
-| Yeldema | WAR | Nest | ~52. Talisman + **Dragonhorn Boots**. Easier nest dragon |
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| a banished efreeti | WAR | 0% | Outdoor | IdleQuest **0%**. ~65. Always **Banished Efreeti Heart** |
+| Amcilla | WAR | 0% | Dragon | IdleQuest **0%**. ~53. Talisman + **Dragonleg Breeches** |
+| Atpaev | WAR | 34% | Dragon | ~51. Talisman + **Dragonskin Mask** |
+| Ayillish | WAR | 100% | Dragon pit | ~57. Talisman + **Dragonhorn Bracers**. Easier pit pull |
+| Bratavar | WAR | 100% | Dragon | ~53. Talisman + **Dragonwing Mantle** |
+| Breezeboot Swordrattler | ROG | 100% | Shipwreck | ~61. LEAVE. Pirate ship / gnome camp |
+| Bronif Snowchipper | ROG | 33% | Outdoor | ~56 |
+| Bufa (via Nintal) | — | 0% | — | IdleQuest **0%**. IdleQuest **Nintal** drops **Bufa's Talisman** |
+| Cargalia | SHM | 0% | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonhorn Boots** |
+| Chief Engineer Tocs | ROG | 100% | Outdoor | ~55. LEAVE / gnome engineer path |
+| Crial | WAR | 33% | Dragon | ~54. Talisman + **Dragonhorn Bracers**. Fire breath |
+| Derasinal | CLR | 100% | Dragon | ~57. **Derasinel's Talisman** (IdleQuest spelling) + Bracers |
+| Draazak | CLR | 33% | Dragon | ~58. Talisman + **Dragonwing Cloak**. Always **Bloody Claw** + **First Half of Vin`Pekir's Tome** |
+| Entariz | PAL | 100% | Dragon pit | ~57. Talisman + **Dragonskin Mask**. Near Sontalak |
+| Esorpa of the Ring | WIZ | 100% | Dragon | ~53. Talisman. Always **Second Half of Al`Tarlkal's Tome** |
+| Gafala | WAR | 100% | Dragon | ~52. Talisman + **Dragonskin Mask** |
+| Gangel | WAR | 20% | Dragon | ~51. Talisman + **Dragonhide Gauntlets** |
+| Glati | SHM | 100% | Dragon | ~54. Talisman + **Dragonhorn Boots** |
+| Grenth Drakebane | CLR | 100% | Outdoor | ~55. **Grenth Drakebane`s Head** |
+| Guardian Kozzalym | WAR | 100% | Roamer | ~55. Always **Fusible Velium Ore**. Social assist from zone |
+| Harla Dar | ENC | 100% | Dragon | ~66. **RAID.** Always talisman + Al`Tarlkal first half. Belt table; rare First Brood |
+| Hechaeva | WAR | 100% | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
+| Honvar | WAR | 50% | Dragon | ~52. Talisman + **Dragonwing Cloak** |
+| Icehackle | WAR | 0% | Wildlife | IdleQuest **0%**. ~61. **Icehackle's Pelt** |
+| Ionat | WAR | 100% | Dragon pit | ~56. Talisman + **Dragonleg Breeches** |
+| Jen Sapara | CLR | 100% | Dragon | ~62. Strong AE. Talisman + **Dragonskull Helm** |
+| Jerigozia | WAR | 33% | Dragon | ~58. Always **Bloody Claw of Jerigozia** |
+| Julius Oresko | WAR | 100% | Outdoor | ~55 |
+| Kar Sapara | WAR | 33% | Dragon | ~60. Talisman + **Dragonhide Belt**. Always **Second Half of Vin`Pekir's Tome** |
+| Karkona | WIZ | 100% | Dragon | ~57. Talisman + **Dragonwing Mantle** |
+| Klandicar | WAR | 100% | Dragon | ~70. **RAID.** First brood. Always talisman; BP / multi-piece armor; rare First Brood |
+| Linbrak | WAR | 100% | Dragon | ~53. Talisman + **Dragonskull Helm** |
+| Makil Rargon | WIZ | 100% | Outdoor | ~50 |
+| Mazi | WAR | 100% | Dragon | ~54. Talisman + **Dragonleg Breeches** |
+| Melalafen | WAR | 100% | Dragon | ~65. **RAID.** Red Dragon Scales / Tooth |
+| Mraaka | WAR | 0% | Dragon | IdleQuest **0%**. ~66. High dragon; sparse IdleQuest unique table |
+| Myga | WAR | 20% | Dragon | ~52. Talisman + **Dragonhorn Boots**. Always **Dragon Blood** |
+| Neordla | WAR | 100% | Dragon | ~57. Talisman + **Dragonspine Vambraces** |
+| Nintal | WAR | 0% | Dragon | IdleQuest **0%**. ~54. **Bufa's Talisman** + Mantle / Breeches / Heads |
+| Onava | WAR | 20% | Dragon | ~54. Talisman + **Dragonwing Mantle** |
+| Pantrilla | WAR | 100% | Dragon | ~53. Talisman + **Dragonwing Cloak** |
+| Quoza | WAR | 20% | Dragon | ~54. Talisman + **Dragonspine Vambraces** |
+| Rontar O`Karn | BST | 100% | Outdoor | ~55 |
+| Sadeem Oujva | WIZ | 100% | Outdoor | ~55 |
+| Scout Charisa | ENC | 0% | Near Sirens / south | IdleQuest **0%**. ~55. LEAVE. **Aid the Dar Brood** / Leuz path |
+| Shardwing Courier | WAR | 100% | Outdoor | ~50 |
+| Sir Elmonious Falmont | PAL | 100% | Outdoor | ~70. IdleQuest high named |
+| Sontalak | WAR | 100% | ToV gate | ~70. **RAID.** First brood. Guards Temple of Veeshan. Always talisman |
+| Strong Horn | WAR | 0% | Wildlife | IdleQuest **0%**. ~65 |
+| Tantor | WAR | 0% | Wildlife | IdleQuest **0%**. ~66. **Tantor's Tusk** |
+| Tranala | WAR | 100% | Dragon | ~66 |
+| Travala | WAR | 0% | Dragon | IdleQuest **0%**. ~66 |
+| Tsiraka | RNG | 0% | Wildlife | IdleQuest **0%**. ~66. Always **Tsiraka's Claws** |
+| Uiliak | WAR | 100% | Dragon | ~53. Talisman + **Dragonhide Gauntlets** |
+| Veredenia | WIZ | 34% | Dragon | ~55. Always **Bloody Claw of Veredenia** |
+| Vitaela | WAR | 100% | Dragon | ~53. Talisman + **Dragonhorn Boots** |
+| Von | CLR | 0% | Dragon | IdleQuest **0%**. ~57. Talisman + **Dragonspine Vambraces** |
+| Vraptin | WAR | 100% | Dragon | ~53. Talisman + **Dragonskin Mask** |
+| Yeldema | WAR | 100% | Nest | ~52. Talisman + **Dragonhorn Boots**. Easier nest dragon |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | Area | PH / notes |
+| --- | --- | ---: | --- | --- |
+| #Diddugu | BST | 0% | — |  |
+| #Vohnkare | CLR | 0% | — |  |
 
 ## Unique loot
 

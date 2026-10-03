@@ -13,7 +13,7 @@ Sort **Nameds** by **Mob**. **LEAVE** = Diggs Duggun (rogue epic path).
 | King Xorbb | KILL | WIZ | 5% | ~35. **Ring of Xorbb** / **Slime Crystal Staff** / Polished Bone Bracelet |
 | Lord Soptyvr | KILL | ENC | 100% | ~30. Polished Bone Bracelet |
 | Lord Sviir | KILL | ENC | 25% | ~20–22. Polished Bone Hoop / Bracelet |
-| Lord Syrkl | KILL | ENC | ~16–20% | ~21–22. Bone jewelry + junk rings / amulets |
+| Lord Syrkl | KILL | ENC | 20% | ~21–22. Bone jewelry + junk rings / amulets |
 | Brahhm | KILL | WAR | 50% | ~14. **Labyrinth Talisman** |
 | Spinflint | KILL | WAR | 5% | ~12. Whirling gem set (Amber / Quartz / Jasper / …) |
 | a goblin alchemist | KILL | SHM | 12% | ~16. **Humerus Handled Mace** |

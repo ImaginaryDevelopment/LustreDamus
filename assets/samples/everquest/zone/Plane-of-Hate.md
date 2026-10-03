@@ -8,30 +8,39 @@ Sort **Named spawn** by **Mob**. HP from IdleQuest (`hateplane` classic nameds).
 
 ## Named spawn
 
-| Mob | Class | HP | Area | PH / notes |
-| --- | --- | ---: | --- | --- |
-| Innoruuk | WIZ | ~32k | Temple | ~55. **RAID.** God. Huge unique pool + Shattered Emerald |
-| Magi P`Tasa | MAG | ~30k | Hate | ~56. Apothic set / elemental mastery staves |
-| Avatar of Abhorrence | ROG | ~29k | Hate | ~58. **RAID.** Vexthorne / Eye of Innoruuk / Woven Shadow |
-| Grandmaster R`Tal | MNK | ~29k | Hate | ~58 / ~50%. **RAID.** Rakusha Cloak / Sunderfury / Indicolite / Slowstone |
-| High Priest M`kari | CLR | ~29k | Hate | ~58 / ~50%. **RAID.** Ethereal Mist set |
-| Master of Spite | SHM | ~29k | Hate | ~58. **RAID.** Gardash / Rune Etched / Spitestone |
-| Mistress of Scorn | WAR | ~29k | Hate | ~58. **RAID.** Imbrued plate / Dawnchaser / Martune Rapier |
-| The Deathrot Knight | WAR | ~29k | Hate | ~65. IdleQuest `#` row |
-| Corrupter of Life | WIZ | ~21k | Hate | ~60. **RAID.** Wand of Souls / Wand of Conflagration |
-| Maestro of Rancor | BRD | ~16k | Hate | ~53. **RAID.** Hand of the Maestro / Six Note Blade / Evensong |
-| thought destroyer | BRD | ~14k | Hate | ~55. **RAID.** Imbrued / Martune Rapier |
-| Hand of the Maestro | WAR | ~11k | Hate | ~51. Always **Hand of the Maestro** item |
-| Lord of Loathing | WIZ | ~9k | Hate | ~55. **RAID.** Wand of Conflagration / Eye of Innoruuk |
-| an ashenbone drake | NEC | Trash | Hate | ~51. Ashenbone weapons / shield |
-| an ire ghast | SHD | Trash | Hate | ~50. Trueheart Shield / Darkmetal sprinkler |
-| an abhorrent | ROG | Trash | Hate | ~49. Woven Shadow set |
-| a scorn banshee | BRD | Trash | Hate | ~50. Imbrued plate / Martune Rapier |
-| a spite golem | SHM | Trash | Hate | ~51. Rune Etched / Scaled Hierophant / Spitestone |
-| a kiraikuei | MNK | Trash | Hate | ~50. Indicolite / Legionnaire Scale / Slowstone Amber |
-| a forsaken revenant | MAG/ENC | Trash | Hate | ~49–51. Apothic / Insidious / elemental staves |
-| a revultant rat | WAR | Trash | Hate | ~49. Revultant Whip / Darkwar Mask |
-| Cleric of Innoruuk | CLR | Trash | Hate | ~49. Ethereal Mist set |
+| Mob | Class | Chance | HP | Area | PH / notes |
+| --- | --- | ---: | ---: | --- | --- |
+| Innoruuk | WIZ | 100% | ~32k | Temple | ~55. **RAID.** God. Huge unique pool + Shattered Emerald |
+| Magi P`Tasa | MAG | 100% | ~30k | Hate | ~56. Apothic set / elemental mastery staves |
+| Avatar of Abhorrence | ROG | 100% | ~29k | Hate | ~58. **RAID.** Vexthorne / Eye of Innoruuk / Woven Shadow |
+| Grandmaster R`Tal | MNK | 50% | ~29k | Hate | ~58 / ~50%. **RAID.** Rakusha Cloak / Sunderfury / Indicolite / Slowstone |
+| High Priest M`kari | CLR | 50% | ~29k | Hate | ~58 / ~50%. **RAID.** Ethereal Mist set |
+| Master of Spite | SHM | 100% | ~29k | Hate | ~58. **RAID.** Gardash / Rune Etched / Spitestone |
+| Mistress of Scorn | WAR | 100% | ~29k | Hate | ~58. **RAID.** Imbrued plate / Dawnchaser / Martune Rapier |
+| The Deathrot Knight | WAR | ? | ~29k | Hate | ~65. IdleQuest `#` row |
+| Corrupter of Life | WIZ | 100% | ~21k | Hate | ~60. **RAID.** Wand of Souls / Wand of Conflagration |
+| Maestro of Rancor | BRD | 100% | ~16k | Hate | ~53. **RAID.** Hand of the Maestro / Six Note Blade / Evensong |
+| thought destroyer | BRD | 100% | ~14k | Hate | ~55. **RAID.** Imbrued / Martune Rapier |
+| Hand of the Maestro | WAR | 100% | ~11k | Hate | ~51. Always **Hand of the Maestro** item |
+| Lord of Loathing | WIZ | 100% | ~9k | Hate | ~55. **RAID.** Wand of Conflagration / Eye of Innoruuk |
+| an ashenbone drake | NEC | 100% | Trash | Hate | ~51. Ashenbone weapons / shield |
+| an ire ghast | SHD | 100% | Trash | Hate | ~50. Trueheart Shield / Darkmetal sprinkler |
+| an abhorrent | ROG | 100% | Trash | Hate | ~49. Woven Shadow set |
+| a scorn banshee | BRD | 100% | Trash | Hate | ~50. Imbrued plate / Martune Rapier |
+| a spite golem | SHM | 100% | Trash | Hate | ~51. Rune Etched / Scaled Hierophant / Spitestone |
+| a kiraikuei | MNK | 100% | Trash | Hate | ~50. Indicolite / Legionnaire Scale / Slowstone Amber |
+| a forsaken revenant | MAG/ENC | 100% | Trash | Hate | ~49–51. Apothic / Insidious / elemental staves |
+| a revultant rat | WAR | 100% | Trash | Hate | ~49. Revultant Whip / Darkwar Mask |
+| Cleric of Innoruuk | CLR | 100% | Trash | Hate | ~49. Ethereal Mist set |
+
+### IdleQuest 0% (script / PH)
+
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
+
+| Mob | Class | Chance | HP | Area | PH / notes |
+| --- | --- | ---: | ---: | --- | --- |
+| #Ashenbone Broodmaster | NEC | 0% | ~14k | — |  |
+| #Coercer T`vala | ENC | 0% | ~14k | — |  |
 
 ## Unique loot
 
