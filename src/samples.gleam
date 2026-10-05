@@ -74,7 +74,11 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [quest_gear_sample(), velious_factions_sample()],
+    samples: [
+      quest_gear_sample(),
+      velious_factions_sample(),
+      velious_gem_sources_sample(),
+    ],
     buckets: [
       SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
       SampleGroup(
@@ -191,6 +195,16 @@ fn velious_factions_sample() -> Sample {
     "everquest",
     "Velious-Factions.md",
     "Coldain, Claws of Veeshan, and Frost Giant faction choices.",
+  )
+}
+
+fn velious_gem_sources_sample() -> Sample {
+  sheet(
+    "velious-gem-sources",
+    "Velious Gems",
+    "everquest",
+    "Velious-Gem-Sources.md",
+    "Armor gem slot chart and IdleQuest farm camps (Thurgadin / Kael / Skyshrine).",
   )
 }
 

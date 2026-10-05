@@ -102,7 +102,7 @@ Classic / Kunark / Velious. Field drops and molds that become **worn gear**. Not
 | Corroded plate / chain / leather / silk (by slot) | Velious | **Thurgadin** class armor (Champion's, etc.) | Class NPC in Thurgadin | Kael giants / veterans. + **3 matching crushed/flawed gems**. Kindly Coldain. Groupable — see Warrior Chests for Champion's BP |
 | Ancient Tarnished (plate/chain/etc.) | Velious | **Kael** class armor | Class NPC in Kael | **Temple of Veeshan west** — **RAID**. Ally Kromzek. Skip unless raiding ToV |
 | Unadorned (plate/chain/etc.) | Velious | **Skyshrine** class armor | Class NPC in Skyshrine | **ToV east / Halls of Testing** — **RAID**. Ally Claws of Veeshan |
-| Crushed Coral; Crushed Flame Emerald; Crushed Topaz; Crushed Black Marble; Flawed Emerald; Flawed Sea Sapphire; Flawless Diamond | Velious | Any Velious faction armor slot | With the matching mold | Velketor's, Siren's Grotto, Cobalt Scar, Wakening Land, etc. **Save all of these** |
+| Crushed / Flawed / Flawless / Pristine / Black Marble / Nephrite (by slot) | Velious | Any Velious faction armor slot | With the matching mold | Full slot chart + farms: [Velious Gem Sources](Velious-Gem-Sources.md). **Save all useful gems** |
 | Gnoll pelt / Blackburrow gnoll skin / putrid rib bone | Classic | **Monk headbands** (Qeynos) | Phin Esrinap / Togahn Sorast | Silent Fist. Headband upgrades by turning the previous band in with the drops |
 | Deathfist pawn scalp; snake fang; bone chips | Classic | **Monk sashes** (Freeport) | Velan Torresk / Reyia | Ashen Order. Same pattern — previous sash + drops |
 | Iksar monk shackle drops | Kunark | **Shackles** (Cabilis) | Cabilis monk guild | White → Tynnonium. Keep the current shackle for the next turn-in |

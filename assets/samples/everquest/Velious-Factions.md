@@ -23,5 +23,5 @@ Target **Kindly or better** with Coldain and Claws of Veeshan. Expect Frost Gian
 - **Kael giants** are the shared grind for Coldain + CoV. You do not need a separate CoV camp if you live in Kael.
 - **Giant helmets** → Coldain turn-ins speed Thurgadin standing without extra travel.
 - **Behind Tormax's throne** is a sneak / faction trick for CoV when you need a bump without a full Kael session.
-- **Thurgadin armor** (Kindly Coldain + Corroded pieces + gems) is the groupable 50–60 path. **Skyshrine** and **Kael** armor are Ally + ToV RAID molds — see [Quest Gear](Quest-Gear.md) and the city sheets.
+- **Thurgadin armor** (Kindly Coldain + Corroded pieces + gems) is the groupable 50–60 path. **Skyshrine** and **Kael** armor are Ally + ToV RAID molds — see [Quest Gear](Quest-Gear.md), [Velious Gem Sources](Velious-Gem-Sources.md), and the city sheets.
 - Raid **King Tormax** (Kael) or **Lord Yelinak** (Skyshrine) heads feed cross-faction turn-ins; check the Kael / Skyshrine sheets before eating heads.
