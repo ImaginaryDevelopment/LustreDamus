@@ -76,6 +76,7 @@ fn everquest_group() -> SampleGroup {
     label: "EverQuest",
     samples: [
       quest_gear_sample(),
+      twinks_sample(),
       velious_factions_sample(),
       velious_gem_sources_sample(),
     ],
@@ -185,6 +186,16 @@ fn quest_gear_sample() -> Sample {
     "everquest",
     "Quest-Gear.md",
     "Turn-in armor and loot to save for gear (Classic / Kunark / Velious).",
+  )
+}
+
+fn twinks_sample() -> Sample {
+  sheet(
+    "twinks",
+    "Twinks",
+    "everquest",
+    "Twinks.md",
+    "Account-share NO DROP twink gear: haste, Tolapumj, Di`Zok Signet, fungi, utility.",
   )
 }
 
