@@ -474,9 +474,12 @@ fn view(model: Model) -> Element(Msg) {
           "nav-root",
           UserChosePaste,
         ),
-        ..list.map(samples.groups(), fn(group) {
-          sample_nav_bucket(group, model, 0)
-        })
+        ..list.append(
+          list.map(samples.groups(), fn(group) {
+            sample_nav_bucket(group, model, 0)
+          }),
+          [related_sites_nav()],
+        ),
       ],
     ),
     html.main([], case model.page {
@@ -834,6 +837,28 @@ fn nav_button(
   }
   html.button(
     [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
+    [html.text(label)],
+  )
+}
+
+fn related_sites_nav() -> Element(Msg) {
+  html.div([attribute.class("nav-group")], [
+    html.span([attribute.class("nav-section-label")], [html.text("Related Sites")]),
+    html.div([attribute.class("nav-links")], [
+      external_nav_link("IdleQuest", "https://idlequest.net/"),
+      external_nav_link("EQ Progression", "https://www.eqprogression.com/"),
+    ]),
+  ])
+}
+
+fn external_nav_link(label: String, url: String) -> Element(Msg) {
+  html.a(
+    [
+      attribute.class("nav-link nav-leaf"),
+      attribute.href(url),
+      attribute.target("_blank"),
+      attribute.rel("noopener noreferrer"),
+    ],
     [html.text(label)],
   )
 }

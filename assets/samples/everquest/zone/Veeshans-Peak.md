@@ -1,6 +1,8 @@
 # Veeshan's Peak — unique loot
 
-Kunark raid citadel in **Skyfire Mountains**. Hunt **60+**. Needs **Key of Veeshan** (**Rune of Scale** — not in this zone). Gate / port **do not work**; leave through a dragon lair portal. No AAs: every dragon is **RAID**.
+Kunark raid citadel in **Skyfire Mountains** (`veeshan`). Hunt **60+**. Needs **Key of Veeshan** (**Rune of Scale** — not in this zone). Gate / port **do not work**; leave through a dragon lair portal. No AAs: every dragon is **RAID**.
+
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`veeshan`). HP from IdleQuest `npc_types` on the enabled **VeeshanNew** spawn condition (classic **VeeshanOld** ~145–191k rows exist but are off). **Hoshkar** is an outlier at **~32k** in IdleQuest (same figure on both old/new rows).
 
 Sort **Nameds** by **Mob**. **Do** = **RAID** for every dragon (Ring of Scale KOS — no LEAVE NPCs inside).
 
@@ -8,12 +10,12 @@ Sort **Nameds** by **Mob**. **Do** = **RAID** for every dragon (Ring of Scale KO
 
 | Mob | Do | Class | Loc | Notes |
 | --- | --- | --- | --- | --- |
-| Silverwing | RAID | ENC | ~319, −258 | First dragon on a normal crawl. Charm AE. Portal: none listed as the common out |
-| Hoshkar | RAID | SHM | roam / ~1463, 562 | Disease AE + slow. Portal nearby |
-| Xygoz | RAID | WIZ | ~1261, 1217, 762 | Silence AE. Portal → **Swamp of No Hope** |
-| Druushk | RAID | RNG | ~1418, −206 | 1500 DD + dispel AE, charm, gates. Portal → **East Freeport** |
-| Nexona | RAID | SHD | ~1170, −561 | Fire AE. Hard. Portal → **Skyfire** |
-| Phara Dar | RAID | CLR | ~−1156, −1314 | Top dragon. Stun + DD, charm. Portal → **Plane of Sky** isle 1 |
+| Silverwing | RAID | ENC | ~319, −258 | ~70 / **~454k HP**. First dragon on a normal crawl. Charm AE. Portal: none listed as the common out |
+| Hoshkar | RAID | SHM | roam / ~1463, 562 | ~65 / **~32k HP** (IdleQuest). Disease AE + slow. Portal nearby |
+| Xygoz | RAID | WIZ | ~1261, 1217, 762 | ~70 / **~814k HP**. Silence AE. Portal → **Swamp of No Hope** |
+| Druushk | RAID | RNG | ~1418, −206 | ~70 / **~470k HP**. 1500 DD + dispel AE, charm, gates. Portal → **East Freeport** |
+| Nexona | RAID | SHD | ~1170, −561 | ~70 / **~800k HP**. Fire AE. Hard. Portal → **Skyfire** |
+| Phara Dar | RAID | CLR | ~−1156, −1314 | ~70 / **~681k HP**. Top dragon. Stun + DD, charm. Portal → **Plane of Sky** isle 1 |
 
 ## Unique loot
 

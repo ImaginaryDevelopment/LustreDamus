@@ -2,7 +2,7 @@
 
 Highest classic ZEM in this set (**2.50×**). Hunt range **48–60**. Needs **Trakanon Idol** key (Emperor Ganak in **Trakanon's Teeth**, not here). No AAs: **RAID** = formed raid; untagged = one on-level group. **Trakanon** is RAID. Juggernauts / Spore King / city nameds are group camps.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sebilis`). Mob names match IdleQuest display (`Arch_Duke_Iatol` → **Arch Duke Iatol**, `sebilite_juggernaut` → **sebilite juggernaut**). Skip Fabled variants. Trash frogs / scarabs / skeletons share many rare armor pieces — named rows below are the ones to stop for.
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sebilis`). Mob names match IdleQuest display (`Arch_Duke_Iatol` → **Arch Duke Iatol**, `sebilite_juggernaut` → **sebilite juggernaut**). HP from IdleQuest `npc_types`. Skip Fabled variants. Trash frogs / scarabs / skeletons share many rare armor pieces — named rows below are the ones to stop for.
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot
@@ -40,7 +40,7 @@ Sort **Nameds** by **Mob**. **Do** column:
 | sebilite juggernaut | KILL | WAR | Juggs | ~57 / ~50%. Sebilite Croaking Dirk / Blood Ember Helm / Undead Dragon Sinew |
 | spectral duke | KILL | SHD | Crypt | ~49 / ~25%. Ancient Iksar Bone Inkwell / Granite Face Grinder / Jarsath Battle Sword |
 | Tolapumj | KILL | ENC | City | ~60 / always. Tolapumj's Robe |
-| Trakanon | RAID | NEC | Lair | ~65 / always. Tooth / class chests / Cloak of Piety / etc. |
+| Trakanon | RAID | NEC | Lair | ~65 / **~32k HP** (IdleQuest). Always. Tooth / class chests / Cloak of Piety / etc. |
 | an Iksar necromancer | KILL | NEC | Crypt trash | ~46–50. Rare: Jaundiced Bone Helm / Silver Etched Warhammer |
 | skeletal crusader / guard | KILL | WAR | Crypt trash | ~46–51. Rare: Blood Ember Vambraces |
 | myconid adept / priest / reaver / warrior | KILL | CLR/WAR | Fungus trash | Rare: Cobalt Bracer / Green Jade Axe |

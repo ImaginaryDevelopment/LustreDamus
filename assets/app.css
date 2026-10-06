@@ -181,6 +181,7 @@ header p,
   font-size: 0.82rem;
   line-height: 1.2;
   border-radius: 3px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
