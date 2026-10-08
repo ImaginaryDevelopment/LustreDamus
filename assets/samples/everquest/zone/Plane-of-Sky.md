@@ -22,15 +22,15 @@ Sort **Named spawn** by **Mob**. **LEAVE** rows are key / quest NPCs — do not 
 | Bzzazzt | WAR | **~19k** | Bee | ~50 / ~33%. Nectars / Dull Dragon Scale |
 | a spiroc arbiter / caller / expulser / banisher / revolter / walker / vanquisher | mixed | Trash | Spiroc | ~52–58. Feathers / totems / rings |
 | an azarack | ROG | Trash | Island | ~53. Symbol of Marr / belts / bracelets |
-| an essence harvester | WAR | Trash | Island | ~52. Statuettes / Bird Whistle |
-| a soul carrier | WAR | Trash | Island | ~52. Treant Tear / belts |
+| an essence harvester | WAR | Trash | Island | ~52. **Bird Whistle** (Avian Key) / mid-island Statuettes |
+| a soul carrier | WAR | Trash | Island | ~52. Bird Whistle / Treant Tear / belts |
 | a blade storm | WAR | Trash | Island | ~59. Blade of Abrogation |
 | a fatestealer / heartsbane / windrider drake | WIZ | Trash | Drake | ~56–60. Bracelets / Replica of the Wyrm Queen |
 | a gorgalask | WAR | Trash | Island | ~56. Harpy Tongue / Nature Walker pieces |
 | heart harpie / a sprited harpie | SHD | Trash | Harpy | ~54–58. Harpy Tongue / belts |
 | a greater sphinx | ENC | Trash | Island | ~54. Hilts / Lightning Rod / gems |
-| a crystaline cloud / a gust of wind / a shimmering meteor | WAR | Trash | Elemental | ~53–55. Globes / figurines |
-| an avenging gazer | WIZ | Trash | Island | ~59. Animal Figurine / bracelets |
+| a crystaline cloud / a gust of wind / a shimmering meteor | WAR | Trash | Elemental | ~53–55. Class-test **Globes** + **Animal Figurine** |
+| an avenging gazer | WIZ | Trash | Island | ~59. **Animal Figurine** (Key of Beasts) / bracelets |
 | an undine spirit | CLR | Trash | Island | ~53. Treant Tear / Crown of Elemental Mastery |
 | a thunder spirit | SHD | Trash | Early | ~50. Blade of Abrogation / Weight of the Gods |
 | a watchful guard | ENC | Trash | Island | ~54. Harpy Tongue / gems |
@@ -158,45 +158,66 @@ Notable uniques only — skip coin / pebble / ore spam. **Classes** + stats from
 
 ### What the “junk” actually does
 
-Most Sky “globes / figurines / pearls / diamonds” are **not clickies and not wearable gear**. They are **class-test hand-ins** in the quest room (Key Master → Veeshan's Key → island-1 dish). Typical pattern: common tessera/disc + mid drop + rare/boss drop (± Efreeti piece).
+Most Sky globes / figurines / pearls / diamonds are **not clickies and not wearable**. Two separate uses:
+
+1. **Island keys** — hand to **Sirran the Lunatic** (spawns after the island boss dies).
+2. **Class tests** — hand in the quest room (Key Master → free Veeshan's Key → north dish on island 1). Pattern: common tessera/disc + mid drop + rare/boss drop (± Efreeti piece).
+
+#### Island-key reagents (not class tests)
+
+| Item | Source | Hand to | Unlocks |
+| --- | --- | --- | --- |
+| Animal Figurine | Island 3 trash (clouds / winds / meteors / gazers / harpies) | Sirran after **Gorgalosk** | **Key of Beasts** → island 4 |
+| Bird Whistle | Island 4 essence/soul carriers & harvesters (also Eternal Spirit) | Sirran after **Keeper of Souls** | **Avian Key** → island 5 |
+
+Bank extras — you need one of each to progress the plane, not for class rewards.
 
 #### Globes (island 3 elemental trash)
 
-Drop from **a crystaline cloud**, **a gust of wind**, **a shimmering meteor**. Lore only until turned in.
+Drop from **a crystaline cloud**, **a gust of wind**, **a shimmering meteor**. Inventory-only until turned in at the quest room.
 
-| Globe | Used in (examples) | Example reward |
+| Globe | Class test(s) | Example reward |
 | --- | --- | --- |
-| Diaphanous Globe | PAL Spirit (Dirkog); SK Slash (Gragrot); DRU Tree (Will Treewalker) | **Girdle of Faith** (PAL haste belt); **Pegasus-Hide Belt**; **Shillelagh** |
-| Pearlescent Globe | WAR Force (Falorn); ROG Silence (Kendrick) | **Aerated Pauldrons**; **Griffon Wing Spauldors** |
-| Phosphoric Globe | BRD Pitch (Denise); SHM Sight (Gina) | **Ervaj's Flute of Flight**; **Fairy-Hide Mantle** |
-| Hyaline Globe | WIZ Meditation; MAG Shielding | Class shoulders / cloth (with HQ Raiment etc.) |
+| Diaphanous Globe | PAL Spirit; SK Slash; DRU Tree | **Girdle of Faith** (PAL 41% haste); **Pegasus-Hide Belt** (SK 41% haste); **Shillelagh** |
+| Pearlescent Globe | WAR Force; ROG Silence | **Aerated Pauldrons**; **Griffon Wing Spauldors** |
+| Phosphoric Globe | BRD Pitch; SHM Sight | **Ervaj's Flute of Flight**; **Fairy-Hide Mantle** |
+| Hyaline Globe | WIZ Meditation; MAG Shielding | With HQ Raiment / Golden Coffer → class cloth / pendant |
+| Adumbrate Globe | CLR Protection; MNK Speed | **Pauldrons of Piety**; **Sandals of Alacrity** (JBoots path) |
+| Rugous Globe | ENC Deception | **Ivory Mask** (with Sky Pearl + Silken Mask) |
+| Rogous / Gridelin Globe | NEC Mind; RNG Earth | Class cloak / mantle lines |
 
-#### Statuettes / figurines / whistle
+#### Statuettes / figurines (mid-island trash)
 
-Same idea — inventory reagents for specific tests. Common sources: **essence / soul carrier**, harvesters, Eternal Spirit, sphinx / harpy islands.
+Inventory reagents for island-4+ class tests. Sources: essence/soul carriers & harvesters, Eternal Spirit, bee/sphinx islands.
 
-| Item | Typical use |
-| --- | --- |
-| Animal Figurine / Bird Whistle | Early–mid class tests (hail your island quest NPC) |
-| Pegasus / Griffon / Harpy / Djinni / Efreeti Statuette | Mid tests (often island 4–6). e.g. Efreeti Statuette → DRU Bee test |
-| Songbird / Imp / Spiroc Statuette | Class-specific (BRD Tone, BRD Wind, CLR Resolution, …) |
+| Item | Class test(s) | Example reward |
+| --- | --- | --- |
+| Songbird Statuette | BRD Tone (island 2 drop) | **Mask of Song** |
+| Pegasus Statuette | ROG Stealth; WAR Think | Cloak / **Efreeti Belt** line |
+| Griffon Statuette | PAL Sacrifice; SK Disempowerment | **Aldryn** path; SK pauldrons line |
+| Harpy Statuette | ENC Disillusion; MAG Summoning | **Earring of Displacement**; MAG amice line |
+| Efreeti Statuette | DRU Bee; WIZ Conception | **Honeycomb Belt**; WIZ focus line |
+| Djinni Statuette | RNG Thunder; SHM Shrink | RNG earring / **Efreeti War Club** line |
+| Imp Statuette | BRD Wind; NEC Heart | **Fae Amulet**; NEC amulet line |
+| Spiroc Statuette | CLR Resolution; MNK Tears | **Necklace of Resolution**; MNK wraps line |
 
-#### Big gems (boss islands)
+#### Big gems / pearls (boss islands)
 
 | Item | Source | Purpose |
 | --- | --- | --- |
-| Large Sky Pearl | Noble Dojorn (~35%) | **SK Raising of the Dead** reagent (with Fae Pauldrons + Jar of Honey + Sphinxian Ring). Not a worn earring/necklace |
-| Large Sky Diamond | Eye of Veeshan | Late PAL Compassion test (→ Truvinan) and other end-island turns |
-| Large Sky Sapphire | Eye of Veeshan | Late class-test gem pool |
-| Ivory Sky Diamond | Spiroc Lord | Mid tests (e.g. PAL Spirit with Diaphanous Globe → Girdle of Faith) |
+| Large Sky Pearl | Noble Dojorn (~35%); also Overseer / Hand | **SK Raising of the Dead** only (with Fae Pauldrons + Jar of Honey + Sphinxian Ring) → **Pearlescent Pauldrons**. Not jewelry — slots 0 |
+| Large Sky Diamond | Eye of Veeshan | PAL Compassion → **Truvinan** (with Dulcet Nectar + Golden Hilt + Efreeti Zweihander) |
+| Large Sky Sapphire | Eye of Veeshan | Late ENC / WIZ end tests (with Efreeti staff pieces) |
+| Ivory Sky Diamond | Spiroc Lord | PAL Spirit with Diaphanous Globe → **Girdle of Faith** |
 | Nature Walker's Sky Emerald | Watchful guard / gorgalask | DRU Bear test reagent |
+| Sky Pearl (small) | Island 4 soul/essence | ENC Deception with Rugous Globe — not the Large Sky Pearl |
 
 #### Wearable notables people confuse with quest junk
 
 | Item | Slot | What it actually is |
 | --- | --- | --- |
-| Weight of the Gods | **Shoulders** | CLR worn piece: AC 12 WIS/AGI +5 Mana +50 SV MAGIC +25. **No click.** Farmable off princess / Dojorn / Gorgalosk / Eye / etc. |
-| Stein of Flowing Ichor | Primary / Secondary | SHM held/stats piece (Mana +50). No click |
+| Weight of the Gods | **Shoulders** (bit 64) | **Worn CLR piece** — AC 12 WIS/AGI +5 Mana +50 SV MAGIC +25. **No click, not a quest reagent.** Farm princess / Dojorn / Gorgalosk / Eye / azaracks |
+| Stein of Flowing Ichor | Primary / Secondary | SHM held/stats (Mana +50). No click |
 | Treant Tear | Ear | DRU worn ear: AC 2 Mana +40 all resists +5 |
 | Symbol of Marr | Neck | PAL worn neck: AC 15 STR/WIS +5 |
 | White Satin Gloves | Hands | ALL worn gloves: HP/Mana +25 SV FIRE +30 |
@@ -220,12 +241,14 @@ Common on azarack / clouds / winds / soul carrier / essence harvester / harpies 
 | Item | Mob | Quest |
 | --- | --- | --- |
 | Island keys | Prior island bosses / quest NPCs | Opens next island — see Key Master |
-| Globes (Diaphanous / Pearlescent / Phosphoric / Hyaline) | Island 3 elementals | Class tests — see table above |
-| Statuettes / figurines / Bird Whistle | Mid islands | Class tests — see table above |
+| Animal Figurine | Island 3 trash | Sirran → **Key of Beasts** (island 4) |
+| Bird Whistle | Island 4 essence/soul | Sirran → **Avian Key** (island 5) |
+| Globes (Diaphanous / Pearlescent / Phosphoric / Hyaline / Adumbrate / Rugous / …) | Island 3 elementals | Class tests — see table above |
+| Statuettes (Pegasus / Griffon / Harpy / Efreeti / Djinni / Imp / Spiroc / Songbird) | Mid islands | Class tests — see table above |
 | Spiroc feathers / totems | Spiroc Lord / Guardian / trash | Class / plane quests |
 | Nectars / Dull Dragon Scale | Bzzazzt | Bee island / class tests |
-| Large Sky Pearl | Noble Dojorn | SK Raising of the Dead |
-| Large Sky Diamond / Sapphire | Eye of Veeshan | Late island class tests |
+| Large Sky Pearl | Noble Dojorn | SK Raising of the Dead → Pearlescent Pauldrons |
+| Large Sky Diamond / Sapphire | Eye of Veeshan | Late island class tests (e.g. PAL Truvinan) |
 | Harpy Tongue | Harpies / gorgalask | Quest reagent |
 
 ## Quest NPCs
