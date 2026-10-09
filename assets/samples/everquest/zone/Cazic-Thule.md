@@ -40,7 +40,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are quest NPCs.
 | a Thul Tae Ew ritualist | NEC | Inner | ~60. Ritualists Mask / Lizard Tooth Earring |
 | a Thul Tae Ew spiritcaller | SHM | Inner | ~60. IdleQuest `spirtcaller`. Barbed Pauldrons / Tribal Shield |
 | a Thul Tae Ew torturer | ROG | Inner | ~60. Spiritcallers Coif |
-| a toxic jungle hunter | WAR | Jungle | ~56. **Spiderfang Earring** |
+| a toxic jungle hunter | WAR | Jungle | ~56. IdleQuest **0%** spawn. PH **a jungle hunter** (90%) — one point ~(-406, 332). **Spiderfang Earring** (~50%) |
 | an enraged Amygdalan | WAR | Temple | ~56. **Amygdalan's Chain Mask** |
 | an enraged disciple | WAR | Temple | ~55. Shield of Striding / Bowl of Vicious Ooze / Bone Shield |
 | an enraged jungle raptor | WAR | Jungle | ~56. Raptor Hide Shield |
