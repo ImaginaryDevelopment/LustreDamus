@@ -552,3 +552,71 @@ td.cell-note {
   margin: 0;
   color: var(--danger);
 }
+
+/* Plane of Mischief deck combo tracker */
+.pom-deck {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.pom-deck-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.pom-deck-head h2,
+.pom-deck h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.pom-deck h3 {
+  margin-top: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.pom-deck-head p,
+.pom-deck-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.pom-deck-clear {
+  appearance: none;
+  justify-self: start;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.3rem 0.65rem;
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.pom-deck-clear:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.pom-card-grid table {
+  width: max-content;
+  max-width: 100%;
+}
+
+.pom-card-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.pom-deck .table-wrap {
+  margin: 0;
+}

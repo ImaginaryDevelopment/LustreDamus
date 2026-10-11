@@ -4,6 +4,8 @@ Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** o
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`mischiefplane`). Almost all wearable gear is a **Deck of Spontaneous Generation** combine (cards → Ferjeneror), not a raw drop. Deck reagents (Squires / Knights / Crowns / Thrones) share a few IdleQuest loot pools below.
 
+**In-app tracker:** opening this sample shows a **Deck combo tracker** above the tables — check cards you own (saved in browser localStorage); it lists completes and missing-1 farms.
+
 **Do** column:
 - **KILL** — fine to kill for loot / reagents
 - **LEAVE** — quest NPC — do not kill
@@ -89,29 +91,48 @@ These are the raw-drop tables that feed Deck combines. Wearable Distraction / cl
 
 ### Deck of Spontaneous Generation rewards
 
-Combine cards / thrones / crowns / knights / squires in the Deck (from **Ferjeneror**). Not raw drops.
+Combine in the Deck (from **Ferjeneror**). Classic / P99 recipes — four cards each. Not raw drops.
 
-| Item | Notes |
-| --- | --- |
-| Boots of Distraction (Feet) | WAR CLR PAL SHD BRD, AC 24 WIS/INT +10 HP/Mana +20. White+Blue Throne |
-| Breastplate of Distraction (Chest) | WAR CLR PAL SHD BRD, AC 36 DEX/STA +10 HP +50 Mana +30. Red+Black Throne |
-| Crown of Distraction (Head) | WAR CLR PAL SHD BRD, AC 18 all stats +3 all resists +3. Red+Blue Throne |
-| Gloves of Distraction (Hands) | WAR CLR PAL SHD BRD, AC 20 all resists +5. White+Red Throne |
-| Greaves of Distraction (Legs) | WAR CLR PAL SHD BRD, AC 30 STR/CHA +12. Blue+Black Throne |
-| Vambraces of Distraction (Arms) | WAR CLR PAL SHD BRD, AC 27 WIS +5 AGI +8. One White Throne only |
-| Wristguard of Distraction (Wrist) | WAR CLR PAL SHD BRD, AC 19 STR/WIS/INT +3 HP/Mana +35. White+Black Throne |
-| Robe of Distraction (Chest) | NEC WIZ MAG ENC, AC 20 STA/INT +10 Mana +90. Black+Red Throne |
-| Cloak of Confusion (Back) | ALL, AC 14 STR +10 STA/CHA +15 HP +45, mixed resists. Weightless |
-| Buckler of Doom (Secondary) | ALL, AC 10 STR +15 HP +45 Mana +40. Weightless |
-| Bracelet of the Twisted Mind (Wrist) | NEC WIZ MAG ENC, AC 10 STA/INT +5 HP/Mana +35. Weightless |
-| Mask of Melodies (Face) | BRD, AC 14 CHA +15 HP +50. Weightless |
-| Mushroom Bracelet (Wrist) | MNK, AC 18 STR/AGI +6 all resists +3. HUM IKS |
-| Green Wristguard (Wrist) | RNG DRU, AC 20 STR/WIS +5 Mana +35 |
-| Shimmering Wristguard (Wrist) | CLR PAL, AC 22 WIS +8 HP/Mana +20 |
-| Silver Wristguards (Wrist) | PAL, AC 23 STR/WIS +7 all resists +2 |
-| Onyx Wristbands (Wrist) | SHD, AC 23 STR/INT +7 HP/Mana +25 all resists +2 |
-| Black / Blue / Green / Red / White Flower of Functionality (Head) | ALL, AC 10. Colored petal resist clicks (+50). Green stacks with cast PR; White with cast CR |
-| Globe of Darkness (Range) | ALL, STA +7 SV DISEASE +15 |
+#### Armor of Distraction
+
+| Item | Classes | Cards |
+| --- | --- | --- |
+| Boots of Distraction | WAR CLR PAL SHD BRD | White Throne, Blue Throne, White Crown, White Knight |
+| Breastplate of Distraction | WAR CLR PAL SHD BRD | Red Throne, Black Throne, Black Crown, Black Knight |
+| Crown of Distraction | WAR CLR PAL SHD BRD | Red Throne, Blue Throne, Red Crown, Blue Crown |
+| Gloves of Distraction | WAR CLR PAL SHD BRD | White Throne, Red Throne, White Crown, White Knight |
+| Greaves of Distraction | WAR CLR PAL SHD BRD | Blue Throne, Black Throne, Black Crown, Black Knight |
+| Robe of Distraction | NEC WIZ MAG ENC | Black Throne, Red Throne, Black Crown, Red Crown |
+| Vambraces of Distraction | WAR CLR PAL SHD BRD | White Throne, Black Crown, Black Knight, Black Squire |
+| Wristguard of Distraction | WAR CLR PAL SHD BRD | White Throne, Black Throne, White Crown, White Knight |
+
+#### Wrist / other
+
+| Item | Classes | Cards |
+| --- | --- | --- |
+| Bracelet of the Twisted Mind | NEC WIZ MAG ENC | White Throne, Blue Throne, Blue Crown, Blue Knight |
+| Green Wristguard | RNG DRU | White Throne, Red Throne, Red Crown, Red Knight |
+| Mushroom Bracelet | MNK (HUM IKS) | Black Throne, Blue Throne, Blue Crown, Blue Knight |
+| Onyx Wristbands | SHD | Blue Throne, Red Throne, Red Crown, Red Knight |
+| Shimmering Wristguard | CLR PAL | Red Throne, Blue Throne, Blue Crown, Blue Knight |
+| Silver Wristguards | PAL | Black Throne, Red Throne, Red Crown, Red Knight |
+| Buckler of Doom | ALL | Black Throne, Black Crown, Black Knight, Black Squire |
+| Cloak of Confusion | ALL | Blue Throne, Blue Crown, Blue Knight, Blue Squire |
+| Mask of Melodies | BRD | Red Throne, Red Crown, Red Knight, Red Squire |
+| Belt of Inconsistency | ALL | White Throne, Blue Throne, White Crown, Blue Crown |
+| Globe of Darkness | ALL | Black Throne, Blue Throne, Black Crown, Blue Crown |
+| Idiot Savant's Cap | ALL | Red Throne, White Throne, Red Crown, White Crown |
+| Very Rusty Dagger | SHD ROG | Black Throne, White Throne, Black Crown, White Crown |
+
+#### Flowers of Functionality
+
+| Item | Resist | Cards |
+| --- | --- | --- |
+| Black Flower | Disease | All four Squires |
+| Blue Flower | Magic | All four Thrones |
+| Green Flower | Poison (stacks) | All four Knights |
+| White Flower | Cold (stacks) | All four Crowns |
+| Red Flower | Fire | White Throne, White Crown, White Knight, White Squire |
 
 ## Quest items
 

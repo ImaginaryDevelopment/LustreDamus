@@ -13,8 +13,10 @@ import lustre/element/html
 import lustre/event
 import markdown_table.{type Table}
 import pal_index
+import pom_deck
 import rsvp
 import samples.{type Sample}
+import storage
 import table_format.{type FormattedCell, type TableFormatter}
 import table_sort.{
   type Direction, type EmptyPlacement, type SortKind, type SortSpec,
@@ -47,6 +49,8 @@ pub type Model {
     pal_elements: Dict(String, String),
     zone_search: String,
     zone_search_open: Bool,
+    /// Plane of Mischief deck cards owned (localStorage-backed).
+    pom_cards: Dict(String, Bool),
   )
 }
 
@@ -68,6 +72,8 @@ pub type Msg {
   UserToggledOptionalColumn(String, String, Bool)
   UserToggledValueFilter(String, String, String, Bool)
   UserToggledHideZeroSpawn(Bool)
+  UserToggledPomCard(String, Bool)
+  UserClearedPomCards
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
 }
@@ -93,6 +99,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       pal_elements: dict.new(),
       zone_search: "",
       zone_search_open: False,
+      pom_cards: pom_deck.decode_owned(storage.get_item(pom_deck.storage_key)),
     ),
     effect.none(),
   )
@@ -125,6 +132,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         pal_elements: model.pal_elements,
         zone_search: model.zone_search,
         zone_search_open: False,
+        pom_cards: model.pom_cards,
       ),
       effect.batch([
         load_sample(samples.url(sample)),
@@ -157,6 +165,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   pal_elements: model.pal_elements,
                   zone_search: "",
                   zone_search_open: True,
+                  pom_cards: model.pom_cards,
                 ),
                 effect.none(),
               )
@@ -287,6 +296,17 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       Model(..model, hide_zero_spawn:),
       effect.none(),
     )
+
+    UserToggledPomCard(id, on) -> {
+      let pom_cards = pom_deck.toggle(model.pom_cards, id, on)
+      storage.set_item(pom_deck.storage_key, pom_deck.encode_owned(pom_cards))
+      #(Model(..model, pom_cards:), effect.none())
+    }
+
+    UserClearedPomCards -> {
+      storage.set_item(pom_deck.storage_key, "")
+      #(Model(..model, pom_cards: dict.new()), effect.none())
+    }
 
     SampleLoaded(Ok(markdown)) -> #(
       Model(..model, markdown:, loading: False, error: None),
@@ -507,6 +527,10 @@ fn view(model: Model) -> Element(Msg) {
             False -> samples.meta_line(sample)
           }),
         ]),
+        case sample.id == "plane-of-mischief" {
+          True -> pom_deck_panel(model.pom_cards)
+          False -> element.none()
+        },
         filter_controls(model),
         tables_section(model, tables, formatter),
       ]
@@ -861,6 +885,141 @@ fn external_nav_link(label: String, url: String) -> Element(Msg) {
     ],
     [html.text(label)],
   )
+}
+
+fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
+  let craftable = pom_deck.craftable(owned)
+  let missing = pom_deck.missing_one(owned)
+  html.section(
+    [
+      attribute.class("pom-deck"),
+      attribute.attribute("aria-label", "Plane of Mischief deck tracker"),
+    ],
+    [
+      html.div([attribute.class("pom-deck-head")], [
+        html.h2([], [html.text("Deck combo tracker")]),
+        html.p([], [
+          html.text(
+            "Check cards you have. Progress saves in this browser (localStorage). Tables below stay the loot guide.",
+          ),
+        ]),
+        html.button(
+          [
+            attribute.type_("button"),
+            attribute.class("pom-deck-clear"),
+            event.on_click(UserClearedPomCards),
+          ],
+          [html.text("Clear cards")],
+        ),
+      ]),
+      pom_card_grid(owned),
+      html.h3([], [html.text("Can create")]),
+      case craftable {
+        [] ->
+          html.p([attribute.class("pom-deck-empty")], [
+            html.text("No complete recipes yet."),
+          ])
+        rows ->
+          html.div([attribute.class("table-wrap")], [
+            html.table([], [
+              html.thead([], [
+                html.tr([], [
+                  html.th([], [html.text("Item")]),
+                  html.th([], [html.text("Classes")]),
+                  html.th([], [html.text("Uses")]),
+                ]),
+              ]),
+              html.tbody(
+                [],
+                list.map(rows, fn(r) {
+                  html.tr([], [
+                    html.td([], [html.text(r.name)]),
+                    html.td([], [html.text(r.classes)]),
+                    html.td([], [html.text(pom_deck.needs_labels(r.needs))]),
+                  ])
+                }),
+              ),
+            ]),
+          ])
+      },
+      html.h3([], [html.text("Missing 1")]),
+      case missing {
+        [] ->
+          html.p([attribute.class("pom-deck-empty")], [
+            html.text("Nothing is one card away."),
+          ])
+        rows ->
+          html.div([attribute.class("table-wrap")], [
+            html.table([], [
+              html.thead([], [
+                html.tr([], [
+                  html.th([], [html.text("Item")]),
+                  html.th([], [html.text("Need")]),
+                  html.th([], [html.text("Farm")]),
+                ]),
+              ]),
+              html.tbody(
+                [],
+                list.map(rows, fn(m) {
+                  html.tr([], [
+                    html.td([], [html.text(m.recipe.name)]),
+                    html.td([], [html.text(m.missing_label)]),
+                    html.td([attribute.class("col-notes")], [html.text(m.farm)]),
+                  ])
+                }),
+              ),
+            ]),
+          ])
+      },
+    ],
+  )
+}
+
+fn pom_card_grid(owned: Dict(String, Bool)) -> Element(Msg) {
+  html.div([attribute.class("table-wrap pom-card-grid")], [
+    html.table([], [
+      html.thead([], [
+        html.tr(
+          [],
+          [
+            html.th([], [html.text("Rank")]),
+            ..list.map(pom_deck.colors(), fn(c) {
+              let #(_, label) = c
+              html.th([], [html.text(label)])
+            })
+          ],
+        ),
+      ]),
+      html.tbody(
+        [],
+        list.map(pom_deck.ranks(), fn(rank) {
+          let #(rank_id, rank_label) = rank
+          html.tr(
+            [],
+            [
+              html.th([], [html.text(rank_label)]),
+              ..list.map(pom_deck.colors(), fn(color) {
+                let #(color_id, _) = color
+                let id = color_id <> "-" <> rank_id
+                let checked = pom_deck.has_card(owned, id)
+                html.td([], [
+                  html.label([attribute.class("pom-card-check")], [
+                    html.input([
+                      attribute.type_("checkbox"),
+                      attribute.checked(checked),
+                      attribute.attribute("aria-label", pom_deck.card_label(id)),
+                      event.on_check(fn(on) { UserToggledPomCard(id, on) }),
+                    ]),
+                    html.text(" have"),
+                  ]),
+                ])
+              })
+            ],
+          )
+        }),
+      ),
+    ]),
+  ])
 }
 
 fn filter_controls(model: Model) -> Element(Msg) {
