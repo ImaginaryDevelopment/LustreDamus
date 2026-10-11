@@ -13,3 +13,9 @@ export function set_item(key, value) {
     // ignore quota / private mode
   }
 }
+
+export function new_id() {
+  const t = Date.now().toString(36)
+  const r = Math.random().toString(36).slice(2, 8)
+  return `${t}-${r}`
+}

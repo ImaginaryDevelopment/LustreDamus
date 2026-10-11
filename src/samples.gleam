@@ -81,6 +81,7 @@ fn everquest_group() -> SampleGroup {
       epic_ground_spawns_sample(),
       velious_factions_sample(),
       velious_gem_sources_sample(),
+      character_tracker_sample(),
     ],
     buckets: [
       SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
@@ -179,6 +180,20 @@ fn expansion_bucket(
       buckets: [],
     ),
   ])
+}
+
+fn character_tracker_sample() -> Sample {
+  sheet(
+    "character-tracker",
+    "Characters",
+    "everquest",
+    "",
+    "Account characters (name, class, level, optional race/religion, epic) — saved in this browser.",
+  )
+}
+
+pub fn is_character_tracker(sample: Sample) -> Bool {
+  sample.id == "character-tracker"
 }
 
 fn quest_gear_sample() -> Sample {

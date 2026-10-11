@@ -11,6 +11,7 @@ import lustre/effect.{type Effect}
 import lustre/element.{type Element}
 import lustre/element/html
 import lustre/event
+import character_tracker.{type Character, type Form as CharForm}
 import markdown_table.{type Table}
 import pal_index
 import pom_deck
@@ -51,6 +52,11 @@ pub type Model {
     zone_search_open: Bool,
     /// Plane of Mischief deck cards owned (localStorage-backed).
     pom_cards: Dict(String, Bool),
+    /// Account characters (localStorage-backed).
+    characters: List(Character),
+    char_form: CharForm,
+    char_editing: Option(String),
+    char_error: Option(String),
   )
 }
 
@@ -74,6 +80,16 @@ pub type Msg {
   UserToggledHideZeroSpawn(Bool)
   UserToggledPomCard(String, Bool)
   UserClearedPomCards
+  UserUpdatedCharName(String)
+  UserUpdatedCharClass(String)
+  UserUpdatedCharLevel(String)
+  UserUpdatedCharRace(String)
+  UserUpdatedCharReligion(String)
+  UserToggledCharHasEpic(Bool)
+  UserSavedCharacter
+  UserEditCharacter(String)
+  UserDeleteCharacter(String)
+  UserCancelCharEdit
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
 }
@@ -100,6 +116,12 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       zone_search: "",
       zone_search_open: False,
       pom_cards: pom_deck.decode_owned(storage.get_item(pom_deck.storage_key)),
+      characters: character_tracker.decode(
+        storage.get_item(character_tracker.storage_key),
+      ),
+      char_form: character_tracker.empty_form(),
+      char_editing: None,
+      char_error: None,
     ),
     effect.none(),
   )
@@ -118,30 +140,41 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       effect.none(),
     )
 
-    UserChoseSample(sample) -> #(
-      Model(
-        page: SamplePage(sample),
-        markdown: "",
-        filter: "",
-        loading: True,
-        error: None,
-        sorts: dict.new(),
-        optional_columns: dict.new(),
-        value_filters: dict.new(),
-        hide_zero_spawn: False,
-        pal_elements: model.pal_elements,
-        zone_search: model.zone_search,
-        zone_search_open: False,
-        pom_cards: model.pom_cards,
-      ),
-      effect.batch([
-        load_sample(samples.url(sample)),
-        case samples.is_palworld(sample) {
-          True -> ensure_pal_index(model.pal_elements)
-          False -> effect.none()
-        },
-      ]),
-    )
+    UserChoseSample(sample) -> {
+      let base =
+        Model(
+          page: SamplePage(sample),
+          markdown: "",
+          filter: "",
+          loading: False,
+          error: None,
+          sorts: dict.new(),
+          optional_columns: dict.new(),
+          value_filters: dict.new(),
+          hide_zero_spawn: False,
+          pal_elements: model.pal_elements,
+          zone_search: model.zone_search,
+          zone_search_open: False,
+          pom_cards: model.pom_cards,
+          characters: model.characters,
+          char_form: model.char_form,
+          char_editing: model.char_editing,
+          char_error: None,
+        )
+      case samples.is_character_tracker(sample) {
+        True -> #(base, effect.none())
+        False -> #(
+          Model(..base, loading: True),
+          effect.batch([
+            load_sample(samples.url(sample)),
+            case samples.is_palworld(sample) {
+              True -> ensure_pal_index(model.pal_elements)
+              False -> effect.none()
+            },
+          ]),
+        )
+      }
+    }
 
     UserOpenedZoneSearch ->
       case by_class_is_open(model) {
@@ -166,6 +199,10 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   zone_search: "",
                   zone_search_open: True,
                   pom_cards: model.pom_cards,
+                  characters: model.characters,
+                  char_form: model.char_form,
+                  char_editing: model.char_editing,
+                  char_error: model.char_error,
                 ),
                 effect.none(),
               )
@@ -307,6 +344,147 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       storage.set_item(pom_deck.storage_key, "")
       #(Model(..model, pom_cards: dict.new()), effect.none())
     }
+
+    UserUpdatedCharName(name) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_name(model.char_form, name),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserUpdatedCharClass(class) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_class(model.char_form, class),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserUpdatedCharLevel(level) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_level(model.char_form, level),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserUpdatedCharRace(race) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_race(model.char_form, race),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserUpdatedCharReligion(religion) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_religion(model.char_form, religion),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserToggledCharHasEpic(has_epic) -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.set_has_epic(model.char_form, has_epic),
+        char_error: None,
+      ),
+      effect.none(),
+    )
+
+    UserSavedCharacter ->
+      case character_tracker.validate(model.char_form) {
+        Error(message) -> #(
+          Model(..model, char_error: Some(message)),
+          effect.none(),
+        )
+        Ok(#(name, class, level, race, religion, has_epic)) -> {
+          let editing = case model.char_editing {
+            Some(id) -> id
+            None -> ""
+          }
+          let id = case editing {
+            "" -> storage.new_id()
+            existing -> existing
+          }
+          let characters =
+            character_tracker.upsert(
+              model.characters,
+              editing,
+              id,
+              name,
+              class,
+              level,
+              race,
+              religion,
+              has_epic,
+            )
+          storage.set_item(
+            character_tracker.storage_key,
+            character_tracker.encode(characters),
+          )
+          #(
+            Model(
+              ..model,
+              characters:,
+              char_form: character_tracker.empty_form(),
+              char_editing: None,
+              char_error: None,
+            ),
+            effect.none(),
+          )
+        }
+      }
+
+    UserEditCharacter(id) ->
+      case character_tracker.find(model.characters, id) {
+        Error(_) -> #(model, effect.none())
+        Ok(character) -> #(
+          Model(
+            ..model,
+            char_form: character_tracker.form_from_character(character),
+            char_editing: Some(id),
+            char_error: None,
+          ),
+          effect.none(),
+        )
+      }
+
+    UserDeleteCharacter(id) -> {
+      let characters = character_tracker.remove(model.characters, id)
+      storage.set_item(
+        character_tracker.storage_key,
+        character_tracker.encode(characters),
+      )
+      let #(char_form, char_editing) = case model.char_editing {
+        Some(editing) if editing == id -> #(
+          character_tracker.empty_form(),
+          None,
+        )
+        _ -> #(model.char_form, model.char_editing)
+      }
+      #(
+        Model(..model, characters:, char_form:, char_editing:, char_error: None),
+        effect.none(),
+      )
+    }
+
+    UserCancelCharEdit -> #(
+      Model(
+        ..model,
+        char_form: character_tracker.empty_form(),
+        char_editing: None,
+        char_error: None,
+      ),
+      effect.none(),
+    )
 
     SampleLoaded(Ok(markdown)) -> #(
       Model(..model, markdown:, loading: False, error: None),
@@ -494,12 +672,9 @@ fn view(model: Model) -> Element(Msg) {
           "nav-root",
           UserChosePaste,
         ),
-        ..list.append(
-          list.map(samples.groups(), fn(group) {
-            sample_nav_bucket(group, model, 0)
-          }),
-          [related_sites_nav()],
-        ),
+        ..list.map(samples.groups(), fn(group) {
+          sample_nav_bucket(group, model, 0)
+        }),
       ],
     ),
     html.main([], case model.page {
@@ -519,21 +694,32 @@ fn view(model: Model) -> Element(Msg) {
         filter_controls(model),
         tables_section(model, tables, formatter),
       ]
-      SamplePage(sample) -> [
-        html.p([attribute.class("sample-meta")], [
-          html.text(case model.zone_search_open && sample.id == "zone-index" {
-            True ->
-              "All zones — levels, XP, and * for friendly/faction caution. Type above to filter, or pick a zone."
-            False -> samples.meta_line(sample)
-          }),
-        ]),
-        case sample.id == "plane-of-mischief" {
-          True -> pom_deck_panel(model.pom_cards)
-          False -> element.none()
-        },
-        filter_controls(model),
-        tables_section(model, tables, formatter),
-      ]
+      SamplePage(sample) ->
+        case samples.is_character_tracker(sample) {
+          True -> [
+            html.p([attribute.class("sample-meta")], [
+              html.text(samples.meta_line(sample)),
+            ]),
+            character_tracker_panel(model),
+          ]
+          False -> [
+            html.p([attribute.class("sample-meta")], [
+              html.text(
+                case model.zone_search_open && sample.id == "zone-index" {
+                  True ->
+                    "All zones — levels, XP, and * for friendly/faction caution. Type above to filter, or pick a zone."
+                  False -> samples.meta_line(sample)
+                },
+              ),
+            ]),
+            case sample.id == "plane-of-mischief" {
+              True -> pom_deck_panel(model.pom_cards)
+              False -> element.none()
+            },
+            filter_controls(model),
+            tables_section(model, tables, formatter),
+          ]
+        }
     }),
   ])
 }
@@ -770,7 +956,11 @@ fn root_nav_children(
         Error(Nil) -> element.none()
       }
   }
-  [sample_links, ..list.append(branch_buttons, [detail])]
+  let base = [sample_links, ..list.append(branch_buttons, [detail])]
+  case samples.is_everquest_nav(group) {
+    True -> list.append(base, [related_sites_nav()])
+    False -> base
+  }
 }
 
 fn expansion_nav_children(
@@ -866,24 +1056,229 @@ fn nav_button(
 }
 
 fn related_sites_nav() -> Element(Msg) {
-  html.div([attribute.class("nav-group")], [
-    html.span([attribute.class("nav-section-label")], [html.text("Related Sites")]),
-    html.div([attribute.class("nav-links")], [
-      external_nav_link("IdleQuest", "https://idlequest.net/"),
-      external_nav_link("EQ Progression", "https://www.eqprogression.com/"),
-    ]),
-  ])
+  html.div(
+    [
+      attribute.class("nav-related"),
+      attribute.attribute("aria-label", "Off-site EverQuest links"),
+    ],
+    [
+      html.span([attribute.class("nav-section-label")], [html.text("Off-site")]),
+      html.div([attribute.class("nav-links")], [
+        external_nav_link("IdleQuest", "https://idlequest.net/"),
+        external_nav_link("EQ Progression", "https://www.eqprogression.com/"),
+      ]),
+    ],
+  )
 }
 
 fn external_nav_link(label: String, url: String) -> Element(Msg) {
   html.a(
     [
-      attribute.class("nav-link nav-leaf"),
+      attribute.class("nav-link nav-leaf nav-link-external"),
       attribute.href(url),
       attribute.target("_blank"),
       attribute.rel("noopener noreferrer"),
+      attribute.attribute("title", "Opens in a new tab"),
     ],
     [html.text(label)],
+  )
+}
+
+fn character_tracker_panel(model: Model) -> Element(Msg) {
+  let form = model.char_form
+  let save_label = case model.char_editing {
+    Some(_) -> "Save changes"
+    None -> "Add character"
+  }
+  html.section(
+    [
+      attribute.class("char-tracker"),
+      attribute.attribute("aria-label", "Character tracker"),
+    ],
+    [
+      html.div([attribute.class("char-tracker-head")], [
+        html.h2([], [html.text("Characters")]),
+        html.p([], [
+          html.text(
+            "Track alts on this account. Race and religion are optional. Saved in this browser (localStorage).",
+          ),
+        ]),
+      ]),
+      html.form(
+        [
+          attribute.class("char-form"),
+          attribute.attribute("autocomplete", "off"),
+          event.on_submit(fn(_) { UserSavedCharacter }),
+        ],
+        [
+          html.label([], [
+            html.span([], [html.text("Name")]),
+            html.input([
+              attribute.type_("text"),
+              attribute.value(form.name),
+              attribute.required(True),
+              event.on_input(UserUpdatedCharName),
+            ]),
+          ]),
+          html.label([], [
+            html.span([], [html.text("Class")]),
+            html.select(
+              [event.on_input(UserUpdatedCharClass)],
+              list.map(character_tracker.classes(), fn(class) {
+                html.option(
+                  [
+                    attribute.value(class),
+                    attribute.selected(form.class == class),
+                  ],
+                  class,
+                )
+              }),
+            ),
+          ]),
+          html.label([], [
+            html.span([], [html.text("Level")]),
+            html.input([
+              attribute.type_("number"),
+              attribute.value(form.level),
+              attribute.attribute("min", "1"),
+              attribute.attribute("max", "100"),
+              attribute.required(True),
+              event.on_input(UserUpdatedCharLevel),
+            ]),
+          ]),
+          html.label([], [
+            html.span([], [html.text("Race (optional)")]),
+            optional_select(
+              form.race,
+              character_tracker.races(),
+              UserUpdatedCharRace,
+            ),
+          ]),
+          html.label([], [
+            html.span([], [html.text("Religion (optional)")]),
+            optional_select(
+              form.religion,
+              character_tracker.religions(),
+              UserUpdatedCharReligion,
+            ),
+          ]),
+          html.label([attribute.class("char-epic")], [
+            html.input([
+              attribute.type_("checkbox"),
+              attribute.checked(form.has_epic),
+              event.on_check(UserToggledCharHasEpic),
+            ]),
+            html.text(" Has epic"),
+          ]),
+          html.div([attribute.class("char-form-actions")], [
+            html.button([attribute.type_("submit"), attribute.class("char-save")], [
+              html.text(save_label),
+            ]),
+            case model.char_editing {
+              None -> element.none()
+              Some(_) ->
+                html.button(
+                  [
+                    attribute.type_("button"),
+                    attribute.class("char-cancel"),
+                    event.on_click(UserCancelCharEdit),
+                  ],
+                  [html.text("Cancel")],
+                )
+            },
+          ]),
+        ],
+      ),
+      case model.char_error {
+        None -> element.none()
+        Some(message) -> html.p([attribute.class("error")], [html.text(message)])
+      },
+      case model.characters {
+        [] ->
+          html.p([attribute.class("char-empty")], [
+            html.text("No characters yet."),
+          ])
+        rows ->
+          html.div([attribute.class("table-wrap")], [
+            html.table([], [
+              html.thead([], [
+                html.tr([], [
+                  html.th([], [html.text("Name")]),
+                  html.th([], [html.text("Class")]),
+                  html.th([], [html.text("Level")]),
+                  html.th([], [html.text("Race")]),
+                  html.th([], [html.text("Religion")]),
+                  html.th([], [html.text("Epic")]),
+                  html.th([], [html.text("")]),
+                ]),
+              ]),
+              html.tbody(
+                [],
+                list.map(rows, fn(c) {
+                  html.tr([], [
+                    html.td([], [html.text(c.name)]),
+                    html.td([], [html.text(c.class)]),
+                    html.td([], [html.text(int.to_string(c.level))]),
+                    html.td([], [
+                      html.text(case c.race {
+                        "" -> "—"
+                        race -> race
+                      }),
+                    ]),
+                    html.td([], [
+                      html.text(case c.religion {
+                        "" -> "—"
+                        religion -> religion
+                      }),
+                    ]),
+                    html.td([], [
+                      html.text(case c.has_epic {
+                        True -> "Yes"
+                        False -> "—"
+                      }),
+                    ]),
+                    html.td([attribute.class("char-row-actions")], [
+                      html.button(
+                        [
+                          attribute.type_("button"),
+                          event.on_click(UserEditCharacter(c.id)),
+                        ],
+                        [html.text("Edit")],
+                      ),
+                      html.button(
+                        [
+                          attribute.type_("button"),
+                          event.on_click(UserDeleteCharacter(c.id)),
+                        ],
+                        [html.text("Delete")],
+                      ),
+                    ]),
+                  ])
+                }),
+              ),
+            ]),
+          ])
+      },
+    ],
+  )
+}
+
+fn optional_select(
+  value: String,
+  options: List(String),
+  to_msg: fn(String) -> Msg,
+) -> Element(Msg) {
+  html.select(
+    [event.on_input(to_msg)],
+    [
+      html.option([attribute.value(""), attribute.selected(value == "")], "—"),
+      ..list.map(options, fn(opt) {
+        html.option(
+          [attribute.value(opt), attribute.selected(value == opt)],
+          opt,
+        )
+      })
+    ],
   )
 }
 

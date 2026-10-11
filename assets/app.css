@@ -620,3 +620,138 @@ td.cell-note {
 .pom-deck .table-wrap {
   margin: 0;
 }
+
+/* Off-site links sit under EverQuest detail, not as a top-level peer */
+.nav-related {
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.55rem;
+  margin-top: 0.25rem;
+  padding-top: 0.35rem;
+  border-top: 1px dashed color-mix(in srgb, var(--line) 75%, var(--muted));
+}
+
+.nav-related .nav-section-label {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.nav-link-external {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-link-external:hover {
+  color: var(--focus);
+  border-color: var(--accent);
+}
+
+.nav-link-external::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+
+/* Character tracker */
+.char-tracker {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.9rem 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.char-tracker-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.char-tracker-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.char-tracker-head p,
+.char-empty {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.char-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.65rem 0.75rem;
+  align-items: end;
+}
+
+.char-form label {
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.char-form label > span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.char-form input[type="text"],
+.char-form input[type="number"],
+.char-form select {
+  width: 100%;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  font: inherit;
+  font-size: 0.92rem;
+}
+
+.char-epic {
+  display: inline-flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 0.4rem;
+  padding-bottom: 0.35rem;
+  cursor: pointer;
+}
+
+.char-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.char-save,
+.char-cancel,
+.char-row-actions button {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.35rem 0.65rem;
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.char-save {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--focus);
+  font-weight: 600;
+}
+
+.char-row-actions {
+  display: flex;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
