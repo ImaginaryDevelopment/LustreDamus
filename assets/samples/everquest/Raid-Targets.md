@@ -1,6 +1,6 @@
 # Raid targets
 
-Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Checklist above: **Beaten** checkboxes and **loot status** (`unknown` / `blah` / `needForEpic` / `needTheLoot`) persist in this browser (`localStorage`). Use **Reset beaten** when rules of engagement change. Hover `blah` for “loot is bad or already owned.”
+Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Checklist above: **Beaten** checkboxes and **loot status** (`unknown` / `blah` / `broken` / `needForEpic` / `needTheLoot`) persist in this browser (`localStorage`). Use **Reset beaten** when rules of engagement change. Hover options for tooltips (`blah` = bad/owned loot; `broken` = spawn/script/fight broken).
 
 Default sort is **Expansion**, then **HP** (unknown HP last). Zone sheets still own full named / drop detail.
 

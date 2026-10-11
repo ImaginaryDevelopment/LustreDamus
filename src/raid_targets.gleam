@@ -18,6 +18,7 @@ pub const status_storage_key: String = "lustredamus.raid-targets.status.v1"
 pub type Status {
   Unknown
   Blah
+  Broken
   NeedForEpic
   NeedTheLoot
 }
@@ -248,13 +249,14 @@ pub fn beaten_count(beaten: Dict(String, Bool)) -> Int {
 }
 
 pub fn statuses() -> List(Status) {
-  [Unknown, Blah, NeedForEpic, NeedTheLoot]
+  [Unknown, Blah, Broken, NeedForEpic, NeedTheLoot]
 }
 
 pub fn status_id(status: Status) -> String {
   case status {
     Unknown -> "unknown"
     Blah -> "blah"
+    Broken -> "broken"
     NeedForEpic -> "needForEpic"
     NeedTheLoot -> "needTheLoot"
   }
@@ -269,6 +271,7 @@ pub fn status_tooltip(status: Status) -> String {
   case status {
     Unknown -> "Not decided yet"
     Blah -> "Loot is bad or already owned"
+    Broken -> "Spawn, script, or fight is broken"
     NeedForEpic -> "Need a drop for an epic"
     NeedTheLoot -> "Need the loot"
   }
@@ -278,6 +281,7 @@ pub fn parse_status(raw: String) -> Result(Status, Nil) {
   case string.trim(raw) {
     "unknown" -> Ok(Unknown)
     "blah" -> Ok(Blah)
+    "broken" -> Ok(Broken)
     "needForEpic" -> Ok(NeedForEpic)
     "needTheLoot" -> Ok(NeedTheLoot)
     _ -> Error(Nil)

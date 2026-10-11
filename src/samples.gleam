@@ -75,18 +75,8 @@ fn everquest_group() -> SampleGroup {
   SampleGroup(
     id: "everquest",
     label: "EverQuest",
-    samples: [
-      quest_gear_sample(),
-      twinks_sample(),
-      epic_min_levels_sample(),
-      epic_ground_spawns_sample(),
-      velious_factions_sample(),
-      velious_gem_sources_sample(),
-      raid_targets_sample(),
-      character_tracker_sample(),
-    ],
+    samples: [],
     buckets: [
-      SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
       SampleGroup(
         id: "eq-xp",
         label: "XP",
@@ -97,77 +87,125 @@ fn everquest_group() -> SampleGroup {
         ],
         buckets: [],
       ),
-      expansion_bucket("eq-classic", "Classic", classic_towns(), classic_solo(), classic_dungeon()),
-      expansion_bucket("eq-kunark", "Kunark", kunark_towns(), kunark_solo(), kunark_dungeon()),
-      expansion_bucket(
-        "eq-velious",
-        "Velious",
-        velious_towns(),
-        velious_solo(),
-        velious_dungeon(),
+      SampleGroup(
+        id: "eq-zones",
+        label: "Zones",
+        samples: [],
+        buckets: [
+          SampleGroup(id: "eq-all", label: "All", samples: [], buckets: []),
+          expansion_bucket(
+            "eq-classic",
+            "Classic",
+            [],
+            classic_towns(),
+            classic_solo(),
+            classic_dungeon(),
+          ),
+          expansion_bucket(
+            "eq-kunark",
+            "Kunark",
+            [],
+            kunark_towns(),
+            kunark_solo(),
+            kunark_dungeon(),
+          ),
+          expansion_bucket(
+            "eq-velious",
+            "Velious",
+            [velious_factions_sample()],
+            velious_towns(),
+            velious_solo(),
+            velious_dungeon(),
+          ),
+        ],
       ),
-      SampleGroup(id: "eq-by-class", label: "byClass", samples: [], buckets: [
-        SampleGroup(
-          id: "eq-warrior",
-          label: "Warrior",
-          samples: everquest_warrior(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-cleric",
-          label: "Cleric",
-          samples: everquest_cleric(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-druid",
-          label: "Druid",
-          samples: everquest_druid(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-monk",
-          label: "Monk",
-          samples: everquest_monk(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-ranger",
-          label: "Ranger",
-          samples: everquest_ranger(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-rogue",
-          label: "Rogue",
-          samples: everquest_rogue(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-shaman",
-          label: "Shaman",
-          samples: everquest_shaman(),
-          buckets: [],
-        ),
-        SampleGroup(
-          id: "eq-wizard",
-          label: "Wizard",
-          samples: everquest_wizard(),
-          buckets: [],
-        ),
-      ]),
+      SampleGroup(
+        id: "eq-gear",
+        label: "Gear",
+        samples: [
+          quest_gear_sample(),
+          twinks_sample(),
+          epic_min_levels_sample(),
+          epic_ground_spawns_sample(),
+          velious_gem_sources_sample(),
+        ],
+        buckets: [by_class_bucket()],
+      ),
+      SampleGroup(
+        id: "eq-tracking",
+        label: "Tracking",
+        samples: [
+          raid_targets_sample(),
+          character_tracker_sample(),
+        ],
+        buckets: [],
+      ),
     ],
   )
+}
+
+fn by_class_bucket() -> SampleGroup {
+  SampleGroup(id: "eq-by-class", label: "byClass", samples: [], buckets: [
+    SampleGroup(
+      id: "eq-warrior",
+      label: "Warrior",
+      samples: everquest_warrior(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-cleric",
+      label: "Cleric",
+      samples: everquest_cleric(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-druid",
+      label: "Druid",
+      samples: everquest_druid(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-monk",
+      label: "Monk",
+      samples: everquest_monk(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-ranger",
+      label: "Ranger",
+      samples: everquest_ranger(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-rogue",
+      label: "Rogue",
+      samples: everquest_rogue(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-shaman",
+      label: "Shaman",
+      samples: everquest_shaman(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-wizard",
+      label: "Wizard",
+      samples: everquest_wizard(),
+      buckets: [],
+    ),
+  ])
 }
 
 fn expansion_bucket(
   id: String,
   label: String,
+  sheets: List(Sample),
   towns: List(Sample),
   solo: List(Sample),
   dungeon: List(Sample),
 ) -> SampleGroup {
-  SampleGroup(id: id, label: label, samples: [], buckets: [
+  SampleGroup(id: id, label: label, samples: sheets, buckets: [
     SampleGroup(id: id <> "-towns", label: "Towns", samples: towns, buckets: []),
     SampleGroup(
       id: id <> "-solo",
@@ -1391,6 +1429,22 @@ pub fn is_everquest_nav(group: SampleGroup) -> Bool {
   group.id == "everquest"
 }
 
+pub fn is_zones_nav(group: SampleGroup) -> Bool {
+  group.id == "eq-zones"
+}
+
+pub fn is_gear_nav(group: SampleGroup) -> Bool {
+  group.id == "eq-gear"
+}
+
+pub fn is_xp_nav(group: SampleGroup) -> Bool {
+  group.id == "eq-xp"
+}
+
+pub fn is_tracking_nav(group: SampleGroup) -> Bool {
+  group.id == "eq-tracking"
+}
+
 pub fn is_all_nav(group: SampleGroup) -> Bool {
   group.id == "eq-all"
 }
@@ -1399,18 +1453,17 @@ pub fn is_by_class_nav(group: SampleGroup) -> Bool {
   group.id == "eq-by-class"
 }
 
-/// True when the sample lives under EverQuest → byClass (class gear sheets).
+/// True when the sample lives under EverQuest → Gear → byClass.
 pub fn is_by_class_sample(sample: Sample) -> Bool {
-  case list.find(everquest_group().buckets, is_by_class_nav) {
-    Ok(by_class) -> group_contains(by_class, sample)
-    Error(_) -> False
-  }
+  group_contains(by_class_bucket(), sample)
 }
 
 /// EverQuest hunt / town zone samples (excludes Zone XP, quest gear, byClass).
 pub fn everquest_zones() -> List(Sample) {
-  group_samples(everquest_group())
-  |> list.filter(is_zone)
+  case list.find(everquest_group().buckets, is_zones_nav) {
+    Ok(zones) -> group_samples(zones) |> list.filter(is_zone)
+    Error(_) -> []
+  }
 }
 
 /// Case-insensitive substring match on shortname or fullname. Needs 2+ chars.

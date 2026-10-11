@@ -845,11 +845,16 @@ fn sample_nav_bucket_regular(
   model: Model,
   depth: Int,
 ) -> Element(Msg) {
-  // zone-index is not in the EverQuest tree; keep the root open while All is on.
+  // zone-index is not in the tree; keep EverQuest + Zones open while All is on.
   let open = case model.page {
     SamplePage(sample) ->
       samples.group_contains(group, sample)
-      || { model.zone_search_open && samples.is_everquest_nav(group) }
+      || {
+        model.zone_search_open
+        && {
+          samples.is_everquest_nav(group) || samples.is_zones_nav(group)
+        }
+      }
     PastePage -> False
   }
   let branch_class = case depth {
@@ -862,8 +867,8 @@ fn sample_nav_bucket_regular(
     _ -> "nav-group"
   }
 
-  // Only the game root mounts an inline panel. Expansion / type rows emit
-  // their open detail through the parent so sibling triggers stay on one line.
+  // Only the game root mounts an inline panel. Nested rows emit detail
+  // through the parent so sibling triggers stay on one line.
   let show_children = open && depth == 0
   let parent = case samples.group_samples(group) {
     [first, ..] ->
@@ -922,7 +927,7 @@ fn zone_all_panel(model: Model) -> Element(Msg) {
   case model.zone_search_open {
     False -> element.none()
     True ->
-      html.div([attribute.class("nav-detail nav-detail-search")], [
+      html.div([attribute.class("nav-detail-search")], [
         html.div([attribute.class("nav-zone-search-row")], [
           html.input([
             attribute.id("zone-search"),
@@ -994,12 +999,118 @@ fn root_nav_children(
   group: samples.SampleGroup,
   model: Model,
 ) -> List(Element(Msg)) {
-  let sample_links = case group.samples {
+  let branch_buttons =
+    list.filter_map(group.buckets, fn(bucket) {
+      case samples.group_samples(bucket) != [] || samples.is_zones_nav(bucket) {
+        True -> Ok(sample_nav_bucket(bucket, model, 1))
+        False -> Error(Nil)
+      }
+    })
+  let detail = case model.zone_search_open {
+    True ->
+      case list.find(group.buckets, samples.is_zones_nav) {
+        Ok(zones) ->
+          html.div(
+            [attribute.class("nav-detail")],
+            list.append(zones_nav_children(zones, model), [zone_all_panel(model)]),
+          )
+        Error(_) -> zone_all_panel(model)
+      }
+    False ->
+      case open_child_bucket(group, model) {
+        Ok(bucket) ->
+          html.div(
+            [attribute.class("nav-detail")],
+            top_bucket_detail(bucket, model),
+          )
+        Error(Nil) -> element.none()
+      }
+  }
+  let base = list.append(branch_buttons, [detail])
+  case samples.is_everquest_nav(group) {
+    True -> list.append(base, [related_sites_nav()])
+    False -> base
+  }
+}
+
+fn top_bucket_detail(
+  bucket: samples.SampleGroup,
+  model: Model,
+) -> List(Element(Msg)) {
+  case samples.is_zones_nav(bucket) {
+    True -> zones_nav_children(bucket, model)
+    False ->
+      case samples.is_gear_nav(bucket) {
+        True -> gear_nav_children(bucket, model)
+        False -> [sample_links_row(model, bucket.samples, "")]
+      }
+  }
+}
+
+fn zones_nav_children(
+  zones: samples.SampleGroup,
+  model: Model,
+) -> List(Element(Msg)) {
+  let expansion_buttons =
+    list.filter_map(zones.buckets, fn(bucket) {
+      case samples.is_all_nav(bucket) {
+        True -> Ok(zone_all_button(model))
+        False ->
+          case samples.group_samples(bucket) {
+            [] -> Error(Nil)
+            _ -> Ok(sample_nav_bucket(bucket, model, 2))
+          }
+      }
+    })
+  let expansion_detail = case model.zone_search_open {
+    True -> []
+    False ->
+      case open_child_bucket(zones, model) {
+        Ok(expansion) -> expansion_nav_children(expansion, model)
+        Error(Nil) -> []
+      }
+  }
+  list.append(expansion_buttons, expansion_detail)
+}
+
+fn gear_nav_children(
+  gear: samples.SampleGroup,
+  model: Model,
+) -> List(Element(Msg)) {
+  let sheet_links = sample_links_row(model, gear.samples, "")
+  let class_branch =
+    list.filter_map(gear.buckets, fn(bucket) {
+      case samples.is_by_class_nav(bucket) {
+        True -> Ok(by_class_nav_bucket(bucket, model, 2))
+        False -> Error(Nil)
+      }
+    })
+  let class_detail = case open_child_bucket(gear, model) {
+    Ok(bucket) ->
+      case samples.is_by_class_nav(bucket) {
+        True -> expansion_nav_children(bucket, model)
+        False -> []
+      }
+    Error(Nil) -> []
+  }
+  list.append([sheet_links, ..class_branch], class_detail)
+}
+
+fn sample_links_row(
+  model: Model,
+  samples_list: List(samples.Sample),
+  extra_class: String,
+) -> Element(Msg) {
+  case samples_list {
     [] -> element.none()
-    direct ->
+    rows -> {
+      let class = case extra_class {
+        "" -> "nav-links"
+        _ -> "nav-links " <> extra_class
+      }
       html.div(
-        [attribute.class("nav-links")],
-        list.map(direct, fn(sample) {
+        [attribute.class(class)],
+        list.map(rows, fn(sample) {
           nav_button(
             sample.label,
             is_sample_page(model.page, sample),
@@ -1008,30 +1119,7 @@ fn root_nav_children(
           )
         }),
       )
-  }
-  let branch_buttons =
-    list.filter_map(group.buckets, fn(bucket) {
-      case samples.is_all_nav(bucket) || samples.group_samples(bucket) != [] {
-        True -> Ok(sample_nav_bucket(bucket, model, 1))
-        False -> Error(Nil)
-      }
-    })
-  let detail = case model.zone_search_open {
-    True -> zone_all_panel(model)
-    False ->
-      case open_child_bucket(group, model) {
-        Ok(bucket) ->
-          html.div(
-            [attribute.class("nav-detail")],
-            expansion_nav_children(bucket, model),
-          )
-        Error(Nil) -> element.none()
-      }
-  }
-  let base = [sample_links, ..list.append(branch_buttons, [detail])]
-  case samples.is_everquest_nav(group) {
-    True -> list.append(base, [related_sites_nav()])
-    False -> base
+    }
   }
 }
 
@@ -1039,6 +1127,7 @@ fn expansion_nav_children(
   group: samples.SampleGroup,
   model: Model,
 ) -> List(Element(Msg)) {
+  let sheet_links = sample_links_row(model, group.samples, "nav-zone-links")
   let type_buttons =
     list.filter_map(group.buckets, fn(bucket) {
       case samples.group_samples(bucket) {
@@ -1047,36 +1136,10 @@ fn expansion_nav_children(
       }
     })
   let zones = case open_child_bucket(group, model) {
-    Ok(bucket) ->
-      html.div(
-        [attribute.class("nav-links nav-zone-links")],
-        list.map(bucket.samples, fn(sample) {
-          nav_button(
-            sample.label,
-            is_sample_page(model.page, sample),
-            "nav-leaf",
-            UserChoseSample(sample),
-          )
-        }),
-      )
-    Error(Nil) ->
-      case group.samples {
-        [] -> element.none()
-        direct ->
-          html.div(
-            [attribute.class("nav-links nav-zone-links")],
-            list.map(direct, fn(sample) {
-              nav_button(
-                sample.label,
-                is_sample_page(model.page, sample),
-                "nav-leaf",
-                UserChoseSample(sample),
-              )
-            }),
-          )
-      }
+    Ok(bucket) -> sample_links_row(model, bucket.samples, "nav-zone-links")
+    Error(Nil) -> element.none()
   }
-  list.append(type_buttons, [zones])
+  list.append([sheet_links, ..type_buttons], [zones])
 }
 
 fn leaf_nav_children(
@@ -1381,7 +1444,7 @@ fn raid_targets_panel(
         html.h2([], [html.text("Beaten")]),
         html.p([], [
           html.text(
-            "Mark bosses you have beaten. Loot status (unknown / blah / needForEpic / needTheLoot) is separate. Both save in this browser. Reset beaten when rules of engagement change.",
+            "Mark bosses you have beaten. Loot status (unknown / blah / broken / needForEpic / needTheLoot) is separate. Both save in this browser. Reset beaten when rules of engagement change.",
           ),
         ]),
         html.p([attribute.class("raid-targets-progress")], [
