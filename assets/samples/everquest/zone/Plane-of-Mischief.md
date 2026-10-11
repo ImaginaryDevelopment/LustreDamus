@@ -8,39 +8,146 @@ Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** o
 
 **Do** column:
 - **KILL** — fine to kill for loot / reagents
-- **LEAVE** — quest NPC — do not kill
+- **LEAVE** — quest / script NPC — do not kill
 - **RAID** — huge HP / unused script boss (optional)
+
+**Faction** column on Nameds is IdleQuest primary faction (usually **Denizens of Mischief**; many start indifferent until you aggro).
 
 ## Nameds
 
-Sort by **Mob**. Notes cite IdleQuest loot pools — see **Loot pools** for chances.
+All IdleQuest **proper nameds** and quest NPCs that spawn in `mischiefplane` (plus script-only White Lithiniath / Stomples / classic Dinner). Generic `a _` trash is omitted - see loot pools for reagent farms. **Faction** is the IdleQuest primary faction (often indifferent until aggro). Hover deck loot elsewhere for stats.
 
-| Mob | Do | Class | Chance | Area | Notes |
-| --- | --- | --- | ---: | --- | --- |
-| #Lithiniath (Black) | KILL | ENC | 0% | B&W room | IdleQuest **0%** alone in its spawn groups — **no script spawn** either. Classic ~3-day natural. NPC 126208 / lt 4082 (Horn / Crowns / Jester). Treat as **broken / never up** on IdleQuest until chance is fixed |
-| Lithiniath (White) | KILL | ENC | — | B&W room | Classic: Horn → **a white stallion**. IdleQuest script `spawn2(126612)` but **NPC 126612 missing** from `npc_types` — hand-in currently broken |
-| a white stallion | LEAVE | WAR | 100% | B&W room white side | ~55 / ~4.3k HP. Two 100% spots. Horn turn-in script present but white Lithiniath id missing. If killed: Throne / Crown / Words of Wealth ~3.5% (lt 87598) |
-| Ferjeneror | LEAVE | WIZ | 100% | Hedge maze center | ~65 / ~29k HP. **Deck** quest — never answer "no". Shares Crown/Jester pool (1%) if killed |
-| Peachy D`Vicci | LEAVE | CLR | 100% | Castle entrance ~−341, −363 | ~48 / ~7k HP. 2× Funny Money → Gift Box. Shares **Squire** pool |
-| Bob the Painter | LEAVE | ROG | ~25–100% | ~15, −450 | ~49 / ~8k HP. Empty Pot of Gold / Words of Wealth. Shares **Squire** pool |
-| Posie the Librarian | LEAVE | ENC | 100% | Library ~197, −1015 | ~55 / ~14k HP. **Library Card** 20% + **Knight** pool. Book of Mischief |
-| Dinner | KILL | WAR | ? | Dining table ~243, 76 | Classic L1 ogre for **King Cod Card**. **Not in IdleQuest** spawn/loot tables — script / missing DB |
-| Bit | KILL | WIZ | 100% | Dining chandelier ~252, 76 | ~55 / ~14k HP. Perma-rooted KOS nuke. **Knight** pool |
-| Mizer | KILL | WIZ | 100% | Dining chandelier ~235, 75 | ~55 / ~14k HP. With Bit. **Knight** pool |
-| Chuckles | KILL | WAR | 100% | ~61, −178 | ~55 / ~14k HP. Picture → Hedge Maze. **Knight** pool |
-| Chuckles the Great | KILL | WAR | 100% | Theater stage ~557, 151 | ~55 / ~14k HP. **Knight** pool |
-| Geb | KILL | WAR | 100% | Puppet audience | ~55 / ~14k HP. Kill ~7AM game time to spawn puppets. **Knight** pool |
-| Bozer the Bear | KILL | WAR | 100% | West wing ~126, −25 | ~53 / ~12k HP. **Knight** pool |
-| Bristlebane Puppet | KILL | WAR | 100% | Theater ~606, 173 | ~65 / ~13k HP. Indifferent until aggro. **Crown/Jester** pool (not Knights) |
-| Erollisi / Innoruuk / Rallos / Solusek / Tunare / Tribunal Puppet | KILL | WAR | 100% | Theater | ~55 / ~6k HP. **Knight** pool. Most KOS once aggro'd |
-| Dupple; Plupple; Snitch; Stitch | KILL | ROG | 100% | Castle / halls | ~49 / ~8k HP. Halfling nameds. **Squire** pool |
-| Dop Dop | KILL | WAR | 15–100% | Forest mushrooms | ~39 / ~2.5k HP. **Squire** pool |
-| a false treasure chest | KILL | WAR | 80–100% | Chest room | ~55–57 / ~14–16k HP. Mimic — aggro floods adds. IdleQuest loot is gems/runes only (no Blam Stick in DB) |
-| a phony / bogus treasure chest | KILL | WAR | 25–100% | Chest room | ~57–59 / ~16–20k HP. Fluff / missing item IDs in IdleQuest |
-| Treasure Chest | KILL | ENC | 100% | Forest west ~−237, 557 | ~51 / ~10k HP. KOS mimic. IdleQuest loottable **empty** |
-| All-Seeing Eye | RAID | WAR | 100% | Plane | ~75 / **~709k HP**. IdleQuest live spawn. Curzon / gem fluff |
-| #Bristlebane | RAID | ROG | 0% | Throne (unused) | IdleQuest **0%**, empty quest file, **no loottable**. Classic throne empty. Zone `script_init` loads **Bristlebane the King of Thieves** (2.0 / GoD-era encounter) — different NPC |
-| #the Mischievous Jester | RAID | WAR | 0% | — | IdleQuest **0%** alone in group; **no script**. ~70 / **~200k HP**, lt 98994 — post-classic fluff |
+Sort by **Mob**. **Do**: KILL / LEAVE / RAID.
+
+| Mob | Do | Class | Chance | Faction | Loc | Notes |
+| --- | --- | --- | ---: | --- | --- | --- |
+| a white stallion | LEAVE | WAR | 100% | Denizens of Mischief (LEAVE) | B&W room | ~55 / **~4325 HP**. **Stallion mix** (Throne/Crown/Words ~3.5%). Horn turn-in -> white Lithiniath (script broken on IQ) |
+| Bob the Painter | LEAVE | ROG | 100% | Denizens of Mischief (LEAVE) | Castle (~Bob) | ~49 / **~7500 HP**. **Squire** pool. Empty Pot of Gold / Words of Wealth |
+| Ferjeneror | LEAVE | WIZ | 100% | Denizens of Mischief (LEAVE) | Hedge maze | ~65 / **~28500 HP**. **Crown/Jester** pool. **Deck** quest - never answer "no" |
+| Jaxoa Hrussin | LEAVE | WAR | 100% | - (LEAVE) | Forest west | ~40 / **~3000 HP**. no loot |
+| Leea Brumplefoot | LEAVE | WAR | 100% | - (LEAVE) | Castle | ~40 / **~3000 HP**. no loot |
+| Life | LEAVE | WAR | 100% | Denizens of Mischief (LEAVE) | Library | ~61 / **~33645 HP**. **Library Card** 20% + **Knight** pool. Library shout - Cazic Touch if you hail; LEAVE |
+| mischief controller | LEAVE | WAR | 100% | - (LEAVE) | Library / south | ~55 / **~13750 HP**. no loot |
+| Nahas the Treasure Hunter | LEAVE | WAR | 100% | - (LEAVE) | Library / south | ~40 / **~3000 HP**. no loot |
+| Peachy D`Vicci | LEAVE | CLR | 100% | Denizens of Mischief (LEAVE) | Castle entrance | ~48 / **~7000 HP**. **Squire** pool. 2x Funny Money -> Gift Box |
+| Posie the Librarian | LEAVE | ENC | 100% | Denizens of Mischief (LEAVE) | Library | ~55 / **~13750 HP**. **Library Card** 20% + **Knight** pool. Book of Mischief |
+| Ronald Brumplefoot | LEAVE | WAR | 100% | - (LEAVE) | Castle | ~40 / **~3000 HP**. no loot |
+| Vinny V. D`vicci | LEAVE | WAR | 100% | Denizens of Mischief (LEAVE) | Castle entrance | ~48 / **~7000 HP**. Fishing Pole 25% |
+| #Lithiniath | KILL | ENC | 0% | Denizens of Mischief | B&W room | IdleQuest **0%** - never static-spawns; classic ~3-day. lt 4082 Horn/Crowns. White path script broken (missing NPC 126612) |
+| a bogus treasure chest | KILL | WAR | 25% | KOS | Chest room | ~59 / **~20250 HP**. gems / fluff |
+| a false treasure chest | KILL | WAR | 80-100% | KOS | Chest room | ~55-57 / **~13750-15750 HP**. gems / fluff |
+| a phony treasure chest | KILL | WAR | 25-100% | KOS | Chest room | ~57-59 / **~15750-17750 HP**. gems / fluff |
+| Abbis | KILL | WAR | 100% | Denizens of Mischief | Alice / east | ~55 / **~13750 HP**. **Knight** pool |
+| another piece | KILL | WAR | 100% | Denizens of Mischief | Forest west | ~58 / **~16750 HP**. **Crown/Jester** pool |
+| Ashley | KILL | WIZ | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Bidalla | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Bit | KILL | WIZ | 100% | KOS | Dining | ~55 / **~13750 HP**. **Knight** pool |
+| Bizzznawa | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~43 / **~4500 HP**. **Squire** pool |
+| Blich | KILL | ROG | 100% | Denizens of Mischief | Castle / plane | ~49 / **~7500 HP**. **Squire** pool |
+| Bombadier Bixie Bernice | KILL | WAR | 34% | Denizens of Mischief | Forest / bixie | ~55 / **~2279 HP**. **Squire** pool |
+| Bozer the Bear | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~53 / **~11750 HP**. **Knight** pool |
+| Brendaine | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Brenn | KILL | WAR | 100% | Denizens of Mischief | Castle giants | ~53-61 / **~11750-100000 HP**. **Throne** pool. High-HP **Throne** camp variant |
+| Bristlebane Puppet | KILL | WAR | 100% | KOS | Theater | ~65 / **~12500 HP**. **Crown/Jester** pool. Crown/Jester (not Knight). Indifferent until aggro |
+| Brittina | KILL | WIZ | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Carrot Top | KILL | WAR | 100% | Denizens of Mischief | Alice / forest east | ~52 / **~10750 HP**. **Knight** pool |
+| Chesnut | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~48 / **~7000 HP**. **Squire** pool |
+| Chuckles | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Chuckles the Great | KILL | WAR | 100% | Denizens of Mischief | Theater | ~55 / **~13750 HP**. **Knight** pool |
+| Clukker the Crazy | KILL | WAR | 100% | Denizens of Mischief | Forest west | ~60 / **~19000 HP**. **Crown/Jester** pool. Crown camp (KILL) |
+| Dabbis | KILL | WAR | 100% | Denizens of Mischief | Alice / east | ~55 / **~13750 HP**. **Knight** pool |
+| Debbis the Fish | KILL | WAR | 100% | Denizens of Mischief | Alice / east | ~60 / **~19000 HP**. Lucky Skunk Foot 100% + **Crown/Jester**. Crown camp + Lucky Skunk Foot (KILL) |
+| Dern | KILL | WAR | 14% | - | Castle / plane | ~48 / **~7000 HP**. no loot |
+| Diana | KILL | WIZ | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Dinner | KILL | WAR | - | - | Dining ~243, 76 | Classic L1 ogre for **King Cod Card**. **Not in IdleQuest** spawn tables |
+| Dolep Dopp | KILL | WAR | 14-100% | Denizens of Mischief | Forest mushrooms | ~41 / **~3500 HP**. **Squire** pool |
+| Donk | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~50000 HP**. **Knight** + **Crown/Jester** pools |
+| Doobis | KILL | WAR | 100% | Denizens of Mischief | Alice / east | ~55 / **~13750 HP**. **Knight** pool |
+| Dop Dop | KILL | WAR | 15-100% | Denizens of Mischief | Forest mushrooms | ~39 / **~2500 HP**. **Squire** pool |
+| Dopple Pop | KILL | WAR | 15-100% | Denizens of Mischief | Forest mushrooms | ~39 / **~2500 HP**. **Squire** pool |
+| Dree | KILL | WAR | 14% | - | Castle / plane | ~48 / **~7000 HP**. no loot |
+| Dupple; Plupple; Snitch; Stitch | KILL | ROG | 100% | Denizens of Mischief | Castle / halls | ~49 / **~7500 HP**. **Squire** pool |
+| EightySix | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~60 / **~50000 HP**. **Knight** + **Crown/Jester** pools |
+| Forlus | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Geb | KILL | WAR | 100% | Denizens of Mischief | Theater | ~55 / **~13750 HP**. **Knight** pool |
+| Glonk | KILL | WAR | 100% | Denizens of Mischief | Castle giants | ~54-62 / **~12750 HP**. **Library Card** 20% + **Knight** pool |
+| Gono | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. **Knight** pool |
+| Gorilla Scholar | KILL | WAR | 100% | Denizens of Mischief | Castle / halls | ~58 / **~16750 HP**. **Library Card** 20% + **Knight** pool |
+| Grenn | KILL | WAR | 100% | Denizens of Mischief | Castle giants | ~53-61 / **~11750-100000 HP**. **Throne** pool. High-HP **Throne** camp variant |
+| Grink | KILL | WAR | 100% | Denizens of Mischief | Castle giants | ~53-61 / **~11750 HP**. **Crown/Jester** pool |
+| Guard McSprayel | KILL | WAR | 33% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. **Knight** pool |
+| Guard McStinkles | KILL | WAR | 33% | Denizens of Mischief | Castle / plane | ~50 / **~8750 HP**. **Knight** pool |
+| Guard Roses | KILL | WAR | 33% | Denizens of Mischief | Forest west | ~52 / **~10750 HP**. **Knight** pool |
+| Hall Monitor Willy | KILL | WAR | 34% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Hiana | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| I Like This One | KILL | WAR | 100% | Denizens of Mischief | Forest west | ~58 / **~16750 HP**. **Crown/Jester** pool |
+| Jinara | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Jumbo Gorilla King | KILL | WAR | 100% | Denizens of Mischief | Castle / halls | ~55 / **~13750 HP**. **Knight** pool |
+| Keel | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. **Knight** pool |
+| Kelld | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Kitch | KILL | ROG | 100% | Denizens of Mischief | Castle / plane | ~49 / **~7500 HP**. **Squire** pool |
+| Klia | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~40 / **~3000 HP**. **Knight** pool |
+| Krupple | KILL | ROG | 100% | Denizens of Mischief | Castle / plane | ~49 / **~7500 HP**. **Squire** pool |
+| Lelel | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Lelp | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Lithiniath (White) | KILL | ENC | - | - | B&W room | Horn -> **a white stallion**. IdleQuest spawn2(126612) but NPC id **missing** |
+| Loplo | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| LosCountAhAhAh | KILL | WAR | 14% | - | Castle / plane | ~49 / **~7500 HP**. no loot |
+| Mees | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. **Knight** pool |
+| Mister Malodor | KILL | ENC | 33% | Denizens of Mischief | Forest west | ~50 / **~8750 HP**. **Knight** pool |
+| Mizer | KILL | WIZ | 100% | Denizens of Mischief | Dining | ~55 / **~13750 HP**. **Knight** pool |
+| Mnyup | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~39 / **~2500 HP**. **Knight** pool |
+| My Finger | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~52 / **~10750 HP**. **Knight** pool |
+| My Right Hand | KILL | SHD | 100% | Denizens of Mischief | Castle / plane | ~63 / **~120000 HP**. **Crown/Jester** pool |
+| Nerzuz | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| NOT | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~56 / **~14750 HP**. **Crown/Jester** pool |
+| Not Poddle Pop | KILL | WAR | 14-100% | Denizens of Mischief | Forest mushrooms | ~44 / **~5000 HP**. **Squire** pool |
+| Not Yours | KILL | ROG | 100% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. White Squire 100% + Super Sweet Fishing Grubs |
+| Nupple | KILL | ROG | 100% | Denizens of Mischief | Castle / plane | ~49 / **~7500 HP**. **Squire** pool |
+| Osfof | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| PASS | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~56 / **~14750 HP**. **Crown/Jester** pool |
+| Pela | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~40 / **~3000 HP**. **Knight** pool |
+| Petunia the Doll | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~35 / **~1575 HP**. **Squire** pool |
+| Pinky Ekkolofezznaboten III | KILL | CLR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~100000 HP**. Orcish Mace 25% + **Knight** pool |
+| Pod Dop Pop | KILL | WAR | 14-100% | Denizens of Mischief | Forest mushrooms | ~43 / **~4500 HP**. **Squire** pool |
+| Poddle Dod | KILL | WAR | 14-100% | Denizens of Mischief | Forest mushrooms | ~40 / **~3000 HP**. **Squire** pool |
+| Popple Dop | KILL | WAR | 14-100% | Denizens of Mischief | Forest mushrooms | ~38 / **~1824 HP**. **Squire** pool |
+| Erollisi / Innoruuk / Rallos / Solusek / Tunare / Tribunal Puppet | KILL | WAR | 100% | KOS | Theater | ~55 / **~5750 HP**. **Knight** pool. Theater puppet - Geb 7AM event on classic |
+| Raesar | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~50 / **~8750 HP**. **Knight** pool |
+| Raisin | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Ratman Rager | KILL | WAR | 25% | KOS | Forest west | ~47 / **~6500 HP**. **Squire** pool |
+| Ratmlet | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~50 / **~8750 HP**. **Knight** pool |
+| Ricoculous | KILL | ENC | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Rissa | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~44 / **~5000 HP**. **Squire** pool |
+| Roxxanne | KILL | WIZ | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Ruttus | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~50 / **~8750 HP**. **Knight** pool |
+| Seeks | KILL | WAR | 14% | - | Castle / plane | ~48 / **~7000 HP**. no loot |
+| Selvz | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| SHALL | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~56 / **~14750 HP**. **Crown/Jester** pool |
+| Siris | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Snide | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Sniffles | KILL | WAR | 100% | Denizens of Mischief | Forest | ~16 / **~1 HP**. **Squire** pool. Death spawns **Stomples** |
+| some other piece | KILL | WAR | 100% | Denizens of Mischief | Forest west | ~58 / **~16750 HP**. **Crown/Jester** pool |
+| Stomples | KILL | WAR | - | KOS | Forest (on Sniffles death) | Script spawn from Sniffles. ~60 / **~20000 HP**. lt 87706 |
+| Teence the Naysayer | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~45 / **~5500 HP**. **Knight** pool |
+| Terana | KILL | WAR | 100% | Denizens of Mischief | Theater / north | ~55 / **~13750 HP**. **Knight** pool |
+| Teriling | KILL | WAR | 25% | KOS | Forest west | ~49 / **~7500 HP**. **Squire** pool |
+| Tolas | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Treasure Chest | KILL | ENC | 100% | Denizens of Mischief | Chest room | ~51 / **~9750 HP**. gems / fluff |
+| TwentyTwo | KILL | WAR | 100% | Denizens of Mischief | Castle giants | ~56-62 / **~19000-100000 HP**. **Throne** pool. High-HP **Throne** camp variant |
+| Uinus | KILL | WAR | 100% | Denizens of Mischief | Theater / north | ~55 / **~13750 HP**. **Knight** pool |
+| Uuuz | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~51 / **~9750 HP**. **Knight** pool |
+| Verna | KILL | WAR | 100% | Denizens of Mischief | Theater / north | ~55 / **~13750 HP**. **Knight** pool |
+| Vive | KILL | WAR | 14% | - | Castle / plane | ~48 / **~7000 HP**. no loot |
+| Vour | KILL | WAR | 14% | - | Castle / plane | ~52 / **~10750 HP**. no loot |
+| Vun | KILL | WAR | 16% | - | Castle / plane | ~52 / **~10750 HP**. no loot |
+| Walnut | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~55 / **~13750 HP**. **Knight** pool |
+| Xnyl | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~41 / **~3500 HP**. **Knight** pool |
+| YOU | KILL | WAR | 100% | Denizens of Mischief | Castle / plane | ~56 / **~14750 HP**. **Crown/Jester** pool |
+| Zerna | KILL | WAR | 100% | Denizens of Mischief | Theater / north | ~55 / **~13750 HP**. **Knight** pool |
+| #Bristlebane | RAID | ROG | 0% | Denizens of Mischief | Throne | IdleQuest **0%**, empty quest, no loottable. Classic throne empty. Zone loads Bristlebane the King of Thieves (2.0) separately |
+| #the Mischievous Jester | RAID | WAR | 0% | KOS | Castle / plane | IdleQuest **0%**. ~70 / **~200000 HP**. gems / fluff |
+| All-Seeing Eye | RAID | WAR | 100% | KOS | Alice / east | ~75 / **~709000 HP**. gems / fluff |
 
 ### IdleQuest 0% (script / PH)
 
@@ -59,10 +166,10 @@ These are the raw-drop tables that feed Deck combines. Wearable Distraction / cl
 
 | Pool | IdleQuest chance | Droppers (examples) | Items |
 | --- | ---: | --- | --- |
-| **Squire** | 1.25% each color | Dupple, Plupple, Snitch, Stitch, Dop Dop, Bob, Peachy, forest halflings / mushrooms | Black / Blue / Red / White **Squire** |
-| **Knight** | 1.25% each color | Bit, Mizer, Chuckles, Geb, Bozer, god puppets (not Bristlebane Puppet), Posie, many castle nameds | Black / Blue / Red / White **Knight** |
-| **Crown / Jester** | 1% each | #Lithiniath; Ferjeneror; Bristlebane Puppet; Clukker the Crazy; Debbis the Fish; Donk / EightySix | Black / Blue / Red / White **Crown**; **Jester** |
-| **Throne** | 3.75% each | Brenn; Grenn; TwentyTwo (~61 / ~100k HP) | Black / Blue / Red / White **Throne** |
+| **Squire** | 1.25% each color | Dupple/Plupple/Snitch/Stitch; Dop Dop / forest pops; Bob; Peachy; Chesnut / Blich / Nupple / … | Black / Blue / Red / White **Squire** |
+| **Knight** | 1.25% each color | Bit, Mizer, Chuckles, Geb, Bozer, god puppets (not Bristlebane Puppet), Posie, Life, Pinky, castle nameds (Ashley, Bidalla, …), Guards | Black / Blue / Red / White **Knight** |
+| **Crown / Jester** | 1% each | #Lithiniath; Ferjeneror; Bristlebane Puppet; Clukker; Debbis; Donk / EightySix; PASS/SHALL/YOU painting nameds; chess pieces | Black / Blue / Red / White **Crown**; **Jester** |
+| **Throne** | 3.75% each | Brenn; Grenn; TwentyTwo (high-HP ~100k variants) | Black / Blue / Red / White **Throne** |
 | **Stallion mix** | 3.5% each | a white stallion (LEAVE unless you intentionally kill) | Thrones + Crowns + Words of Wealth pages |
 | **Library Card** | 20% | Posie the Librarian | Library Card → Book of Mischief |
 | **Lithiniath** | Horn 100%; Crowns/Jester 1% | #Lithiniath | Lithiniaths Horn; Crowns; Jester; Velious spells |
@@ -159,9 +266,13 @@ Combine in the Deck (from **Ferjeneror**). Classic / P99 recipes — four cards 
 | Ferjeneror | LEAVE | Deck of Spontaneous Generation. Hedge maze. Never say "no" |
 | Peachy D`Vicci | LEAVE | Gift Box / dolls. Castle entrance |
 | Bob the Painter | LEAVE | Empty Pot of Gold / class armor combines |
-| Posie the Librarian | LEAVE | Library Card → Book of Mischief |
+| Posie the Librarian | LEAVE | Library Card -> Book of Mischief |
 | a white stallion | LEAVE | Horn turn-in for white Lithiniath |
-| Dinner | KILL | Classic King Cod Card — missing from IdleQuest DB |
+| Vinny V. D`vicci | LEAVE | Castle entrance. Fishing Pole 25% |
+| Life | LEAVE | Library - hail = Cazic Touch |
+| Leea / Ronald Brumplefoot | LEAVE | Castle fluff / quest |
+| Jaxoa Hrussin; Nahas the Treasure Hunter | LEAVE | No loot - leave |
+| Dinner | KILL | Classic King Cod Card - missing from IdleQuest DB |
 
 ### Class armor (combine only)
 
