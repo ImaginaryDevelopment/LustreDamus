@@ -77,6 +77,8 @@ fn everquest_group() -> SampleGroup {
     samples: [
       quest_gear_sample(),
       twinks_sample(),
+      epic_min_levels_sample(),
+      epic_ground_spawns_sample(),
       velious_factions_sample(),
       velious_gem_sources_sample(),
     ],
@@ -216,6 +218,26 @@ fn velious_gem_sources_sample() -> Sample {
     "everquest",
     "Velious-Gem-Sources.md",
     "Armor gem slot chart and IdleQuest farm camps (Thurgadin / Kael / Skyshrine).",
+  )
+}
+
+fn epic_min_levels_sample() -> Sample {
+  sheet(
+    "epic-min-levels",
+    "Epic Levels",
+    "everquest",
+    "Epic-Min-Levels.md",
+    "Epic 1.0 equip / effect / quest level floors by class.",
+  )
+}
+
+fn epic_ground_spawns_sample() -> Sample {
+  sheet(
+    "epic-ground-spawns",
+    "Epic Ground Spawns",
+    "everquest",
+    "Epic-Ground-Spawns.md",
+    "IdleQuest-enabled epic ground spawns (Book of Souls, hilts, fusible ore).",
   )
 }
 
