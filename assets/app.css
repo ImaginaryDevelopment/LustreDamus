@@ -554,7 +554,7 @@ td.cell-item {
   color: var(--danger);
 }
 
-/* Raid targets session checklist */
+/* Raid targets beaten + loot-status tracker */
 .raid-targets {
   display: grid;
   gap: 0.85rem;

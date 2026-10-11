@@ -54,7 +54,7 @@ pub type Model {
     zone_search_open: Bool,
     /// Plane of Mischief deck cards owned (localStorage-backed).
     pom_cards: Dict(String, Bool),
-    /// Raid targets beaten this browser session (sessionStorage-backed).
+    /// Raid targets beaten (localStorage-backed).
     raid_beaten: Dict(String, Bool),
     /// Raid target loot need status (localStorage-backed).
     raid_status: Dict(String, raid_targets.Status),
@@ -128,7 +128,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       zone_search_open: False,
       pom_cards: pom_deck.decode_owned(storage.get_item(pom_deck.storage_key)),
       raid_beaten: raid_targets.decode(
-        storage.get_session_item(raid_targets.storage_key),
+        storage.get_item(raid_targets.storage_key),
       ),
       raid_status: raid_targets.decode_status(
         storage.get_item(raid_targets.status_storage_key),
@@ -378,7 +378,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
 
     UserToggledRaidBeaten(id, on) -> {
       let raid_beaten = raid_targets.toggle(model.raid_beaten, id, on)
-      storage.set_session_item(
+      storage.set_item(
         raid_targets.storage_key,
         raid_targets.encode(raid_beaten),
       )
@@ -399,7 +399,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     }
 
     UserClearedRaidBeaten -> {
-      storage.set_session_item(raid_targets.storage_key, "")
+      storage.set_item(raid_targets.storage_key, "")
       #(Model(..model, raid_beaten: dict.new()), effect.none())
     }
 
@@ -1374,18 +1374,18 @@ fn raid_targets_panel(
   html.section(
     [
       attribute.class("raid-targets"),
-      attribute.attribute("aria-label", "Raid targets session tracker"),
+      attribute.attribute("aria-label", "Raid targets tracker"),
     ],
     [
       html.div([attribute.class("raid-targets-head")], [
-        html.h2([], [html.text("Session tracker")]),
+        html.h2([], [html.text("Beaten")]),
         html.p([], [
           html.text(
-            "Beaten checkboxes last for this tab only. Loot status (unknown / blah / needForEpic / needTheLoot) saves in this browser.",
+            "Mark bosses you have beaten. Loot status (unknown / blah / needForEpic / needTheLoot) is separate. Both save in this browser. Reset beaten when rules of engagement change.",
           ),
         ]),
         html.p([attribute.class("raid-targets-progress")], [
-          html.text(int.to_string(done) <> " / " <> int.to_string(total) <> " beaten"),
+          html.text(int.to_string(done) <> " / " <> int.to_string(total)),
         ]),
         html.button(
           [
@@ -1393,7 +1393,7 @@ fn raid_targets_panel(
             attribute.class("raid-targets-clear"),
             event.on_click(UserClearedRaidBeaten),
           ],
-          [html.text("Clear beaten")],
+          [html.text("Reset beaten")],
         ),
       ]),
       ..list.map(raid_targets.by_expansion(), fn(group) {

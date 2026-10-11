@@ -1,4 +1,4 @@
-//// Classic–Velious raid targets: session beaten flags + localStorage loot status.
+//// Classic–Velious raid targets: localStorage beaten flags + loot status.
 
 import gleam/dict.{type Dict}
 import gleam/int
@@ -37,7 +37,7 @@ pub type Target {
   )
 }
 
-/// Stable ids used for sessionStorage — keep in sync with Raid-Targets.md.
+/// Stable ids used for localStorage — keep in sync with Raid-Targets.md.
 pub fn targets() -> List(Target) {
   list.flatten([
     classic(),

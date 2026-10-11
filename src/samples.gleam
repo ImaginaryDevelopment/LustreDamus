@@ -204,7 +204,7 @@ fn raid_targets_sample() -> Sample {
     "Raid Targets",
     "everquest",
     "Raid-Targets.md",
-    "Classic–Velious raid / 2-group bosses with session checkboxes for beaten kills.",
+    "Classic–Velious raid / 2-group bosses with beaten checkboxes and loot-need status.",
   )
 }
 
