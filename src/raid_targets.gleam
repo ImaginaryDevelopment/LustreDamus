@@ -1,4 +1,4 @@
-//// Classic–Velious raid targets with sessionStorage "beaten" flags.
+//// Classic–Velious raid targets: session beaten flags + localStorage loot status.
 
 import gleam/dict.{type Dict}
 import gleam/int
@@ -12,6 +12,15 @@ import table_sort.{
 }
 
 pub const storage_key: String = "lustredamus.raid-targets.beaten.v1"
+
+pub const status_storage_key: String = "lustredamus.raid-targets.status.v1"
+
+pub type Status {
+  Unknown
+  Blah
+  NeedForEpic
+  NeedTheLoot
+}
 
 /// Markdown table title (`## Targets`) used for default sort wiring.
 pub const table_title: String = "Targets"
@@ -236,4 +245,92 @@ pub fn beaten_count(beaten: Dict(String, Bool)) -> Int {
   targets()
   |> list.filter(fn(t) { has_beaten(beaten, t.id) })
   |> list.length
+}
+
+pub fn statuses() -> List(Status) {
+  [Unknown, Blah, NeedForEpic, NeedTheLoot]
+}
+
+pub fn status_id(status: Status) -> String {
+  case status {
+    Unknown -> "unknown"
+    Blah -> "blah"
+    NeedForEpic -> "needForEpic"
+    NeedTheLoot -> "needTheLoot"
+  }
+}
+
+pub fn status_label(status: Status) -> String {
+  status_id(status)
+}
+
+/// Hover / option title text.
+pub fn status_tooltip(status: Status) -> String {
+  case status {
+    Unknown -> "Not decided yet"
+    Blah -> "Loot is bad or already owned"
+    NeedForEpic -> "Need a drop for an epic"
+    NeedTheLoot -> "Need the loot"
+  }
+}
+
+pub fn parse_status(raw: String) -> Result(Status, Nil) {
+  case string.trim(raw) {
+    "unknown" -> Ok(Unknown)
+    "blah" -> Ok(Blah)
+    "needForEpic" -> Ok(NeedForEpic)
+    "needTheLoot" -> Ok(NeedTheLoot)
+    _ -> Error(Nil)
+  }
+}
+
+pub fn get_status(statuses: Dict(String, Status), id: String) -> Status {
+  case dict.get(statuses, id) {
+    Ok(status) -> status
+    Error(_) -> Unknown
+  }
+}
+
+pub fn set_status(
+  statuses: Dict(String, Status),
+  id: String,
+  status: Status,
+) -> Dict(String, Status) {
+  case status {
+    Unknown -> dict.delete(statuses, id)
+    _ -> dict.insert(statuses, id, status)
+  }
+}
+
+pub fn encode_status(statuses: Dict(String, Status)) -> String {
+  targets()
+  |> list.filter_map(fn(t) {
+    case dict.get(statuses, t.id) {
+      Ok(Unknown) | Error(_) -> Error(Nil)
+      Ok(status) -> Ok(t.id <> ":" <> status_id(status))
+    }
+  })
+  |> string.join(",")
+}
+
+pub fn decode_status(raw: String) -> Dict(String, Status) {
+  let known =
+    targets()
+    |> list.map(fn(t) { t.id })
+  raw
+  |> string.split(",")
+  |> list.map(string.trim)
+  |> list.filter(fn(s) { s != "" })
+  |> list.fold(dict.new(), fn(acc, entry) {
+    case string.split_once(entry, ":") {
+      Ok(#(id, status_raw)) -> {
+        let id = string.trim(id)
+        case list.contains(known, id), parse_status(status_raw) {
+          True, Ok(status) -> set_status(acc, id, status)
+          _, _ -> acc
+        }
+      }
+      Error(_) -> acc
+    }
+  })
 }

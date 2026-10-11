@@ -56,6 +56,8 @@ pub type Model {
     pom_cards: Dict(String, Bool),
     /// Raid targets beaten this browser session (sessionStorage-backed).
     raid_beaten: Dict(String, Bool),
+    /// Raid target loot need status (localStorage-backed).
+    raid_status: Dict(String, raid_targets.Status),
     /// Account characters (localStorage-backed).
     characters: List(Character),
     char_form: CharForm,
@@ -87,6 +89,7 @@ pub type Msg {
   /// Spend one exact recipe combination (card ids), not an item name.
   UserCombinedPomRecipe(List(String))
   UserToggledRaidBeaten(String, Bool)
+  UserSetRaidStatus(String, String)
   UserClearedRaidBeaten
   UserUpdatedCharName(String)
   UserUpdatedCharClass(String)
@@ -126,6 +129,9 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       pom_cards: pom_deck.decode_owned(storage.get_item(pom_deck.storage_key)),
       raid_beaten: raid_targets.decode(
         storage.get_session_item(raid_targets.storage_key),
+      ),
+      raid_status: raid_targets.decode_status(
+        storage.get_item(raid_targets.status_storage_key),
       ),
       characters: character_tracker.decode(
         storage.get_item(character_tracker.storage_key),
@@ -172,6 +178,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           zone_search_open: False,
           pom_cards: model.pom_cards,
           raid_beaten: model.raid_beaten,
+          raid_status: model.raid_status,
           characters: model.characters,
           char_form: model.char_form,
           char_editing: model.char_editing,
@@ -216,6 +223,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   zone_search_open: True,
                   pom_cards: model.pom_cards,
                   raid_beaten: model.raid_beaten,
+                  raid_status: model.raid_status,
                   characters: model.characters,
                   char_form: model.char_form,
                   char_editing: model.char_editing,
@@ -375,6 +383,19 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         raid_targets.encode(raid_beaten),
       )
       #(Model(..model, raid_beaten:), effect.none())
+    }
+
+    UserSetRaidStatus(id, raw) -> {
+      let status = case raid_targets.parse_status(raw) {
+        Ok(s) -> s
+        Error(_) -> raid_targets.Unknown
+      }
+      let raid_status = raid_targets.set_status(model.raid_status, id, status)
+      storage.set_item(
+        raid_targets.status_storage_key,
+        raid_targets.encode_status(raid_status),
+      )
+      #(Model(..model, raid_status:), effect.none())
     }
 
     UserClearedRaidBeaten -> {
@@ -764,7 +785,7 @@ fn view(model: Model) -> Element(Msg) {
               False -> element.none()
             },
             case samples.is_raid_targets(sample) {
-              True -> raid_targets_panel(model.raid_beaten)
+              True -> raid_targets_panel(model.raid_beaten, model.raid_status)
               False -> element.none()
             },
             filter_controls(model),
@@ -1344,24 +1365,27 @@ fn pom_item_td(name: String) -> Element(Msg) {
   html.td(attrs, [html.text(name)])
 }
 
-fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
+fn raid_targets_panel(
+  beaten: Dict(String, Bool),
+  statuses: Dict(String, raid_targets.Status),
+) -> Element(Msg) {
   let total = list.length(raid_targets.targets())
   let done = raid_targets.beaten_count(beaten)
   html.section(
     [
       attribute.class("raid-targets"),
-      attribute.attribute("aria-label", "Raid targets beaten this session"),
+      attribute.attribute("aria-label", "Raid targets session tracker"),
     ],
     [
       html.div([attribute.class("raid-targets-head")], [
-        html.h2([], [html.text("Beaten this session")]),
+        html.h2([], [html.text("Session tracker")]),
         html.p([], [
           html.text(
-            "Check bosses you have killed. Saved for this browser tab only (clears when the tab closes).",
+            "Beaten checkboxes last for this tab only. Loot status (unknown / blah / needForEpic / needTheLoot) saves in this browser.",
           ),
         ]),
         html.p([attribute.class("raid-targets-progress")], [
-          html.text(int.to_string(done) <> " / " <> int.to_string(total)),
+          html.text(int.to_string(done) <> " / " <> int.to_string(total) <> " beaten"),
         ]),
         html.button(
           [
@@ -1369,7 +1393,7 @@ fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
             attribute.class("raid-targets-clear"),
             event.on_click(UserClearedRaidBeaten),
           ],
-          [html.text("Clear session")],
+          [html.text("Clear beaten")],
         ),
       ]),
       ..list.map(raid_targets.by_expansion(), fn(group) {
@@ -1380,15 +1404,16 @@ fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
             [attribute.class("raid-targets-list")],
             list.map(targets, fn(t) {
               let checked = raid_targets.has_beaten(beaten, t.id)
-              html.li([], [
-                html.label(
-                  [
-                    attribute.class(case checked {
-                      True -> "raid-target-check beaten"
-                      False -> "raid-target-check"
-                    }),
-                  ],
-                  [
+              let status = raid_targets.get_status(statuses, t.id)
+              html.li(
+                [
+                  attribute.class(case checked {
+                    True -> "raid-target-row beaten"
+                    False -> "raid-target-row"
+                  }),
+                ],
+                [
+                  html.label([attribute.class("raid-target-check")], [
                     html.input([
                       attribute.type_("checkbox"),
                       attribute.checked(checked),
@@ -1400,30 +1425,58 @@ fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
                         UserToggledRaidBeaten(t.id, on)
                       }),
                     ]),
-                    html.span([attribute.class("raid-target-name")], [
-                      html.text(t.name),
-                    ]),
-                    html.span([attribute.class("raid-target-hp")], [
-                      html.text(raid_targets.hp_label(t.hp)),
-                    ]),
-                    html.span([attribute.class("raid-target-zone")], [
-                      html.text(t.zone),
-                    ]),
-                    case t.note {
-                      "" -> element.none()
-                      note ->
-                        html.span([attribute.class("raid-target-note")], [
-                          html.text(note),
-                        ])
-                    },
-                  ],
-                ),
-              ])
+                  ]),
+                  html.span([attribute.class("raid-target-name")], [
+                    html.text(t.name),
+                  ]),
+                  raid_status_select(t.id, t.name, status),
+                  html.span([attribute.class("raid-target-hp")], [
+                    html.text(raid_targets.hp_label(t.hp)),
+                  ]),
+                  html.span([attribute.class("raid-target-zone")], [
+                    html.text(t.zone),
+                  ]),
+                  case t.note {
+                    "" -> element.none()
+                    note ->
+                      html.span([attribute.class("raid-target-note")], [
+                        html.text(note),
+                      ])
+                  },
+                ],
+              )
             }),
           ),
         ])
       })
     ],
+  )
+}
+
+fn raid_status_select(
+  id: String,
+  name: String,
+  status: raid_targets.Status,
+) -> Element(Msg) {
+  html.select(
+    [
+      attribute.class("raid-target-status"),
+      attribute.attribute("aria-label", name <> " loot status"),
+      attribute.title(raid_targets.status_tooltip(status)),
+      event.on_input(fn(raw) { UserSetRaidStatus(id, raw) }),
+    ],
+    list.map(raid_targets.statuses(), fn(option) {
+      html.option(
+        [
+          attribute.value(raid_targets.status_id(option)),
+          attribute.selected(
+            raid_targets.status_id(option) == raid_targets.status_id(status),
+          ),
+          attribute.title(raid_targets.status_tooltip(option)),
+        ],
+        raid_targets.status_label(option),
+      )
+    }),
   )
 }
 

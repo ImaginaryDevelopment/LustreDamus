@@ -1,6 +1,6 @@
 # Raid targets
 
-Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Use the checklist above to mark what you have beaten this browser session — flags clear when the tab closes (`sessionStorage`).
+Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Checklist above: **beaten** is tab-only (`sessionStorage`); **loot status** (`unknown` / `blah` / `needForEpic` / `needTheLoot`) persists in this browser (`localStorage`). Hover `blah` for “loot is bad or already owned.”
 
 Default sort is **Expansion**, then **HP** (unknown HP last). Zone sheets still own full named / drop detail.
 

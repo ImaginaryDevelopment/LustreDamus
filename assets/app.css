@@ -616,28 +616,42 @@ td.cell-item {
   gap: 0.25rem;
 }
 
-.raid-target-check {
+.raid-target-row {
   display: grid;
-  grid-template-columns: auto minmax(10rem, 1.2fr) 4.5rem minmax(8rem, 1fr) minmax(0, 1.2fr);
-  align-items: baseline;
+  grid-template-columns: auto minmax(9rem, 1.1fr) 8.5rem 4.5rem minmax(7rem, 1fr) minmax(0, 1.1fr);
+  align-items: center;
   gap: 0.45rem 0.75rem;
   padding: 0.28rem 0.35rem;
   font-size: 0.9rem;
-  cursor: pointer;
   border-radius: 2px;
 }
 
-.raid-target-check:hover {
+.raid-target-row:hover {
   background: color-mix(in srgb, var(--accent-soft) 70%, transparent);
 }
 
-.raid-target-check.beaten .raid-target-name {
+.raid-target-row.beaten .raid-target-name {
   text-decoration: line-through;
   color: var(--muted);
 }
 
+.raid-target-check {
+  display: inline-flex;
+  cursor: pointer;
+}
+
 .raid-target-name {
   font-weight: 600;
+}
+
+.raid-target-status {
+  font: inherit;
+  font-size: 0.85rem;
+  max-width: 100%;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.15rem 0.3rem;
 }
 
 .raid-target-hp {
@@ -654,10 +668,15 @@ td.cell-item {
 }
 
 @media (max-width: 720px) {
-  .raid-target-check {
+  .raid-target-row {
     grid-template-columns: auto 1fr auto;
   }
 
+  .raid-target-status {
+    grid-column: 1 / -1;
+  }
+
+  .raid-target-hp,
   .raid-target-zone,
   .raid-target-note {
     grid-column: 2 / -1;

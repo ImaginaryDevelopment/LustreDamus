@@ -1,6 +1,7 @@
 import gleam/dict
 import gleam/list
 import gleam/option.{Some}
+import gleam/string
 import gleeunit/should
 import raid_targets
 import table_sort
@@ -66,6 +67,25 @@ pub fn default_sorts_expansion_then_hp_test() {
   let assert Some(secondary) = sort.secondary
   secondary.column |> should.equal(3)
   secondary.kind |> should.equal(table_sort.SortNumeric)
+}
+
+pub fn status_encode_decode_skips_unknown_test() {
+  let statuses =
+    dict.new()
+    |> raid_targets.set_status("trakanon", raid_targets.NeedForEpic)
+    |> raid_targets.set_status("king-tormax", raid_targets.Blah)
+    |> raid_targets.set_status("lady-vox", raid_targets.Unknown)
+  let raw = raid_targets.encode_status(statuses)
+  string.contains(raw, "trakanon:needForEpic") |> should.be_true
+  string.contains(raw, "king-tormax:blah") |> should.be_true
+  string.contains(raw, "lady-vox") |> should.be_false
+  let again = raid_targets.decode_status(raw)
+  raid_targets.get_status(again, "trakanon")
+  |> should.equal(raid_targets.NeedForEpic)
+  raid_targets.get_status(again, "king-tormax")
+  |> should.equal(raid_targets.Blah)
+  raid_targets.get_status(again, "lady-vox")
+  |> should.equal(raid_targets.Unknown)
 }
 
 fn list_index(items: List(String), needle: String) -> Int {
