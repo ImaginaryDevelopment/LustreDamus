@@ -42,6 +42,8 @@ Velious raid belts (Windraider's, Destroyer, Nevederia) hit **+40–41%** — To
 | Bone-Clasped Girdle | Waist | HP/Mana +75 | **Dread / Fright / Terror** (Plane of Fear) | **RAID**-adjacent plane. Competes with haste sash — usually haste wins on melee twinks |
 | Fungi Covered Great Staff | 2HB | Click regen | Myconid Spore King (Sebilis) | Casters / hybrids. Second fungi piece if the tunic went to a melee |
 | Spirit Wracked Cord | Shoulders / Arms / Wrist | HP +100 worn Aura of Battle | Queen Velazul quest (Chardok) | Needs Spirit Wracked Urn (Drusella) + Undead Dragon Sinew (Sebilis juggs / Trakanon) + Regal Band. Ally Brood of Di`Zok |
+| Treasure Hunter's Satchel | Bag | **10-slot / 100% WR** giant bag | **Lord Nagafen** (Sol B); also Melalafen (Western Wastes), Faydedar (Timorous) | ALL, NO DROP. IdleQuest ~15% Nagafen / Melalafen, ~10% Faydedar |
+| Kavruul's Mystic Pouch | Bag | **10-slot / 100% WR** giant bag | **Lady Vox** (Permafrost); also Gorenaire (Dreadlands), Talendor (Skyfire), Severilous (Emerald Jungle), Faydedar (Timorous) | ALL, NO DROP. IdleQuest ~9–25% by dragon. Same bag class as the Satchel — mule both if you can |
 
 ## Priority by role (account mule)
 
@@ -57,3 +59,4 @@ Velious raid belts (Windraider's, Destroyer, Nevederia) hit **+40–41%** — To
 - **Howling Stones** needs Key of the Seers / cube path — Crypt Spectre sash and Embalming Fluid hoop are worth the key.
 - **Di`Zok Signet** is free once Warmly — turn in Green Goblin Skin / Mt. Death Mineral Salts at Herald even while KOS; skins from Droga / Nurga / Frontier goblins.
 - Raid haste (Grey Suede, Cloak of Flames / Piety) is optional; groupable sash + Tolapumj already carry most twinks.
+- **Bags:** Treasure Hunter's Satchel and Kavruul's Mystic Pouch are both 10-slot / 100% WR NO DROP giants off dragons — park on every mule. Nagafen / Vox are the classic farms; Faydedar can drop either.
