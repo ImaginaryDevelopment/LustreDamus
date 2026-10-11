@@ -603,6 +603,27 @@ td.cell-note {
   background: var(--accent-soft);
 }
 
+.pom-combine-cell {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.pom-combine {
+  appearance: none;
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  color: var(--focus);
+  padding: 0.25rem 0.55rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pom-combine:hover {
+  border-color: var(--focus);
+}
+
 .pom-card-grid table {
   width: max-content;
   max-width: 100%;

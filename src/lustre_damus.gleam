@@ -80,6 +80,8 @@ pub type Msg {
   UserToggledHideZeroSpawn(Bool)
   UserToggledPomCard(String, Bool)
   UserClearedPomCards
+  /// Spend one exact recipe combination (card ids), not an item name.
+  UserCombinedPomRecipe(List(String))
   UserUpdatedCharName(String)
   UserUpdatedCharClass(String)
   UserUpdatedCharLevel(String)
@@ -343,6 +345,12 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     UserClearedPomCards -> {
       storage.set_item(pom_deck.storage_key, "")
       #(Model(..model, pom_cards: dict.new()), effect.none())
+    }
+
+    UserCombinedPomRecipe(needs) -> {
+      let pom_cards = pom_deck.combine(model.pom_cards, needs)
+      storage.set_item(pom_deck.storage_key, pom_deck.encode_owned(pom_cards))
+      #(Model(..model, pom_cards:), effect.none())
     }
 
     UserUpdatedCharName(name) -> #(
@@ -1295,7 +1303,7 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
         html.h2([], [html.text("Deck combo tracker")]),
         html.p([], [
           html.text(
-            "Check cards you have. Progress saves in this browser (localStorage). Tables below stay the loot guide.",
+            "Check cards you have. Combine spends that row’s exact cards. Progress saves in this browser (localStorage).",
           ),
         ]),
         html.button(
@@ -1321,16 +1329,35 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
                 html.tr([], [
                   html.th([], [html.text("Item")]),
                   html.th([], [html.text("Classes")]),
-                  html.th([], [html.text("Uses")]),
+                  html.th([], [html.text("Cards")]),
+                  html.th([], [html.text("")]),
                 ]),
               ]),
               html.tbody(
                 [],
                 list.map(rows, fn(r) {
+                  let needs = r.needs
                   html.tr([], [
                     html.td([], [html.text(r.name)]),
                     html.td([], [html.text(r.classes)]),
-                    html.td([], [html.text(pom_deck.needs_labels(r.needs))]),
+                    html.td([], [html.text(pom_deck.needs_labels(needs))]),
+                    html.td([attribute.class("pom-combine-cell")], [
+                      html.button(
+                        [
+                          attribute.type_("button"),
+                          attribute.class("pom-combine"),
+                          attribute.attribute(
+                            "aria-label",
+                            "Combine "
+                              <> r.name
+                              <> " using "
+                              <> pom_deck.needs_labels(needs),
+                          ),
+                          event.on_click(UserCombinedPomRecipe(needs)),
+                        ],
+                        [html.text("Combine")],
+                      ),
+                    ]),
                   ])
                 }),
               ),

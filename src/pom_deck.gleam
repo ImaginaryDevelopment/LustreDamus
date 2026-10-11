@@ -211,6 +211,19 @@ pub fn craftable(owned: Dict(String, Bool)) -> List(Recipe) {
   })
 }
 
+/// Stable id for one card combination (not the item name — names can share recipes later).
+pub fn recipe_key(recipe: Recipe) -> String {
+  recipe.needs |> string.join("|")
+}
+
+/// Uncheck exactly the cards in `needs`. No-op if any required card is missing.
+pub fn combine(owned: Dict(String, Bool), needs: List(String)) -> Dict(String, Bool) {
+  case list.all(needs, fn(id) { has_card(owned, id) }) {
+    True -> list.fold(needs, owned, fn(acc, id) { dict.delete(acc, id) })
+    False -> owned
+  }
+}
+
 pub fn missing_one(owned: Dict(String, Bool)) -> List(MissingOne) {
   recipes()
   |> list.filter_map(fn(r) {
