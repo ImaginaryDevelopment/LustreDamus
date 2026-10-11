@@ -618,7 +618,7 @@ td.cell-item {
 
 .raid-target-check {
   display: grid;
-  grid-template-columns: auto minmax(10rem, 1.2fr) minmax(8rem, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: auto minmax(10rem, 1.2fr) 4.5rem minmax(8rem, 1fr) minmax(0, 1.2fr);
   align-items: baseline;
   gap: 0.45rem 0.75rem;
   padding: 0.28rem 0.35rem;
@@ -640,6 +640,13 @@ td.cell-item {
   font-weight: 600;
 }
 
+.raid-target-hp {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--ink);
+  font-size: 0.86rem;
+}
+
 .raid-target-zone,
 .raid-target-note {
   color: var(--muted);
@@ -648,12 +655,12 @@ td.cell-item {
 
 @media (max-width: 720px) {
   .raid-target-check {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
   }
 
   .raid-target-zone,
   .raid-target-note {
-    grid-column: 2;
+    grid-column: 2 / -1;
   }
 }
 

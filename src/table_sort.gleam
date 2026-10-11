@@ -245,7 +245,24 @@ fn parse_direct_number(value: String) -> Result(Float, Nil) {
     True -> string.drop_start(value, 1)
     False -> value
   }
-  parse_floatish(string.trim(value))
+  let value = string.trim(value)
+  let lower = string.lowercase(value)
+  case string.ends_with(lower, "k") {
+    True ->
+      case parse_floatish(string.drop_end(value, 1)) {
+        Ok(n) -> Ok(n *. 1000.0)
+        Error(Nil) -> Error(Nil)
+      }
+    False ->
+      case string.ends_with(lower, "m") {
+        True ->
+          case parse_floatish(string.drop_end(value, 1)) {
+            Ok(n) -> Ok(n *. 1_000_000.0)
+            Error(Nil) -> Error(Nil)
+          }
+        False -> parse_floatish(value)
+      }
+  }
 }
 
 fn parse_embedded_number(value: String) -> Result(Float, Nil) {
@@ -282,6 +299,9 @@ fn find_number_token_loop(
 
         "." if seen_digit && !seen_dot ->
           find_number_token_loop(rest, [g, ..acc], True, True)
+
+        "k" | "K" | "m" | "M" if seen_digit ->
+          Ok(string.concat(list.reverse([g, ..acc])))
 
         _ if seen_digit -> Ok(string.concat(list.reverse(acc)))
 

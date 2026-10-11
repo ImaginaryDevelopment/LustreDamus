@@ -75,6 +75,9 @@ pub fn parse_tilde_and_embedded_numbers_test() {
   let assert Ok(60.0) = table_sort.parse_number("Alpha ~60")
   let assert Ok(100.0) = table_sort.parse_number("100*")
   let assert Ok(3300.0) = table_sort.parse_number("3300")
+  let assert Ok(32_000.0) = table_sort.parse_number("~32k")
+  let assert Ok(3_500_000.0) = table_sort.parse_number("~3.5M")
+  let assert Ok(454_000.0) = table_sort.parse_number("HP ~454k fluff")
   let assert Error(Nil) = table_sort.parse_number("Raid only")
 }
 

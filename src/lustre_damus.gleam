@@ -152,6 +152,10 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     )
 
     UserChoseSample(sample) -> {
+      let sorts = case samples.is_raid_targets(sample) {
+        True -> raid_targets.default_sorts()
+        False -> dict.new()
+      }
       let base =
         Model(
           page: SamplePage(sample),
@@ -159,7 +163,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           filter: "",
           loading: False,
           error: None,
-          sorts: dict.new(),
+          sorts:,
           optional_columns: dict.new(),
           value_filters: dict.new(),
           hide_zero_spawn: False,
@@ -1398,6 +1402,9 @@ fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
                     ]),
                     html.span([attribute.class("raid-target-name")], [
                       html.text(t.name),
+                    ]),
+                    html.span([attribute.class("raid-target-hp")], [
+                      html.text(raid_targets.hp_label(t.hp)),
                     ]),
                     html.span([attribute.class("raid-target-zone")], [
                       html.text(t.zone),

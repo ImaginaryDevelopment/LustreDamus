@@ -2,73 +2,63 @@
 
 Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Use the checklist above to mark what you have beaten this browser session — flags clear when the tab closes (`sessionStorage`).
 
-Zone sheets still own the full named / drop detail. This page is the kill-list index.
+Default sort is **Expansion**, then **HP** (unknown HP last). Zone sheets still own full named / drop detail.
 
-## Classic
+## Targets
 
-| Target | Zone | Notes |
-| --- | --- | --- |
-| Phara Dar (Sky isle) | Plane of Sky | Island dragon |
-| Lord Nagafen | Nagafen's Lair | Fire giant dragon |
-| Lady Vox | Permafrost | Ice dragon |
-| Innoruuk | Plane of Hate | God |
-| Cazic-Thule | Plane of Fear | God |
-
-## Kunark
-
-| Target | Zone | Notes |
-| --- | --- | --- |
-| Trakanon | Old Sebilis | Dragon lair |
-| Venril Sathir | Karnor's Castle | Live VS |
-| Venril Sathir (Triggered) | Karnor's Castle | 2-group; Pulsing Green Stones |
-| Construct of Sathir | Karnor's Castle | 2-group |
-| Drusella Sathir | Howling Stones | 2-group east boss |
-| Overking Bathezid | Chardok | Royals |
-| Queen Velazul Di`zok | Chardok | Royals |
-| Prince Selrach Di`zok | Chardok | Royals |
-| Korocust | Chardok | 2-group bridge |
-| Trunt | Mines of Nurga | 2-group triggered |
-| Faydedar | Timorous Deep | Water dragon |
-| Gorenaire | Dreadlands | Outdoor dragon |
-| Severilous | Emerald Jungle | Outdoor dragon |
-| Talendor | Skyfire Mountains | Outdoor dragon |
-| Silverwing | Veeshan's Peak | VP crawl |
-| Hoshkar | Veeshan's Peak | VP crawl |
-| Xygoz | Veeshan's Peak | VP crawl |
-| Druushk | Veeshan's Peak | VP crawl |
-| Nexona | Veeshan's Peak | VP crawl |
-| Phara Dar | Veeshan's Peak | VP top |
-
-## Velious
-
-| Target | Zone | Notes |
-| --- | --- | --- |
-| King Tormax | Kael Drakkel | Kromzek king |
-| Derakor the Vindicator | Kael Drakkel | Near throne |
-| Dain Frostreaver IV | Icewell Keep | Coldain king |
-| Lord Yelinak | Skyshrine | Dragon king |
-| Zlandicar | Dragon Necropolis | Necropolis dragon |
-| Vaniki | Dragon Necropolis | Chetari raid named |
-| Velketor the Sorcerer | Velketor's Labyrinth | Tower boss |
-| Lord Doljonijiarnimorinar | Velketor's Labyrinth | Efreeti |
-| Tserrina Syl'Tor | Tower of Frozen Shadow | 2-group floor 7 |
-| Tunare | Plane of Growth | Goddess |
-| Guardian of Tunare | Plane of Growth | With Tunare |
-| Dozekar the Cursed | Temple of Veeshan | ToV west |
-| Aaryonar | Temple of Veeshan | ToV |
-| Lady Nevederia | Temple of Veeshan | ToV |
-| Lord Vyemm | Temple of Veeshan | ToV |
-| Dagarn the Destroyer | Temple of Veeshan | ToV live spawn |
-| Tukaarak the Warder | Sleeper's Tomb | Ice warder |
-| Nanzata the Warder | Sleeper's Tomb | Fire warder |
-| Ventani the Warder | Sleeper's Tomb | Disease warder |
-| Hraashna the Warder | Sleeper's Tomb | Magic warder |
-| Kildrukaun the Ancient | Sleeper's Tomb | Black ancient |
-| Vyskudra the Ancient | Sleeper's Tomb | Storm ancient |
-| Tjudawos the Ancient | Sleeper's Tomb | Gold ancient |
-| Zeixshi-Kar the Ancient | Sleeper's Tomb | Silver ancient |
-| Master of the Guard | Sleeper's Tomb | ST |
-| The Final Arbiter | Sleeper's Tomb | ST |
-| The Progenitor | Sleeper's Tomb | ST |
-| The Sleeper (Kerafyrm) | Sleeper's Tomb | Wake event |
-| All-Seeing Eye | Plane of Mischief | Huge HP fluff |
+| Expansion | Target | Zone | HP | Notes |
+| --- | --- | --- | ---: | --- |
+| Classic | Lord Nagafen | Nagafen's Lair | ~32k | Fire giant dragon |
+| Classic | Lady Vox | Permafrost | ~32k | Ice dragon |
+| Classic | Innoruuk | Plane of Hate | ~32k | God |
+| Classic | Cazic-Thule | Plane of Fear | ~32k | God |
+| Classic | Phara Dar (Sky isle) | Plane of Sky | — | Island dragon |
+| Kunark | Trakanon | Old Sebilis | ~32k | Dragon lair |
+| Kunark | Faydedar | Timorous Deep | ~32k | Water dragon |
+| Kunark | Gorenaire | Dreadlands | ~32k | Outdoor dragon |
+| Kunark | Severilous | Emerald Jungle | ~32k | Outdoor dragon |
+| Kunark | Talendor | Skyfire Mountains | ~32k | Outdoor dragon |
+| Kunark | Hoshkar | Veeshan's Peak | ~32k | VP crawl |
+| Kunark | Silverwing | Veeshan's Peak | ~454k | VP crawl |
+| Kunark | Druushk | Veeshan's Peak | ~470k | VP crawl |
+| Kunark | Phara Dar | Veeshan's Peak | ~681k | VP top |
+| Kunark | Nexona | Veeshan's Peak | ~800k | VP crawl |
+| Kunark | Xygoz | Veeshan's Peak | ~814k | VP crawl |
+| Kunark | Construct of Sathir | Karnor's Castle | — | 2-group |
+| Kunark | Drusella Sathir | Howling Stones | — | 2-group east boss |
+| Kunark | Korocust | Chardok | — | 2-group bridge |
+| Kunark | Overking Bathezid | Chardok | — | Royals |
+| Kunark | Prince Selrach Di`zok | Chardok | — | Royals |
+| Kunark | Queen Velazul Di`zok | Chardok | — | Royals |
+| Kunark | Trunt | Mines of Nurga | — | 2-group triggered |
+| Kunark | Venril Sathir | Karnor's Castle | — | Live VS |
+| Kunark | Venril Sathir (Triggered) | Karnor's Castle | — | 2-group; Pulsing Green Stones |
+| Velious | Derakor the Vindicator | Kael Drakkel | ~180k | Near throne |
+| Velious | Tukaarak the Warder | Sleeper's Tomb | ~200k | Ice warder |
+| Velious | Nanzata the Warder | Sleeper's Tomb | ~200k | Fire warder |
+| Velious | Ventani the Warder | Sleeper's Tomb | ~200k | Disease warder |
+| Velious | Hraashna the Warder | Sleeper's Tomb | ~200k | Magic warder |
+| Velious | Guardian of Tunare | Plane of Growth | ~310k | With Tunare |
+| Velious | Master of the Guard | Sleeper's Tomb | ~326k | ST (~100k–326k) |
+| Velious | The Progenitor | Sleeper's Tomb | ~327k | ST (~150k–327k) |
+| Velious | Dain Frostreaver IV | Icewell Keep | ~352k | Coldain king |
+| Velious | Kildrukaun the Ancient | Sleeper's Tomb | ~352k | Black ancient |
+| Velious | Vyskudra the Ancient | Sleeper's Tomb | ~352k | Storm ancient |
+| Velious | Tjudawos the Ancient | Sleeper's Tomb | ~352k | Gold ancient |
+| Velious | The Final Arbiter | Sleeper's Tomb | ~357k | ST (~200k–357k) |
+| Velious | Zeixshi-Kar the Ancient | Sleeper's Tomb | ~377k | Silver ancient |
+| Velious | King Tormax | Kael Drakkel | ~452k | Kromzek king |
+| Velious | Tunare | Plane of Growth | ~530k | Goddess |
+| Velious | All-Seeing Eye | Plane of Mischief | ~709k | Huge HP fluff |
+| Velious | The Sleeper (Kerafyrm) | Sleeper's Tomb | ~3.5M | Wake event |
+| Velious | Aaryonar | Temple of Veeshan | — | ToV |
+| Velious | Dagarn the Destroyer | Temple of Veeshan | — | ToV live spawn |
+| Velious | Dozekar the Cursed | Temple of Veeshan | — | ToV west |
+| Velious | Lady Nevederia | Temple of Veeshan | — | ToV |
+| Velious | Lord Doljonijiarnimorinar | Velketor's Labyrinth | — | Efreeti |
+| Velious | Lord Vyemm | Temple of Veeshan | — | ToV |
+| Velious | Lord Yelinak | Skyshrine | — | Dragon king |
+| Velious | Tserrina Syl'Tor | Tower of Frozen Shadow | — | 2-group floor 7 |
+| Velious | Vaniki | Dragon Necropolis | — | Chetari raid named |
+| Velious | Velketor the Sorcerer | Velketor's Labyrinth | — | Tower boss |
+| Velious | Zlandicar | Dragon Necropolis | — | Necropolis dragon |

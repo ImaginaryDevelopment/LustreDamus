@@ -1,7 +1,9 @@
 import gleam/dict
 import gleam/list
+import gleam/option.{Some}
 import gleeunit/should
 import raid_targets
+import table_sort
 
 pub fn encode_decode_roundtrip_test() {
   let beaten =
@@ -42,4 +44,38 @@ pub fn by_expansion_covers_all_targets_test() {
     })
     |> list.length
   listed |> should.equal(list.length(raid_targets.targets()))
+}
+
+pub fn targets_sorted_expansion_then_hp_test() {
+  let ids = list.map(raid_targets.targets(), fn(t) { t.id })
+  let naggy = list_index(ids, "lord-nagafen")
+  let trak = list_index(ids, "trakanon")
+  let sleeper = list_index(ids, "the-sleeper")
+  let xygoz = list_index(ids, "xygoz")
+  let hoshkar = list_index(ids, "hoshkar")
+  { naggy < trak } |> should.be_true
+  { trak < sleeper } |> should.be_true
+  { hoshkar < xygoz } |> should.be_true
+}
+
+pub fn default_sorts_expansion_then_hp_test() {
+  let assert Ok(sort) =
+    dict.get(raid_targets.default_sorts(), raid_targets.table_title)
+  sort.primary.column |> should.equal(0)
+  sort.primary.kind |> should.equal(table_sort.SortText)
+  let assert Some(secondary) = sort.secondary
+  secondary.column |> should.equal(3)
+  secondary.kind |> should.equal(table_sort.SortNumeric)
+}
+
+fn list_index(items: List(String), needle: String) -> Int {
+  list_index_loop(items, needle, 0)
+}
+
+fn list_index_loop(items: List(String), needle: String, i: Int) -> Int {
+  case items {
+    [head, ..] if head == needle -> i
+    [_, ..rest] -> list_index_loop(rest, needle, i + 1)
+    [] -> -1
+  }
 }
