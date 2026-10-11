@@ -4,7 +4,7 @@ Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** o
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`mischiefplane`). Almost all wearable gear is a **Deck of Spontaneous Generation** combine (cards → Ferjeneror), not a raw drop. Deck reagents (Squires / Knights / Crowns / Thrones) share a few IdleQuest loot pools below.
 
-**In-app tracker:** opening this sample shows a **Deck combo tracker** above the tables — check cards you own (saved in browser localStorage); it lists completes and missing-1 farms.
+**In-app tracker:** opening this sample shows a **Deck combo tracker** above the tables — check cards you own (saved in browser localStorage); it lists completes and missing-1 farms. Hover any named loot for IdleQuest **stats** (classes shown on the row when not ALL).
 
 **Do** column:
 - **KILL** — fine to kill for loot / reagents
@@ -129,7 +129,7 @@ Combine in the Deck (from **Ferjeneror**). Classic / P99 recipes — four cards 
 | Belt of Inconsistency | ALL | White Throne, Blue Throne, White Crown, Blue Crown |
 | Globe of Darkness | ALL | Black Throne, Blue Throne, Black Crown, Blue Crown |
 | Idiot Savant's Cap | ALL | Red Throne, White Throne, Red Crown, White Crown |
-| Very Rusty Dagger | SHD ROG | Black Throne, White Throne, Black Crown, White Crown |
+| Very Rusty Dagger | SHD ROG BST | Black Throne, White Throne, Black Crown, White Crown |
 
 #### Flowers of Functionality
 
@@ -163,17 +163,65 @@ Combine in the Deck (from **Ferjeneror**). Classic / P99 recipes — four cards 
 | a white stallion | LEAVE | Horn turn-in for white Lithiniath |
 | Dinner | KILL | Classic King Cod Card — missing from IdleQuest DB |
 
-### Class armor sets (combine only)
+### Class armor (combine only)
 
-Distraction piece + matching doll in Bob's Pot of Gold.
+Distraction piece + matching doll in Bob's Pot of Gold. Hover a piece for IdleQuest stats. Classes column fills automatically for restricted gear.
 
-| Set | Class | Notes |
+| Item | Classes | Notes |
 | --- | --- | --- |
-| Crazy Cleric Armor | CLR | Distraction + Cleric doll |
-| Twisted Nature Armor | DRU | |
-| Mischievous Dazzler Armor | ENC | |
-| Sly Summoners Armor | MAG | |
-| Monkey Hide Armor | MNK | |
-| Maleficent Armor | NEC | |
-| Shamanistic Shenannigan Armor | SHM | Boots stand out (very high AC) |
-| Wily Warlock Armor | WIZ | |
+| Crazy Cleric Helm | CLR | Distraction + Cleric doll |
+| Crazy Cleric Breastplate | CLR | |
+| Crazy Cleric Arm Plate | CLR | |
+| Crazy Cleric Wrist Guard | CLR | |
+| Crazy Cleric Gauntlets | CLR | |
+| Crazy Cleric Greaves | CLR | |
+| Crazy Cleric Boots | CLR | |
+| Twisted Nature Crown | DRU | Distraction + Druid doll |
+| Twisted Nature Chestguard | DRU | |
+| Twisted Nature Armband | DRU | |
+| Twisted Nature Bracer | DRU | |
+| Twisted Nature Gloves | DRU | |
+| Twisted Nature Leggings | DRU | |
+| Twisted Nature Boots | DRU | |
+| Mischievous Dazzler Crown | ENC | Distraction + Enchanter doll |
+| Mischievous Dazzler Robe | ENC | |
+| Mischievous Dazzler Sleeves | ENC | |
+| Mischievous Dazzler Bracer | ENC | |
+| Mischievous Dazzler Gloves | ENC | |
+| Mischievous Dazzler Leggings | ENC | |
+| Mischievous Dazzler Shoes | ENC | |
+| Sly Summoners Crown | MAG | Distraction + Magician doll |
+| Sly Summoners Robe | MAG | |
+| Sly Summoners Sleeves | MAG | |
+| Sly Summoners Wristguard | MAG | |
+| Sly Summoners Gloves | MAG | |
+| Sly Summoners Pants | MAG | |
+| Sly Summoners Boots | MAG | |
+| Monkey Hide Helm | MNK | Distraction + Monkey doll |
+| Monkey Hide Breastplate | MNK | |
+| Monkey Hide Arm Plate | MNK | |
+| Monkey Hide Wrist Guard | MNK | |
+| Monkey Hide Gauntlets | MNK | |
+| Monkey Hide Greaves | MNK | |
+| Monkey Hide Boots | MNK | |
+| Maleficent Crown | NEC | Distraction + Necromancer doll |
+| Maleficent Robe | NEC | |
+| Maleficent Sleeves | NEC | |
+| Maleficent Bracer | NEC | |
+| Maleficent Gloves | NEC | |
+| Maleficent Leggings | NEC | |
+| Maleficent Boots | NEC | |
+| Shamanistic Shenannigan Helm | SHM | Distraction + Shaman doll. Boots are standout AC |
+| Shamanistic Shenannigan Chestplate | SHM | |
+| Shamanistic Shenannigan Arm Guard | SHM | |
+| Shamanistic Shenannigan Bracer | SHM | |
+| Shamanistic Shenanigan Gauntlets | SHM | IdleQuest spelling |
+| Shamanistic Shenannigan Greaves | SHM | |
+| Shamanistic Shenannigan Boots | SHM | |
+| Wily Warlock Crown | WIZ | Distraction + Wizard doll |
+| Wily Warlock Robe | WIZ | |
+| Wily Warlock Sleeves | WIZ | |
+| Wily Warlock Bracer | WIZ | |
+| Wily Warlock Gloves | WIZ | |
+| Wily Warlock Pants | WIZ | |
+| Wily Warlock Boots | WIZ | |

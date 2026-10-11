@@ -192,7 +192,7 @@ pub fn recipes() -> List(Recipe) {
     ),
     Recipe(
       "Very Rusty Dagger",
-      "SHD ROG",
+      "SHD ROG BST",
       ["black-throne", "white-throne", "black-crown", "white-crown"],
     ),
   ]

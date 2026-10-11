@@ -15,6 +15,7 @@ import character_tracker.{type Character, type Form as CharForm}
 import markdown_table.{type Table}
 import pal_index
 import pom_deck
+import pom_items
 import rsvp
 import samples.{type Sample}
 import storage
@@ -561,11 +562,23 @@ fn update_column_sort(
   }
 }
 
+fn sample_tables(model: Model) -> List(Table) {
+  model.markdown
+  |> markdown_table.extract_tables
+  |> enrich_sample_tables(model.page)
+  |> markdown_table.filter_tables(model.filter)
+}
+
+fn enrich_sample_tables(tables: List(Table), page: Page) -> List(Table) {
+  case page {
+    SamplePage(sample) if sample.id == "plane-of-mischief" ->
+      pom_items.with_classes_on_item_rows(tables)
+    _ -> tables
+  }
+}
+
 fn inferred_kind(model: Model, table_id: String, column: Int) -> SortKind {
-  let tables =
-    model.markdown
-    |> markdown_table.extract_tables
-    |> markdown_table.filter_tables(model.filter)
+  let tables = sample_tables(model)
   case find_table(tables, table_id) {
     Ok(table) ->
       case table_sort.column_looks_numeric(table.rows, column) {
@@ -654,9 +667,7 @@ fn describe_error(error: rsvp.Error(String)) -> String {
 fn view(model: Model) -> Element(Msg) {
   let formatter = page_formatter(model.page, model.pal_elements)
   let tables =
-    model.markdown
-    |> markdown_table.extract_tables
-    |> markdown_table.filter_tables(model.filter)
+    sample_tables(model)
     |> list.map(fn(table) { apply_sort(table, model.sorts) })
 
   html.div([attribute.class("app")], [
@@ -1290,6 +1301,17 @@ fn optional_select(
   )
 }
 
+fn pom_item_td(name: String) -> Element(Msg) {
+  let attrs = case pom_items.tooltip(name) {
+    Some(text) -> [
+      attribute.class("cell-item"),
+      attribute.title(text),
+    ]
+    None -> []
+  }
+  html.td(attrs, [html.text(name)])
+}
+
 fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
   let craftable = pom_deck.craftable(owned)
   let missing = pom_deck.missing_one(owned)
@@ -1303,7 +1325,7 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
         html.h2([], [html.text("Deck combo tracker")]),
         html.p([], [
           html.text(
-            "Check cards you have. Combine spends that row’s exact cards. Progress saves in this browser (localStorage).",
+            "Check cards you have. Hover item names for stats. Combine spends that row’s exact cards. Progress saves in this browser.",
           ),
         ]),
         html.button(
@@ -1338,7 +1360,7 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
                 list.map(rows, fn(r) {
                   let needs = r.needs
                   html.tr([], [
-                    html.td([], [html.text(r.name)]),
+                    pom_item_td(r.name),
                     html.td([], [html.text(r.classes)]),
                     html.td([], [html.text(pom_deck.needs_labels(needs))]),
                     html.td([attribute.class("pom-combine-cell")], [
@@ -1376,6 +1398,7 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
               html.thead([], [
                 html.tr([], [
                   html.th([], [html.text("Item")]),
+                  html.th([], [html.text("Classes")]),
                   html.th([], [html.text("Need")]),
                   html.th([], [html.text("Farm")]),
                 ]),
@@ -1384,7 +1407,8 @@ fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {
                 [],
                 list.map(rows, fn(m) {
                   html.tr([], [
-                    html.td([], [html.text(m.recipe.name)]),
+                    pom_item_td(m.recipe.name),
+                    html.td([], [html.text(m.recipe.classes)]),
                     html.td([], [html.text(m.missing_label)]),
                     html.td([attribute.class("col-notes")], [html.text(m.farm)]),
                   ])

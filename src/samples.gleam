@@ -2,6 +2,7 @@ import gleam/dict.{type Dict}
 import gleam/list
 import gleam/string
 import pal_index
+import pom_items
 import table_format.{type TableFormatter}
 
 /// Markdown samples shipped with the static site.
@@ -1447,6 +1448,9 @@ pub fn table_formatter(
         "zone-xp-modifiers" | "zone-index" ->
           table_format.plain()
           |> table_format.with_trailing_asterisk_tooltip(zone_xp_asterisk_note)
+        "plane-of-mischief" ->
+          table_format.plain()
+          |> pom_items.with_item_tooltips
         _ -> table_format.plain()
       }
   }
