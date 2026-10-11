@@ -2,7 +2,7 @@
 
 Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest → **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`mischiefplane`). Almost all wearable gear is a **Deck of Spontaneous Generation** combine (cards → Ferjeneror), not a raw drop. Deck reagents (Squires / Knights / Crowns / Thrones) share a few IdleQuest loot pools below.
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`mischiefplane`). Almost all wearable gear is a **Deck of Spontaneous Generation** combine (cards go **in the Deck**, not to Ferjeneror). See **How to get the Deck and combine cards** below. Deck reagents (Squires / Knights / Crowns / Thrones) share a few IdleQuest loot pools.
 
 **In-app tracker:** opening this sample shows a **Deck combo tracker** above the tables — check cards you own (saved in browser localStorage); it lists completes and missing-1 farms. Hover any named loot for IdleQuest **stats** (classes shown on the row when not ALL).
 
@@ -203,9 +203,26 @@ These are the raw-drop tables that feed Deck combines. Wearable Distraction / cl
 | --- | --- | --- |
 | Blam Stick (1H Blunt) | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM BST | 30/40 (0.75), wt 0. Fireball animation proc. Farm: aggro chest, FD/blur, leave chest up — **confirm on your emu** |
 
+### How to get the Deck and combine cards
+
+Playing cards (Squire / Knight / Crown / Throne / Jester) are **not** turned in to Ferjeneror. You put **four cards into the Deck** container and hit combine.
+
+1. **Get the Deck** from **Ferjeneror** (sphinx, hedge-maze center — **LEAVE**). Hand in either:
+   - **King Cod Card** (classic: kill **Dinner** on the dining table; watch Bit/Mizer on the chandelier), **or**
+   - all four colored Cod Cards (**Black / Blue / Red / White**) from fishing the castle moat.
+2. **Hail carefully.** He asks if you have a gift. Do **not** say **"no"** — that makes him attack.
+3. **Farm cards** from the loot pools above (Squire / Knight / Crown / Throne).
+4. **Combine:** open **Deck of Spontaneous Generation** (4-slot container), put in the exact four cards for a recipe (tables below), combine. Result appears in inventory; cards are consumed.
+5. **Class PoM armor (extra steps):**
+   - Get an **Empty Pot of Gold** from **Bob the Painter** (Words of Wealth path).
+   - Get a class **doll** from **Peachy D`Vicci** (2× Funny Money → Gift Box — random doll).
+   - Combine **Distraction piece + matching doll** in the Empty Pot of Gold.
+
+In-app **Combine** on the deck tracker only unchecks cards you marked owned — it does not do the in-game combine.
+
 ### Deck of Spontaneous Generation rewards
 
-Combine in the Deck (from **Ferjeneror**). Classic / P99 recipes — four cards each. Not raw drops.
+Classic / P99 recipes — four cards each inside the Deck. Not raw drops.
 
 #### Armor of Distraction
 

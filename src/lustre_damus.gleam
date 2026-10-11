@@ -16,6 +16,7 @@ import markdown_table.{type Table}
 import pal_index
 import pom_deck
 import pom_items
+import raid_targets
 import rsvp
 import samples.{type Sample}
 import storage
@@ -53,6 +54,8 @@ pub type Model {
     zone_search_open: Bool,
     /// Plane of Mischief deck cards owned (localStorage-backed).
     pom_cards: Dict(String, Bool),
+    /// Raid targets beaten this browser session (sessionStorage-backed).
+    raid_beaten: Dict(String, Bool),
     /// Account characters (localStorage-backed).
     characters: List(Character),
     char_form: CharForm,
@@ -83,6 +86,8 @@ pub type Msg {
   UserClearedPomCards
   /// Spend one exact recipe combination (card ids), not an item name.
   UserCombinedPomRecipe(List(String))
+  UserToggledRaidBeaten(String, Bool)
+  UserClearedRaidBeaten
   UserUpdatedCharName(String)
   UserUpdatedCharClass(String)
   UserUpdatedCharLevel(String)
@@ -119,6 +124,9 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       zone_search: "",
       zone_search_open: False,
       pom_cards: pom_deck.decode_owned(storage.get_item(pom_deck.storage_key)),
+      raid_beaten: raid_targets.decode(
+        storage.get_session_item(raid_targets.storage_key),
+      ),
       characters: character_tracker.decode(
         storage.get_item(character_tracker.storage_key),
       ),
@@ -159,6 +167,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           zone_search: model.zone_search,
           zone_search_open: False,
           pom_cards: model.pom_cards,
+          raid_beaten: model.raid_beaten,
           characters: model.characters,
           char_form: model.char_form,
           char_editing: model.char_editing,
@@ -202,6 +211,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   zone_search: "",
                   zone_search_open: True,
                   pom_cards: model.pom_cards,
+                  raid_beaten: model.raid_beaten,
                   characters: model.characters,
                   char_form: model.char_form,
                   char_editing: model.char_editing,
@@ -352,6 +362,20 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
       let pom_cards = pom_deck.combine(model.pom_cards, needs)
       storage.set_item(pom_deck.storage_key, pom_deck.encode_owned(pom_cards))
       #(Model(..model, pom_cards:), effect.none())
+    }
+
+    UserToggledRaidBeaten(id, on) -> {
+      let raid_beaten = raid_targets.toggle(model.raid_beaten, id, on)
+      storage.set_session_item(
+        raid_targets.storage_key,
+        raid_targets.encode(raid_beaten),
+      )
+      #(Model(..model, raid_beaten:), effect.none())
+    }
+
+    UserClearedRaidBeaten -> {
+      storage.set_session_item(raid_targets.storage_key, "")
+      #(Model(..model, raid_beaten: dict.new()), effect.none())
     }
 
     UserUpdatedCharName(name) -> #(
@@ -733,6 +757,10 @@ fn view(model: Model) -> Element(Msg) {
             ]),
             case sample.id == "plane-of-mischief" {
               True -> pom_deck_panel(model.pom_cards)
+              False -> element.none()
+            },
+            case samples.is_raid_targets(sample) {
+              True -> raid_targets_panel(model.raid_beaten)
               False -> element.none()
             },
             filter_controls(model),
@@ -1310,6 +1338,86 @@ fn pom_item_td(name: String) -> Element(Msg) {
     None -> []
   }
   html.td(attrs, [html.text(name)])
+}
+
+fn raid_targets_panel(beaten: Dict(String, Bool)) -> Element(Msg) {
+  let total = list.length(raid_targets.targets())
+  let done = raid_targets.beaten_count(beaten)
+  html.section(
+    [
+      attribute.class("raid-targets"),
+      attribute.attribute("aria-label", "Raid targets beaten this session"),
+    ],
+    [
+      html.div([attribute.class("raid-targets-head")], [
+        html.h2([], [html.text("Beaten this session")]),
+        html.p([], [
+          html.text(
+            "Check bosses you have killed. Saved for this browser tab only (clears when the tab closes).",
+          ),
+        ]),
+        html.p([attribute.class("raid-targets-progress")], [
+          html.text(int.to_string(done) <> " / " <> int.to_string(total)),
+        ]),
+        html.button(
+          [
+            attribute.type_("button"),
+            attribute.class("raid-targets-clear"),
+            event.on_click(UserClearedRaidBeaten),
+          ],
+          [html.text("Clear session")],
+        ),
+      ]),
+      ..list.map(raid_targets.by_expansion(), fn(group) {
+        let #(expansion, targets) = group
+        html.div([attribute.class("raid-targets-group")], [
+          html.h3([], [html.text(expansion)]),
+          html.ul(
+            [attribute.class("raid-targets-list")],
+            list.map(targets, fn(t) {
+              let checked = raid_targets.has_beaten(beaten, t.id)
+              html.li([], [
+                html.label(
+                  [
+                    attribute.class(case checked {
+                      True -> "raid-target-check beaten"
+                      False -> "raid-target-check"
+                    }),
+                  ],
+                  [
+                    html.input([
+                      attribute.type_("checkbox"),
+                      attribute.checked(checked),
+                      attribute.attribute(
+                        "aria-label",
+                        t.name <> " beaten",
+                      ),
+                      event.on_check(fn(on) {
+                        UserToggledRaidBeaten(t.id, on)
+                      }),
+                    ]),
+                    html.span([attribute.class("raid-target-name")], [
+                      html.text(t.name),
+                    ]),
+                    html.span([attribute.class("raid-target-zone")], [
+                      html.text(t.zone),
+                    ]),
+                    case t.note {
+                      "" -> element.none()
+                      note ->
+                        html.span([attribute.class("raid-target-note")], [
+                          html.text(note),
+                        ])
+                    },
+                  ],
+                ),
+              ])
+            }),
+          ),
+        ])
+      })
+    ],
+  )
 }
 
 fn pom_deck_panel(owned: Dict(String, Bool)) -> Element(Msg) {

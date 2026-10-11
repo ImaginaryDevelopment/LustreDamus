@@ -6,19 +6,6 @@ Related: [Epic Min Levels](Epic-Min-Levels.md)
 
 ---
 
-## Content revision (for staleness)
-
-| | |
-| --- | --- |
-| **Repo** | `D:\projects\idlequest-content` (`brynnb/idlequest-content`) |
-| **HEAD** | `3d2eb4977612c146303c47537f4a283fc5b820ba` (`3d2eb497`, 2026-09-15 — README only) |
-| **Data commit** (last touch of `data/ground_spawns`, `data/idlequest_enabled_ground_spawns`, `data/items`, `data/zone`) | `240bbf3bbd12fb488fb8359c31efbed2ce2733ff` (`240bbf3b`, 2026-09-15 — initial snapshot) |
-| **Queried** | 2026-10-11 |
-
-If `git rev-parse HEAD` or the data-commit hash above changes, re-run the refresh steps at the bottom and update this sheet.
-
----
-
 ## How IdleQuest treats ground spawns
 
 - Full EQ dump: `data/ground_spawns/*.ndjson` (~1762 rows).
@@ -147,7 +134,7 @@ for label, pred in [
 
 After re-query:
 
-1. Update the **Content revision** hashes and **Queried** date.
+1. Update the **Content revision** block at the bottom (hashes and **Queried** date).
 2. Replace the tables if rows/timers/enablement changed.
 3. Keep the distinction **in dump** vs **IdleQuest-enabled**.
 
@@ -162,3 +149,16 @@ Optional LINQPad: extend `spawn-lookup.linq` or a tiny `ground-spawn-lookup.linq
 - `data/zone/*.ndjson` (`zoneidnumber` → short/long name)
 - `data/items/*.ndjson` (item display names; some 1.5 ids absent from export)
 - P99 epic context: [Class Epic Quest List](https://wiki.project1999.com/Class_Epic_Quest_List)
+
+---
+
+## Content revision (for staleness)
+
+| | |
+| --- | --- |
+| **Repo** | `D:\projects\idlequest-content` (`brynnb/idlequest-content`) |
+| **HEAD** | `3d2eb4977612c146303c47537f4a283fc5b820ba` (`3d2eb497`, 2026-09-15 — README only) |
+| **Data commit** (last touch of `data/ground_spawns`, `data/idlequest_enabled_ground_spawns`, `data/items`, `data/zone`) | `240bbf3bbd12fb488fb8359c31efbed2ce2733ff` (`240bbf3b`, 2026-09-15 — initial snapshot) |
+| **Queried** | 2026-10-11 |
+
+If `git rev-parse HEAD` or the data-commit hash above changes, re-run the refresh steps above and update this block.

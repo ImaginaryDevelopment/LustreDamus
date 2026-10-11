@@ -82,6 +82,7 @@ fn everquest_group() -> SampleGroup {
       epic_ground_spawns_sample(),
       velious_factions_sample(),
       velious_gem_sources_sample(),
+      raid_targets_sample(),
       character_tracker_sample(),
     ],
     buckets: [
@@ -195,6 +196,20 @@ fn character_tracker_sample() -> Sample {
 
 pub fn is_character_tracker(sample: Sample) -> Bool {
   sample.id == "character-tracker"
+}
+
+fn raid_targets_sample() -> Sample {
+  sheet(
+    "raid-targets",
+    "Raid Targets",
+    "everquest",
+    "Raid-Targets.md",
+    "Classic–Velious raid / 2-group bosses with session checkboxes for beaten kills.",
+  )
+}
+
+pub fn is_raid_targets(sample: Sample) -> Bool {
+  sample.id == "raid-targets"
 }
 
 fn quest_gear_sample() -> Sample {
