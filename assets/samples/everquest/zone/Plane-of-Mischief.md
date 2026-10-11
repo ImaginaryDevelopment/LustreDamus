@@ -17,9 +17,9 @@ Sort by **Mob**. Notes cite IdleQuest loot pools — see **Loot pools** for chan
 
 | Mob | Do | Class | Chance | Area | Notes |
 | --- | --- | --- | ---: | --- | --- |
-| #Lithiniath (Black) | KILL | ENC | 0% | B&W room | IdleQuest **0%**. ~64 / **~36k HP**. **Lithiniaths Horn** 100%; Crowns / Jester 1% each; Velious spells. Camp boss when up |
-| Lithiniath (White) | KILL | ENC | — | B&W room | Spawn by handing Horn to **a white stallion** (no separate IdleQuest spawn row) |
-| a white stallion | LEAVE | WAR | 100% | B&W room white side | ~55 / ~4.3k HP. Horn turn-in. If killed: Throne / Crown / Words of Wealth ~3.5% each (lt 87598) |
+| #Lithiniath (Black) | KILL | ENC | 0% | B&W room | IdleQuest **0%** alone in its spawn groups — **no script spawn** either. Classic ~3-day natural. NPC 126208 / lt 4082 (Horn / Crowns / Jester). Treat as **broken / never up** on IdleQuest until chance is fixed |
+| Lithiniath (White) | KILL | ENC | — | B&W room | Classic: Horn → **a white stallion**. IdleQuest script `spawn2(126612)` but **NPC 126612 missing** from `npc_types` — hand-in currently broken |
+| a white stallion | LEAVE | WAR | 100% | B&W room white side | ~55 / ~4.3k HP. Two 100% spots. Horn turn-in script present but white Lithiniath id missing. If killed: Throne / Crown / Words of Wealth ~3.5% (lt 87598) |
 | Ferjeneror | LEAVE | WIZ | 100% | Hedge maze center | ~65 / ~29k HP. **Deck** quest — never answer "no". Shares Crown/Jester pool (1%) if killed |
 | Peachy D`Vicci | LEAVE | CLR | 100% | Castle entrance ~−341, −363 | ~48 / ~7k HP. 2× Funny Money → Gift Box. Shares **Squire** pool |
 | Bob the Painter | LEAVE | ROG | ~25–100% | ~15, −450 | ~49 / ~8k HP. Empty Pot of Gold / Words of Wealth. Shares **Squire** pool |
@@ -39,12 +39,19 @@ Sort by **Mob**. Notes cite IdleQuest loot pools — see **Loot pools** for chan
 | a phony / bogus treasure chest | KILL | WAR | 25–100% | Chest room | ~57–59 / ~16–20k HP. Fluff / missing item IDs in IdleQuest |
 | Treasure Chest | KILL | ENC | 100% | Forest west ~−237, 557 | ~51 / ~10k HP. KOS mimic. IdleQuest loottable **empty** |
 | All-Seeing Eye | RAID | WAR | 100% | Plane | ~75 / **~709k HP**. IdleQuest live spawn. Curzon / gem fluff |
-| #Bristlebane | RAID | ROG | 0% | Throne (unused) | IdleQuest **0%**. ~75 / **~1.0M HP**. No loottable. Classic throne stays empty |
-| #the Mischievous Jester | RAID | WAR | 0% | — | IdleQuest **0%**. ~70 / **~200k HP**. Post-classic loot fluff |
+| #Bristlebane | RAID | ROG | 0% | Throne (unused) | IdleQuest **0%**, empty quest file, **no loottable**. Classic throne empty. Zone `script_init` loads **Bristlebane the King of Thieves** (2.0 / GoD-era encounter) — different NPC |
+| #the Mischievous Jester | RAID | WAR | 0% | — | IdleQuest **0%** alone in group; **no script**. ~70 / **~200k HP**, lt 98994 — post-classic fluff |
 
 ### IdleQuest 0% (script / PH)
 
-Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked. Includes `#Lithiniath`, `#Bristlebane`, `#the Mischievous Jester`, and many `#` theater / sphinx stubs.
+Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked. Checked against IdleQuest `spawnentry` + `effective/quests/mischiefplane`:
+
+| Kind | Examples | Alternate trigger? |
+| --- | --- | --- |
+| Solo 0% bosses | `#Lithiniath`, `#Bristlebane`, `#the Mischievous Jester` | **No** working IdleQuest trigger. White Lithiniath script exists but target NPC id missing. `#Bristlebane` quest empty; 2.0 King of Thieves is separate |
+| PH-style rares (0% on trash groups) | `#A_Bouncing_Bunny`, `#a_Savvy_Sphinx`, `#Bzzibuzzana`, `#the_Grand_Gardener`, `#an_Ample_Ape`, … | Sit on trash PHs at **0%** so they **never** win the lottery. No `spawn2` scripts found — chance disabled, not scripted |
+| Theater stubs (no loot) | `#Geb`, `#Bidalla`, `#Kelld`, … | Dead placeholder groups (all 0%). Live **Geb** / god **Puppets** are separate **100%** NPCs |
+| Real script spawn | Sniffles → **Stomples** on death | Works (`eq.spawn2(126366)`) — not a 0% row |
 
 ## Loot pools (IdleQuest)
 
