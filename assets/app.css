@@ -683,6 +683,135 @@ td.cell-item {
   }
 }
 
+/* Epic quest checklists */
+.epic-quests {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0.9rem 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.epic-quests-head {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.epic-quests-head h2,
+.epic-quest-group h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.epic-quest-group h3 {
+  font-size: 1.02rem;
+}
+
+.epic-quests-head p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.epic-quests-progress {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.epic-quests-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.9rem;
+}
+
+.epic-quests-filter select {
+  font: inherit;
+  font-size: 0.88rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.2rem 0.4rem;
+}
+
+.epic-quests-clear {
+  appearance: none;
+  justify-self: start;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.3rem 0.65rem;
+  font: inherit;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.epic-quests-clear:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.epic-quest-group {
+  display: grid;
+  gap: 0.4rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--line);
+}
+
+.epic-quest-group-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.epic-quest-wiki {
+  font-size: 0.88rem;
+}
+
+.epic-quest-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.2rem;
+}
+
+.epic-quest-step {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.28rem 0.35rem;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+.epic-quest-step:hover {
+  background: color-mix(in srgb, var(--accent-soft) 70%, transparent);
+}
+
+.epic-quest-check {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+  cursor: pointer;
+}
+
+.epic-quest-label {
+  font-weight: 600;
+}
+
+.epic-quest-step.done .epic-quest-label {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+.epic-quest-note {
+  margin-left: 1.45rem;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
 /* Plane of Mischief deck combo tracker */
 .pom-deck {
   display: grid;

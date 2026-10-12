@@ -2,7 +2,7 @@
 
 Classic / Kunark-era class epics (pre–2.0). Sheet for IdleQuest planning: when a toon can **equip**, when the **click/proc matters**, and when the **quest is realistic**.
 
-Ground spawns (Book of Souls, fusible ore, enable list): [Epic Ground Spawns](Epic-Ground-Spawns.md)
+Checklists (milestones + saved progress): [Epic Quests](Epic-Quests.md). Ground spawns (Book of Souls, fusible ore, enable list): [Epic Ground Spawns](Epic-Ground-Spawns.md)
 
 **Sources**
 - Item text / quest framing: [Project 1999 — Class Epic Quest List](https://wiki.project1999.com/Class_Epic_Quest_List) (+ class epic pages)

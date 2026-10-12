@@ -12,6 +12,7 @@ import lustre/element.{type Element}
 import lustre/element/html
 import lustre/event
 import character_tracker.{type Character, type Form as CharForm}
+import epic_quests
 import markdown_table.{type Table}
 import pal_index
 import pom_deck
@@ -58,6 +59,10 @@ pub type Model {
     raid_beaten: Dict(String, Bool),
     /// Raid target loot need status (localStorage-backed).
     raid_status: Dict(String, raid_targets.Status),
+    /// Epic quest checklist steps done (localStorage-backed).
+    epic_done: Dict(String, Bool),
+    /// Class filter on Epic Quests page (`""` = all).
+    epic_class_filter: String,
     /// Account characters (localStorage-backed).
     characters: List(Character),
     char_form: CharForm,
@@ -91,6 +96,10 @@ pub type Msg {
   UserToggledRaidBeaten(String, Bool)
   UserSetRaidStatus(String, String)
   UserClearedRaidBeaten
+  UserToggledEpicStep(String, Bool)
+  UserSetEpicClassFilter(String)
+  UserClearedEpicQuest(String)
+  UserClearedAllEpicSteps
   UserUpdatedCharName(String)
   UserUpdatedCharClass(String)
   UserUpdatedCharLevel(String)
@@ -133,6 +142,8 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       raid_status: raid_targets.decode_status(
         storage.get_item(raid_targets.status_storage_key),
       ),
+      epic_done: epic_quests.decode(storage.get_item(epic_quests.storage_key)),
+      epic_class_filter: "",
       characters: character_tracker.decode(
         storage.get_item(character_tracker.storage_key),
       ),
@@ -179,6 +190,8 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           pom_cards: model.pom_cards,
           raid_beaten: model.raid_beaten,
           raid_status: model.raid_status,
+          epic_done: model.epic_done,
+          epic_class_filter: model.epic_class_filter,
           characters: model.characters,
           char_form: model.char_form,
           char_editing: model.char_editing,
@@ -224,6 +237,8 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   pom_cards: model.pom_cards,
                   raid_beaten: model.raid_beaten,
                   raid_status: model.raid_status,
+                  epic_done: model.epic_done,
+                  epic_class_filter: model.epic_class_filter,
                   characters: model.characters,
                   char_form: model.char_form,
                   char_editing: model.char_editing,
@@ -401,6 +416,31 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     UserClearedRaidBeaten -> {
       storage.set_item(raid_targets.storage_key, "")
       #(Model(..model, raid_beaten: dict.new()), effect.none())
+    }
+
+    UserToggledEpicStep(id, on) -> {
+      let epic_done = epic_quests.toggle(model.epic_done, id, on)
+      storage.set_item(epic_quests.storage_key, epic_quests.encode(epic_done))
+      #(Model(..model, epic_done:), effect.none())
+    }
+
+    UserSetEpicClassFilter(filter) -> #(
+      Model(..model, epic_class_filter: filter),
+      effect.none(),
+    )
+
+    UserClearedEpicQuest(class_id) -> {
+      let epic_done = case epic_quests.find_quest(class_id) {
+        Ok(quest) -> epic_quests.clear_quest(model.epic_done, quest)
+        Error(_) -> model.epic_done
+      }
+      storage.set_item(epic_quests.storage_key, epic_quests.encode(epic_done))
+      #(Model(..model, epic_done:), effect.none())
+    }
+
+    UserClearedAllEpicSteps -> {
+      storage.set_item(epic_quests.storage_key, "")
+      #(Model(..model, epic_done: dict.new()), effect.none())
     }
 
     UserUpdatedCharName(name) -> #(
@@ -786,6 +826,11 @@ fn view(model: Model) -> Element(Msg) {
             },
             case samples.is_raid_targets(sample) {
               True -> raid_targets_panel(model.raid_beaten, model.raid_status)
+              False -> element.none()
+            },
+            case samples.is_epic_quests(sample) {
+              True ->
+                epic_quests_panel(model.epic_done, model.epic_class_filter)
               False -> element.none()
             },
             filter_controls(model),
@@ -1426,6 +1471,148 @@ fn pom_item_td(name: String) -> Element(Msg) {
     None -> []
   }
   html.td(attrs, [html.text(name)])
+}
+
+fn epic_quests_panel(done: Dict(String, Bool), class_filter: String) -> Element(Msg) {
+  let total = epic_quests.total_step_count()
+  let done_n = epic_quests.total_done_count(done)
+  let quests = case class_filter {
+    "" -> epic_quests.quests()
+    id ->
+      case epic_quests.find_quest(id) {
+        Ok(q) -> [q]
+        Error(_) -> epic_quests.quests()
+      }
+  }
+  html.section(
+    [
+      attribute.class("epic-quests"),
+      attribute.attribute("aria-label", "Epic quest checklists"),
+    ],
+    [
+      html.div([attribute.class("epic-quests-head")], [
+        html.h2([], [html.text("Epic checklists")]),
+        html.p([], [
+          html.text(
+            "Mark important P99 epic milestones. Progress saves in this browser. Full walkthroughs stay on the Project 1999 wiki.",
+          ),
+        ]),
+        html.p([attribute.class("epic-quests-progress")], [
+          html.text(int.to_string(done_n) <> " / " <> int.to_string(total)),
+        ]),
+        html.label([attribute.class("epic-quests-filter")], [
+          html.span([], [html.text("Class")]),
+          html.select(
+            [
+              attribute.attribute("aria-label", "Filter epic class"),
+              event.on_input(UserSetEpicClassFilter),
+            ],
+            [
+              html.option(
+                [attribute.value(""), attribute.selected(class_filter == "")],
+                "All classes",
+              ),
+              ..list.map(epic_quests.quests(), fn(q) {
+                html.option(
+                  [
+                    attribute.value(q.id),
+                    attribute.selected(q.id == class_filter),
+                  ],
+                  q.class,
+                )
+              })
+            ],
+          ),
+        ]),
+        html.button(
+          [
+            attribute.type_("button"),
+            attribute.class("epic-quests-clear"),
+            event.on_click(UserClearedAllEpicSteps),
+          ],
+          [html.text("Reset all")],
+        ),
+      ]),
+      ..list.map(quests, fn(quest) { epic_quest_group(done, quest) })
+    ],
+  )
+}
+
+fn epic_quest_group(
+  done: Dict(String, Bool),
+  quest: epic_quests.ClassQuest,
+) -> Element(Msg) {
+  let done_n = epic_quests.done_count(done, quest)
+  let total = epic_quests.step_count(quest)
+  html.div([attribute.class("epic-quest-group")], [
+    html.div([attribute.class("epic-quest-group-head")], [
+      html.h3([], [
+        html.text(
+          quest.class
+          <> " — "
+          <> quest.final_epic
+          <> " ("
+          <> int.to_string(done_n)
+          <> "/"
+          <> int.to_string(total)
+          <> ")",
+        ),
+      ]),
+      html.a(
+        [
+          attribute.href(
+            "https://wiki.project1999.com/" <> quest.wiki_path,
+          ),
+          attribute.target("_blank"),
+          attribute.rel("noopener noreferrer"),
+          attribute.class("epic-quest-wiki"),
+        ],
+        [html.text("P99 wiki")],
+      ),
+      html.button(
+        [
+          attribute.type_("button"),
+          attribute.class("epic-quests-clear"),
+          event.on_click(UserClearedEpicQuest(quest.id)),
+        ],
+        [html.text("Reset class")],
+      ),
+    ]),
+    html.ul(
+      [attribute.class("epic-quest-steps")],
+      list.map(quest.steps, fn(step) {
+        let checked = epic_quests.is_done(done, step.id)
+        html.li(
+          [
+            attribute.class(case checked {
+              True -> "epic-quest-step done"
+              False -> "epic-quest-step"
+            }),
+          ],
+          [
+            html.label([attribute.class("epic-quest-check")], [
+              html.input([
+                attribute.type_("checkbox"),
+                attribute.checked(checked),
+                attribute.attribute("aria-label", step.label),
+                event.on_check(fn(on) { UserToggledEpicStep(step.id, on) }),
+              ]),
+              html.span([attribute.class("epic-quest-label")], [
+                html.text(step.label),
+              ]),
+            ]),
+            case step.note {
+              "" -> element.none()
+              note ->
+                html.span([attribute.class("epic-quest-note")], [
+                  html.text(note),
+                ])
+            },
+          ],
+        )
+      }),
+    ),
+  ])
 }
 
 fn raid_targets_panel(

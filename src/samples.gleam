@@ -136,6 +136,7 @@ fn everquest_group() -> SampleGroup {
         label: "Tracking",
         samples: [
           raid_targets_sample(),
+          epic_quests_sample(),
           character_tracker_sample(),
         ],
         buckets: [],
@@ -248,6 +249,20 @@ fn raid_targets_sample() -> Sample {
 
 pub fn is_raid_targets(sample: Sample) -> Bool {
   sample.id == "raid-targets"
+}
+
+fn epic_quests_sample() -> Sample {
+  sheet(
+    "epic-quests",
+    "Epic Quests",
+    "everquest",
+    "Epic-Quests.md",
+    "Class epic 1.0 milestone checklists (P99) — checkboxes saved in this browser.",
+  )
+}
+
+pub fn is_epic_quests(sample: Sample) -> Bool {
+  sample.id == "epic-quests"
 }
 
 fn quest_gear_sample() -> Sample {
