@@ -59,6 +59,8 @@ pub type Model {
     raid_beaten: Dict(String, Bool),
     /// Raid target loot need status (localStorage-backed).
     raid_status: Dict(String, raid_targets.Status),
+    /// Raid target group vs raid clear (localStorage-backed).
+    raid_kill_mode: Dict(String, raid_targets.KillMode),
     /// Epic quest checklist steps done (localStorage-backed).
     epic_done: Dict(String, Bool),
     /// Class filter on Epic Quests page (`""` = all).
@@ -95,6 +97,7 @@ pub type Msg {
   UserCombinedPomRecipe(List(String))
   UserToggledRaidBeaten(String, Bool)
   UserSetRaidStatus(String, String)
+  UserSetRaidKillMode(String, String)
   UserClearedRaidBeaten
   UserToggledEpicStep(String, Bool)
   UserSetEpicClassFilter(String)
@@ -141,6 +144,9 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       ),
       raid_status: raid_targets.decode_status(
         storage.get_item(raid_targets.status_storage_key),
+      ),
+      raid_kill_mode: raid_targets.decode_kill_mode(
+        storage.get_item(raid_targets.kill_mode_storage_key),
       ),
       epic_done: epic_quests.decode(storage.get_item(epic_quests.storage_key)),
       epic_class_filter: "",
@@ -190,6 +196,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           pom_cards: model.pom_cards,
           raid_beaten: model.raid_beaten,
           raid_status: model.raid_status,
+          raid_kill_mode: model.raid_kill_mode,
           epic_done: model.epic_done,
           epic_class_filter: model.epic_class_filter,
           characters: model.characters,
@@ -237,6 +244,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   pom_cards: model.pom_cards,
                   raid_beaten: model.raid_beaten,
                   raid_status: model.raid_status,
+                  raid_kill_mode: model.raid_kill_mode,
                   epic_done: model.epic_done,
                   epic_class_filter: model.epic_class_filter,
                   characters: model.characters,
@@ -411,6 +419,20 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         raid_targets.encode_status(raid_status),
       )
       #(Model(..model, raid_status:), effect.none())
+    }
+
+    UserSetRaidKillMode(id, raw) -> {
+      let mode = case raid_targets.parse_kill_mode(raw) {
+        Ok(m) -> m
+        Error(_) -> raid_targets.KillUnknown
+      }
+      let raid_kill_mode =
+        raid_targets.set_kill_mode(model.raid_kill_mode, id, mode)
+      storage.set_item(
+        raid_targets.kill_mode_storage_key,
+        raid_targets.encode_kill_mode(raid_kill_mode),
+      )
+      #(Model(..model, raid_kill_mode:), effect.none())
     }
 
     UserClearedRaidBeaten -> {
@@ -825,7 +847,12 @@ fn view(model: Model) -> Element(Msg) {
               False -> element.none()
             },
             case samples.is_raid_targets(sample) {
-              True -> raid_targets_panel(model.raid_beaten, model.raid_status)
+              True ->
+                raid_targets_panel(
+                  model.raid_beaten,
+                  model.raid_status,
+                  model.raid_kill_mode,
+                )
               False -> element.none()
             },
             case samples.is_epic_quests(sample) {
@@ -1618,6 +1645,7 @@ fn epic_quest_group(
 fn raid_targets_panel(
   beaten: Dict(String, Bool),
   statuses: Dict(String, raid_targets.Status),
+  kill_modes: Dict(String, raid_targets.KillMode),
 ) -> Element(Msg) {
   let total = list.length(raid_targets.targets())
   let done = raid_targets.beaten_count(beaten)
@@ -1631,7 +1659,7 @@ fn raid_targets_panel(
         html.h2([], [html.text("Beaten")]),
         html.p([], [
           html.text(
-            "Mark bosses you have beaten. Loot status (unknown / blah / broken / needForEpic / needTheLoot) is separate. Both save in this browser. Reset beaten when rules of engagement change.",
+            "Mark bosses you have beaten. Loot status and group vs raid clear are separate. All save in this browser. Reset beaten when rules of engagement change.",
           ),
         ]),
         html.p([attribute.class("raid-targets-progress")], [
@@ -1655,6 +1683,7 @@ fn raid_targets_panel(
             list.map(targets, fn(t) {
               let checked = raid_targets.has_beaten(beaten, t.id)
               let status = raid_targets.get_status(statuses, t.id)
+              let kill_mode = raid_targets.get_kill_mode(kill_modes, t.id)
               html.li(
                 [
                   attribute.class(case checked {
@@ -1680,6 +1709,7 @@ fn raid_targets_panel(
                     html.text(t.name),
                   ]),
                   raid_status_select(t.id, t.name, status),
+                  raid_kill_mode_select(t.id, t.name, kill_mode),
                   html.span([attribute.class("raid-target-hp")], [
                     html.text(raid_targets.hp_label(t.hp)),
                   ]),
@@ -1725,6 +1755,34 @@ fn raid_status_select(
           attribute.title(raid_targets.status_tooltip(option)),
         ],
         raid_targets.status_label(option),
+      )
+    }),
+  )
+}
+
+fn raid_kill_mode_select(
+  id: String,
+  name: String,
+  mode: raid_targets.KillMode,
+) -> Element(Msg) {
+  html.select(
+    [
+      attribute.class("raid-target-kill-mode"),
+      attribute.attribute("aria-label", name <> " group or raid clear"),
+      attribute.title(raid_targets.kill_mode_tooltip(mode)),
+      event.on_input(fn(raw) { UserSetRaidKillMode(id, raw) }),
+    ],
+    list.map(raid_targets.kill_modes(), fn(option) {
+      html.option(
+        [
+          attribute.value(raid_targets.kill_mode_id(option)),
+          attribute.selected(
+            raid_targets.kill_mode_id(option)
+            == raid_targets.kill_mode_id(mode),
+          ),
+          attribute.title(raid_targets.kill_mode_tooltip(option)),
+        ],
+        raid_targets.kill_mode_label(option),
       )
     }),
   )

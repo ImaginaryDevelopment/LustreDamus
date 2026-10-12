@@ -88,6 +88,25 @@ pub fn status_encode_decode_skips_unknown_test() {
   |> should.equal(raid_targets.Unknown)
 }
 
+pub fn kill_mode_encode_decode_skips_unknown_test() {
+  let modes =
+    dict.new()
+    |> raid_targets.set_kill_mode("trakanon", raid_targets.Group)
+    |> raid_targets.set_kill_mode("king-tormax", raid_targets.Raid)
+    |> raid_targets.set_kill_mode("lady-vox", raid_targets.KillUnknown)
+  let raw = raid_targets.encode_kill_mode(modes)
+  string.contains(raw, "trakanon:group") |> should.be_true
+  string.contains(raw, "king-tormax:raid") |> should.be_true
+  string.contains(raw, "lady-vox") |> should.be_false
+  let again = raid_targets.decode_kill_mode(raw)
+  raid_targets.get_kill_mode(again, "trakanon")
+  |> should.equal(raid_targets.Group)
+  raid_targets.get_kill_mode(again, "king-tormax")
+  |> should.equal(raid_targets.Raid)
+  raid_targets.get_kill_mode(again, "lady-vox")
+  |> should.equal(raid_targets.KillUnknown)
+}
+
 fn list_index(items: List(String), needle: String) -> Int {
   list_index_loop(items, needle, 0)
 }

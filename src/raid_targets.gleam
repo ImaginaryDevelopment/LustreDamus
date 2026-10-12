@@ -15,12 +15,21 @@ pub const storage_key: String = "lustredamus.raid-targets.beaten.v1"
 
 pub const status_storage_key: String = "lustredamus.raid-targets.status.v1"
 
+pub const kill_mode_storage_key: String = "lustredamus.raid-targets.kill-mode.v1"
+
 pub type Status {
   Unknown
   Blah
   Broken
   NeedForEpic
   NeedTheLoot
+}
+
+/// How the target was cleared — group (no raid) vs formed raid.
+pub type KillMode {
+  KillUnknown
+  Group
+  Raid
 }
 
 /// Markdown table title (`## Targets`) used for default sort wiring.
@@ -332,6 +341,90 @@ pub fn decode_status(raw: String) -> Dict(String, Status) {
         let id = string.trim(id)
         case list.contains(known, id), parse_status(status_raw) {
           True, Ok(status) -> set_status(acc, id, status)
+          _, _ -> acc
+        }
+      }
+      Error(_) -> acc
+    }
+  })
+}
+
+pub fn kill_modes() -> List(KillMode) {
+  [KillUnknown, Group, Raid]
+}
+
+pub fn kill_mode_id(mode: KillMode) -> String {
+  case mode {
+    KillUnknown -> "unknown"
+    Group -> "group"
+    Raid -> "raid"
+  }
+}
+
+pub fn kill_mode_label(mode: KillMode) -> String {
+  kill_mode_id(mode)
+}
+
+pub fn kill_mode_tooltip(mode: KillMode) -> String {
+  case mode {
+    KillUnknown -> "Not decided yet"
+    Group -> "Cleared without a formed raid (group / 2-group)"
+    Raid -> "Cleared with a formed raid"
+  }
+}
+
+pub fn parse_kill_mode(raw: String) -> Result(KillMode, Nil) {
+  case string.trim(raw) {
+    "unknown" -> Ok(KillUnknown)
+    "group" -> Ok(Group)
+    "raid" -> Ok(Raid)
+    _ -> Error(Nil)
+  }
+}
+
+pub fn get_kill_mode(modes: Dict(String, KillMode), id: String) -> KillMode {
+  case dict.get(modes, id) {
+    Ok(mode) -> mode
+    Error(_) -> KillUnknown
+  }
+}
+
+pub fn set_kill_mode(
+  modes: Dict(String, KillMode),
+  id: String,
+  mode: KillMode,
+) -> Dict(String, KillMode) {
+  case mode {
+    KillUnknown -> dict.delete(modes, id)
+    _ -> dict.insert(modes, id, mode)
+  }
+}
+
+pub fn encode_kill_mode(modes: Dict(String, KillMode)) -> String {
+  targets()
+  |> list.filter_map(fn(t) {
+    case dict.get(modes, t.id) {
+      Ok(KillUnknown) | Error(_) -> Error(Nil)
+      Ok(mode) -> Ok(t.id <> ":" <> kill_mode_id(mode))
+    }
+  })
+  |> string.join(",")
+}
+
+pub fn decode_kill_mode(raw: String) -> Dict(String, KillMode) {
+  let known =
+    targets()
+    |> list.map(fn(t) { t.id })
+  raw
+  |> string.split(",")
+  |> list.map(string.trim)
+  |> list.filter(fn(s) { s != "" })
+  |> list.fold(dict.new(), fn(acc, entry) {
+    case string.split_once(entry, ":") {
+      Ok(#(id, mode_raw)) -> {
+        let id = string.trim(id)
+        case list.contains(known, id), parse_kill_mode(mode_raw) {
+          True, Ok(mode) -> set_kill_mode(acc, id, mode)
           _, _ -> acc
         }
       }

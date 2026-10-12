@@ -1,6 +1,6 @@
 # Raid targets
 
-Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Checklist above: **Beaten** checkboxes and **loot status** (`unknown` / `blah` / `broken` / `needForEpic` / `needTheLoot`) persist in this browser (`localStorage`). Use **Reset beaten** when rules of engagement change. Hover options for tooltips (`blah` = bad/owned loot; `broken` = spawn/script/fight broken).
+Classic / Kunark / Velious bosses that usually want a **formed raid** (or a dedicated 2-group burn). Checklist above: **Beaten** checkboxes, **loot status** (`unknown` / `blah` / `broken` / `needForEpic` / `needTheLoot`), and **group vs raid** clear (`unknown` / `group` / `raid`) persist in this browser (`localStorage`). Use **Reset beaten** when rules of engagement change. Hover options for tooltips (`blah` = bad/owned loot; `broken` = spawn/script/fight broken; `group` = cleared without a formed raid).
 
 Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest `npc_types` (classic / Velious zone rows; not Fabled). Zone sheets still own full named / drop detail.
 

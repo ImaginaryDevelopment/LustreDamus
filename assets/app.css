@@ -618,7 +618,7 @@ td.cell-item {
 
 .raid-target-row {
   display: grid;
-  grid-template-columns: auto minmax(9rem, 1.1fr) 8.5rem 4.5rem minmax(7rem, 1fr) minmax(0, 1.1fr);
+  grid-template-columns: auto minmax(9rem, 1.1fr) 8.5rem 5.5rem 4.5rem minmax(7rem, 1fr) minmax(0, 1.1fr);
   align-items: center;
   gap: 0.45rem 0.75rem;
   padding: 0.28rem 0.35rem;
@@ -644,7 +644,8 @@ td.cell-item {
   font-weight: 600;
 }
 
-.raid-target-status {
+.raid-target-status,
+.raid-target-kill-mode {
   font: inherit;
   font-size: 0.85rem;
   max-width: 100%;
@@ -672,7 +673,8 @@ td.cell-item {
     grid-template-columns: auto 1fr auto;
   }
 
-  .raid-target-status {
+  .raid-target-status,
+  .raid-target-kill-mode {
     grid-column: 1 / -1;
   }
 
