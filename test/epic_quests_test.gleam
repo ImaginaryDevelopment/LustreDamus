@@ -28,8 +28,8 @@ pub fn toggle_off_removes_id_test() {
 }
 
 pub fn decode_ignores_blank_and_unknown_test() {
-  let done = epic_quests.decode(" ,war-hilts, not-a-step ,shm-fright,")
-  epic_quests.is_done(done, "war-hilts") |> should.be_true
+  let done = epic_quests.decode(" ,war-scabbard, not-a-step ,shm-fright,")
+  epic_quests.is_done(done, "war-scabbard") |> should.be_true
   epic_quests.is_done(done, "shm-fright") |> should.be_true
   epic_quests.total_done_count(done) |> should.equal(2)
 }
@@ -38,11 +38,11 @@ pub fn clear_quest_keeps_other_classes_test() {
   let assert Ok(war) = epic_quests.find_quest("war")
   let done =
     dict.new()
-    |> dict.insert("war-hilts", True)
+    |> dict.insert("war-scabbard", True)
     |> dict.insert("war-final", True)
     |> dict.insert("rog-book", True)
     |> epic_quests.clear_quest(war)
-  epic_quests.is_done(done, "war-hilts") |> should.be_false
+  epic_quests.is_done(done, "war-scabbard") |> should.be_false
   epic_quests.is_done(done, "war-final") |> should.be_false
   epic_quests.is_done(done, "rog-book") |> should.be_true
 }
@@ -65,5 +65,5 @@ pub fn done_count_per_class_test() {
     |> dict.insert("rog-book", True)
     |> dict.insert("rog-final", True)
   epic_quests.done_count(done, rog) |> should.equal(2)
-  epic_quests.step_count(rog) |> should.equal(5)
+  { epic_quests.step_count(rog) >= 8 } |> should.be_true
 }

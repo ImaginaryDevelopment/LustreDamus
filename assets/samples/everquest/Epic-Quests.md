@@ -2,7 +2,7 @@
 
 Interactive **class epic 1.0** milestones (Classic / Kunark / early Velious). Checkboxes above save in this browser (`localStorage`). Reset a class or all when you restart an epic on another toon.
 
-**Sources:** [Project 1999 — Class Epic Quest List](https://wiki.project1999.com/Class_Epic_Quest_List) and each class epic page. Steps here are **important gates**, not every bag combine — open the wiki for full text.
+**Sources:** [Project 1999 — Class Epic Quest List](https://wiki.project1999.com/Class_Epic_Quest_List) and each class epic page. Steps are **expanded milestones** (hilts, named kills, combines, finales) — not every forage/dialogue line. Open the class wiki for full text.
 
 Related sheets:
 

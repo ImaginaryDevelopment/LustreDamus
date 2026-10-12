@@ -118,29 +118,59 @@ fn warrior() -> ClassQuest {
     wiki_path: "Warrior_Epic_Quest",
     steps: [
       s(
-        "war-hilts",
-        "Pick up both dragon-head hilts",
-        "Unjeweled (Lake Rathe ground) + Severely Damaged (Timorous ground).",
+        "war-jeweled-hilt",
+        "Jeweled Dragon Head Hilt",
+        "Unjeweled hilt (Lake Rathe ground) + Diamond + Jacinth + Black Sapphire → Wenden (EFP).",
       ),
       s(
-        "war-sky-eyes",
-        "Farm Plane of Sky dragon eyes",
-        "Needed to complete red / blue / green dragon heads.",
+        "war-monocle-ore",
+        "Giant Sized Monocle → Rejesiam Ore",
+        "Dreadlands patriarch monocle → Mentrax Mountainbone (Frontier Mtns).",
       ),
       s(
-        "war-dragon-heads",
-        "Complete Red, Blue, and Green Dragon Heads",
-        "Kunark / VP dragon scales + Sky eyes. RAID pieces.",
+        "war-finely-hilt",
+        "Finely Crafted Dragon Head Hilt",
+        "Severely Damaged hilt (Timorous chessboard) + Rejesiam Ore + Ball of Everliving Golem (Fear goons) → Wenden.",
       ),
       s(
-        "war-kargek",
-        "Finish Kargek / Tiny Dagger of War path",
-        "Plane of Sky / Timorous NPC chain.",
+        "war-ancient-sword-blade",
+        "Ancient Sword Blade",
+        "Block of Permafrost + Keg of Vox Tail Ale + 2× Rebreather → Denken Strongpick (OoT).",
+      ),
+      s(
+        "war-ancient-blade",
+        "Ancient Blade",
+        "Queen Velazul Di`zok — Chardok (RAID / royals).",
+      ),
+      s(
+        "war-kargek-lute",
+        "Kargek note → Tiny Lute → Redblade's Legacy",
+        "EFP Kargek → Oknoggin (Feerrott) → back to Kargek → book.",
+      ),
+      s(
+        "war-tenal-frost",
+        "Tenal: Frozen War Totem + Heart of Frost",
+        "East Karana. Heart from Permafrost goblin wizards.",
+      ),
+      s(
+        "war-dragon-scales",
+        "Red + Green Dragon Scales → Totem of Fiery War path",
+        "Red: Nagafen / Talendor / Nortlav. Green: Severilous. → Tenal.",
+      ),
+      s(
+        "war-maestro-hand",
+        "Hand of the Maestro + Mark of the Sword",
+        "Plane of Hate Maestro — rare hand. → Tenal for note to Kargek.",
+      ),
+      s(
+        "war-scabbard",
+        "Spiroc Wingblade → Red Scabbard",
+        "Spiroc Lord (Plane of Sky) + Tenal's note → Kargek.",
       ),
       s(
         "war-final",
-        "Combine → Jagged Blade of War",
-        "Can split into Strategy + Tactics (1HS pair).",
+        "Combine both hilts + both blades in Red Scabbard",
+        "→ Jagged Blade of War. Split/recombine for Strategy + Tactics.",
       ),
     ],
   )
@@ -155,28 +185,63 @@ fn cleric() -> ClassQuest {
     steps: [
       s(
         "clr-bergurgle",
-        "Lord Bergurgle / Plaguebringer path",
-        "Early Freeport / Lake Rathe pearl chain.",
+        "Lord Bergurgle's Crown",
+        "Lake Rathe underwater tower — middle goblin PH.",
       ),
       s(
-        "clr-lucan",
-        "Sir Lucan D`Lere encounter",
-        "Freeport — expect fight / faction care.",
+        "clr-natasha-shell",
+        "Ornate Sea Shell (Natasha / Shmendrik path)",
+        "Crown → Shmendrik; kill spirit of flame; Damaged Crown → Natasha.",
       ),
       s(
-        "clr-plague-shark",
-        "Plague Shark bones",
-        "Ocean of Tears / related shark camp.",
+        "clr-omat-statue",
+        "Coral Statue of Tarew",
+        "Ornate Sea Shell → Omat Vastsea (Timorous oasis).",
       ),
       s(
-        "clr-zordak",
-        "Heart of Zordak Ragefire",
-        "Skyfire Mountains — RAID dragon.",
+        "clr-plasmatic",
+        "Blood Soaked Plasmatic Priest Robe",
+        "Coral Statue → seeker (Solusek Ro temple) → kill plasmatic priest.",
+      ),
+      s(
+        "clr-gimblox",
+        "Lord Gimblox's Signet Ring",
+        "Solusek's Eye (Sol A) goblin area.",
+      ),
+      s(
+        "clr-frozen-orb",
+        "Orb of Frozen Water",
+        "Robe → Omat. Signet → Natasha for second Ornate Sea Shell.",
+      ),
+      s(
+        "clr-ixiblat",
+        "Sceptre of Ixiblat Fer + Message to Natasha",
+        "Ornate Sea Shell → Naxot Deepwater (Burning Woods); kill Ixiblat.",
+      ),
+      s(
+        "clr-singed",
+        "Singed Scroll",
+        "Overking Bathezid — Chardok royals.",
+      ),
+      s(
+        "clr-clear-orb",
+        "Orb of Clear Water + Shimmering Pearl",
+        "Sceptre + Singed Scroll → Omat; Message → Natasha.",
+      ),
+      s(
+        "clr-zordak-box",
+        "Zordak's Box + Swirling Pearl (Sol B)",
+        "Shimmering Pearl → Zordak Ragefire in Nagafen's Lair.",
+      ),
+      s(
+        "clr-zordak-heart",
+        "Zordak Ragefire's Heart (Skyfire)",
+        "4× Pearlescent Fragment → Warder Cecilia → kill dragon form; combine seal + pearl.",
       ),
       s(
         "clr-final",
-        "Final turn-in → Water Sprinkler of Nem Ankh",
-        "Reviviscence click activates at 50.",
+        "Three orbs → Orb of the Triumvirate → Avatar of Water",
+        "Heart → Omat (Orb of Vapor); Jhassad → Avatar → Water Sprinkler.",
       ),
     ],
   )
@@ -190,9 +255,14 @@ fn paladin() -> ClassQuest {
     wiki_path: "Paladin_Epic_Quest",
     steps: [
       s(
+        "pal-ghoulbane",
+        "Obtain Ghoulbane",
+        "froglok shin lord (Upper Guk) or Joren Nobleheart (Felwithe).",
+      ),
+      s(
         "pal-soulfire",
-        "Obtain SoulFire",
-        "Classic sky / Ghoulbane path. Hold as pre-epic.",
+        "Complete SoulFire",
+        "Classic pre-epic 1HS — Plane of Sky / related path. Hold while progressing.",
       ),
       s(
         "pal-hole-sword",
@@ -200,9 +270,19 @@ fn paladin() -> ClassQuest {
         "Keeper of the Tombs — The Hole (2-group).",
       ),
       s(
+        "pal-cleanse",
+        "Cleanse the tainted sword path",
+        "Follow P99 Fiery Avenger steps (temple / planar cleanses).",
+      ),
+      s(
         "pal-avenger",
         "Complete Fiery Avenger",
-        "Intermediate 1HS before the final.",
+        "Intermediate 1HS before the final Defender.",
+      ),
+      s(
+        "pal-defender-pieces",
+        "Gather Fiery Defender components",
+        "SoulFire + Ghoulbane + Fiery Avenger lines converge — see wiki Part 4.",
       ),
       s(
         "pal-final",
@@ -221,24 +301,64 @@ fn ranger() -> ClassQuest {
     wiki_path: "Ranger_Epic_Quest",
     steps: [
       s(
-        "rng-hammer",
-        "Soulbound Hammer",
-        "Jaeil the Insane (The Hole) — spawn with Shiny Tin Bowl.",
+        "rng-telin-faelin",
+        "Telin → Faelin → Dark Metal Coin",
+        "Burning Woods Worn Note → Gfay Faelin → Kithicor Giz X`Tin → Worn coin.",
+      ),
+      s(
+        "rng-east-karana",
+        "East Karana gathering (Fleshbound Tome)",
+        "Althele / Sionae / Nuien / Teloa chain → Earth Stained Note.",
+      ),
+      s(
+        "rng-bowl-forage",
+        "Shiny Tin Bowl + Hardened Mixture",
+        "Ella Foodcrafter; forage Everfrost / Gfay / Innothule / Misty roots.",
+      ),
+      s(
+        "rng-keepers",
+        "Keepers of the Art + Ancient Pattern",
+        "Batwing faction → Alrik Farsight / Felwithe grocery path.",
+      ),
+      s(
+        "rng-clay-bowl",
+        "Runecrested Bowl + Softly Glowing Stone",
+        "Rose of Firiona path → Jade Reaver → Enchanted Clay → pottery combine.",
       ),
       s(
         "rng-venril",
-        "Venril / Karnor pieces",
-        "Chardok / Karnor / VS path for the dual 1HS set.",
+        "Pulsing Green Stone (triggered VS)",
+        "Karnor remains + Firefly Globe + Rez scroll → triggered Venril.",
+      ),
+      s(
+        "rng-ancient-sword",
+        "Warmly Glowing Stone → Ancient Longsword",
+        "Foloal (FV) then Telin Darkforest.",
+      ),
+      s(
+        "rng-hammer",
+        "Soulbound Hammer (Jaeil)",
+        "Shiny Tin Bowl → Jaeil the Wretched / Insane — The Hole.",
+      ),
+      s(
+        "rng-sky-sphere",
+        "Swirling Sphere of Color",
+        "Plane of Sky island 4 essence tamer.",
+      ),
+      s(
+        "rng-mithril",
+        "Hammer of the Ancients → Refined blades",
+        "Erudin Mairee → Kinlo / Usbak (Kaladim).",
       ),
       s(
         "rng-swiftwind",
-        "Complete Swiftwind",
-        "Melee 1HS of the dual set.",
+        "Swiftwind",
+        "Refined Ancient Sword → Telin → Faelin.",
       ),
       s(
         "rng-earthcaller",
-        "Complete Earthcaller",
-        "Earthcall click at 50; Swift Spirit is worn.",
+        "Earthcaller",
+        "Shattered Emerald of Corruption (Hate) + Refined Mithril Blade → Xanuusus.",
       ),
     ],
   )
@@ -252,29 +372,64 @@ fn shadow_knight() -> ClassQuest {
     wiki_path: "Shadow_Knight_Epic_Quest",
     steps: [
       s(
+        "shd-darkforge",
+        "Darkforge Helm / Greaves / Breastplate",
+        "Feerrott Tae Ew + Freeport / Sol A / Enchanted Platinum → Solusek undead knights.",
+      ),
+      s(
+        "shd-kurron",
+        "Kurron Ni → Letter to Duriek",
+        "Overthere — armor + 900pp; kill him for the letter.",
+      ),
+      s(
+        "shd-duriek-faction",
+        "Duriek Bloodpool faction chain",
+        "Letter; Cough Elixir (Smaka 1000pp); Dusty Tome (Hole ratman).",
+      ),
+      s(
+        "shd-weapons",
+        "Blade of Abrogation + Ghoulbane + Soul Leech",
+        "Sky trash; Upper Guk / Joren; Fear goons or Cazic.",
+      ),
+      s(
+        "shd-sheath",
+        "Decrepit Sheath",
+        "Drake Spine (Rharzar) + Decrepit Hide (Hate) + Enchanted Platinum → Teydar.",
+      ),
+      s(
+        "shd-corrupted-ghoulbane",
+        "Corrupted Ghoulbane",
+        "Four weapons/sheath → Duriek.",
+      ),
+      s(
+        "shd-soulcase",
+        "Soulcase + Seal of Kastane path",
+        "Knarthenne / Marl (Toxxulia); Gerot note loop.",
+      ),
+      s(
         "shd-hole-cell",
         "Cell Key → Kyrenna (Heart / Blood)",
-        "The Hole jail — Caradon at indifferent; FD-split Kyrenna.",
+        "Hole jail — Caradon; FD-split Kyrenna.",
       ),
       s(
         "shd-glohnor",
-        "Head of Glohnor",
-        "Fallen erudites → Ghost → Mummy of Glohnor (Hole graveyard).",
+        "Head of Glohnor + Wrappings",
+        "Dark Shroud → Ghost of Glohnor → Mummy.",
       ),
       s(
-        "shd-com",
-        "City of Mist / Lhranc path",
-        "Illegible Scroll off spectral courier; leave Lhranc until ready.",
+        "shd-will",
+        "Head of the Valiant + Will of Innoruuk",
+        "Gerot (head); Marl (wrappings).",
       ),
       s(
-        "shd-greenmist",
-        "Greenmist / Kunark combines",
-        "See Quest-Gear for Hole + Greenmist components.",
+        "shd-lhranc",
+        "Lhranc fight (City of Mist)",
+        "Corrupted Ghoulbane + Heart of the Innocent + Head of the Valiant + Will → Lhranc. RAID-grade.",
       ),
       s(
         "shd-final",
         "Final → Innoruuk's Curse",
-        "Soul Consumption click at 50.",
+        "Marl Kastane after Lhranc. Soul Consumption at 50.",
       ),
     ],
   )
@@ -288,24 +443,59 @@ fn druid() -> ClassQuest {
     wiki_path: "Druid_Epic_Quest",
     steps: [
       s(
-        "dru-faelin",
-        "Faelin / Scout early path",
-        "Lesser Faydark start; collect scout tools.",
+        "dru-telin-faelin",
+        "Telin → Faelin → Dark Metal Coin",
+        "Same early path as Ranger (Burning Woods / Gfay / Kithicor).",
       ),
       s(
-        "dru-sky",
-        "Nature Walker's Sky Emerald",
-        "Plane of Sky bear test / gorgalask reagents.",
+        "dru-east-karana",
+        "East Karana gathering → Earth Stained Note",
+        "Althele chain + Fleshbound Tome.",
       ),
       s(
-        "dru-growth",
-        "Plane of Growth / Tunare pieces",
-        "Often 46+ for Growth.",
+        "dru-bowl-forage",
+        "Shiny Tin Bowl + Hardened Mixture",
+        "Ella; forage four zone roots.",
+      ),
+      s(
+        "dru-keepers-pattern",
+        "Ancient Pattern + Runecrested Bowl",
+        "Keepers faction → Alrik / Felwithe / Firiona Rose / Jade Reaver clay.",
+      ),
+      s(
+        "dru-soft-stone",
+        "Softly Glowing Stone",
+        "Hardened Mixture + Runecrested Bowl → Ella.",
+      ),
+      s(
+        "dru-venril",
+        "Pulsing Green Stone (triggered VS)",
+        "Same Karnor remains / Firefly / Rez method as Ranger.",
+      ),
+      s(
+        "dru-elaborate",
+        "Warmly Glowing Stone → Elaborate Scimitar",
+        "Foloal then Ella Foodcrafter.",
+      ),
+      s(
+        "dru-antonica",
+        "Cleansed Spirit of Antonica",
+        "Corrupted Lake Rathe / Rathe HG / Everfrost mammoth → withered treant → Yeka.",
+      ),
+      s(
+        "dru-faydwer",
+        "Cleansed Spirit of Faydwer",
+        "Corrupted OoT cyclops / Kedge seahorse / Lfay brownie → unicorn → Silox.",
+      ),
+      s(
+        "dru-kunark",
+        "Cleansed Spirit of Kunark",
+        "Emerald gorilla / LoIO barracuda / Ulump / Faydedar → Nekexin.",
       ),
       s(
         "dru-final",
-        "Final → Nature Walkers Scimitar",
-        "Equip gated 46 on P99; Wrath of Nature at 50.",
+        "Three cleansed spirits + Elaborate Scimitar → Xanuusus",
+        "North Karana. Equip gated 46 on P99.",
       ),
     ],
   )
@@ -319,29 +509,59 @@ fn monk() -> ClassQuest {
     wiki_path: "Monk_Epic_Quest",
     steps: [
       s(
-        "mnk-zanfi",
-        "Code of Zan Fi + Purple Headband",
-        "Targin the Rock (Sol B) + Brother Qwinn turn-in.",
-      ),
-      s(
-        "mnk-flute",
-        "Ancient Thin Flute",
-        "Brother Balatin (Dreadlands) — PH plaguebone.",
-      ),
-      s(
-        "mnk-robe",
+        "mnk-lost-circle",
         "Robe of the Lost Circle",
-        "Whistling Fists / Lost Circle path.",
+        "Camp Brother Zephyl / Qwinn, or Code of Zan Fi + Purple Headband / Idol + Red Sash path.",
+      ),
+      s(
+        "mnk-pipes",
+        "Metal Pipe (Zan) + Metal Pipe (Fi)",
+        "Karnor pawbuster; Chardok iksar betrayer.",
+      ),
+      s(
+        "mnk-whistling",
+        "Robe of the Whistling Fists",
+        "Lost Circle + both pipes → Brother Balatin (Dreadlands; FD trade).",
+      ),
+      s(
+        "mnk-eejag",
+        "Charred Scale (Eejag)",
+        "Lavastorm — say challenge to fire sprite.",
+      ),
+      s(
+        "mnk-gwan",
+        "Breath of Gwan",
+        "Plane of Sky island 1.5 — Charred Scale → a presence.",
       ),
       s(
         "mnk-trunt",
         "Trunt's Head",
-        "Trunt — Mines of Nurga (2-group triggered).",
+        "Breath of Gwan → sleeping ogre (Nurga) → Trunt.",
+      ),
+      s(
+        "mnk-kaiaren-eye",
+        "Eye of Kaiaren",
+        "Trunt's Head → Astral Projection (Overthere).",
+      ),
+      s(
+        "mnk-demon-fangs",
+        "Demon Fangs (Xenevorash)",
+        "Eye → LoIO lake Astral Projection; kill Vorash/Deep → Xenevorash.",
+      ),
+      s(
+        "mnk-immortals",
+        "Immortals → Danl's Reference",
+        "Skyfire named → Tomekeeper Danl (Erudin).",
+      ),
+      s(
+        "mnk-celestial-book",
+        "Celestial Fists (book)",
+        "Danl's Reference + Whistling Fists robe → Lheao (Timorous).",
       ),
       s(
         "mnk-final",
-        "Final → Celestial Fists",
-        "Hands slot. Equip 46; Celestial Tranquility at 50.",
+        "Crazy / sane Kaiaren → Celestial Fists",
+        "Trakanon's Teeth: book alone then Book of Celestial Fists + Demon Fangs. Equip 46.",
       ),
     ],
   )
@@ -355,24 +575,44 @@ fn bard() -> ClassQuest {
     wiki_path: "Bard_Epic_Quest",
     steps: [
       s(
-        "brd-baldric",
-        "Start with Baldric Slezaf",
-        "Dreadlands — LEAVE until you are on the epic.",
+        "brd-page24-top",
+        "Maestro's Symphony Page 24 Top",
+        "Konia torch relay: Misty → SRo → Lake Rathe → Proof of Speed.",
       ),
       s(
-        "brd-headbands",
-        "Red / Mystical headband chain",
-        "Classic + Kunark bard headband path.",
+        "brd-page24-bottom",
+        "Maestro's Symphony Page 24 Bottom",
+        "Baenar doll / Sol A / Unrest Serra / Maligar head → Mahlin's Bongos → Konia.",
       ),
       s(
-        "brd-hate",
-        "Maestro / Plane of Hate pieces",
-        "RAID Hate — Hand of the Maestro / related.",
+        "brd-page25",
+        "Maestro's Symphony Page 25",
+        "Onyx / Red Wurm / Chromodrac guts → Kelkim Menkia.",
+      ),
+      s(
+        "brd-lute-head",
+        "Mystical Lute Head",
+        "Alluring Horn → Vedico → Forpar; Kedge Backbone + Amygdalan Tendril + Werewolf Skull.",
+      ),
+      s(
+        "brd-lute-body",
+        "Mystical Lute Body",
+        "White + Red Dragon Scales + Metal Bits → Forpar.",
+      ),
+      s(
+        "brd-strings",
+        "Undead Dragongut Strings",
+        "Trakanon (or Undead Bard trigger path).",
+      ),
+      s(
+        "brd-lute",
+        "Mystical Lute",
+        "Head + Body + Strings → Forpar.",
       ),
       s(
         "brd-final",
-        "Final → Singing Short Sword",
-        "Equip + Dance of the Blade both 46.",
+        "Baldric Slezaf final turn-in",
+        "Both page 24s + page 25 + Mystical Lute (Dreadlands). Equip + effect 46.",
       ),
     ],
   )
@@ -386,29 +626,59 @@ fn rogue() -> ClassQuest {
     wiki_path: "Rogue_Epic_Quest",
     steps: [
       s(
+        "rog-parchment-top",
+        "Stained Parchment Top",
+        "Pickpocket Founy Jestands — North Kaladim (do not kill).",
+      ),
+      s(
+        "rog-parchment-bottom",
+        "Stained Parchment Bottom",
+        "Pickpocket Tani N`Mar — Neriak Third Gate.",
+      ),
+      s(
         "rog-book",
         "Book of Souls",
         "Classic Plane of Hate ground spawn (IdleQuest-enabled).",
       ),
       s(
-        "rog-stanos",
-        "Stanos / Highpass path",
-        "Jagged Diamond Dagger and Stanos turn-ins.",
+        "rog-stanos-combine",
+        "Combined Parchment (Stanos)",
+        "Anson → Stanos (Highpass); both stained parchments.",
+      ),
+      s(
+        "rog-eldreth",
+        "Scribbled Parchment (Eldreth)",
+        "Lake Rathe — Combined Parchment + 2× Milk + 100pp.",
       ),
       s(
         "rog-yendar",
-        "Yendar Starpyre / Founy",
-        "Steamfont / related combine path.",
+        "Yendar → Renux → Translated Parchment",
+        "Scribbled → Yendar; Book of Souls + Tattered → kill Renux.",
+      ),
+      s(
+        "rog-sealed-box",
+        "Sealed Box from Stanos",
+        "Translated Parchment → Stanos.",
       ),
       s(
         "rog-vghera",
-        "General V`ghera",
-        "Karnor's Castle — RAID / 2-group grade.",
+        "General V`ghera → General's Pouch",
+        "Sealed Box → Kithicor dark elves (night); RAID / multi-group.",
+      ),
+      s(
+        "rog-robes",
+        "Four robes → Cazic Quill",
+        "Kedge / Ishva / Shining Metallic / Oracle → Vilnius (West Karana).",
+      ),
+      s(
+        "rog-dagger",
+        "Jagged Diamond Dagger",
+        "Fleshripper + Painbringer + Gigantic Zweihander + Mithril 2HS → Vilnius.",
       ),
       s(
         "rog-final",
-        "Final → Ragebringer",
-        "Equip 46. Worn haste (~40%).",
+        "Stanos final → Ragebringer",
+        "Cazic Quill + General's Pouch + Jagged Diamond Dagger. Equip 46.",
       ),
     ],
   )
@@ -422,24 +692,74 @@ fn shaman() -> ClassQuest {
     wiki_path: "Shaman_Epic_Quest",
     steps: [
       s(
+        "shm-tiny-gem",
+        "Tiny Gem from a lesser spirit",
+        "Captain Surestout (OoT) or Peg Leg / manslayer / Blinde paths.",
+      ),
+      s(
+        "shm-bondl",
+        "Bondl → Opaque Gem → walk the path",
+        "West Freeport Jade Tiger basement greater spirit.",
+      ),
+      s(
+        "shm-eruds",
+        "Erud's Crossing spirit event → Small Gem",
+        "Ooglyn follow; Srafen / Dillon / Froham / Abe dialogue.",
+      ),
+      s(
+        "shm-rathe",
+        "Marr's Promise + Envy + Woe",
+        "Tabien the Goodly / Glaron the Wicked — Rathe Mountains.",
+      ),
+      s(
+        "shm-sparkling",
+        "Sparkling Gem (wandering spirit)",
+        "West Karana — Small Gem then Marr/Envy/Woe.",
+      ),
+      s(
+        "shm-sentinel1",
+        "Emerald Jungle Spirit Sentinel + Black Dire",
+        "Sparkling Gem; kill Black Dire (Mistmoore) → pelt turn-in → Ancient Journal.",
+      ),
+      s(
+        "shm-com-report",
+        "City of Mist six pages → Completed Report",
+        "Combine in Ancient Journal → EJ Spirit Sentinel.",
+      ),
+      s(
+        "shm-ghiosk",
+        "Lord Ghiosk three books",
+        "City of Mist — Crusades / Housekeeper / Historic Article.",
+      ),
+      s(
         "shm-icon",
-        "Icon of the High Scale + diary path",
-        "City of Mist ground Icon; Neh`Ashiir diary (quest-spawn).",
+        "Icon of the High Scale (ground)",
+        "City of Mist north temple ground spawn.",
+      ),
+      s(
+        "shm-sentinel2",
+        "Lake Spirit Sentinel (three books)",
+        "Emerald Jungle underwater sentinel.",
       ),
       s(
         "shm-kirn",
-        "Engraved Ring (Promise Ring)",
-        "High Scale Kirn — The Hole (2-group).",
+        "Engraved Ring (High Scale Kirn)",
+        "Icon → Kirn (The Hole); kill for Promise Ring.",
+      ),
+      s(
+        "shm-neh",
+        "Neh`Ashiir's Diary",
+        "Ring → quest-spawned Neh`Ashiir (CoM) → diary → lake sentinel.",
       ),
       s(
         "shm-fright",
-        "Eye of Fright",
-        "a boogeyman — Plane of Fear.",
+        "Child's Tear (Fear broodling)",
+        "Kill Dread/Fright/Terror → Iksar broodling.",
       ),
       s(
         "shm-final",
-        "Final → Spear of Fate",
-        "P99: equip gated 46 even if MQ’d. Curse of the Spirits at 50.",
+        "Lord Rak`Ashiir → Iksar Scale → Spear of Fate",
+        "Tear → Rak`Ashiir (CoM elevator); scale → lake sentinel. Equip 46.",
       ),
     ],
   )
@@ -453,23 +773,58 @@ fn necromancer() -> ClassQuest {
     wiki_path: "Necromancer_Epic_Quest",
     steps: [
       s(
-        "nec-symbol",
-        "Symbol of the Apprentice path",
-        "Early necromancer epic symbol chain.",
+        "nec-edwin",
+        "Head of Sir Edwin Motte → Symbol of the Apprentice",
+        "Rathe Mountains inn cycle → Kazen (Lake Rathe).",
       ),
       s(
-        "nec-burning",
-        "Burning Dead / Kunark pieces",
-        "Kunark nec camps and combines.",
+        "nec-black-robe",
+        "Flowing Black Robe → Rolling Stone Moss",
+        "Najena or Overthere casters → Venenzi (Nektulos).",
       ),
       s(
-        "nec-hate",
-        "Innoruuk / Plane of Hate pieces",
-        "RAID Hate reagents for the finale.",
+        "nec-serpent",
+        "Symbol of the Serpent",
+        "Twisted Symbol + Rolling Stone Moss → Emkel.",
+      ),
+      s(
+        "nec-manisi",
+        "Manisi Herb → Refined Manisi Herb",
+        "Grand Herbalist Mak`ha (Chardok) → Ssessthrass (Swamp of No Hope).",
+      ),
+      s(
+        "nec-testing",
+        "Symbol of Testing fight → Symbol of Insanity",
+        "Emkel → Kazen spawns; loot from tortured soul.",
+      ),
+      s(
+        "nec-spiroc-cloak",
+        "Cloak of Spiroc Feathers",
+        "Plane of Sky quest room — Black Silk Cape + Silver Disc + Spiroc Feathers.",
+      ),
+      s(
+        "nec-fear-hate",
+        "Slime Blood of Cazic-Thule + Eye of Innoruuk",
+        "Fear (CT or goons); Hate named.",
+      ),
+      s(
+        "nec-prepared",
+        "Prepared Reagent Box (Drendico)",
+        "Timorous — Symbol of Insanity + three reagents.",
+      ),
+      s(
+        "nec-tome",
+        "Tome of Instruction",
+        "Prepared Reagent Box → Kazen.",
+      ),
+      s(
+        "nec-gkzzallk",
+        "Gkzzallk in a Box",
+        "Thunder spirit princess 1pp → Gkzzallk (Sky island 3).",
       ),
       s(
         "nec-final",
-        "Final → Scythe of the Shadowed Soul",
+        "Gkzzallk in a Box → Kazen → Scythe",
         "Torment of Shadows click at 50.",
       ),
     ],
@@ -484,23 +839,53 @@ fn wizard() -> ClassQuest {
     wiki_path: "Wizard_Epic_Quest",
     steps: [
       s(
+        "wiz-solomen",
+        "Note to Camin (Solomen)",
+        "Temple of Solusek Ro — say agree.",
+      ),
+      s(
+        "wiz-ros-breath",
+        "Ro's Breath path (Halas / Erudin)",
+        "Buy Ro's Breath; Note + 1000pp + Ro's Breath → Camin; return to Dargon.",
+      ),
+      s(
+        "wiz-arantir",
+        "Arantir's Ring → Note from Arantir",
+        "Challice (Felwithe) loop; say gnome to Arantir.",
+      ),
+      s(
+        "wiz-sprocket",
+        "Gnome Sprocket (Kandin)",
+        "Butcherblock — Note from Arantir; say oil.",
+      ),
+      s(
+        "wiz-green-oil",
+        "Green Oil from enraged golem",
+        "Gnome Sprocket → a broken golem (Plane of Fear).",
+      ),
+      s(
+        "wiz-gabstik",
+        "Staff of Gabstik + Note to Arantir",
+        "Green Oil → Kandin Firepot.",
+      ),
+      s(
         "wiz-blue-staff",
-        "Blue Crystal Staff path",
-        "Solusek Ro / Temple of Solusek Ro chain.",
+        "Blue Crystal Staff",
+        "Phinigel Autropos — Kedge Keep.",
       ),
       s(
-        "wiz-ore",
-        "Fusible Igneous Ore",
-        "Skyfire ground — check IdleQuest enable list (often disabled).",
+        "wiz-gnarled",
+        "Gnarled Staff",
+        "Venril Sathir — Karnor's Castle.",
       ),
       s(
-        "wiz-genni",
-        "Genni / Solusek temple turn-ins",
-        "Complete the staff piece combines.",
+        "wiz-sealed-bag",
+        "Magically Sealed Bag",
+        "Staff of Gabstik + Blue Crystal + Gnarled → Arantir (Everfrost).",
       ),
       s(
         "wiz-final",
-        "Final → Staff of the Four",
+        "Magically Sealed Bag → Solomen → Staff of the Four",
         "Barrier of Force click at 50.",
       ),
     ],
@@ -515,24 +900,49 @@ fn magician() -> ClassQuest {
     wiki_path: "Magician_Epic_Quest",
     steps: [
       s(
-        "mag-dirt",
-        "Dirt of Underfoot",
-        "Slixin Klex — The Hole (not Soil of Underfoot).",
+        "mag-power-elements",
+        "Power of the Elements",
+        "Wind (Mistmoore) / Fire (Sol A) / Earth (Lfay) / Water (Kaesora) → Walnan.",
       ),
       s(
-        "mag-irak",
-        "Irak Altil / Power of the Elements",
-        "Plane of Fear — LEAVE Irak until on the epic.",
+        "mag-words-mastery",
+        "Words of Mastery",
+        "Four Torn Pages of Mastery (Najena) → Akkstaff.",
       ),
       s(
-        "mag-sky",
-        "Plane of Sky elemental powers",
-        "Collect the elemental mastery pieces.",
+        "mag-magikot",
+        "Words of Magi'Kot",
+        "Three Magi'kot pages (Kithicor / Unrest / Lower Guk) → Jahsohn.",
+      ),
+      s(
+        "mag-orb-power",
+        "Power of the Orb",
+        "Elements + Mastery + Magi'Kot → Rykas (Lake Rathe).",
+      ),
+      s(
+        "mag-element-fire",
+        "Element of Fire",
+        "Burning Embers + Blazing Wand + Torch of the Elements + Power of the Orb → Jennus (Skyfire).",
+      ),
+      s(
+        "mag-element-wind",
+        "Element of Wind",
+        "Crown of Elemental Mastery + Pegasus Feather Cloak + Elemental Binder → Kihun (Sky).",
+      ),
+      s(
+        "mag-element-earth",
+        "Element of Earth",
+        "Staff:Earth (Hate) + Dirt of Underfoot (Slixin / Burning Woods) + Shovel of Ponz + Broom of Trilon → Tiblner.",
+      ),
+      s(
+        "mag-element-water",
+        "Element of Water",
+        "Rain of Karana + Staff:Water (Phinigel) + Tears of Erollisi → Jinalis.",
       ),
       s(
         "mag-final",
-        "Final → Orb of Mastery",
-        "Manifest Elements at 46; resummon when spent.",
+        "Four Elements → Master of Elements → Summon Orb",
+        "Plane of Sky quest island. Manifest Elements at 46.",
       ),
     ],
   )
@@ -546,24 +956,44 @@ fn enchanter() -> ClassQuest {
     wiki_path: "Enchanter_Epic_Quest",
     steps: [
       s(
+        "enc-jeb-seal",
+        "Jeb's Seal",
+        "Ink vial / ghoul scribe / SMR / Mechanical Pen / White Paper → Stofo → sarnak imitator (Burning Woods).",
+      ),
+      s(
+        "enc-staff1",
+        "1st Piece of Staff (Modani)",
+        "Xolion Rod + Innoruuk's Word + Chalice of Kings + Snow Blossoms → Overthere.",
+      ),
+      s(
+        "enc-staff2",
+        "2nd Piece of Staff (Clockwork VIIX)",
+        "Spoon + The One Key + Lost Scroll + Charm and Sacrifice → Ak'Anon.",
+      ),
+      s(
+        "enc-staff3",
+        "3rd Piece of Staff (Nadia)",
+        "Charm-enchant dull gems (Kaesora / Skyfire / Overthere / CoM) → Firiona.",
+      ),
+      s(
         "enc-kindle",
-        "Essence of a Ghost",
-        "Ghost of Kindle — The Hole (indifferent; kill anyway).",
+        "Essence of a Ghost (Kindle)",
+        "Ghost of Kindle — The Hole.",
       ),
       s(
-        "enc-polzin",
-        "4th Piece of Staff (Polzin Mrid)",
-        "Combine essences in Enchanter's Sack first — Hole.",
+        "enc-staff4",
+        "4th Piece of Staff (Polzin)",
+        "Serpent Head (Fear) + Vampire Essence (Hate) + Sands (Tangrin) + Ghost Essence → Polzin.",
       ),
       s(
-        "enc-jeb",
-        "Jeb's Seal / Staff of the Serpent path",
-        "Remaining Kunark / classic combines.",
+        "enc-bundle",
+        "Bundle of Staves",
+        "Combine all four pieces in Enchanter's Sack.",
       ),
       s(
         "enc-final",
-        "Final → Staff of the Serpent",
-        "Speed of the Shissar click at 50.",
+        "Bundle → sarnak imitator → Staff of the Serpent",
+        "Burning Woods. Speed of the Shissar at 50.",
       ),
     ],
   )
