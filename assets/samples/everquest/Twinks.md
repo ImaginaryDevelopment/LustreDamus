@@ -45,13 +45,32 @@ Velious raid belts (Windraider's, Destroyer, Nevederia) hit **+40–41%** — To
 | Treasure Hunter's Satchel | Bag | **10-slot / 100% WR** giant bag | **Lord Nagafen** (Sol B); also Melalafen (Western Wastes), Faydedar (Timorous) | ALL, NO DROP. IdleQuest ~15% Nagafen / Melalafen, ~10% Faydedar |
 | Kavruul's Mystic Pouch | Bag | **10-slot / 100% WR** giant bag | **Lady Vox** (Permafrost); also Gorenaire (Dreadlands), Talendor (Skyfire), Severilous (Emerald Jungle), Faydedar (Timorous) | ALL, NO DROP. IdleQuest ~9–25% by dragon. Same bag class as the Satchel — mule both if you can |
 
+## Mana regen (casters / hybrids)
+
+Worn **mana regen** (+N per tick on the item stat) stacks across slots on classic rulesets. IdleQuest shows it as **manaregen** on the item row. **Clarity** clicks (mana recovery over time) are not the same stat — they do not replace a +mr necklace. **Fungal Regrowth** on the fungi tunic / staff is **HP** regrowth, not mana.
+
+| Item | Slot | Why | Source | Notes |
+| --- | --- | --- | --- | --- |
+| Medallion of the Arcane Scientists | Neck | **Mana regen +3** | Kunark quest: **Cogboggle** (Ak'Anon) → **Cogboggle's Clockwork Contraption** + **Mystical Sapphire** → **Akron Stonehand** (Everfrost) | IdleQuest: NO DROP. Best account-share +mr neck for casters |
+| Boots of Flowing Slime | Feet | **Mana regen +3**, Mana +65 | **a swirling red mass** (Accursed Cazic-Thule) | Velious CT ooze camp. INT casters / priests; skip if feet haste (Grey Suede) wins the slot |
+| Coin Depicting Innoruuk | Held | Click **Clarity** | Ground spawn, Howling Stones south; Charasis key path | NO DROP, **not** NO RENT — rare clarity click you can park on a mule. Also a key combine |
+| Stein of Tears | 2HB | Mana +25 (pool, not +mr) | **Bile Sentinel** (Howling Stones north) | ALL, NO DROP. Pairs with +mr pieces between pulls |
+| Pearl Encrusted Stein | Secondary | Classic worn **+2 mana regen** offhand | **Plane of Fear** (Cazic / pearl quest combine) | IdleQuest row has no manaregen field; classic caster twink stein. NO DROP |
+| Mask of Contemplation | Back | **Mana regen +1** | Plane of Fear / Sky-era tables (IdleQuest `#a_fiery_aggressor`) | Small back-slot +mr. NO DROP |
+| Crown of Narandi | Face | **Mana regen +2** | **Narandi the Wretched** (Great Divide ring war) | **RAID** Coldain event. Velious |
+| Choker of the Wretched | Neck | **Mana regen +1** | Narandi event | Same farm as Crown — use if Signet / Medallion lives on another toon |
+| Mark of Lunacy | Waist | **Mana regen +3** | **Wailing Pugilist** (Plane of Torment) | Velious. Competes with haste sash on melee boxes |
+| Earring of Grieg's Faithful | Ear | **Mana regen +2**, HP regen +2 | **Confused Pugilist** (Grieg's End) | NO DROP. Velious. Hybrid / priest ear when Fingerbone is not the priority |
+
+**Signet** and **Tolapumj's Robe** (Must-get) add large **Mana +** pools but not worn +mr — stack them with the table above.
+
 ## Priority by role (account mule)
 
 **Melee twink:** Fungi tunic → worn haste sash (Dragonborn > Flowing Black) → Fingerbone / Mask → Signet → JBoots until feet haste (Grey Suede) exists.
 
-**Caster twink:** Tolapumj's Robe → Signet → Fingerbone → Circlet of Shadow (NEC/SK) → Fungi staff → JBoots. Skip fungi tunic (INT casters can't wear it).
+**Caster twink:** Tolapumj's Robe → Signet → **Medallion of the Arcane Scientists** (or Narandi neck/face if the account already raids) → Fingerbone → Circlet of Shadow (NEC/SK) → Fungi staff → Coin / clarity click if you have one → JBoots. Skip fungi tunic (INT casters can't wear it).
 
-**Hybrid / priest:** Fungi tunic or best AC chest you can mule → Signet → Fingerbone → haste sash if not stacking a better chest haste.
+**Hybrid / priest:** Fungi tunic or best AC chest you can mule → Signet → Fingerbone → **+mr** back / ear / feet (Mask of Contemplation, Grieg ear, Flowing Slime boots) → haste sash if not stacking a better chest haste.
 
 ## Farm notes
 

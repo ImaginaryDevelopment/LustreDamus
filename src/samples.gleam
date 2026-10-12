@@ -266,7 +266,7 @@ fn twinks_sample() -> Sample {
     "Twinks",
     "everquest",
     "Twinks.md",
-    "Account-share NO DROP twink gear: haste, Tolapumj, Di`Zok Signet, fungi, utility.",
+    "Account-share NO DROP twink gear: haste, Tolapumj, Di`Zok Signet, fungi, mana regen, utility.",
   )
 }
 
