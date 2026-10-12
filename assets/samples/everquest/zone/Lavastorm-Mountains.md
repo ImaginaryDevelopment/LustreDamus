@@ -40,7 +40,7 @@ Notable outdoor uniques only — skip generic Small Raw-hide spam and post-class
 | Item | Source | Quest |
 | --- | --- | --- |
 | Fire Goblin Skin | Cinder / fire goblins | Magician / combine paths (server-dependent) |
-| Temple of Solusek Ro turn-ins | `soltemple` NPC hub (not this outdoor sheet) | Class armor / spells — **LEAVE** temple NPCs |
+| Temple of Solusek Ro turn-ins | [Temple of Solusek Ro](Temple-of-Solusek-Ro.md) | Class armor / spells — **LEAVE** temple NPCs |
 
 ## Quest NPCs
 
