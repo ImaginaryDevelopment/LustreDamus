@@ -1,6 +1,6 @@
 # Karnor's Castle — unique loot
 
-ZEM **1.13×**. Hunt range **40–55**. No AAs: live **Venril Sathir** is **RAID**; triggered VS is **2-group**. **Venril Sathir's remains** drop nothing — hand a **Summoned: Firefly Globe** (DRU 1 / RNG 15, night outdoors) to spawn **Spirit of Venril Sathir**, then hand **Spell: Resurrection** to spawn triggered VS, who drops **two Pulsing Green Stones**. **a human skeleton** (Ryla) is a wizard quest NPC — charm for the hand-in.
+ZEM **1.13×**. Hunt range **40–55**. No AAs: live **Venril Sathir** (`#Venril_Sathir`) is **RAID** and IdleQuest throne spawn **100%** (was **0%** / disabled); triggered VS is **2-group**. **Venril Sathir's remains** drop nothing — hand a **Summoned: Firefly Globe** (DRU 1 / RNG 15, night outdoors) to spawn **Spirit of Venril Sathir**, then hand **Spell: Resurrection** to spawn triggered VS, who drops **two Pulsing Green Stones**. **a human skeleton** (Ryla) is a wizard quest NPC — charm for the hand-in.
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot

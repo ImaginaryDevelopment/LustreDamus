@@ -24,6 +24,7 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are armor / Cobalt
 | Elder Kalur | CLR | 100% | Elders | ~55. City named pool |
 | Grendish the Crusader | WAR | 100% | Crusaders | ~70. Same table as Charayan |
 | Jortreva the Crusader | WAR | 100% | Crusaders | ~70. Same table as Charayan |
+| Jaelk | WAR | 100% | City | ~47 / **100%** @ −693, 848. Elemental tomes (Cognizance / Contemplation / Understanding / Thought) |
 | Jualicn | WAR | 100% | High named | ~65. Bloodshrine Necklace / Mantle of Absorption / Walrusbone Shield |
 | Lawyla | WAR | 100% | High named | ~65. **Brightwood Spear** / Wyvern Hide Tunic |
 | Lignark | WAR | 100% | High named | ~62. City named pool |

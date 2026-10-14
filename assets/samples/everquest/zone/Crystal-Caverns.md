@@ -4,7 +4,7 @@ Velious dungeon (`crystal`, **~1.47×** on era servers). Hunt range **25–45**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`crystal`).
 
-**Queen Dracnia** — IdleQuest **10%** on her spawn (sg 13745 @ −951, −592, −535). **Respawn ~11 min** (640s, no variance). PH **a crystal webmaster** (50%). `#a_crystal_purifier` is on the same table at 0% (disabled).
+**Queen Dracnia** — IdleQuest **3%** on her spawn (sg 13745 @ −951, −592, −535). **Respawn ~11 min** (640s, no variance). Same table: `#a_crystal_lurker` / `#a_crystal_purifier` **1%** each, webmaster **1%**. Separate webmaster PH spot (sg 13742) is still **50%** with lurker **0%** on that row.
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot
@@ -14,7 +14,9 @@ Sort **Nameds** by **Mob**. **Do** column:
 
 | Mob | Do | Class | Chance | Area | Notes |
 | --- | --- | --- | ---: | --- | --- |
-| Queen Dracnia | KILL | WAR | 10% | Spider lair | ~40 / **10%**. PH **a crystal webmaster**. Sceptre / Crystalline Robes / Messenger |
+| Queen Dracnia | KILL | WAR | 3% | Spider lair | ~40 / **3%**. Shares table with lurker / purifier / webmaster. Sceptre / Crystalline Robes / Messenger |
+| #a crystal lurker | KILL | WAR | 1% | Spider lair | ~37 / **1%** on Queen table (sg 13745). Spider Fang Choker / Glowing Velium Axe |
+| #a crystal purifier | KILL | WAR | 1% | Spider lair | ~35 / **1%** on Queen table. Crystal Lined Slippers |
 | #Foreman Smason | KILL | WAR | 0% | Ry`Gorr mines | IdleQuest **0%**. ~33. Foreman's Skull Cap / Frozen Long Sword |
 | Foreman Rixact | KILL | WAR | 50% | Ry`Gorr mines | ~33–34. Shares Foreman loot |
 | Ghost of Burdael | KILL | SHD | ? | Stalag lair back | ~50. **Onyxbrand**. Spirit of Garzicor spawn (~−190, −250). Despawns ~6 min |
@@ -34,8 +36,6 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | Mob | Do | Class | Chance | Area | Notes |
 | --- | --- | --- | ---: | --- | --- |
 | # | KILL | WAR | 0% | — | ~99. IdleQuest **0%** (script / PH) |
-| #a crystal lurker | KILL | WAR | 0% | — | ~37. IdleQuest **0%** (script / PH) |
-| #a crystal purifier | KILL | WAR | 0% | — | ~35. IdleQuest **0%** (script / PH) |
 | #a dracnid retainer | KILL | WAR | 0% | — | ~33. IdleQuest **0%** (script / PH) |
 | #a focus gem | KILL | WAR | 0% | — | ~37. IdleQuest **0%** (script / PH) |
 | #a Ry`Gorr herbalist | KILL | SHM | 0% | — | ~30. IdleQuest **0%** (script / PH) |

@@ -1,6 +1,6 @@
 # The Hole — unique loot
 
-ZEM **1.33×**. Hunt range **40–60**. Elemental city plus undead towers. No AAs: **Master Yael** is **RAID**. **Nortlav** (Yael pit) and **Dartain** are a **group**. Tower nameds are **2-group**. **Caradon** / **Kejar** / **Polzin** are quest NPCs.
+ZEM **1.33×**. Hunt range **40–60**. Elemental city plus undead towers. No AAs: **Master Yael** is **RAID** — IdleQuest static spawn **100%** in the Yael pit (was **0%** / disabled). **Nortlav** (Yael pit) and **Dartain** are a **group**. Tower nameds are **2-group**. **Caradon** / **Kejar** / **Polzin** are quest NPCs.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

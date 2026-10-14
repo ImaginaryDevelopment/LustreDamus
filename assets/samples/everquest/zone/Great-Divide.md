@@ -18,7 +18,7 @@ Sort **Named spawn** by **Mob**. **LEAVE** = Coldain / quest NPCs.
 | shardwurm matriarch | CLR | 100% | Shardwurm | ~45. White Scaled / Bracer of Scale / Wurm Tendon Whip |
 | shardwurm broodmother | WAR | 100% | Shardwurm | ~50. White Scaled Tunic / fang |
 | Taskmaster Abyott | WAR | 100% | Giants | ~62. **RAID**-tier. Head of the Taskmaster / Edge of the Taskmaster |
-| Narandi the Wretched | SHD | 16% | Event | ~65. Coldain war / ring event (not a normal PH camp). Lance / Crown / heads |
+| Narandi the Wretched | SHD | 100% | Event | ~65. Coldain war / ring event spawn now **100%** when placed (was 0%). Legacy PH row still **16%**. Lance / Crown / heads |
 | Gorul Longshanks | WAR | 0% | Giants | ~47. IdleQuest **0%** — Runebranded Stone Buckler |
 | Murdrick Tardok | ROG | 0% | Coldain | ~50. IdleQuest **0%** — Murdrick's Plan / head (quest) |
 | Kromrif Captain / General / Veteran / Warlord | WAR/SHD | ? | Giant keep | ~52–60. Glowing Velium Axe (lower ranks) |

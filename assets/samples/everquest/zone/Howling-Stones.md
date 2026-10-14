@@ -17,23 +17,23 @@ Sort **Nameds** by **Mob**. **Do** column:
 | a crypt wurm | KILL | WAR | 25% | North | ~239, 138; 387, 80 | ~48 / ~25% with Bile Sentinel / pulsating bile / crypt golem. Face: **Mask of Wurms** |
 | Bile Sentinel | KILL | WAR | 25% | North | ~239, 138; 387, 80 | ~48 / ~25%. Mucilaginous Girdle / Stein of Tears. Distinct from **Sentient Bile** |
 | Drusella Sathir | RAID | NEC | 100% | East last | ~279, -534 | **2-group.** East boss |
-| Embalming Fluid | KILL | WAR | 0% | South | IdleQuest ~−550, 151 | ~52. Fingerbone Hoop / Hand of the Reaper. Veil is trash-rare on IdleQuest |
+| Embalming Fluid | KILL | WAR | 8% | South | IdleQuest ~−550, 151 | ~52. Fingerbone Hoop / Hand of the Reaper. Veil is trash-rare on IdleQuest |
 | Gandan Tailfist | LEAVE | MNK | 100% | Entrance | ~287, -26, -176 | After the drop. Whistling Fists |
-| Howling Spectre | KILL | SK | 0% | East | east named spots | ~54. IdleQuest `#Howling_Spectre` — **0%** on four east PH tables (disabled). Loot table still exists |
-| Mortiferous Protector | KILL | WAR | 0% | East | ~294, -524 | ~55. PH a mortiferous golem. Sees invis |
-| Reanimated Plaguebone | KILL | WAR | 0% | East | east named spots | ~54 |
-| Sentient Bile | KILL | WAR | 0% | North | north named spots | ~50. Separate IdleQuest NPC from Bile Sentinel |
-| Skeletal Procurator | KILL | WAR | 0% | West last | ~-90, 675 | ~52. PH a sepulcher skeleton (sometimes bottomless devourer). Skull-engraved Coin after Crypt Keeper. South-wing key. Face: **Mask of Obtenebration** (BRD/ROG) |
-| The Crypt Devourer | KILL | WAR | 0% | — | named spots | ~50. IdleQuest named (also Fabled variant — skip) |
-| The Crypt Excavator | KILL | WAR | 0% | East | east named spots | ~54 |
-| The Crypt Feaster | KILL | WAR | 0% | South | south named spots | ~52 |
-| The Crypt Keeper | KILL | NEC | 20% | North | ~549, 112 | ~50. North boss. Pet. Sigil of the Calendar → west wing |
-| The Crypt Spectre | KILL | SK | 0% | South | south named spots | ~52. Sash of the Dragonborn table (vs lowercase **a crypt spectre**) |
-| The Golem Master | KILL | WAR | 0% | North / west | ~7, 565; -12, 147 | ~50 / ~20% |
-| The Skeleton Sepulcher | KILL | WAR | 0% | South | south named spots | ~50. Tall skeleton — helm vs mace is visible |
-| The Spectre Sepulcher | KILL | WAR | 0% | North / west | ~157, 189; 157, 279 | ~50 / ~50%. Slowable, no summon |
-| The Spectre Spiritualist | KILL | WAR | 0% | South | south named spots | ~54. Highest south named. IdleQuest also has misspelled `the Spectre Spirtualist` PH-tier |
-| The Undertaker Lord | KILL | SK | 0% | East | east last rooms | ~56. Highest HS named before Drusella |
+| Howling Spectre | KILL | SK | 3% | East | east named spots | ~54. IdleQuest `#Howling_Spectre` — **3%** on four east PH tables. Rapier of Oriin on table |
+| Mortiferous Protector | KILL | WAR | 3% | East | ~294, -524 | ~55. PH a mortiferous golem. Sees invis |
+| Reanimated Plaguebone | KILL | WAR | 1% | East | east named spots | ~54 |
+| Sentient Bile | KILL | WAR | 1% | North | north named spots | ~50. Separate IdleQuest NPC from Bile Sentinel |
+| Skeletal Procurator | KILL | WAR | 2% | West last | ~-90, 675 | ~52. PH a sepulcher skeleton (sometimes bottomless devourer). Skull-engraved Coin after Crypt Keeper. South-wing key. Face: **Mask of Obtenebration** (BRD/ROG) |
+| The Crypt Devourer | KILL | WAR | 0% | — | named spots | IdleQuest **0%** — still disabled (no trigger). Also Fabled variant — skip |
+| The Crypt Excavator | KILL | WAR | 1% | East | east named spots | ~54 |
+| The Crypt Feaster | KILL | WAR | 34% | South | south named spots | ~52. Shares table with undertaker / bottomless devourer |
+| The Crypt Keeper | KILL | NEC | 68% | North | ~549, 112 | ~50. North boss (`#The_Crypt_Keeper`). Pet. Sigil of the Calendar → west wing. Lowercase `the_Crypt_Keeper` PH row is **0%** |
+| The Crypt Spectre | KILL | SK | 0% | South | south named spots | IdleQuest **0%** — still disabled (no trigger). Sash of the Dragonborn table (vs lowercase **a crypt spectre** at 33%) |
+| The Golem Master | KILL | WAR | 1% | North / west | ~7, 565; -12, 147 | ~50. PH a pyre golem |
+| The Skeleton Sepulcher | KILL | WAR | 67% | South | south named spots | ~50. Tall skeleton — helm vs mace is visible. One south table **67%**; other spots **1%** |
+| The Spectre Sepulcher | KILL | WAR | 3% | North / west | ~157, 189; 157, 279 | ~50. Slowable, no summon |
+| The Spectre Spiritualist | KILL | WAR | 1% | South | south named spots | ~54. Highest south named. IdleQuest also has misspelled `the Spectre Spirtualist` PH-tier |
+| The Undertaker Lord | KILL | SK | 1% | East | east last rooms | ~56. Highest HS named before Drusella |
 
 ## Unique loot
 
@@ -44,7 +44,7 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Fayguard Parrying Dagger (Piercing) | The Crypt Keeper | RNG | 9/17 (0.53), AC 10, Word of Pain proc. NO DROP |
 | Kylong Chestplate (Chest) | Skeletal Procurator | WAR CLR PAL RNG SHD BRD ROG SHM | AC 22 STR +5 DEX −2 WIS +3. No BAR TRL OGR. NO DROP |
 | Mask of Obtenebration (Face) | Skeletal Procurator | BRD ROG | AC 6 CHA +8 AGI +6, Illusion: Erudite |
-| Rapier of Oriin (Piercing) | #Howling_Spectre | ROG | 12/25 (0.48), STR/STA/AGI +5. IdleQuest **50%** on Spectre table — but Spectre spawn is **0%** (unavailable). Not on Procurator |
+| Rapier of Oriin (Piercing) | #Howling_Spectre | ROG | 12/25 (0.48), STR/STA/AGI +5. IdleQuest **50%** on Spectre table; Spectre spawn **3%**. Not on Procurator |
 | Broken Sacrificial Dagger | Skeletal Procurator | — | South-wing key. DMF click, 1 charge. NO RENT |
 | Necklace of Superiority (Neck) | Drusella Sathir | ALL | **2-group.** AC 5, all stats +5, HP/Mana +10, all resists +5 |
 | Rod of Oblations (1H Blunt) | Drusella Sathir | CLR DRU SHM NEC WIZ MAG ENC | **2-group.** 6/27 (0.22), Mana +60 SV FIRE/COLD +10 |

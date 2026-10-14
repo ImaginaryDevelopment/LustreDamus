@@ -86,6 +86,7 @@ Notable uniques only — skip generic Velium weapons and gem/rune noise unless q
 | Item | Mob | Quest |
 | --- | --- | --- |
 | Copper→Velium Coldain Insignia Rings | — | **Coldain Ring Quests** — start **Garadain Glacierbane** |
+| Skinning Rock | ground spawn | Ring **#3** — IdleQuest-enabled GS **3**, distributed across eastwastes (respawn **864s**, **max 30**) |
 | Chief Ry`Gorr's Head | Chief Ry`Gorr (siege) | Ring #8 — hand to Garadain after CHARGE; keep Gloradin path alive |
 | Rodrick's Head; Dirk of the Traitor | Rodrick Tardok | Coldain ring traitor step |
 | Shackle key | Warden Bruke | Free / prove Corbin Blackwell path (ring #7) |
