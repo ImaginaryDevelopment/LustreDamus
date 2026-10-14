@@ -52,6 +52,7 @@ pub fn targets() -> List(Target) {
   list.flatten([
     classic(),
     kunark(),
+    temple_of_veeshan(),
     velious(),
   ])
   |> list.sort(compare_expansion_then_hp)
@@ -100,6 +101,32 @@ fn kunark() -> List(Target) {
   ]
 }
 
+fn temple_of_veeshan() -> List(Target) {
+  let exp = "Temple of Veeshan"
+  let zone = "Temple of Veeshan"
+  [
+    // HP from IdleQuest npc_types (templeveeshan spawn rows).
+    t("sevalak", "Sevalak", zone, exp, Some(101_500), "Great Spear of Dawn / Shield of Midnight"),
+    t("zlexak", "Zlexak", zone, exp, Some(121_500), "Dragonspine Rapier / Windraider's Belt"),
+    t("eashen", "Eashen of the Sky", zone, exp, Some(240_000), "Sky ring / bracelet / cloak"),
+    t("ikatiar", "Ikatiar the Venom", zone, exp, Some(250_000), "Ancient Wyvern Hide / Stinger"),
+    t("jorlleag", "Jorlleag", zone, exp, Some(250_000), "Sprinkler of the Spirits / Facesmasher"),
+    t("gozzrem", "Gozzrem", zone, exp, Some(280_000), "Wand of the Black Dragon Eye"),
+    t("telkorenar", "Telkorenar", zone, exp, Some(280_000), "True Mithril Breastplate / Lance of Thunder"),
+    t("dagarn", "Dagarn the Destroyer", zone, exp, Some(300_000), "Live spawn; Destroyer set / haste belt"),
+    t("lendiniara", "Lendiniara the Keeper", zone, exp, Some(320_000), "Talisman / Superiority set"),
+    t("lord-vyemm", "Lord Vyemm", zone, exp, Some(350_000), "Gaudralek / Vyemm's Eyes / Fang"),
+    t("lady-mirenilla", "Lady Mirenilla", zone, exp, Some(380_000), "Mithril helm/gaunts/boots / Frostwrath"),
+    t("dozekar", "Dozekar the Cursed", zone, exp, Some(386_500), "West; Tear set"),
+    t("aaryonar", "Aaryonar", zone, exp, Some(390_000), "Amulet of the Dreadgazer / Hand of the Master"),
+    t("cekenar", "Cekenar", zone, exp, Some(425_000), "Cekenar's Claw / Blackstar"),
+    t("lord-feshlak", "Lord Feshlak", zone, exp, Some(455_000), "Amulet of the Storm / Chestplate of Fiery Might"),
+    t("lord-kreizenn", "Lord Kreizenn", zone, exp, Some(465_000), "Dawncaller / Flame Etched Short Sword"),
+    t("lady-nevederia", "Lady Nevederia", zone, exp, Some(525_000), "Nevederia's Eyes / Girdle of Dark Power"),
+    t("lord-koi-doken", "Lord Koi`Doken", zone, exp, Some(580_000), "Deep Sea set / Siren Song"),
+  ]
+}
+
 fn velious() -> List(Target) {
   [
     t("tserrina", "Tserrina Syl'Tor", "Tower of Frozen Shadow", "Velious", Some(15_750), "2-group floor 7"),
@@ -119,22 +146,17 @@ fn velious() -> List(Target) {
     t("ventani", "Ventani the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Disease warder"),
     t("hraashna", "Hraashna the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Magic warder"),
     t("velketor", "Velketor the Sorcerer", "Velketor's Labyrinth", "Velious", Some(201_500), "Tower boss"),
-    t("dagarn", "Dagarn the Destroyer", "Temple of Veeshan", "Velious", Some(300_000), "ToV live spawn"),
     t("guardian-of-tunare", "Guardian of Tunare", "Plane of Growth", "Velious", Some(310_000), "With Tunare"),
     t("master-of-the-guard", "Master of the Guard", "Sleeper's Tomb", "Velious", Some(326_000), "ST (~100k–326k)"),
     t("progenitor", "The Progenitor", "Sleeper's Tomb", "Velious", Some(327_000), "ST (~150k–327k)"),
-    t("lord-vyemm", "Lord Vyemm", "Temple of Veeshan", "Velious", Some(350_000), "ToV"),
     t("dain-frostreaver", "Dain Frostreaver IV", "Icewell Keep", "Velious", Some(352_000), "Coldain king"),
     t("kildrukaun", "Kildrukaun the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Black ancient"),
     t("vyskudra", "Vyskudra the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Storm ancient"),
     t("tjudawos", "Tjudawos the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Gold ancient"),
     t("final-arbiter", "The Final Arbiter", "Sleeper's Tomb", "Velious", Some(357_000), "ST (~200k–357k)"),
     t("zeixshi-kar", "Zeixshi-Kar the Ancient", "Sleeper's Tomb", "Velious", Some(377_000), "Silver ancient"),
-    t("dozekar", "Dozekar the Cursed", "Temple of Veeshan", "Velious", Some(386_500), "ToV west"),
-    t("aaryonar", "Aaryonar", "Temple of Veeshan", "Velious", Some(390_000), "ToV"),
     t("king-tormax", "King Tormax", "Kael Drakkel", "Velious", Some(452_000), "Kromzek king"),
     t("lord-yelinak", "Lord Yelinak", "Skyshrine", "Velious", Some(500_000), "Dragon king"),
-    t("lady-nevederia", "Lady Nevederia", "Temple of Veeshan", "Velious", Some(525_000), "ToV"),
     t("tunare", "Tunare", "Plane of Growth", "Velious", Some(530_000), "Goddess"),
     t("all-seeing-eye", "All-Seeing Eye", "Plane of Mischief", "Velious", Some(709_000), "Huge HP fluff"),
     t("the-sleeper", "The Sleeper (Kerafyrm)", "Sleeper's Tomb", "Velious", Some(3_500_000), "Wake event"),
@@ -156,6 +178,7 @@ pub fn by_expansion() -> List(#(String, List(Target))) {
   [
     #("Classic", sorted_group(classic())),
     #("Kunark", sorted_group(kunark())),
+    #("Temple of Veeshan", sorted_group(temple_of_veeshan())),
     #("Velious", sorted_group(velious())),
   ]
 }
