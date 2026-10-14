@@ -61,7 +61,6 @@ pub fn targets() -> List(Target) {
 fn classic() -> List(Target) {
   [
     // HP from idlequest-content npc_types (classic zone rows; not Fabled).
-    t("phara-dar-sky", "Phara Dar (Sky isle)", "Plane of Sky", "Classic", None, "Island dragon — no separate Sky npc_types row"),
     t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", Some(32_000), "Fire giant dragon"),
     t("lady-vox", "Lady Vox", "Permafrost", "Classic", Some(32_000), "Ice dragon"),
     t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", Some(32_000), "God"),
@@ -129,7 +128,6 @@ fn temple_of_veeshan() -> List(Target) {
 
 fn velious() -> List(Target) {
   [
-    t("tserrina", "Tserrina Syl'Tor", "Tower of Frozen Shadow", "Velious", Some(15_750), "2-group floor 7"),
     t("vaniki", "Vaniki", "Dragon Necropolis", "Velious", Some(45_000), "Chetari raid named"),
     t("zlandicar", "Zlandicar", "Dragon Necropolis", "Velious", Some(110_000), "Necropolis dragon"),
     t(

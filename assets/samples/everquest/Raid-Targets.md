@@ -12,7 +12,6 @@ Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest 
 | Classic | Lady Vox | Permafrost | ~32k | Ice dragon |
 | Classic | Innoruuk | Plane of Hate | ~32k | God |
 | Classic | Cazic-Thule | Plane of Fear | ~450k | God |
-| Classic | Phara Dar (Sky isle) | Plane of Sky | — | Island dragon — no separate Sky npc_types row |
 | Kunark | Construct of Sathir | Karnor's Castle | ~10k | 2-group |
 | Kunark | Drusella Sathir | Howling Stones | ~15k | 2-group east boss |
 | Kunark | Venril Sathir | Karnor's Castle | ~18k | Live VS |
@@ -51,7 +50,6 @@ Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest 
 | Temple of Veeshan | Lord Kreizenn | Temple of Veeshan | ~465k | Dawncaller / Flame Etched Short Sword |
 | Temple of Veeshan | Lady Nevederia | Temple of Veeshan | ~525k | Nevederia's Eyes / Girdle of Dark Power |
 | Temple of Veeshan | Lord Koi`Doken | Temple of Veeshan | ~580k | Deep Sea set / Siren Song |
-| Velious | Tserrina Syl'Tor | Tower of Frozen Shadow | ~15k | 2-group floor 7 |
 | Velious | Vaniki | Dragon Necropolis | ~45k | Chetari raid named |
 | Velious | Zlandicar | Dragon Necropolis | ~110k | Necropolis dragon |
 | Velious | Lord Doljonijiarnimorinar | Velketor's Labyrinth | ~147k | Efreeti |

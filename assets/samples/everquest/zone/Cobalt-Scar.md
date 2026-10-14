@@ -18,10 +18,10 @@ Sort **Named spawn** by **Mob** when tracking. **LEAVE** rows are Othmir quest /
 | Bungre Crawcrusher | RNG | 100% | Othmir camp | ~45. LEAVE for **Lodizal Shell Shield**; also Crustacean Shell table |
 | Cedrick | WAR | 100% | Outdoor | ~65. **Seal of Cedrick** (IdleQuest) |
 | Chief Kalan | SHM | 100% | Othmir camp | ~56. LEAVE for **Bulthar Trunks** / Ulthork Tusks; kill for **Othmir Chieftain Spear** |
-| High Priest Margle | WAR | 100% | Outdoor | ~65. IdleQuest named (no classic unique table) |
+| High Priest Margle | WAR | 100% | Outdoor | ~65. **KILL** — IdleQuest `loottable_id` **0** (no drops). Placeholder / empty named |
 | Kelorek`Dar | WAR | 100% | Water / SG approach | ~65. **RAID-tier.** Long respawn. Orb / Cloak / Typhoon / Spine Razor / Scales |
 | Qarrgy Scallopgobbler | RNG | 50% | Othmir camp | ~47–48. LEAVE for **Kelorek's Scales** / Emerald Dragonscale / Crustacean quests; also Shell BP table |
-| Yoppa Greenthumb | WAR | 100% | Outdoor | ~65. IdleQuest named |
+| Yoppa Greenthumb | WAR | 100% | Outdoor | ~65. **KILL** — IdleQuest `loottable_id` **0** (no drops). Placeholder / empty named @ 1061, 267 |
 | Yvolcarn | WAR | 0% | Wyvern cliffs | IdleQuest **0%**. ~52. PH among wyverns. Hates wolf form. **Drixie Remains**; Arctic Wyvern Hide |
 
 ## Unique loot
