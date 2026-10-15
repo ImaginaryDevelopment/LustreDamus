@@ -38,7 +38,7 @@ Notable outdoor uniques only — skip rusty / tarnished Iksar swords, research W
 | --- | --- | --- | --- |
 | Carrion Beetle Leggings (Legs) | Carrion Queen | WAR CLR PAL RNG SHD BRD ROG SHM | AC 7 AGI +5. Always |
 | Scourgetail Bracer (Wrist) | Scourgetail Scorpion | WAR CLR PAL RNG SHD BRD ROG SHM | AC 4 STA/DEX +2 |
-| Scourgetail Whip (1H Slashing) | Scourgetail Scorpion | WAR RNG SHD BRD ROG | 5/30 |
+| Scourgetail Whip (1H Slashing) | Scourgetail Scorpion | WAR RNG SHD BRD ROG | 5/30 (0.17) |
 | Blockcutter Gloves (Hands) | Burynai Cutter | ALL | STR/WIS +3 |
 | Polished Stone Anklet (Feet) | Burynai Cutter | ALL | AC 5 DEX/INT +2 |
 | Head of Blackhand | Kerosh Blackhand | — | Always. Quest turn-in |

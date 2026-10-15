@@ -47,7 +47,7 @@ Random Hole loot **looks** like quest junk. Most of it is not. Save the NO DROP 
 | Holy Dirt of Brell | same elementals / golems | **No quest.** NO TRADE. Not Soil of Underfoot, not MAG epic Dirt of Underfoot |
 | Ruined Sword Hilt | revenant / wanderer | **No quest.** NO DROP. Unresolved heretic leftover |
 | Gold lined heretic cloak | revenant / wanderer | **No quest.** LORE NO DROP. Unresolved. Not a cloak you wear |
-| Ruined Heretic Longsword | revenant / wanderer | **Wear / vendor.** 2/30. Not a quest |
+| Ruined Heretic Longsword | revenant / wanderer | **Wear / vendor.** 2/30 (0.07). Not a quest |
 | Fiery Jewel of the Underfoot | golems / elementals / fiends | **Vendor ~100pp.** No classic quest |
 | Blood Flecked Obsidian Shard | elemental crusader / warrior / capturer | **Vendor ~80pp.** No quest |
 | Speckled Granite Pebble | rock golems / elementals | **Vendor ~50pp.** No quest |

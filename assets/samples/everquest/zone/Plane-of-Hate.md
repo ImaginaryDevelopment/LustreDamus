@@ -50,33 +50,33 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | --- | --- | ---: | --- |
 | Shattered Emerald of Corruption | Innoruuk | 55+ | Quest / combine. Also on several Hate nameds |
 | Eye of Innoruuk (Face) | Innoruuk; several nameds | 55+ | AC 5 Mana +55 |
-| Sunderfury (2H Slashing) | Innoruuk; Grandmaster R`Tal | 55–58 | 25/36 |
-| Bloodmoon (1H Slashing) | Innoruuk | 55+ | 18/28 |
-| Dawnchaser (Piercing) | Innoruuk; Mistress of Scorn | 55–58 | 11/25 |
-| Vexthorne (Piercing) | Innoruuk; Avatar of Abhorrence | 55–58 | 9/19 |
-| Beckon (2H Blunt) | Innoruuk | 55+ | 30/42 |
-| Gardash (2H Blunt) | Innoruuk; Master of Spite | 55–58 | 30/58 |
+| Sunderfury (2H Slashing) | Innoruuk; Grandmaster R`Tal | 55–58 | 25/36 (0.69) |
+| Bloodmoon (1H Slashing) | Innoruuk | 55+ | 18/28 (0.64) |
+| Dawnchaser (Piercing) | Innoruuk; Mistress of Scorn | 55–58 | 11/25 (0.44) |
+| Vexthorne (Piercing) | Innoruuk; Avatar of Abhorrence | 55–58 | 9/19 (0.47) |
+| Beckon (2H Blunt) | Innoruuk | 55+ | 30/42 (0.71) |
+| Gardash (2H Blunt) | Innoruuk; Master of Spite | 55–58 | 30/58 (0.52) |
 | Encyclopedia Necrotheurgia | Innoruuk | 55+ | NEC book |
-| Rod of Unbound Thought / Infinite Thought | Innoruuk | 55+ | 10/30 casters |
+| Rod of Unbound Thought / Infinite Thought | Innoruuk | 55+ | 10/30 (0.33) casters |
 | Shield of the Immaculate (Secondary) | Innoruuk | 55+ | AC 25 |
 | Rakusha Cloak (Back) | Innoruuk; Grandmaster R`Tal | 55–58 | AC 10 |
 | Sode of Empowerment (Waist) | Innoruuk; Grandmaster R`Tal | 55–58 | AC 10 |
-| Tunarian Scimitar (1H Slashing) | Innoruuk; Master of Spite | 55–58 | 8/19 Mana +40 |
-| Truesight Hammer (1H Blunt) | Innoruuk | 55+ | 12/35 |
-| Briarzephyr (Piercing) | Innoruuk | 55+ | 9/19 |
-| Staff of Elemental Mastery: Earth (2H Blunt) | Innoruuk; Magi P`Tasa | 55–56 | 15/30 MAG |
+| Tunarian Scimitar (1H Slashing) | Innoruuk; Master of Spite | 55–58 | 8/19 (0.42) Mana +40 |
+| Truesight Hammer (1H Blunt) | Innoruuk | 55+ | 12/35 (0.34) |
+| Briarzephyr (Piercing) | Innoruuk | 55+ | 9/19 (0.47) |
+| Staff of Elemental Mastery: Earth (2H Blunt) | Innoruuk; Magi P`Tasa | 55–56 | 15/30 (0.50) MAG |
 
 ### Maestro / Hand / Avatar
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Hand of the Maestro (Hands) | Hand of the Maestro; Maestro of Rancor | 51–53 | AC 5 HP +20 Mana +30 |
-| Six Note Blade (1H Slashing) | Maestro of Rancor | 53 | 11/25 BRD |
-| Evensong (1H Slashing) | Maestro of Rancor | 53 | 11/25 BRD |
+| Six Note Blade (1H Slashing) | Maestro of Rancor | 53 | 11/25 (0.44) BRD |
+| Evensong (1H Slashing) | Maestro of Rancor | 53 | 11/25 (0.44) BRD |
 | Kelin`s Seven Stringed Lute | Maestro of Rancor | 53 | BRD |
 | Mempo of Likato (Face) | Maestro of Rancor | 53 | AC 6 |
 | Shield of the Stalwart Seas (Secondary) | Maestro of Rancor | 53 | AC 35 |
-| Vexthorne (Piercing) | Avatar of Abhorrence | 58 | 9/19 |
+| Vexthorne (Piercing) | Avatar of Abhorrence | 58 | 9/19 (0.47) |
 
 ### Class armor camps (Hate trash / nameds)
 
@@ -95,11 +95,11 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Slowstone Amber | a kiraikuei; Grandmaster R`Tal | 50–58 | MNK clicky |
-| Sunderfury (2H Slashing) | Grandmaster R`Tal | 58 | 25/36 |
+| Sunderfury (2H Slashing) | Grandmaster R`Tal | 58 | 25/36 (0.69) |
 | Trueheart Shield (Secondary) | an ire ghast | 50 | AC 20 |
-| Darkmetal Holy Water Sprinkler (1H Blunt) | an ire ghast | 50 | 16/29 |
-| Revultant Whip (1H Slashing) | a revultant rat | 49 | 5/14 |
-| Martune Rapier (Piercing) | a scorn banshee; Mistress of Scorn | 50–58 | 8/23 |
+| Darkmetal Holy Water Sprinkler (1H Blunt) | an ire ghast | 50 | 16/29 (0.55) |
+| Revultant Whip (1H Slashing) | a revultant rat | 49 | 5/14 (0.36) |
+| Martune Rapier (Piercing) | a scorn banshee; Mistress of Scorn | 50–58 | 8/23 (0.35) |
 | Spitestone Shield (Secondary) | a spite golem; Master of Spite | 51–58 | AC 17 |
 | Wand of Conflagration | Lord of Loathing; Corrupter of Life | 55–60 | WIZ |
 | Wand of Souls | Corrupter of Life | 60 | |

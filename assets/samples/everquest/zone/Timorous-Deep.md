@@ -47,8 +47,8 @@ Notable island / outdoor uniques only — skip research Words spam and post-clas
 | Dragon Hero Bracer (Wrist) | Faydedar | Broad melee | AC 11 STR +10 AGI +5 |
 | Runed Bolster Belt (Waist) | Faydedar | ALL | AC 5 STR/STA/DEX +10 |
 | McVaxius` Horn of War (Range) | Faydedar | BRD | DEX/INT +9 CHA +15 |
-| Orb of Tishan (1H Blunt) | Faydedar | NEC WIZ MAG ENC | 7/25, STR/STA +9 Mana +35 |
-| Crystalline Spear (Piercing) | Faydedar | WAR PAL RNG SHD BRD ROG | 13/30 |
+| Orb of Tishan (1H Blunt) | Faydedar | NEC WIZ MAG ENC | 7/25 (0.28), STR/STA +9 Mana +35 |
+| Crystalline Spear (Piercing) | Faydedar | WAR PAL RNG SHD BRD ROG | 13/30 (0.43) |
 | Torn, Frost-covered Book | Faydedar | — | NO DROP. Quest / lore |
 
 ### Named / camp uniques
@@ -67,7 +67,7 @@ Notable island / outdoor uniques only — skip research Words spam and post-clas
 | Grey Fur Cape (Back) | Halara | ALL | AC 5 STR +3 HP +18 |
 | Spiroc Bone Dust | Spiroc camps | — | Reagent |
 | Spiroc Feather Spaulders (Shoulders) | #a spiroc roostmaster | ALL | AC 5 STA/AGI/DEX +3 HP +20 (0% stub) |
-| Stained Driftwood Bow (Range) | #a spiroc roostmaster | WAR RNG | 15/40, HP +10 (0% stub) |
+| Stained Driftwood Bow (Range) | #a spiroc roostmaster | WAR RNG | 15/40 (0.38), HP +10 (0% stub) |
 | Pirate's Booty / Ornate Pirate Sash | #Olok One`eye | ALL | Pirate fluff if it pops |
 | Golra Skin | a hulking golra | — | NO DROP |
 

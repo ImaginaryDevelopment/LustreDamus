@@ -44,28 +44,28 @@ Notable outdoor uniques only — skip generic Sarnak Blood / Green Goblin Skin s
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Iron Bound Tome (1H Blunt) | Advisor Sh`Orok | CLR DRU SHM NEC WIZ MAG ENC | 7/38, AC 6 Mana +5 |
-| Mithril Staff (2H Blunt) | Lord Gorelik | WAR | 28/45 |
+| Iron Bound Tome (1H Blunt) | Advisor Sh`Orok | CLR DRU SHM NEC WIZ MAG ENC | 7/38 (0.18), AC 6 Mana +5 |
+| Mithril Staff (2H Blunt) | Lord Gorelik | WAR | 28/45 (0.62) |
 | Hammer of 1406 | Weaponsmith Ko`zirr | — | Always. NO DROP. Smithing / quest hammer |
 | Warlord Drawing Pen | goblin warlord | — | NO DROP. Quest |
 | Goblin Warlord Warbeads | goblin warlord | — | NO DROP. Quest |
 | Idol of Woven Grass (Charm) | goblin spirit caller; goblin soothsayer | ALL | STA/WIS +2 Mana +10 |
 | Bloodgill Scales | a bloodgill goblin | — | NO DROP. Quest / combine |
-| Harpoon of the Depths (Piercing) | a bloodgill goblin | WAR PAL RNG SHD BRD ROG SHM | 8/25, DEX +2 HP +20 |
+| Harpoon of the Depths (Piercing) | a bloodgill goblin | WAR PAL RNG SHD BRD ROG SHM | 8/25 (0.32), DEX +2 HP +20 |
 | Piece of a medallion | a bloodgill marauder | — | Always. NO DROP. Medallion path |
 | Sarnak Dragoon Helm (Head) | a Sarnak dragoon | WAR CLR PAL RNG SHD BRD ROG SHM | AC 8. NO DROP |
-| Goblin Skull Crusher (1H Blunt) | a Sarnak dragoon | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 7/32 |
+| Goblin Skull Crusher (1H Blunt) | a Sarnak dragoon | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 7/32 (0.22) |
 | Sarnak Emblazened Tabard (Chest) | a Sarnak adherent | WAR CLR PAL RNG SHD MNK BRD ROG | AC 14 HP +10 |
-| Sarnak Eitchatka (1H Slashing) | a Sarnak adherent | WAR RNG SHD BRD ROG | 7/33, DEX +3 HP +15 |
-| Sarnak Ceremonial Dagger (Piercing) | a Sarnak gem oracle; adherent | CLR DRU SHM NEC WIZ MAG ENC | 6/38, WIS/INT +3 |
-| Blade of Passage (1H Slashing) | a Sarnak legionnaire | WAR RNG SHD BRD ROG | 7/35, HP +20 |
+| Sarnak Eitchatka (1H Slashing) | a Sarnak adherent | WAR RNG SHD BRD ROG | 7/33 (0.21), DEX +3 HP +15 |
+| Sarnak Ceremonial Dagger (Piercing) | a Sarnak gem oracle; adherent | CLR DRU SHM NEC WIZ MAG ENC | 6/38 (0.16), WIS/INT +3 |
+| Blade of Passage (1H Slashing) | a Sarnak legionnaire | WAR RNG SHD BRD ROG | 7/35 (0.20), HP +20 |
 | Hand Woven Leggings / Shoulder Guards | a Sarnak legionnaire | ALL / melee | AC 8 / AC 5 |
 | Bracer of the Hidden (Wrist) | a Sarnak legionnaire | ALL | AC 6 |
-| Sarnak Flesh Harvester (1H Slashing) | a Sarnak legionnaire | WAR RNG SHD BRD ROG | 6/35 |
+| Sarnak Flesh Harvester (1H Slashing) | a Sarnak legionnaire | WAR RNG SHD BRD ROG | 6/35 (0.17) |
 | Forsaken Pariah Mask (Face) | Iksar pariah | ALL | AC 5 CHA −25. NO DROP |
 | Exiled Iksar Head | Iksar exile | — | NO DROP. Quest |
 | Goblin Bracer (Wrist) | a goblin battlemaster | WAR CLR PAL RNG SHD MNK BRD ROG SHM | AC 4 CHA −10. NO DROP |
-| Goblin Hunter Javelin (Throwing) | a goblin hunter | WAR RNG ROG | 4/32. NO DROP |
+| Goblin Hunter Javelin (Throwing) | a goblin hunter | WAR RNG ROG | 4/32 (0.12). NO DROP |
 | Goblin Scout Beads | a goblin scout | ALL | AC 1. NO DROP |
 | Red Headband (Head) | a goblin outrider | ALL | AC 3 DEX +1 CHA −10. NO DROP |
 | Iksar Skull Helm (Head) | sarnak hatchling / broodling / adherent | SHM | AC 5 WIS +3. NO DROP |

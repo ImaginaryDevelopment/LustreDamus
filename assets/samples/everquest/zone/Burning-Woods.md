@@ -49,19 +49,19 @@ Notable uniques only — skip generic loam / tome / gem spam.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Bronzewood Staff (2H Blunt) | Carpenter Grundo | 47 | AC 11, 10/26 |
+| Bronzewood Staff (2H Blunt) | Carpenter Grundo | 47 | AC 11, 10/26 (0.38) |
 | Forest Loop (Finger) | forest giants; Gorgul | 34–49 | AC 2 |
 | Tree Weave (Chest) | Gorgul Paclock | 49 | AC 25. IdleQuest **0%** |
 | Giant Lord's Tunic (Chest) | forest giants; Gorgul | 34–49 | AC 18 |
 | Giant Foreman's Tunic (Chest) | ancient / verdant; Gorgul | 39–49 | AC 13 |
 | Lumberjack's Cap (Head) | forest giants; Gorgul | 34–49 | AC 10 |
 | Straw Spun Belt (Waist) | forest giants | 34–46 | AC 10 |
-| Axe of the Iron Back (2H Slashing) | forest giants; Gorgul | 39–49 | 16/37 |
-| Giant Tree Flayer (2H Slashing) | forest giants; Gorgul | 34–49 | 10/41 |
-| Hammer of Flattening (2H Blunt) | forest giants; Gorgul | 34–49 | 13/50 |
-| Leg-Chopper (1H Slashing) | forest giants; Gorgul | 34–49 | 10/42 |
-| Giant Grub Digger (2H Blunt) | forest giants | 34–46 | 12/49, HP +20 |
-| Weighted Axe (2H Slashing) | ancient / verdant; Gorgul | 39–49 | 45/150 |
+| Axe of the Iron Back (2H Slashing) | forest giants; Gorgul | 39–49 | 16/37 (0.43) |
+| Giant Tree Flayer (2H Slashing) | forest giants; Gorgul | 34–49 | 10/41 (0.24) |
+| Hammer of Flattening (2H Blunt) | forest giants; Gorgul | 34–49 | 13/50 (0.26) |
+| Leg-Chopper (1H Slashing) | forest giants; Gorgul | 34–49 | 10/42 (0.24) |
+| Giant Grub Digger (2H Blunt) | forest giants | 34–46 | 12/49 (0.24), HP +20 |
+| Weighted Axe (2H Slashing) | ancient / verdant; Gorgul | 39–49 | 45/150 (0.30) |
 | Petrified Charred Branch | forest giant verdant | 39–42 | Quest / reagent |
 | Tump Stump | forest giant arbor | 34–38 | Quest / reagent |
 
@@ -72,16 +72,16 @@ Notable uniques only — skip generic loam / tome / gem spam.
 | Wurm Scale Coat (Chest) | Nezekezena; Phurzikon | 47–51 | AC 8 |
 | Burning Embers | Nezekezena; Phurzikon; Gylton | 42–51 | Quest / combine |
 | Red Wurm Gut | Nezekezena; Phurzikon | 47–51 | Quest / combine |
-| Runic Carver (1H Slashing) | Korasal Klyseer | 44 | 18/37 |
+| Runic Carver (1H Slashing) | Korasal Klyseer | 44 | 18/37 (0.49) |
 | Brass Earring (Ear) | Gullerback | 47 | AC 2 |
 | Triumvirate Missionary Robe (Chest) | Naxot Deepwater | 25 | AC 6. QUEST |
-| Cracked Staff (2H Blunt) | Naxot Deepwater | 25 | 5/32 |
+| Cracked Staff (2H Blunt) | Naxot Deepwater | 25 | 5/32 (0.16) |
 | Dirt of Underfoot | Slixin Klex | 50 | QUEST |
 | Symbol of Lativ | a loyal follower | 40 | Quest |
-| Sarnak Ceremonial Sword (1H Slashing) | a Sarnak extremist | 37–41 | 8/34, HP +20 |
-| Sarnak Ceremonial Dagger (Piercing) | a Sarnak extremist | 37–41 | 6/38 |
-| Sarnak Pitchatka / Eitchatka (Piercing) | a Sarnak extremist | 37–41 | 7/33, HP +15 |
-| Ketchata Koro Mis (Piercing) | a Sarnak extremist | 37–41 | 7/30 |
+| Sarnak Ceremonial Sword (1H Slashing) | a Sarnak extremist | 37–41 | 8/34 (0.24), HP +20 |
+| Sarnak Ceremonial Dagger (Piercing) | a Sarnak extremist | 37–41 | 6/38 (0.16) |
+| Sarnak Pitchatka / Eitchatka (Piercing) | a Sarnak extremist | 37–41 | 7/33 (0.21), HP +15 |
+| Ketchata Koro Mis (Piercing) | a Sarnak extremist | 37–41 | 7/30 (0.23) |
 | Sarnak Earring of Station (Ear) | a Sarnak extremist | 37–41 | AC 5 |
 | Sarnak Emblazened Tabard (Chest) | a Sarnak extremist | 37–41 | AC 14 HP +10 |
 | Fire Hornet Wing | ember / cinder hornets | 36–43 | Quest / reagent |

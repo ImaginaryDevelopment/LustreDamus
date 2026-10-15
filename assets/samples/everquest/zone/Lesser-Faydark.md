@@ -39,7 +39,7 @@ Classic outdoor (`lfaydark`). Unmodified XP (**1.00×**). Hunt **~8–40** (orc 
 | Faerie Princess Wing | Princess Joleena | ALL | BRD epic turn-in. NO DROP |
 | Unicorn Horn | Equestrielle the Corrupted | BRD | BRD epic. NO DROP (100%) |
 | Equestrielle's Eye | Equestrielle the Corrupted | ALL | Tradeable reagent / fluff |
-| Crookstinger (Piercing) | Crookstinger | WAR RNG SHD BRD ROG NEC WIZ MAG ENC BST | 4/21. NO DROP |
+| Crookstinger (Piercing) | Crookstinger | WAR RNG SHD BRD ROG NEC WIZ MAG ENC BST | 4/21 (0.19). NO DROP |
 | Illusionists Stone | Old Dimshimmer | ALL | NO DROP |
 | Pouch of Mistletoe Powder | Bracken Underbrush | ALL | NO DROP |
 | Size 4 / 5 / 6 Sprocket | Gearheart | ALL | Clockwork / gnome quests — leave Gearheart until needed |

@@ -50,7 +50,7 @@ Notable uniques only — skip generic Velium junk, loam, and tome pages unless q
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Club of the Ice Ocean (1H Blunt) | Lodizal | 60 | 14/27, HP +10 |
+| Club of the Ice Ocean (1H Blunt) | Lodizal | 60 | 14/27 (0.52), HP +10 |
 | Lodizal Shell Boots (Feet) | Lodizal | 60 | AC 14 HP +20 |
 | Belt of the Great Turtle (Waist) | Lodizal | 60 | AC 6 HP +30 |
 | Knotted Turtlebone Ring (Finger) | Lodizal | 60 | AC 5 HP +25 Mana +35 |
@@ -61,26 +61,26 @@ Notable uniques only — skip generic Velium junk, loam, and tome pages unless q
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Stormfeather Talons (Piercing) | Stormfeather | 34 | 8/23 |
+| Stormfeather Talons (Piercing) | Stormfeather | 34 | 8/23 (0.35) |
 | Second part of an Iceclad Map | Stormfeather | 34 | Map quest |
 | First part of an Iceclad Map | dire wolf stalker | 35 | IdleQuest **0%** row |
-| Fang of the Garou (Piercing) | Garou | 38 | 9/28 |
+| Fang of the Garou (Piercing) | Garou | 38 | 9/28 (0.32) |
 | Wolves Eye Necklace (Neck) | Garou | 38 | AC 1 |
 | Giligatabbus's Head | Giligatabbus Igglebix | 66 | Quest / trophy |
 | Frosted Gem | pulsating icestorm | 34 | Mana +30. IdleQuest **0%** |
 | Torque of Hoar Frost (Neck) | pulsating icestorm | 34 | AC 1 HP/Mana +10. IdleQuest **0%** |
 | Frozen Mantle (Shoulders) | icestorm; scouts; dervish; guardians | 27–34 | AC 6 Mana +10 |
 | Ring of Frost (Finger) | icestorm; scouts; elites; dervish | 27–36 | Mana +10 |
-| Chill Dagger (Piercing) | icestorm; scouts; dervish | 27–34 | 5/21 |
-| Iceball (1H Blunt) | scouts; dervish; guardians | 27–34 | 2/20 |
+| Chill Dagger (Piercing) | icestorm; scouts; dervish | 27–34 | 5/21 (0.24) |
+| Iceball (1H Blunt) | scouts; dervish; guardians | 27–34 | 2/20 (0.10) |
 | Woven Frost Giant Beard (Face) | frost giant elite | 33–36 | AC 5. Storm Strength click (classic) |
-| Frost Giant Femur (2H Blunt) | frost giant elite | 33–36 | 25/46, AC 5 |
+| Frost Giant Femur (2H Blunt) | frost giant elite | 33–36 | 25/46 (0.54), AC 5 |
 | Cougar Claw Earring (Ear) | a snow cougar | 27–31 | AC 4 |
 | Gnomish Pirate Hat (Head) | gnomish pirate | 30 | AC 10 |
-| Gnomish Pirate Rapier (Piercing) | pirate; pirate sentry | 26–30 | 4/20 |
+| Gnomish Pirate Rapier (Piercing) | pirate; pirate sentry | 26–30 | 4/20 (0.20) |
 | Gnomish Pirate Cloak (Back) | gnomish pirate | 30 | AC 6 |
 | Otterhide Tunic / Sleeves / Leggings / Gloves / Bracers | Snowfang icehunter / spearguard; Ergrez; Keref | 27–45 | Snowfang leather set |
-| Splintering Club (1H Blunt) | Snowfang icehunter | 27–31 | 4/28 |
+| Splintering Club (1H Blunt) | Snowfang icehunter | 27–31 | 4/28 (0.14) |
 
 ## Quests / LEAVE
 

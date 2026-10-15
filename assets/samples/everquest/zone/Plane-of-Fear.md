@@ -55,19 +55,19 @@ Shared goon table on IdleQuest (same pool on all three). Notable:
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Soul Leech, Dark Sword of Blood (2H Slashing) | Dread; Fright; Terror | 55 | 30/45 |
-| Monsoon, Sword of the Swiftwind (2H Slashing) | Dread; Fright; Terror | 55 | 30/45 |
+| Soul Leech, Dark Sword of Blood (2H Slashing) | Dread; Fright; Terror | 55 | 30/45 (0.67) |
+| Monsoon, Sword of the Swiftwind (2H Slashing) | Dread; Fright; Terror | 55 | 30/45 (0.67) |
 | Slime Blood of Cazic-Thule (Neck) | Dread; Fright; Terror | 55 | AC 16 HP/Mana +20 |
 | Bone-Clasped Girdle (Waist) | Dread; Fright; Terror | 55 | AC 4 HP/Mana +75 |
 | Amulet of Necropotence (Neck) | Dread; Fright; Terror | 55 | Mana focus; HP −100 |
 | Shield of Rainbow Hues (Secondary) | Dread; Fright; Terror | 55 | AC 18 |
-| Staff of the Earthcrafter (2H Blunt) | Dread; Fright; Terror | 55 | 21/48 HP +100 Mana +50 |
-| DawnFire, Morning Star of Light (1H Blunt) | Dread; Fright; Terror | 55 | 11/34 |
-| Blood Fire (Piercing) | Dread; Fright; Terror | 55 | 11/24 |
-| Spined Dragon Claws (1H Slashing) | Dread; Fright; Terror | 55 | 10/21 |
-| Bone Razor (Piercing) | Dread; Fright; Terror | 55 | 10/22 |
-| Withered Totem of Widdershins (1H Blunt) | Dread; Fright; Terror | 55 | 20/42 |
-| Staff of Undead Legions (2H Blunt) | Dread; Fright; Terror | 55 | 20/47 |
+| Staff of the Earthcrafter (2H Blunt) | Dread; Fright; Terror | 55 | 21/48 (0.44) HP +100 Mana +50 |
+| DawnFire, Morning Star of Light (1H Blunt) | Dread; Fright; Terror | 55 | 11/34 (0.32) |
+| Blood Fire (Piercing) | Dread; Fright; Terror | 55 | 11/24 (0.46) |
+| Spined Dragon Claws (1H Slashing) | Dread; Fright; Terror | 55 | 10/21 (0.48) |
+| Bone Razor (Piercing) | Dread; Fright; Terror | 55 | 10/22 (0.45) |
+| Withered Totem of Widdershins (1H Blunt) | Dread; Fright; Terror | 55 | 20/42 (0.48) |
+| Staff of Undead Legions (2H Blunt) | Dread; Fright; Terror | 55 | 20/47 (0.43) |
 | Lyssa`s Darkwood Piccolo | Dread; Fright; Terror | 55 | BRD |
 | Puppet Strings | Dread; Fright; Terror | 55 | Quest / combine |
 | Ball of Everliving Golem | Dread; Fright; Terror | 55 | HP +15 |
@@ -81,7 +81,7 @@ Shared goon table on IdleQuest (same pool on all three). Notable:
 | Grotesque Girdle (Waist) | a dracoliche | 58 | AC 8 HP/Mana +100 |
 | Zombie Flesh Bracer (Wrist) | a dracoliche | 58 | AC 6 HP/Mana +65 |
 | Shawl of Protection (Shoulders) | a dracoliche | 58 | AC 10 |
-| Amygdalan Tendril (Piercing) | Amygdalan knight / warrior | 48–50 | 9/25 |
+| Amygdalan Tendril (Piercing) | Amygdalan knight / warrior | 48–50 | 9/25 (0.36) |
 | Nautilus Shield (Secondary) | Amygdalan knight / warrior | 48–50 | AC 20 |
 | Eye of the Dark God | Amygdalan knight / warrior | 48–50 | Quest / lore |
 
@@ -89,7 +89,7 @@ Shared goon table on IdleQuest (same pool on all three). Notable:
 
 | Set / item | Mob | Notes |
 | --- | --- | --- |
-| Eyerazzia (Piercing) | a scareling | 10/24 |
+| Eyerazzia (Piercing) | a scareling | 10/24 (0.42) |
 | Shiverback-hide (leather) | a shiverback | Full set pieces |
 | Cryosilk (silk) | a spinechiller spider | Full set + Webshield |
 | Vermiculated | a gorgon; Wraith of a Shissar | Full set |

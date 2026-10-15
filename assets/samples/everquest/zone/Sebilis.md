@@ -78,13 +78,13 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Fungi Covered Great Staff (2H Blunt) | myconid spore king | DRU SHM | 18/35 (0.51), WIS/INT +8 CHA −10, Fungal Regrowth |
 | Blue Slumber Fungus | myconid spore king | — | IKS NEC skullcap path (see Quest-Gear) |
 | Gangrenous Beetle Mask (Face) | gangrenous scarab | — | Face unique |
-| Staff of the Waterwalker (2H Blunt) | gangrenous scarab | DRU | staff unique |
+| Staff of the Waterwalker (2H Blunt) | gangrenous scarab | DRU | 18/38 (0.47), staff unique |
 | Elder Spiritist's Helm (Head) | gangrenous scarab | — | DRU |
 | Deepwater Bracer (Wrist) | frenzied pox scarab | — | PAL |
-| Imbued Fighters Staff (2H Blunt) | frenzied pox scarab | — | — |
+| Imbued Fighters Staff (2H Blunt) | frenzied pox scarab | — | 38/40 (0.95) |
 | Jaundiced Bone Vambraces (Arms) | a necrosis scarab | — | SHM |
-| Crystalline Short Sword (1H Slashing) | a necrosis scarab | — | — |
-| Cane of the Tranquil (1H Blunt) | a necrosis scarab | — | — |
+| Crystalline Short Sword (1H Slashing) | a necrosis scarab | — | 12/24 (0.50) |
+| Cane of the Tranquil (1H Blunt) | a necrosis scarab | — | 11/25 (0.44) |
 
 ### City / crypt nameds
 
@@ -99,21 +99,21 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Deepwater Helm (Head) | crypt caretaker | — | PAL |
 | Obulus Mantle (Shoulders) | crypt caretaker | — | — |
 | Deepwater Vambraces (Arms) | Emperor Chottal | — | PAL |
-| Rod of Lamentation (1H Blunt) | Emperor Chottal | — | — |
-| Nathsar Greatsword (2H Slashing) | Emperor Chottal | — | — |
+| Rod of Lamentation (1H Blunt) | Emperor Chottal | — | 25/36 (0.69) |
+| Nathsar Greatsword (2H Slashing) | Emperor Chottal | — | 17/30 (0.57) |
 | Tolapumj's Robe (Chest) | Tolapumj | — | ENC |
 | Box of Nil Space | Harbinger Freglor | — | Bag |
-| Knuckle Dusters (Hand-to-Hand) | Harbinger Freglor | — | MNK |
-| Cane of Harmony (1H Blunt) | Harbinger Freglor | — | — |
+| Knuckle Dusters (Hand-to-Hand) | Harbinger Freglor | — | 14/28 (0.50), MNK |
+| Cane of Harmony (1H Blunt) | Harbinger Freglor | — | 12/25 (0.48) |
 | Hierophant's Cloak (Back) | Hierophant Prime Grekal | — | — |
-| Sword of Skyfire (1H Slashing) | Hierophant Prime Grekal | — | — |
-| Sword of the Morning (1H Slashing) | Hierophant Prime Grekal | — | — |
+| Sword of Skyfire (1H Slashing) | Hierophant Prime Grekal | — | 10/22 (0.45) |
+| Sword of the Morning (1H Slashing) | Hierophant Prime Grekal | — | 16/27 (0.59) |
 | Elder Spiritist's Bracer (Wrist) | Gruplinort | — | DRU |
 | Froglok Bonecaster's Robe (Chest) | Gruplinort | — | — |
-| Ebon Mace (1H Blunt) | Brogg | — | — |
+| Ebon Mace (1H Blunt) | Brogg | — | 19/24 (0.79) |
 | Clay Guardian Shield (Secondary) | Brogg | — | — |
 | Cobalt Helm (Head) | froglok reet knight / shaman / wizard | — | WAR. IdleQuest — **not** on juggernauts |
-| Blade of the Green Dragon Eye (Piercing) | froglok reet shaman / wizard | — | — |
+| Blade of the Green Dragon Eye (Piercing) | froglok reet shaman / wizard | — | 13/24 (0.54) |
 | Cobalt Vambraces (Arms) | froglok zol knight | — | WAR |
 | Book of Obulus | froglok zol knight | — | Quest / lore book |
 | Singing Steel Bracer (Wrist) | froglok armorer | — | BRD |
@@ -121,21 +121,21 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Mrylokar's Vambraces (Arms) | froglok bartender | — | ROG |
 | Dark Scale Greaves (Legs) | froglok bartender | — | — |
 | Sebilite Scale Gloves (Hands) | froglok bartender | — | — |
-| Fayguard Bladecatcher (Piercing) | froglok chef | — | — |
+| Fayguard Bladecatcher (Piercing) | froglok chef | — | 10/21 (0.48) |
 | Sebilite Scale Cap (Head) | froglok chef; Froggy | — | — |
 | Sebilite Scale Vambraces (Arms) | froglok chef | — | — |
-| Zealot's Incarnadine Sword (1H Slashing) | froglok pickler | — | — |
+| Zealot's Incarnadine Sword (1H Slashing) | froglok pickler | — | 26/35 (0.74) |
 | Donal's Bracer of Mourning (Wrist) | froglok pickler | — | CLR |
 | Sebilite Scale Coat (Chest) | froglok pickler | — | — |
 | Sebilite Scale Belt (Waist) | froglok pickler | — | — |
 | Ancient Iksar Bone Inkwell | spectral duke | — | — |
-| Granite Face Grinder (1H Blunt) | spectral duke | — | — |
-| Jarsath Battle Sword (1H Slashing) | spectral duke; spectral harbinger | — | — |
+| Granite Face Grinder (1H Blunt) | spectral duke | — | 29/36 (0.81) |
+| Jarsath Battle Sword (1H Slashing) | spectral duke; spectral harbinger | — | 26/45 (0.58) |
 | Jaundiced Bone Helm (Head) | an Iksar necromancer | — | SHM. Rare on crypt trash |
-| Silver Etched Warhammer (1H Blunt) | an Iksar necromancer | — | Rare |
+| Silver Etched Warhammer (1H Blunt) | an Iksar necromancer | — | 24/38 (0.63), Rare |
 | Blood Ember Vambraces (Arms) | skeletal crusader / guard | — | SHD. Rare on crypt trash |
 | Cobalt Bracer (Wrist) | myconid trash | — | WAR. Rare |
-| Green Jade Axe (1H Slashing) | myconid trash | — | Rare |
+| Green Jade Axe (1H Slashing) | myconid trash | — | 17/34 (0.50), Rare |
 
 ## Quest items
 

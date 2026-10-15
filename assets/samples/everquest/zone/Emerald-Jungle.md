@@ -38,11 +38,11 @@ Notable uniques only — skip generic loam / tome / bag spam.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Blight, Hammer of the Scourge (2H Blunt) | Severilous | 60 | 23/47 |
+| Blight, Hammer of the Scourge (2H Blunt) | Severilous | 60 | 23/47 (0.49) |
 | Shield of the Green Dragon (Secondary) | Severilous | 60 | AC 25 |
 | Cloak of Flames (Back) | Severilous | 60 | AC 10 HP +50 |
-| Gold Plated Koshigatana (1H Slashing) | Severilous | 60 | 9/25 |
-| Orb of Tishan (1H Blunt) | Severilous | 60 | 7/25, Mana +35 |
+| Gold Plated Koshigatana (1H Slashing) | Severilous | 60 | 9/25 (0.36) |
+| Orb of Tishan (1H Blunt) | Severilous | 60 | 7/25 (0.28), Mana +35 |
 | Dragon Bone Bracelet (Wrist) | Severilous | 60 | AC 4 |
 | Dragon Hero Bracer (Wrist) | Severilous | 60 | AC 11 |
 | Gauntlets of Fiery Might (Hands) | Severilous | 60 | AC 10 |
@@ -56,9 +56,9 @@ Notable uniques only — skip generic loam / tome / bag spam.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Sword of the Mist (1H Slashing) | greater spurbone | 36–40 | 10/22, HP +25 Mana +20 |
-| Kunzar Ku'juch (Piercing) | greater spurbone | 36–40 | 8/22 |
-| Wraith Bone Hammer (1H Blunt) | greater spurbone | 36–40 | 8/26 |
+| Sword of the Mist (1H Slashing) | greater spurbone | 36–40 | 10/22 (0.45), HP +25 Mana +20 |
+| Kunzar Ku'juch (Piercing) | greater spurbone | 36–40 | 8/22 (0.36) |
+| Wraith Bone Hammer (1H Blunt) | greater spurbone | 36–40 | 8/26 (0.31) |
 | Red Silk Lined Boots (Feet) | greater spurbone | 36–40 | AC 4 HP +25 Mana +30 |
 | Ruined Scaled Coat / Mantle / Sleeves / Skirt / Pants | spurbone; greater spurbone | 31–40 | Ruined iksar scale set |
 | Iksar Targ Shield (Secondary) | greater charbone | 31–32 | AC 7 |

@@ -129,8 +129,8 @@ Also: **Bufa's Talisman** from **Nintal** (IdleQuest).
 | First Brood Talisman (Neck) | Harla Dar; Klandicar; Sontalak | 66–70 | Ultra rare |
 | Dragonhide Breastplate (all tiers) | Klandicar; Sontalak | 70 | **RAID.** Best WW chest camp |
 | Red Dragon Scales / Tooth | Melalafen | 65 | **RAID.** Tradeskill / quest reagents |
-| Tantor's Tusk (2H Slashing) | Tantor | 66 | ~50/60, HP +50. NO DROP |
-| Tsiraka's Claws (Piercing) | Tsiraka | 66 | Always. RNG, 15/26, AC 12 STR +3 WIS +6 |
+| Tantor's Tusk (2H Slashing) | Tantor | 66 | ~50/60 (0.83), HP +50. NO DROP |
+| Tsiraka's Claws (Piercing) | Tsiraka | 66 | Always. RNG, 15/26 (0.58), AC 12 STR +3 WIS +6 |
 | Icehackle's Pelt | Icehackle | 61 | AC 15 AGI +3 CHA +9 HP +34. Tradeable |
 | Bloody Claw of Draazak | Draazak | 58 | Always. Quest / weapon reagent |
 | Bloody Claw of Jerigozia / Veredenia | Jerigozia; Veredenia | 55–58 | Always |

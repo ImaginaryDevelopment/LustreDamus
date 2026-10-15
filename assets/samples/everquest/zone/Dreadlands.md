@@ -52,7 +52,7 @@ Notable uniques only — skip gem / sulfur / research Words spam unless quest-ti
 | Hammer of Flattening (2H Blunt) | mountain giant brae / steep / craig | 30–38 | WAR SHD, 13/50 (0.26). NO DROP |
 | Lumberjack's Cap (Head) | mountain giant brae / craig / steep | 30–38 | Broad melee, AC 10 STA +3. NO DROP |
 | Giant Foreman's Tunic (Chest) | mountain giant craig / steep | 33–38 | WAR RNG MNK BRD ROG, AC 13. NO DROP |
-| Weighted Axe (2H Slashing) | mountain giant steep | 38 | WAR SHD heavy axe |
+| Weighted Axe (2H Slashing) | mountain giant steep | 38 | 45/150 (0.30), WAR SHD heavy axe |
 | Tree Weave (Chest) | a mountain giant patriarch | 44 | Non-INT casters, AC 25 STR +10. NO DROP |
 | Glove of Rallos Zek | drolvargs; drachnids; giants; spurbones | 35–44 | Research / combine reagent. NO DROP |
 | Yeti Fur-Lined Sleeves (Arms) | yetis; plaguebones; drolvargs | 34–44 | IdleQuest Accursed-ish sleeves |

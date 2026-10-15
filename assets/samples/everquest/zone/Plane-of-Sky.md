@@ -51,30 +51,30 @@ Notable uniques only — skip coin / pebble / ore spam. **Classes** + stats from
 | Blood Sky Ruby; Bloodsky Sapphire; Hazy / Storm Sky / Large Opal; Tear of Quellious | Eye of Veeshan | mixed | Same gem pool for turns-ins |
 | Belt of Concordance (Waist) | Eye of Veeshan | BRD | AC 6 STR/CHA +5 Haste +16% SV POISON +5 |
 | Bracelet of Exertion (Wrist) | Eye of Veeshan | MAG | STR +5 HP +75 Mana +35 |
-| Efreeti Great Staff (2H Blunt) | Eye of Veeshan | NEC | 14/42 **(0.33)** INT +4 SV FIRE/COLD +5 |
+| Efreeti Great Staff (2H Blunt) | Eye of Veeshan | NEC | 14/42 (0.33) INT +4 SV FIRE/COLD +5 |
 | Fae Pauldrons (Shoulders) | Eye of Veeshan | SHD | AC 8 STR/DEX +4. Also used in **SK Raising of the Dead** with Large Sky Pearl |
-| Blade of Abrogation (2H Slashing) | Eye of Veeshan | SHD | 20/39 **(0.51)** STR +7 INT +3 (rare on this table) |
+| Blade of Abrogation (2H Slashing) | Eye of Veeshan | SHD | 20/39 (0.51) STR +7 INT +3 (rare on this table) |
 
 ### Noble Dojorn (RAID) — ~32k HP
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
 | Large Sky Pearl | Noble Dojorn | ALL | **~35%.** NO DROP. **Not wearable** — SK class-test reagent (**Raising of the Dead** with Fae Pauldrons / Jar of Honey / Sphinxian Ring). Lore: Pearl of Cloudburst |
-| Efreeti War Bow (Range) | Noble Dojorn | WAR RNG | 40/100 **(0.40)**. NO DROP |
+| Efreeti War Bow (Range) | Noble Dojorn | WAR RNG | 40/100 (0.40). NO DROP |
 | Efreeti War Shield (Secondary) | Noble Dojorn | WAR CLR PAL RNG SHD | AC 15 STR +5 SV FIRE +10. NO DROP |
-| Efreeti War Spear (Piercing) | Noble Dojorn | WAR BRD ROG SHM | 15/40 **(0.38)**. NO DROP. Also BRD Harmony test hand-in |
-| Efreeti War Axe (1H Slashing) | Noble Dojorn | WAR PAL SHD | 12/28 **(0.43)**. NO DROP |
-| Efreeti Battle Axe (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD | 15/28 **(0.54)**. NO DROP |
-| Efreeti Long Sword (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD BRD ROG | 11/28 **(0.39)**. NO DROP |
-| Efreeti Scimitar (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD DRU MNK BRD ROG | 12/29 **(0.41)** Mana +10. NO DROP. Also DRU Nature test |
-| Efreeti War Club (1H Blunt) | Noble Dojorn | WAR CLR PAL RNG SHD DRU MNK ROG SHM | 11/26 **(0.42)**. NO DROP |
-| Efreeti Mace (1H Blunt) | Noble Dojorn | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 10/30 **(0.33)**. NO DROP. Also CLR Theurgy test |
-| Efreeti Magi Staff (2H Blunt) | Noble Dojorn | NEC WIZ MAG ENC | 12/36 **(0.33)** AC 5 STA +2 INT +5 CHA +2. NO DROP |
-| Efreeti Wind Staff (2H Blunt) | Noble Dojorn | CLR DRU SHM NEC WIZ MAG ENC | 12/36 **(0.33)** INT +3. NO DROP |
+| Efreeti War Spear (Piercing) | Noble Dojorn | WAR BRD ROG SHM | 15/40 (0.38). NO DROP. Also BRD Harmony test hand-in |
+| Efreeti War Axe (1H Slashing) | Noble Dojorn | WAR PAL SHD | 12/28 (0.43). NO DROP |
+| Efreeti Battle Axe (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD | 15/28 (0.54). NO DROP |
+| Efreeti Long Sword (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD BRD ROG | 11/28 (0.39). NO DROP |
+| Efreeti Scimitar (1H Slashing) | Noble Dojorn | WAR PAL RNG SHD DRU MNK BRD ROG | 12/29 (0.41) Mana +10. NO DROP. Also DRU Nature test |
+| Efreeti War Club (1H Blunt) | Noble Dojorn | WAR CLR PAL RNG SHD DRU MNK ROG SHM | 11/26 (0.42). NO DROP |
+| Efreeti Mace (1H Blunt) | Noble Dojorn | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 10/30 (0.33). NO DROP. Also CLR Theurgy test |
+| Efreeti Magi Staff (2H Blunt) | Noble Dojorn | NEC WIZ MAG ENC | 12/36 (0.33) AC 5 STA +2 INT +5 CHA +2. NO DROP |
+| Efreeti Wind Staff (2H Blunt) | Noble Dojorn | CLR DRU SHM NEC WIZ MAG ENC | 12/36 (0.33) INT +3. NO DROP |
 | Efreeti War Horn | Noble Dojorn | BRD | Instrument. Also BRD Brass test hand-in |
 | Efreeti Belt (Waist) | Noble Dojorn | ALL | AC 4 STR/WIS/INT +1. NO DROP |
-| Efreeti Standard | Noble Dojorn | ALL | 3/10 **(0.30)**. NO DROP. Also CLR Weak test |
-| Brass Knuckles (Hand-to-Hand) | Noble Dojorn | WAR MNK | 10/25 **(0.40)**. NO DROP |
+| Efreeti Standard | Noble Dojorn | ALL | 3/10 (0.30). NO DROP. Also CLR Weak test |
+| Brass Knuckles (Hand-to-Hand) | Noble Dojorn | WAR MNK | 10/25 (0.40). NO DROP |
 | Weight of the Gods (Shoulders) | Noble Dojorn | CLR | AC 12 AGI/WIS +5 Mana +50 SV MAGIC +25. Worn CLR shoulders |
 | Spell: Aegis of Ro | Noble Dojorn | MAG | NO DROP |
 
@@ -82,9 +82,9 @@ Notable uniques only — skip coin / pebble / ore spam. **Classes** + stats from
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Blade of Abrogation (2H Slashing) | Gorgalosk | SHD | 20/39 **(0.51)** STR +7 INT +3 |
+| Blade of Abrogation (2H Slashing) | Gorgalosk | SHD | 20/39 (0.51) STR +7 INT +3 |
 | Stein of Flowing Ichor (Primary / Secondary) | Gorgalosk | SHM | AC 4 STR/WIS +5 Mana +50. **Worn/held** SHM piece — no click |
-| Whitened Treant Fists (Hand-to-Hand) | Gorgalosk | MNK | 14/28 **(0.50)** |
+| Whitened Treant Fists (Hand-to-Hand) | Gorgalosk | MNK | 14/28 (0.50) |
 | Symbol of Marr (Neck) | Gorgalosk | PAL | AC 15 STR/WIS +5. Worn PAL neck |
 | Weight of the Gods (Shoulders) | Gorgalosk | CLR | AC 12 AGI/WIS +5 Mana +50 SV MAGIC +25. Worn CLR shoulders |
 | White Satin Gloves (Hands) | Gorgalosk | ALL | AC 4 HP/Mana +25 SV FIRE +30 |
@@ -110,14 +110,14 @@ Notable uniques only — skip coin / pebble / ore spam. **Classes** + stats from
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Spiroc Wingblade (1H Slashing) | The Spiroc Lord | WAR RNG | **~50%.** 15/38 **(0.39)** |
+| Spiroc Wingblade (1H Slashing) | The Spiroc Lord | WAR RNG | **~50%.** 15/38 (0.39) |
 | High Quality Raiment (Chest) | The Spiroc Lord | WIZ | AC 6 AGI/INT +2 SV MAGIC +3. Also WIZ Meditation test |
 | Silken Mask (Face) | The Spiroc Lord | ENC | AC 2 AGI/DEX +3 |
 | Dove Slippers (Feet) | The Spiroc Lord | MNK | AC 2 AGI/DEX +3. Monk Sky feet; later JBoots path |
 | Shiny Pauldrons (Shoulders) | The Spiroc Lord | CLR | AC 10. Also CLR Protection test |
 | Ceremonial Belt (Waist) | The Spiroc Lord | SHM | AC 6 WIS +5 |
 | Light Damask Mantle (Shoulders) | The Spiroc Lord | SHM | AC 5 STA/WIS +2 HP +10. Also SHM Sight test with Phosphoric Globe |
-| Spiroc Battle Staff (2H Blunt) | The Spiroc Lord | Non-BRD/ROG | 8/30 **(0.27)** WIS +2 Mana +10. Also DRU Tree test |
+| Spiroc Battle Staff (2H Blunt) | The Spiroc Lord | Non-BRD/ROG | 8/30 (0.27) WIS +2 Mana +10. Also DRU Tree test |
 | Crude Wooden Flute | The Spiroc Lord | BRD | Instrument. BRD Pitch test with Phosphoric Globe |
 | Spiroc Air / Elder / Earth / Sky Totems | The Spiroc Lord | ALL | **Quest reagents** for mid/late class tests (with globes / feathers) |
 | Ivory Sky Diamond | The Spiroc Lord | ALL | **Quest gem** (e.g. PAL Spirit → Girdle of Faith with Diaphanous Globe) |
@@ -129,10 +129,10 @@ Notable uniques only — skip coin / pebble / ore spam. **Classes** + stats from
 | --- | --- | --- | --- |
 | Belt of Contention / Tranquility / Transience | princess | WAR / MNK / ROG | Haste +21% class belts |
 | Belt of Concordance / Virtue / Iniquity / the Pine | princess | BRD / PAL / SHD / RNG | Haste +16% class belts |
-| Blade of Abrogation (2H Slashing) | princess | SHD | 20/39 **(0.51)** STR +7 INT +3 |
+| Blade of Abrogation (2H Slashing) | princess | SHD | 20/39 (0.51) STR +7 INT +3 |
 | Weight of the Gods (Shoulders) | princess | CLR | AC 12 AGI/WIS +5 Mana +50 SV MAGIC +25. Worn CLR shoulders |
 | Stein of Flowing Ichor | princess | SHM | AC 4 STR/WIS +5 Mana +50. Held/worn — no click |
-| Whitened Treant Fists | princess | MNK | 14/28 **(0.50)** |
+| Whitened Treant Fists | princess | MNK | 14/28 (0.50) |
 | Treant Tear (Ear) | princess | DRU | AC 2 Mana +40 |
 | Symbol of Marr (Neck) | princess | PAL | AC 15 STR/WIS +5 |
 | White Satin Gloves (Hands) | princess | ALL | AC 4 HP/Mana +25 |

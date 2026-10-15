@@ -84,7 +84,7 @@ Notable uniques only — skip Green Goblin Skin stacks and gem noise unless ques
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Burynai Leg Ripper (Piercing) | a burynai cenobite | 36 | |
+| Burynai Leg Ripper (Piercing) | a burynai cenobite | 36 | 12/53 (0.23) |
 | Burynai Legion Gi (Chest) | a burynai cenobite | 36 | |
 | Mountain Death Belt (Waist) | a burynai cenobite | 36 | |
 | Strathbone Shell Shield (Secondary) | briarweb spider | 33 | CLR DRU SHM, AC 19 WIS +8 Mana +5. NO DROP |

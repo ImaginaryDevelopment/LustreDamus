@@ -53,16 +53,16 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked. Include
 
 | Item | Mob | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Smolder (1H Slashing) | Nanzata | WAR PAL RNG SHD BRD ROG | 17/30, STR +10 STA/DEX +7 HP +20 |
-| Staff of the Elder Claws (2H Blunt) | Nanzata | CLR DRU SHM | 20/32, STR +10 WIS +25 Mana +100 |
+| Smolder (1H Slashing) | Nanzata | WAR PAL RNG SHD BRD ROG | 17/30 (0.57), STR +10 STA/DEX +7 HP +20 |
+| Staff of the Elder Claws (2H Blunt) | Nanzata | CLR DRU SHM | 20/32 (0.62), STR +10 WIS +25 Mana +100 |
 | Shroud of Longevity (Shoulders) | Ventani | MNK | AC 20 STR/AGI +15 STA +20 HP +100 |
 | Shield of the Clawed Guardian | Ventani | WAR PAL | AC 30 STR/STA +10 WIS/INT +5 HP/Mana +25. NO DROP |
-| Salindrite Dagger (Piercing) | Ventani | BRD ROG NEC | 13/18, STR/STA +10 HP +50. NO DROP |
+| Salindrite Dagger (Piercing) | Ventani | BRD ROG NEC | 13/18 (0.72), STR/STA +10 HP +50. NO DROP |
 | Writ of Dragonkind | Hraashna | casters | WIS/INT +15 HP +25 Mana +75. NO DROP |
-| Sceptre of Destruction (1H Blunt) | Hraashna | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM BST | 12/18, STR/STA/DEX +10 HP/Mana +50. NO DROP |
+| Sceptre of Destruction (1H Blunt) | Hraashna | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM BST | 12/18 (0.67), STR/STA/DEX +10 HP/Mana +50. NO DROP |
 | Clawed Guardian Bracer (Wrist) | Hraashna | melee/hybrid | AC 15 STR +20 HP +50 |
 | Mask of Tinkering (Face) | Tukaarak | BRD ROG | AC 4. NO DROP |
-| Staff of the Morning Dew (1H Blunt) | Tukaarak | NEC WIZ MAG ENC | 4/12, STA +10 INT +25 Mana +100 |
+| Staff of the Morning Dew (1H Blunt) | Tukaarak | NEC WIZ MAG ENC | 4/12 (0.33), STA +10 INT +25 Mana +100 |
 | Dainty Gloves (Hands) | Tukaarak | NEC WIZ MAG ENC | AC 7 INT +10 Mana +30 |
 | Dragon Scaled Mask (Face) | Tukaarak; Nanzata | NEC WIZ MAG ENC | AC 10 STA +10 INT +12 HP/Mana +50. NO DROP |
 | Blue / Red / Green / White Resistance Stone | matching warder | ALL | AC 1 all stats +1 |
@@ -94,7 +94,7 @@ Each ancient drops **Eye of [Ancient]** (AC 10 HP/Mana +55), color-matched **Pri
 
 | Item | Mob | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Fist of Pummeling Prowess (1H Blunt) | Master of the Guard | MNK BST | 14/19, AC 5 STR/AGI +15 HP +50 |
+| Fist of Pummeling Prowess (1H Blunt) | Master of the Guard | MNK BST | 14/19 (0.74), AC 5 STR/AGI +15 HP +50 |
 | Velium Fraught Shackles (Wrist) | Master of the Guard | casters | AC 10 STA/WIS/INT +5 HP +25 Mana +75 |
 | Sightless Velium Eye (Face) | The Final Arbiter | ALL | AC 15 all stats +5 HP/Mana +50 |
 | Tome of Innovation | The Progenitor | NEC WIZ MAG ENC | AC 5 WIS/INT +10 Mana +50 |

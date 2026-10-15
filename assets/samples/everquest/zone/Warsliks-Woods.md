@@ -36,7 +36,7 @@ Notable outdoor uniques only — skip Green Goblin Skin spam, misscribed spell s
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
 | Grachnist's Head | Grachnist the Destroyer | — | Always. NO DROP. Quest |
-| Goblin Slaver's Whip (1H Slashing) | Grachnist the Destroyer | WAR RNG SHD BRD ROG | 5/23, HP +10 |
+| Goblin Slaver's Whip (1H Slashing) | Grachnist the Destroyer | WAR RNG SHD BRD ROG | 5/23 (0.22), HP +10 |
 | Shrunken Goblin Skull Earring (Ear) | Grachnist the Destroyer | ALL | AC 3 |
 | Iksar Scaled Gloves (Hands) | Grachnist the Destroyer | WAR CLR PAL RNG SHD BRD ROG SHM | AC 10 STR/DEX +3 HP +10 |
 | Totem of the Warrior Spirit (Charm) | Grachnist the Destroyer | ALL | STR/WIS +3 HP +10 |
@@ -48,13 +48,13 @@ Notable outdoor uniques only — skip Green Goblin Skin spam, misscribed spell s
 | Idol of Woven Grass (Charm) | goblin spirit caller; witchdoctor / soothsayer | ALL | STA/WIS +2 Mana +10 |
 | Goblin Sparring Gloves (Hands) | a goblin pit fighter | ALL | AC 3. NO DROP |
 | Goblin Bracer (Wrist) | a goblin battlemaster | WAR CLR PAL RNG SHD MNK BRD ROG SHM | AC 4 CHA −10. NO DROP |
-| Goblin Hunter Javelin (Throwing) | a goblin hunter | WAR RNG ROG | 4/32. NO DROP |
+| Goblin Hunter Javelin (Throwing) | a goblin hunter | WAR RNG ROG | 4/32 (0.12). NO DROP |
 | Goblin Scout Beads | a goblin scout | ALL | AC 1. NO DROP |
 | Red Headband (Head) | a goblin outrider | ALL | AC 3 DEX +1 CHA −10. NO DROP |
-| Hammer of Flattening (2H Blunt) | forest giants | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 13/50 |
-| Leg-Chopper (1H Slashing) | forest giants | WAR RNG SHD BRD ROG | 10/42 |
-| Giant Grub Digger (2H Blunt) | forest giants | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 12/49, HP +20 |
-| Giant Tree Flayer (2H Slashing) | forest giant greenwood | WAR PAL RNG SHD | 10/41 |
+| Hammer of Flattening (2H Blunt) | forest giants | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 13/50 (0.26) |
+| Leg-Chopper (1H Slashing) | forest giants | WAR RNG SHD BRD ROG | 10/42 (0.24) |
+| Giant Grub Digger (2H Blunt) | forest giants | WAR CLR PAL RNG SHD MNK BRD ROG SHM | 12/49 (0.24), HP +20 |
+| Giant Tree Flayer (2H Slashing) | forest giant greenwood | WAR PAL RNG SHD | 10/41 (0.24) |
 | Lumberjack's Cap (Head) | forest giants | ALL | AC 10 STA +3 |
 | Evergreen Ivy Ringband (Finger) | forest giant greenwood / evergreen | ALL | AC 3 STA +1. NO DROP |
 

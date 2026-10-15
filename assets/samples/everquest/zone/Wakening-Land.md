@@ -68,10 +68,10 @@ Notable uniques only — skip generic crushed-gem spam and Velium junk unless qu
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Scimitar of the Emerald Dawn (1H Slashing) | Wuoshi | 64 | 20/34, Mana +100 |
-| Skydarkener (2H Blunt) | Wuoshi | 64 | 28/44, Mana +40 |
+| Scimitar of the Emerald Dawn (1H Slashing) | Wuoshi | 64 | 20/34 (0.59), Mana +100 |
+| Skydarkener (2H Blunt) | Wuoshi | 64 | 28/44 (0.64), Mana +40 |
 | Tanglewood Shield (Secondary) | Wuoshi | 64 | AC 25 |
-| Crescent Blades of Luclin (Piercing) | Wuoshi | 64 | 10/18 |
+| Crescent Blades of Luclin (Piercing) | Wuoshi | 64 | 10/18 (0.56) |
 
 ### Sentient armor
 
@@ -84,7 +84,7 @@ Notable uniques only — skip generic crushed-gem spam and Velium junk unless qu
 | Sentient Vambraces (Arms) | a suit of sentient armor | 42–46 | AC 10 |
 | Sentient Plate Boots (Feet) | a suit of sentient armor | 42–46 | AC 12 |
 | Sentient Bracer (Wrist) | a suit of sentient armor | 42–46 | AC 9 |
-| Sentient Two-Handed Axe (2H Slashing) | a suit of sentient armor | 42–46 | 20/47 |
+| Sentient Two-Handed Axe (2H Slashing) | a suit of sentient armor | 42–46 | 20/47 (0.43) |
 
 ### Named / camp uniques
 
@@ -98,7 +98,7 @@ Notable uniques only — skip generic crushed-gem spam and Velium junk unless qu
 | Holgresh Grand Vizier Beads | Grand Vizier; elder holgresh | 38–45 | Quest / lore |
 | Gloves of Kromzek Might (Hands) | a holgresh raider | 34 | AC 6 |
 | Holgresh Mojo Stick / Wing / Spirit Beads | holgresh tables | 33–40 | Quest reagents |
-| Kromrif Laborer Pick (2H Slashing) | frost giant laborer; Korzak | 36–40 | 22/50 |
+| Kromrif Laborer Pick (2H Slashing) | frost giant laborer; Korzak | 36–40 | 22/50 (0.44) |
 | Kromzek Mercenary Brooch | mercenaries | 35–38 | Quest |
 | Mercenary Assignments | mercenaries | 35–38 | Quest |
 | Kromzek Architect Blueprints | a storm giant architect | 45 | IdleQuest **0%** |

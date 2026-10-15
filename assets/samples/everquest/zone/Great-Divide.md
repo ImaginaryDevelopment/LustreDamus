@@ -63,23 +63,23 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | Shardwurm Stinger / Eye / Skin / Claw | shardwurm family | 29–50 | |
 | Bracer of Scale (Wrist) | shardwurm matriarch | 45 | |
 | Boots of Scale (Feet) | shardwurm matriarch | 45 | |
-| Wurm Tendon Whip (1H Slashing) | shardwurm matriarch | 45 | |
-| Crystalline Claw Dagger (Piercing) | shardwurm matriarch | 45 | |
+| Wurm Tendon Whip (1H Slashing) | shardwurm matriarch | 45 | 12/26 (0.46) |
+| Crystalline Claw Dagger (Piercing) | shardwurm matriarch | 45 | 10/22 (0.45) |
 | Vluudeen's Tail | Vluudeen | 49 | |
 
 ### Frost giants / Kromrif
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
-| Drakkel Forged Bastard Sword (2H Slashing) | frost giant scout / berserker / elite | 34–43 | |
-| Drakkel Forged Sledgehammer (2H Blunt) | frost giant scout / berserker / elite | 34–43 | |
+| Drakkel Forged Bastard Sword (2H Slashing) | frost giant scout / berserker / elite | 34–43 | 20/45 (0.44) |
+| Drakkel Forged Sledgehammer (2H Blunt) | frost giant scout / berserker / elite | 34–43 | 22/50 (0.44) |
 | Drakkel Icegrinder / Icereaver | frost giants; dire wolves | 29–43 | |
 | Woven Frost Giant Beard | frost giants | 34–43 | Quest / craft |
 | Kromrif Head | frost giants | 34–43 | Coldain faction turn-ins |
 | Frost Giant Toes / Meat / Bones | frost giants | 34–43 | |
 | Giant Warrior Helmet (Head) | frost giants | 34–43 | |
-| Glowing Velium Axe (1H Slashing) | Kromrif Captain / Recruit / Priest / Warrior | 48–56 | |
-| Forged Velium Throwing Spear (Throwing) | Kromrif Spearman | 52 | |
+| Glowing Velium Axe (1H Slashing) | Kromrif Captain / Recruit / Priest / Warrior | 48–56 | 18/37 (0.49) |
+| Forged Velium Throwing Spear (Throwing) | Kromrif Spearman | 52 | 8/32 (0.25) |
 | Edge of the Taskmaster | Taskmaster Abyott | 62 | **RAID**-tier |
 | Head of the Taskmaster | Taskmaster Abyott | 62 | Quest / lore |
 | Old Worn Talisman | Taskmaster Abyott | 62 | |

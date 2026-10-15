@@ -31,15 +31,15 @@ Classic outdoor (`kerraridge`). ZEM **1.20×**. Hunt **~15–25**. Marked `*` on
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Mystical Claws of Jojo (1H Slashing) | Jo Jo | WAR PAL RNG SHD BRD ROG | 4/19. NO DROP |
+| Mystical Claws of Jojo (1H Slashing) | Jo Jo | WAR PAL RNG SHD BRD ROG | 4/19 (0.21). NO DROP |
 | Tiger Hide Gloves (Hands) | Jo Jo | ALL | AC 2 STR/DEX +2. NO DROP |
 | Gorilla Hide Mask (Face) | Lord Gongo | ALL | AC 3 STR +2 AGI +3. NO DROP |
 | Gorilla Hide Leggings (Legs) | Lord Gongo | ALL | AC 6 STR +3 DEX +4. NO DROP |
-| Kerran War Spear (Piercing) | The Kerran Sha`rr | WAR RNG BRD SHM BST | 8/34. NO DROP |
+| Kerran War Spear (Piercing) | The Kerran Sha`rr | WAR RNG BRD SHM BST | 8/34 (0.24). NO DROP |
 | Hexed Kerran Doll | The Kerran Sha`rr | ALL | Mana +30. NO DROP |
-| Cat o' Nine Tails (1H Slashing) | kerran tiger spahi | WAR PAL RNG SHD BRD ROG | 9/36. NO DROP |
+| Cat o' Nine Tails (1H Slashing) | kerran tiger spahi | WAR PAL RNG SHD BRD ROG | 9/36 (0.25). NO DROP |
 | Fishbone Necklace (Neck) | a kerran awrat | ALL | AC 3 AGI +2. NO DROP |
-| Bamboo Tanto Bo (1H Blunt) | a kerran ghazi | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM BST | 5/33. NO DROP |
+| Bamboo Tanto Bo (1H Blunt) | a kerran ghazi | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM BST | 5/33 (0.15). NO DROP |
 | Shazda Turban (Head) | Shazda Asad | ALL | AGI/DEX +4. NO DROP |
 
 ## Quest items

@@ -49,7 +49,7 @@ Wearables that actually sit on a corpse. Temple-faction rows are not camps.
 | Robe of the Keeper (Chest) | a keeper | NEC WIZ MAG ENC | AC 8 INT +2. Always. **-100** temple. Also on Mistmoore **Ssynthi** |
 | Robe of the Seeker (Chest) | a seeker | CLR | AC 8 WIS +2. Always. **-100** temple |
 | Robe of the Initiate (Chest) | Solomen | NEC WIZ MAG ENC | AC 5. **LEAVE** — Truespirit -30 |
-| Darkwood Staff (1H Blunt) | a seeker; a keeper ~8% | ALL | 5/28. Lore Staff of Ro. **-100** temple |
+| Darkwood Staff (1H Blunt) | a seeker; a keeper ~8% | ALL | 5/28 (0.18). Lore Staff of Ro. **-100** temple |
 | Bracelet of Distortion (Wrist) | Romar Sunto | WIZ | STR +5 INT −5 HP +50 Mana +50. ~12%. **-100** temple |
 | Lon's Head | Lon the Redeemed | ALL | 35%. Lore Head of The Redeemed. **-100** temple |
 | Limestone Ring (Finger) | an undead knight | ALL | HP +5. 25%. Only knight drop on IdleQuest |

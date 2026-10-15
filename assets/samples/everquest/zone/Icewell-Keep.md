@@ -48,16 +48,16 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
-| Frostreaver (2H Slashing) | Dain Frostreaver IV | WAR PAL SHD | **RAID.** 42/43, STR +15 STA +5 DEX +10 HP +50 |
+| Frostreaver (2H Slashing) | Dain Frostreaver IV | WAR PAL SHD | **RAID.** 42/43 (0.98), STR +15 STA +5 DEX +10 HP +50 |
 | Aegis of Ice (Secondary) | Dain Frostreaver IV | CLR PAL SHD | **RAID.** AC 25 STR +5 WIS/INT +8 |
 | Ring of Winter (Finger) | Dain Frostreaver IV | CLR DRU SHM NEC WIZ MAG ENC | **RAID.** AC 3 WIS/INT +5 HP +55 Mana +25. NO DROP |
 | Frostreaver's Embroidered Cloak (Back) | Dain Frostreaver IV | ALL | **RAID.** AC 15 WIS/INT/CHA +8 Mana +50. NO DROP |
-| Tri-Plated Golden Hackle Hammer (1H Blunt) | Dain Frostreaver IV | ALL | **RAID.** 14/24, STR +10 WIS/INT +13 Mana +25 |
+| Tri-Plated Golden Hackle Hammer (1H Blunt) | Dain Frostreaver IV | ALL | **RAID.** 14/24 (0.58), STR +10 WIS/INT +13 Mana +25 |
 | Dain Frostreaver's Head | Dain Frostreaver IV | — | **RAID.** Always. Hand to **King Tormax** → Belt of Dwarf Slaying |
-| Blade of the Seneschal (1H Slashing) | Seneschal Aldikar | WAR PAL RNG SHD BRD ROG | 16/32, STR/WIS/INT +4. NO DROP. **FACTION** |
+| Blade of the Seneschal (1H Slashing) | Seneschal Aldikar | WAR PAL RNG SHD BRD ROG | 16/32 (0.50), STR/WIS/INT +4. NO DROP. **FACTION** |
 | Shield of the Seneschal (Secondary) | Seneschal Aldikar | WAR CLR PAL RNG SHD DRU BRD ROG SHM | AC 20 STR +7 STA/AGI +5 HP +20. NO DROP. **FACTION** |
 | Gown of the Chamberlain (Chest) | Chamberlain Krystorf | CLR | AC 18 WIS/INT +3 HP +10 Mana +20. NO DROP. **FACTION** |
-| Staff of the Chamberlain (2H Blunt) | Chamberlain Krystorf | WAR CLR PAL RNG SHD DRU MNK SHM NEC WIZ MAG ENC | 28/45, WIS/INT +10 HP/Mana +20. NO DROP. **FACTION** |
+| Staff of the Chamberlain (2H Blunt) | Chamberlain Krystorf | WAR CLR PAL RNG SHD DRU MNK SHM NEC WIZ MAG ENC | 28/45 (0.62), WIS/INT +10 HP/Mana +20. NO DROP. **FACTION** |
 | Ornate Velium Pendant (Neck) | Councilors (shared) | ALL | WIS/CHA +6. NO DROP. **FACTION** |
 | Boots of the Huntsman (Feet) | Grand Huntsman Darral | WAR CLR PAL RNG SHD BRD ROG SHM | AC 15 WIS/INT +5. **FACTION** |
 | Head of the Huntsman | Grand Huntsman Darral | — | Quest / lore. **FACTION** |
@@ -72,7 +72,7 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | Royal Velium Frosted Boots (Feet) | Watchers | WAR CLR PAL SHD BRD | AC 19. **FACTION** |
 | Royal Velium Frosted Bracer (Wrist) | Watchers | WAR CLR PAL SHD BRD | AC 10 WIS/INT +3. **FACTION** |
 | Cloak of the Cave Bear (Back) | Grizznot | ALL | AC 8 HP +5. NO DROP |
-| Grizznot's Claws (1H Slashing) | Grizznot | WAR PAL RNG SHD BRD ROG | 9/21 |
+| Grizznot's Claws (1H Slashing) | Grizznot | WAR PAL RNG SHD BRD ROG | 9/21 (0.43) |
 | Incandescent Bracer (Wrist) | Glucose | BRD | AC 8 CHA +15 |
 | Crushed gems (Black Marble, Coral, …) | Frosticube | — | Thurgadin armor gem combines |
 

@@ -47,15 +47,15 @@ Classic ocean / island hop (`oot`). ZEM **1.13×**. Hunt **~9–35** (aqua gobli
 | Ring of the Ancients (Finger) | an ancient cyclops | ALL | AC 6 INT +5 |
 | Robe of the Oracle (Chest) | Oracle of K`Arnon | MNK NEC WIZ MAG ENC | AC 9 WIS/INT +5 Mana +25. NO DROP |
 | Bonechipped Mask (Face) | a goblin headmaster | WIZ | AC 2 |
-| Shadowed Knife (Piercing) | a goblin headmaster | SHD NEC | 3/20, INT +2 |
+| Shadowed Knife (Piercing) | a goblin headmaster | SHD NEC | 3/20 (0.15), INT +2 |
 | Purity Belt (Waist) | Antinime | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM | AC 3 STR/STA +2. NO DROP |
-| Ebon War Spear (Piercing) | Soarin Brightfeather | SHM | 8/31, STR +4 WIS +3. NO DROP |
-| Fordel Short Sword (1H Slashing) | Guardian of K`Arnon | WAR PAL RNG SHD BRD ROG | 4/22. NO DROP |
+| Ebon War Spear (Piercing) | Soarin Brightfeather | SHM | 8/31 (0.26), STR +4 WIS +3. NO DROP |
+| Fordel Short Sword (1H Slashing) | Guardian of K`Arnon | WAR PAL RNG SHD BRD ROG | 4/22 (0.18). NO DROP |
 | Blackened Mithril Chain (Neck) | Nyuae the Cruel | DRU | Mana +10 |
-| Scythe (2H Slashing) | a spectre | WAR PAL RNG SHD | 11/45. NO DROP |
+| Scythe (2H Slashing) | a spectre | WAR PAL RNG SHD | 11/45 (0.24). NO DROP |
 | Shimmering Black Pearl | a spectre | ALL | Spectre isle reagent / vendor |
 | Alluring Horn | Quag Maelstrom | ALL | |
-| Cast-Iron Rapier (Piercing) | a pirate | WAR RNG SHD BRD ROG | 4/23. NO DROP |
+| Cast-Iron Rapier (Piercing) | a pirate | WAR RNG SHD BRD ROG | 4/23 (0.17). NO DROP |
 | Stone Totem | an isle goblin wizard | CLR DRU BRD SHM | HP/Mana +5. NO DROP |
 | Fire Emerald / Ruby Crown / Sapphire Necklace | Allizewsaur | ALL | High jewel vendor table |
 

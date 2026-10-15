@@ -45,16 +45,16 @@ Notable outdoor uniques only — skip Velishoul page spam, sulfur / pearl vendor
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
 | Boots of Zorash (Feet) | Zorash | ALL | NO DROP |
-| Sarnak War Braid (1H Slashing) | a sarnak berzerker | WAR RNG SHD BRD ROG | 5/27, AC 2. Always. NO DROP |
+| Sarnak War Braid (1H Slashing) | a sarnak berzerker | WAR RNG SHD BRD ROG | 5/27 (0.19), AC 2. Always. NO DROP |
 | Sarnak Berserker Head | a sarnak berzerker | — | NO DROP. Quest |
 | Sarnak Emblazened Tabard (Chest) | Sarnak enthusiast / partisan | WAR CLR PAL RNG SHD MNK BRD ROG | AC 14 HP +10 |
 | Sarnak Earring of Station (Ear) | Sarnak enthusiast / partisan | ALL | AC 5 STR +5. NO DROP |
-| Sarnak Eitchatka / Pitchatka (1H Slashing) | Sarnak camps | WAR RNG SHD BRD ROG | 7/33, DEX +3 HP +15 |
-| Sarnak Ceremonial Dagger (Piercing) | Sarnak camps | CLR DRU SHM NEC WIZ MAG ENC | 6/38, WIS/INT +3 |
-| Sarnak Ceremonial Sword (1H Slashing) | Sarnak camps | WAR PAL RNG SHD BRD ROG | 8/34, HP +20 |
+| Sarnak Eitchatka / Pitchatka (1H Slashing) | Sarnak camps | WAR RNG SHD BRD ROG | 7/33 (0.21), DEX +3 HP +15 |
+| Sarnak Ceremonial Dagger (Piercing) | Sarnak camps | CLR DRU SHM NEC WIZ MAG ENC | 6/38 (0.16), WIS/INT +3 |
+| Sarnak Ceremonial Sword (1H Slashing) | Sarnak camps | WAR PAL RNG SHD BRD ROG | 8/34 (0.24), HP +20 |
 | Shattered Stone Ring (Finger) | scorpikis / succulent / dragoon fluff | ALL | AC 4 STR +3 WIS/INT +2 HP +10 Mana +15 |
 | Shattered Stone Earring (Ear) | scorpikis / gem camps / Xlixinar fluff | ALL | AC 4 DEX +2 CHA +4 HP +20 Mana +15 |
-| Dragoon Dirk (Piercing) | Dragoons; General V`Deers | WAR RNG SHD BRD ROG | 6/23, DEX +2 |
+| Dragoon Dirk (Piercing) | Dragoons; General V`Deers | WAR RNG SHD BRD ROG | 6/23 (0.26), DEX +2 |
 | Flowing Black Robe (Chest) | Modani Qu`Loni; Siladdarae; Vaean; Utandar | NEC WIZ MAG ENC | AC 8 STA +5 INT +3 |
 | Tears of Erollisi | Captain Rottgrime | — | Always. NO DROP. Quest |
 | Letter to Duriek | Kurron Ni | — | NO DROP. Quest |

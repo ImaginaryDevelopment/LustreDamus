@@ -25,13 +25,13 @@ Sort **Nameds** by **Mob**. **LEAVE** = Diggs Duggun (rogue epic path).
 | Item | Dropper | Classes | Stats / notes |
 | --- | --- | --- | --- |
 | Ring of Xorbb (Finger) | King Xorbb | ALL | AC 2 WIS/INT +3 |
-| Slime Crystal Staff (2H Blunt) | King Xorbb | BRD NEC WIZ MAG ENC | 5/28. NO DROP |
+| Slime Crystal Staff (2H Blunt) | King Xorbb | BRD NEC WIZ MAG ENC | 5/28 (0.18). NO DROP |
 | Polished Bone Bracelet (Wrist) | King Xorbb; Lord Soptyvr; Lord Sviir; Lord Syrkl | ALL | AC 2 WIS/INT +3. NO DROP |
 | Polished Bone Hoop (Ear) | Lord Sviir; Lord Syrkl | ALL | Mana +10. NO DROP |
 | Labyrinth Talisman (Neck) | Brahhm | ALL | AC 5 STA/WIS +3. NO DROP |
 | Whirling Crystal (Charm) | Spinflint | ALL | AC 3 HP +10. NO DROP |
 | Whirling Amber / Quartz / Jasper / Bloodstone / Onyx / Carnelian | Spinflint | ALL | Single-stat whirling gems (+3). NO DROP |
-| Humerus Handled Mace (1H Blunt) | a goblin alchemist | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM | 5/29 |
+| Humerus Handled Mace (1H Blunt) | a goblin alchemist | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM | 5/29 (0.17) |
 | Minotaur Ribcage (Chest) | #Yymp the Infernal | WAR PAL RNG SHD BRD ROG | AC 16 STR/STA +5 CHA −9. NO DROP |
 | Evil Eye Lens | Evil eye / lord trash | — | Quest / combine reagent (IdleQuest) |
 
