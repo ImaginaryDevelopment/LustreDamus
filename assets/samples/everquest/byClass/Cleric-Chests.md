@@ -17,14 +17,21 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Withered Leather Tunic | AC 11 WIS +4 Mana +90 SV MAGIC +10 | Dartain the Lost | The Hole | lore | Group. Mana chest if you already have AC |
 | Robe of Living Fungus | AC 10 STA +12 WIS +4 SV FIRE +10 | Myconid Spore King | Old Sebilis | lore | CLR DRU MNK. Cloth graphic. Group camp |
 
-## Skip (raid or not a cleric chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Donal's Chestplate of Mourning | Trakanon (Sebilis) | Complete Heal click |
+| Akkirus' Chestplate of the Risen | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
+| Templar's Chestplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious CLR BP |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Donal's Chestplate of Mourning | Trakanon raid. Complete Heal click |
-| Templar's Chestplate | Ancient Tarnished mold is Temple of Veeshan |
-| Akkirus' Chestplate of the Risen | Unadorned mold is Temple of Veeshan east |
 | Charred Guardian Breastplate | Sol A. Not a 60 upgrade |
-| Burynai Legion Gi | Nurga / Droga. AC 14 DEX +2 HP +15 Mana +25. HUM ERU HIE DEF only. Outgrown |
+| Burynai Legion Gi | Nurga / Droga. AC 14 — outgrown |
 | Bloodforge Mail | Dwarf WAR/CLR/PAL only, AC 12 |
 | Red Dragonscale Armor | No CLR |

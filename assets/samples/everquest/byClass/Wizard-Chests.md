@@ -17,15 +17,22 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Advisor Robe | AC 8 INT +5 AGI +2 Mana +20 | an advisor | Castle Mistmoore | lore | Common advisor camp |
 | Blackened Crystalline Robe | AC 8 CHA +5 INT +6 SV COLD +10 | a life leech; a Ry`Gorr herbalist | Crystal Caverns | lore | Trash / herbalist. Weaker than Queen Dracnia's |
 
-## Skip (raid, 2-group, or not a wizard chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Tserrina's Robe | Tserrina (ToFS 7th) | **2-group.** AC 8 CHA +3 INT +6 HP +10 Mana +50 |
+| Loam Encrusted Robe | Master Yael (The Hole) | Hole raid |
+| Robe of the Kedge | Phinigel Autropos (Kedge) | Classic raid robe |
+| Mana Robe (Manna Robe) | Trakanon (Sebilis) | Mana Conversion click |
+| Vermilion Robe of Torrefaction | Velketor | Velketor raid robe |
+| Solist's Robe of Invocation | Veeshan's Peak | VP robe |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Mana Robe (Manna Robe) | Trakanon raid. Mana Conversion click |
-| Vermilion Robe of Torrefaction | Velketor raid |
-| Robe of the Kedge | Phinigel raid |
-| Solist's Robe of Invocation | Veeshan's Peak raid |
-| Loam Encrusted Robe | Master Yael raid |
-| Tserrina's Robe | **2-group.** ToFS 7th. AC 8 CHA +3 INT +6 HP +10 Mana +50 |
 | Robe of Dalnir | AC 6. Outgrown by Guk / Najena |
 | Kylong / Jarsath / Mithril Breastplate | No WIZ |

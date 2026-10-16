@@ -24,10 +24,18 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Prefer **AGI / DEX 
 | Lizard Tooth Earring | AC 5 STR +6 STA +8 AGI +6 HP +75 | a Thul Tae Ew ritualist | Cazic-Thule (Accursed inner) | NO DROP | Best monk-facing CT ear |
 | Earring of Pain | AC 6 STA +10 WIS/INT +5 HP +35 | a Thul Tae Ew torturer | Cazic-Thule (Accursed) | NO DROP | STA / AC filler |
 
+## Raid aim
+
+Raid earrings worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Earring of Living Thunder | Derakor the Vindicator (Kael) | Kael raid ear |
+| Dragons Blood / Tear earrings | Lord Yelinak (Skyshrine) | Dragon raid ears |
+
 ## Skip
 
 | Item | Why skip |
 | --- | --- |
 | Jade Meditation Hoop | Casters only (no MNK) |
-| Living Thunder / Dragons Blood / Tear | Raid |
 | Brass Earring | Quest |

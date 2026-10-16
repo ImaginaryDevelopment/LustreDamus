@@ -23,11 +23,19 @@ Sort by **Item** or **Mana**. Filter also matches zone / camp. Prefer **WIS / Ma
 | Earring of Pain | AC 6 STA +10 WIS/INT +5 HP +35 | a Thul Tae Ew torturer | Cazic-Thule (Accursed) | NO DROP | STA / WIS / AC |
 | Lizard Tooth Earring | AC 5 STR +6 STA +8 AGI +6 HP +75 | a Thul Tae Ew ritualist | Cazic-Thule (Accursed inner) | NO DROP | HP / STA for slow tankiness |
 
+## Raid aim
+
+Raid earrings worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Earring of Living Thunder | Derakor the Vindicator (Kael) | Kael raid ear |
+| Dragons Tear | Lord Yelinak (Skyshrine) | Dragon raid ear |
+
 ## Skip
 
 | Item | Why skip |
 | --- | --- |
 | Spiderfang Earring | WAR MNK ROG only |
 | Kin Magi Earring | INT — take Elder's |
-| Living Thunder / Dragons Tear | Raid |
 | Brass Earring | Quest |

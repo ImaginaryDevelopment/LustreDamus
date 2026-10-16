@@ -16,14 +16,21 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Mithril Breastplate | AC 17 AGI +15 HP +30 | kobold priest | Nagafen's Lair | tradeable | Placeholder camp. Best pre-Velious drop chest |
 | Charred Guardian Breastplate | AC 16 STR +3 STA +6 wt 9.0 | CWG Model EXG | Solusek's Eye | lore | WAR CLR PAL SHD BRD, not Iksar. Not a 60 upgrade |
 
-## Skip (raid or not a warrior chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Cobalt Breastplate | Trakanon (Sebilis) | WAR Kunark raid BP |
+| Green dragonscale chest | Trakanon scales | Scale turn-in chest |
+| Incarnadine Breastplate | Overking Bathezid (Chardok) | STR/DEX + Gather Shadows |
+| Breastplate of the Myrmidon | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
+| Warlord's Breastplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious WAR BP |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Cobalt Breastplate | Trakanon raid |
-| Incarnadine Breastplate | Overking Bathezid raid |
-| Warlord's Breastplate | Ancient Tarnished mold is Temple of Veeshan |
-| Breastplate of the Myrmidon | Unadorned mold is Temple of Veeshan east |
-| Green dragonscale chest | Trakanon scales |
 | Bloodforge Mail | Dwarf WAR/CLR/PAL only, AC 12 |
 | Ravenscale Chestguard | Rogue |

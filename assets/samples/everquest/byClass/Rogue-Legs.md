@@ -46,12 +46,19 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Prefer **AGI / DEX 
 | --- | --- | --- | --- | ---: | --- |
 | Bloodclaw Leggings | AC 10 AGI +4 HP +65 | a blood claw raptor | Cazic-Thule (Accursed) | NO DROP | Huge HP + AGI |
 
+## Raid aim
+
+Raid legs worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Mrylokar's Greaves | Venril Sathir (Karnor's) | Kunark VS raid |
+| Ancient Wyvern Hide Leggings; Ancient Wurm Hide Greaves; Silver Chains; Onyx Chain | Temple of Veeshan | ToV dragon legs |
+
 ## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Mrylokar's Greaves | Venril Sathir **RAID** |
-| Ancient Wyvern Hide Leggings; Ancient Wurm Hide Greaves; Silver Chains; Onyx Chain | ToV dragons **RAID** |
 | Leggings of Serenity | Luclin / Shei |
 | Scale Mesh / Serpent Skin Leggings | Ssra / Rhag |
 | Eidolon Plate Greaves | Post-Velious Hate trash tables |

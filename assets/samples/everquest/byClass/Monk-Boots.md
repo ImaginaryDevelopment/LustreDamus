@@ -18,15 +18,22 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Crystal Lined Slippers | AC 5 WIS/INT +3 | Crystal Purifier; a drachnid retainer | Crystal Caverns | lore | ALL. Weak monk stats — vendor / filler only |
 | Dwarven Work Boots | AC 8 STR +3 DEX +5 | Garanel Rucksif | Estate of Unrest | tradeable | ALL except NEC WIZ MAG ENC. Early AC feet before hide |
 
-## Skip (raid or not a monk boot)
+## Raid aim
+
+Raid / formed-raid boots worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Grey Suede Boots | Hoshkar (Veeshan's Peak) | VP haste feet |
+| Boots of the Destroyer | Temple of Veeshan | ToV dragon feet |
+| Ancient Wyvern Hide Boots | Temple of Veeshan dragons | ToV hide set |
+| White Lotus Slippers | Temple of Veeshan west (Ancient Tarnished) | ToV west |
+| Golden Star Slippers | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK feet |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Grey Suede Boots | Hoshkar (Veeshan's Peak) raid — great haste, but raid |
-| White Lotus Slippers | Ancient Tarnished / ToV west raid |
-| Golden Star Slippers | ToV west raid |
-| Ancient Wyvern Hide Boots | Temple of Veeshan / raid dragons |
-| Boots of the Destroyer | Raid |
 | Kylong / Jarsath / Cobalt / Crafted Plate Boots | No MNK |
 | Boots of Distraction | No MNK (plate Distraction) |
 | Mushroom Bracelet | Wrist, not feet (PoM monk wrist) |

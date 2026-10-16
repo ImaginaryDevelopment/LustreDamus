@@ -19,15 +19,22 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Dwarven Work Boots | AC 8 STR +3 DEX +5 | Garanel Rucksif | Estate of Unrest | tradeable | ALL except NEC WIZ MAG ENC. Classic leveling feet |
 | Charred Boots | AC 6 AGI +3 SV FIRE/POISON +5 | Inferno Goblin Captain | Solusek's Eye | tradeable | WAR CLR PAL SHD BRD. Not IKS. Common |
 
-## Skip (raid or not a warrior boot)
+## Raid aim
+
+Raid / formed-raid boots worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Incarnadine Boots | Prince Selrach Di`zok (Chardok) | Chardok royal |
+| Grey Suede Boots | Hoshkar (Veeshan's Peak) | VP haste feet |
+| Mithril Boots | Lady Mirenilla (Temple of Veeshan) | ToV east |
+| Warlord's Boots | Temple of Veeshan west (Ancient Tarnished) | Top Velious WAR feet |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Mithril Boots | Temple of Veeshan (Lady Mirenilla) |
-| Warlord's Boots | Ancient Tarnished / ToV west raid |
-| Incarnadine Boots | Prince Selrach Di`zok raid |
-| Grey Suede Boots | Hoshkar (Veeshan's Peak) raid |
 | Cobalt set from Venril | VS raid greaves — boots are Caller, not VS |
-| Golden Efreeti Boots | Djarn 2-group; WIS/INT caster feet |
+| Golden Efreeti Boots | Djarn 2-group; WIS/INT caster feet — not a warrior chase |
 | Firewalker Boots | No WAR |
 | Bloodforge Boots | Dwarf WAR/CLR/PAL only if your server has them — outgrown early |

@@ -1177,6 +1177,13 @@ fn everquest_shadow_knight() -> List(Sample) {
       "Shadow-Knight-Chests.md",
       "Groupable shadow knight chests (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "shadow-knight-main-hand",
+      "Main Hand",
+      "everquest/byClass",
+      "Shadow-Knight-Main-Hand.md",
+      "Groupable shadow knight main hands (Classic / Kunark / Velious).",
+    ),
   ]
 }
 

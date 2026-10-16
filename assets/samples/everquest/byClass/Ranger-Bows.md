@@ -25,14 +25,21 @@ Camps a typical 45 group can hold. Skip Accursed / Luclin / plane tables.
 | Bow of the Huntsman | 20/30 (0.67), range 180 | Gleed Dragonhunter | Kael Drakkel | tradeable drop; quest path often NO DROP | Group named ~52–56 — hard for fresh 45s. Fast delay. WAR RNG. Spirit Strike proc on many era versions. Also Gleed's Bow quest (sneak hand-in) |
 | Gloomwater Bow | 25/55 (0.45), range 170 | a siren coercer; Mistress Latazura | Siren's Grotto | tradeable | Sirens ~55–66 — late Velious group. WAR RNG |
 
-## Skip (raid, epic, Accursed, or not the chase)
+## Raid aim
+
+Raid / formed-raid bows worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| War Bow of Rallos Zek | Plane / raid tables | Classic high-end bow |
+| Primal / Priceless Velium Reinforced Bow | Sleeper warders / high raid | Top Velious raid bows |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| War Bow of Rallos Zek | Raid / plane |
-| Primal / Priceless Velium Reinforced Bow | Sleeper warders / high raid tables |
 | Windstriker | Ranger epic line (not a group camp drop) |
 | Soulbound Hammer | Ranger epic **melee** (The Hole Jaeil) — not a bow |
 | Bone Carved Shortbow; Twisted Longbow; Tallon Engraved Greatbow | Post-Velious / Accursed / plane tables |
-| Compound Driftwood Bow; Bow of Blightfire; Darkwood Bow of Suffering; Sturdy Wrapped Bow; Rough Oak Recurve Bow | Accursed / Gunthak / Echo / holiday tables — outside Classic–Velious group scope |
+| Compound Driftwood Bow; Bow of Blightfire; Darkwood Bow of Suffering; Sturdy Wrapped Bow; Rough Oak Recurve Bow | Accursed / Gunthak / Echo / holiday — outside Classic–Velious group scope |
 | Bow of Doom | Event / Doomshade tables — not a normal 45 camp |

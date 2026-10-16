@@ -14,14 +14,21 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Withered Leather Tunic | AC 11 WIS +4 Mana +90 SV MAGIC +10 | Dartain the Lost | The Hole | lore | Group. CLR DRU SHM. Mana chest |
 | Robe of Living Fungus | AC 10 STA +12 WIS +4 SV FIRE +10 | Myconid Spore King | Old Sebilis | lore | CLR DRU MNK. Cloth. Spore King also drops the scale tunic |
 
-## Skip (raid or not a druid chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Elder Spiritist's Breastplate | Trakanon (Sebilis) | Chloroplast click |
+| Robe of the Spring | Veeshan's Peak | VP robe |
+| Woven Grass Chestguard | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
+| Nature Walker's Chestguard | Temple of Veeshan west (Ancient Tarnished) | Top Velious DRU chest |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Elder Spiritist's Breastplate | Trakanon raid. Chloroplast click |
-| Nature Walker's Chestguard | Ancient Tarnished mold is Temple of Veeshan |
-| Woven Grass Chestguard | Unadorned mold is Temple of Veeshan east |
-| Robe of the Spring | Veeshan's Peak raid |
 | Kylong / Jarsath / Mithril Breastplate | No DRU |
 | Ceremonial Iksar Chestplate | No DRU |
 | No PoGrowth class chest | Druids do not have a Growth drop set (clerics/shamans/monks/wars/wizards do) |

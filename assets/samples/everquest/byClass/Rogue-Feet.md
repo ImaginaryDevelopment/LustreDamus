@@ -45,17 +45,24 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Prefer **AGI / DEX 
 | Battered Explorer's Sandals | AC 10 AGI +5 DEX +3 HP +65 | an enraged tiger raptor | Cazic-Thule (Accursed) | NO DROP | Best CT feet — huge HP |
 | Webwalkers Boots | AC 8 AGI +10 HP +10 | a noxious jungle spider | Cazic-Thule (Accursed) | NO DROP | Pure AGI |
 
+## Raid aim
+
+Raid feet worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Lodizal Shell Boots | Lodizal (Iceclad) | Ice turtle — long respawn |
+| Frozen Efreeti Boots | Lord Dolj (Velketor's) | Stout Velketor named |
+| Boots of the Savage | Skyshrine crusaders | Raid-tier city |
+| Grey / Gray Suede Boots | Hoshkar (Veeshan's Peak) | VP haste feet |
+| Mithril Boots; Boots of the Destroyer; Boots of Superiority; Ancient Wyvern Hide; Boots of the Dead Dream | Temple of Veeshan | ToV dragon feet |
+| Boots of the Ancients | Sleeper ancients | Top raid feet |
+
 ## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Lodizal Shell Boots | Lodizal **RAID** |
-| Frozen Efreeti Boots | Lord Dolj **RAID** |
-| Grey / Gray Suede Boots | Hoshkar / VP **RAID** |
-| Mithril Boots; Boots of the Destroyer; Boots of Superiority; Ancient Wyvern Hide; Boots of the Dead Dream | ToV dragons **RAID** |
-| Boots of the Ancients | Sleeper ancients **RAID** |
-| Boots of the Savage | Skyshrine crusaders — raid-tier |
-| Envenomed Moccasins; Maclaer's Boots of Silence | Ssra / Vulak |
+| Envenomed Moccasins; Maclaer's Boots of Silence | Ssra / Vulak — post-Velious |
 | Shiverback-hide Boots | MNK only |
 | Boots of Brawn | STR with DEX −13 — anti-rogue |
 | Black Ice Boots | INT / resists — poor rogue stats |

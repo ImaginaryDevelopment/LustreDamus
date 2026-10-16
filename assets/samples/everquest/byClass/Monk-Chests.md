@@ -15,11 +15,18 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Robe of Living Fungus | AC 10 STA +12 WIS +4 SV FIRE +10 | Myconid Spore King | Old Sebilis | lore | CLR DRU MNK. Cloth. Spore King also drops the scale tunic — loot both |
 | Crescent Gi | AC 8 STR +7 AGI +3 SV MAGIC +4 | a kly cohort | Crypt of Dalnir | NO DROP | HUM IKS. Leveling gi. Outgrown by fungi |
 
-## Skip (raid or not a monk chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Golden Star Chest Wraps | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK wraps |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Golden Star Chest Wraps | Ancient Tarnished / ToV west raid |
 | Robe of the Whistling Fist | Monk epic robe. Not a camp drop |
 | Kylong / Jarsath / Mithril Breastplate | No MNK |
 | Advisor Robe | INT robe. Wearable, not worth a monk camp |

@@ -42,15 +42,24 @@ Sort by **Item** or **DMG**. Filter also matches zone / camp.
 | --- | --- | --- | --- | ---: | --- |
 | Ragebringer | 15/25 (0.60), STR +20 DEX/AGI/STA +10 HP +100 | Rogue 1.0 epic | NO DROP | End goal for group progression. Haste / ATK on era versions. Stay MH until raid piercers |
 
-## Skip (raid, Accursed, or wrong slot)
+## Raid aim
+
+Raid / formed-raid piercers worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Kelorek`Dar Spine Razor | Kelorek`Dar (Cobalt Scar) | Outdoor water dragon — long respawn |
+| Serpent's Tooth | Master Yael (The Hole) | Hole raid pierce |
+| Trident of the Seven Seas | Phinigel Autropos (Kedge) | Classic raid pierce |
+| The Horn of Hsagra | King Tormax (Kael) | Kael king |
+| Nightfall; Feverblade; Razor Sharp Short Sword | Veeshan's Peak | VP piercers |
+| Massive Heartwood Thorn | Tunare (Plane of Growth) | Growth god |
+| Frosted Ice Spike; Ikatiar's Stinger; Flame Etched Short Sword | Temple of Veeshan | ToV dragon piercers |
+| Primal / Priceless Velium Spear | Sleeper / high raid | Top raid spears |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Nightfall; Feverblade; Razor Sharp Short Sword; Massive Heartwood Thorn | VP / Tunare **RAID** |
-| The Horn of Hsagra; Frosted Ice Spike; Ikatiar's Stinger; Flame Etched Short Sword | Tormax / ToV **RAID** |
-| Serpent's Tooth | Master Yael **RAID** (The Hole) |
-| Primal / Priceless Velium Spear | Sleeper / high raid tables |
 | Edge of the Nightwalker; Jagged Blade of Mourning; Obtenebrate Short Sword | **1H Slashing** — fine OH / non-BS, not this piercing MH sheet |
-| Rapier of Oriin | IdleQuest: only on **#Howling_Spectre** (50%), but Spectre spawn chance is **0%** in `charasis` — unavailable. Procurator does **not** drop it |
-| Kelorek`Dar Spine Razor | Cobalt Scar water dragon — raid-tier / long respawn |
-| Trident of the Seven Seas | Phinigel **RAID** |
+| Rapier of Oriin | Howling Spectre table only (not Procurator); Spectre is a rare east PH (~3%) — chase only if that camp is live |

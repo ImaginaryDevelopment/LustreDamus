@@ -21,15 +21,22 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions. Prefer **AC
 | Mithril Breastplate | AC 17 AGI +15 HP +30 | kobold priest | Nagafen's Lair | tradeable | Placeholder camp. Best pre-Velious drop plate chest |
 | Charred Guardian Breastplate | AC 16 STR +3 STA +6 wt 9.0 | CWG Model EXG | Solusek's Eye | lore | WAR CLR PAL SHD BRD, not Iksar. Not a 60 upgrade |
 
-## Skip (raid or not an SK chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Blood Ember Breastplate | Trakanon (Sebilis) | SHD Kunark raid BP |
+| Incarnadine Breastplate | Overking Bathezid (Chardok) | WAR SHD — Gather Shadows |
+| Blood Lord's Breastplate | Temple of Veeshan east (Unadorned → Onerind Fe`Dhar) | Skyshrine class armor |
+| Malevolent Breastplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHD BP |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Blood Ember Breastplate | Trakanon raid |
-| Incarnadine Breastplate | Overking Bathezid raid |
-| Malevolent Breastplate | Ancient Tarnished mold is Temple of Veeshan |
-| Blood Lord's Breastplate | Unadorned mold is Temple of Veeshan east (Skyshrine Onerind Fe`Dhar) |
-| Cobalt Breastplate | Trakanon raid — WAR only anyway |
+| Cobalt Breastplate | Trakanon raid — WAR only |
 | Champion's / Berserker's Breastplate | WAR only |
 | Will of Innoruuk | SK-only plate; no reliable IdleQuest group drop path here |
 | Scaled Bone / Cabilis SK quest plate | Outgrown by Darkforge / Kylong / Velious |

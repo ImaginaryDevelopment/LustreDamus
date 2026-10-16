@@ -47,6 +47,18 @@ Same Accursed jungle / inner camps as the rogue earring sheet — stout group, n
 | Amygdalan's Chain Mask | AC 8 STA +5 AGI/DEX/WIS +5 HP +85 | an enraged Amygdalan | Cazic-Thule (Accursed) | NO DROP | Best CT face — huge HP + AGI/DEX |
 | Dreadfang Mask | AC 6 CHA +4 HP/Mana +50 | Dreadfang | Cazic-Thule (Accursed) | NO DROP | HP face if Amygdalan is down |
 
+## Raid aim
+
+Raid faces worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Faceguard of Bentos; Mask of Fright | Narandi / related Velious event | Event / war faces |
+| Eye of Cazic-Thule | Cazic-Thule (Fear / Accursed high) | Fear god face |
+| Snow Storm Mask; Mask of the Dragon Slayer | Velketor / Yelinak | Labyrinth / dragon |
+| Ancient Pirate's Eyepatch; Sky Watcher's Monocle; Transparent Eyepatch; Mask of Fall | Temple of Veeshan dragons | ToV faces |
+| Besmirched Mask of Conception | Sleeper ancients | Top raid face |
+
 ## Skip
 
 | Item | Why skip |
@@ -54,9 +66,6 @@ Same Accursed jungle / inner camps as the rogue earring sheet — stout group, n
 | Antlered Mask | WAR RNG only |
 | Darkwar Mask | WAR only |
 | Mempo of Likato; Eye of Innoruuk | BRD / WIZ — wrong class |
-| Snow Storm Mask; Mask of the Dragon Slayer; Faceguard of Bentos; Eye of Cazic-Thule; Mask of Fright | Velketor / Yelinak / Narandi / Cazic / Venril **RAID** |
-| Ancient Pirate's Eyepatch; Sky Watcher's Monocle; Transparent Eyepatch; Mask of Fall | ToV dragons **RAID** |
-| Besmirched Mask of Conception | Sleeper ancients **RAID** |
 | Matchless / Peerless / Reinforced / Heavy Dragonskin Mask | CHA / FR — poor rogue stats |
 | Mask of Deception; Sebilite Scale Mask | CHA or WIS — skip for AGI/DEX chase |
 | Moss Mask | AC 2 only (Enduring Breath click) — not worth a face slot long-term |

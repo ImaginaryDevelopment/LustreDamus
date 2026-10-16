@@ -15,13 +15,20 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 | Trakanasaur Hide Tunic | AC 16 STA +5 wt 0.8 | Bloodeye; a trakanasaur | Trakanon's Teeth | lore | WAR SHD SHM. BAR TRL OGR only |
 | Withered Leather Tunic | AC 11 WIS +4 Mana +90 SV MAGIC +10 | Dartain the Lost | The Hole | lore | Group. CLR DRU SHM. Mana chest, not AC |
 
-## Skip (raid or not a shaman chest)
+## Raid aim
+
+Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
+
+| Item | Source | Notes |
+| --- | --- | --- |
+| Jaundiced Bone Breastplate | Trakanon (Sebilis) | BAR TRL OGR |
+| Wolf Caller's Breastplate | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
+| Spirit Caller's Breastplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHM BP |
+
+## Skip
 
 | Item | Why skip |
 | --- | --- |
-| Jaundiced Bone Breastplate | Trakanon raid. BAR TRL OGR |
-| Spirit Caller's Breastplate | Ancient Tarnished mold is Temple of Veeshan |
-| Wolf Caller's Breastplate | Unadorned mold is Temple of Veeshan east |
 | Scaled Mystic Breastplate | IKS SHM quest (Cabilis). Outgrown by Kylong / Jarsath / Thurgadin |
 | Mithril Breastplate | No SHM. Plate / hybrid |
 | Red Dragonscale Armor | No SHM |
