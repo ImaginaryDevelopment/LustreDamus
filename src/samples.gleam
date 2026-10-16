@@ -184,6 +184,12 @@ fn by_class_bucket() -> SampleGroup {
       buckets: [],
     ),
     SampleGroup(
+      id: "eq-shadow-knight",
+      label: "Shadow Knight",
+      samples: everquest_shadow_knight(),
+      buckets: [],
+    ),
+    SampleGroup(
       id: "eq-shaman",
       label: "Shaman",
       samples: everquest_shaman(),
@@ -1158,6 +1164,18 @@ fn everquest_rogue() -> List(Sample) {
       "everquest/byClass",
       "Rogue-Feet.md",
       "Groupable rogue feet (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_shadow_knight() -> List(Sample) {
+  [
+    sheet(
+      "shadow-knight-chests",
+      "Chests",
+      "everquest/byClass",
+      "Shadow-Knight-Chests.md",
+      "Groupable shadow knight chests (Classic / Kunark / Velious).",
     ),
   ]
 }
