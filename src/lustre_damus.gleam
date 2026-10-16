@@ -1273,6 +1273,7 @@ fn related_sites_nav() -> Element(Msg) {
       html.div([attribute.class("nav-links")], [
         external_nav_link("IdleQuest", "https://idlequest.net/"),
         external_nav_link("EQ Progression", "https://www.eqprogression.com/"),
+        external_nav_link("Allakhazam", "https://everquest.allakhazam.com/"),
       ]),
     ],
   )
