@@ -573,17 +573,57 @@ td.cell-item {
   gap: 0.35rem;
 }
 
-.raid-targets-head h2,
-.raid-targets-group h3,
-.raid-targets-section h4 {
+.raid-targets-head h2 {
   margin: 0;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
 }
 
-.raid-targets-group h3 {
+.raid-targets-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0.15rem 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-align: left;
+  cursor: pointer;
+}
+
+.raid-targets-toggle::before {
+  content: "▾";
+  display: inline-block;
+  width: 0.85em;
+  color: var(--muted);
+  font-weight: 400;
+  transition: transform 0.12s ease;
+}
+
+.raid-targets-toggle.collapsed::before {
+  transform: rotate(-90deg);
+}
+
+.raid-targets-toggle.h3 {
   font-size: 1.05rem;
-  margin-bottom: 0.4rem;
+}
+
+.raid-targets-toggle.h4 {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.raid-targets-toggle:hover {
+  color: var(--accent);
+}
+
+.raid-targets-toggle:hover::before {
+  color: var(--accent);
 }
 
 .raid-targets-section {
@@ -593,12 +633,6 @@ td.cell-item {
 
 .raid-targets-section + .raid-targets-section {
   margin-top: 0.55rem;
-}
-
-.raid-targets-section h4 {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--muted);
 }
 
 .raid-targets-head p {

@@ -61,6 +61,8 @@ pub type Model {
     raid_status: Dict(String, raid_targets.Status),
     /// Raid target group vs raid clear (localStorage-backed).
     raid_kill_mode: Dict(String, raid_targets.KillMode),
+    /// Collapsed raid expansion / zone section keys (session only).
+    raid_collapsed: Dict(String, Bool),
     /// Epic quest checklist steps done (localStorage-backed).
     epic_done: Dict(String, Bool),
     /// Class filter on Epic Quests page (`""` = all).
@@ -99,6 +101,7 @@ pub type Msg {
   UserSetRaidStatus(String, String)
   UserSetRaidKillMode(String, String)
   UserClearedRaidBeaten
+  UserToggledRaidSection(String)
   UserToggledEpicStep(String, Bool)
   UserSetEpicClassFilter(String)
   UserClearedEpicQuest(String)
@@ -148,6 +151,7 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       raid_kill_mode: raid_targets.decode_kill_mode(
         storage.get_item(raid_targets.kill_mode_storage_key),
       ),
+      raid_collapsed: dict.new(),
       epic_done: epic_quests.decode(storage.get_item(epic_quests.storage_key)),
       epic_class_filter: "",
       characters: character_tracker.decode(
@@ -197,6 +201,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
           raid_beaten: model.raid_beaten,
           raid_status: model.raid_status,
           raid_kill_mode: model.raid_kill_mode,
+          raid_collapsed: model.raid_collapsed,
           epic_done: model.epic_done,
           epic_class_filter: model.epic_class_filter,
           characters: model.characters,
@@ -245,6 +250,7 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
                   raid_beaten: model.raid_beaten,
                   raid_status: model.raid_status,
                   raid_kill_mode: model.raid_kill_mode,
+                  raid_collapsed: model.raid_collapsed,
                   epic_done: model.epic_done,
                   epic_class_filter: model.epic_class_filter,
                   characters: model.characters,
@@ -438,6 +444,14 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
     UserClearedRaidBeaten -> {
       storage.set_item(raid_targets.storage_key, "")
       #(Model(..model, raid_beaten: dict.new()), effect.none())
+    }
+
+    UserToggledRaidSection(key) -> {
+      let raid_collapsed = case dict.get(model.raid_collapsed, key) {
+        Ok(True) -> dict.delete(model.raid_collapsed, key)
+        _ -> dict.insert(model.raid_collapsed, key, True)
+      }
+      #(Model(..model, raid_collapsed:), effect.none())
     }
 
     UserToggledEpicStep(id, on) -> {
@@ -852,6 +866,7 @@ fn view(model: Model) -> Element(Msg) {
                   model.raid_beaten,
                   model.raid_status,
                   model.raid_kill_mode,
+                  model.raid_collapsed,
                 )
               False -> element.none()
             },
@@ -1647,6 +1662,7 @@ fn raid_targets_panel(
   beaten: Dict(String, Bool),
   statuses: Dict(String, raid_targets.Status),
   kill_modes: Dict(String, raid_targets.KillMode),
+  collapsed: Dict(String, Bool),
 ) -> Element(Msg) {
   let total = list.length(raid_targets.targets())
   let done = raid_targets.beaten_count(beaten)
@@ -1677,36 +1693,117 @@ fn raid_targets_panel(
       ]),
       ..list.map(raid_targets.by_expansion(), fn(group) {
         let #(expansion, blocks) = group
-        html.div([attribute.class("raid-targets-group")], [
-          html.h3([], [html.text(expansion)]),
-          ..list.map(blocks, fn(block) {
-            raid_targets_section_block(block, beaten, statuses, kill_modes)
-          })
-        ])
+        let expansion_key = expansion
+        let expansion_collapsed = raid_section_is_collapsed(collapsed, expansion_key)
+        html.div(
+          [
+            attribute.class(case expansion_collapsed {
+              True -> "raid-targets-group collapsed"
+              False -> "raid-targets-group"
+            }),
+          ],
+          [
+            raid_section_toggle(
+              expansion,
+              expansion_key,
+              expansion_collapsed,
+              "h3",
+            ),
+            ..case expansion_collapsed {
+              True -> []
+              False ->
+                list.map(blocks, fn(block) {
+                  raid_targets_section_block(
+                    expansion,
+                    block,
+                    beaten,
+                    statuses,
+                    kill_modes,
+                    collapsed,
+                  )
+                })
+            }
+          ],
+        )
       })
     ],
   )
 }
 
 fn raid_targets_section_block(
+  expansion: String,
   block: raid_targets.SectionBlock,
   beaten: Dict(String, Bool),
   statuses: Dict(String, raid_targets.Status),
   kill_modes: Dict(String, raid_targets.KillMode),
+  collapsed: Dict(String, Bool),
 ) -> Element(Msg) {
-  let heading = case block.title {
-    None -> element.none()
-    Some(title) -> html.h4([], [html.text(title)])
-  }
-  html.div([attribute.class("raid-targets-section")], [
-    heading,
+  let list_el =
     html.ul(
       [attribute.class("raid-targets-list")],
       list.map(block.targets, fn(t) {
         raid_target_row(t, beaten, statuses, kill_modes)
       }),
-    ),
-  ])
+    )
+  case block.title {
+    None ->
+      html.div([attribute.class("raid-targets-section")], [list_el])
+    Some(title) -> {
+      let key = expansion <> "/" <> title
+      let is_collapsed = raid_section_is_collapsed(collapsed, key)
+      html.div(
+        [
+          attribute.class(case is_collapsed {
+            True -> "raid-targets-section collapsed"
+            False -> "raid-targets-section"
+          }),
+        ],
+        [
+          raid_section_toggle(title, key, is_collapsed, "h4"),
+          ..case is_collapsed {
+            True -> []
+            False -> [list_el]
+          }
+        ],
+      )
+    }
+  }
+}
+
+fn raid_section_is_collapsed(
+  collapsed: Dict(String, Bool),
+  key: String,
+) -> Bool {
+  case dict.get(collapsed, key) {
+    Ok(True) -> True
+    _ -> False
+  }
+}
+
+fn raid_section_toggle(
+  label: String,
+  key: String,
+  collapsed: Bool,
+  level: String,
+) -> Element(Msg) {
+  html.button(
+    [
+      attribute.type_("button"),
+      attribute.class(case collapsed {
+        True -> "raid-targets-toggle " <> level <> " collapsed"
+        False -> "raid-targets-toggle " <> level
+      }),
+      attribute.attribute(
+        "aria-expanded",
+        case collapsed {
+          True -> "false"
+          False -> "true"
+        },
+      ),
+      event.on_click(UserToggledRaidSection(key)),
+    ],
+    [html.text(label)],
+  )
 }
 
 fn raid_target_row(
