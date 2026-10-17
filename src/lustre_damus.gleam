@@ -18,6 +18,7 @@ import pal_index
 import pom_deck
 import pom_items
 import raid_targets
+import router
 import rsvp
 import samples.{type Sample}
 import storage
@@ -118,6 +119,8 @@ pub type Msg {
   UserCancelCharEdit
   SampleLoaded(Result(String, String))
   PalIndexLoaded(Result(String, String))
+  /// Browser hash changed (init / back-forward / set_hash).
+  RouteChanged(String)
 }
 
 pub fn main() -> Nil {
@@ -127,7 +130,7 @@ pub fn main() -> Nil {
 }
 
 fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
-  #(
+  let base =
     Model(
       page: PastePage,
       markdown: "",
@@ -160,69 +163,137 @@ fn init(_flags: Nil) -> #(Model, Effect(Msg)) {
       char_form: character_tracker.empty_form(),
       char_editing: None,
       char_error: None,
-    ),
-    effect.none(),
+    )
+  let #(model, nav_effect) = apply_route(base, router.decode(router.get_hash()))
+  #(
+    model,
+    effect.batch([nav_effect, listen_for_hash_changes()]),
   )
+}
+
+fn listen_for_hash_changes() -> Effect(Msg) {
+  effect.from(fn(dispatch) {
+    router.on_hash_change(fn(hash) { dispatch(RouteChanged(hash)) })
+  })
+}
+
+fn push_route(route: router.Route) -> Effect(Msg) {
+  effect.from(fn(_dispatch) { router.set_hash(router.encode(route)) })
+}
+
+fn page_route(page: Page) -> router.Route {
+  case page {
+    PastePage -> router.Paste
+    SamplePage(sample) -> router.Sample(sample.id)
+  }
+}
+
+fn same_page(a: Page, b: Page) -> Bool {
+  case a, b {
+    PastePage, PastePage -> True
+    SamplePage(left), SamplePage(right) -> left.id == right.id
+    _, _ -> False
+  }
+}
+
+/// Navigate to a page and sync the hash. Shared by clicks and RouteChanged.
+fn navigate_to(model: Model, page: Page) -> #(Model, Effect(Msg)) {
+  let #(next, load_effect) = apply_page(model, page)
+  #(next, effect.batch([load_effect, push_route(page_route(page))]))
+}
+
+fn apply_route(model: Model, route: router.Route) -> #(Model, Effect(Msg)) {
+  case route {
+    router.Paste -> apply_page(model, PastePage)
+    router.Sample("zone-index") ->
+      apply_page(model, SamplePage(samples.zone_index_sample()))
+    router.Sample(id) ->
+      case samples.find(id) {
+        Ok(sample) -> apply_page(model, SamplePage(sample))
+        Error(_) -> apply_page(model, PastePage)
+      }
+  }
+}
+
+fn apply_page(model: Model, page: Page) -> #(Model, Effect(Msg)) {
+  case same_page(model.page, page) {
+    True -> #(model, effect.none())
+    False ->
+      case page {
+        PastePage -> #(
+          Model(
+            ..model,
+            page: PastePage,
+            error: None,
+            loading: False,
+            zone_search_open: False,
+          ),
+          effect.none(),
+        )
+        SamplePage(sample) ->
+          case sample.id == "zone-index" {
+            True -> #(
+              Model(
+                ..model,
+                page: SamplePage(sample),
+                markdown: samples.zone_index_markdown(),
+                filter: "",
+                loading: False,
+                error: None,
+                sorts: dict.new(),
+                optional_columns: dict.new(),
+                value_filters: dict.new(),
+                hide_zero_spawn: False,
+                zone_search: "",
+                zone_search_open: True,
+                char_error: None,
+              ),
+              effect.none(),
+            )
+            False -> {
+              let sorts = case samples.is_raid_targets(sample) {
+                True -> raid_targets.default_sorts()
+                False -> dict.new()
+              }
+              let base =
+                Model(
+                  ..model,
+                  page: SamplePage(sample),
+                  markdown: "",
+                  filter: "",
+                  loading: False,
+                  error: None,
+                  sorts:,
+                  optional_columns: dict.new(),
+                  value_filters: dict.new(),
+                  hide_zero_spawn: False,
+                  zone_search_open: False,
+                  char_error: None,
+                )
+              case samples.is_character_tracker(sample) {
+                True -> #(base, effect.none())
+                False -> #(
+                  Model(..base, loading: True),
+                  effect.batch([
+                    load_sample(samples.url(sample)),
+                    case samples.is_palworld(sample) {
+                      True -> ensure_pal_index(model.pal_elements)
+                      False -> effect.none()
+                    },
+                  ]),
+                )
+              }
+            }
+          }
+      }
+  }
 }
 
 fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
   case msg {
-    UserChosePaste -> #(
-      Model(
-        ..model,
-        page: PastePage,
-        error: None,
-        loading: False,
-        zone_search_open: False,
-      ),
-      effect.none(),
-    )
+    UserChosePaste -> navigate_to(model, PastePage)
 
-    UserChoseSample(sample) -> {
-      let sorts = case samples.is_raid_targets(sample) {
-        True -> raid_targets.default_sorts()
-        False -> dict.new()
-      }
-      let base =
-        Model(
-          page: SamplePage(sample),
-          markdown: "",
-          filter: "",
-          loading: False,
-          error: None,
-          sorts:,
-          optional_columns: dict.new(),
-          value_filters: dict.new(),
-          hide_zero_spawn: False,
-          pal_elements: model.pal_elements,
-          zone_search: model.zone_search,
-          zone_search_open: False,
-          pom_cards: model.pom_cards,
-          raid_beaten: model.raid_beaten,
-          raid_status: model.raid_status,
-          raid_kill_mode: model.raid_kill_mode,
-          raid_collapsed: model.raid_collapsed,
-          epic_done: model.epic_done,
-          epic_class_filter: model.epic_class_filter,
-          characters: model.characters,
-          char_form: model.char_form,
-          char_editing: model.char_editing,
-          char_error: None,
-        )
-      case samples.is_character_tracker(sample) {
-        True -> #(base, effect.none())
-        False -> #(
-          Model(..base, loading: True),
-          effect.batch([
-            load_sample(samples.url(sample)),
-            case samples.is_palworld(sample) {
-              True -> ensure_pal_index(model.pal_elements)
-              False -> effect.none()
-            },
-          ]),
-        )
-      }
-    }
+    UserChoseSample(sample) -> navigate_to(model, SamplePage(sample))
 
     UserOpenedZoneSearch ->
       case by_class_is_open(model) {
@@ -230,39 +301,15 @@ fn update(model: Model, msg: Msg) -> #(Model, Effect(Msg)) {
         False ->
           case model.zone_search_open {
             True -> #(Model(..model, zone_search_open: False), effect.none())
-            False -> {
-              let sample = samples.zone_index_sample()
-              #(
-                Model(
-                  page: SamplePage(sample),
-                  markdown: samples.zone_index_markdown(),
-                  filter: "",
-                  loading: False,
-                  error: None,
-                  sorts: dict.new(),
-                  optional_columns: dict.new(),
-                  value_filters: dict.new(),
-                  hide_zero_spawn: False,
-                  pal_elements: model.pal_elements,
-                  zone_search: "",
-                  zone_search_open: True,
-                  pom_cards: model.pom_cards,
-                  raid_beaten: model.raid_beaten,
-                  raid_status: model.raid_status,
-                  raid_kill_mode: model.raid_kill_mode,
-                  raid_collapsed: model.raid_collapsed,
-                  epic_done: model.epic_done,
-                  epic_class_filter: model.epic_class_filter,
-                  characters: model.characters,
-                  char_form: model.char_form,
-                  char_editing: model.char_editing,
-                  char_error: model.char_error,
-                ),
-                effect.none(),
-              )
-            }
+            False ->
+              navigate_to(model, SamplePage(samples.zone_index_sample()))
           }
       }
+
+    RouteChanged(hash) -> {
+      let #(next, load_effect) = apply_route(model, router.decode(hash))
+      #(next, load_effect)
+    }
 
     UserClosedZoneSearch -> #(
       Model(..model, zone_search_open: False),
@@ -810,10 +857,11 @@ fn view(model: Model) -> Element(Msg) {
         attribute.attribute("aria-label", "Sections"),
       ],
       [
-        nav_button(
+        nav_link(
           "Paste Markdown",
           model.page == PastePage,
           "nav-root",
+          router.href(router.Paste),
           UserChosePaste,
         ),
         ..list.map(samples.groups(), fn(group) {
@@ -1267,12 +1315,47 @@ fn nav_button(
   kind: String,
   msg: Msg,
 ) -> Element(Msg) {
+  case msg {
+    UserChosePaste ->
+      nav_link(label, active, kind, router.href(router.Paste), msg)
+    UserChoseSample(sample) ->
+      nav_link(
+        label,
+        active,
+        kind,
+        router.href(router.Sample(sample.id)),
+        msg,
+      )
+    _ -> {
+      let class = case active {
+        True -> "nav-link " <> kind <> " active"
+        False -> "nav-link " <> kind
+      }
+      html.button(
+        [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
+        [html.text(label)],
+      )
+    }
+  }
+}
+
+fn nav_link(
+  label: String,
+  active: Bool,
+  kind: String,
+  href: String,
+  msg: Msg,
+) -> Element(Msg) {
   let class = case active {
     True -> "nav-link " <> kind <> " active"
     False -> "nav-link " <> kind
   }
-  html.button(
-    [attribute.type_("button"), attribute.class(class), event.on_click(msg)],
+  html.a(
+    [
+      attribute.href(href),
+      attribute.class(class),
+      event.on_click(msg) |> event.prevent_default,
+    ],
     [html.text(label)],
   )
 }
