@@ -166,9 +166,27 @@ fn by_class_bucket() -> SampleGroup {
       buckets: [],
     ),
     SampleGroup(
+      id: "eq-enchanter",
+      label: "Enchanter",
+      samples: everquest_enchanter(),
+      buckets: [],
+    ),
+    SampleGroup(
       id: "eq-monk",
       label: "Monk",
       samples: everquest_monk(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-necromancer",
+      label: "Necromancer",
+      samples: everquest_necromancer(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "eq-paladin",
+      label: "Paladin",
+      samples: everquest_paladin(),
       buckets: [],
     ),
     SampleGroup(
@@ -1083,6 +1101,18 @@ fn everquest_druid() -> List(Sample) {
   ]
 }
 
+fn everquest_enchanter() -> List(Sample) {
+  [
+    sheet(
+      "enchanter-chests",
+      "Chests",
+      "everquest/byClass",
+      "Enchanter-Chests.md",
+      "Groupable enchanter chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
 fn everquest_monk() -> List(Sample) {
   [
     sheet(
@@ -1105,6 +1135,30 @@ fn everquest_monk() -> List(Sample) {
       "everquest/byClass",
       "Monk-Earrings.md",
       "Groupable monk earrings (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_necromancer() -> List(Sample) {
+  [
+    sheet(
+      "necromancer-chests",
+      "Chests",
+      "everquest/byClass",
+      "Necromancer-Chests.md",
+      "Groupable necromancer chests (Classic / Kunark / Velious).",
+    ),
+  ]
+}
+
+fn everquest_paladin() -> List(Sample) {
+  [
+    sheet(
+      "paladin-chests",
+      "Chests",
+      "everquest/byClass",
+      "Paladin-Chests.md",
+      "Groupable paladin chests (Classic / Kunark / Velious).",
     ),
   ]
 }
