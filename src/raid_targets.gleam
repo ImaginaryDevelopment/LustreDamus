@@ -40,124 +40,147 @@ pub type Target {
     id: String,
     name: String,
     zone: String,
+    /// Classic | Kunark | Velious
     expansion: String,
+    /// Zone subsection when the zone has more than 2 raid targets (e.g. ToV, ST, VP).
+    section: Option(String),
     /// Approximate HP from zone sheets / IdleQuest when known.
     hp: Option(Int),
     note: String,
   )
 }
 
+/// One block under an expansion heading — either ungrouped targets or a named zone section.
+pub type SectionBlock {
+  SectionBlock(title: Option(String), targets: List(Target))
+}
+
 /// Stable ids used for localStorage — keep in sync with Raid-Targets.md.
 pub fn targets() -> List(Target) {
-  list.flatten([
-    classic(),
-    kunark(),
-    temple_of_veeshan(),
-    velious(),
-  ])
+  list.flatten([classic(), kunark(), velious()])
   |> list.sort(compare_expansion_then_hp)
 }
 
 fn classic() -> List(Target) {
   [
     // HP from idlequest-content npc_types (classic zone rows; not Fabled).
-    t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", Some(32_000), "Fire giant dragon"),
-    t("lady-vox", "Lady Vox", "Permafrost", "Classic", Some(32_000), "Ice dragon"),
-    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", Some(32_000), "God"),
-    t("cazic-thule", "Cazic-Thule", "Plane of Fear", "Classic", Some(450_000), "God"),
+    t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", None, Some(32_000), "Fire giant dragon"),
+    t("lady-vox", "Lady Vox", "Permafrost", "Classic", None, Some(32_000), "Ice dragon"),
+    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", None, Some(32_000), "God"),
+    t("cazic-thule", "Cazic-Thule", "Plane of Fear", "Classic", None, Some(450_000), "God"),
   ]
 }
 
 fn kunark() -> List(Target) {
+  let karnor = Some("Karnor's Castle")
+  let chardok = Some("Chardok")
+  let vp = Some("Veeshan's Peak")
   [
-    t("construct-of-sathir", "Construct of Sathir", "Karnor's Castle", "Kunark", Some(10_750), "2-group"),
-    t("drusella-sathir", "Drusella Sathir", "Howling Stones", "Kunark", Some(15_750), "2-group east boss"),
-    t("venril-sathir", "Venril Sathir", "Karnor's Castle", "Kunark", Some(18_325), "Live VS"),
+    t("construct-of-sathir", "Construct of Sathir", "Karnor's Castle", "Kunark", karnor, Some(10_750), "2-group"),
+    t("drusella-sathir", "Drusella Sathir", "Howling Stones", "Kunark", None, Some(15_750), "2-group east boss"),
+    t("venril-sathir", "Venril Sathir", "Karnor's Castle", "Kunark", karnor, Some(18_325), "Live VS"),
     t(
       "venril-sathir-triggered",
       "Venril Sathir (Triggered)",
       "Karnor's Castle",
       "Kunark",
+      karnor,
       Some(18_325),
       "2-group; Pulsing Green Stones",
     ),
-    t("korocust", "Korocust", "Chardok", "Kunark", Some(22_125), "2-group bridge"),
-    t("prince-selrach", "Prince Selrach Di`zok", "Chardok", "Kunark", Some(25_000), "Royals"),
-    t("trunt", "Trunt", "Mines of Nurga", "Kunark", Some(29_000), "2-group triggered"),
-    t("queen-velazul", "Queen Velazul Di`zok", "Chardok", "Kunark", Some(30_000), "Royals"),
-    t("overking-bathezid", "Overking Bathezid", "Chardok", "Kunark", Some(32_000), "Royals"),
-    t("trakanon", "Trakanon", "Old Sebilis", "Kunark", Some(32_000), "Dragon lair"),
-    t("faydedar", "Faydedar", "Timorous Deep", "Kunark", Some(32_000), "Water dragon"),
-    t("gorenaire", "Gorenaire", "Dreadlands", "Kunark", Some(32_000), "Outdoor dragon"),
-    t("severilous", "Severilous", "Emerald Jungle", "Kunark", Some(32_000), "Outdoor dragon"),
-    t("talendor", "Talendor", "Skyfire Mountains", "Kunark", Some(32_000), "Outdoor dragon"),
-    t("hoshkar", "Hoshkar", "Veeshan's Peak", "Kunark", Some(32_000), "VP crawl"),
-    t("silverwing", "Silverwing", "Veeshan's Peak", "Kunark", Some(454_000), "VP crawl"),
-    t("druushk", "Druushk", "Veeshan's Peak", "Kunark", Some(470_000), "VP crawl"),
-    t("phara-dar", "Phara Dar", "Veeshan's Peak", "Kunark", Some(681_000), "VP top"),
-    t("nexona", "Nexona", "Veeshan's Peak", "Kunark", Some(800_000), "VP crawl"),
-    t("xygoz", "Xygoz", "Veeshan's Peak", "Kunark", Some(814_000), "VP crawl"),
-  ]
-}
-
-fn temple_of_veeshan() -> List(Target) {
-  let exp = "Temple of Veeshan"
-  let zone = "Temple of Veeshan"
-  [
-    // HP from IdleQuest npc_types (templeveeshan spawn rows).
-    t("sevalak", "Sevalak", zone, exp, Some(101_500), "Great Spear of Dawn / Shield of Midnight"),
-    t("zlexak", "Zlexak", zone, exp, Some(121_500), "Dragonspine Rapier / Windraider's Belt"),
-    t("eashen", "Eashen of the Sky", zone, exp, Some(240_000), "Sky ring / bracelet / cloak"),
-    t("ikatiar", "Ikatiar the Venom", zone, exp, Some(250_000), "Ancient Wyvern Hide / Stinger"),
-    t("jorlleag", "Jorlleag", zone, exp, Some(250_000), "Sprinkler of the Spirits / Facesmasher"),
-    t("gozzrem", "Gozzrem", zone, exp, Some(280_000), "Wand of the Black Dragon Eye"),
-    t("telkorenar", "Telkorenar", zone, exp, Some(280_000), "True Mithril Breastplate / Lance of Thunder"),
-    t("dagarn", "Dagarn the Destroyer", zone, exp, Some(300_000), "Live spawn; Destroyer set / haste belt"),
-    t("lendiniara", "Lendiniara the Keeper", zone, exp, Some(320_000), "Talisman / Superiority set"),
-    t("lord-vyemm", "Lord Vyemm", zone, exp, Some(350_000), "Gaudralek / Vyemm's Eyes / Fang"),
-    t("lady-mirenilla", "Lady Mirenilla", zone, exp, Some(380_000), "Mithril helm/gaunts/boots / Frostwrath"),
-    t("dozekar", "Dozekar the Cursed", zone, exp, Some(386_500), "West; Tear set"),
-    t("aaryonar", "Aaryonar", zone, exp, Some(390_000), "Amulet of the Dreadgazer / Hand of the Master"),
-    t("cekenar", "Cekenar", zone, exp, Some(425_000), "Cekenar's Claw / Blackstar"),
-    t("lord-feshlak", "Lord Feshlak", zone, exp, Some(455_000), "Amulet of the Storm / Chestplate of Fiery Might"),
-    t("lord-kreizenn", "Lord Kreizenn", zone, exp, Some(465_000), "Dawncaller / Flame Etched Short Sword"),
-    t("lady-nevederia", "Lady Nevederia", zone, exp, Some(525_000), "Nevederia's Eyes / Girdle of Dark Power"),
-    t("lord-koi-doken", "Lord Koi`Doken", zone, exp, Some(580_000), "Deep Sea set / Siren Song"),
+    t("korocust", "Korocust", "Chardok", "Kunark", chardok, Some(22_125), "2-group bridge"),
+    t("prince-selrach", "Prince Selrach Di`zok", "Chardok", "Kunark", chardok, Some(25_000), "Royals"),
+    t("trunt", "Trunt", "Mines of Nurga", "Kunark", None, Some(29_000), "2-group triggered"),
+    t("queen-velazul", "Queen Velazul Di`zok", "Chardok", "Kunark", chardok, Some(30_000), "Royals"),
+    t("overking-bathezid", "Overking Bathezid", "Chardok", "Kunark", chardok, Some(32_000), "Royals"),
+    t("trakanon", "Trakanon", "Old Sebilis", "Kunark", None, Some(32_000), "Dragon lair"),
+    t("faydedar", "Faydedar", "Timorous Deep", "Kunark", None, Some(32_000), "Water dragon"),
+    t("gorenaire", "Gorenaire", "Dreadlands", "Kunark", None, Some(32_000), "Outdoor dragon"),
+    t("severilous", "Severilous", "Emerald Jungle", "Kunark", None, Some(32_000), "Outdoor dragon"),
+    t("talendor", "Talendor", "Skyfire Mountains", "Kunark", None, Some(32_000), "Outdoor dragon"),
+    t("hoshkar", "Hoshkar", "Veeshan's Peak", "Kunark", vp, Some(32_000), "VP crawl"),
+    t("silverwing", "Silverwing", "Veeshan's Peak", "Kunark", vp, Some(454_000), "VP crawl"),
+    t("druushk", "Druushk", "Veeshan's Peak", "Kunark", vp, Some(470_000), "VP crawl"),
+    t("phara-dar", "Phara Dar", "Veeshan's Peak", "Kunark", vp, Some(681_000), "VP top"),
+    t("nexona", "Nexona", "Veeshan's Peak", "Kunark", vp, Some(800_000), "VP crawl"),
+    t("xygoz", "Xygoz", "Veeshan's Peak", "Kunark", vp, Some(814_000), "VP crawl"),
   ]
 }
 
 fn velious() -> List(Target) {
+  list.flatten([
+    velious_misc(),
+    temple_of_veeshan(Some("Temple of Veeshan")),
+    sleeper_tomb(Some("Sleeper's Tomb")),
+  ])
+}
+
+fn velious_misc() -> List(Target) {
   [
-    t("vaniki", "Vaniki", "Dragon Necropolis", "Velious", Some(45_000), "Chetari raid named"),
-    t("zlandicar", "Zlandicar", "Dragon Necropolis", "Velious", Some(110_000), "Necropolis dragon"),
+    t("vaniki", "Vaniki", "Dragon Necropolis", "Velious", None, Some(45_000), "Chetari raid named"),
+    t("zlandicar", "Zlandicar", "Dragon Necropolis", "Velious", None, Some(110_000), "Necropolis dragon"),
     t(
       "doljon",
       "Lord Doljonijiarnimorinar",
       "Velketor's Labyrinth",
       "Velious",
+      None,
       Some(147_000),
       "Efreeti",
     ),
-    t("derakor", "Derakor the Vindicator", "Kael Drakkel", "Velious", Some(180_000), "Near throne"),
-    t("tukaarak", "Tukaarak the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Ice warder"),
-    t("nanzata", "Nanzata the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Fire warder"),
-    t("ventani", "Ventani the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Disease warder"),
-    t("hraashna", "Hraashna the Warder", "Sleeper's Tomb", "Velious", Some(200_000), "Magic warder"),
-    t("velketor", "Velketor the Sorcerer", "Velketor's Labyrinth", "Velious", Some(201_500), "Tower boss"),
-    t("guardian-of-tunare", "Guardian of Tunare", "Plane of Growth", "Velious", Some(310_000), "With Tunare"),
-    t("master-of-the-guard", "Master of the Guard", "Sleeper's Tomb", "Velious", Some(326_000), "ST (~100k–326k)"),
-    t("progenitor", "The Progenitor", "Sleeper's Tomb", "Velious", Some(327_000), "ST (~150k–327k)"),
-    t("dain-frostreaver", "Dain Frostreaver IV", "Icewell Keep", "Velious", Some(352_000), "Coldain king"),
-    t("kildrukaun", "Kildrukaun the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Black ancient"),
-    t("vyskudra", "Vyskudra the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Storm ancient"),
-    t("tjudawos", "Tjudawos the Ancient", "Sleeper's Tomb", "Velious", Some(352_000), "Gold ancient"),
-    t("final-arbiter", "The Final Arbiter", "Sleeper's Tomb", "Velious", Some(357_000), "ST (~200k–357k)"),
-    t("zeixshi-kar", "Zeixshi-Kar the Ancient", "Sleeper's Tomb", "Velious", Some(377_000), "Silver ancient"),
-    t("king-tormax", "King Tormax", "Kael Drakkel", "Velious", Some(452_000), "Kromzek king"),
-    t("lord-yelinak", "Lord Yelinak", "Skyshrine", "Velious", Some(500_000), "Dragon king"),
-    t("tunare", "Tunare", "Plane of Growth", "Velious", Some(530_000), "Goddess"),
-    t("all-seeing-eye", "All-Seeing Eye", "Plane of Mischief", "Velious", Some(709_000), "Huge HP fluff"),
-    t("the-sleeper", "The Sleeper (Kerafyrm)", "Sleeper's Tomb", "Velious", Some(3_500_000), "Wake event"),
+    t("derakor", "Derakor the Vindicator", "Kael Drakkel", "Velious", None, Some(180_000), "Near throne"),
+    t("velketor", "Velketor the Sorcerer", "Velketor's Labyrinth", "Velious", None, Some(201_500), "Tower boss"),
+    t("guardian-of-tunare", "Guardian of Tunare", "Plane of Growth", "Velious", None, Some(310_000), "With Tunare"),
+    t("dain-frostreaver", "Dain Frostreaver IV", "Icewell Keep", "Velious", None, Some(352_000), "Coldain king"),
+    t("king-tormax", "King Tormax", "Kael Drakkel", "Velious", None, Some(452_000), "Kromzek king"),
+    t("lord-yelinak", "Lord Yelinak", "Skyshrine", "Velious", None, Some(500_000), "Dragon king"),
+    t("tunare", "Tunare", "Plane of Growth", "Velious", None, Some(530_000), "Goddess"),
+    t("all-seeing-eye", "All-Seeing Eye", "Plane of Mischief", "Velious", None, Some(709_000), "Huge HP fluff"),
+  ]
+}
+
+fn sleeper_tomb(section: Option(String)) -> List(Target) {
+  let zone = "Sleeper's Tomb"
+  let exp = "Velious"
+  [
+    t("tukaarak", "Tukaarak the Warder", zone, exp, section, Some(200_000), "Ice warder"),
+    t("nanzata", "Nanzata the Warder", zone, exp, section, Some(200_000), "Fire warder"),
+    t("ventani", "Ventani the Warder", zone, exp, section, Some(200_000), "Disease warder"),
+    t("hraashna", "Hraashna the Warder", zone, exp, section, Some(200_000), "Magic warder"),
+    t("master-of-the-guard", "Master of the Guard", zone, exp, section, Some(326_000), "ST (~100k–326k)"),
+    t("progenitor", "The Progenitor", zone, exp, section, Some(327_000), "ST (~150k–327k)"),
+    t("kildrukaun", "Kildrukaun the Ancient", zone, exp, section, Some(352_000), "Black ancient"),
+    t("vyskudra", "Vyskudra the Ancient", zone, exp, section, Some(352_000), "Storm ancient"),
+    t("tjudawos", "Tjudawos the Ancient", zone, exp, section, Some(352_000), "Gold ancient"),
+    t("final-arbiter", "The Final Arbiter", zone, exp, section, Some(357_000), "ST (~200k–357k)"),
+    t("zeixshi-kar", "Zeixshi-Kar the Ancient", zone, exp, section, Some(377_000), "Silver ancient"),
+    t("the-sleeper", "The Sleeper (Kerafyrm)", zone, exp, section, Some(3_500_000), "Wake event"),
+  ]
+}
+
+fn temple_of_veeshan(section: Option(String)) -> List(Target) {
+  let zone = "Temple of Veeshan"
+  let exp = "Velious"
+  [
+    // HP from IdleQuest npc_types (templeveeshan spawn rows).
+    t("sevalak", "Sevalak", zone, exp, section, Some(101_500), "Great Spear of Dawn / Shield of Midnight"),
+    t("zlexak", "Zlexak", zone, exp, section, Some(121_500), "Dragonspine Rapier / Windraider's Belt"),
+    t("eashen", "Eashen of the Sky", zone, exp, section, Some(240_000), "Sky ring / bracelet / cloak"),
+    t("ikatiar", "Ikatiar the Venom", zone, exp, section, Some(250_000), "Ancient Wyvern Hide / Stinger"),
+    t("jorlleag", "Jorlleag", zone, exp, section, Some(250_000), "Sprinkler of the Spirits / Facesmasher"),
+    t("gozzrem", "Gozzrem", zone, exp, section, Some(280_000), "Wand of the Black Dragon Eye"),
+    t("telkorenar", "Telkorenar", zone, exp, section, Some(280_000), "True Mithril Breastplate / Lance of Thunder"),
+    t("dagarn", "Dagarn the Destroyer", zone, exp, section, Some(300_000), "Live spawn; Destroyer set / haste belt"),
+    t("lendiniara", "Lendiniara the Keeper", zone, exp, section, Some(320_000), "Talisman / Superiority set"),
+    t("lord-vyemm", "Lord Vyemm", zone, exp, section, Some(350_000), "Gaudralek / Vyemm's Eyes / Fang"),
+    t("lady-mirenilla", "Lady Mirenilla", zone, exp, section, Some(380_000), "Mithril helm/gaunts/boots / Frostwrath"),
+    t("dozekar", "Dozekar the Cursed", zone, exp, section, Some(386_500), "West; Tear set"),
+    t("aaryonar", "Aaryonar", zone, exp, section, Some(390_000), "Amulet of the Dreadgazer / Hand of the Master"),
+    t("cekenar", "Cekenar", zone, exp, section, Some(425_000), "Cekenar's Claw / Blackstar"),
+    t("lord-feshlak", "Lord Feshlak", zone, exp, section, Some(455_000), "Amulet of the Storm / Chestplate of Fiery Might"),
+    t("lord-kreizenn", "Lord Kreizenn", zone, exp, section, Some(465_000), "Dawncaller / Flame Etched Short Sword"),
+    t("lady-nevederia", "Lady Nevederia", zone, exp, section, Some(525_000), "Nevederia's Eyes / Girdle of Dark Power"),
+    t("lord-koi-doken", "Lord Koi`Doken", zone, exp, section, Some(580_000), "Deep Sea set / Siren Song"),
   ]
 }
 
@@ -166,29 +189,78 @@ fn t(
   name: String,
   zone: String,
   expansion: String,
+  section: Option(String),
   hp: Option(Int),
   note: String,
 ) -> Target {
-  Target(id:, name:, zone:, expansion:, hp:, note:)
+  Target(id:, name:, zone:, expansion:, section:, hp:, note:)
 }
 
-pub fn by_expansion() -> List(#(String, List(Target))) {
+/// Expansion headings with optional zone subsections (>2 raid targets in that zone).
+pub fn by_expansion() -> List(#(String, List(SectionBlock))) {
   [
-    #("Classic", sorted_group(classic())),
-    #("Kunark", sorted_group(kunark())),
-    #("Temple of Veeshan", sorted_group(temple_of_veeshan())),
-    #("Velious", sorted_group(velious())),
+    #("Classic", blocks_for(classic())),
+    #("Kunark", blocks_for(kunark())),
+    #("Velious", blocks_for(velious())),
   ]
 }
 
-fn sorted_group(group: List(Target)) -> List(Target) {
-  list.sort(group, compare_hp_then_name)
+fn blocks_for(group: List(Target)) -> List(SectionBlock) {
+  let section_titles =
+    group
+    |> list.filter_map(fn(t) {
+      case t.section {
+        Some(title) -> Ok(title)
+        None -> Error(Nil)
+      }
+    })
+    |> list.unique
+  let ungrouped =
+    group
+    |> list.filter(fn(t) { t.section == None })
+    |> list.sort(compare_hp_then_name)
+  let sections =
+    list.map(section_titles, fn(title) {
+      SectionBlock(
+        title: Some(title),
+        targets: group
+          |> list.filter(fn(t) { t.section == Some(title) })
+          |> list.sort(compare_hp_then_name),
+      )
+    })
+  case ungrouped {
+    [] -> sections
+    rows -> [SectionBlock(title: None, targets: rows), ..sections]
+  }
 }
 
 fn compare_expansion_then_hp(a: Target, b: Target) -> order.Order {
-  case string.compare(a.expansion, b.expansion) {
-    order.Eq -> compare_hp_then_name(a, b)
+  case int.compare(expansion_rank(a.expansion), expansion_rank(b.expansion)) {
+    order.Eq -> compare_section_then_hp(a, b)
     other -> other
+  }
+}
+
+fn compare_section_then_hp(a: Target, b: Target) -> order.Order {
+  case section_key(a.section), section_key(b.section) {
+    l, r if l == r -> compare_hp_then_name(a, b)
+    l, r -> string.compare(l, r)
+  }
+}
+
+fn section_key(section: Option(String)) -> String {
+  case section {
+    None -> ""
+    Some(title) -> title
+  }
+}
+
+fn expansion_rank(expansion: String) -> Int {
+  case expansion {
+    "Classic" -> 0
+    "Kunark" -> 1
+    "Velious" -> 2
+    _ -> 9
   }
 }
 
@@ -213,6 +285,14 @@ pub fn hp_label(hp: Option(Int)) -> String {
       "~" <> int.to_string(n / 1_000_000) <> "M"
     Some(n) if n >= 1000 -> "~" <> int.to_string(n / 1000) <> "k"
     Some(n) -> int.to_string(n)
+  }
+}
+
+/// Display label for the markdown Expansion column (includes zone subsection).
+pub fn expansion_label(t: Target) -> String {
+  case t.section {
+    None -> t.expansion
+    Some(section) -> t.expansion <> " › " <> section
   }
 }
 

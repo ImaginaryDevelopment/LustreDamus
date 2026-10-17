@@ -563,13 +563,19 @@ td.cell-item {
   background: var(--panel);
 }
 
+.raid-targets-group {
+  display: grid;
+  gap: 0.45rem;
+}
+
 .raid-targets-head {
   display: grid;
   gap: 0.35rem;
 }
 
 .raid-targets-head h2,
-.raid-targets-group h3 {
+.raid-targets-group h3,
+.raid-targets-section h4 {
   margin: 0;
   font-size: 1.15rem;
   letter-spacing: -0.02em;
@@ -578,6 +584,21 @@ td.cell-item {
 .raid-targets-group h3 {
   font-size: 1.05rem;
   margin-bottom: 0.4rem;
+}
+
+.raid-targets-section {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.raid-targets-section + .raid-targets-section {
+  margin-top: 0.55rem;
+}
+
+.raid-targets-section h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
 }
 
 .raid-targets-head p {

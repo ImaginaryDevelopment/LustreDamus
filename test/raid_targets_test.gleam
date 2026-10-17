@@ -40,11 +40,45 @@ pub fn by_expansion_covers_all_targets_test() {
   let listed =
     raid_targets.by_expansion()
     |> list.flat_map(fn(group) {
-      let #(_, targets) = group
-      targets
+      let #(_, blocks) = group
+      list.flat_map(blocks, fn(block) { block.targets })
     })
     |> list.length
   listed |> should.equal(list.length(raid_targets.targets()))
+}
+
+pub fn tov_and_multi_boss_zones_are_sections_test() {
+  let assert Ok(#("Velious", velious_blocks)) =
+    list.find(raid_targets.by_expansion(), fn(g) {
+      let #(name, _) = g
+      name == "Velious"
+    })
+  let titles =
+    velious_blocks
+    |> list.filter_map(fn(block) {
+      case block.title {
+        Some(title) -> Ok(title)
+        _ -> Error(Nil)
+      }
+    })
+  titles
+  |> should.equal(["Temple of Veeshan", "Sleeper's Tomb"])
+
+  let assert Ok(#("Kunark", kunark_blocks)) =
+    list.find(raid_targets.by_expansion(), fn(g) {
+      let #(name, _) = g
+      name == "Kunark"
+    })
+  let kunark_titles =
+    kunark_blocks
+    |> list.filter_map(fn(block) {
+      case block.title {
+        Some(title) -> Ok(title)
+        _ -> Error(Nil)
+      }
+    })
+  kunark_titles
+  |> should.equal(["Karnor's Castle", "Chardok", "Veeshan's Peak"])
 }
 
 pub fn targets_sorted_expansion_then_hp_test() {

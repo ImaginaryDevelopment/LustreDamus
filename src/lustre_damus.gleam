@@ -1676,60 +1676,76 @@ fn raid_targets_panel(
         ),
       ]),
       ..list.map(raid_targets.by_expansion(), fn(group) {
-        let #(expansion, targets) = group
+        let #(expansion, blocks) = group
         html.div([attribute.class("raid-targets-group")], [
           html.h3([], [html.text(expansion)]),
-          html.ul(
-            [attribute.class("raid-targets-list")],
-            list.map(targets, fn(t) {
-              let checked = raid_targets.has_beaten(beaten, t.id)
-              let status = raid_targets.get_status(statuses, t.id)
-              let kill_mode = raid_targets.get_kill_mode(kill_modes, t.id)
-              html.li(
-                [
-                  attribute.class(case checked {
-                    True -> "raid-target-row beaten"
-                    False -> "raid-target-row"
-                  }),
-                ],
-                [
-                  html.label([attribute.class("raid-target-check")], [
-                    html.input([
-                      attribute.type_("checkbox"),
-                      attribute.checked(checked),
-                      attribute.attribute(
-                        "aria-label",
-                        t.name <> " beaten",
-                      ),
-                      event.on_check(fn(on) {
-                        UserToggledRaidBeaten(t.id, on)
-                      }),
-                    ]),
-                  ]),
-                  html.span([attribute.class("raid-target-name")], [
-                    html.text(t.name),
-                  ]),
-                  raid_status_select(t.id, t.name, status),
-                  raid_kill_mode_select(t.id, t.name, kill_mode),
-                  html.span([attribute.class("raid-target-hp")], [
-                    html.text(raid_targets.hp_label(t.hp)),
-                  ]),
-                  html.span([attribute.class("raid-target-zone")], [
-                    html.text(t.zone),
-                  ]),
-                  case t.note {
-                    "" -> element.none()
-                    note ->
-                      html.span([attribute.class("raid-target-note")], [
-                        html.text(note),
-                      ])
-                  },
-                ],
-              )
-            }),
-          ),
+          ..list.map(blocks, fn(block) {
+            raid_targets_section_block(block, beaten, statuses, kill_modes)
+          })
         ])
       })
+    ],
+  )
+}
+
+fn raid_targets_section_block(
+  block: raid_targets.SectionBlock,
+  beaten: Dict(String, Bool),
+  statuses: Dict(String, raid_targets.Status),
+  kill_modes: Dict(String, raid_targets.KillMode),
+) -> Element(Msg) {
+  let heading = case block.title {
+    None -> element.none()
+    Some(title) -> html.h4([], [html.text(title)])
+  }
+  html.div([attribute.class("raid-targets-section")], [
+    heading,
+    html.ul(
+      [attribute.class("raid-targets-list")],
+      list.map(block.targets, fn(t) {
+        raid_target_row(t, beaten, statuses, kill_modes)
+      }),
+    ),
+  ])
+}
+
+fn raid_target_row(
+  t: raid_targets.Target,
+  beaten: Dict(String, Bool),
+  statuses: Dict(String, raid_targets.Status),
+  kill_modes: Dict(String, raid_targets.KillMode),
+) -> Element(Msg) {
+  let checked = raid_targets.has_beaten(beaten, t.id)
+  let status = raid_targets.get_status(statuses, t.id)
+  let kill_mode = raid_targets.get_kill_mode(kill_modes, t.id)
+  html.li(
+    [
+      attribute.class(case checked {
+        True -> "raid-target-row beaten"
+        False -> "raid-target-row"
+      }),
+    ],
+    [
+      html.label([attribute.class("raid-target-check")], [
+        html.input([
+          attribute.type_("checkbox"),
+          attribute.checked(checked),
+          attribute.attribute("aria-label", t.name <> " beaten"),
+          event.on_check(fn(on) { UserToggledRaidBeaten(t.id, on) }),
+        ]),
+      ]),
+      html.span([attribute.class("raid-target-name")], [html.text(t.name)]),
+      raid_status_select(t.id, t.name, status),
+      raid_kill_mode_select(t.id, t.name, kill_mode),
+      html.span([attribute.class("raid-target-hp")], [
+        html.text(raid_targets.hp_label(t.hp)),
+      ]),
+      html.span([attribute.class("raid-target-zone")], [html.text(t.zone)]),
+      case t.note {
+        "" -> element.none()
+        note ->
+          html.span([attribute.class("raid-target-note")], [html.text(note)])
+      },
     ],
   )
 }
