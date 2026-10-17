@@ -123,6 +123,7 @@ fn everquest_group() -> SampleGroup {
         id: "eq-gear",
         label: "Gear",
         samples: [
+          all_earrings_sample(),
           quest_gear_sample(),
           twinks_sample(),
           epic_min_levels_sample(),
@@ -287,6 +288,16 @@ fn epic_quests_sample() -> Sample {
 
 pub fn is_epic_quests(sample: Sample) -> Bool {
   sample.id == "epic-quests"
+}
+
+fn all_earrings_sample() -> Sample {
+  sheet(
+    "all-earrings",
+    "All Earrings",
+    "everquest",
+    "All-Earrings.md",
+    "Groupable Class: ALL earrings — unrestricted farms for any character.",
+  )
 }
 
 fn quest_gear_sample() -> Sample {
@@ -1110,6 +1121,13 @@ fn everquest_enchanter() -> List(Sample) {
       "Enchanter-Chests.md",
       "Groupable enchanter chests (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "enchanter-earrings",
+      "Earrings",
+      "everquest/byClass",
+      "Enchanter-Earrings.md",
+      "Groupable enchanter earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -1148,6 +1166,13 @@ fn everquest_necromancer() -> List(Sample) {
       "Necromancer-Chests.md",
       "Groupable necromancer chests (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "necromancer-earrings",
+      "Earrings",
+      "everquest/byClass",
+      "Necromancer-Earrings.md",
+      "Groupable necromancer earrings (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
@@ -1159,6 +1184,13 @@ fn everquest_paladin() -> List(Sample) {
       "everquest/byClass",
       "Paladin-Chests.md",
       "Groupable paladin chests (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "paladin-earrings",
+      "Earrings",
+      "everquest/byClass",
+      "Paladin-Earrings.md",
+      "Groupable paladin earrings (Classic / Kunark / Velious).",
     ),
   ]
 }
@@ -1230,6 +1262,13 @@ fn everquest_shadow_knight() -> List(Sample) {
       "everquest/byClass",
       "Shadow-Knight-Chests.md",
       "Groupable shadow knight chests (Classic / Kunark / Velious).",
+    ),
+    sheet(
+      "shadow-knight-earrings",
+      "Earrings",
+      "everquest/byClass",
+      "Shadow-Knight-Earrings.md",
+      "Groupable shadow knight earrings (Classic / Kunark / Velious).",
     ),
     sheet(
       "shadow-knight-main-hand",
