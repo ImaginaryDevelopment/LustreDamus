@@ -46,16 +46,21 @@ Sort by **Item** or **DMG**. Filter also matches zone / camp.
 
 Raid / formed-raid piercers worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Kelorek`Dar Spine Razor | Kelorek`Dar (Cobalt Scar) | Outdoor water dragon — long respawn |
-| Serpent's Tooth | Master Yael (The Hole) | Hole raid pierce |
-| Trident of the Seven Seas | Phinigel Autropos (Kedge) | Classic raid pierce |
-| The Horn of Hsagra | King Tormax (Kael) | Kael king |
-| Nightfall; Feverblade; Razor Sharp Short Sword | Veeshan's Peak | VP piercers |
-| Massive Heartwood Thorn | Tunare (Plane of Growth) | Growth god |
-| Frosted Ice Spike; Ikatiar's Stinger; Flame Etched Short Sword | Temple of Veeshan | ToV dragon piercers |
-| Primal / Priceless Velium Spear | Sleeper / high raid | Top raid spears |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Kelorek`Dar Spine Razor | 9/20 (0.45) | Kelorek`Dar (Cobalt Scar) | Outdoor water dragon — long respawn |
+| Serpent's Tooth | 13/27 (0.48) | Master Yael (The Hole) | Hole raid pierce |
+| Trident of the Seven Seas | 10/30 (0.33) Frost Strike | Phinigel Autropos (Kedge) | Classic raid pierce |
+| The Horn of Hsagra | 13/20 (0.65) AC 35 STA +10 HP +75 | King Tormax (Kael) | Kael king |
+| Nightfall | 9/16 (0.56) STR/DEX +5 HP +25 Dooming Darkness | Nexona (Veeshan's Peak) | VP piercer |
+| Feverblade - Bane of the Shissar | 11/18 (0.61) Sebilite Pox | Hoshkar (Veeshan's Peak) | VP piercer |
+| Razor Sharp Short Sword | VP short pierce | Veeshan's Peak | VP piercer |
+| Massive Heartwood Thorn | 15/21 (0.71) DEX/STA/AGI +15 HP +50 Combust | Tunare (Plane of Growth) | Growth god |
+| Frosted Ice Spike | ToV dragon pierce | Temple of Veeshan | ToV dragon piercer |
+| Ikatiar's Stinger | ToV venom pierce | Temple of Veeshan | ToV dragon piercer |
+| Flame Etched Short Sword | ToV fire pierce | Temple of Veeshan | ToV dragon piercer |
+| Primal / Priceless Velium Spear | Sleeper / high-raid velium spear pool | Sleeper / high raid | Top raid spears |
+
 
 ## Skip
 

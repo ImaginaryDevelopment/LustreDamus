@@ -27,11 +27,10 @@ Sort by **Item** or **Mana**. Filter also matches zone / camp. Prefer **INT / Ma
 
 Raid earrings worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Earring of Living Thunder | Derakor the Vindicator (Kael) | Kael raid ear |
-| Dragons Tear | Lord Yelinak (Skyshrine) | Dragon raid ear |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Earring of Living Thunder | AC 10 STR +9 SV MAGIC +10 See Invisible | Derakor the Vindicator (Kael) | Kael raid ear |
+| Dragons Tear | AC 10 WIS/INT +7 HP +10 Mana +40 SV DISEASE/POISON +5 | Lord Yelinak (Skyshrine) | Dragon raid ear |
 ## Skip
 
 | Item | Why skip |

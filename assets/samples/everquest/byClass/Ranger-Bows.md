@@ -29,10 +29,11 @@ Camps a typical 45 group can hold. Skip Accursed / Luclin / plane tables.
 
 Raid / formed-raid bows worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| War Bow of Rallos Zek | Plane / raid tables | Classic high-end bow |
-| Primal / Priceless Velium Reinforced Bow | Sleeper warders / high raid | Top Velious raid bows |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| War Bow of Rallos Zek | 43/45 (0.96) STR/DEX +25 HP +100 Torment proc Range 180 | Avatar of War (Kael) | Classic high-end bow |
+| Primal / Priceless Velium Reinforced Bow | Sleeper / high-raid velium bow pool | Sleeper warders / high raid | Top Velious raid bows |
+
 
 ## Skip
 

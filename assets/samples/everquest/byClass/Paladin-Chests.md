@@ -24,13 +24,12 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions. Prefer **AC
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Deepwater Breastplate | Trakanon (Sebilis) | PAL Kunark raid BP. Symbol of Pinzarn. No IKS |
-| Scaled Knight's Breastplate | Temple of Veeshan east (Unadorned → Skyshrine) | Skyshrine class armor |
-| Shining Breastplate | Kael Ally Kromzek path | Kael class armor |
-| Templar / Knight ToV west BP | Temple of Veeshan west (Ancient Tarnished) | Top Velious PAL BP |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Deepwater Breastplate | AC 40 STR/WIS/AGI +10 Mana +50 Symbol of Pinzarn | Trakanon (Sebilis) | PAL Kunark raid BP. Symbol of Pinzarn. No IKS |
+| Scaled Knight's Breastplate | AC 50 STR +14 DEX/STA/AGI +8 WIS +9 HP +70 Mana +60 Shield of Words | Temple of Veeshan east (Unadorned → Skyshrine) | Skyshrine class armor |
+| Shining Breastplate | AC 50+ plate PAL Kael Ally BP (Shield of Words path) | Kael Ally Kromzek path | Kael class armor |
+| Templar / Knight ToV west BP | AC 54-class ToV west PAL BP (WIS/STR hybrid) | Temple of Veeshan west (Ancient Tarnished) | Top Velious PAL BP |
 ## Skip
 
 | Item | Why skip |

@@ -58,16 +58,27 @@ Sort by **Item** or **DMG**. Filter also matches zone / camp.
 
 Raid / formed-raid main hands worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Serpent's Tooth; Earthshaker | Master Yael (The Hole) | Hole raid weapons |
-| Willsapper | Vaniki (Dragon Necropolis) | Pierce; long cycle |
-| The Horn of Hsagra | King Tormax (Kael) | Kael king pierce |
-| Scimitar of the Emerald Dawn; Skydarkener | Wuoshi (Wakening) | Outdoor dragon |
-| Soul Defiler; Craslith | Lord Yelinak (Skyshrine) | Yelinak 1HS / 2HS |
-| Executioner's Blade; Feverblade; Veldrak's Shortblade; Sword of Rile; Katana of Flowing Water | Veeshan's Peak | VP blades |
-| Frostwrath; Ikatiar's Stinger; Great Spear of Dawn; Nevederia's Claw | Temple of Veeshan | ToV dragon weapons |
-| Primal / Priceless Velium; Sleeper weapons | Sleeper's Tomb | Top raid tables |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Serpent's Tooth | 13/27 (0.48) | Master Yael (The Hole) | Hole raid pierce |
+| Earthshaker | Yael 2HS | Master Yael (The Hole) | Hole raid 2HS |
+| Willsapper | DN pierce; long cycle | Vaniki (Dragon Necropolis) | Pierce; long cycle |
+| The Horn of Hsagra | 13/20 (0.65) AC 35 STA +10 HP +75 | King Tormax (Kael) | Kael king pierce |
+| Scimitar of the Emerald Dawn | Wuoshi outdoor dragon 1HS | Wuoshi (Wakening) | Outdoor dragon |
+| Skydarkener | Wuoshi outdoor dragon | Wuoshi (Wakening) | Outdoor dragon |
+| Soul Defiler | Yelinak 1HS | Lord Yelinak (Skyshrine) | Yelinak 1HS |
+| Craslith | Yelinak 2HS | Lord Yelinak (Skyshrine) | Yelinak 2HS |
+| Executioner's Blade | VP blade | Veeshan's Peak | VP blade |
+| Feverblade - Bane of the Shissar | 11/18 (0.61) Sebilite Pox | Hoshkar (Veeshan's Peak) | VP blade |
+| Veldrak's Shortblade | VP shortblade | Veeshan's Peak | VP blade |
+| Sword of Rile | VP sword | Veeshan's Peak | VP blade |
+| Katana of Flowing Water | VP katana | Veeshan's Peak | VP blade |
+| Frostwrath | ToV dragon weapon | Temple of Veeshan | ToV dragon weapon |
+| Ikatiar's Stinger | ToV venom pierce | Temple of Veeshan | ToV dragon weapon |
+| Great Spear of Dawn | ToV spear | Temple of Veeshan | ToV dragon weapon |
+| Nevederia's Claw | ToV claw | Temple of Veeshan | ToV dragon weapon |
+| Primal / Priceless Velium; Sleeper weapons | Sleeper / high-raid velium weapon pool | Sleeper's Tomb | Top raid tables |
+
 
 ## Skip
 

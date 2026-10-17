@@ -51,13 +51,19 @@ Same Accursed jungle / inner camps as the rogue earring sheet — stout group, n
 
 Raid faces worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Faceguard of Bentos; Mask of Fright | Narandi / related Velious event | Event / war faces |
-| Eye of Cazic-Thule | Cazic-Thule (Fear / Accursed high) | Fear god face |
-| Snow Storm Mask; Mask of the Dragon Slayer | Velketor / Yelinak | Labyrinth / dragon |
-| Ancient Pirate's Eyepatch; Sky Watcher's Monocle; Transparent Eyepatch; Mask of Fall | Temple of Veeshan dragons | ToV faces |
-| Besmirched Mask of Conception | Sleeper ancients | Top raid face |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Faceguard of Bentos | Narandi / war event face | Narandi / related Velious event | Event / war face |
+| Mask of Fright | Narandi / war event face | Narandi / related Velious event | Event / war face |
+| Eye of Cazic-Thule | AC 15 HP +50 Mana +100 | Cazic-Thule (Fear) | Fear god face |
+| Snow Storm Mask | AC 7 STR +4 SV COLD +9 Heat Sight | Velketor | Labyrinth |
+| Mask of the Dragon Slayer | Yelinak dragon face | Lord Yelinak (Skyshrine) | Dragon |
+| Ancient Pirate's Eyepatch | ToV dragon face | Temple of Veeshan dragons | ToV face |
+| Sky Watcher's Monocle | ToV dragon face | Temple of Veeshan dragons | ToV face |
+| Transparent Eyepatch | ToV dragon face | Temple of Veeshan dragons | ToV face |
+| Mask of Fall | ToV dragon face | Temple of Veeshan dragons | ToV face |
+| Besmirched Mask of Conception | AC 12 STR/STA/AGI/DEX +10 HP +50 | Sleeper ancients | Top raid face |
+
 
 ## Skip
 

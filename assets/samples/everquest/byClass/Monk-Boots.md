@@ -22,13 +22,14 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 
 Raid / formed-raid boots worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Grey Suede Boots | Hoshkar (Veeshan's Peak) | VP haste feet |
-| Boots of the Destroyer | Temple of Veeshan | ToV dragon feet |
-| Ancient Wyvern Hide Boots | Temple of Veeshan dragons | ToV hide set |
-| White Lotus Slippers | Temple of Veeshan west (Ancient Tarnished) | ToV west |
-| Golden Star Slippers | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK feet |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Grey Suede Boots | AC 12 STR/AGI +8 HP +25 SV COLD/POISON +10 haste +41% | Hoshkar (Veeshan's Peak) | VP haste feet |
+| Boots of the Destroyer | AC 28 STR +10 STA +15 HP +25 | Dagarn the Destroyer (ToV) | ToV dragon feet |
+| Ancient Wyvern Hide Boots | AC 25 STA +15 SV POISON +15 | Ikatiar the Venom (ToV) | ToV hide set |
+| White Lotus Slippers | AC 7 STR +9 HP +40 SV all +3 Firefist | Temple of Veeshan west (Ancient Tarnished) | ToV west |
+| Golden Star Slippers | AC 10 STR +7 STA +2 HP +20 SV all +1 Firefist | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK feet |
+
 
 ## Skip
 

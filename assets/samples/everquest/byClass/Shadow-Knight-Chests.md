@@ -25,13 +25,12 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions. Prefer **AC
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Blood Ember Breastplate | Trakanon (Sebilis) | SHD Kunark raid BP |
-| Incarnadine Breastplate | Overking Bathezid (Chardok) | WAR SHD — Gather Shadows |
-| Blood Lord's Breastplate | Temple of Veeshan east (Unadorned → Onerind Fe`Dhar) | Skyshrine class armor |
-| Malevolent Breastplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHD BP |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Blood Ember Breastplate | AC 40 STR +12 DEX/STA/AGI +8 Major Shielding | Trakanon (Sebilis) | SHD Kunark raid BP |
+| Incarnadine Breastplate | AC 35 STR/DEX +15 INT +5 HP +25 Gather Shadows | Overking Bathezid (Chardok) | WAR SHD — Gather Shadows |
+| Blood Lord's Breastplate | AC 50 STR/DEX/AGI/INT +9 STA +8 HP/Mana +70 Invigorate | Temple of Veeshan east (Unadorned → Onerind Fe`Dhar) | Skyshrine class armor |
+| Malevolent Breastplate | AC 54 STR +15 DEX/STA/INT/AGI +7 HP +40 Mana +60 Invigorate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHD BP |
 ## Skip
 
 | Item | Why skip |

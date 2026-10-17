@@ -21,15 +21,14 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Tserrina's Robe | Tserrina (ToFS 7th) | **2-group.** AC 8 CHA +3 INT +6 HP +10 Mana +50 |
-| Loam Encrusted Robe | Master Yael (The Hole) | Hole raid |
-| Robe of the Kedge | Phinigel Autropos (Kedge) | Classic raid robe |
-| Mana Robe (Manna Robe) | Trakanon (Sebilis) | Mana Conversion click |
-| Vermilion Robe of Torrefaction | Velketor | Velketor raid robe |
-| Solist's Robe of Invocation | Veeshan's Peak | VP robe |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Tserrina's Robe | AC 8 CHA +3 INT +6 HP +10 Mana +50 | Tserrina (ToFS 7th) | **2-group** when she exists |
+| Loam Encrusted Robe | AC 9 DEX/AGI +10 INT +5 Mana +80 SV MAGIC +10 | Master Yael (The Hole) | Hole raid |
+| Robe of the Kedge | AC 8 STA +10 Mana +100 | Phinigel Autropos (Kedge) | Classic raid robe |
+| Mana Robe (Manna Robe) | AC 14 INT +8 Mana Conversion | Trakanon (Sebilis) | Mana Conversion click |
+| Vermilion Robe of Torrefaction | AC 15 INT +10 HP +40 Mana +75 SV FIRE +25 Conflagration | Velketor | Velketor raid robe |
+| Solist's Robe of Invocation | AC 14 STA +10 INT +13 Mana +70 Rend | Veeshan's Peak | VP robe |
 ## Skip
 
 | Item | Why skip |

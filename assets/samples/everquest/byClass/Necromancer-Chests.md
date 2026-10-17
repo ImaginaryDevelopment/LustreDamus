@@ -23,15 +23,14 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions. Prefer **IN
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Tserrina's Robe | Tserrina (ToFS 7th) | **2-group.** AC 8 CHA +3 INT +6 HP +10 Mana +50 |
-| Loam Encrusted Robe | Master Yael (The Hole) | Hole raid |
-| Mana Robe (Manna Robe) | Trakanon (Sebilis) | Mana Conversion click |
-| Maleficent Robe | Plane of Mischief | Mischief INT robe |
-| Rotting Robe | Temple of Veeshan east (Skyshrine path) | Skyshrine class armor |
-| Plague Bearer's / ToV west robe | Kael Ally / ToV west | Top Velious NEC robes |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Tserrina's Robe | AC 8 CHA +3 INT +6 HP +10 Mana +50 | Tserrina (ToFS 7th) | **2-group** when she exists |
+| Loam Encrusted Robe | AC 9 DEX/AGI +10 INT +5 Mana +80 SV MAGIC +10 | Master Yael (The Hole) | Hole raid |
+| Mana Robe (Manna Robe) | AC 14 INT +8 Mana Conversion | Trakanon (Sebilis) | Mana Conversion click |
+| Maleficent Robe | AC 22 STR +5 STA +15 CHA −10 INT +15 AGI +5 HP +100 Mana +40 SV DISEASE +20 SV POISON +15 | Plane of Mischief | Mischief INT robe |
+| Rotting Robe | AC 12 STA +15 CHA +7 INT +15 HP +70 Mana +50 Conjure Corpse | Temple of Veeshan east (Skyshrine path) | Skyshrine class armor |
+| Plague Bearer's / ToV west robe | AC 12+ NEC ToV west / Kael Ally silk (INT) | Kael Ally / ToV west | Top Velious NEC robes |
 ## Skip
 
 | Item | Why skip |

@@ -28,11 +28,11 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Hybrid: **HP / STR 
 
 Raid earrings worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Earring of Living Thunder | Derakor the Vindicator (Kael) | Kael raid ear |
-| Dragons Blood / Tear earrings | Lord Yelinak (Skyshrine) | Dragon raid ears |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Earring of Living Thunder | AC 10 STR +9 SV MAGIC +10 See Invisible | Derakor the Vindicator (Kael) | Kael raid ear |
+| Dragons Blood Earring | AC 10 STR/DEX +7 HP +10 SV DISEASE/POISON +5 | Lord Yelinak (Skyshrine) | Melee-facing dragon ear |
+| Dragons Tear Earring | AC 10 WIS/INT +7 HP +10 Mana +40 SV DISEASE/POISON +5 | Lord Yelinak (Skyshrine) | Caster-facing dragon ear |
 ## Skip
 
 | Item | Why skip |

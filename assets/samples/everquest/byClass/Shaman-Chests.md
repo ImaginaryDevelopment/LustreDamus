@@ -19,12 +19,11 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Jaundiced Bone Breastplate | Trakanon (Sebilis) | BAR TRL OGR |
-| Wolf Caller's Breastplate | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
-| Spirit Caller's Breastplate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHM BP |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Jaundiced Bone Breastplate | AC 35 WIS/AGI +10 HP +20 Mana +80 Bramblecoat | Trakanon (Sebilis) | BAR TRL OGR |
+| Wolf Caller's Breastplate | AC 43 STR/DEX/STA/AGI +6 WIS +15 HP +45 Mana +90 Riotous Health | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
+| Spirit Caller's Breastplate | AC 48 STR +4 DEX/STA +6 WIS +15 AGI +4 HP +40 Mana +70 Riotous Health | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHM BP |
 ## Skip
 
 | Item | Why skip |

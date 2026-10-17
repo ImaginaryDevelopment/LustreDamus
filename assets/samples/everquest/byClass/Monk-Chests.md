@@ -19,10 +19,9 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 
 Raid / formed-raid chests worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Golden Star Chest Wraps | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK wraps |
-
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Golden Star Chest Wraps | AC 23 STR +15 DEX/AGI +6 STA +13 HP +60 Invigorate | Temple of Veeshan west (Ancient Tarnished) | Top Velious MNK wraps |
 ## Skip
 
 | Item | Why skip |

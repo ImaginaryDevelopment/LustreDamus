@@ -23,12 +23,13 @@ Sort by **Item** or **AC**. Filter also matches camp / restrictions.
 
 Raid / formed-raid boots worth chasing after the group table. Ordered roughly **easier → harder**.
 
-| Item | Source | Notes |
-| --- | --- | --- |
-| Incarnadine Boots | Prince Selrach Di`zok (Chardok) | Chardok royal |
-| Grey Suede Boots | Hoshkar (Veeshan's Peak) | VP haste feet |
-| Mithril Boots | Lady Mirenilla (Temple of Veeshan) | ToV east |
-| Warlord's Boots | Temple of Veeshan west (Ancient Tarnished) | Top Velious WAR feet |
+| Item | AC / stats | Source | Notes |
+| --- | --- | --- | --- |
+| Incarnadine Boots | AC 18 STR/DEX +6 | Prince Selrach Di`zok (Chardok) | Chardok royal |
+| Grey Suede Boots | AC 12 STR/AGI +8 HP +25 SV COLD/POISON +10 haste +41% | Hoshkar (Veeshan's Peak) | VP haste feet |
+| Mithril Boots | ToV east Mirenilla plate feet | Lady Mirenilla (Temple of Veeshan) | ToV east |
+| Warlord's Boots | ToV west WAR feet (Ancient Tarnished) | Temple of Veeshan west (Ancient Tarnished) | Top Velious WAR feet |
+
 
 ## Skip
 
