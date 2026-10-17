@@ -8,24 +8,24 @@ Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest 
 
 | Expansion | Target | Zone | HP | Notes |
 | --- | --- | --- | ---: | --- |
-| Classic | Lord Nagafen | Nagafen's Lair | ~32k | Fire giant dragon |
-| Classic | Lady Vox | Permafrost | ~32k | Ice dragon |
-| Classic | Innoruuk | Plane of Hate | ~32k | God |
-| Classic | Cazic-Thule | Plane of Fear | ~450k | God |
+| Classic | Lord Nagafen | Nagafen's Lair | ~32k | Warrior / Bard / Paladin epic |
+| Classic | Lady Vox | Permafrost | ~32k | Bard / Paladin epic |
+| Classic | Innoruuk | Plane of Hate | ~32k | Ranger / Magician epic |
+| Classic | Cazic-Thule | Plane of Fear | ~450k | Necromancer epic |
 | Kunark | Drusella Sathir | Howling Stones | ~15k | 2-group east boss |
-| Kunark | Trunt | Mines of Nurga | ~29k | 2-group triggered |
-| Kunark | Trakanon | Old Sebilis | ~32k | Dragon lair |
-| Kunark | Faydedar | Timorous Deep | ~32k | Water dragon |
-| Kunark | Gorenaire | Dreadlands | ~32k | Outdoor dragon |
-| Kunark | Severilous | Emerald Jungle | ~32k | Outdoor dragon |
-| Kunark | Talendor | Skyfire Mountains | ~32k | Outdoor dragon |
+| Kunark | Trunt | Mines of Nurga | ~29k | Monk epic |
+| Kunark | Trakanon | Old Sebilis | ~32k | Bard epic |
+| Kunark | Faydedar | Timorous Deep | ~32k | Druid epic |
+| Kunark | Gorenaire | Dreadlands | ~32k | Bard / Paladin epic |
+| Kunark | Severilous | Emerald Jungle | ~32k | Warrior epic |
+| Kunark | Talendor | Skyfire Mountains | ~32k | Warrior / Bard / Paladin epic |
 | Kunark › Karnor's Castle | Construct of Sathir | Karnor's Castle | ~10k | 2-group |
-| Kunark › Karnor's Castle | Venril Sathir | Karnor's Castle | ~18k | Live VS |
-| Kunark › Karnor's Castle | Venril Sathir (Triggered) | Karnor's Castle | ~18k | 2-group; Pulsing Green Stones |
+| Kunark › Karnor's Castle | Venril Sathir | Karnor's Castle | ~18k | Wizard epic |
+| Kunark › Karnor's Castle | Venril Sathir (Triggered) | Karnor's Castle | ~18k | Ranger / Druid epic |
 | Kunark › Chardok | Korocust | Chardok | ~22k | 2-group bridge |
 | Kunark › Chardok | Prince Selrach Di`zok | Chardok | ~25k | Royals |
-| Kunark › Chardok | Queen Velazul Di`zok | Chardok | ~30k | Royals |
-| Kunark › Chardok | Overking Bathezid | Chardok | ~32k | Royals |
+| Kunark › Chardok | Queen Velazul Di`zok | Chardok | ~30k | Warrior epic |
+| Kunark › Chardok | Overking Bathezid | Chardok | ~32k | Cleric epic |
 | Kunark › Veeshan's Peak | Hoshkar | Veeshan's Peak | ~32k | VP crawl |
 | Kunark › Veeshan's Peak | Silverwing | Veeshan's Peak | ~454k | VP crawl |
 | Kunark › Veeshan's Peak | Druushk | Veeshan's Peak | ~470k | VP crawl |

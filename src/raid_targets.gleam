@@ -64,10 +64,10 @@ pub fn targets() -> List(Target) {
 fn classic() -> List(Target) {
   [
     // HP from idlequest-content npc_types (classic zone rows; not Fabled).
-    t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", None, Some(32_000), "Fire giant dragon"),
-    t("lady-vox", "Lady Vox", "Permafrost", "Classic", None, Some(32_000), "Ice dragon"),
-    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", None, Some(32_000), "God"),
-    t("cazic-thule", "Cazic-Thule", "Plane of Fear", "Classic", None, Some(450_000), "God"),
+    t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", None, Some(32_000), "Warrior / Bard / Paladin epic"),
+    t("lady-vox", "Lady Vox", "Permafrost", "Classic", None, Some(32_000), "Bard / Paladin epic"),
+    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", None, Some(32_000), "Ranger / Magician epic"),
+    t("cazic-thule", "Cazic-Thule", "Plane of Fear", "Classic", None, Some(450_000), "Necromancer epic"),
   ]
 }
 
@@ -78,7 +78,7 @@ fn kunark() -> List(Target) {
   [
     t("construct-of-sathir", "Construct of Sathir", "Karnor's Castle", "Kunark", karnor, Some(10_750), "2-group"),
     t("drusella-sathir", "Drusella Sathir", "Howling Stones", "Kunark", None, Some(15_750), "2-group east boss"),
-    t("venril-sathir", "Venril Sathir", "Karnor's Castle", "Kunark", karnor, Some(18_325), "Live VS"),
+    t("venril-sathir", "Venril Sathir", "Karnor's Castle", "Kunark", karnor, Some(18_325), "Wizard epic"),
     t(
       "venril-sathir-triggered",
       "Venril Sathir (Triggered)",
@@ -86,18 +86,18 @@ fn kunark() -> List(Target) {
       "Kunark",
       karnor,
       Some(18_325),
-      "2-group; Pulsing Green Stones",
+      "Ranger / Druid epic",
     ),
     t("korocust", "Korocust", "Chardok", "Kunark", chardok, Some(22_125), "2-group bridge"),
     t("prince-selrach", "Prince Selrach Di`zok", "Chardok", "Kunark", chardok, Some(25_000), "Royals"),
-    t("trunt", "Trunt", "Mines of Nurga", "Kunark", None, Some(29_000), "2-group triggered"),
-    t("queen-velazul", "Queen Velazul Di`zok", "Chardok", "Kunark", chardok, Some(30_000), "Royals"),
-    t("overking-bathezid", "Overking Bathezid", "Chardok", "Kunark", chardok, Some(32_000), "Royals"),
-    t("trakanon", "Trakanon", "Old Sebilis", "Kunark", None, Some(32_000), "Dragon lair"),
-    t("faydedar", "Faydedar", "Timorous Deep", "Kunark", None, Some(32_000), "Water dragon"),
-    t("gorenaire", "Gorenaire", "Dreadlands", "Kunark", None, Some(32_000), "Outdoor dragon"),
-    t("severilous", "Severilous", "Emerald Jungle", "Kunark", None, Some(32_000), "Outdoor dragon"),
-    t("talendor", "Talendor", "Skyfire Mountains", "Kunark", None, Some(32_000), "Outdoor dragon"),
+    t("trunt", "Trunt", "Mines of Nurga", "Kunark", None, Some(29_000), "Monk epic"),
+    t("queen-velazul", "Queen Velazul Di`zok", "Chardok", "Kunark", chardok, Some(30_000), "Warrior epic"),
+    t("overking-bathezid", "Overking Bathezid", "Chardok", "Kunark", chardok, Some(32_000), "Cleric epic"),
+    t("trakanon", "Trakanon", "Old Sebilis", "Kunark", None, Some(32_000), "Bard epic"),
+    t("faydedar", "Faydedar", "Timorous Deep", "Kunark", None, Some(32_000), "Druid epic"),
+    t("gorenaire", "Gorenaire", "Dreadlands", "Kunark", None, Some(32_000), "Bard / Paladin epic"),
+    t("severilous", "Severilous", "Emerald Jungle", "Kunark", None, Some(32_000), "Warrior epic"),
+    t("talendor", "Talendor", "Skyfire Mountains", "Kunark", None, Some(32_000), "Warrior / Bard / Paladin epic"),
     t("hoshkar", "Hoshkar", "Veeshan's Peak", "Kunark", vp, Some(32_000), "VP crawl"),
     t("silverwing", "Silverwing", "Veeshan's Peak", "Kunark", vp, Some(454_000), "VP crawl"),
     t("druushk", "Druushk", "Veeshan's Peak", "Kunark", vp, Some(470_000), "VP crawl"),
