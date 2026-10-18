@@ -19,6 +19,8 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Prefer **HP / STA /
 | --- | --- | --- | --- | ---: | --- |
 | Siren Hair Earring | AC 2 STA +9 WIS/INT +2 | a siren seductress; Elna; Helsia | Sirens Grotto | tradeable | STA + light INT |
 | Jade Meditation Hoop | AC 2 WIS/INT −10 Mana +65 | Grand Herbalist Mak`ha | Chardok | NO DROP | Mana stacker; hurts INT |
+| Shai`din Revenant Bauble | AC 2 HP +35 Mana +35 | Battle Master Ska`tu | Chardok | NO DROP | SHD NEC. ~38% |
+| Sarnak Earring of Station | AC 5 STR +5 | a Di`zok Invoker; Chardok trash | Chardok | tradeable | STR filler |
 | Fingerbone Hoop | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | See Invis + STR / INT |
 | Thulian Crusaders Earring | AC 10 WIS/INT +7 HP +50 Mana +35 SV FIRE +6 | a Thul Tae Ew crusader | Cazic-Thule (Accursed) | NO DROP | **PAL SHD only.** Req 51. Strong hybrid ear |
 | Lizard Bone Earring | AC 2 STA +10 AGI/DEX +6 CHA +5 HP +70 Mana +35 | a Thul Tae Ew adept / despoiler | Cazic-Thule (Accursed inner) | NO DROP | Huge HP + mana |

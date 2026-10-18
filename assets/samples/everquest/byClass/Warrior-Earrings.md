@@ -18,6 +18,7 @@ Sort by **Item** or **AC**. Filter also matches zone / camp. Two ear slots — c
 | Item | AC / stats | Mob | Zone | Drop | Notes |
 | --- | --- | --- | --- | ---: | --- |
 | Fingerbone Hoop | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | Utility + melee stats |
+| Sarnak Earring of Station | AC 5 STR +5 | a Di`zok Invoker; Chardok trash | Chardok | tradeable | STR filler; Invoker ~25% |
 | Siren Hair Earring | AC 2 STA +9 WIS/INT +2 | a siren seductress; Elna; Helsia | Sirens Grotto | tradeable | STA stacker; tradeable |
 | Spiderfang Earring | AC 7 AGI/DEX +7 HP +35 | a toxic jungle hunter | Cazic-Thule (Accursed jungle) | NO DROP | WAR MNK ROG only. Req 51 |
 | Lizard Bone Earring | AC 2 STA +10 AGI/DEX +6 CHA +5 HP +70 Mana +35 | a Thul Tae Ew adept / despoiler | Cazic-Thule (Accursed inner) | NO DROP | Huge HP |

@@ -19,6 +19,8 @@ Sort by **Item** or **Mana**. Filter also matches zone / camp. Prefer **WIS / Ma
 | --- | --- | --- | --- | ---: | --- |
 | Siren Hair Earring | AC 2 STA +9 WIS/INT +2 | a siren seductress; Elna; Helsia | Sirens Grotto | tradeable | STA + light WIS |
 | Jade Meditation Hoop | AC 2 WIS/INT −10 Mana +65 | Grand Herbalist Mak`ha | Chardok | NO DROP | Mana stacker; hurts WIS |
+| Earring of Purity | AC 2 WIS +1 HP +35 Mana +35 | An Iksar Trustee | Chardok | NO DROP | CLR SHM. ~60% |
+| Earring of Cleansing | AC 2 WIS +1 HP +35 Mana +35 | An Iksar Trustee | Chardok | NO DROP | CLR SHM. ~35% — same camp as Purity |
 | Fingerbone Hoop | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | See Invis; INT not ideal |
 | Lizard Bone Earring | AC 2 STA +10 AGI/DEX +6 CHA +5 HP +70 Mana +35 | a Thul Tae Ew adept / despoiler | Cazic-Thule (Accursed inner) | NO DROP | Huge HP + mana |
 | Earring of Pain | AC 6 STA +10 WIS/INT +5 HP +35 | a Thul Tae Ew torturer | Cazic-Thule (Accursed) | NO DROP | STA / WIS / AC |

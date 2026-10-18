@@ -23,6 +23,7 @@ Sort by **Item** or **HP**. Filter also matches zone / camp.
 | --- | --- | --- | --- | ---: | --- |
 | Siren Hair Earring | AC 2 STA +9 WIS/INT +2 | a siren seductress; Elna; Helsia | Sirens Grotto | tradeable | STA stacker; light WIS/INT |
 | Fingerbone Hoop | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | Utility See Invis + melee / INT |
+| Sarnak Earring of Station | AC 5 STR +5 | a Di`zok Invoker; Chardok trash | Chardok | tradeable | STR filler; Invoker ~25% |
 | Lizard Bone Earring | AC 2 STA +10 AGI/DEX +6 CHA +5 HP +70 Mana +35 | a Thul Tae Ew adept / despoiler | Cazic-Thule (Accursed inner) | NO DROP | Huge HP + mana — almost everyone |
 | Earring of Pain | AC 6 STA +10 WIS/INT +5 HP +35 | a Thul Tae Ew torturer | Cazic-Thule (Accursed) | NO DROP | STA / AC + light WIS/INT |
 | Lizard Tooth Earring | AC 5 STR +6 STA +8 AGI +6 HP +75 | a Thul Tae Ew ritualist | Cazic-Thule (Accursed inner) | NO DROP | Best pure-HP CT ear |
@@ -46,4 +47,11 @@ Worth farming on the right class — not on this sheet. See byClass earrings.
 | Spiderfang Earring | WAR MNK ROG | Accursed CT jungle. Req 51 |
 | Thulian Crusaders Earring | PAL SHD | Accursed CT crusader. Req 51 |
 | Jade Meditation Hoop | ALL except WAR MNK ROG | Chardok Mak`ha. Mana +65, WIS/INT −10 |
+| Inlaid Jade Hoop | ENC | Chardok Bridge Keeper. HP/Mana +35 CHA +3 |
+| Earring of Blazing Energy | ENC | Chardok Grave Master Zo`lun. HP/Mana +35 CHA +2 |
+| Earring of Everfount | MAG | Chardok Watch Captain Hir`roul. HP/Mana +35 |
+| Earring of Woven Bark | RNG DRU | Chardok Captain Di`ouz. HP/Mana +35 |
+| Earring of Twisted Leaves | DRU SHM | Chardok Watch Captain Hir`roul. HP/Mana +35 WIS +1 |
+| Earring of Purity / Cleansing | CLR SHM | Chardok Iksar Trustee. HP/Mana +35 WIS +1 |
+| Shai`din Revenant Bauble | SHD NEC | Chardok Battle Master Ska`tu. HP/Mana +35 |
 | Brass Earring | Quest | Not a drop farm |

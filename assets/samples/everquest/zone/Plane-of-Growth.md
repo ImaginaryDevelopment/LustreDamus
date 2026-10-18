@@ -54,6 +54,8 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 
 All **NO DROP** unless noted. Class set pieces also drop off related trash; nameds have higher chest odds. **Tunare** also drops two random chests per kill.
 
+**No class sets for Druid, Ranger, or Paladin** in PoG (IdleQuest / classic Growth tables). Harmony / Untamed / Righteous are Plane of Hate 2.0, not here.
+
 ### Tunare (RAID)
 
 | Item | Mob | Mob levels | Notes |
@@ -82,6 +84,8 @@ All **NO DROP** unless noted. Class set pieces also drop off related trash; name
 
 ### Class chests (not Tunare-only)
 
+No **DRU / RNG / PAL** set chests — see Unique loot note above.
+
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |
 | Berserker's Breastplate (Chest) | a feral amalgam; Ail the Elder; Rumbleroot; Tunare | 52–70 | WAR, AC 47 STR +14 DEX +5 STA +10 AGI +7 HP +90, Invigorate |
@@ -95,7 +99,6 @@ All **NO DROP** unless noted. Class set pieces also drop off related trash; name
 | Robe of the Bonecaster (Chest) | Rumbleroot; Treah Greenroot; Tunare | 60–70 | NEC, AC 12 STA +15 INT +14 HP +70 Mana +50 SV all +5, Conjure Corpse. HUM ERU DEF GNM IKS |
 | Resplendent Robe (Chest) | Ail the Elder; Treah Greenroot; a sylvan protector; Tunare | 56–70 | ENC, AC 12 STA +5 CHA +7 INT +14 HP/Mana +60 SV all +5, Rune IV. HUM ERU HIE DEF GNM |
 | Robe of Conjuration (Chest) | Ail the Elder; an entoling essence channeler | 60 | MAG, AC 12 STA +14 INT +15 HP +40 Mana +80 SV all +5, Shield of Lava. HUM ERU HIE DEF GNM |
-| Bladesman's Breastplate (Chest) | Ail the Elder; Rumbleroot; a feral amalgam | 52–60 | PAL / related plate set piece |
 
 ### Class set pieces (named / trash)
 

@@ -18,6 +18,8 @@ Sort by **Item** or **Mana**. Filter also matches zone / camp. Prefer **INT / Ma
 | --- | --- | --- | --- | ---: | --- |
 | Siren Hair Earring | AC 2 STA +9 WIS/INT +2 | a siren seductress; Elna; Helsia | Sirens Grotto | tradeable | STA + light INT |
 | Jade Meditation Hoop | AC 2 WIS/INT −10 Mana +65 | Grand Herbalist Mak`ha | Chardok | NO DROP | Mana stacker; hurts INT |
+| Inlaid Jade Hoop | AC 2 CHA +3 HP +35 Mana +35 | The Bridge Keeper | Chardok | NO DROP | ENC-only HP/Mana ear (also finger) |
+| Earring of Blazing Energy | AC 2 CHA +2 HP +35 Mana +35 | Grave Master Zo`lun | Chardok | NO DROP | ENC-only HP/Mana + light CHA |
 | Fingerbone Hoop | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | See Invis + INT; CHA tax hurts ENC |
 | Lizard Bone Earring | AC 2 STA +10 AGI/DEX +6 CHA +5 HP +70 Mana +35 | a Thul Tae Ew adept / despoiler | Cazic-Thule (Accursed inner) | NO DROP | Huge HP + mana + CHA |
 | Earring of Pain | AC 6 STA +10 WIS/INT +5 HP +35 | a Thul Tae Ew torturer | Cazic-Thule (Accursed) | NO DROP | STA / INT / AC |
