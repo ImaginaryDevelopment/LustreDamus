@@ -53,10 +53,10 @@ Raid legs worth chasing after the group table. Ordered roughly **easier → hard
 | Item | AC / stats | Source | Notes |
 | --- | --- | --- | --- |
 | Mrylokar's Greaves | AC 24 STR +5 DEX/AGI +10 HP +50 Invigor | Venril Sathir (Karnor's) | Kunark VS raid |
-| Ancient Wyvern Hide Leggings | ToV wyvern hide legs (STA / PR focus) | Temple of Veeshan | ToV dragon legs |
-| Ancient Wurm Hide Greaves | ToV wurm hide greaves | Temple of Veeshan | ToV dragon legs |
-| Silver Chains | ToV chain legs | Temple of Veeshan | ToV dragon legs |
-| Onyx Chain | ToV chain legs | Temple of Veeshan | ToV dragon legs |
+| Ancient Wyvern Hide Leggings | AC 25 STR +5 STA +15 AGI +25 HP +50 SV DISEASE +15 | Ikatiar the Venom (ToV) | ToV dragon legs |
+| Ancient Wurm Hide Greaves | AC 46 STA +10 HP +50 SV FIRE +15 | Dagarn the Destroyer (ToV) | ToV dragon legs |
+| Silver Chains | AC 20 all stats +7 HP/Mana +20 SV all +7 (multi-slot) | Jorlleag (ToV) | ToV multi-slot chain |
+| Onyx Chain Leggings | AC 45 STR/WIS/INT +10 Mana +70 SV DISEASE +10 | Jorlleag (ToV) | ToV dragon legs |
 
 
 ## Skip

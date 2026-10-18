@@ -26,6 +26,7 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Donal's Chestplate of Mourning | AC 40 DEX/WIS/AGI +12 Mana +80 Complete Heal | Trakanon (Sebilis) | Complete Heal click |
 | Akkirus' Chestplate of the Risen | AC 50 STA +9 WIS +15 AGI +5 HP +50 Mana +90 Mark of Karn | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
 | Templar's Chestplate | AC 54 STR +5 STA +8 WIS +15 HP +40 Mana +90 Mark of Karn | Temple of Veeshan west (Ancient Tarnished) | Top Velious CLR BP |
+
 ## Skip
 
 | Item | Why skip |

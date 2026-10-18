@@ -29,8 +29,9 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Loam Encrusted Robe | AC 9 DEX/AGI +10 INT +5 Mana +80 SV MAGIC +10 | Master Yael (The Hole) | Hole raid |
 | Mana Robe (Manna Robe) | AC 14 INT +8 Mana Conversion | Trakanon (Sebilis) | Mana Conversion click |
 | Maleficent Robe | AC 22 STR +5 STA +15 CHA −10 INT +15 AGI +5 HP +100 Mana +40 SV DISEASE +20 SV POISON +15 | Plane of Mischief | Mischief INT robe |
-| Lustrous Satiny Robe | AC 12 STA/CHA/INT silk ENC Skyshrine path | Temple of Veeshan east (Skyshrine path) | Skyshrine class armor |
-| Resplendent / ToV west robe | AC 12+ ENC ToV west / Kael Ally silk (INT/CHA) | Kael Ally / ToV west | Top Velious ENC robes |
+| Lustrous Satiny Robe | AC 12 STA +5 CHA +7 INT +14 HP +70 Mana +50 | Temple of Veeshan east (Skyshrine path) | Skyshrine class armor |
+| Illusionist's Robe | AC 12 STA +5 CHA +7 INT +15 HP/Mana +80 SV COLD +10 Rune IV | Kael Ally Kromzek path | Top Velious ENC robe (Kael) |
+
 ## Skip
 
 | Item | Why skip |

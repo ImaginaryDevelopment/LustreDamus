@@ -24,6 +24,7 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Robe of the Spring | AC 14 WIS +11 Mana +45 Skin Like Nature | Veeshan's Peak | VP robe |
 | Woven Grass Chestguard | AC 20 STR +5 STA +7 WIS +14 HP +50 Mana +80 Regrowth of the Grove | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
 | Nature Walker's Chestguard | AC 27 STR/DEX +5 WIS +15 HP +40 Mana +80 Regrowth of the Grove | Temple of Veeshan west (Ancient Tarnished) | Top Velious DRU chest |
+
 ## Skip
 
 | Item | Why skip |

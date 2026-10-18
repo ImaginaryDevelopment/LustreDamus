@@ -30,7 +30,8 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Mana Robe (Manna Robe) | AC 14 INT +8 Mana Conversion | Trakanon (Sebilis) | Mana Conversion click |
 | Maleficent Robe | AC 22 STR +5 STA +15 CHA −10 INT +15 AGI +5 HP +100 Mana +40 SV DISEASE +20 SV POISON +15 | Plane of Mischief | Mischief INT robe |
 | Rotting Robe | AC 12 STA +15 CHA +7 INT +15 HP +70 Mana +50 Conjure Corpse | Temple of Veeshan east (Skyshrine path) | Skyshrine class armor |
-| Plague Bearer's / ToV west robe | AC 12+ NEC ToV west / Kael Ally silk (INT) | Kael Ally / ToV west | Top Velious NEC robes |
+| Plague Bearer's Robe | AC 14 STA +15 INT +14 HP +70 Mana +50 SV FIRE +10 SV POISON +14 Conjure Corpse | Kael Ally Kromzek path | Top Velious NEC robe (Kael) |
+
 ## Skip
 
 | Item | Why skip |

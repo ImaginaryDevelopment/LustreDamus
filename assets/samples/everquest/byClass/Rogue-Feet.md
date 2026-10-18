@@ -53,10 +53,12 @@ Raid feet worth chasing after the group table. Ordered roughly **easier → hard
 | --- | --- | --- | --- |
 | Lodizal Shell Boots | AC 14 HP +20 | Lodizal (Iceclad) | Ice turtle — long respawn |
 | Frozen Efreeti Boots | AC 14 STR/STA/AGI +9 DEX +5 WIS/INT/CHA −5 | Lord Dolj (Velketor's) | Stout Velketor named |
-| Boots of the Savage | Skyshrine crusader feet (raid-tier city) | Skyshrine crusaders | Raid-tier city |
+| Boots of the Savage | AC 23 STA/AGI/DEX/WIS +6 HP +45 Mana +25 | Skyshrine crusaders | Raid-tier city |
 | Grey Suede Boots | AC 12 STR/AGI +8 HP +25 SV COLD/POISON +10 haste +41% | Hoshkar (Veeshan's Peak) | VP haste feet |
 | Boots of the Destroyer | AC 28 STR +10 STA +15 HP +25 | Dagarn the Destroyer (ToV) | ToV dragon feet |
 | Ancient Wyvern Hide Boots | AC 25 STA +15 SV POISON +15 | Ikatiar the Venom (ToV) | ToV hide set |
+| Boots of Superiority | AC 30 all stats +4 SV all +3 Affliction Efficiency III | Lendiniara the Keeper (ToV) | ToV dragon feet |
+| Boots of the Dead Dream | AC 25 STA/WIS/INT +7 HP +25 Mana +75 | Lord Feshlak (ToV) | ToV dragon feet |
 | Boots of the Ancients | AC 20 STR/STA/DEX +8 HP +65 | Sleeper ancients | Top raid feet |
 
 

@@ -61,23 +61,23 @@ Raid / formed-raid main hands worth chasing after the group table. Ordered rough
 | Item | AC / stats | Source | Notes |
 | --- | --- | --- | --- |
 | Serpent's Tooth | 13/27 (0.48) | Master Yael (The Hole) | Hole raid pierce |
-| Earthshaker | Yael 2HS | Master Yael (The Hole) | Hole raid 2HS |
-| Willsapper | DN pierce; long cycle | Vaniki (Dragon Necropolis) | Pierce; long cycle |
+| Earthshaker | 37/70 (0.53) Earthquake proc | Master Yael (The Hole) | Hole raid 2HS |
+| Willsapper | 13/20 (0.65) AC 9 HP +35 Energy Sap | Vaniki (Dragon Necropolis) | Pierce; long cycle |
 | The Horn of Hsagra | 13/20 (0.65) AC 35 STA +10 HP +75 | King Tormax (Kael) | Kael king pierce |
-| Scimitar of the Emerald Dawn | Wuoshi outdoor dragon 1HS | Wuoshi (Wakening) | Outdoor dragon |
-| Skydarkener | Wuoshi outdoor dragon | Wuoshi (Wakening) | Outdoor dragon |
-| Soul Defiler | Yelinak 1HS | Lord Yelinak (Skyshrine) | Yelinak 1HS |
-| Craslith | Yelinak 2HS | Lord Yelinak (Skyshrine) | Yelinak 2HS |
-| Executioner's Blade | VP blade | Veeshan's Peak | VP blade |
+| Scimitar of the Emerald Dawn | 20/34 (0.59) Mana +100 | Wuoshi (Wakening) | Outdoor dragon |
+| Skydarkener | 28/44 (0.64) Mana +40 | Wuoshi (Wakening) | Outdoor dragon |
+| Soul Defiler | 21/19 (1.11) STR +8 HP/Mana +75 | Lord Yelinak (Skyshrine) | Yelinak 1HS |
+| Craslith | 42/44 (0.95) AC 10 HP +50 | Lord Yelinak (Skyshrine) | Yelinak 2HS |
+| Executioner's Blade | 42/50 (0.84) STR +5 CHA −5 | Silverwing (Veeshan's Peak) | VP blade |
 | Feverblade - Bane of the Shissar | 11/18 (0.61) Sebilite Pox | Hoshkar (Veeshan's Peak) | VP blade |
-| Veldrak's Shortblade | VP shortblade | Veeshan's Peak | VP blade |
-| Sword of Rile | VP sword | Veeshan's Peak | VP blade |
-| Katana of Flowing Water | VP katana | Veeshan's Peak | VP blade |
-| Frostwrath | ToV dragon weapon | Temple of Veeshan | ToV dragon weapon |
-| Ikatiar's Stinger | ToV venom pierce | Temple of Veeshan | ToV dragon weapon |
-| Great Spear of Dawn | ToV spear | Temple of Veeshan | ToV dragon weapon |
-| Nevederia's Claw | ToV claw | Temple of Veeshan | ToV dragon weapon |
-| Primal / Priceless Velium; Sleeper weapons | Sleeper / high-raid velium weapon pool | Sleeper's Tomb | Top raid tables |
+| Veldrak's Shortblade | 14/23 (0.61) STR +5 DEX +10 HP +25 Envenomed Breath | Hoshkar (Veeshan's Peak) | VP blade |
+| Sword of Rile | 34/40 (0.85) STR +10 DEX/STA/CHA +5 WIS/INT +10 HP +50 Steelskin | Phara Dar (Veeshan's Peak) | VP blade |
+| Katana of Flowing Water | 19/33 (0.58) CHA/AGI +10 SV all +10 | Phara Dar (Veeshan's Peak) | VP blade |
+| Frostwrath | 24/22 (1.09) AC 20 STR +10 WIS/INT +5 Mana +50 SV FIRE +15 | Lady Mirenilla (ToV) | ToV dragon weapon |
+| Ikatiar's Stinger | 12/19 (0.63) STR/STA +10 SV POISON +30 | Ikatiar the Venom (ToV) | ToV dragon weapon |
+| Great Spear of Dawn | 53/46 (1.15) AC 25 STR/STA +10 SV MAGIC +15 | Sevalak (ToV) | ToV dragon weapon |
+| Nevederia's Claw | 11/17 (0.65) AC 10 STA +10 AGI +15 HP/Mana +75 | Lady Nevederia (ToV) | ToV dragon weapon |
+| Primal Velium Spear | 13/20 (0.65) AC 10 all stats +5 HP/Mana +50 SV all +5 Avatar | Sleeper's Tomb | Top raid pierce; other Primal / Priceless velium on same tables |
 
 
 ## Skip

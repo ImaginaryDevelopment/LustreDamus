@@ -29,6 +29,7 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Mana Robe (Manna Robe) | AC 14 INT +8 Mana Conversion | Trakanon (Sebilis) | Mana Conversion click |
 | Vermilion Robe of Torrefaction | AC 15 INT +10 HP +40 Mana +75 SV FIRE +25 Conflagration | Velketor | Velketor raid robe |
 | Solist's Robe of Invocation | AC 14 STA +10 INT +13 Mana +70 Rend | Veeshan's Peak | VP robe |
+
 ## Skip
 
 | Item | Why skip |

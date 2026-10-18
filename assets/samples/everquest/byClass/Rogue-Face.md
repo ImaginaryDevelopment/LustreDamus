@@ -53,15 +53,15 @@ Raid faces worth chasing after the group table. Ordered roughly **easier → har
 
 | Item | AC / stats | Source | Notes |
 | --- | --- | --- | --- |
-| Faceguard of Bentos | Narandi / war event face | Narandi / related Velious event | Event / war face |
-| Mask of Fright | Narandi / war event face | Narandi / related Velious event | Event / war face |
+| Faceguard of Bentos the Hero | AC 10 STR/STA +10 HP +10 SV DISEASE/POISON +10 See Invisible | Narandi / related Velious event | Event / war face |
+| Mask of Fright | AC 10 STR +6 STA +5 CHA −10 WIS/INT +6 HP/Mana +30 SV DISEASE/MAGIC/POISON +10 | Narandi / related Velious event | Event / war face |
 | Eye of Cazic-Thule | AC 15 HP +50 Mana +100 | Cazic-Thule (Fear) | Fear god face |
 | Snow Storm Mask | AC 7 STR +4 SV COLD +9 Heat Sight | Velketor | Labyrinth |
-| Mask of the Dragon Slayer | Yelinak dragon face | Lord Yelinak (Skyshrine) | Dragon |
-| Ancient Pirate's Eyepatch | ToV dragon face | Temple of Veeshan dragons | ToV face |
-| Sky Watcher's Monocle | ToV dragon face | Temple of Veeshan dragons | ToV face |
-| Transparent Eyepatch | ToV dragon face | Temple of Veeshan dragons | ToV face |
-| Mask of Fall | ToV dragon face | Temple of Veeshan dragons | ToV face |
+| Mask of the Dragon Slayer | AC 15 STR/AGI +8 CHA +5 HP +50 | Lord Yelinak (Skyshrine) | Dragon |
+| Ancient Pirate's Eyepatch | AC 20 DEX/STA/AGI +10 SV all +10 | Lord Koi`Doken (ToV) | ToV face |
+| Sky Watcher's Monocle | AC 15 DEX/WIS/AGI +10 HP/Mana +50 | Lord Feshlak (ToV) | ToV face |
+| Transparent Eyepatch | AC 2 DEX +10 Mana +100 | Telkorenar (ToV) | ToV face |
+| Mask of Fall | AC 15 INT +7 Mana +55 SV DISEASE/POISON +10 | Aaryonar (ToV) | ToV face |
 | Besmirched Mask of Conception | AC 12 STR/STA/AGI/DEX +10 HP +50 | Sleeper ancients | Top raid face |
 
 

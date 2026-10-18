@@ -32,7 +32,7 @@ Raid / formed-raid bows worth chasing after the group table. Ordered roughly **e
 | Item | AC / stats | Source | Notes |
 | --- | --- | --- | --- |
 | War Bow of Rallos Zek | 43/45 (0.96) STR/DEX +25 HP +100 Torment proc Range 180 | Avatar of War (Kael) | Classic high-end bow |
-| Primal / Priceless Velium Reinforced Bow | Sleeper / high-raid velium bow pool | Sleeper warders / high raid | Top Velious raid bows |
+| Primal Velium Reinforced Bow | 33/35 (0.94) AC 10 all stats +5 HP/Mana +50 SV all +5 Avatar | Sleeper warders / high raid | Top Velious raid bow |
 
 
 ## Skip

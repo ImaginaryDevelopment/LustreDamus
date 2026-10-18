@@ -54,12 +54,12 @@ Raid / formed-raid piercers worth chasing after the group table. Ordered roughly
 | The Horn of Hsagra | 13/20 (0.65) AC 35 STA +10 HP +75 | King Tormax (Kael) | Kael king |
 | Nightfall | 9/16 (0.56) STR/DEX +5 HP +25 Dooming Darkness | Nexona (Veeshan's Peak) | VP piercer |
 | Feverblade - Bane of the Shissar | 11/18 (0.61) Sebilite Pox | Hoshkar (Veeshan's Peak) | VP piercer |
-| Razor Sharp Short Sword | VP short pierce | Veeshan's Peak | VP piercer |
+| Razor Sharp Short Sword | 16/26 (0.62) STR/DEX +7 | Xygoz (Veeshan's Peak) | VP piercer (1HS) |
 | Massive Heartwood Thorn | 15/21 (0.71) DEX/STA/AGI +15 HP +50 Combust | Tunare (Plane of Growth) | Growth god |
-| Frosted Ice Spike | ToV dragon pierce | Temple of Veeshan | ToV dragon piercer |
-| Ikatiar's Stinger | ToV venom pierce | Temple of Veeshan | ToV dragon piercer |
-| Flame Etched Short Sword | ToV fire pierce | Temple of Veeshan | ToV dragon piercer |
-| Primal / Priceless Velium Spear | Sleeper / high-raid velium spear pool | Sleeper / high raid | Top raid spears |
+| Frosted Ice Spike | 13/19 (0.68) AC 10 STA +10 HP +50 SV COLD +35 SV FIRE −10 | Cekenar (ToV) | ToV dragon piercer |
+| Ikatiar's Stinger | 12/19 (0.63) STR/STA +10 SV POISON +30 | Ikatiar the Venom (ToV) | ToV dragon piercer |
+| Flame Etched Short Sword | 12/17 (0.71) AC 25 SV FIRE/MAGIC +10 | Lord Kreizenn (ToV) | ToV dragon piercer (1HS) |
+| Primal Velium Spear | 13/20 (0.65) AC 10 all stats +5 HP/Mana +50 SV all +5 Avatar | Sleeper / high raid | Top raid spear |
 
 
 ## Skip

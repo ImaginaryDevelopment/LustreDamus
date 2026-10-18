@@ -31,6 +31,7 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Incarnadine Breastplate | AC 35 STR/DEX +15 INT +5 HP +25 Gather Shadows | Overking Bathezid (Chardok) | WAR SHD — Gather Shadows |
 | Blood Lord's Breastplate | AC 50 STR/DEX/AGI/INT +9 STA +8 HP/Mana +70 Invigorate | Temple of Veeshan east (Unadorned → Onerind Fe`Dhar) | Skyshrine class armor |
 | Malevolent Breastplate | AC 54 STR +15 DEX/STA/INT/AGI +7 HP +40 Mana +60 Invigorate | Temple of Veeshan west (Ancient Tarnished) | Top Velious SHD BP |
+
 ## Skip
 
 | Item | Why skip |

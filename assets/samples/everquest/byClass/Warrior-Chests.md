@@ -23,10 +23,11 @@ Raid / formed-raid chests worth chasing after the group table. Ordered roughly *
 | Item | AC / stats | Source | Notes |
 | --- | --- | --- | --- |
 | Cobalt Breastplate | AC 45 STR/DEX/STA +12 HP +50 Invigorate | Trakanon (Sebilis) | WAR Kunark raid BP |
-| Green dragonscale chest | AC ~plate WAR scale turn-in (Trakanon scales) | Trakanon scales | Scale turn-in chest |
+| Red Dragonscale Armor | AC 21 STR +20 SV FIRE/MAGIC +10 | Nortlav / Nagafen scales → Karam Dragonforge | Scale turn-in chest |
 | Incarnadine Breastplate | AC 35 STR/DEX +15 INT +5 HP +25 Gather Shadows | Overking Bathezid (Chardok) | STR/DEX + Gather Shadows |
 | Breastplate of the Myrmidon | AC 54 STR +15 DEX/AGI +7 STA +10 HP +90 Invigorate | Temple of Veeshan east (Unadorned mold) | Skyshrine class armor |
 | Warlord's Breastplate | AC 59 STR +16 DEX/AGI +7 STA +10 HP +90 Invigorate | Temple of Veeshan west (Ancient Tarnished) | Top Velious WAR BP |
+
 ## Skip
 
 | Item | Why skip |
