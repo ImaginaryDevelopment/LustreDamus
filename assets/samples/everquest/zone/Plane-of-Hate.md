@@ -10,7 +10,7 @@ Sort **Named spawn** by **Mob**. HP from IdleQuest (`hateplane` classic nameds).
 
 | Mob | Class | Chance | HP | Area | PH / notes |
 | --- | --- | ---: | ---: | --- | --- |
-| Innoruuk | WIZ | 100% | ~32k | Temple | ~55. **RAID.** God. Huge unique pool + Shattered Emerald |
+| Innoruuk | WIZ | 100% | ~277k | Temple | ~70. **RAID.** God. Huge unique pool + Shattered Emerald |
 | Magi P`Tasa | MAG | 100% | ~30k | Hate | ~56. Apothic set / elemental mastery staves |
 | Avatar of Abhorrence | ROG | 100% | ~29k | Hate | ~58. **RAID.** Vexthorne / Eye of Innoruuk / Woven Shadow |
 | Grandmaster R`Tal | MNK | 50% | ~29k | Hate | ~58 / ~50%. **RAID.** Rakusha Cloak / Sunderfury / Indicolite / Slowstone |
@@ -51,20 +51,22 @@ Static spawn chance **0%** — hidden when **Hide 0% spawn** is checked.
 | Shattered Emerald of Corruption | Innoruuk | 55+ | Quest / combine. Also on several Hate nameds |
 | Eye of Innoruuk (Face) | Innoruuk; several nameds | 55+ | AC 5 Mana +55 |
 | Sunderfury (2H Slashing) | Innoruuk; Grandmaster R`Tal | 55–58 | 25/36 (0.69) |
-| Bloodmoon (1H Slashing) | Innoruuk | 55+ | 18/28 (0.64) |
+| Bloodmoon (1H Slashing) | Innoruuk | 70 | 18/28 (0.64) |
 | Dawnchaser (Piercing) | Innoruuk; Mistress of Scorn | 55–58 | 11/25 (0.44) |
 | Vexthorne (Piercing) | Innoruuk; Avatar of Abhorrence | 55–58 | 9/19 (0.47) |
-| Beckon (2H Blunt) | Innoruuk | 55+ | 30/42 (0.71) |
+| Beckon (2H Blunt) | Innoruuk; Lord of Loathing | 55–70 | 30/42 (0.71) |
 | Gardash (2H Blunt) | Innoruuk; Master of Spite | 55–58 | 30/58 (0.52) |
-| Encyclopedia Necrotheurgia | Innoruuk | 55+ | NEC book |
-| Rod of Unbound Thought / Infinite Thought | Innoruuk | 55+ | 10/30 (0.33) casters |
-| Shield of the Immaculate (Secondary) | Innoruuk | 55+ | AC 25 |
+| Encyclopedia Necrotheurgia | Innoruuk | 70 | NEC book |
+| Rod of Unbound Thought / Infinite Thought | Innoruuk | 70 | 10/30 (0.33) casters |
+| Shield of the Immaculate (Secondary) | Innoruuk | 70 | AC 25 |
 | Rakusha Cloak (Back) | Innoruuk; Grandmaster R`Tal | 55–58 | AC 10 |
 | Sode of Empowerment (Waist) | Innoruuk; Grandmaster R`Tal | 55–58 | AC 10 |
 | Tunarian Scimitar (1H Slashing) | Innoruuk; Master of Spite | 55–58 | 8/19 (0.42) Mana +40 |
-| Truesight Hammer (1H Blunt) | Innoruuk | 55+ | 12/35 (0.34) |
-| Briarzephyr (Piercing) | Innoruuk | 55+ | 9/19 (0.47) |
-| Staff of Elemental Mastery: Earth (2H Blunt) | Innoruuk; Magi P`Tasa | 55–56 | 15/30 (0.50) MAG |
+| Truesight Hammer (1H Blunt) | Innoruuk; High Priest M`kari | 58–70 | 12/35 (0.34) |
+| Briarzephyr (Piercing) | Innoruuk | 70 | 9/19 (0.47) |
+| Staff of Elemental Mastery: Earth (2H Blunt) | Innoruuk; Magi P`Tasa | 55–70 | 15/30 (0.50) MAG |
+| Ashenbone Warhammer (2H Blunt) | Innoruuk | 70 | 34/43 (0.79) WAR. 10% |
+| Common wear (always 1) | Innoruuk | 70 | Skinner's Belt, Earring of Bashing, Icebelt, Triumphant Mask, Darkbrood Mask, cloaks, rings, bracers |
 
 ### Maestro / Hand / Avatar
 

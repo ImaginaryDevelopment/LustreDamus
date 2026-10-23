@@ -10,7 +10,7 @@ Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest 
 | --- | --- | --- | ---: | --- |
 | Classic | Lord Nagafen | Nagafen's Lair | ~32k | Warrior / Bard / Paladin epic |
 | Classic | Lady Vox | Permafrost | ~32k | Bard / Paladin epic |
-| Classic | Innoruuk | Plane of Hate | ~32k | Ranger / Magician epic |
+| Classic | Innoruuk | Plane of Hate | ~277k | Ranger / Magician epic |
 | Classic | Cazic-Thule | Plane of Fear | ~450k | Necromancer epic |
 | Kunark | Drusella Sathir | Howling Stones | ~15k | 2-group east boss |
 | Kunark | Trunt | Mines of Nurga | ~29k | Monk epic |
@@ -61,6 +61,7 @@ Default sort is **Expansion**, then **HP** (unknown HP last). HP from IdleQuest 
 | Velious › Temple of Veeshan | Lord Kreizenn | Temple of Veeshan | ~465k | Dawncaller / Flame Etched Short Sword |
 | Velious › Temple of Veeshan | Lady Nevederia | Temple of Veeshan | ~525k | Nevederia's Eyes / Girdle of Dark Power |
 | Velious › Temple of Veeshan | Lord Koi`Doken | Temple of Veeshan | ~580k | Deep Sea set / Siren Song |
+| Velious › Temple of Veeshan | Vulak`Aerr | Temple of Veeshan | ~890k | Live 100%; 7d ± 8h. 4 wear + 2 Ancient spells |
 | Velious › Sleeper's Tomb | Tukaarak the Warder | Sleeper's Tomb | ~200k | Ice warder |
 | Velious › Sleeper's Tomb | Nanzata the Warder | Sleeper's Tomb | ~200k | Fire warder |
 | Velious › Sleeper's Tomb | Ventani the Warder | Sleeper's Tomb | ~200k | Disease warder |

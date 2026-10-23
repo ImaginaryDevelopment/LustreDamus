@@ -66,7 +66,7 @@ fn classic() -> List(Target) {
     // HP from idlequest-content npc_types (classic zone rows; not Fabled).
     t("lord-nagafen", "Lord Nagafen", "Nagafen's Lair", "Classic", None, Some(32_000), "Warrior / Bard / Paladin epic"),
     t("lady-vox", "Lady Vox", "Permafrost", "Classic", None, Some(32_000), "Bard / Paladin epic"),
-    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", None, Some(32_000), "Ranger / Magician epic"),
+    t("innoruuk", "Innoruuk", "Plane of Hate", "Classic", None, Some(277_000), "Ranger / Magician epic"),
     t("cazic-thule", "Cazic-Thule", "Plane of Fear", "Classic", None, Some(450_000), "Necromancer epic"),
   ]
 }
@@ -181,6 +181,7 @@ fn temple_of_veeshan(section: Option(String)) -> List(Target) {
     t("lord-kreizenn", "Lord Kreizenn", zone, exp, section, Some(465_000), "Dawncaller / Flame Etched Short Sword"),
     t("lady-nevederia", "Lady Nevederia", zone, exp, section, Some(525_000), "Nevederia's Eyes / Girdle of Dark Power"),
     t("lord-koi-doken", "Lord Koi`Doken", zone, exp, section, Some(580_000), "Deep Sea set / Siren Song"),
+    t("vulak-aerr", "Vulak`Aerr", zone, exp, section, Some(890_000), "Live 100%; 7d ± 8h. 4 wear + 2 Ancient spells"),
   ]
 }
 

@@ -1,6 +1,7 @@
 import gleam/dict.{type Dict}
 import gleam/list
 import gleam/string
+import ct_items
 import pal_index
 import pom_items
 import table_format.{type TableFormatter}
@@ -1666,6 +1667,9 @@ pub fn table_formatter(
         "plane-of-mischief" ->
           table_format.plain()
           |> pom_items.with_item_tooltips
+        "cazic-thule" ->
+          table_format.plain()
+          |> ct_items.with_item_tooltips
         _ -> table_format.plain()
       }
   }

@@ -37,6 +37,7 @@ Raid earrings (ALL) worth chasing after the group table. Ordered roughly **easie
 | Earring of Living Thunder | AC 10 STR +9 SV MAGIC +10 See Invisible | Derakor the Vindicator (Kael) | Kael raid ear |
 | Dragons Tear Earring | AC 10 WIS/INT +7 HP +10 Mana +40 SV DISEASE/POISON +5 | Lord Yelinak (Skyshrine) | Caster-facing dragon ear |
 | Dragons Blood Earring | AC 10 STR/DEX +7 HP +10 SV DISEASE/POISON +5 | Lord Yelinak (Skyshrine) | Melee-facing dragon ear |
+| Vyrinn's Earring of Insanity | AC 25 STR +15 STA +12 HP +50 all resists +5 | Vulak`Aerr (Temple of Veeshan) | NO DROP. Live 100%, 7 day ± 8h. Always 4 wear |
 
 ## Skip (class-restricted)
 
@@ -54,4 +55,5 @@ Worth farming on the right class — not on this sheet. See byClass earrings.
 | Earring of Twisted Leaves | DRU SHM | Chardok Watch Captain Hir`roul. HP/Mana +35 WIS +1 |
 | Earring of Purity / Cleansing | CLR SHM | Chardok Iksar Trustee. HP/Mana +35 WIS +1 |
 | Shai`din Revenant Bauble | SHD NEC | Chardok Battle Master Ska`tu. HP/Mana +35 |
+| Solist's Earring of Insight | NEC WIZ MAG ENC | Vulak`Aerr (ToV). AC 25 INT +15 HP/Mana +90 all resists +4. NO DROP |
 | Brass Earring | Quest | Not a drop farm |

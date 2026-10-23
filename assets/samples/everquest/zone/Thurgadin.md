@@ -27,6 +27,7 @@ Velious Coldain city (`thurgadina`). Hunt **~30–45** city / bank / quest hub (
 | Foreman Felspar; Nargl Stonecutter; Trademaster Kroven | LEAVE | WAR | Craft halls | Armor / trade quest hubs for **Corroded** gem combines |
 | Underbelly / Frostbeard / Bottlenip merchants | LEAVE | MERCHANT | Bazaar | Bank / vendors / bakers — never kill |
 | Erdarf Restil; Flonts; Ungdin | LEAVE | CLR | Temple | Priests / quest dialogue |
+| Petcas Coldbeard | LEAVE | MERCHANT | City | ~38. Always **Ancient Rusted Key** |
 
 ## Unique loot
 
@@ -45,6 +46,7 @@ Almost nothing in the city is “worth” a Coldain hit for a normal Thurgadin-a
 | Corroded / Eroded / Torn Enchanted armor + gems | Kael arena / Armor of Zek / veterans | Class armor turn-ins at Thurgadin smiths (Kindly+ Coldain) |
 | Coldain Prayer Shawl line | Loremasters / historians | Progressive shawl quest (LEAVE NPCs) |
 | Coldain Head; Braided Beard | City nameds | Niche turn-ins — usually not worth the faction |
+| Ancient Rusted Key | Petcas Coldbeard | Always. City dwarf, LEAVE |
 | Ring War supplies / reports | Churn / Kargin / Zrelik path | Great Divide Ring War — LEAVE these NPCs |
 
 ## Quest NPCs

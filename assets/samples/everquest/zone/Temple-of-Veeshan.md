@@ -2,7 +2,7 @@
 
 Velious dragon temple (`templeveeshan`). Hunt **60+**. Enter from **Western Wastes** (past **Sontalak**). Connects to **Plane of Mischief** mini-castle (see PoM sheet). No AAs: the whole zone is **RAID** — wing trash is raid trash; named dragons are **RAID**.
 
-**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`templeveeshan`). Many titled dragons are **0%** on static spawn tables (script / event / PH). Loot tables below still match IdleQuest. Skip joke / trigger rows (`A feeling`, `Vulak Trigger`, etc.).
+**IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`templeveeshan`). Many titled dragons are **0%** on static spawn tables (script / event / PH). **Vulak`Aerr** is a live **100%** spawn (7 day ± 8h). Loot tables below still match IdleQuest. Skip joke rows (`A feeling`, and similar).
 
 **Wings (loot rule of thumb)**
 
@@ -33,6 +33,7 @@ Sort **Nameds** by **Mob**. **Do** column:
 | Lendiniara the Keeper | RAID | CLR | 0% | IdleQuest **0%**. ~66. Lendiniara's Talisman / Superiority set |
 | Lord Feshlak | RAID | WAR | 0% | IdleQuest **0%**. ~66. Amulet of the Storm / Chestplate of Fiery Might / Thunderstone |
 | Lord Koi`Doken | RAID | ROG | 0% | IdleQuest **0%**. ~66. Deep Sea set / Siren Song dagger |
+| Vulak`Aerr | RAID | WAR | 100% | ~70 / **~890k HP**. Live at ~517, −739. **7 day ± 8h**. Always 4 wear + 2 Ancient spells |
 | Lord Kreizenn | RAID | MNK | 0% | IdleQuest **0%**. ~66. Dawncaller / Flame Etched Short Sword / Kreizenn's Flame |
 | Lord Vyemm | RAID | PAL | 0% | IdleQuest **0%**. ~66. Gaudralek / Vyemm's Eyes / Fang / Silver Whip of Rage |
 | Sevalak | RAID | PAL | 0% | IdleQuest **0%**. ~66. Great Spear of Dawn / Shield of Midnight |
@@ -125,6 +126,36 @@ See [Quest Gear](../Quest-Gear.md), [Kael Drakkel](Kael-Drakkel.md), [Skyshrine]
 | Girdle of Dark Power (Waist) | Lady Nevederia | SHD BRD ROG | AC 30 STR/INT +15 HP/Mana +50 Haste +41% all resists +5 |
 | Tear set (Black, White, Poison, …) | Dozekar the Cursed | — | Quest / combine tears |
 | Golden Ember Powder | Most ToV dragons / trash | — | Common ToV reagent |
+
+### Vulak`Aerr (RAID) — ~890k HP
+
+Live **100%** at ~517, −739. Respawn **604800s ± 28800s** (7 day ± 8h). Always **4** wear from the pool below and **2** Ancient spells (class scrolls: Bulwark, Legacy of Blades, Feral Avatar, Master of Death, Destruction of Ice, Shock of Sun, Eternal Rapture, Lcea's Lament, and the paired scroll for that class).
+
+| Item | Dropper | Classes | Stats / notes |
+| --- | --- | --- | --- |
+| Vyrinn's Earring of Insanity | Vulak`Aerr | ALL | AC 25 STR +15 STA +12 HP +50 all resists +5. NO DROP |
+| Solist's Earring of Insight | Vulak`Aerr | NEC WIZ MAG ENC | AC 25 INT +15 HP +90 Mana +90 all resists +4. NO DROP |
+| Palladius' Axe of Slaughter (2H Slashing) | Vulak`Aerr | WAR PAL SHD | 51/42 (1.21), AC 80 HP +100 Mana +50 |
+| Jaelen's Katana (1H Slashing) | Vulak`Aerr | WAR | 14/19 (0.74), HP +100 |
+| Tolan's Longsword of the Glade (1H Slashing) | Vulak`Aerr | RNG | 15/21 (0.71), AC 15 HP +100 |
+| Mrylokar's Dagger of Vengeance (Piercing) | Vulak`Aerr | ROG | 15/19 (0.79), AC 15 HP +100 |
+| Abashi's Rod of Disempowerment (2H Blunt) | Vulak`Aerr | MNK NEC | 40/30 (1.33), HP +100 Mana +50 |
+| Gharn's Rock of Smashing (1H Blunt) | Vulak`Aerr | MNK | 16/19 (0.84), HP +100 |
+| Sal`Varae's Robe of Darkness (Chest) | Vulak`Aerr | CLR NEC WIZ MAG ENC | AC 60 HP +100 Mana +100 |
+| Hobart's War Helmet (Head) | Vulak`Aerr | WAR CLR PAL RNG SHD BRD ROG SHM | AC 50 HP +70 Mana +70 |
+| Brother Xave's Headband (Head) | Vulak`Aerr | MNK | AC 45 STR +15 STA/AGI/DEX +10 HP +75 |
+| Akkirus' Mask of Warfare (Face) | Vulak`Aerr | ALL | AC 30 HP +100 Mana +100 |
+| Ssra's Bloodstone Eyepatch (Face) | Vulak`Aerr | ALL | AC 35 HP +75 Mana +75 |
+| Valtron's Necklace of Wonder (Neck) | Vulak`Aerr | ALL | AC 35 HP +100 |
+| Viik's Pauldrons of Pain (Shoulders) | Vulak`Aerr | ALL | AC 38 HP +75 |
+| Do`Vassir's Gauntlets of Might (Hands) | Vulak`Aerr | WAR CLR PAL RNG SHD DRU MNK BRD ROG SHM | AC 40 HP +100 Mana +100 |
+| Rowyl's Metal Armguards (Arms) | Vulak`Aerr | CLR DRU SHM | AC 45 Mana +75 |
+| Yakatizma's Shield of Crafting (Secondary) | Vulak`Aerr | CLR DRU SHM | AC 75 HP +100 Mana +100 |
+| Crystasia's Crystal Ring (Finger) | Vulak`Aerr | ALL | AC 30 HP +100 Mana +100 |
+| Camii's Bracer of Vigor (Wrist) | Vulak`Aerr | ALL | AC 35 HP +50 Mana +50 |
+| Maclaer's Boots of Silence (Feet) | Vulak`Aerr | WAR CLR PAL RNG SHD BRD ROG SHM | AC 40 |
+| Sirran's Boots of Insanity (Feet) | Vulak`Aerr | CLR DRU SHM NEC WIZ MAG ENC | AC 20 HP +100 Mana +100 |
+| Feeliux's Cord of Velocity (Waist) | Vulak`Aerr | WAR PAL RNG SHD MNK BRD ROG | AC 30 HP +100 |
 
 ### Shared wing-named pool (~60)
 
