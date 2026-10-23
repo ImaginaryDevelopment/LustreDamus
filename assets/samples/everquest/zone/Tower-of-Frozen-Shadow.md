@@ -1,6 +1,6 @@
 # Tower of Frozen Shadow — unique loot
 
-Velious dungeon (`frozenshadow`). ZEM **1.00×**. Hunt **26–51**. Seven floors; each floor key *should* drop from a named. No AAs: **Tserrina** is **2-group** on live EQ (charm / mez) — on IdleQuest she **does not spawn** (see below).
+Velious dungeon (`frozenshadow`). ZEM **1.22×**. Hunt **26–51**. Seven floors; each floor key *should* drop from a named. No AAs: **Tserrina** is **2-group** on live EQ (charm / mez) — on IdleQuest she **does not spawn** (see below).
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`frozenshadow`).
 

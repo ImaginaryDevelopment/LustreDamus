@@ -1,6 +1,6 @@
 # Lavastorm Mountains — unique loot
 
-Classic outdoor (`lavastorm`). ZEM **0.75×**. Hunt **~10–30**. Approaches to **Solusek's Eye** (Sol A), **Nagafen's Lair** (Sol B), and **Temple of Solusek Ro** (`soltemple`). Fire / cinder / Solusek goblins and fire elementals. No AAs: outdoor camps are solo / small group.
+Classic outdoor (`lavastorm`). ZEM **1.00×**. Hunt **~10–30**. Approaches to **Solusek's Eye** (Sol A), **Nagafen's Lair** (Sol B), and **Temple of Solusek Ro** (`soltemple`). Fire / cinder / Solusek goblins and fire elementals. No AAs: outdoor camps are solo / small group.
 
 **Faction / LEAVE warning:** Temple merchants and Solusek-side quest NPCs are not hunt targets. IdleQuest also plants a lot of **GoD / LDON / Wayfarer** placeholders here — skip those (level 50–70 guard / mercenary spam). This sheet is **classic** uniques only.
 

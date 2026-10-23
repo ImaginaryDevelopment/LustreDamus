@@ -1,6 +1,6 @@
 # Kerra Isle — unique loot
 
-Classic outdoor (`kerraridge`). ZEM **1.20×**. Hunt **~15–25**. Marked `*` on Zone XP — Kerran villagers / merchants are easy auto-level faction mistakes. Island off Toxxulia; Kerran (cat people) camps plus a few named beasts.
+Classic outdoor (`kerraridge`). ZEM **1.00×**. Hunt **~15–25**. Marked `*` on Zone XP — Kerran villagers / merchants are easy auto-level faction mistakes. Island off Toxxulia; Kerran (cat people) camps plus a few named beasts.
 
 **Faction warning:** Village Kerrans (trainers, merchants, quest givers) are **LEAVE** / **FACTION**. Hunt **KILL** targets are hostile Kerran camps (awrat / ghazi / mamluk / tiger spahi), named beasts, and outdoor nameds.
 

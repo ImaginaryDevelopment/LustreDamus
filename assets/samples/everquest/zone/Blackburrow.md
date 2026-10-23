@@ -1,6 +1,6 @@
 # Blackburrow — unique loot
 
-ZEM **1.33×**. Hunt range **4–15**. Nameds and quest gnolls are mixed through the pits and lower bridges.
+ZEM **1.19×**. Hunt range **4–15**. Nameds and quest gnolls are mixed through the pits and lower bridges.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

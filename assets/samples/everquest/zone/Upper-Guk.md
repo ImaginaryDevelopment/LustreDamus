@@ -1,6 +1,6 @@
 # Upper Guk — unique loot
 
-ZEM **2.00×**. Hunt range **4–25**. Unique nameds are spread from the entrance rooms to the croc pit.
+ZEM **1.19×**. Hunt range **4–25**. Unique nameds are spread from the entrance rooms to the croc pit.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

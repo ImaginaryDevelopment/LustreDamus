@@ -1,6 +1,6 @@
 # Plane of Sky — unique loot
 
-Classic plane (`airplane`). ZEM **1.13×**. Hunt **46–60**. Marked `*` — **friendly Key Master** and island quest NPCs. Islands are **keyed** (quest / drop keys from prior islands). Boss islands are **RAID**-grade; island trash is multi-group.
+Classic plane (`airplane`). ZEM **0.83×**. Hunt **46–60**. Marked `*` — **friendly Key Master** and island quest NPCs. Islands are **keyed** (quest / drop keys from prior islands). Boss islands are **RAID**-grade; island trash is multi-group.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`airplane`). HP from IdleQuest `npc_types` (classic-scale figures, same ballpark as Hate / Trakanon DB rows). Mob names match IdleQuest display. Skip Fabled.
 

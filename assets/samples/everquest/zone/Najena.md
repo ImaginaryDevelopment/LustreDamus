@@ -1,6 +1,6 @@
 # Najena — unique loot
 
-ZEM **1.73×**. Hunt range **8–35**. Nameds are keyed deeper in; **Linara Parlone** is a captive quest NPC.
+ZEM **1.19×**. Hunt range **8–35**. Nameds are keyed deeper in; **Linara Parlone** is a captive quest NPC.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

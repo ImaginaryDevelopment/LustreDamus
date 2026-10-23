@@ -1,6 +1,6 @@
 # Howling Stones — unique loot
 
-ZEM **1.13×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella Sathir** is **2-group**. Wing nameds share PH spots in that wing; each wing's last-room boss only spawns there.
+ZEM **0.94×**. Hunt range **50–60**. Kunark crypt (Charasis). Needs **Key to Charasis** (Dugroz in Swamp of No Hope, not here). No AAs: wing bosses are a 55 group; **Drusella Sathir** is **2-group**. Wing nameds share PH spots in that wing; each wing's last-room boss only spawns there.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`charasis`). Mob names below match IdleQuest display names (`#The_Crypt_Keeper` → **The Crypt Keeper**, `a_crypt_wurm` → **a crypt wurm**). Confirmed loot: **Skeletal Procurator** (~−90, 675) → Mask of Obtenebration; **a crypt wurm** (north ~239, 138 / 387, 80) → Mask of Wurms; **Embalming Fluid** → Fingerbone Hoop / Hand of the Reaper — **not** Enshrouded Veil (Veil is a tiny % on HS trash loottables there).
 

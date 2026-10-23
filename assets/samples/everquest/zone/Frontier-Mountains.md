@@ -1,6 +1,6 @@
 # Frontier Mountains — unique loot
 
-Kunark outdoor (`frontiermtns`). ZEM **1.00×**. Hunt **20–40+**. Goblin / burynai / mountain giant hills between **Temple of Droga**, **Mines of Nurga**, Burning Woods, and Dreadlands. No AAs: nameds are solo / small-group.
+Kunark outdoor (`frontiermtns`). ZEM **0.83×**. Hunt **20–40+**. Goblin / burynai / mountain giant hills between **Temple of Droga**, **Mines of Nurga**, Burning Woods, and Dreadlands. No AAs: nameds are solo / small-group.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`frontiermtns`). Mob names match IdleQuest display (`Chief_RokGus` → **Chief RokGus**). Skip low-value gem / sulfur spam unless quest-tied.
 

@@ -1,6 +1,6 @@
 # Kael Drakkel — unique loot
 
-Velious giant city (`kael`). ZEM **1.13×**. Hunt **40–60+**. Connects **Eastern Wastes** ↔ **Wakening Land**. Kromrif / Kromzek factions gate vendors and quests; **King Tormax** faction starts hard KoS. Arena / veterans drop **Corroded / Eroded / Torn Enchanted** armor pieces for **Thurgadin** class armor. **Ancient Tarnished** Kael armor is a separate Ally Kromzek path (pieces from Temple of Veeshan west). No AAs: city nameds are group; **King Tormax** and **Derakor the Vindicator** are **RAID**.
+Velious giant city (`kael`). ZEM **0.94×**. Hunt **40–60+**. Connects **Eastern Wastes** ↔ **Wakening Land**. Kromrif / Kromzek factions gate vendors and quests; **King Tormax** faction starts hard KoS. Arena / veterans drop **Corroded / Eroded / Torn Enchanted** armor pieces for **Thurgadin** class armor. **Ancient Tarnished** Kael armor is a separate Ally Kromzek path (pieces from Temple of Veeshan west). No AAs: city nameds are group; **King Tormax** and **Derakor the Vindicator** are **RAID**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`kael`). Mob names match IdleQuest display (`King_Tormax` → **King Tormax**). Skip Watchman / Adjutant / Sentinel / `#Guard` trash — only notables below.
 

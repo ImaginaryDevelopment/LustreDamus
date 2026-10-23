@@ -1,6 +1,6 @@
 # High Keep — unique loot
 
-ZEM **2.00×**. Hunt range **20–40** in the Pickclaw basement; nameds also spawn on the upper floors. Indoor keep off **Highpass Hold**. Auto-level is unsafe: **Highpass Guards** (~20–32) and vendors (~20–45) overlap Pickclaw levels.
+ZEM **1.125×**. Hunt range **20–40** in the Pickclaw basement; nameds also spawn on the upper floors. Indoor keep off **Highpass Hold**. Auto-level is unsafe: **Highpass Guards** (~20–32) and vendors (~20–45) overlap Pickclaw levels.
 
 **Do not trust consider.** Evil races often con scowling to the humans *and* the goblins. Hunt by **model + name**: green **Pickclaw goblins** are the camp. Anything named **Guard …**, **Captain …**, **Merchant …**, banker, trainer, maid, noble, or a unique human shopkeeper is Highpass / Qeynos citizen — killing them tanks **Highpass Guards**, **Merchants of Highpass**, and **Carson McCabe**.
 

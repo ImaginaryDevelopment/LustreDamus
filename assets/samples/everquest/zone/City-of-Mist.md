@@ -1,6 +1,6 @@
 # City of Mist — unique loot
 
-ZEM **0.85×**. Hunt range **40–55**. Many weapons drop off trash; lords spawn from **black reaver** corpses. No AAs: reavers and lords are a **55 group** (not raid). **Lhranc** and **a human skeleton** (Mardon) are epic / wizard quest NPCs — leave them.
+ZEM **0.94×**. Hunt range **40–55**. Many weapons drop off trash; lords spawn from **black reaver** corpses. No AAs: reavers and lords are a **55 group** (not raid). **Lhranc** and **a human skeleton** (Mardon) are epic / wizard quest NPCs — leave them.
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot

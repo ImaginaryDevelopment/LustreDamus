@@ -1,6 +1,6 @@
 # Plane of Hate — unique loot
 
-Classic plane. ZEM **1.13×**. Hunt **48–60**. Access via temple / wizard port. Whole zone is **RAID** trash and bosses — **Innoruuk** and high Hate nameds are **RAID**.
+Classic plane. ZEM **0.86×**. Hunt **48–60**. Access via temple / wizard port. Whole zone is **RAID** trash and bosses — **Innoruuk** and high Hate nameds are **RAID**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content). This sample set uses shortname **`hateplaneb`** (Zone XP). IdleQuest also ships a `hateplane` spawn set — notable loot below is from the active IdleQuest Hate tables. Skip joke NPCs (`ShowEQ Users Are Lame`, etc.) and **0%** rows.
 

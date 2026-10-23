@@ -1,6 +1,6 @@
 # Siren's Grotto — unique loot
 
-Velious underwater dungeon (`sirens`). ZEM **0.85×**. Hunt **45–60+**. Connects **Western Wastes** â†” **Cobalt Scar**. Cold / wet: Enduring Breath + invis help; seahorses and icy servants **see invis**. Sirens are CLR / ENC — dispel, snare, high MR. No AAs: nameds are group; Dark Temple / epic placeholders can need a strong 55–60 group.
+Velious underwater dungeon (`sirens`). ZEM **0.94×**. Hunt **45–60+**. Connects **Western Wastes** â†” **Cobalt Scar**. Cold / wet: Enduring Breath + invis help; seahorses and icy servants **see invis**. Sirens are CLR / ENC — dispel, snare, high MR. No AAs: nameds are group; Dark Temple / epic placeholders can need a strong 55–60 group.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sirens`). Names below match IdleQuest display (`#Fellspine` â†’ still **Fellspine** on the non-hash row; `#Mistress_of_the_Darkwater` â†’ **#Mistress of the Darkwater**). Hash (`#`) rows are **0%** on the spawn table — they do not appear as normal camp trash; camp the listed **PH** until the named pops (or use whatever script/PH the emu uses).
 

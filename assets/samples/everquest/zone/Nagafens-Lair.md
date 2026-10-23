@@ -1,6 +1,6 @@
 # Nagafen's Lair — unique loot
 
-ZEM **1.06×**. Hunt range **35–55**. Kobold royals near the entrance; fire giants deeper in. No AAs: **Lord Nagafen** is **RAID**; Djarn / Tranix / Skarlon / Rokyl are **2-group**. The priest is **kobold priest** (placeholder spawn), not a titled named.
+ZEM **0.86×**. Hunt range **35–55**. Kobold royals near the entrance; fire giants deeper in. No AAs: **Lord Nagafen** is **RAID**; Djarn / Tranix / Skarlon / Rokyl are **2-group**. The priest is **kobold priest** (placeholder spawn), not a titled named.
 
 **Solusek kobold king** (42, SK) is in the King Room with two add kobolds; the priest can heal him. **Targin the Rock** (human monk) shares that room.
 

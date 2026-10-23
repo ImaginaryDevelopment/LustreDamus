@@ -1,6 +1,6 @@
 # Plane of Growth — unique loot
 
-Velious plane (`growthplane`). ZEM **1.20×**. Hunt **55+**. Enter from **Wakening Land** tower lake ~500, −1000 (mushroom portal on the roof). Level **46+**; no key. Exit only via gate / port. Damaging Tunareans is **permanent** faction loss (Protectors of Growth hunt enemies). No AAs: treant mini-bosses are hard group / small raid; **Tunare** is **RAID**.
+Velious plane (`growthplane`). ZEM **0.90×**. Hunt **55+**. Enter from **Wakening Land** tower lake ~500, −1000 (mushroom portal on the roof). Level **46+**; no key. Exit only via gate / port. Damaging Tunareans is **permanent** faction loss (Protectors of Growth hunt enemies). No AAs: treant mini-bosses are hard group / small raid; **Tunare** is **RAID**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`growthplane`). HP from IdleQuest `npc_types`.
 

@@ -1,6 +1,6 @@
 # Permafrost Keep — unique loot
 
-ZEM **1.20×**. Hunt range **15–50**. Goblin king rooms mid-zone; ice giants at the back. No AAs: **Lady Vox** is **RAID**.
+ZEM **1.44×**. Hunt range **15–50**. Goblin king rooms mid-zone; ice giants at the back. No AAs: **Lady Vox** is **RAID**.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

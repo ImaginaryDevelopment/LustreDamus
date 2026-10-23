@@ -1,6 +1,6 @@
 # Kedge Keep — unique loot
 
-ZEM **1.33×**. Hunt range **32–50**. Underwater nameds by room. No AAs: **Phinigel** is **RAID**; Cauldronbubble / boil / Estrella / Undertow / seahorses are **2-group**.
+ZEM **1.39×**. Hunt range **32–50**. Underwater nameds by room. No AAs: **Phinigel** is **RAID**; Cauldronbubble / boil / Estrella / Undertow / seahorses are **2-group**.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

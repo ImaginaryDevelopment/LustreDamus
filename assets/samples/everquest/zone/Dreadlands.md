@@ -1,6 +1,6 @@
 # Dreadlands — unique loot
 
-Kunark outdoor (`dreadlands`). ZEM **1.00×**. Hunt **25–45+**. Portal hub (Kunark Spires), mountain giants, drachnids, drolvargs, yetis, undead city, cockatrices. Connects Burning Woods / Frontier Mountains / Firiona approaches. No AAs: outdoor nameds are solo / small-group; **Gorenaire** is **RAID**.
+Kunark outdoor (`dreadlands`). ZEM **0.83×**. Hunt **25–45+**. Portal hub (Kunark Spires), mountain giants, drachnids, drolvargs, yetis, undead city, cockatrices. Connects Burning Woods / Frontier Mountains / Firiona approaches. No AAs: outdoor nameds are solo / small-group; **Gorenaire** is **RAID**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`dreadlands`). Mob names match IdleQuest display (`Brother_Balatin` → **Brother Balatin**). Skip mage-trap / Nexus Scion / spire placeholders.
 

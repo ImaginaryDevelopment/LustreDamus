@@ -1,6 +1,6 @@
 # Old Sebilis — unique loot
 
-Highest classic ZEM in this set (**2.50×**). Hunt range **48–60**. Needs **Trakanon Idol** key (Emperor Ganak in **Trakanon's Teeth**, not here). No AAs: **RAID** = formed raid; untagged = one on-level group. **Trakanon** is RAID. Juggernauts / Spore King / city nameds are group camps.
+ZEM **0.94×**. Hunt range **48–60**. Needs **Trakanon Idol** key (Emperor Ganak in **Trakanon's Teeth**, not here). No AAs: **RAID** = formed raid; untagged = one on-level group. **Trakanon** is RAID. Juggernauts / Spore King / city nameds are group camps.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`sebilis`). Mob names match IdleQuest display (`Arch_Duke_Iatol` → **Arch Duke Iatol**, `sebilite_juggernaut` → **sebilite juggernaut**). HP from IdleQuest `npc_types`. Skip Fabled variants. Trash frogs / scarabs / skeletons share many rare armor pieces — named rows below are the ones to stop for.
 

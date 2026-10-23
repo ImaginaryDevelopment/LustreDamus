@@ -1,6 +1,6 @@
 # Western Wastes — unique loot
 
-Velious outdoor dragonland (`westwastes`). ZEM **1.06×**. Hunt **50–60+**. Approaches to **Temple of Veeshan**, **Dragon Necropolis**, and **Siren's Grotto**. Named dragons roam / nest; many see invis, summon, and AE. Wildlife nameds (Tantor, Icehackle, Tsiraka) fill camps between. No AAs: mid dragons are strong groups; **Harla Dar**, **Klandicar**, **Sontalak**, **Melalafen** are **RAID**-tier.
+Velious outdoor dragonland (`westwastes`). ZEM **0.86×**. Hunt **50–60+**. Approaches to **Temple of Veeshan**, **Dragon Necropolis**, and **Siren's Grotto**. Named dragons roam / nest; many see invis, summon, and AE. Wildlife nameds (Tantor, Icehackle, Tsiraka) fill camps between. No AAs: mid dragons are strong groups; **Harla Dar**, **Klandicar**, **Sontalak**, **Melalafen** are **RAID**-tier.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`westwastes`). Mob names match IdleQuest display (`Harla_Dar` â†’ **Harla Dar**). Skip trap / placeholder NPCs.
 

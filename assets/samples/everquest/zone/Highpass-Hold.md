@@ -1,6 +1,6 @@
 # Highpass Hold — unique loot
 
-ZEM **1.06×**. Hunt range **9–22** (bandits / orcs / gnolls); a few higher nameds sit on the pass. Outdoor hold linking **High Keep**, **Kithicor**, and the Qeynos / Freeport roads. Marked `*` on Zone XP — auto-level is unsafe around **Highpass Guards**, merchants, and McCabe faction.
+ZEM **1.00×**. Hunt range **9–22** (bandits / orcs / gnolls); a few higher nameds sit on the pass. Outdoor hold linking **High Keep**, **Kithicor**, and the Qeynos / Freeport roads. Marked `*` on Zone XP — auto-level is unsafe around **Highpass Guards**, merchants, and McCabe faction.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`highpass` / `highpasshold`).
 

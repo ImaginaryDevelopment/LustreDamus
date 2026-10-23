@@ -1,6 +1,6 @@
 # Cobalt Scar — unique loot
 
-Velious outdoor (`cobaltscar`). ZEM **1.00×**. Hunt **35–50+**. Coast / cliffs between **Siren's Grotto**, **Wakening Land**, and open sea. **Othmir** beach camps (friendly — LEAVE pups / quest NPCs), **cobalt drakes** and **wyverns** on the cliffs, water dragon **Kelorek`Dar** in the scar. Othmir hate wolf form. No AAs: nameds are group; **Kelorek`Dar** is a strong 60+ / small-raid water dragon (long respawn).
+Velious outdoor (`cobaltscar`). ZEM **0.83×**. Hunt **35–50+**. Coast / cliffs between **Siren's Grotto**, **Wakening Land**, and open sea. **Othmir** beach camps (friendly — LEAVE pups / quest NPCs), **cobalt drakes** and **wyverns** on the cliffs, water dragon **Kelorek`Dar** in the scar. Othmir hate wolf form. No AAs: nameds are group; **Kelorek`Dar** is a strong 60+ / small-raid water dragon (long respawn).
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`cobaltscar`). Mob names match IdleQuest display (`Kelorek\`Dar` â†’ **Kelorek`Dar**, `#Yvolcarn` â†’ **Yvolcarn**).
 

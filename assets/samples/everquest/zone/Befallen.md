@@ -1,6 +1,6 @@
 # Befallen — unique loot
 
-Tied with Crushbone for the next-highest ZEM (**2.13×**). Hunt range **7–25**. Keys are always-drops used to open deeper floors.
+ZEM **1.19×**. Hunt range **7–25**. Keys are always-drops used to open deeper floors.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

@@ -1,6 +1,6 @@
 # Plane of Mischief — unique loot
 
-Velious plane (`mischiefplane`). ZEM **1.40×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest → **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
+Velious plane (`mischiefplane`). ZEM **1.05×**. Hunt **50+**. Classic **1.0** only (no live revamp). Enter via the mini-castle in **Temple of Veeshan** (CoTH / ToV clear — dragons see invis). Exit tree in the forest → **Cobalt Scar** (~−693, 526, 93). Learn the exit tree first. Most NPCs start non-KOS; traps, invisible bridges, and rat-maze pits are the real danger. Bristlebane's throne room is **empty** on classic — no raid boss.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`mischiefplane`). Almost all wearable gear is a **Deck of Spontaneous Generation** combine (cards go **in the Deck**, not to Ferjeneror). See **How to get the Deck and combine cards** below. Deck reagents (Squires / Knights / Crowns / Thrones) share a few IdleQuest loot pools.
 

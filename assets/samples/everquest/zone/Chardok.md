@@ -1,6 +1,6 @@
 # Chardok — unique loot
 
-Kunark sarnak fortress (`chardok`). ZEM **1.50×**. Hunt range **50–60**. Royals need lockpick. No AAs: **RAID** = formed raid; Korocust is **2-group**. **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`chardok`).
+Kunark sarnak fortress (`chardok`). ZEM **0.94×**. Hunt range **50–60**. Royals need lockpick. No AAs: **RAID** = formed raid; Korocust is **2-group**. **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`chardok`).
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot

@@ -1,6 +1,6 @@
 # Plane of Fear — unique loot
 
-Classic plane (`fearplane`). ZEM **1.13×**. Hunt **50–60**. Port / gate from temple quests or wiz/dru ports — no key. Whole zone is **RAID** content: trash is multi-group / raid trash; **Cazic Thule**, **Dread**, **Fright**, and **Terror** are **RAID**.
+Classic plane (`fearplane`). ZEM **0.83×**. Hunt **50–60**. Port / gate from temple quests or wiz/dru ports — no key. Whole zone is **RAID** content: trash is multi-group / raid trash; **Cazic Thule**, **Dread**, **Fright**, and **Terror** are **RAID**.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`fearplane`). Mob names match IdleQuest display. Skip Fabled / 0% rows.
 

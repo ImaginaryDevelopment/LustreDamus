@@ -1,6 +1,6 @@
 # Crypt of Dalnir — unique loot
 
-ZEM **1.13×**. Hunt range **25–40**. Kunark monk dungeon. Imprecators drop Visceral Dagger pieces. No AAs: **group** (The Kly included). **an Iksar prisoner** and **a tormented tradesman** are quest NPCs.
+ZEM **1.01×**. Hunt range **25–40**. Kunark monk dungeon. Imprecators drop Visceral Dagger pieces. No AAs: **group** (The Kly included). **an Iksar prisoner** and **a tormented tradesman** are quest NPCs.
 
 Sort **Nameds** by **Mob**. **Do** column:
 - **KILL** — fine to kill for loot

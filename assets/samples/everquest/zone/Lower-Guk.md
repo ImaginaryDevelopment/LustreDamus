@@ -1,6 +1,6 @@
 # Lower Guk — unique loot
 
-ZEM **1.06×**. Hunt range **30–50**. Live side (king) vs dead side (ghoul lord). Assassin / supplier and Frenzy / Arch Magus are the busiest camps. No AAs: **group** camps (Ghoul Lord / froglok king included).
+ZEM **0.86×**. Hunt range **30–50**. Live side (king) vs dead side (ghoul lord). Assassin / supplier and Frenzy / Arch Magus are the busiest camps. No AAs: **group** camps (Ghoul Lord / froglok king included).
 
 **the ghoul arch magus** — IdleQuest **50%** combined (two 25% entries) on sg 7415 @ −832, 1184. PH **a kor ghoul wizard** / **a jin ghoul wizard** (25% each). **Respawn 29 min** (1740s, no variance).
 

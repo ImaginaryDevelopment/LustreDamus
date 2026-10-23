@@ -1,6 +1,6 @@
 # Timorous Deep — unique loot
 
-Kunark ocean / island hop (`timorous`). ZEM **1.00×**. Hunt **~15–55** (ogre raiders / Fire Gators → Spiroc isle ~35–55). Boat hub between Freeport / Butcherblock lanes and Kunark islands. Marked `*` on Zone XP — dock **merchants**, boat NPCs, and epic path NPCs (**Omat Vastsea**, **Lheao**, **Alrik Farsight**) are easy auto-level mistakes.
+Kunark ocean / island hop (`timorous`). ZEM **0.83×**. Hunt **~15–55** (ogre raiders / Fire Gators → Spiroc isle ~35–55). Boat hub between Freeport / Butcherblock lanes and Kunark islands. Marked `*` on Zone XP — dock **merchants**, boat NPCs, and epic path NPCs (**Omat Vastsea**, **Lheao**, **Alrik Farsight**) are easy auto-level mistakes.
 
 **Faction / LEAVE warning:** **Omat Vastsea** and **Lheao** are **monk epic** path — **LEAVE**. **Alrik Farsight** is **wizard epic** adjacent — **LEAVE**. Dock vendors and **#Translocator Deela** are **LEAVE**. **Faydedar** is **RAID**.
 

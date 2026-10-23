@@ -1,6 +1,6 @@
 # Swamp of No Hope — unique loot
 
-Kunark outdoor (`swampofnohope`). ZEM **1.00×**. Hunt **~1–35** (leeches / mosquitos / plants → froglok tribes ~10–26; a few higher nameds). Links **Field of Bone**, **Firiona Vie** approaches, and the **Charasis** (Howling Stones) key path. No AAs: outdoor nameds are solo / small-group; **Ulump Pujluk** / **A black ravenger** are tough outdoor nameds (~55).
+Kunark outdoor (`swampofnohope`). ZEM **0.83×**. Hunt **~1–35** (leeches / mosquitos / plants → froglok tribes ~10–26; a few higher nameds). Links **Field of Bone**, **Firiona Vie** approaches, and the **Charasis** (Howling Stones) key path. No AAs: outdoor nameds are solo / small-group; **Ulump Pujluk** / **A black ravenger** are tough outdoor nameds (~55).
 
 **Faction / LEAVE warning:** Cabilis **Troopers**, **Crusaders**, **Warlord Hikyg**, **Captain Nedar**, and **Klok** vendors are Legion / city friendlies — tag **FACTION** / **LEAVE**. **Dugroz** is the **Key to Charasis** quest NPC — **LEAVE**.
 

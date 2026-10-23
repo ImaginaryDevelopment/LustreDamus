@@ -1,6 +1,6 @@
 # Gorge of King Xorbb — unique loot
 
-Classic outdoor / mini-dungeon (`beholder`). ZEM **1.00×**. Hunt **~6–35**. Goblin approaches, then evil-eye lords and **King Xorbb**. Links **Runnyeye** / Faydark side roads. No AAs: Xorbb is a tough named for a small group at level, not a formed RAID.
+Classic outdoor / mini-dungeon (`beholder`). ZEM **1.28×**. Hunt **~6–35**. Goblin approaches, then evil-eye lords and **King Xorbb**. Links **Runnyeye** / Faydark side roads. No AAs: Xorbb is a tough named for a small group at level, not a formed RAID.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`beholder`). Skip **The Fabled King Xorbb** (0%). `#Yymp the Infernal` is **0%** on IdleQuest — treat as placeholder / rare.
 

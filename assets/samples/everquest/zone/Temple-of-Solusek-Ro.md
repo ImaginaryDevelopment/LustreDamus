@@ -1,6 +1,6 @@
 # Temple of Solusek Ro — unique loot
 
-Classic indoor quest hall (`soltemple`). ZEM **1.33×**. North walk-in from **Lavastorm**. Shortname `soltemple` — Solusek's Eye is `soldunga`, Nagafen's Lair is `soldungb`. Marked `*` on Zone XP. Levels on the index are **hub**: this is turn-ins, not a hunt band.
+Classic indoor quest hall (`soltemple`). ZEM **0.998×**. North walk-in from **Lavastorm**. Shortname `soltemple` — Solusek's Eye is `soldunga`, Nagafen's Lair is `soldungb`. Marked `*` on Zone XP. Levels on the index are **hub**: this is turn-ins, not a hunt band.
 
 **Faction:** Keepers, seekers, wards, and the named residents (Lon, Lyfyx, Searfire, Tazgar, the temple wizards) are **Temple of Solusek Ro**. Killing one is **-100** Temple of Solusek Ro and **+1** Shadowed Men. Auto-level will eat the quest givers. **Solomen** is **Truespirit** (-30). **an undead knight** has no faction-hit row.
 

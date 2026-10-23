@@ -1,6 +1,6 @@
 # Castle Mistmoore — unique loot
 
-ZEM **1.20×**. Hunt range **20–45**. Nameds in the graveyard, garden, ballroom, and keep. No AAs: **group** (Mayong is Plane of Hate, not here). **Ssynthi** is usually non-aggro.
+ZEM **0.97×**. Hunt range **20–45**. Nameds in the graveyard, garden, ballroom, and keep. No AAs: **group** (Mayong is Plane of Hate, not here). **Ssynthi** is usually non-aggro.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

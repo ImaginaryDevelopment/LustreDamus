@@ -1,6 +1,6 @@
 # Crushbone — unique loot
 
-ZEM **2.13×**. Hunt range **5–20**. Nameds live in the keep, trainer hill, and slaver pit.
+ZEM **1.19×**. Hunt range **5–20**. Nameds live in the keep, trainer hill, and slaver pit.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

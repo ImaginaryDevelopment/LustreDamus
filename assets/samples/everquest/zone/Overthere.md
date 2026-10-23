@@ -1,6 +1,6 @@
 # The Overthere — unique loot
 
-Kunark outdoor (`overthere`). ZEM **1.00×**. Hunt **~15–45** (succulents / cats / rhinos → cockatrices / sarnaks → scorpikis ~32–47). Desert between **Frontier Mountains**, **Chardok** approaches, and the **dark-elf outpost**. IdleQuest has **cockatrices** here (not classic Spiroc camps). No AAs: outdoor nameds are solo / small-group; outpost brass is high 50s.
+Kunark outdoor (`overthere`). ZEM **0.83×**. Hunt **~15–45** (succulents / cats / rhinos → cockatrices / sarnaks → scorpikis ~32–47). Desert between **Frontier Mountains**, **Chardok** approaches, and the **dark-elf outpost**. IdleQuest has **cockatrices** here (not classic Spiroc camps). No AAs: outdoor nameds are solo / small-group; outpost brass is high 50s.
 
 **Faction / LEAVE warning:** Marked `*` on Zone XP — **Tin Merchants / Bankers**, outpost **Dragoons**, and named brass (**Captain Rottgrime**, **General V\`Deers**, **Admiral Tylix**) are evil-outpost friendlies for dark races. Auto-level near the fortress can hit them. **Drixiv Arcut** / **Xlixinar Arcut** are Trooper Scale Boots path — **LEAVE**.
 

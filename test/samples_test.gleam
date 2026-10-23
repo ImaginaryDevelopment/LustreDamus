@@ -40,11 +40,11 @@ pub fn zone_search_is_case_insensitive_test() {
 
 pub fn zone_index_includes_levels_xp_and_friendly_star_test() {
   let md = samples.zone_index_markdown()
-  should.be_true(string.contains(md, "| High Keep* | highkeep* | 20–40 | 2.00× |"))
+  should.be_true(string.contains(md, "| High Keep* | highkeep* | 20–40 | 1.125× |"))
   should.be_true(
-    string.contains(md, "| Temple of Solusek Ro* | soltemple* | hub | 1.33× |"),
+    string.contains(md, "| Temple of Solusek Ro* | soltemple* | hub | 0.998× |"),
   )
-  should.be_true(string.contains(md, "| Sebilis | sebilis | 48–60 | 2.50× |"))
+  should.be_true(string.contains(md, "| Sebilis | sebilis | 48–60 | 0.94× |"))
   should.be_true(string.contains(md, "| PoGrowth* | growthplane* |"))
 }
 

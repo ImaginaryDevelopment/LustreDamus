@@ -1,6 +1,6 @@
 # Estate of Unrest — unique loot
 
-ZEM **1.73×**. Hunt range **10–35**. Yard and first floor, then fireplace / bar / tower, then basement.
+ZEM **1.13×**. Hunt range **10–35**. Yard and first floor, then fireplace / bar / tower, then basement.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

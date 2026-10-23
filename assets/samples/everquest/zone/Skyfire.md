@@ -1,6 +1,6 @@
 # Skyfire Mountains — unique loot
 
-ZEM **1.06×**. Hunt range **45–60**. Kunark outdoor. Named cycles drop 50+ spells. No AAs: **Talendor** and **Zordakalicus** are **RAID**. Eldrig / Felia are a 55–60 group.
+ZEM **0.86×**. Hunt range **45–60**. Kunark outdoor. Named cycles drop 50+ spells. No AAs: **Talendor** and **Zordakalicus** are **RAID**. Eldrig / Felia are a 55–60 group.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

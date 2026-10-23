@@ -1,6 +1,6 @@
 # Ocean of Tears — unique loot
 
-Classic ocean / island hop (`oot`). ZEM **1.13×**. Hunt **~9–35** (aqua goblins → isle goblins → pirates / cyclops / spectres). Boat hub between Freeport and Butcherblock. Marked `*` on Zone XP — **Sister Isle** (Sisters of Erollisi, merchants) and island vendors are easy auto-level / faction mistakes.
+Classic ocean / island hop (`oot`). ZEM **1.00×**. Hunt **~9–35** (aqua goblins → isle goblins → pirates / cyclops / spectres). Boat hub between Freeport and Butcherblock. Marked `*` on Zone XP — **Sister Isle** (Sisters of Erollisi, merchants) and island vendors are easy auto-level / faction mistakes.
 
 **Faction warning:** **Sister of Erollisi** and most Sister Isle / dock merchants are friendlies for good races. Tag them **FACTION** / **LEAVE**. Pirate / goblin / cyclops / spectre islands are free **KILL**s.
 

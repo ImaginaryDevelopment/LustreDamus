@@ -1,6 +1,6 @@
 # Eastern Wastes — unique loot
 
-Velious outdoor (`eastwastes`). ZEM **1.00×**. Hunt **30–45**. Huge ice plain: **Coldain** camps, **Ry`Gorr Keep**, **Kromrif** giant fort, Crystal Caverns / Frozen Shadow / Great Divide / Iceclad approaches. Mix of orcs, giants, wildlife (griffins, rhinos, mammoths, dervishes). No AAs: nameds are solo / small-group.
+Velious outdoor (`eastwastes`). ZEM **0.83×**. Hunt **30–45**. Huge ice plain: **Coldain** camps, **Ry`Gorr Keep**, **Kromrif** giant fort, Crystal Caverns / Frozen Shadow / Great Divide / Iceclad approaches. Mix of orcs, giants, wildlife (griffins, rhinos, mammoths, dervishes). No AAs: nameds are solo / small-group.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`eastwastes`). Mob names match IdleQuest display (`Chief_Ry\`Gorr` → **Chief Ry`Gorr**). Skip bunny-event / trap placeholders.
 

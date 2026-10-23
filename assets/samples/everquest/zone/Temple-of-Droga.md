@@ -1,6 +1,6 @@
 # Temple of Droga — unique loot
 
-ZEM **0.95×**. Hunt range **30–40** (inner nameds ~**35–38**). Goblin temple off Frontier Mountains or one-way from **Mines of Nurga**. False-floor entrance — you drop in and cannot jump back. Nothing sees invis. No AAs: **group** (Chief included). Auto-level near your level can hit **faction slaves** here.
+ZEM **0.96×**. Hunt range **30–40** (inner nameds ~**35–38**). Goblin temple off Frontier Mountains or one-way from **Mines of Nurga**. False-floor entrance — you drop in and cannot jump back. Nothing sees invis. No AAs: **group** (Chief included). Auto-level near your level can hit **faction slaves** here.
 
 Jail needs **a bronze key** (penkeepers). **an Iksar slave** (amiable, capital I) is **Shackle of Steel** — leave him. **an enslaved iksar** hails and does not aggro.
 

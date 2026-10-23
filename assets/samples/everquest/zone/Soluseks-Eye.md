@@ -1,6 +1,6 @@
 # Solusek's Eye — unique loot
 
-ZEM **1.73×**. Hunt range **20–40**. Goblin king and gnome clockwork camps; **gnome miners** are friendly. No AAs: **group**.
+ZEM **1.19×**. Hunt range **20–40**. Goblin king and gnome clockwork camps; **gnome miners** are friendly. No AAs: **group**.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

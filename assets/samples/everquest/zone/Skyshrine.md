@@ -1,6 +1,6 @@
 # Skyshrine — unique loot
 
-Velious dragon city (`skyshrine`). ZEM **1.13×**. Hunt **35–60+**. Claws of Veeshan hub between **Cobalt Scar** and **Temple of Veeshan**. Faction gates vendors and **Unadorned** class armor (pieces from ToV east / Halls of Testing). No AAs: city nameds are group; **Lord Yelinak** and the four **Crusaders** are **RAID**-tier.
+Velious dragon city (`skyshrine`). ZEM **0.94×**. Hunt **35–60+**. Claws of Veeshan hub between **Cobalt Scar** and **Temple of Veeshan**. Faction gates vendors and **Unadorned** class armor (pieces from ToV east / Halls of Testing). No AAs: city nameds are group; **Lord Yelinak** and the four **Crusaders** are **RAID**-tier.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`skyshrine`). Mob names match IdleQuest display (`Lord_Yelinak` → **Lord Yelinak**, `#Ralgyn` → **Ralgyn**). Skip Lookout / Patroller / Commune Protectorate / Vor`Tun / Laoch army spam — only notables below.
 

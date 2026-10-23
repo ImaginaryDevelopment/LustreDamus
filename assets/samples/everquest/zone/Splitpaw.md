@@ -1,6 +1,6 @@
 # Splitpaw Lair — unique loot
 
-ZEM **0.90×**. Hunt range **20–40**. Gnoll Vals and The Ishva Mal. **Brother Hayle** is a prison quest NPC — leave him.
+ZEM **1.28×**. Hunt range **20–40**. Gnoll Vals and The Ishva Mal. **Brother Hayle** is a prison quest NPC — leave him.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

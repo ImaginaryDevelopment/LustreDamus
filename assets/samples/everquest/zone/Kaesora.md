@@ -1,6 +1,6 @@
 # Kaesora — unique loot
 
-ZEM **1.46×**. Hunt range **30–45**. Library and church nameds; Xalgoz is the zone boss. No AAs: **group** dungeon (Xalgoz included).
+ZEM **1.16×**. Hunt range **30–45**. Library and church nameds; Xalgoz is the zone boss. No AAs: **group** dungeon (Xalgoz included).
 
 Sort **Nameds** by **Mob**. **Do** = **KILL** for all nameds here (no LEAVE quest NPCs).
 

@@ -1,6 +1,6 @@
 # Kurn's Tower — unique loot
 
-ZEM **2.00×**. Hunt range **10–25**. Nameds are mostly basement / tunnel spawns. No AAs: **group** / duo dungeon.
+ZEM **1.28×**. Hunt range **10–25**. Nameds are mostly basement / tunnel spawns. No AAs: **group** / duo dungeon.
 
 Sort **Nameds** by **Mob**. **Do** = **KILL** for all nameds here (quest skulls drop from kills; no LEAVE hubs).
 

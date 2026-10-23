@@ -1,6 +1,6 @@
 # Field of Bone — unique loot
 
-Kunark outdoor (`fieldofbone`). ZEM **1.00×**. Hunt **~1–25** (skeletons / beetles / scorpions → burynai → Sythrax crypt ~25–33). Cabilis outdoor ring; links **Warsliks Woods**, **Swamp of No Hope**, **Kurn's Tower**, and the Cabilis gates. No AAs: outdoor nameds are solo / small-group; **The Tangrin** is a tough outdoor named (~54).
+Kunark outdoor (`fieldofbone`). ZEM **0.83×**. Hunt **~1–25** (skeletons / beetles / scorpions → burynai → Sythrax crypt ~25–33). Cabilis outdoor ring; links **Warsliks Woods**, **Swamp of No Hope**, **Kurn's Tower**, and the Cabilis gates. No AAs: outdoor nameds are solo / small-group; **The Tangrin** is a tough outdoor named (~54).
 
 **Faction / LEAVE warning:** Cabilis **Troopers**, **Crusaders**, **Warlord Zyzz**, and **Klok** vendors are Iksar city friendlies — tag **FACTION** / **LEAVE**. Auto-level near the gates can hit them.
 

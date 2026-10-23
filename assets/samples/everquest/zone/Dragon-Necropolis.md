@@ -1,6 +1,6 @@
 # Dragon Necropolis — unique loot
 
-Velious crypt (`necropolis`). ZEM **1.50×**. Hunt **45–60+**. Enter from **Western Wastes** clickable tower ~−2800, 380. Succor ~−100, 2000 (zone out). Traps everywhere (root / fear / DD / swarming beetles / **a dragon construct**). Most trash does **not** see invis — traps and constructs do the camping. Paebala ("good" rats) vs Chetari (Zlandicar's) war underground. No AAs: Queen / Vilefang / Chetari nameds are group; **Vaniki** and **Zlandicar** are **RAID**-tier.
+Velious crypt (`necropolis`). ZEM **0.94×**. Hunt **45–60+**. Enter from **Western Wastes** clickable tower ~−2800, 380. Succor ~−100, 2000 (zone out). Traps everywhere (root / fear / DD / swarming beetles / **a dragon construct**). Most trash does **not** see invis — traps and constructs do the camping. Paebala ("good" rats) vs Chetari (Zlandicar's) war underground. No AAs: Queen / Vilefang / Chetari nameds are group; **Vaniki** and **Zlandicar** are **RAID**-tier.
 
 **IdleQuest** spawn/loot truth: [brynnb/idlequest-content](https://github.com/brynnb/idlequest-content) (`necropolis`). Mob names below match IdleQuest display names (`#Queen_Raltaas` â†’ **Queen Raltaas**, `a_Paebala_Spirit_Talker` â†’ **a Paebala Spirit Talker**).
 

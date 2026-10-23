@@ -1,6 +1,6 @@
 # Clan Runnyeye — unique loot
 
-ZEM **1.33×**. Hunt range **7–30**. Upper floors are goblin trash; Pickclaw nameds roam **level 4**. Evil eyes hit much harder than the goblins.
+ZEM **1.28×**. Hunt range **7–30**. Upper floors are goblin trash; Pickclaw nameds roam **level 4**. Evil eyes hit much harder than the goblins.
 
 | Item | Mob | Mob levels | Notes |
 | --- | --- | ---: | --- |

@@ -1,6 +1,6 @@
 # Mines of Nurga — unique loot
 
-ZEM **0.95×**. Hunt range **30–40** (classic trash tops around **37**; **Trunt** is the exception). Goblin mines off Frontier Mountains (~−2955, −655); also connects one-way into **Temple of Droga**. No AAs: goblin/burynai camps are a **group**. **Trunt** is **2-group**. Auto-level near your level can hit **faction slaves** here.
+ZEM **0.96×**. Hunt range **30–40** (classic trash tops around **37**; **Trunt** is the exception). Goblin mines off Frontier Mountains (~−2955, −655); also connects one-way into **Temple of Droga**. No AAs: goblin/burynai camps are a **group**. **Trunt** is **2-group**. Auto-level near your level can hit **faction slaves** here.
 
 **a sleeping ogre** is the monk-epic spawn NPC — sneak the hand-in; he has a huge aggro radius. **an iksar slave** / **a burynai slave** are quest/faction — do not farm them for XP if you care about **Legion of Cabilis**.
 

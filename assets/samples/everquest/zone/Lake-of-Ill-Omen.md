@@ -1,6 +1,6 @@
 # Lake of Ill Omen — unique loot
 
-Kunark outdoor (`lakeofillomen`). ZEM **1.00×**. Hunt **~10–40** (sarnak shoreline / goblin hills → bloodgill lake ~35–41). Outpost between **Cabilis**, **Firiona Vie** approaches, and **Frontier Mountains** / **Warsliks**. Marked `*` on Zone XP — outpost **Troopers**, **Crusaders**, **Kloks**, and related friendlies are easy auto-level / faction mistakes.
+Kunark outdoor (`lakeofillomen`). ZEM **0.83×**. Hunt **~10–40** (sarnak shoreline / goblin hills → bloodgill lake ~35–41). Outpost between **Cabilis**, **Firiona Vie** approaches, and **Frontier Mountains** / **Warsliks**. Marked `*` on Zone XP — outpost **Troopers**, **Crusaders**, **Kloks**, and related friendlies are easy auto-level / faction mistakes.
 
 **Faction warning:** Outpost guards and vendors are **FACTION** / **LEAVE** for anyone keeping Cabilis / outpost standing. Sarnak, goblin, and bloodgill camps are free **KILL**s.
 

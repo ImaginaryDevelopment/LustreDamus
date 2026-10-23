@@ -1,6 +1,6 @@
 # Warsliks Woods — unique loot
 
-Kunark outdoor (`warslikswood`). ZEM **1.00×**. Hunt **~10–35** (goblins → forest giants → bandit / pit camps). Forest between **Field of Bone**, **Lake of Ill Omen**, **Frontier Mountains**, and Cabilis approaches. No AAs: outdoor nameds are solo / small-group.
+Kunark outdoor (`warslikswood`). ZEM **0.83×**. Hunt **~10–35** (goblins → forest giants → bandit / pit camps). Forest between **Field of Bone**, **Lake of Ill Omen**, **Frontier Mountains**, and Cabilis approaches. No AAs: outdoor nameds are solo / small-group.
 
 **Faction / LEAVE warning:** Cabilis **Troopers**, **Crusaders**, **Captain Gideen**, **Warlord Vyzer**, and **Klok** vendors are Legion / city friendlies — tag **FACTION** / **LEAVE**.
 
