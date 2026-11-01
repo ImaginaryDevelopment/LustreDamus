@@ -126,6 +126,7 @@ fn everquest_group() -> SampleGroup {
         samples: [
           all_earrings_sample(),
           quest_gear_sample(),
+          tradeskill_combinations_sample(),
           twinks_sample(),
           epic_min_levels_sample(),
           epic_ground_spawns_sample(),
@@ -308,6 +309,16 @@ fn quest_gear_sample() -> Sample {
     "everquest",
     "Quest-Gear.md",
     "Turn-in armor and loot to save for gear (Classic / Kunark / Velious).",
+  )
+}
+
+fn tradeskill_combinations_sample() -> Sample {
+  sheet(
+    "tradeskill-combinations",
+    "Tradeskills",
+    "everquest",
+    "tradeskill_combinations.md",
+    "Which class and race to park on each tradeskill (caps, cultural recipes, skill-up stats).",
   )
 }
 

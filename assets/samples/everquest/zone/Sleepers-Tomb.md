@@ -25,7 +25,7 @@ Velious raid dungeon (`sleeper`). Unmodified XP (**1.00×**). Hunt **55–70+** 
 | Zeixshi-Kar the Ancient | RAID | WAR | 0% | ~70 / **~377k HP**. Silver ancient. Eye of Zeixshi-Kar; silver dragon reagents |
 | Master of the Guard | RAID | WAR | 0% | ~69 / **~100k–326k HP** (two IdleQuest rows). Fist of Pummeling Prowess; Ancient Prismatic pool; Velium Fraught Shackles |
 | The Final Arbiter | RAID | WAR | 0% | ~70 / **~200k–357k HP**. Sightless Velium Eye; Ancient Prismatic; Velious spells |
-| The Progenitor | RAID | WAR | 0% | ~70 / **~150k–327k HP**. Priceless / Exquisite Velium weapons; Tome of Innovation; Founder's Velium Creation |
+| The Progenitor | RAID | WAR | 0% | ~70. **~150k HP** (128053) is the Warders point and is on by default — loottable **110292 is empty** (no items, no coin). **~327k HP** (128144) has the Tome / Founder's / Velium table, but that point is the Ancients condition (starts off) and its spawnentry is still **0%** |
 | The Sleeper (Kerafyrm) | RAID | WAR | 0% | ~99 / **~3.5M HP**. IdleQuest **no loottable**. Waking him is the classic Velious endgame event |
 
 ### Live-spawn nameds / mini-bosses
@@ -97,10 +97,10 @@ Each ancient drops **Eye of [Ancient]** (AC 10 HP/Mana +55), color-matched **Pri
 | Fist of Pummeling Prowess (1H Blunt) | Master of the Guard | MNK BST | 14/19 (0.74), AC 5 STR/AGI +15 HP +50 |
 | Velium Fraught Shackles (Wrist) | Master of the Guard | casters | AC 10 STA/WIS/INT +5 HP +25 Mana +75 |
 | Sightless Velium Eye (Face) | The Final Arbiter | ALL | AC 15 all stats +5 HP/Mana +50 |
-| Tome of Innovation | The Progenitor | NEC WIZ MAG ENC | AC 5 WIS/INT +10 Mana +50 |
-| Founder's Velium Creation / Prismatic Dragon Scale | Progenitor / Master | — | Quest / combine reagents |
+| Tome of Innovation | The Progenitor (~327k only) | NEC WIZ MAG ENC | AC 5 WIS/INT +10 Mana +50. IdleQuest **0%** spawn. The ~150k copy's loot table is empty |
+| Founder's Velium Creation / Prismatic Dragon Scale | Progenitor (~327k) / Master | — | Quest / combine reagents. Progenitor's copy is the **0%** Ancients point; the ~150k copy drops nothing |
 | Ancient Prismatic weapon pool | Master / Arbiter / Progenitor / ancients | by weapon | Lance, Axe, Claymore, Bow, Staff, Stiletto, Fist Wraps, … |
-| Priceless / Exquisite Velium weapons | Progenitor; Guardian; tireless servitor; ancient sentry | by weapon | High Velium melee pool |
+| Priceless / Exquisite Velium weapons | Progenitor (~327k); Guardian; tireless servitor; ancient sentry | by weapon | High Velium melee pool. Not on the ~150k Progenitor (empty table) |
 
 ### Raid trash (Premier Secundae)
 
@@ -110,7 +110,7 @@ Live trash (Overseer, Sinister Gargoyle, Ancient Advocator, Drakeen Apprentice, 
 
 | Item | Source | Quest |
 | --- | --- | --- |
-| Prismatic Dragon Scale; Founder's Velium Creation | Master / Progenitor | Velious combines / epic-adjacent |
+| Prismatic Dragon Scale; Founder's Velium Creation | Master / Progenitor (~327k only) | Velious combines / epic-adjacent. The ~150k Progenitor drops neither |
 | Ethereal / Primal / Opalescent dragon reagents | Ancients | Class epic / combine paths |
 | Eye of [Ancient] | Matching ancient | Trophy / combine |
 
