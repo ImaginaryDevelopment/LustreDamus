@@ -1174,6 +1174,13 @@ fn everquest_warrior() -> List(Sample) {
       "Warrior-Weapons.md",
       "Warrior weapons ranked by tankScore (Classic / Kunark / Velious).",
     ),
+    sheet(
+      "warrior-range",
+      "Range",
+      "everquest/byClass",
+      "Warrior-Range.md",
+      "Warrior range-slot stat sticks (Classic / Kunark / Velious).",
+    ),
   ]
 }
 
