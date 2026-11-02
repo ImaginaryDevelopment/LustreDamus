@@ -1,0 +1,25 @@
+---
+description: When writing or revising EverQuest warrior gear slot sheets (byClass/Warrior-*.md), add a tankScore column using the Velious raid HP-equivalent formula
+globs: assets/samples/everquest/byClass/Warrior-*.md
+alwaysApply: false
+---
+
+# Warrior gear tankScore
+
+Every warrior slot sheet under `assets/samples/everquest/byClass/Warrior-*.md` gets a **tankScore** column. Same metric as `idlequest_character_api_fetch.linq` (`tankScoreFromParts` / `itemTankScore`), profile `warrior-raid-velious`.
+
+```
+tankScore = 1×HP + 3×AC + 6×STA
+```
+
+- Use the item's `hp`, `ac`, and `sta` only. Missing stat = 0.
+- Do not count STR, AGI, DEX, resists, haste, procs, click effects, mana, or weight.
+- 1 AC ≈ 3 HP (Sakuragi raid profile). 1 STA ≈ 6 HP at 60 for a warrior. Leveling would use ~5 HP per AC; these sheets stay on the raid weights.
+- Sources: [eqprogression Velious warrior BIS](https://www.eqprogression.com/warrior-best-in-slot-bis-gearing-guide-scars-of-velious/), [Sakuragi's Warrior Guide](https://wiki.project1999.com/Sakuragi%27s_Warrior_Guide).
+
+On each new or revised warrior sheet:
+
+1. Put a one-row formula table at the top so the site shows it (prose above tables is not rendered).
+2. Add a numeric **tankScore** column to the groupable and raid-aim tables.
+3. Default row order is tankScore descending. Notes still say when a high score is the wrong chase (race lock, outgrown, not a 60 upgrade).
+4. Skip / why-skip tables do not need a score.
