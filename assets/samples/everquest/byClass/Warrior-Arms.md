@@ -29,6 +29,7 @@ Turn-ins that are not already in the group or raid tables. Ordered by **tankScor
 
 | Item | tankScore | AC / stats | Turn-in | Who | Drop | Notes |
 | --- | ---: | --- | --- | --- | ---: | --- |
+| Spirit Wracked Cord | 166 | AC 12 STA +5 HP +100 SV MAGIC +5 SV COLD +10 | Undead Dragon Sinew + Spirit Wracked Urn + Regal Band of Bathezid | Queen Velazul Di`Zok (Chardok) | NO DROP | Also fits shoulders and wrist. Sinew from Sebilis juggernauts or Trakanon. Urn from Drusella (Howling Stones). Ally Brood of Di`Zok. Aura of Battle is not in the score |
 | Crafted Vambraces | 36 | AC 12 STR +1 SV DISEASE/POISON +2 | Griffon Eye + 2 fire emeralds | Shakrn Meadowgreen (S Karana) | lore | WAR only. Not IKS. Eye from a North Karana griffon. Tied with Kylong on score. Small Crafted Vambraces is the same score for ELF HIE DEF DWF HFL GNM |
 | Trooper Scale Vambraces | 33 | AC 11 STR +2 DEX +2 SV DISEASE/POISON +2 | Diseased Tongue + opal + sapphire + banded sleeves | Prime Hierophant Vek → Xlixinar (Overthere) | lore | IKS WAR only. Tongue from Pit Fighter Dob. Take Vek's knife first |
 

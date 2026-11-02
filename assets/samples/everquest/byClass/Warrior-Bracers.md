@@ -26,6 +26,7 @@ Turn-ins that are not already in the group or raid tables. Ordered by **tankScor
 
 | Item | tankScore | AC / stats | Turn-in | Who | Drop | Notes |
 | --- | ---: | --- | --- | --- | ---: | --- |
+| Spirit Wracked Cord | 166 | AC 12 STA +5 HP +100 SV MAGIC +5 SV COLD +10 | Undead Dragon Sinew + Spirit Wracked Urn + Regal Band of Bathezid | Queen Velazul Di`Zok (Chardok) | NO DROP | Also fits shoulders and arms. Sinew from Sebilis juggernauts or Trakanon. Urn from Drusella (Howling Stones). Ally Brood of Di`Zok. Beats every group bracer on this sheet |
 | Trooper Scale Bracers | 51 | AC 9 DEX/INT +2 STA +4 | Traitor's Heart + 2 sapphires + banded bracer | Arch Duke Xog → Drixiv Arcut (Overthere) | lore | IKS WAR only. Heart from an Iksar prisoner. Repeat for the second wrist. Beats Indicolite on score |
 | Crafted Bracers | 30 | AC 10 DEX/INT +2 | Bunch of Optic Nerves + sapphire | Ulan Meadowgreen (S Karana) | lore | WAR only. Not IKS. Nerves from a Gorge of King Xorbb evil eye. Small Crafted Bracers is the same score for ELF HIE DEF DWF HFL GNM |
 

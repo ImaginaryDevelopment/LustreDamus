@@ -25,4 +25,4 @@ On each new or revised warrior sheet:
 4. Add a **Quest rewards** table for Classic / Kunark / Velious turn-ins that belong in that slot and are not already a row in groupable or raid aim. Name the hand-in and the NPC. Small Crafted is the same score as Crafted, for ELF HIE DEF DWF HFL GNM. Bloodforge stays on Skip (dwarf WAR/CLR/PAL, random piece, outgrown).
 5. Skip / why-skip tables do not need a score.
 
-Sheeted so far: chests, helms, arms, gauntlets, bracers, greaves, boots, earrings. Still unsheeted: pauldrons (Crafted Pauldron **36**, Trooper Scale Pauldron **50**; Velious plate has no shoulder piece), cloak, belt, neck, face, rings, shield, weapons.
+Sheeted: chests, helms, arms, gauntlets, bracers, greaves, pauldrons, boots, cloaks, belts, masks, necks, earrings, rings, shields, weapons. Weapons show damage/delay in the stats column; that ratio is not part of tankScore. Range and ammo are still unsheeted. Spirit Wracked Cord is a quest piece that fits shoulders, arms, or wrist, and it belongs on all three quest tables.
