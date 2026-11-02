@@ -20,6 +20,9 @@ tankScore = 1×HP + 3×AC + 6×STA
 On each new or revised warrior sheet:
 
 1. Put a one-row formula table at the top so the site shows it (prose above tables is not rendered).
-2. Add a numeric **tankScore** column to the groupable and raid-aim tables.
+2. Add a numeric **tankScore** column to the groupable, quest-reward, and raid-aim tables.
 3. Default row order is tankScore descending. Notes still say when a high score is the wrong chase (race lock, outgrown, not a 60 upgrade).
-4. Skip / why-skip tables do not need a score.
+4. Add a **Quest rewards** table for Classic / Kunark / Velious turn-ins that belong in that slot and are not already a row in groupable or raid aim. Name the hand-in and the NPC. Small Crafted is the same score as Crafted, for ELF HIE DEF DWF HFL GNM. Bloodforge stays on Skip (dwarf WAR/CLR/PAL, random piece, outgrown).
+5. Skip / why-skip tables do not need a score.
+
+Sheeted so far: chests, helms, arms, gauntlets, bracers, greaves, boots, earrings. Still unsheeted: pauldrons (Crafted Pauldron **36**, Trooper Scale Pauldron **50**; Velious plate has no shoulder piece), cloak, belt, neck, face, rings, shield, weapons.

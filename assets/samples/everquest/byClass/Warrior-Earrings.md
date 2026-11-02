@@ -1,6 +1,6 @@
 # Warrior — groupable earrings
 
-Classic / Kunark / Velious. **Drop only** — no craft, no quest. Group camps only (no Trakanon / Vox / VP / ToV / Tunare / Tormax / Sleeper). NO DROP is fine.
+Classic / Kunark / Velious. **Drops.** Group camps only (no Trakanon / Vox / VP / ToV / Tunare / Tormax / Sleeper). NO DROP is fine. The quest table is here because the other warrior sheets have one: no Classic–Velious turn-in puts a warrior earring in this slot.
 
 Sort by **tankScore**. Filter also matches zone / camp. Two ear slots. Offense, AGI, resists, haste, and procs are not in the score.
 
@@ -30,6 +30,12 @@ Sort by **tankScore**. Filter also matches zone / camp. Two ear slots. Offense, 
 | Spiderfang Earring | 56 | AC 7 AGI/DEX +7 HP +35 | a toxic jungle hunter | Cazic-Thule (Accursed jungle) | NO DROP | WAR MNK ROG only. Req 51. AGI/DEX are not in the score |
 | Fingerbone Hoop | 36 | AC 2 STR/STA/INT +5 CHA −10, See Invisible | Embalming Fluid | Howling Stones (south) | NO DROP | Utility + melee stats. See Invisible is not in the score |
 | Sarnak Earring of Station | 15 | AC 5 STR +5 | a Di`zok Invoker; Chardok trash | Chardok | tradeable | STR filler; Invoker ~25%. STR is not in the score |
+
+## Quest rewards
+
+| Item | tankScore | Why |
+| --- | --- | --- |
+| No quest earring | — | Crafted, Trooper Scale, and Champion's sets have no ear. Earring of the Frozen Skull is not WAR. Nothing in this era to turn in for HP / AC / STA on an ear |
 
 ## Raid aim
 

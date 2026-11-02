@@ -22,10 +22,18 @@ Sort by **tankScore**. Filter also matches camp / restrictions. Offense, AGI, re
 | Indicolite Boots | 60 | AC 20 WIS/INT/AGI +5 SV DISEASE/POISON +15 | a kiraikuei | Plane of Hate | NO DROP | WAR only. Not IKS. Hate trash / named cycle. Resists are not in the score |
 | Jarsath Scale Boots | 60 | AC 10 STA/AGI +5 wt 0.8 | Spectral Turnkey | Karnor's Castle | NO DROP | WAR CLR PAL SHD SHM. Not DWF TRL OGR HFL GNM. Tied with Indicolite on score; STA makes up for the low AC |
 | Kylong Boots | 36 | AC 12 SV COLD/MAGIC +5 wt 3.8 | the Golem Master | Howling Stones | NO DROP | WAR CLR PAL RNG SHD BRD ROG SHM. Not BAR TRL OGR |
-| Crafted Plate Boots | 36 | AC 12 AGI +5 | Shakrn Meadowgreen (Goblin Frost Totem + 2 sapphires) | Southern Karana quest; totem in Permafrost | lore | WAR only. Not IKS. Mid classic quest set |
-| Trooper Scale Boots | 33 | AC 11 CHA/AGI +5 SV DISEASE/POISON +3 | Snaorf (medallion) → Master Rixiz → Drixiv Arcut | Frontier Mtns; Overthere | lore | IKS WAR only. + banded boots |
 | Dwarven Work Boots | 24 | AC 8 STR +3 DEX +5 | Garanel Rucksif | Estate of Unrest | tradeable | ALL except NEC WIZ MAG ENC. Classic leveling feet |
 | Charred Boots | 18 | AC 6 AGI +3 SV FIRE/POISON +5 | Inferno Goblin Captain | Solusek's Eye | tradeable | WAR CLR PAL SHD BRD. Not IKS. Common |
+
+## Quest rewards
+
+Turn-ins that are not already in the group or raid tables. Ordered by **tankScore**. Journeyman's is the run-speed click; the score is only the AC.
+
+| Item | tankScore | AC / stats | Turn-in | Who | Drop | Notes |
+| --- | ---: | --- | --- | --- | ---: | --- |
+| Crafted Plate Boots | 36 | AC 12 AGI +5 | Goblin Frost Totem + 2 sapphires | Shakrn Meadowgreen (S Karana) | lore | WAR only. Not IKS. Totem from Permafrost goblin patriarch. Small Crafted Plate Boots is the same score for ELF HIE DEF DWF HFL GNM |
+| Trooper Scale Boots | 33 | AC 11 CHA/AGI +5 SV DISEASE/POISON +3 | Snaorf's Medallion + 2 fire emeralds + banded boots | Master Rixiz → Drixiv Arcut (Overthere) | lore | IKS WAR only. Medallion from Snaorf (Frontier Mtns) |
+| Journeyman's Boots | 3 | AC 1 click run speed | Ring of the Ancients + Shadowed Rapier + 3250 gold | Hasten Bootstrutter (Rathe) | lore | All classes. Rapier is NO RENT while Hasten is up. Chase the click, not the score |
 
 ## Raid aim
 

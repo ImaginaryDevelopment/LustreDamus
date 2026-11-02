@@ -24,6 +24,15 @@ Sort by **tankScore**. Filter also matches camp / restrictions. Offense, AGI, re
 | Ceremonial Iksar Chestplate | 57 | AC 19 worn Regen | Crusader Zoglic | Trakanon's Teeth (forager) | lore | Medium, not plate. WAR CLR PAL RNG SHD BRD ROG SHM. Regen is not in the score |
 | Nathsar Breastplate | 54 | AC 18 STR +6 WIS +6 AGI +6 SV FIRE +5 SV DISEASE +5 | Loremaster Piza`tak | Chardok (library) | lore | ~58. Late-2001 Chardok revamp. Skip if your server never got it |
 
+## Quest rewards
+
+Turn-ins that are not already in the group or raid tables. Ordered by **tankScore**.
+
+| Item | tankScore | AC / stats | Turn-in | Who | Drop | Notes |
+| --- | ---: | --- | --- | --- | ---: | --- |
+| Crafted Breastplate | 121 | AC 22 HP +25 STA +5 | Werewolf Talon + 3 rubies | Ulan Meadowgreen (S Karana) | lore | WAR only. Not IKS. Talon from Mistmoore gypsy musician / werewolf. Small Crafted Breastplate is the same score for ELF HIE DEF DWF HFL GNM |
+| Trooper Scale Breastplate | 115 | AC 20 HP +25 STA +5 SV MAGIC +5 | Daelione's Implant + Straeven's Head + 3 rubies + banded mail | Vekis / Grik the Exile → Xlixinar (Overthere) | lore | IKS WAR only. Sergeant Daelione, then Commander Streaven |
+
 ## Raid aim
 
 Raid / formed-raid chests worth chasing after the group table. Ordered by **tankScore**.
