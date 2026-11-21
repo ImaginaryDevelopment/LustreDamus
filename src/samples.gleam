@@ -28,6 +28,67 @@ pub type SampleGroup {
   )
 }
 
+pub fn pathofidle() -> List(Sample) {
+  [
+    sheet(
+      "warrior-raging-fire-slash",
+      "Raging Fire Slash",
+      "pathofidle",
+      "Warrior-Raging-Fire-Slash.md",
+      "Warrior offense. Grim's Wrath 4-piece fires Raging Fire Slash from Pain Immunity.",
+    ),
+    sheet(
+      "warrior-blood-boil",
+      "Blood Boil",
+      "pathofidle",
+      "Warrior-Blood-Boil.md",
+      "Warrior defense. Vigilant Strike stacks Mettle and extends Blood Boil.",
+    ),
+    sheet(
+      "cleric-holy-light",
+      "Holy Light",
+      "pathofidle",
+      "Cleric-Holy-Light.md",
+      "Cleric defense. Chastise shortens Holy Bolt. Devotion of Faelen.",
+    ),
+    sheet(
+      "cleric-strike-lifesteal",
+      "Strike Lifesteal",
+      "pathofidle",
+      "Cleric-Strike-Lifesteal.md",
+      "Cleric defense. Divine Shelter widens Blessed Strike. Blessing of Mortan.",
+    ),
+    sheet(
+      "mage-lightning-basic",
+      "Lightning Basic",
+      "pathofidle",
+      "Mage-Lightning-Basic.md",
+      "Mage offense. Storm Infusion lets Lightning hit three targets. Kaelos's Verdict.",
+    ),
+    sheet(
+      "mercenary-swift-thunder",
+      "Swift Thunder",
+      "pathofidle",
+      "Mercenary-Swift-Thunder.md",
+      "Mercenary offense. Haste adds slashes. The skill needs a sword or a dagger.",
+    ),
+    sheet(
+      "mercenary-deaths-wind",
+      "Death's Wind",
+      "pathofidle",
+      "Mercenary-Deaths-Wind.md",
+      "Mercenary offense. Shockwave casts trigger extra Death's Wind. Yasuo's Gale.",
+    ),
+    sheet(
+      "mercenary-the-master",
+      "The Master",
+      "pathofidle",
+      "Mercenary-The-Master.md",
+      "Mercenary beam sword: both basics, Yasuo's Gale 4-piece.",
+    ),
+  ]
+}
+
 pub fn palworld() -> List(Sample) {
   [
     sheet(
@@ -1472,6 +1533,12 @@ pub fn groups() -> List(SampleGroup) {
       id: "palworld",
       label: "Palworld",
       samples: palworld(),
+      buckets: [],
+    ),
+    SampleGroup(
+      id: "pathofidle",
+      label: "Path of Idle",
+      samples: pathofidle(),
       buckets: [],
     ),
   ]
