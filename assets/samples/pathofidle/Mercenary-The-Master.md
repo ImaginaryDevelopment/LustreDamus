@@ -69,7 +69,7 @@ Yasuo's Gale is five pieces. Both weapon slots are filled: the set sword and The
 | Weapon | The Master, mythic | The beam. Sword, so it also allows Death's Wind and Shockwave |
 | Weapon | Yasuo's Deathblade | Set sword. 75% physical attack, 25% elemental attack. Slash Damage +1%. Does not fire the beam |
 | Amulet | Yasuo's Necklace of Slaughter | Set piece |
-| Ring | Yasuo's Ring of Ferocity | Set piece. This is the slot the runeword also wants |
+| Ring | Yasuo's Ring of Ferocity | Set piece. Forged Iron Ring can take this slot. The other four set pieces still meet the 4-piece |
 | Torso | Yasuo's Berserker Chestplate | Set piece |
 | Gloves | Yasuo's Slashing Gauntlets | Set piece |
 | Helmet | Open | Official Death's Wind list does not name a helmet. Chase physical attack, slash damage, basic skill speed, health, and health regen |
@@ -84,11 +84,11 @@ Yasuo's Gale is five pieces. Both weapon slots are filled: the set sword and The
 
 ## Runeword
 
-The official pairing is real, and it costs the 4-piece if you socket it now. Mythic weapons have no sockets, so the runes cannot go on The Master. Sockets are on Common and Fine items, level 20 and up.
+Mythic weapons have no sockets, so the runes cannot go on The Master. Sockets are on Common and Fine items, level 20 and up. The ring is one of five set pieces. With it off, the sword, amulet, torso, and gloves are still the 4-piece.
 
 | Runeword | Rune order | Grants | Target | When |
 | --- | --- | --- | --- | --- |
-| Shockwave | Tal, Ort, Tral | Strike Aura | Forged Iron Ring | After the 4-piece is on without this ring. Putting it on now replaces Yasuo's Ring of Ferocity and leaves three set pieces, which is the 2-piece only |
+| Shockwave | Tal, Ort, Tral | Strike Aura | Forged Iron Ring | Deathblade, Necklace of Slaughter, Berserker Chestplate, and Slashing Gauntlets stay on |
 
 ## Attributes
 

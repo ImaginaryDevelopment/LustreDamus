@@ -31,6 +31,13 @@ pub type SampleGroup {
 pub fn pathofidle() -> List(Sample) {
   [
     sheet(
+      "pathofidle-runeword-bases",
+      "Runeword Bases",
+      "pathofidle",
+      "Runeword-Bases.md",
+      "Common items that hold the runewords for the builds in use.",
+    ),
+    sheet(
       "warrior-raging-fire-slash",
       "Raging Fire Slash",
       "pathofidle",
@@ -64,6 +71,20 @@ pub fn pathofidle() -> List(Sample) {
       "pathofidle",
       "Mage-Lightning-Basic.md",
       "Mage offense. Storm Infusion lets Lightning hit three targets. Kaelos's Verdict.",
+    ),
+    sheet(
+      "hunter-wound-bullying",
+      "Wound Bullying",
+      "pathofidle",
+      "Hunter-Wound-Bullying.md",
+      "Hunter offense. Wound stacks trigger Bully. Bow and sword together.",
+    ),
+    sheet(
+      "priest-slime-rain",
+      "Slime Rain",
+      "pathofidle",
+      "Priest-Slime-Rain.md",
+      "Priest support. Vero's Secret lengthens Slime Rain and buffs each hit.",
     ),
     sheet(
       "mercenary-swift-thunder",

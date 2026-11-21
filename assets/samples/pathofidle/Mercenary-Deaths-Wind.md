@@ -35,7 +35,7 @@ Yasuo's Gale. Five pieces. The sword casts Death's Wind and Shockwave.
 | --- | --- | --- | --- |
 | Weapon | Yasuo's Deathblade | Set | Sword. 75% physical attack, 25% elemental attack. Strength 6, Dexterity 6. Slash Damage +1% |
 | Amulet | Yasuo's Necklace of Slaughter | Set | |
-| Ring | Yasuo's Ring of Ferocity | Set | The runeword wants this slot. Replacing the ring leaves three set pieces, which is the 2-piece only |
+| Ring | Yasuo's Ring of Ferocity | Set | Forged Iron Ring can take this slot. The other four set pieces still meet the 4-piece |
 | Torso | Yasuo's Berserker Chestplate | Set | |
 | Gloves | Yasuo's Slashing Gauntlets | Set | |
 
@@ -52,7 +52,7 @@ Yasuo's Gale. Five pieces. The sword casts Death's Wind and Shockwave.
 
 | Runeword | Rune order | Grants | Target | When |
 | --- | --- | --- | --- | --- |
-| Shockwave | Tal, Ort, Tral | Strike Aura | Forged Iron Ring | After the 4-piece is on without this ring |
+| Shockwave | Tal, Ort, Tral | Strike Aura | Forged Iron Ring | With the ring off, Deathblade, Necklace of Slaughter, Berserker Chestplate, and Slashing Gauntlets are still four pieces |
 
 ## Skills
 
