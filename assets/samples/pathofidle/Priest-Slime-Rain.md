@@ -68,6 +68,16 @@ Vero's Secret. Five pieces. The tome stays in one weapon slot.
 | Ritual |
 | Instinct |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Inspiration | Mage | Spell Speed +100%. Casts do not spend mana |
+| 2 | Divinity | Cleric | Intelligence +100%. Slime Rain heals for 40% of Intelligence |
+| 3 | Holy | Cleric | Healing Power +100% on top of Torrent |
+| 4 | Blood Surge | Mercenary | Healing Power +90%. Buff Duration +110% on top of the 2-piece |
+| 5 | Slow | Mage | Debuff Duration +70% on the Slow. Buff Duration +80% |
+
 ## Attributes
 
 | Order | Attribute |

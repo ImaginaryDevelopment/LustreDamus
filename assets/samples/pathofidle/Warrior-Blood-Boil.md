@@ -70,6 +70,16 @@ Kahn's Fate. Five pieces. The sword is the piece Vigilant Strike can actually ca
 | Shockwave |
 | Brutish |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Blood Surge | Mercenary | Healing Power +90%. Buff Duration +110% on the warcries |
+| 2 | Holy | Cleric | Healing Power +100%. A heal has a 20% chance to Purge |
+| 3 | Torrent | Priest | Healing Power +100%. Crit Resistance +100% |
+| 4 | Ritual | Priest | Buff Duration +100%. Clears afflictions every 5 seconds |
+| 5 | Barrier | Cleric | Health +60%. All resistances +60%. 1 Fortitude every 3 seconds |
+
 ## Attributes
 
 | Order | Attribute |

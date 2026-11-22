@@ -88,6 +88,16 @@ Yasuo's Gale. Five pieces. The sword casts Death's Wind and Shockwave.
 | Hamstring |
 | Bloodthirst |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Brutality | Warrior | Slash Damage +120%. Crit Value +80% |
+| 2 | Judgment | Cleric | Mastery Skill Damage +100% |
+| 3 | Flurry | Priest | Martial Damage +100% |
+| 4 | Brutish | Warrior | Strength +120% for the slash |
+| 5 | Conquest | Cleric | Base Skill Speed +80%, so Shockwave casts come faster |
+
 ## Attributes
 
 | Order | Attribute |

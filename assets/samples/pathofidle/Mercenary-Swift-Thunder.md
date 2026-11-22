@@ -77,6 +77,16 @@ Official Swift Thunder Slash build. Offense, difficulty Common. No set. Haste ad
 | Berserk |
 | Bloodthirst |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Judgment | Cleric | Lightning Damage +100%. Mastery Skill Damage +100% |
+| 2 | Flurry | Priest | Martial Damage +100% on the pierce half and the lightning half |
+| 3 | Agile | Hunter | Martial Speed +80%, so the slash and the Haste basic both come up faster |
+| 4 | Raid | Hunter | Pierce Damage +100% |
+| 5 | Vengeance | Cleric | Physical Attack +100% for the pierce half |
+
 ## Attributes
 
 | Order | Attribute |

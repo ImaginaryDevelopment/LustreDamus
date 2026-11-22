@@ -72,6 +72,16 @@ Sockets are on Common and Fine items, level 20 and up. The mythic and the set pi
 | Inspiration |
 | Slow |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Conquest | Cleric | Base Skill Speed +80%. Crit Value +80%. Elemental Attack +70% |
+| 2 | Judgment | Cleric | Lightning Damage +100% |
+| 3 | Ravage | Mercenary | Elemental Attack +110%. Lightning is 80% of that |
+| 4 | Echo | Priest | Spell Damage +80% |
+| 5 | Excitement | Priest | All Damage +100%. All Skill Cost +100%. The Inspiration mastery on this build stops casts from spending mana |
+
 ## Attributes
 
 | Order | Attribute |

@@ -66,6 +66,16 @@ Wear Cloudpiercer and Quicksand Razor together. That is the pair that keeps both
 | Hunt | |
 | Nimble | |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Brutish | Warrior | Strength +120%. Dexterity +80%. Bully's extra hit scales with Strength, and Boomerang Blade scales with Dexterity |
+| 2 | Brutality | Warrior | Slash Damage +120%. Crit Value +80% |
+| 3 | Berserk | Mercenary | Slash Damage +100%. Dexterity +100% |
+| 4 | Lethal | Priest | Pierce Damage +70% for Death's Approach. Crit Value +80% |
+| 5 | Flurry | Priest | Martial Damage +100% on Boomerang Blade |
+
 ## Attributes
 
 | Order | Attribute |

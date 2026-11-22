@@ -49,6 +49,19 @@ Blessing of Mortan. Five pieces. The hammer casts Blessed Strike.
 | Torso | Alphonse's Iron Armor | Legendary | Replaces the set torso |
 | Boots | Expedition | Legendary | The set has no boots |
 
+## Add-ons
+
+| Slot | Item | Quality | Notes |
+| --- | --- | --- | --- |
+| Gloves | Black Leather Gloves | Common | Cruelty runeword. The set has no gloves. 60% Dexterity, 40% Intelligence. Base Skill Damage +1%, which is Blessed Strike. Up to 3 sockets from item level 20. Upgrading this copy into Frenzy removes the sockets |
+| Weapon | A sword or a dagger | Any | Second weapon. Cruel Hook needs a sword or a dagger. The hammer stays, so Blessed Strike and Light of Healing stay usable. Compassion can come off |
+
+## Add-on runeword
+
+| Runeword | Rune order | Combo | Grants | Skill's job | What it does |
+| --- | --- | --- | --- | --- | --- |
+| Cruelty | Nef, Thul, Pul | up-up-down | Cruel Hook | Warrior | Pulls enemies in and applies Sunder. At level 1, 5 hits: 60% physical attack slash and 120% Dexterity pierce. Cooldown 10 seconds, 140 mana. Sunder lowers all defense and raises critical damage taken. If the bar has no room, Aura of Focus is the skill the 4-piece does not name |
+
 ## Skills
 
 | Skill | Kind | Weapons | What it does here |
@@ -69,6 +82,16 @@ Blessing of Mortan. Five pieces. The hammer casts Blessed Strike.
 | Divine Grace |
 | Conquest |
 | Divinity |
+
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Flurry | Priest | Martial Damage +100%. All Defense +100%, and the strike heals from physical defense |
+| 2 | Incinerate | Mage | Base Skill Damage +100% |
+| 3 | Bloodthirst | Mercenary | Base Skill Speed +70%, so the 4-piece strike happens more often |
+| 4 | Heavy Pressure | Warrior | Blunt Damage +70%. Blessed Strike is blunt |
+| 5 | Torrent | Priest | Healing Power +100% on top of Holy |
 
 ## Attributes
 

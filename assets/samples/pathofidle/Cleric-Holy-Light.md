@@ -70,6 +70,16 @@ Devotion of Faelen. Five pieces. The staff casts both Holy Bolt and Chastise.
 | Barrier |
 | Glitter |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Inspiration | Mage | Spell Speed +100%. Casts do not spend mana |
+| 2 | Wisdom | Mage | Mana +150% for the aura reserves. Intelligence +60% |
+| 3 | Convert | Mage | Mana Regen +100%. Mana costs become energy shield |
+| 4 | Instinct | Priest | Primary Attributes +60%. Support skill speed |
+| 5 | Blood Surge | Mercenary | Buff Duration +110% on the Holy Bolt primary-attribute buff. Healing Power +90% |
+
 ## Attributes
 
 | Order | Attribute |

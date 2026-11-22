@@ -66,6 +66,16 @@ Grim's Wrath. Five pieces. The four besides the hammer are enough for the 4-piec
 | Toughness |
 | Thunderous Roar |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Incinerate | Mage | Fire Damage +100%. Base Skill Damage +100% for Vigilant Strike |
+| 2 | Judgment | Cleric | Mastery Skill Damage +100% on the whole slash |
+| 3 | Flurry | Priest | Martial Damage +100%. All Defense +100% |
+| 4 | Vengeance | Cleric | Physical Attack +100%. The fire hit is 90% of that |
+| 5 | Berserk | Mercenary | Slash Damage +100%. Dexterity +100% |
+
 ## Attributes
 
 | Order | Attribute |

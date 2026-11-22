@@ -104,6 +104,16 @@ Mythic weapons have no sockets, so the runes cannot go on The Master. Sockets ar
 | --- | --- | --- | --- | --- |
 | Shockwave | Tal, Ort, Tral | Strike Aura | Forged Iron Ring | Deathblade, Necklace of Slaughter, Berserker Chestplate, and Slashing Gauntlets stay on |
 
+## Inspirations
+
+| Order | Mastery | Class | Keep it for |
+| --- | --- | --- | --- |
+| 1 | Brutality | Warrior | Slash Damage +120% on the beam and the whirlwind. Crit Value +80% |
+| 2 | Conquest | Cleric | Base Skill Speed +80%, so more beams and more 4-piece procs |
+| 3 | Incinerate | Mage | Base Skill Damage +100% on the beam |
+| 4 | Vengeance | Cleric | Physical Attack +100%. The beam is 60% of that |
+| 5 | Flurry | Priest | Martial Damage +100% |
+
 ## Attributes
 
 Official Death's Wind order, with the ones this sword actually spends called out.
