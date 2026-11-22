@@ -48,6 +48,20 @@ Yasuo's Gale. Five pieces. The sword casts Death's Wind and Shockwave.
 | Amulet | Rainbow | Legendary | Replaces the set amulet |
 | Gloves | Titan's Grip | Legendary | Replaces the set gloves |
 
+## Add-ons
+
+| Slot | Item | Quality | Notes |
+| --- | --- | --- | --- |
+| Boots | Earthshaker | Legendary | Shares this slot with the Fury boots. Casting Death's Wind triggers blunt damage equal to 100% Strength. That hit is not a cast of the Shockwave basic, so it does not trigger another Death's Wind. Utility Skill Cost +1%. Main stat is 70% Strength and 30% Intelligence. No sockets |
+| Boots | Earthshaker | Mythic | Same trigger. The hit is blunt damage equal to 75% Strength and 1 Sunder. Sunder lowers all defense and raises critical damage taken. No sockets |
+| Boots | Steel War Boots | Common | Fury runeword. Up to 3 sockets from item level 20. Main stat is 70% Strength and 30% Intelligence. Utility Skill Cost +1%. Upgrading this copy into Earthshaker removes the sockets |
+
+## Add-on runeword
+
+| Runeword | Rune order | Combo | Grants | Skill's job | What it does |
+| --- | --- | --- | --- | --- | --- |
+| Fury | El, Tir, Nef | up-up-down | Wild Frenzy | Hunter | All attacks are increased, and basic hits steal health. At level 1 the steal is healing equal to 15% physical attack. Cooldown 12 seconds, 168 mana. The wiki does not publish the size of the attack increase |
+
 ## Runeword
 
 | Runeword | Rune order | Grants | Target | When |

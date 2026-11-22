@@ -49,6 +49,14 @@ Official Swift Thunder Slash build. Offense, difficulty Common. No set. Haste ad
 | Shockwave | Tal, Ort, Tral | Strike Aura | Empowered Dagger |
 | Focus | Tal, Ohm, Um | Aura of Focus | Scout Coat |
 
+## Add-ons
+
+| Slot | Item | Quality | Notes |
+| --- | --- | --- | --- |
+| Weapon | Gladiator Broadsword | Common | Replaces Empowered Dagger as the Shockwave base. The other slot is a sword, so Swift Thunder Slash stays usable. 85% physical attack, 15% elemental attack. Martial Damage +1%. Strength 6, Dexterity 6. Up to 3 sockets from item level 20. Upgrading this copy into Bladeless removes the sockets |
+| Weapon | Brute Hammer | Common | Same Shockwave runeword. 90% physical attack, 10% elemental attack. Strength +1%. Strength 8 |
+| Weapon | Sharp Longbow | Common | Same Shockwave runeword. 85% physical attack, 15% elemental attack. Pierce Damage +1%. Dexterity 8. Upgrading this copy into Silent Hunter removes the sockets |
+
 ## Skills
 
 | Skill | Kind | Weapons | What it does here |

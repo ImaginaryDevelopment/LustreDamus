@@ -73,7 +73,7 @@ Yasuo's Gale is five pieces. Both weapon slots are filled: the set sword and The
 | Torso | Yasuo's Berserker Chestplate | Set piece |
 | Gloves | Yasuo's Slashing Gauntlets | Set piece |
 | Helmet | Open | Official Death's Wind list does not name a helmet. Chase physical attack, slash damage, basic skill speed, health, and health regen |
-| Boots | Open | Same chase as the helmet |
+| Boots | Add-ons | Earthshaker, or Steel War Boots with the Fury runeword |
 
 ## Set bonuses
 
@@ -81,6 +81,20 @@ Yasuo's Gale is five pieces. Both weapon slots are filled: the set sword and The
 | --- | --- |
 | 2 | Death's Wind always hits, and deals increased damage to nearby targets, up to 100% |
 | 4 | Every 3 casts of Shockwave trigger an additional Death's Wind |
+
+## Add-ons
+
+| Slot | Item | Quality | Notes |
+| --- | --- | --- | --- |
+| Boots | Earthshaker | Legendary | Shares this slot with the Fury boots. Casting Death's Wind triggers blunt damage equal to 100% Strength. That hit is not a cast of the Shockwave basic, so it does not fire the beam and it does not trigger another Death's Wind. Utility Skill Cost +1%. Main stat is 70% Strength and 30% Intelligence. No sockets |
+| Boots | Earthshaker | Mythic | Same trigger. The hit is blunt damage equal to 75% Strength and 1 Sunder. Sunder lowers all defense and raises critical damage taken. No sockets |
+| Boots | Steel War Boots | Common | Fury runeword. Up to 3 sockets from item level 20. Main stat is 70% Strength and 30% Intelligence. Utility Skill Cost +1%. Upgrading this copy into Earthshaker removes the sockets |
+
+## Add-on runeword
+
+| Runeword | Rune order | Combo | Grants | Skill's job | What it does |
+| --- | --- | --- | --- | --- | --- |
+| Fury | El, Tir, Nef | up-up-down | Wild Frenzy | Hunter | All attacks are increased, and basic hits steal health. At level 1 the steal is healing equal to 15% physical attack. Cooldown 12 seconds, 168 mana. The wiki does not publish the size of the attack increase. Shockwave casts under this buff still fire the beam while Healthy |
 
 ## Runeword
 
